@@ -248,11 +248,44 @@ app.post('/hellovinciai', function(req, res) {
     requestData.query = format_functions.battery_spacing(requestData.query);
     requestData.query = format_functions.camera_spacing(requestData.query);
 
-    //batman is the alias for webhook
-    res.send({
-        web_reply: "We are coming",
-        status: "Excellent",
-        batman: "Ready"
+
+    //Sending the request to API AI
+    request({
+        uri: config.api_ai_request_url,
+        method: 'POST',
+        json: true,
+        body: requestData,
+        headers: {
+            'Authorization': config.api_ai_client_access_token,
+            'Content-Type': 'application/json; charset=utf-8'
+        }
+    }).then(function(response) {
+        console.log("This is response on API AI which is sent back to frontend: ", response);
+        console.log("Request processing over: Sending the processed data back to the client");
+
+        var time = new Date() - start;
+
+        console.log("Time taken in processing the request on the backend: ", time);
+
+        //batman is the alias for webhook
+        res.send({
+            web_reply: response.result.fulfillment,
+            status: response.status,
+            batman: response.result.metadata.webhookUsed
+        });
+    })
+    .catch(function(err) {
+        console.log('err ', err);
+        var reply = {
+            speech: "Houston we are working on fixing the problem"
+        }
+
+        res.send({
+            web_reply: reply,
+            status: 500,
+            batman: false
+        });
+
     });
 
 });
