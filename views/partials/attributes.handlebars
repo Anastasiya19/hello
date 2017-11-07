@@ -1,0 +1,28 @@
+<div class="message message_vinci">
+  <img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">
+  <div class="message__item message__item_vinci br-chat">
+    <p>Here are the phone details you requested!</p>
+  </div>
+</div> 
+
+
+<div class="message message_vinci">
+	<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">
+	<div class="message__item message__item_specific view br-chat">
+		
+		<div class="specific">
+		  	\{{#each attribute}}
+			<div class="specific__item">
+				<div class="specific__icon">
+			  		<i class="\{{this.icon}}"></i>
+				</div>
+				<div class="specific__info">
+			  		<h4 class="specific__title">\{{this.text}}</h4>
+			  		<h3 class="specific__value">\{{this.value}}</h3>
+				</div>
+			</div>
+			\{{/each}}
+		  
+		</div>
+	</div>
+</div>

@@ -1,0 +1,38 @@
+<div class="message message_vinci">
+  <img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">
+  <div class="message__item message__item_vinci br-chat">
+    <p>Here is the comparison</p>
+  </div>
+</div> 
+
+<div class="message message_vinci">
+  <img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">
+  <div class="message__item message__item_vinci  message__item_compare br-chat">
+    <table class="table table-bordered compare__table">
+      <thead>
+      <tr>
+        <th>Comparing Phones</th>
+        \{{#each images}}
+        <th><img src="\{{this}}" height="50" width="25" alt="iphone6_min"></th>
+        \{{/each}}
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <th scope="row">Product</th>
+        \{{#each model_names}}
+        <td>\{{this}}</td>
+        \{{/each}}
+      </tr>
+      \{{#each comparison_attributes}}
+      <tr>
+        <th scope="row">\{{this.heading_text}}</th>
+        \{{#each this.values}}
+          <td>\{{this}}</td>
+        \{{/each}}
+      </tr>
+      \{{/each}}
+      </tbody>
+    </table>
+  </div>
+</div>

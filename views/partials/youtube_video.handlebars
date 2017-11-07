@@ -1,0 +1,21 @@
+<div class="message message_vinci">
+  <img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">
+  <div class="message__item message__item_vinci br-chat">
+    <p>Here is the review video</p>
+  </div>
+</div> 
+
+
+<div class="message message_vinci message__horizontal message__not-mobile-horiz">
+  <img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">
+  \{{#each youtube_video}}
+  <div class="message__item message__item_vinci message__item_horizontal message__item_video br-chat">
+    <iframe class="message__iframe" src="https://www.youtube.com/embed/\{{{youtube_video_helper}}}" frameborder="0"
+            allowfullscreen></iframe>
+    <div class="message__video-info">
+      <h5 class="characteristic__company">Video review from YouTube</h5>
+      <h4 class="characteristic__model">\{{{youtube_video_title_helper}}}</h4>
+    </div>
+  </div>
+  \{{/each}}
+</div>
