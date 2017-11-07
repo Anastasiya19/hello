@@ -11,12 +11,6 @@ const express = require('express');
 const exphbs = require('express-handlebars');
 const mongoose = require('mongoose');
 
-//User authentication and middleware
-//******These modules have not been installed********
-// const passport = require('passport');
-// const LocalStrategy = require('passport-local').Strategy;
-// const authenticate = require('./config/authenticate');
-//******End********
 
 //2. Load the Middleware
 const bodyParser = require('body-parser');
@@ -42,9 +36,6 @@ const csv = require('csv');
 const parser = csv.parse();
 const fs = require('fs');
 const apiai = require('apiai');
-const {
-    OperationHelper
-} = require('apac'); //Amazon Node API
 //******End********
 
 
@@ -62,10 +53,6 @@ const format_functions = require('./helpers/query_format/format_functions.js');
 const config = require('./config/config.js');
 //******End********
 
-
-//6. Load the necessary models
-var mobiles_Compared_Model = require('./models/mobiles_compared_schema');
-//******End********
 
 
 //7. Build the Server 
@@ -88,7 +75,7 @@ app.disable('x-powered-by');
 
 //9. Set the view engine
 app.engine('handlebars', exphbs({
-    defaultLayout: 'main'
+    defaultLayout: 'client'
 }));
 
 app.set('view engine', 'handlebars');
@@ -108,28 +95,6 @@ mongoose.connect(config.URL, function(err, database) {
 //******End********
 
 
-//12. Load the Amazon apac module configuration
-const opHelper = new OperationHelper({
-    awsId: config.awsId,
-    awsSecret: config.awsSecret,
-    assocId: config.awsTag,
-    locale: 'IN'
-});
-//******End********
-
-
-
-//13. Export the retailer admin routers
-var amazon_router = require('./routes/admin/amazon/amazon_route.js');
-var flipkart_router = require('./routes/admin/flipkart/flipkart_route.js');
-var gadgets_router = require('./routes/admin/gadgets_360/gadgets_route.js');
-var paytm_router = require('./routes/admin/paytm/paytm_route.js');
-var tata_cliq_router = require('./routes/admin/tata_cliq/tata_route.js');
-var shop_clues_router = require('./routes/admin/shop_clues/shopclues_route.js');
-var update_tags_router = require('./routes/admin/update_tags.js');
-//******End********
-
-
 //14. Write Middleware
 app.use('/assets', express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({
@@ -141,55 +106,38 @@ app.use(bodyParser.text({
 }));
 //******End********
 
-//16. Retailer Admin Routes
-app.use('/admin/amazon', amazon_router);
-app.use('/admin/flipkart', flipkart_router);
-app.use('/admin/gadgets', gadgets_router);
-app.use('/admin/paytm', paytm_router);
-app.use('/admin/tata_cliq', tata_cliq_router);
-app.use('/admin/shop_clues', shop_clues_router);
-app.use('/admin/update_tags', update_tags_router);
+
 
 
 //********************** 9. Routes *********************************************
 app.get('/', function(req, res) {
-    res.render('home', {
-        layout: 'client'
-    });
+    res.render('home');
     console.log("Get request received on the homepage. App is working");
 });
 
 //Next Route-------------------------------------------------------------
 app.get('/home', function(req, res) {
-    res.render('home', {
-        layout: 'client'
-    });
+    res.render('home');
     console.log("Get request received on the homepage. App is working");
 });
 
 
 //Next Route-------------------------------------------------------------
 app.get('/explainer_video', function(req, res) {
-    res.render('explainer_video', {
-        layout: 'client'
-    });
+    res.render('explainer_video');
     console.log("Get request received on the homepage. App is working");
 });
 
 //Next Route-------------------------------------------------------------
 app.get('/vinci_commands', function(req, res) {
-    res.render('vinci_commands', {
-        layout: 'client'
-    });
+    res.render('vinci_commands');
     console.log("Get request received on the homepage. App is working");
 });
 
 //Next Route-------------------------------------------------------------
 app.get('/chat', function(req, res) {
     console.log("Request hit the client home route");
-    res.render('chat', {
-        layout: 'client'
-    });
+    res.render('chat');
     console.log("Get request received on the homepage. App is working");
 });
 
@@ -197,27 +145,21 @@ app.get('/chat', function(req, res) {
 //Next Route-------------------------------------------------------------
 app.get('/faqs', function(req, res) {
     console.log("Request hit the client home route");
-    res.render('home', {
-        layout: 'client'
-    });
+    res.render('home');
     console.log("Get request received on the homepage. App is working");
 });
 
 //Next Route-------------------------------------------------------------
 app.get('/privacy_policy', function(req, res) {
     console.log("Request hit the client home route");
-    res.render('home', {
-        layout: 'client'
-    });
+    res.render('home');
     console.log("Get request received on the homepage. App is working");
 });
 
 //Next Route-------------------------------------------------------------
 app.get('/blog', function(req, res) {
     console.log("Request hit the client home route");
-    res.render('home', {
-        layout: 'client'
-    });
+    res.render('home');
     console.log("Get request received on the homepage. App is working");
 });
 
