@@ -1,0 +1,116 @@
+.speaking {
+  &__overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    overflow: hidden;
+    background: rgba(255, 255, 255, .99);
+  }
+  &__status {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    @media (min-width: 480px) {
+      width: 450px;
+    }
+    @media (max-width: 480px) {
+      text-align: center;
+      width: 80%;
+    }
+    &_ready {
+      .microphone {
+        background: #ECECEC;
+      }
+      .microphone__image_active {
+        display: none;
+      }
+
+      .microphone__image_default {
+        display: block;
+      }
+    }
+    &_listen, &_analyzing {
+      .microphone__image_active {
+        display: block;
+      }
+      .microphone__image_default {
+        display: none;
+      }
+    }
+    &_listen {
+      .microphone {
+        background: #EEF6FE;
+      }
+    }
+    &_analyzing {
+      .microphone {
+        background: #017fff; /* Old browsers */
+        background: -moz-linear-gradient(top, #017fff 0%, #8cbffe 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #017fff 0%, #8cbffe 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #017fff 0%, #8cbffe 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#017fff', endColorstr='#8cbffe', GradientType=0); /* IE6-9 */
+      }
+    }
+  }
+  &__description {
+    vertical-align: middle;
+    display: inline-block;
+    padding-left: 25px;
+    h3 {
+      color: #6B6E7A;
+      font-size: rem(25);
+    }
+    h4 {
+      font-size: rem(18);
+      font-weight: 300;
+      color: #B2B4BA;
+    }
+    @media (max-width: 590px) {
+      padding-left: 15px;
+      margin-top: 15px;
+    }
+    @media (max-width: 480px) {
+      padding-left: 0;
+    }
+  }
+  &__close{
+    i{
+      font-size: 50px;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      color: $blue;
+      @media (max-width: 590px) {
+        font-size: 35px;
+        top: 10px;
+        right: 10px;
+      }
+    }
+  }
+}
+
+.microphone {
+  padding: 15px;
+  border-radius: 50%;
+  vertical-align: middle;
+  display: inline-block;
+  &__image {
+    background: #fff;
+    padding: 24px 40px;
+    border-radius: 50%;
+    width: 120px;
+    @include box-shadow;
+    @media (max-width: 590px) {
+      width: 80px;
+      padding: 14px 25px;
+
+    }
+  }
+  @media (max-width: 590px) {
+    padding: 10px;
+  }
+}

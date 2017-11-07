@@ -1,0 +1,21 @@
+$baseFontSize : 14;
+@function rem($pixels, $context: $baseFontSize) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+  @return $pixels / $context * 1rem;
+}
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content; }
+  &:-moz-placeholder           { @content; }
+  &::-moz-placeholder          { @content; }
+  &:-ms-input-placeholder      { @content; }
+}
+@mixin box-shadow {
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+}

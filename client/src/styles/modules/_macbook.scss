@@ -1,0 +1,67 @@
+.macbook {
+  position: relative;
+  width: 67%;
+  margin: auto;
+  text-align: center;
+  @media (max-width: 1024px) {
+    width: 85%;
+  }
+  @media (max-width: 991px) and (min-width: 550px) {
+    transform: translate(0,0);
+
+  }
+  @media (max-width: 550px) {
+    width: 100%;
+  }
+  &__image {
+    max-width: 100%;
+    visibility: hidden;
+  }
+  &__content {
+
+  }
+  &__play {
+    visibility: hidden;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 45%;
+    left: 50%;
+    max-width: 32%;
+    @media (max-width: 768px){
+      top: 50%;
+    }
+  }
+  &__video{
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 49.8%;
+    top: 47%;
+    width: 76%;
+    height: 82%;
+    display: none;
+  }
+  &__iframe {
+    width: 100%;
+    height: 100%;
+  }
+  &__description {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 60%;
+    left: 50%;
+    max-width: 95%;
+    visibility: hidden;
+    h3 {
+      font-weight: 400;
+      @extend .title-b-14;
+    }
+    p {
+      font-weight: 300;
+      @extend .title-g-12;
+
+    }
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+}

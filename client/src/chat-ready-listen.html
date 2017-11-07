@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+//= template/head.html
+<body>
+<div class="speaking speaking__overlay">
+  <button class="speaking__close"><i class="ion-ios-close-outline"></i></button>
+  <!--speaking__status_ready, speaking__status_listen, speaking__status_analyzing-->
+  <div class="speaking__status speaking__status_ready">
+    <div class="microphone">
+      <img class="microphone__image microphone__image_default" src="assets/images/microphone_grey.svg" alt="">
+      <img class="microphone__image microphone__image_active" src="assets/images/microphone_blue.svg" alt="">
+    </div>
+    <div class="speaking__description">
+      <h3>VINCI is ready to Listen</h3>
+      <h4>ready to listen to the user</h4>
+    </div>
+  </div>
+</div>
+<div class="wrapper-chat">
+  //= template/header_chat.html
+  <div class="chat">
+    <div class="chat__content">
+      <div class="chat__messages">
+        <div class="message message_vinci">
+          <img class="vinci-logo" src="assets/images/vinci-mes.svg" alt="">
+          <div class="message__item message__item_vinci br-chat">
+            <p>Hello!<br>
+              I can help you find the best price of your favorite phone,
+              compare its features and I can also suggest you the top selling phones!!</p>
+          </div>
+          <ul class="suggestion">
+            <li class="suggestion__item br-chat">Show me iPhone 6s</li>
+            <li class="suggestion__item  suggestion__item_active br-chat ">Tell me about iPhone 7 Battery</li>
+          </ul>
+        </div>
+      </div>
+      <div class="chat__bottom">
+        <div class="send">
+          <input class="send__input" placeholder="Hello Vinci!">
+          <button class="btn send__btn" type="submit">Send</button>
+          <button class="btn send__btn send__btn_speak">
+            <img src="assets/images/microphone_white.svg" alt="">
+            Speak to Vinci
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

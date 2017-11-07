@@ -1,0 +1,8 @@
+.language {
+  &__flag {
+    margin-right: 10px;
+    @media (max-width: 360px) {
+      left: 10px;
+    }
+  }
+}

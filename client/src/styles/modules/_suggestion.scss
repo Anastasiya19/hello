@@ -1,0 +1,43 @@
+.suggestion {
+  padding-left: 0;
+  &__item {
+    color: #6B6E7A;
+    font-size: rem(12);
+    padding: 10px 20px;
+    display: inline-block;
+    background: #fff;
+    transition: ease .2s;
+    border-radius: 35px;
+    @include box-shadow;
+    &:not(:last-child) {
+      margin-right: 10px;
+      @media (max-width: 767px) {
+        margin-right: 5px;
+      }
+    }
+    //&:after {
+    //  content: 'Suggestion';
+    //  display: block;
+    //  color: #6B6E7A;
+    //  font-size: rem(12);
+    //  margin-top: 10px;
+    //  opacity: .5;
+    //  transition: ease .2s;
+    //  @media (max-width: 767px) {
+    //    margin-top: 5px;
+    //    font-size: rem(10);
+    //  }
+    //}
+    &_active, &:hover {
+      background: $blue;
+      color: #fff;
+      &:after {
+        color: #fff;
+      }
+    }
+    @media (max-width: 767px) {
+      padding: 5px 8px;
+      margin-bottom: 5px;
+    }
+  }
+}

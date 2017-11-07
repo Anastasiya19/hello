@@ -1,0 +1,235 @@
+.view {
+  &__photo {
+    text-align: center;
+    position: relative;
+    img {
+      display: block;
+      margin: auto;
+      height: 130px;
+    }
+  }
+  &__button {
+    position: relative;
+    top: -20px;
+    padding: 9px 25px;
+  }
+  &__characteristic {
+
+  }
+  &__inline {
+    @media (min-width: 767px) {
+      display: inline-block;
+      width: 300px;
+      &:last-child{
+        width: 240px;
+      }
+    }
+  }
+  &__col {
+    padding: 15px 10px;
+    vertical-align: top;
+    &:first-child {
+      border-right: 1px solid #F4F7F9;
+    }
+    &_3 {
+      @media (min-width: 768px) {
+        padding: 15px 10px;
+        width: calc(100% / 3);
+        display: inline-block;
+      }
+    }
+    &_2 {
+      @media (min-width: 768px) {
+        padding: 15px 10px;
+        width: 50%;
+        display: inline-block;
+      }
+    }
+    &_hidden{
+      display: none;
+    }
+
+  }
+  &__prices {
+    overflow-y: hidden;
+    padding: 15px 0;
+    //width: 200px;
+    @media (min-width: 768px) {
+      border-left: 1px solid #F4F7F9;
+    }
+  }
+  &__info {
+    //width: 300px;
+  }
+  &__info-full {
+    //width: 300px;
+    font-size: rem(12);
+    padding: 15px 0;
+    overflow-y: hidden;
+
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+}
+
+.hide-all-details{
+  display: none;
+}
+.mCS-my-theme.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  //background-color: #212121;
+  //height: 20px;
+  background-color: #9c9c9c;
+}
+
+.mCS-my-theme.mCSB_scrollTools .mCSB_draggerRail {
+  background-color: #E9E9E9;
+}
+
+.mCSB_container {
+  width: 97%;
+}
+.flex-container{
+
+  @media (min-width: 768px) {
+    display: flex;
+    max-height: 498px;
+  }
+
+}
+.price {
+  //width: 222px;
+  width: 100%;
+  position: relative;
+  @include box-shadow;
+  border-radius: 4px;
+  border: 1px solid #F6F7F9;
+  margin-bottom: 20px;
+  &__header {
+    text-align: center;
+    border-bottom: 1px solid #F6F7F9;
+    padding: 10px 10px;
+    img {
+      height: 16px;
+    }
+    &_best {
+      text-align: right;
+    }
+  }
+  &__best {
+    color: #616161;
+    font-size: rem(12);
+    text-align: left;
+    float: left;
+    &:before {
+      content: url($path-to-images + 'star.svg');
+      margin-right: 5px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    @media (max-width: 767px) {
+      font-size: 0;
+    }
+  }
+  &__body {
+    text-align: center;
+    font-size: rem(14);
+    font-weight: 500;
+    padding: 9px 10px;
+    position: relative;
+    @media (max-width: 450px) {
+      padding: 5px 5px;
+      font-size: rem(12);
+    }
+  }
+  &__rs {
+    color: #616161;
+  }
+  &__num {
+    color: #212121;
+  }
+  @media (max-width: 767px) {
+    width: calc(50% - 5px);
+    margin-right: 5px;
+    margin-bottom: 10px;
+    &:nth-child(2n) {
+      margin-right: 0;
+      margin-left: 5px;
+    }
+    display: inline-block;
+  }
+
+}
+
+.more-info {
+  display: block;
+  position: relative;
+  &:hover {
+    .more-info__block {
+      display: block;
+    }
+  }
+  &__btn {
+    z-index: 4;
+    position: relative;
+    display: block;
+    float: right;
+    margin-top: -22px;
+    @media (max-width: 450px) {
+      margin-top: -18px;
+      img {
+        opacity: .4;
+      }
+    }
+  }
+  &__block {
+    position: absolute;
+    left: -11px;
+    top: -11px;
+    z-index: 1;
+    text-align: left;
+    border-radius: 4px;
+    background: #fff;
+    width: 206px;
+    border: 1px solid #F6F7F9;
+    @include box-shadow;
+    display: none;
+    @media (max-width: 450px) {
+      width: 114px;
+    }
+  }
+  &__part {
+    padding: 10px 20px;
+    &:not(:last-child) {
+      border-bottom: 1px solid #F6F7F9;
+    }
+    @media (max-width: 450px) {
+      padding: 5px 7px;
+    }
+    h4 {
+      color: #B0B0B0;
+      font-size: rem(12);
+      font-weight: 300;
+      @media (max-width: 450px) {
+        font-size: rem(10);
+      }
+    }
+    h5 {
+      color: #616161;
+      font-size: rem(12);
+      font-weight: 300;
+      @media (max-width: 450px) {
+        font-size: rem(10);
+      }
+    }
+  }
+
+}
+
+.part-title {
+  color: #616161;
+  font-weight: 400;
+  margin-bottom: 15px;
+  font-size: rem(14);
+  text-align: center;
+}

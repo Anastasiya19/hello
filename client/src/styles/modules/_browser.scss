@@ -1,0 +1,37 @@
+.browser {
+  position: relative;
+  @media all and (max-width: 1300px) and (min-width: 1075px) {
+    width: 53%;
+  }
+  @media (min-width: 1075px) {
+    position: absolute;
+    right: 0;
+    top: 56%;
+    transform: translateY(-50%);
+  }
+
+  @media (max-width: 1074px) {
+    margin-left: -29px;
+  }
+  @media (max-width: 767px) {
+    margin-left: -8px;
+    max-width: 102%;
+  }
+  &__page {
+    visibility: hidden;
+    @media all and (min-width: 1299px) {
+      height: 600px;
+    }
+    @media all and (min-width: 1299px) and (max-height: 710px) {
+      height: 500px;
+    }
+    max-width: 100%;
+  }
+  &__ex_1 {
+    display: none;
+    top: 12%;
+    left: 7%;
+    position: absolute;
+    max-width: 56%;
+  }
+}

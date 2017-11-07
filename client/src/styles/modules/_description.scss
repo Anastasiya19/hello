@@ -1,0 +1,58 @@
+.description {
+  max-width: 367px;
+  visibility: hidden;
+  @media (max-width: 1075px) {
+    padding-top: 50px;
+  }
+  @media (max-width: 360px) {
+    padding-top: 35px;
+  }
+  &__title {
+    font-size: rem(24);
+    font-weight: 400;
+    color: #363944;
+    @media (max-width: 991px) {
+      font-size: rem(18);
+    }
+    @media (max-width: 767px) {
+      font-size: rem(16);
+    }
+  }
+  &__text {
+    margin-bottom: 35px;
+  }
+  &__button {
+    padding: 10px 25px;
+    margin-bottom: 20px;
+    @media (max-width: 550px) {
+      width: 100%;
+      padding: 10px 6px;
+    }
+  }
+  &_browser {
+    @media (min-width: 1075px) {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%) !important;
+    }
+    @media (max-width: 550px) {
+      width: 100%;
+      margin: auto;
+      .description__title {
+        text-align: center;
+      }
+    }
+
+  }
+  &_macbook {
+    margin: 0 auto 25px;
+    @media (min-width: 768px) {
+      display: none;
+    }
+    .button {
+      width: auto;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+}

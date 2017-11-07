@@ -1,0 +1,34 @@
+{
+  "name": "hellovinci",
+  "directory": "./client/bower_components/",
+  "description": "This README would normally document whatever steps are necessary to get your application up and running.",
+  "main": "index.js",
+  "authors": [
+    "Irina Matyshko <i.martyshko@dunice.net>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*",
+    "jquery": "3.*",
+    "owl.carousel": "^2.2.1",
+    "lightbox2": "^2.9.0",
+    "bootstrap": "4.0.0-alpha.6",
+    "wow": "^1.1.2",
+    "tether": "1.4.0",
+    "lodash": "^4.17.4",
+    "handlebars": "^4.0.11"
+  },
+  "devDependencies": {},
+  "resolutions": {
+    "jquery": "3.*"
+  }
+}

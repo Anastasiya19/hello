@@ -1,0 +1,9 @@
+a, button{
+  &:hover, &:focus, &:active{
+    text-decoration: none;
+    outline: none !important;
+  }
+}
+select, input{
+  outline: none;
+}

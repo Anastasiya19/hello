@@ -116,7 +116,7 @@ const opHelper = new OperationHelper({
 
 
 
-//13. Export the routers
+//13. Export the retailer admin routers
 var amazon_router = require('./routes/admin/amazon/amazon_route.js');
 var flipkart_router = require('./routes/admin/flipkart/flipkart_route.js');
 var gadgets_router = require('./routes/admin/gadgets_360/gadgets_route.js');
@@ -138,12 +138,7 @@ app.use(bodyParser.text({
 }));
 //******End********
 
-
-//15. Load the models
-var amazon_Mobiles_Model = require('./models/amazon_mobiles_schema');
-
-
-//16. Router Middleware
+//16. Retailer Admin Routes
 app.use('/admin/amazon', amazon_router);
 app.use('/admin/flipkart', flipkart_router);
 app.use('/admin/gadgets', gadgets_router);
@@ -159,6 +154,13 @@ app.get('/', function(req, res) {
     console.log("Get request received on the homepage. App is working");
 });
 
+
+app.get('/home', function(req, res) {
+    res.render('home', {
+        layout: 'client'
+    });
+    console.log("Get request received on the homepage. App is working");
+});
 //************************ Routes Over **************************************
 
 

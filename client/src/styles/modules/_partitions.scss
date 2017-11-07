@@ -1,0 +1,105 @@
+.partitions {
+  margin-top: 70px;
+  padding-bottom: 157px;
+  @media (max-width: 767px) {
+    margin-top: 20px;
+  }
+  &__item {
+    background: #f9fafd;
+
+    &_open {
+      background: #fff !important;
+    }
+
+  }
+  &__wrap {
+    margin: auto;
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+
+  &__name {
+    margin: 0;
+    &_active {
+      .partitions__name {
+        color: #616161;
+      }
+    }
+  }
+  &__row {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #ebebeb;
+    @media (max-width: 767px) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+  &__note {
+    padding-left: 115px;
+    padding-top: 33px;
+    padding-bottom: 33px;
+    @media (max-width: 1200px) {
+      padding-left: 59px;
+    }
+    @media (max-width: 767px) {
+      padding-left: 39px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+  &__num {
+    color: #B0B0B0;
+    font-size: rem(12);
+    padding: 12px 17px;
+    border: 1px solid #F6F7F9;
+    border-radius: 50%;
+    display: inline-block;
+    transition: .4s;
+    @media (max-width: 767px) {
+      padding: 4px 10px;
+      font-size: rem(10);
+    }
+
+  }
+  &__list {
+    display: none;
+    &_visible {
+      display: block;
+    }
+  }
+  &__down {
+    padding: 10.5px 14px;
+    border: 1px solid #F7F7F7;
+    border-radius: 50%;
+    transition: all .4s;
+    &_active {
+      transition: all .4s;
+      img {
+        transition: transform .4s;
+        transform: rotate(180deg);
+        @media (max-width: 767px) {
+          margin-top: -4px;
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      padding: 4.5px 8px;
+    }
+  }
+}
+
+.partitions__item_open {
+  position: relative;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  .partitions__num {
+    background: #F6F7F9;
+  }
+  .partitions__title {
+    .partitions__name {
+      color: #616161;
+    }
+  }
+}

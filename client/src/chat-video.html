@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+//= template/head.html
+<body>
+<div class="wrapper-chat">
+  //= template/header_chat.html
+  <div class="chat">
+    <div class="chat__content">
+      <div class="chat__messages">
+        <div class="message message_vinci message__horizontal message__not-mobile-horiz">
+          <img class="vinci-logo" src="assets/images/vinci-mes.svg" alt="">
+          <div class="message__item message__item_vinci message__item_horizontal message__item_video br-chat">
+            <iframe class="message__iframe" src="https://www.youtube.com/embed/srj-NLj4Kt0" frameborder="0"
+                    allowfullscreen></iframe>
+            <div class="message__video-info">
+              <h5 class="characteristic__company">Youtube</h5>
+              <h4 class="characteristic__model">iPhone 7 Review</h4>
+            </div>
+          </div>
+          <div class="message__item message__item_vinci message__item_horizontal message__item_video br-chat">
+            <iframe class="message__iframe" src="https://www.youtube.com/embed/srj-NLj4Kt0" frameborder="0"
+                    allowfullscreen></iframe>
+            <div class="message__video-info">
+              <h5 class="characteristic__company">Youtube</h5>
+              <h4 class="characteristic__model">iPhone 7 Review</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chat__bottom">
+        <div class="send">
+          <input class="send__input" placeholder="Hello Vinci!">
+          <button class="btn send__btn" type="submit">Send</button>
+          <button class="btn send__btn send__btn_speak">
+            <img src="assets/images/microphone_white.svg" alt="">
+            Speak to Vinci
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

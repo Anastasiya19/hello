@@ -1,0 +1,191 @@
+.message {
+  position: relative;
+  margin-bottom: 33px;
+
+  &__item {
+    position: relative;
+    background: #fff;
+    padding: 10px 30px;
+    margin-bottom: 15px;
+    text-align: left;
+    @media (max-width: 767px) {
+      padding: 10px 20px;
+    }
+    p {
+      color: #6B6E7A;
+      font-weight: 300;
+      font-size: 0.95714rem;
+      margin-bottom: 0;
+    }
+    &_vinci {
+      max-width: 460px;
+      @include box-shadow
+    }
+    &_user {
+      border: 1px solid #E5E8EC;
+      float: right;
+      position: relative;
+    }
+    &_compare {
+      padding: 0;
+      max-width: fit-content;
+      overflow-x: auto;
+    }
+    &_view {
+      padding: 0 0 0 20px;
+      font-size: 0;
+      @media (max-width: 768px) {
+        padding: 0 0 0 10px;
+      }
+    }
+    &_view-full {
+      @media (max-width: 767px) {
+        width: 250px;
+      }
+      @include box-shadow;
+    }
+    &_horizontal {
+      display: inline-block;
+      margin-bottom: 0;
+      padding: 0;
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+    &_video {
+      padding: 30px 30px 15px;
+      @media (max-width: 768px) {
+        padding: 20px 20px 10px;
+        margin-bottom: 15px;
+        margin-right: 0 !important;
+      }
+    }
+    &_writing {
+      width: 103px !important;
+      &:after {
+        content: 'Vinci is Typing !';
+        color: rgba(107, 110, 122, 0.1);
+        font-size: rem(12);
+        position: absolute;
+        left: 113%;
+        width: 90px;
+        top: 13px;
+      }
+    }
+    &_specific {
+      padding: 0;
+      display: inline-block;
+      @include box-shadow;
+      @media (max-width: 450px) {
+        width: 100%;
+        padding: 10px;
+      }
+    }
+
+  }
+  &_sender {
+    text-align: right;
+    @include clearfix
+  }
+
+  &__overview {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  &__not-mobile-horiz {
+    @media (max-width: 768px) {
+      width: 100% !important;
+    }
+  }
+  &__iframe {
+    width: 100%;
+    height: 250px;
+    @media (max-width: 768px) {
+      height: auto;
+    }
+  }
+  &__video-info {
+    padding: 20px 20px 0;
+    .characteristic__company {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.user-logo {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  z-index: 1;
+  @media (max-width: 767px) {
+    width: 35px;
+    right: -15px;
+    top: -15px;
+  }
+}
+
+.vinci-logo {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  z-index: 2;
+  @media (max-width: 767px) {
+    width: 35px;
+    left: -15px;
+    top: -15px;
+  }
+}
+
+.nav-carousel {
+  position: absolute;
+  right: 0;
+  transform: translateY(-50%);
+  top: 50%;
+  z-index: 2;
+  @media (max-width: 767px) {
+    top: 3%;
+  }
+  & > div {
+    background: #fff;
+    display: block;
+    padding: 30px;
+    cursor: pointer;
+    position: relative;
+    margin-right: 0;
+    font-size: 0;
+
+    @media (max-width: 767px) {
+      display: inline-block;
+      padding: 15px;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      @include box-shadow;
+      background: #fff;
+      border: 1px solid #F7F7F7;
+      @media (max-width: 767px) {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    &:first-child {
+      border-bottom: 1px solid #FBFBFB;
+      &:after {
+        background: url($path-to-images + "arrow_prev_dark.svg") center no-repeat;
+
+      }
+    }
+    &:last-child {
+      &:after {
+        background: url($path-to-images + "arrow_next_dark.svg") center no-repeat;
+      }
+    }
+  }
+}
