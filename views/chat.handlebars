@@ -136,9 +136,6 @@
 
 	    var text_reply = "Hello. Great to have you here!";
 
-	    responsiveVoice.setDefaultVoice("US English Female", {rate: 0.5});
-	    responsiveVoice.speak(text_reply);
-
 	    $('.chat__messages')
 	    .append(`<div class="message message_vinci">
 	    <img class="vinci-logo" src="${vinciAvatar}" alt="">
@@ -150,9 +147,6 @@
 	    $('.chat__messages').scrollTop($('.chat__messages')[0].scrollHeight);
 
 	    var text_reply = "Let's get started!";
-
-    	responsiveVoice.setDefaultVoice("US English Female", {rate: 0.5});
-	    responsiveVoice.speak(text_reply);
 
 	    $('.chat__messages')
 	    .append(`<div class="message message_vinci">
