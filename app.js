@@ -283,7 +283,7 @@ app.post('/hellovinciai', function(req, res) {
         res.send({
             web_reply: reply,
             status: 500,
-            batman: false
+            batman: "false"
         });
 
     });
