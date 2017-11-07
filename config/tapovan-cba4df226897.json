@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "tapovan-f64b6",
+  "private_key_id": "cba4df226897680eff38da3d8d69aed106b2391d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCYSZcC/KjQ2gCy\nWdjGuo5ZwldNjtI1r987R+/jAnbzfn626/+Lke4lQFYyepxJhSneSuvaEKklkMng\nrsfgFe2pLf9iELjqggcyBnV7dzZXARyoXdYX+9eVeTeJUaQWyMMOW/vjpxPSEq+i\nCAlrtQAeTgjlXD2WoTO1dOSBdhQ76Iugla5ppnYywNug/HX+uHPrdLtPLZvne35O\nvTH/YCbowtYE/S3dBsrgNh8D/z6yszSLApT+ezPFN/sHLvSl4/Cef+RmFlbd7hwp\n8HHQfGjwDQMY4xzcovRmtkFvwiS81lmVeK/L16maKRFmw8tOfsQrh8oOsCoh4J5O\nIrdNZ6YBAgMBAAECgf8cH0ejy/fgzMetwXaNCSZm4CllfFpiHHg8zXjSX9u99Qrk\nllag9fHkYl0iNUI0BKmwQzJxGPwjbV/aZGxeSHsuIsoAC6NNd9wCtCHXcWXquANy\nx0e7mUyjOoWzwtlqdU72XkYsMOf+gzTfClzmM8Ax2Hc/SiliOtXLTJEy1xTyR7zG\nTEWYAqLHP+S/2DPaGS2KmHbdOwlbVuldy0s9upyW1XPijJXUUdKVks938IWh53b3\n0y7/Q8bpxkZVj37/amooLqW/Jt2zNWrGhElFxVnBAeDgfd1pdh2/MltgdSuPekUm\nCZ/2IwhRzYl7J0Xn9zeUeJFwv+8EDFj7b4bVrCECgYEAx9mt4bQUd/4SgaQi2V50\nP54X6/rVOAEkeUgubQbtA6dFoRdQ/Jvnd+SUQNgyBMFsxl/Oq7N05j5rwMTIXMUi\n8TFV1XHhnu2HnNG5I1k3Y8ImAa2KHJiTcXWRpIHHIH/obQuDXOSyX6G7N/LdvKVT\nKbFqjCVNbEGV6iCtI6ckvFECgYEAwxLulnep7gWl+ZqhSLXsDAPcTiBAj0n497oJ\nxbov+ZiydFG1BI961D96Xb2apXL2B/krPPj+l0qugoEGcjK6tAiYXiEFIctxpB45\n82oZcEOnvn4Oc7lKhO2NpVTJ5A4ZwZ4Wf/0mIkUh3d8re9v/etJx/7YdtC4Yz+ac\npytX0rECgYEAuCL481zY/zY6FvkEowNEWNlxcRxMGK30zUqUfCBFgXg9z4+MLzP2\nsaEKeDS64WbWsnDUG5/dtccNwS+O7Os2psSuMVwcZjK1IOibjNZHEsNwAVvERVTP\nhVquNsTclDVGEjLpdk3BjBuYRJSheY9acK/nW/mCvJwxZOd2n8MBNgECgYEAl/Pl\nWdv4yGop8Zabz7G2H13afBjvcS5j+0Q1XIo92KUzTRxgbx78xNx1ixOopPw53dgf\n8Czc1CjeatXqmYYenSKc3aXHA54f9YF+Drg0/JgW0HIM++P3wjfxQDod0cGSGpn0\nWNpum/9R9CxlCORDy/6lwlSwKqxFs5ylpipDDOECgYAda06axEsz9q9yXSwsdzn1\ns0UuTtQdCSKbYRmWS0QsQP7ql1gs546cX1rkur86z52WEqBrQoqYObd9LEu8UL/K\nwcVX8zm3w6AQBZHd8fLlVgtUPoCkwRTzCxZzvgfOXZFvijYFa+7E3lOJI1Aq5O3G\nIptOHC0Jr4BMKfL38/2Mqg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "tapovan-speech@tapovan-f64b6.iam.gserviceaccount.com",
+  "client_id": "106995211471097661765",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/tapovan-speech%40tapovan-f64b6.iam.gserviceaccount.com"
+}
