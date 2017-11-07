@@ -150,17 +150,74 @@ app.use('/admin/update_tags', update_tags_router);
 
 //********************** 9. Routes *********************************************
 app.get('/', function(req, res) {
-    res.send("Hi there!!")
+    res.render('home', {
+        layout: 'client'
+    });
     console.log("Get request received on the homepage. App is working");
 });
 
-
+//Next Route-------------------------------------------------------------
 app.get('/home', function(req, res) {
     res.render('home', {
         layout: 'client'
     });
     console.log("Get request received on the homepage. App is working");
 });
+
+
+//Next Route-------------------------------------------------------------
+app.get('/explainer_video', function(req, res) {
+    res.render('explainer_video', {
+        layout: 'client'
+    });
+    console.log("Get request received on the homepage. App is working");
+});
+
+//Next Route-------------------------------------------------------------
+app.get('/vinci_commands', function(req, res) {
+    res.render('vinci_commands', {
+        layout: 'client'
+    });
+    console.log("Get request received on the homepage. App is working");
+});
+
+//Next Route-------------------------------------------------------------
+app.get('/chat', function(req, res) {
+    console.log("Request hit the client home route");
+    res.render('chat', {
+        layout: 'client'
+    });
+    console.log("Get request received on the homepage. App is working");
+});
+
+
+//Next Route-------------------------------------------------------------
+app.get('/faqs', function(req, res) {
+    console.log("Request hit the client home route");
+    res.render('home', {
+        layout: 'client'
+    });
+    console.log("Get request received on the homepage. App is working");
+});
+
+//Next Route-------------------------------------------------------------
+app.get('/privacy_policy', function(req, res) {
+    console.log("Request hit the client home route");
+    res.render('home', {
+        layout: 'client'
+    });
+    console.log("Get request received on the homepage. App is working");
+});
+
+//Next Route-------------------------------------------------------------
+app.get('/blog', function(req, res) {
+    console.log("Request hit the client home route");
+    res.render('home', {
+        layout: 'client'
+    });
+    console.log("Get request received on the homepage. App is working");
+});
+
 //************************ Routes Over **************************************
 
 
