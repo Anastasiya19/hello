@@ -53,6 +53,9 @@ const translate = require('@google-cloud/translate')({
     projectId: 'tapovan-f64b6',
     keyFilename: './config/tapovan-cba4df226897.json'
 });
+
+const format_functions = require('./helpers/query_format/format_functions.js');
+
 //******End********
 
 //5. Load the configurations
@@ -225,6 +228,25 @@ app.post('/hellovinciai', function(req, res) {
     console.log("This is the body of the request received from the frontend: ", req.body);
     console.log("This is the request text: ", req.body.api_request_text);
     console.log("This is the active_list of mobiles: ", req.body.active_list);
+
+    //Preparing the request to be sent to API AI
+    var requestData = {
+        query: req.body.api_request_text,
+        lang: "en",
+        sessionId: "1234567890",
+        originalRequest: {
+            source: "slack_testbot",
+            data: {
+                active_list: req.body.active_list
+            }
+        }
+    };
+
+
+    //Helper functions to convert megapixel to mp and give spacing to mah and mp
+    requestData.query = format_functions.megapixel_replace(requestData.query);
+    requestData.query = format_functions.battery_spacing(requestData.query);
+    requestData.query = format_functions.camera_spacing(requestData.query);
 
     //batman is the alias for webhook
     res.send({
