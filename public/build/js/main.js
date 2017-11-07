@@ -17397,7 +17397,7 @@ $('#send_chat').on('click', function (event) {
     }
 
     // sending the message
-    askapiai(chat_input);
+    hellovinciai(chat_input);
 
 
 });
@@ -20589,7 +20589,7 @@ function reload_product(raul){
 
 }
 //Function to create the request and get the reply
-function askapiai(msg) {
+function hellovinciai(msg) {
 
     console.log("Script is loaded");
 
@@ -20654,7 +20654,7 @@ function askapiai(msg) {
 
     //Get reply back from the API
     //Send the POST request
-    $.post("/askapiai", {
+    $.post("/hellovinciai", {
         api_request_text: msg,
         active_list: active_list
     }, function(reply_received) {

@@ -123,7 +123,7 @@ $('#send_chat').on('click', function (event) {
     }
 
     // sending the message
-    askapiai(chat_input);
+    hellovinciai(chat_input);
 
 
 });

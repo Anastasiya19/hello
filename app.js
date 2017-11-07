@@ -218,6 +218,28 @@ app.get('/blog', function(req, res) {
     console.log("Get request received on the homepage. App is working");
 });
 
+//Next Route-------------------------------------------------------------
+//Route for processing the chat message received from frontend 
+app.post('/hellovinciai', function(req, res) {
+
+    //batman is the alias for webhook
+    res.send({
+        web_reply: "We are coming",
+        status: "Excellent",
+        batman: "Ready"
+    });
+
+
+    //**** uncomment to enable translation *****
+    //   }//if ends
+
+    // });
+    //**** uncomment to enable translation *****
+
+
+
+});
+
 //************************ Routes Over **************************************
 
 
