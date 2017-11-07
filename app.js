@@ -263,8 +263,6 @@ app.post('/hellovinciai', function(req, res) {
         console.log("This is response on API AI which is sent back to frontend: ", response);
         console.log("Request processing over: Sending the processed data back to the client");
 
-        var time = new Date() - start;
-
         console.log("Time taken in processing the request on the backend: ", time);
 
         //batman is the alias for webhook
