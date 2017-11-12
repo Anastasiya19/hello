@@ -150,7 +150,7 @@ function beckham_router(beckham, zlatan) {
     }
 
     //Tested - Working correctly
-    //Video review
+    //Error case
     if (beckham.query_status === 999) {
         
         //Need to build the video element

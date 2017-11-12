@@ -21,9 +21,18 @@ function hellovinciai(msg) {
     //if the page is loaded for the first time or the user has cleared localStorage
     //create a new localStorage item with an empty object to store the context of the conversation
     if (localStorage.getItem("conversation_context") === null) {
+        var empty_arr = [];
         var obj = {
-            test: "success"
+            mobiles: empty_arr,
+            brands: empty_arr,
+            tags: empty_arr,
+            attributes: empty_arr,
+            all_mobiles: empty_arr,
+            conversation_flag: 0,
+            criteria_finalized_status: 0, 
+            criteria_process_count: 0
         };
+
         localStorage.setItem("conversation_context", JSON.stringify(obj));
     }
 
