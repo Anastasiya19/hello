@@ -19705,6 +19705,13 @@ Messi.prototype.jack_reply = function(){
     this.context_summary.push(reply);
 
 }
+function update_conversation_context(conversation_context){
+
+	console.log("This is conversation_context on the frontend: ", conversation_context);
+
+	localStorage.setItem("conversation_context", JSON.stringify(conversation_context));
+
+}
 function Raul (mobile, load_status) {
 
     console.log("Raul is on the pitch");
@@ -20752,6 +20759,8 @@ function hellovinciai(msg) {
 
             //Check the status of the request to decide which element to create
             beckham_router(beckham, zlatan, buffon);
+
+            update_conversation_context(reply_received.web_reply.conversation_context);
 
         }
 
