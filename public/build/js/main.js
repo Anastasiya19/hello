@@ -20608,6 +20608,12 @@ function hellovinciai(msg) {
         localStorage.setItem("active_list", JSON.stringify(arr));
     }
 
+    //if the page is loaded for the first time or the user has cleared localStorage
+    //create a new localStorage item with an empty object to store the context of the conversation
+    if (localStorage.getItem("conversation_context") === null) {
+        var obj = {};
+        localStorage.setItem("conversation_context", JSON.stringify(obj));
+    }
 
 
     //all_discussed_list array keeps a log of all phones discussed by the user
@@ -20631,6 +20637,14 @@ function hellovinciai(msg) {
 
         active_list = JSON.parse(localStorage.getItem("active_list")).length > 0 ? JSON.parse(localStorage.getItem("active_list")) : [];
     }
+
+    var conversation_context = {};
+
+    if (JSON.parse(localStorage.getItem("conversation_context")) !== null) {
+
+        conversation_context = JSON.parse(localStorage.getItem("conversation_context"));
+    }
+
 
 
     setTimeout(function() {
@@ -20656,7 +20670,8 @@ function hellovinciai(msg) {
     //Send the POST request
     $.post("/hellovinciai", {
         api_request_text: msg,
-        active_list: active_list
+        active_list: active_list,
+        conversation_context: conversation_context
     }, function(reply_received) {
 
         var start = new Date();
