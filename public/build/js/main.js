@@ -20611,7 +20611,9 @@ function hellovinciai(msg) {
     //if the page is loaded for the first time or the user has cleared localStorage
     //create a new localStorage item with an empty object to store the context of the conversation
     if (localStorage.getItem("conversation_context") === null) {
-        var obj = {};
+        var obj = {
+            test: "success"
+        };
         localStorage.setItem("conversation_context", JSON.stringify(obj));
     }
 
