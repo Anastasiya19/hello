@@ -30,6 +30,7 @@ function hellovinciai(msg) {
             all_mobiles: empty_arr,
             conversation_flag: 0,
             criteria_finalized_status: 0, 
+            criteria_finalized_status_temp: 1,
             criteria_process_count: 0
         };
 
