@@ -20753,47 +20753,6 @@ function hellovinciai(msg) {
             //Check the status of the request to decide which element to create
             beckham_router(beckham, zlatan, buffon);
 
-
-            
-
-            console.log(reply_received);
-
-            // if ('speechSynthesis' in window) {
-
-            //     console.log("Inside speechSynthesis true");
-            //     var to_speak = new SpeechSynthesisUtterance('Here is what I found Ankur!');
-            //     //var voices = window.SpeechSynthesis.getVoices();
-            //     // console.log(window.SpeechSynthesis);
-            //     // console.log("This is the speechSynthesis object: ", window.speechSynthesis);
-
-
-            //     const awaitVoices = new Promise(done => speechSynthesis.onvoiceschanged = done);
-
-            //     listVoices();
-
-            //     function listVoices() {
-            //         awaitVoices.then(() => {
-            //             let voices = speechSynthesis.getVoices();
-            //             console.log(voices);
-            //             to_speak.voice = voices[71];
-            //             window.speechSynthesis.speak(to_speak);
-
-            //             // return voices[71];
-            //         });
-            //     }
-
-            //     //listVoices();
-            //     // console.log("This is voices: ", voices);
-
-
-            //     //to_speak.voice = "Google हिन्दी";
-
-
-            // } else {
-
-            //     console.log("speechSynthesis false");
-            // }
-
         }
 
         if (reply_received.batman === "true" && reply_received.status.code === 206) {
