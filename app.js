@@ -181,7 +181,8 @@ app.post('/hellovinciai', function(req, res) {
         originalRequest: {
             source: "slack_testbot",
             data: {
-                active_list: req.body.active_list
+                active_list: req.body.active_list,
+                conversation_context: req.body.conversation_context
             }
         }
     };
