@@ -122,7 +122,7 @@ function hellovinciai(msg) {
 
             var zlatan = new Zlatan(reply_received.web_reply.data.mobiles);
 
-            var buffon = new Buffon(reply_received.web_reply.dispayText);
+            var buffon = new Buffon(reply_received.web_reply.displayText);
 
             //Check the status of the request to decide which element to create
             beckham_router(beckham, zlatan, buffon);
