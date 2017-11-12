@@ -4,4 +4,6 @@ function update_conversation_context(conversation_context){
 
 	localStorage.setItem("conversation_context", JSON.stringify(conversation_context));
 
+	console.log("Updated localStorage");
+
 }

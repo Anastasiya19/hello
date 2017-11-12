@@ -127,7 +127,7 @@ function hellovinciai(msg) {
             //Check the status of the request to decide which element to create
             beckham_router(beckham, zlatan, buffon);
 
-            update_conversation_context(reply_received.web_reply.conversation_context);
+            update_conversation_context(reply_received.web_reply.data.conversation_context);
 
         }
 
