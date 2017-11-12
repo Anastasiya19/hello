@@ -1,4 +1,4 @@
-function beckham_router(beckham, zlatan) {
+function beckham_router(beckham, zlatan, buffon) {
 
     console.log("Inside beckham_router");
 
@@ -155,6 +155,13 @@ function beckham_router(beckham, zlatan) {
         
         //Need to build the video element
         beckham.build_error_element();
+
+    }
+
+    if (beckham.query_status === 1) {
+        
+        //Need to build the video element
+        beckham.build_text_reply_element(buffon);
 
     }
 

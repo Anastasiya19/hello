@@ -17636,7 +17636,7 @@ function batman_missing(reply_received) {
     } //if ends
 
 } //function batman_false ends
-function beckham_router(beckham, zlatan) {
+function beckham_router(beckham, zlatan, buffon) {
 
     console.log("Inside beckham_router");
 
@@ -17793,6 +17793,13 @@ function beckham_router(beckham, zlatan) {
         
         //Need to build the video element
         beckham.build_error_element();
+
+    }
+
+    if (beckham.query_status === 1) {
+        
+        //Need to build the video element
+        beckham.build_text_reply_element(buffon);
 
     }
 
@@ -18008,6 +18015,27 @@ Beckham.prototype.build_error_element = function(){
 
 }
 
+Beckham.prototype.build_text_reply_element = function(buffon){
+
+    this.template = $('#handlebars-case-1').html();
+
+    // Compile the template data into a function
+    this.templateScript = Handlebars.compile(this.template);
+
+    var context = {
+        text: buffon.displayText
+    }
+
+    this.html = this.templateScript(context);
+
+     // Insert the HTML code into the page
+    $('.chat__messages').append(this.html);
+
+    this.scroll_into_view();
+
+
+}
+
 
 Beckham.prototype.select_handlebars_template = function(){
 	if(this.query_status === 100 || this.query_status === 300 || this.query_status === 101 
@@ -18046,6 +18074,14 @@ Beckham.prototype.scroll_into_view = function(){
 
     b[element_count].scrollIntoView();
     console.log("Scrolled into view");
+}
+function Buffon (text) {
+
+    console.log("Zlatan is on the pitch");
+
+    //Query status
+    this.displayText = text;
+
 }
 function comparison_request(zlatan, query_status){
 
@@ -20656,6 +20692,7 @@ function hellovinciai(msg) {
         conversation_context = JSON.parse(localStorage.getItem("conversation_context"));
     }
 
+    console.log("This is conversation_context which is going to backend :", conversation_context);
 
 
     setTimeout(function() {
@@ -20711,8 +20748,10 @@ function hellovinciai(msg) {
 
             var zlatan = new Zlatan(reply_received.web_reply.data.mobiles);
 
+            var buffon = new Buffon(reply_received.web_reply.dispayText);
+
             //Check the status of the request to decide which element to create
-            beckham_router(beckham, zlatan);
+            beckham_router(beckham, zlatan, buffon);
 
 
             

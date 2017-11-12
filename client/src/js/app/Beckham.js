@@ -207,6 +207,27 @@ Beckham.prototype.build_error_element = function(){
 
 }
 
+Beckham.prototype.build_text_reply_element = function(buffon){
+
+    this.template = $('#handlebars-case-1').html();
+
+    // Compile the template data into a function
+    this.templateScript = Handlebars.compile(this.template);
+
+    var context = {
+        text: buffon.displayText
+    }
+
+    this.html = this.templateScript(context);
+
+     // Insert the HTML code into the page
+    $('.chat__messages').append(this.html);
+
+    this.scroll_into_view();
+
+
+}
+
 
 Beckham.prototype.select_handlebars_template = function(){
 	if(this.query_status === 100 || this.query_status === 300 || this.query_status === 101 

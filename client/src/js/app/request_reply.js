@@ -66,6 +66,7 @@ function hellovinciai(msg) {
         conversation_context = JSON.parse(localStorage.getItem("conversation_context"));
     }
 
+    console.log("This is conversation_context which is going to backend :", conversation_context);
 
 
     setTimeout(function() {
@@ -121,8 +122,10 @@ function hellovinciai(msg) {
 
             var zlatan = new Zlatan(reply_received.web_reply.data.mobiles);
 
+            var buffon = new Buffon(reply_received.web_reply.dispayText);
+
             //Check the status of the request to decide which element to create
-            beckham_router(beckham, zlatan);
+            beckham_router(beckham, zlatan, buffon);
 
 
             

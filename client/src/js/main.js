@@ -136,6 +136,7 @@ $('#send_chat').on('click', function (event) {
 //= app/batman_missing.js
 //= app/beckham_router.js
 //= app/beckham.js
+//= app/Buffon.js
 //= app/comparison_request.js
 //= app/event_helpers.js
 //= app/get_video.js
