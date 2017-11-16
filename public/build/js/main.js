@@ -20682,9 +20682,6 @@ function hellovinciai(msg) {
         active_list = JSON.parse(localStorage.getItem("active_list"));
     }
 
-    console.log("This is conversation_context which is going to backend :", conversation_context);
-
-
     setTimeout(function() {
         $('.chat__messages').
         append(`<div class="message message_vinci is--typing">
