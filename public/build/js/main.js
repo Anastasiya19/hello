@@ -20653,7 +20653,7 @@ function hellovinciai(msg) {
             brands: empty_arr,
             tags: empty_arr,
             attributes: empty_arr,
-            intentId: empty_arr
+            intentId: empty_arr,
             criteria_finalized_status: 0, 
             criteria_finalized_status_temp: 1,
             criteria_process_count: 0
