@@ -20631,48 +20631,44 @@ function hellovinciai(msg) {
 
 
     //if the page is loaded for the first time or the user has cleared localStorage
-    //create a new localStorage item with an empty arr to store a list of all phones discussed
-    if (localStorage.getItem("all_discussed_list") === null) {
-        var arr = [];
-        localStorage.setItem("all_discussed_list", JSON.stringify(arr));
-    }
-
-    //if the page is loaded for the first time or the user has cleared localStorage
-    //create a new localStorage item with an empty arr to store a list of all phones discussed
-    if (localStorage.getItem("active_list") === null) {
-        var arr = [];
-        localStorage.setItem("active_list", JSON.stringify(arr));
-    }
-
-    //if the page is loaded for the first time or the user has cleared localStorage
-    //create a new localStorage item with an empty object to store the context of the conversation
-    if (localStorage.getItem("conversation_context") === null || localStorage.getItem("conversation_context") === "undefined") {
+    //create a new localStorage item with an empty arr to store the recent context of the conversation
+    if (localStorage.getItem("all_discussed_list") === null || localStorage.getItem("all_discussed_list") === "undefined") {
         var empty_arr = [];
         var obj = {
             mobiles: empty_arr,
             brands: empty_arr,
             tags: empty_arr,
             attributes: empty_arr,
-            all_mobiles: empty_arr,
-            conversation_flag: 0,
+            intentId: empty_arr
+        }
+        localStorage.setItem("all_discussed_list", JSON.stringify(arr));
+    }
+
+    //if the page is loaded for the first time or the user has cleared localStorage
+    //create a new localStorage item with an empty arr to store the latest context of the conversation
+    if (localStorage.getItem("active_list") === null) {
+        var empty_arr = [];
+        var obj = {
+            mobiles: empty_arr,
+            brands: empty_arr,
+            tags: empty_arr,
+            attributes: empty_arr,
+            intentId: empty_arr
             criteria_finalized_status: 0, 
             criteria_finalized_status_temp: 1,
             criteria_process_count: 0
         };
-
-        localStorage.setItem("conversation_context", JSON.stringify(obj));
+        localStorage.setItem("active_list", JSON.stringify(arr));
     }
-
 
     //all_discussed_list array keeps a log of all phones discussed by the user
     //It needs to be sent to the server
     //if all_discussed_list localStorage length is greater than zero, then
     //send the phones stored in localStorage,
     //else create an emply all_discussed_list array
-    var all_discussed_list = [];
+    var all_discussed_list = {};
     if (JSON.parse(localStorage.getItem("all_discussed_list")) !== null) {
-
-        all_discussed_list = JSON.parse(localStorage.getItem("all_discussed_list")).length > 0 ? JSON.parse(localStorage.getItem("all_discussed_list")) : [];
+        all_discussed_list = JSON.parse(localStorage.getItem("all_discussed_list"));
     }
 
     //active_list array keeps a log of the phones discussed by the user
@@ -20680,17 +20676,10 @@ function hellovinciai(msg) {
     //if active_list localStorage length is greater than zero, then
     //send the phones stored in localStorage active_list array,
     //else send an empty array to active_phones
-    var active_list = [];
+    var active_list = {};
     if (JSON.parse(localStorage.getItem("active_list")) !== null) {
 
-        active_list = JSON.parse(localStorage.getItem("active_list")).length > 0 ? JSON.parse(localStorage.getItem("active_list")) : [];
-    }
-
-    var conversation_context = {};
-
-    if (JSON.parse(localStorage.getItem("conversation_context")) !== null) {
-
-        conversation_context = JSON.parse(localStorage.getItem("conversation_context"));
+        active_list = JSON.parse(localStorage.getItem("active_list"));
     }
 
     console.log("This is conversation_context which is going to backend :", conversation_context);
@@ -20719,8 +20708,8 @@ function hellovinciai(msg) {
     //Send the POST request
     $.post("/hellovinciai", {
         api_request_text: msg,
-        active_list: active_list,
-        conversation_context: conversation_context
+        all_discussed_list: all_discussed_list,
+        active_list: active_list
     }, function(reply_received) {
 
         var start = new Date();
@@ -20754,7 +20743,9 @@ function hellovinciai(msg) {
             //Check the status of the request to decide which element to create
             beckham_router(beckham, zlatan, buffon);
 
-            update_conversation_context(reply_received.web_reply.data.conversation_context);
+            update_all_discussed_list(reply_received.web_reply.data.all_discussed_list);
+
+            update_active_list(reply_received.web_reply.data.active_list);
 
         }
 
@@ -20861,13 +20852,22 @@ function specifications_request(zlatan){
 	//Now we need to append the html for all the mobiles created by raul constructor function
 
 }
-function update_conversation_context(conversation_context){
+function update_active_list(active_list){
 
-	console.log("This is conversation_context on the frontend: ", conversation_context);
+	console.log("This is active_list on the frontend: ", active_list);
 
-	localStorage.setItem("conversation_context", JSON.stringify(conversation_context));
+	localStorage.setItem("active_list", JSON.stringify(active_list));
 
-	console.log("Updated localStorage");
+	console.log("Updated localStorage active_list");
+
+}
+function update_all_discussed_list(all_discussed_list){
+
+	console.log("This is all_discussed_list on the frontend: ", all_discussed_list);
+
+	localStorage.setItem("all_discussed_list", JSON.stringify(all_discussed_list));
+
+	console.log("Updated localStorage all_discussed_list");
 
 }
 function Zlatan (mobiles) {

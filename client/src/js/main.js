@@ -147,7 +147,8 @@ $('#send_chat').on('click', function (event) {
 //= app/reload_product.js
 //= app/request_reply.js
 //= app/specifications_request.js
-//= app/update_conversation_context.js
+//= app/update_active_list.js
+//= app/update_all_discussed_list.js
 //= app/Zlatan.js
 
 $(document).ready(function () {
