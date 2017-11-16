@@ -15,7 +15,7 @@ function hellovinciai(msg) {
             attributes: empty_arr,
             intentId: empty_arr
         }
-        localStorage.setItem("all_discussed_list", JSON.stringify(arr));
+        localStorage.setItem("all_discussed_list", JSON.stringify(obj));
     }
 
     //if the page is loaded for the first time or the user has cleared localStorage
@@ -32,7 +32,7 @@ function hellovinciai(msg) {
             criteria_finalized_status_temp: 1,
             criteria_process_count: 0
         };
-        localStorage.setItem("active_list", JSON.stringify(arr));
+        localStorage.setItem("active_list", JSON.stringify(obj));
     }
 
     //all_discussed_list array keeps a log of all phones discussed by the user
