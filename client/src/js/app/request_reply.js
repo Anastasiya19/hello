@@ -24,6 +24,7 @@ function hellovinciai(msg) {
         var empty_arr = [];
         var obj = {
             mobiles: empty_arr,
+            query_parsed_mobiles: empty_arr,
             brands: empty_arr,
             tags: empty_arr,
             attributes: empty_arr,
