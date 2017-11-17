@@ -29,7 +29,6 @@ function hellovinciai(msg) {
             attributes: empty_arr,
             intentId: empty_arr,
             criteria_finalized_status: 0, 
-            criteria_finalized_status_temp: 1,
             criteria_process_count: 0
         };
         localStorage.setItem("active_list", JSON.stringify(obj));
