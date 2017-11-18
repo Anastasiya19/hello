@@ -169,7 +169,11 @@ app.post('/hellovinciai', function(req, res) {
 
     console.log("This is the body of the request received from the frontend: ", req.body);
     console.log("This is the request text: ", req.body.api_request_text);
-    console.log("This is the active_list mobiles: ", req.body.active_list);
+    console.log("This is the active_list mobiles before JSON parse: ", req.body.active_list);
+
+    req.body.active_list = JSON.parse(req.body.active_list);
+
+    console.log("This is the active_list mobiles after JSON parse: ", req.body.active_list);
     
 
     //Preparing the request to be sent to API AI

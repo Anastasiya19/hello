@@ -50,12 +50,15 @@ function hellovinciai(msg) {
     //if active_list localStorage length is greater than zero, then
     //send the phones stored in localStorage active_list array,
     //else send an empty array to active_phones
-    var active_list = {};
-    if (JSON.parse(localStorage.getItem("active_list")) !== null) {
 
-        active_list = JSON.parse(localStorage.getItem("active_list"));
-        console.log("This is the parsed active_list on the frontend before sending to the server: ", active_list);
-    }
+    // var active_list = {};
+    // if (JSON.parse(localStorage.getItem("active_list")) !== null) {
+
+    //     active_list = JSON.parse(localStorage.getItem("active_list"));
+    //     console.log("This is the parsed active_list on the frontend before sending to the server: ", active_list);
+    // }
+
+    var active_list = localStorage.getItem("active_list");
 
     setTimeout(function() {
         $('.chat__messages').
