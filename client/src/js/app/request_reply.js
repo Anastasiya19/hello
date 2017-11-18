@@ -54,6 +54,7 @@ function hellovinciai(msg) {
     if (JSON.parse(localStorage.getItem("active_list")) !== null) {
 
         active_list = JSON.parse(localStorage.getItem("active_list"));
+        console.log("This is the parsed active_list on the frontend before sending to the server: ", active_list);
     }
 
     setTimeout(function() {
