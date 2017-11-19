@@ -20662,6 +20662,7 @@ function hellovinciai(msg) {
             price_comment : empty_arr,
             processor_core : empty_arr,
             processor_speed : empty_arr,
+            query_parsed_mobiles : empty_arr,
             ram_capacity : empty_arr,
             retailers : empty_arr,
             screen_size : empty_arr,
