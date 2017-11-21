@@ -17233,12 +17233,9 @@ $(window).on('load resize', function () {
         var width = $(window).width() - 70;
         $('.width-full-mobile').css('width', width);
     }
-    blockAligner.setEqHeight($('.specific'), $('.specific__item'));
 });
 
-$(window).resize(function () {
-    blockAligner.setEqHeight($('.specific'), $('.specific__item'));
-})
+
 var linkLocation = '';
 $('.next').click(function (e) {
   e.preventDefault();
@@ -17323,7 +17320,7 @@ $('.collapsed-block__dropdown').click(function (e) {
   }
 });
 $(document).ready(function () {
-  var container = $(window);
+  let container = $(window);
   $('.selection').on('click', function () {
     container = $(this);
     var list = $(this).find($('.selection__list'));

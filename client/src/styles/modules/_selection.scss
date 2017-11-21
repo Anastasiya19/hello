@@ -33,7 +33,7 @@
       width: 120%;
     }
     &_hidden {
-      display: none;
+      display: none !important;
     }
     &_inline {
       .selection__item {

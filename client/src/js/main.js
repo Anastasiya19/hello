@@ -72,12 +72,9 @@ $(window).on('load resize', function () {
         var width = $(window).width() - 70;
         $('.width-full-mobile').css('width', width);
     }
-    blockAligner.setEqHeight($('.specific'), $('.specific__item'));
 });
 
-$(window).resize(function () {
-    blockAligner.setEqHeight($('.specific'), $('.specific__item'));
-})
+
 //= custom/animations.js
 //= custom/collapsing.js
 //= custom/selectLng.js
