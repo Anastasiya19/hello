@@ -17233,12 +17233,8 @@ $(window).on('load resize', function () {
     var width = $(window).width() - 70;
     $('.width-full-mobile').css('width', width);
   }
-  blockAligner.setEqHeight($('.specific'), $('.specific__item'));
 });
 
-$(window).resize(function () {
-  blockAligner.setEqHeight($('.specific'), $('.specific__item'));
-})
 var linkLocation = '';
 $('.next').click(function (e) {
   e.preventDefault();
