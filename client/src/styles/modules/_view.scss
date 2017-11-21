@@ -176,13 +176,14 @@
     }
     display: inline-block;
   }
-  &:nth-child(1), &:nth-child(2) {
-    .more-info__block {
-      bottom: auto;
-      top: -75px;
+  @media (max-width: 768px) {
+    &:nth-child(1), &:nth-child(2) {
+      .more-info__block {
+        bottom: auto;
+        top: -75px;
+      }
     }
   }
-
 }
 
 .more-info {
