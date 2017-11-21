@@ -308,7 +308,7 @@ Handlebars.registerHelper('generate_color_variants_helper', function() {
 		<span class="characteristic__color " style="background-color:${getHex(this.selected_variant.general_specifications.model_color)};"></span>
 		</span>
 	</h5>
-	<ul class="selection__list selection__list_hidden">
+	<ul class="selection__list selection__list_up selection__list_hidden">
 	${color_variants}
 	</ul>`;
 
