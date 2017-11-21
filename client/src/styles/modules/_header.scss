@@ -25,11 +25,29 @@
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#017fff', endColorstr='#8cbffe', GradientType=0);
     }
     &_label {
+      @media (max-width: 551px) {
+        display: none;
+      }
+    }
+    &_mobile-hide {
       @media (max-width: 550px) {
         display: none;
       }
     }
-
+    &_mobile-home {
+      @media (max-width: 550px) {
+        position: absolute;
+        top: -5px;
+        left: 0;
+      }
+    }
+    &_mobile-language{
+      @media (max-width: 550px) {
+        position: absolute;
+        top: -5px;
+        right: 0;
+      }
+    }
     &_icon {
       position: relative;
       &:after {
@@ -52,7 +70,7 @@
           background-image: url($path-to-images + "web-page-home-blue.svg");
         }
       }
-      @media (min-width: 549px) {
+      @media (min-width: 551px) {
         display: none;
       }
     }

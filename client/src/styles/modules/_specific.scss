@@ -3,15 +3,17 @@
   border-radius: 10px;
   font-size: 0;
   max-width: 640px;
-
+  &__row {
+    display: flex;
+    flex-direction: row;
+    @media (max-width: 450px) {
+      flex-direction: column;
+    }
+  }
   &__item {
-    display: inline-block;
     padding: 30px 15px;
     width: calc(100% / 3);
     border: 1px solid #FAFBFC;
-    @media (max-width: 767px) {
-      width: calc(100% / 2);
-    }
     @media (max-width: 450px) {
       width: 100%;
       padding: 10px;

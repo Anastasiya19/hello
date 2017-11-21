@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  var container = $(window);
+  let container = $(window);
   $('.selection').on('click', function () {
     container = $(this);
     var list = $(this).find($('.selection__list'));

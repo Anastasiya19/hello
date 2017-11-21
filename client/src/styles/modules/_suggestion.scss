@@ -8,6 +8,7 @@
     background: #fff;
     transition: ease .2s;
     border-radius: 35px;
+    margin-bottom: 10px;
     @include box-shadow;
     &:not(:last-child) {
       margin-right: 10px;
