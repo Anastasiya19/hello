@@ -112,6 +112,9 @@
     img {
       height: 16px;
       margin: auto;
+      @media (max-width: 767px) {
+        margin-top: -13px;
+      }
     }
     &_best {
       text-align: right;
