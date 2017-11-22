@@ -17,7 +17,9 @@ function beckham_router(beckham, zlatan, buffon) {
             mobiles.push({ variants: variants })
         })
 
-        zlatan.mobiles = mobiles
+        zlatan.mobiles = mobiles;
+
+        beckham.build_text_reply_element(buffon);
 
         beckham.build_specifications_element(zlatan);
 
