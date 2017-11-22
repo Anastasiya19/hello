@@ -144,6 +144,7 @@ function sendMessage() {
 //= app/Giggs.js
 //= app/handlebars_helpers.js
 //= app/Messi.js
+//= app/Neymar.js
 //= app/Raul.js
 //= app/reload_product.js
 //= app/request_reply.js

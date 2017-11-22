@@ -17597,8 +17597,11 @@ function batman_false(reply_received) {
               <p>${reply_received.web_reply.speech}</p>
             </div>
             <ul class="suggestion">
-              <li class="suggestion__item br-chat">Show me iPhone 6s</li>
-              <li class="suggestion__item  suggestion__item_active br-chat ">Tell me about iPhone 7 Battery</li>
+              <li class="suggestion__item br-chat" onclick="send_question(event)">iPhone 8</li>
+              <li class="suggestion__item br-chat" onclick="send_question(event)">Best phones under 15000</li>
+              <li class="suggestion__item br-chat" onclick="send_question(event)">Best phones under 25000</li>
+              <li class="suggestion__item br-chat" onclick="send_question(event)">Best camera phones</li>
+              <li class="suggestion__item br-chat" onclick="send_question(event)">Light weight phones</li>
             </ul>
           </div>`);
 
@@ -19731,6 +19734,35 @@ Messi.prototype.jack_reply = function(){
     this.context_summary.push(reply);
 
 }
+function Neymar (suggested_questions) {
+
+    console.log("Neymar is on the pitch");
+
+    //Mobile
+    this.suggested_questions = suggested_questions;
+    
+}
+
+//Function to set the ID
+Neymar.prototype.check_questions = function() {
+
+    if(this.suggested_questions.length > 0){
+
+        this.template = $('#handlebars-suggested-questions').html();
+        console.log("This is the template: ", this.template);
+
+        // Compile the template data into a function
+        this.templateScript = Handlebars.compile(this.template);
+        console.log("This is the templateScript: ", this.templateScript);
+
+        this.html = this.templateScript({ suggested_questions: this.suggested_questions });
+        console.log("This is the html: ", this.html);
+
+        // Insert the HTML code into the page
+        $('.chat__messages').append(this.html);
+
+    }
+}
 function Raul (mobile, load_status) {
 
     console.log("Raul is on the pitch");
@@ -20781,6 +20813,14 @@ function hellovinciai(msg) {
             var zlatan = new Zlatan(reply_received.web_reply.data.mobiles);
 
             var buffon = new Buffon(reply_received.web_reply.displayText);
+
+
+            if(reply_received.web_reply.data.suggested_questions !== undefined){
+                var neymar = new Neymar(reply_received.web_reply.data.suggested_questions);
+                
+                neymar.check_questions();    
+            }
+            
 
             //Check the status of the request to decide which element to create
             beckham_router(beckham, zlatan, buffon);

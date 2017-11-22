@@ -130,6 +130,14 @@ function hellovinciai(msg) {
 
             var buffon = new Buffon(reply_received.web_reply.displayText);
 
+
+            if(reply_received.web_reply.data.suggested_questions !== undefined){
+                var neymar = new Neymar(reply_received.web_reply.data.suggested_questions);
+                
+                neymar.check_questions();    
+            }
+            
+
             //Check the status of the request to decide which element to create
             beckham_router(beckham, zlatan, buffon);
 
