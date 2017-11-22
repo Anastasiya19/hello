@@ -15,8 +15,11 @@ function batman_missing(reply_received) {
               <p>There seems to be an issue at my end. Please try another query.</p>
             </div>
             <ul class="suggestion">
-              <li class="suggestion__item br-chat">Show me iPhone 6s</li>
-              <li class="suggestion__item  suggestion__item_active br-chat ">Tell me about iPhone 7 Battery</li>
+              <li class="suggestion__item br-chat" onclick="send_question(event)">iPhone 8</li>
+              <li class="suggestion__item br-chat" onclick="send_question(event)">Best phones under 15000</li>
+              <li class="suggestion__item br-chat" onclick="send_question(event)">Best phones under 25000</li>
+              <li class="suggestion__item br-chat" onclick="send_question(event)">Best camera phones</li>
+              <li class="suggestion__item br-chat" onclick="send_question(event)">Light weight phones</li>
             </ul>
           </div>`);
 
