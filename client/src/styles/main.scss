@@ -36,6 +36,7 @@ $path-to-images: '../assets/images/';
 @import "modules/spiner";
 @import "modules/slide-nav";
 @import "modules/info-box";
+@import "modules/category";
 html {
   height: 100%;
   width: 100%;
@@ -53,7 +54,6 @@ body {
 .wrapper {
   padding: rem(80) rem(65);
   background: #F4F5F9;
-  //min-height: 100%;
   background: -webkit-linear-gradient(to top, #FFFFFF, #F4F5F9);
   background: -moz-linear-gradient(to top, #FFFFFF, #F4F5F9);
   background: linear-gradient(to top, #FFFFFF, #F4F5F9);
@@ -90,7 +90,7 @@ body {
 }
 .wrapper-page{
   position: relative;
-  max-width: 1200px;
+  max-width: 1267px;
   margin: auto;
 }
 .wrapper-chat {;
