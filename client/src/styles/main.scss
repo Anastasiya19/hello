@@ -35,6 +35,7 @@ $path-to-images: '../assets/images/';
 @import "modules/specific";
 @import "modules/spiner";
 @import "modules/slide-nav";
+@import "modules/info-box";
 html {
   height: 100%;
   width: 100%;
@@ -87,9 +88,15 @@ body {
     }
   }
 }
-
+.wrapper-page{
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+}
 .wrapper-chat {;
- position: relative;
+  position: relative;
+  //max-width: 1200px;
+  //margin: auto;
 }
 
 .page_relative {

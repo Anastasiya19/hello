@@ -17367,10 +17367,14 @@ var suggested_zlatans = [];
 
 $('#send_chat').on('click', function (event) {
   event.preventDefault();
+  let destination = $('.send__input').offset().top;
+  $('.chat__content').animate({ scrollTop: destination }, 1100);
   sendMessage()
 });
 $('.send__input').keypress(function (e) {
   if (e.which == 13) {
+    let destination = $(this).offset().top;
+    $('.chat__content').animate({ scrollTop: destination }, 1100);
     sendMessage()
   }
 });
@@ -17396,7 +17400,6 @@ function sendMessage() {
 
     // Clear Input & scroll Chat window-to last message
     $('.chat__bottom input').val('');
-    $('.chat__messages').scrollTop($('.chat__messages')[0].scrollHeight);
   }
 
   // sending the message
@@ -17434,6 +17437,7 @@ $(document).ready(function () {
     childBlock.addClass('view__col_hidden');
     owl.trigger('refresh.owl.carousel');
   })
+
 
 });
 
@@ -20977,7 +20981,14 @@ function Zlatan (mobiles) {
 }
 
 $(document).ready(function () {
-
+  let infoBox = $('.boxes-carousel');
+  infoBox.owlCarousel({
+    autoWidth: true,
+    nav: true,
+    navContainerClass: 'nav-boxes-carousel',
+    navClass: 'arr',
+    items: 1,
+  });
 
   if (getParameterByName("q")) {
     $('.chat__bottom input').val(getParameterByName("q"))
