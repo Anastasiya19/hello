@@ -9,52 +9,52 @@
   <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 </head>
 <body>
-<div class="wrapper-chat">
-	<div class="header">
-		<div class="container-fluid">
-			<div class="row justify-content-between">
-				<div class="header__logo">
-					<a href="index.html">
-						<img src="assets/images/logo.svg" alt="Logotype">
-					</a>
-				</div>
-				<div class="header__links">
-					<a href="howItWork.html" class="header__btn header__btn_mobile-home button button_white">
-						<div class="header__btn_icon header__btn_icon-home"></div>
-						<span class="header__btn_label">Home</span>
-					</a>
-					<div class="header__links_right header__btn_mobile-language">
-						<div class="language header__btn  button button_white selection selection_list">
-							<h5 class="selection__name selection__name_current selection__padding">
+<div class="header header__chat">
+	<div class="container">
+		<div class="row justify-content-between">
+			<div class="header__logo">
+				<a href="index.html">
+					<img src="assets/images/logo.svg" alt="Logotype">
+				</a>
+			</div>
+			<div class="header__links">
+				<a href="howItWork.html" class="header__btn header__btn_mobile-home button button_white">
+					<div class="header__btn_icon header__btn_icon-home"></div>
+					<span class="header__btn_label">Home</span>
+				</a>
+				<div class="header__links_right header__btn_mobile-language">
+					<div class="language header__btn  button button_white selection selection_list">
+						<h5 class="selection__name selection__name_current selection__padding">
+							<span class="selection__name">English</span>
+						</h5>
+						<ul class="selection__list selection__list_hidden">
+							<li class="selection__item">
 								<span class="selection__name">English</span>
-							</h5>
-							<ul class="selection__list selection__list_hidden">
-								<li class="selection__item">
-									<span class="selection__name">English</span>
-								</li>
-								<li class="selection__item">
-									<span class="selection__name">Hindi</span>
-								</li>
-								<li class="selection__item">
-									<span class="selection__name">Gujarati</span>
-								</li>
-								<li class="selection__item">
-									<span class="selection__name">Kannada</span>
-								</li>
-								<li class="selection__item">
-									<span class="selection__name">Bengali</span>
-								</li>
-							</ul>
-						</div>
-						<a href="" class="header__btn header__btn_mobile-hide button button_white ">
-							<div class="header__btn_icon header__btn_icon-works"></div>
-							<span class="header__btn_label">How it Works</span>
-						</a>
+							</li>
+							<li class="selection__item">
+								<span class="selection__name">Hindi</span>
+							</li>
+							<li class="selection__item">
+								<span class="selection__name">Gujarati</span>
+							</li>
+							<li class="selection__item">
+								<span class="selection__name">Kannada</span>
+							</li>
+							<li class="selection__item">
+								<span class="selection__name">Bengali</span>
+							</li>
+						</ul>
 					</div>
+					<a href="" class="header__btn header__btn_mobile-hide button button_white ">
+						<div class="header__btn_icon header__btn_icon-works"></div>
+						<span class="header__btn_label">How it Works</span>
+					</a>
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
+<div class="wrapper-chat">
 	<div class="chat">
 		<div class="chat__content">
 			<div class="chat__messages">
@@ -790,7 +790,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="chat__bottom">
+		</div>
+		<div class="chat__bottom">
+			<div class="chat__container">
 				<div class="send">
 					<input class="send__input" placeholder="Hello Vinci!">
 					<button class="btn send__btn" type="submit">Send</button>

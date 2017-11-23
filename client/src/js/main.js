@@ -38,6 +38,11 @@ $(document).ready(function () {
     setLeft: 15,
     axis: "y",
   });
+  $('.scrollable-container').mCustomScrollbar({
+    theme: "my-theme",
+    setLeft: 15,
+    axis: "y",
+  });
   var widthContaner = 0;
   if ($('.message__item_horizontal').length > 1) {
     for (var i = 0; i < $('.message__item_horizontal').length; i++) {
@@ -93,10 +98,15 @@ var suggested_zlatans = [];
 
 $('#send_chat').on('click', function (event) {
   event.preventDefault();
+  let destination = $('.send__input').offset().top;
+  $('.chat__content #mCSB_1').animate({ scrollTop: destination }, 1100);
   sendMessage()
 });
 $('.send__input').keypress(function (e) {
   if (e.which == 13) {
+    let destination = $(this).offset().top;
+    console.log('destination--',destination);
+    $('.chat__content #mCSB_1').animate({ scrollTop: destination }, 1100);
     sendMessage()
   }
 });
@@ -122,7 +132,6 @@ function sendMessage() {
 
     // Clear Input & scroll Chat window-to last message
     $('.chat__bottom input').val('');
-    $('.chat__messages').scrollTop($('.chat__messages')[0].scrollHeight);
   }
 
   // sending the message
@@ -154,7 +163,14 @@ function sendMessage() {
 //= app/Zlatan.js
 
 $(document).ready(function () {
-
+  let infoBox = $('.boxes-carousel');
+  infoBox.owlCarousel({
+    autoWidth: true,
+    nav: true,
+    navContainerClass: 'nav-boxes-carousel',
+    navClass: 'arrow',
+    items: 1,
+  });
 
   if (getParameterByName("q")) {
     $('.chat__bottom input').val(getParameterByName("q"))
