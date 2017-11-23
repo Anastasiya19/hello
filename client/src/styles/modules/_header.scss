@@ -41,7 +41,7 @@
         left: 0;
       }
     }
-    &_mobile-language{
+    &_mobile-language {
       @media (max-width: 550px) {
         position: absolute;
         top: -5px;
@@ -128,7 +128,14 @@
       }
     }
   }
-
+  &__chat {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    position: fixed;
+    background: #F4F5F9;
+    width: 100%;
+    z-index: 5;
+  }
 }
 
 .icon-microphone {

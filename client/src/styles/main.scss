@@ -88,17 +88,8 @@ body {
   }
 }
 
-.wrapper-chat {
-  padding: rem(20) rem(10) 0;
-  max-width: 1200px;
-  margin: auto;
-  position: relative;
-  @media (max-width: 991px) {
-    padding-top: rem(50);
-  }
-  @media (max-width: 767px) {
-    padding-top: rem(20);
-  }
+.wrapper-chat {;
+ position: relative;
 }
 
 .page_relative {
