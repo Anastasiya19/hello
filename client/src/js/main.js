@@ -162,7 +162,7 @@ $(document).ready(function () {
     autoWidth: true,
     nav: true,
     navContainerClass: 'nav-boxes-carousel',
-    navClass: 'arr',
+    navClass: 'arrow',
     items: 1,
   });
 
