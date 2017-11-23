@@ -102,8 +102,12 @@ body {
 .page_relative {
   position: relative;
 }
+.scrollable-container{
+  &.scrollable .viewport .overview {
+    width: 100%;
+  }
+}
 
-.scrollable-container,
 .scrollable-container-two {
   height: 90%;
   &.scrollable .viewport .overview {
