@@ -77,6 +77,8 @@ $(window).on('load resize', function () {
     var width = $(window).width() - 70;
     $('.width-full-mobile').css('width', width);
   }
+
+
 });
 
 //= custom/animations.js
@@ -163,17 +165,12 @@ function sendMessage() {
 //= app/Zlatan.js
 
 $(document).ready(function () {
-  let infoBox = $('.boxes-carousel');
-  infoBox.owlCarousel({
-    autoWidth: true,
-    nav: true,
-    navContainerClass: 'nav-boxes-carousel',
-    navClass: 'arrow',
-    items: 1,
-  });
 
   if (getParameterByName("q")) {
     $('.chat__bottom input').val(getParameterByName("q"))
     $('#send_chat').click()
   }
 })
+
+
+
