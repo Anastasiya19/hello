@@ -11,37 +11,30 @@
 }
 
 .boxes-carousel {
-  width: 100%;
-  position: relative;
+  display: block;
   margin-bottom: 20px;
-  .owl-item {
-    position: relative;
-  }
-  .owl-stage-outer {
-    overflow: hidden;
-  }
-}
-
-.nav-boxes-carousel {
-
-  & > div {
-    cursor: pointer;
-    font-size: 0;
-    width: 33px;
-    height: 33px;
-    z-index: 8;
-    position: absolute;
-    border: 1px solid #F4F5F9;
-    top: 124px;
-    &.a {
-      left: -16px;
-      background: #fff url($path-to-images + 'arrow_prev_dark.svg') no-repeat center;
-      background-size: 11px;
-    }
-    &.r {
-      right: -16px;
-      background: #fff url($path-to-images + 'arrow_next_dark.svg') no-repeat center;
-      background-size: 11px;
+  position: relative;
+  .nav-carousel {
+    width: 100%;
+    & > div {
+      cursor: pointer;
+      font-size: 0;
+      width: 33px;
+      height: 33px;
+      z-index: 8;
+      position: absolute;
+      border: 1px solid #F4F5F9;
+      padding: 5px;
+      &.h {
+        left: -16px;
+        background: #fff url($path-to-images + 'arrow_prev_dark.svg') no-repeat center;
+        background-size: 11px;
+      }
+      &.e {
+        right: -16px;
+        background: #fff url($path-to-images + 'arrow_next_dark.svg') no-repeat center;
+        background-size: 11px;
+      }
     }
   }
 }
@@ -60,7 +53,6 @@
     width: 211px;
   }
   &__slide {
-    float: left;
   }
   &__header {
     border-bottom: 1px solid #edeef2;

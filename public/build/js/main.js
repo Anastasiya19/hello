@@ -17238,6 +17238,8 @@ $(window).on('load resize', function () {
     var width = $(window).width() - 70;
     $('.width-full-mobile').css('width', width);
   }
+
+
 });
 
 var linkLocation = '';
@@ -17358,9 +17360,9 @@ $(document).ready(function () {
   }
 });
 $(window).on('load', function () {
-  $('.preloader').delay(1500).fadeOut('slow');
-  $('.preloader__logo').delay(1500).addClass('preloader__logo_top');
-  $('body').delay(1500);
+  $('.preloader').fadeOut('slow');
+  $('.preloader__logo').addClass('preloader__logo_top');
+  $('body');
 });
 
 /**
@@ -20987,14 +20989,6 @@ function Zlatan (mobiles) {
 }
 
 $(document).ready(function () {
-  let infoBox = $('.boxes-carousel');
-  infoBox.owlCarousel({
-    autoWidth: true,
-    nav: true,
-    navContainerClass: 'nav-boxes-carousel',
-    navClass: 'arrow',
-    items: 1,
-  });
 
   if (getParameterByName("q")) {
     $('.chat__bottom input').val(getParameterByName("q"))
