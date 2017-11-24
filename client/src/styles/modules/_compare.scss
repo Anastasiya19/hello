@@ -3,6 +3,7 @@
     margin-bottom: 0;
     border: 1px solid #F4F7F9;
     position: relative;
+    overflow: hidden;
     thead {
       th {
         vertical-align: middle;
@@ -20,7 +21,7 @@
         font-weight: 300;
         font-size: rem(12);
         @media (min-width: 768px) {
-          min-width: 240px;
+          min-width: 200px;
           padding-left: 40px;
         }
         @media (max-width: 767px) {
