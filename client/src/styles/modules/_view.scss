@@ -134,7 +134,8 @@
     img {
       position: absolute;
       height: 16px;
-      left: 0;
+      transform: translateX(-50%);
+      left: 50%;
       margin: auto;
       top: 11px;
     }
