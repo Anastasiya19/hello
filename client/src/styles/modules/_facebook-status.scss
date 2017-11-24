@@ -1,0 +1,32 @@
+.facebook-status {
+  padding: 5px 0;
+  &__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__item {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    transition: .2s;
+  }
+  &__icon {
+    width: 18px !important;
+  }
+  &__link {
+    margin-right: 5px;
+    &:hover{
+      .facebook-status__icon{
+        transition: .2s;
+        transform: scale(1.1);
+      }
+    }
+  }
+  span {
+    font-size: 12px;
+  }
+}

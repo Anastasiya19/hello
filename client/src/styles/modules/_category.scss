@@ -1,20 +1,37 @@
 .category {
-  width: 270px;
+  width: 200px;
   padding: 10px 20px;
   &__image {
     margin-bottom: 20px;
-    img{
-      height: 250px;
+    img {
+      height: 125px;
     }
   }
-  &__description{
+  &__description {
 
   }
-  &__type{
+  &__type {
     font-size: 14px;
     color: #bababa;
+    font-weight: 100;
   }
-  &__name{
-    font-size: 18px
+  &__name {
+    font-size: 13px
+  }
+  &__prices-box {
+    margin-bottom: 10px;
+    span {
+      font-size: 12px;
+      &:not(:last-child) {
+        margin-right: 5px;
+      }
+      &.old {
+        text-decoration: line-through;
+        color: #b5b5b5;
+      }
+    }
+  }
+  &__facebook-status {
+    border-top: 1px solid #F4F5F9;
   }
 }
