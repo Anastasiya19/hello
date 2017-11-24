@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 </head>
 <body>
-
 <div class="header header__chat">
 	<div class="container">
 		<div class="row justify-content-between">
@@ -171,13 +170,15 @@
 						<li class="info-box__item">
 							<a class="info-box__news-title" href="">Some title of news</a>
 							<div class="info-box__text-box">
-								<p class="info-box__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+								<p class="info-box__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+									tempor</p>
 							</div>
 						</li>
 						<li class="info-box__item">
 							<a class="info-box__news-title" href="">Some title of news</a>
 							<div class="info-box__text-box">
-								<p class="info-box__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+								<p class="info-box__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+									tempor</p>
 							</div>
 						</li>
 					</ul>
@@ -306,11 +307,46 @@
 						</ul>
 					</div>
 				</div>
+				<div class="info-box">
+					<div class="info-box__header"><span>Show us Some Love</span></div>
+					<ul class="info-box__list">
+						<li class="info-box__item">
+							<a class="twitter-share-button"
+								 href="https://twitter.com/intent/tweet">
+								Tweet</a>
+							<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="270" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+							<div id="fb-root"></div>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
 
 <script src="js/main.js"></script>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.11&appId=1359458530819401';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
 </body>
 </html>
