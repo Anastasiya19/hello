@@ -129,12 +129,14 @@
     text-align: center;
     border-bottom: 1px solid #F6F7F9;
     padding: 10px 10px;
+    height: 38px;
+    position: relative;
     img {
+      position: absolute;
       height: 16px;
+      left: 0;
       margin: auto;
-      @media (max-width: 767px) {
-        margin-top: -13px;
-      }
+      top: 11px;
     }
     &_best {
       text-align: right;
@@ -142,8 +144,9 @@
   }
   &__best {
     color: #616161;
-    font-size: rem(12);
+    //font-size: rem(12);
     text-align: left;
+    font-size: 0;
     &:before {
       content: url($path-to-images + 'star.svg');
       margin-right: 5px;

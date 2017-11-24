@@ -86,9 +86,9 @@ $(window).on('load resize', function () {
 //= custom/selectLng.js
 //= custom/speakVinci.js
 $(window).on('load', function () {
-  $('.preloader').delay(1500).fadeOut('slow');
-  $('.preloader__logo').delay(1500).addClass('preloader__logo_top');
-  $('body').delay(1500);
+  $('.preloader').fadeOut('slow');
+  $('.preloader__logo').addClass('preloader__logo_top');
+  $('body');
 });
 
 /**

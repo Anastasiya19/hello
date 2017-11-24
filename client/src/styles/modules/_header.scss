@@ -1,4 +1,12 @@
 .header {
+  &__container {
+    @media (min-width: 1230px) {
+      width: 1230px;
+      margin: auto;
+    }
+    @media(max-width: 768px) {
+    }
+  }
   &__links {
     display: flex;
     flex: 1;
@@ -135,6 +143,14 @@
     background: #F4F5F9;
     width: 100%;
     z-index: 5;
+    @media(max-width: 768px) {
+      padding: 10px ;
+    }
+    .row{
+      @media(max-width: 768px) {
+        margin: 0;
+      }
+    }
   }
 }
 
