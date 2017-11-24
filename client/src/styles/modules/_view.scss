@@ -17,6 +17,7 @@
 
   }
   &__inline {
+    position: relative;
     @media (min-width: 767px) {
       display: inline-block;
       width: 220px;
@@ -110,7 +111,7 @@
 
   @media (min-width: 768px) {
     display: flex;
-    max-height: 498px;
+    max-height: 520px;
   }
 
 }

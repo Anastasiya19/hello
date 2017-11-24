@@ -12,14 +12,21 @@
     flex-grow: 1;
     display: flex;
     flex-direction: row;
+    transition: .2s;
   }
-  &__icon{
-    width: 20px !important;
+  &__icon {
+    width: 18px !important;
   }
-  &__link{
+  &__link {
     margin-right: 5px;
+    &:hover{
+      .facebook-status__icon{
+        transition: .2s;
+        transform: scale(1.1);
+      }
+    }
   }
-  span{
-
+  span {
+    font-size: 12px;
   }
 }
