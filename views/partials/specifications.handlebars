@@ -2,161 +2,797 @@
 <div class="message message_vinci ">
     <img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">
     <div class="owl-carousel owl-theme">
-        \{{#each phones}}
-        <div class="message__item message__item_view message__item_view-full view  br-chat" id="\{{this.id}}">
-            <div class="flex-container">
-                <div class="view__info view__col view__inline">
-                    <h3 class="part-title">Phone requested</h3>
-                    <div class="view__photo">
-                        <img src="\{{this.selected_variant.image_urls.small}}" alt="" style="width: auto;">
-                        <a class="button button_white view__button" href="#">View Photos</a>
-                    </div>
-                    <div class="view__characteristic characteristic">
-                        <div class="characteristic__text">
-                            <h5 class="characteristic__company">\{{this.selected_variant.product_basic_info.productBrand_normalized}}</h5>
-                            <h4 class="characteristic__model">\{{title}}</h4>
-							<div class="facebook-status characteristic__facebook-status">
-								<ul class="facebook-status__list">
-									<li class="facebook-status__item">
-										<a href="#" class="facebook-status__link">
-											<img src="assets/build/assets/images/facebook-like.svg" alt="" class="facebook-status__icon">
-										</a>
-										<span>10</span>
-									</li>
-									<li class="facebook-status__item">
-										<a href="#" class="facebook-status__link">
-											<img src="assets/build/assets/images/facebook-love.svg" alt="" class="facebook-status__icon">
-										</a>
-										<span>15</span>
-									</li>
-									<li class="facebook-status__item">
-										<a href="#" class="facebook-status__link">
-											<img src="assets/build/assets/images/facebook-angry.svg" alt="" class="facebook-status__icon">
-										</a>
-										<span>1</span>
-									</li>
-								</ul>
-							</div>
-                            <div class="rating">
-                                <div class="rating__star">
-                                    <img src="assets/build/assets/images/star.svg" alt="">
-                                    <span class="rating__value">\{{this.rating}} / 5.0</span>
-                                </div>
-                                <a href="#" class="rating__view">View Reviews</a>
-                            </div>
-                            <ul class="characteristic__list">
-                               \{{#each this.features}}
-                            <li>\{{this}}</li>
-                            \{{/each}}
+    <div class="message__item message__item_view message__item_view-full view  br-chat">
+        <div class="flex-container">
+            <div class="view__info view__col view__inline">
+                <h3 class="part-title">Phone requested</h3>
+                <div class="view__photo">
+                    <img src="assets/images/view_iphone7.svg" alt="">
+                    <a class="button button_white view__button" href="#">View Photos</a>
+                </div>
+                <div class="view__characteristic characteristic">
+                    <div class="characteristic__text">
+                        <h5 class="characteristic__company">Apple</h5>
+                        <h4 class="characteristic__model">iPhone 7</h4>
+                        <div class="facebook-status characteristic__facebook-status">
+                            <ul class="facebook-status__list">
+                                <li class="facebook-status__item">
+                                    <a href="#" class="facebook-status__link">
+                                        <img src="assets/images/facebook-like.svg" alt="" class="facebook-status__icon">
+                                    </a>
+                                    <span>10</span>
+                                </li>
+                                <li class="facebook-status__item">
+                                    <a href="#" class="facebook-status__link">
+                                        <img src="assets/images/facebook-love.svg" alt="" class="facebook-status__icon">
+                                    </a>
+                                    <span>15</span>
+                                </li>
+                                <li class="facebook-status__item">
+                                    <a href="#" class="facebook-status__link">
+                                        <img src="assets/images/facebook-angry.svg" alt="" class="facebook-status__icon">
+                                    </a>
+                                    <span>1</span>
+                                </li>
                             </ul>
                         </div>
-                        <div class="button button_white selection characteristic__selection">
-                        \{{{generate_memory_variants_helper}}}
+                        <div class="rating">
+                            <div class="rating__star">
+                                <img src="assets/images/star.svg" alt="">
+                                <span class="rating__value">4.5 / 5.0</span>
+                            </div>
+                            <a href="#" class="rating__view">View Reviews</a>
                         </div>
-                        <div class="button button_white selection characteristic__selection">
-                        \{{{generate_color_variants_helper}}}
-                        </div>
-                        <a class="button button_cancel button_full hide-all-details">Close</a>
-                        <a class="button button_gradient button_full view-all-details"><span>View All Details</span></a>
+                        <ul class="characteristic__list">
+                            <li>4.7 inch, Retina HD Display</li>
+                            <li>12MP Main Camera</li>
+                            <li>7MP Selfie Camera</li>
+                        </ul>
                     </div>
+                    <div class="button button_white selection characteristic__selection">
+                        <h5 class="selection__name selection__padding">
+                            <span class="selection__action">Select Storage</span>
+                            <span class="selection__name selection__no-padding selection__name_current">128 GB</span>
+                        </h5>
+                        <ul class="selection__list selection__list_hidden">
+                            <li class="selection__item">
+                                <span class="selection__name">32 GB</span>
+                            </li>
+                            <li class="selection__item">
+                                <span class="selection__name">128 GB</span>
+                            </li>
+                            <li class="selection__item">
+                                <span class="selection__name">256 GB</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="button button_white selection characteristic__selection">
+                        <h5 class="selection__name selection__padding">
+                            <span class="selection__action">Select Color</span>
+                            <span class="selection__name selection__name_current">
+                                <span class="characteristic__color characteristic__color_gold"></span>
+                            </span>
+                        </h5>
+                        <ul class="selection__list selection__list_up selection__list_hidden">
+                            <li class="selection__item">
+                                <span class="selection__name">
+                                    <span class="characteristic__color characteristic__color_gold"></span>
+                                </span>
+                                <span class="color">Gold</span>
+                            </li>
+                            <li class="selection__item">
+                                <span class="selection__name">
+                                    <span class="characteristic__color characteristic__color_pink"></span>
+                                </span>
+                                <span class="color">Pink</span>
+                            </li>
+                            <li class="selection__item">
+                                <span class="selection__name">
+                                    <span class="characteristic__color characteristic__color_black"></span>
+                                </span>
+                                <span class="color">Black</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="button button_cancel button_full hide-all-details">Close</a>
+                    <a class="button button_gradient button_full view-all-details"><span>View All Details</span></a>
                 </div>
-                <div class="view__info-full view__col view__inline view__col_hidden no-visible">
-                    <h3 class="part-title">Specifications</h3>
-                    <div class="scrollable-container-two">
-                        <div class="scroll-container-inside">
-                            <div class="collapsed-block ">
-                                <div class="collapsed-block__dropdown"><span class="collapsed-block__title">General</span></div>
-                                <ul class="collapsed-block__list">
-                                \{{#each this.specifications_general}}
+            </div>
+            <div class="view__info-full view__col view__inline view__col_hidden no-visible">
+                <h3 class="part-title">Specifications</h3>
+                <div class="scrollable-container-two">
+                    <div class="scroll-container-inside">
+                        <div class="collapsed-block ">
+                            <div class="collapsed-block__dropdown"><span class="collapsed-block__title">General</span></div>
+                            <ul class="collapsed-block__list">
                                 <li class="collapsed-block__item">
-                                    <span class="collapsed-block__title">\{{this.field}}</span>
-                                    <span class="collapsed-block__value">\{{this.value}}</span>
+                                    <span class="collapsed-block__title">Brand</span>
+                                    <span class="collapsed-block__value">Apple</span>
                                 </li>
-                            \{{/each}}
-                                </ul>
-                            </div>
-                            <div class="collapsed-block ">
-                                <div class="collapsed-block__dropdown"><span class="collapsed-block__title">Display</span></div>
-                                <ul class="collapsed-block__list">
-                            \{{#each this.get_display}}
                                 <li class="collapsed-block__item">
-                                    <span class="collapsed-block__title">\{{this.field}}</span>
-                                    <span class="collapsed-block__value">\{{this.value}}</span>
+                                    <span class="collapsed-block__title">Model Name</span>
+                                    <span class="collapsed-block__value">Apple</span>
                                 </li>
-                            \{{/each}}
-                                </ul>
-                            </div>
-                            <div class="collapsed-block ">
-                                <div class="collapsed-block__dropdown"><span class="collapsed-block__title">Camera</span></div>
-                                <ul class="collapsed-block__list">
-                                \{{#each this.get_camera}}
                                 <li class="collapsed-block__item">
-                                    <span class="collapsed-block__title">\{{this.field}}</span>
-                                    <span class="collapsed-block__value">\{{this.value}}</span>
+                                    <span class="collapsed-block__title">Sim Size</span>
+                                    <span class="collapsed-block__value">Nano Sim Nano Sim Nano Sim Nano Sim Nano Sim</span>
                                 </li>
-                            \{{/each}}
-                                </ul>
-                            </div>
-                            <div class="collapsed-block ">
-                                <div class="collapsed-block__dropdown"><span class="collapsed-block__title">Battery</span></div>
-                                <ul class="collapsed-block__list">
-                                    \{{#each this.battery}}
+                            </ul>
+                        </div>
+                        <div class="collapsed-block ">
+                            <div class="collapsed-block__dropdown"><span class="collapsed-block__title">Display</span></div>
+                            <ul class="collapsed-block__list">
                                 <li class="collapsed-block__item">
-                                    <span class="collapsed-block__title">\{{this.field}}</span>
-                                    <span class="collapsed-block__value">\{{this.value}}</span>
+                                    <span class="collapsed-block__title">Brand</span>
+                                    <span class="collapsed-block__value">Apple</span>
                                 </li>
-                            \{{/each}}
-                                </ul>
-                            </div>
+                                <li class="collapsed-block__item">
+                                    <span class="collapsed-block__title">Model Name</span>
+                                    <span class="collapsed-block__value">Apple</span>
+                                </li>
+                                <li class="collapsed-block__item">
+                                    <span class="collapsed-block__title">Sim Size</span>
+                                    <span class="collapsed-block__value">Nano Sim</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="collapsed-block ">
+                            <div class="collapsed-block__dropdown"><span class="collapsed-block__title">Camera</span></div>
+                            <ul class="collapsed-block__list">
+                                <li class="collapsed-block__item">
+                                    <span class="collapsed-block__title">Brand</span>
+                                    <span class="collapsed-block__value">Apple</span>
+                                </li>
+                                <li class="collapsed-block__item">
+                                    <span class="collapsed-block__title">Model Name</span>
+                                    <span class="collapsed-block__value">Apple</span>
+                                </li>
+                                <li class="collapsed-block__item">
+                                    <span class="collapsed-block__title">Sim Size</span>
+                                    <span class="collapsed-block__value">Nano Sim</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="collapsed-block ">
+                            <div class="collapsed-block__dropdown"><span class="collapsed-block__title">Battery</span></div>
+                            <ul class="collapsed-block__list">
+                                <li class="collapsed-block__item">
+                                    <span class="collapsed-block__title">Brand</span>
+                                    <span class="collapsed-block__value">Apple</span>
+                                </li>
+                                <li class="collapsed-block__item">
+                                    <span class="collapsed-block__title">Model Name</span>
+                                    <span class="collapsed-block__value">Apple</span>
+                                </li>
+                                <li class="collapsed-block__item">
+                                    <span class="collapsed-block__title">Sim Size</span>
+                                    <span class="collapsed-block__value">Nano Sim</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
+
                 </div>
-                <div class="view__prices view__col view__inline">
-                    <!--<div class="scrollable-container gray-skin">-->
-                    <h3 class="part-title">Prices</h3>
-                    <div class="scrollable-container-two">
-                        <div class="scroll-container-inside">
-    											<div class="scroll-container-inside">
-    			                    <div class="price">
-                                <div class="price__header price__header_best">
-                                    <div class="price__best">Best Price</div>
-                                    <img src="\{{{generate_logo_helper_cheapest shortlisted_model_shortlisted_retailer}}}" alt="" style="width: auto;">
-                                </div>
-                                <div class="price__body">
-                                    <span class="price__rs">RS</span>
-                                    <span class="price__num">\{{this.cheapest_price}}</span>
-                                    <a class="more-info">
-                                        <span class="more-info__btn"><img src="assets/build/assets/images/ic_info.svg" alt=""></span>
-                                        <div class="more-info__block">
-                                            <div class="more-info__part">
-                                                <h4>Delivery:</h4>
-                                                <h5>5- 10 Days</h5>
-                                            </div>
-                                            <div class="more-info__part">
-                                                <h4>Offers:</h4>
-                                                <h5>10 % off on Visa Cards</h5>
-                                            </div>
+            </div>
+            <div class="view__prices view__col view__inline">
+                <!--<div class="scrollable-container gray-skin">-->
+                <h3 class="part-title">Prices</h3>
+                <div class="scrollable-container-two">
+                    <div class="scroll-container-inside">
+                        <div class="price">
+                            <div class="price__header price__header_best">
+                                <div class="price__best">Best Price</div>
+                                <img src="assets/images/store_2.svg" alt="">
+                            </div>
+                            <div class="price__body">
+                                <span class="price__rs">RS</span>
+                                <span class="price__num">42499</span>
+                                <a class="more-info">
+                                    <span class="more-info__btn"><img src="assets/images/ic_info.svg" alt=""></span>
+                                    <div class="more-info__block">
+                                        <div class="more-info__part">
+                                            <h4>Delivery:</h4>
+                                            <h5>5- 10 Days</h5>
                                         </div>
-                                    </a>
-                                </div>
+                                        <div class="more-info__part">
+                                            <h4>Offers:</h4>
+                                            <h5>10 % off on Visa Cards</h5>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
-                {{!-- the other retailers --}}
-                        \{{#each this.other_retailers_array}}
-                            <div class="price">
-                                <div class="price__header">
-                                    <img src="\{{generate_logo_helper}}" alt="" style="width: auto;">
-                                </div>
-                                <div class="price__body">
-                                    <span class="price__rs">RS</span>
-                                    <span class="price__num">\{{this.product_pricing.special_price}}</span>
-                                </div>
+                        </div>
+                        <div class="price">
+                            <div class="price__header">
+                                <img src="assets/images/store_1.svg" alt="">
                             </div>
-                        \{{/each}}
+                            <div class="price__body">
+                                <span class="price__rs">RS</span>
+                                <span class="price__num">42499</span>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <div class="price__header">
+                                <img src="assets/images/store_1.svg" alt="">
+                            </div>
+                            <div class="price__body">
+                                <span class="price__rs">RS</span>
+                                <span class="price__num">42499</span>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <div class="price__header price__header_best">
+                                <div class="price__best">Best Price</div>
+                                <img src="assets/images/store_2.svg" alt="">
+                            </div>
+                            <div class="price__body">
+                                <span class="price__rs">RS</span>
+                                <span class="price__num">42499</span>
+                                <a class="more-info">
+                                    <span class="more-info__btn"><img src="assets/images/ic_info.svg" alt=""></span>
+                                    <div class="more-info__block">
+                                        <div class="more-info__part">
+                                            <h4>Delivery:</h4>
+                                            <h5>5- 10 Days</h5>
+                                        </div>
+                                        <div class="more-info__part">
+                                            <h4>Offers:</h4>
+                                            <h5>10 % off on Visa Cards</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <div class="price__header">
+                                <img src="assets/images/store_1.svg" alt="">
+                            </div>
+                            <div class="price__body">
+                                <span class="price__rs">RS</span>
+                                <span class="price__num">42499</span>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <div class="price__header">
+                                <img src="assets/images/store_1.svg" alt="">
+                            </div>
+                            <div class="price__body">
+                                <span class="price__rs">RS</span>
+                                <span class="price__num">42499</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-     \{{/each}}
+    </div>
+    <div class="message__item message__item_view message__item_view-full view  br-chat">
+        <div class="flex-container">
+            <div class="view__info view__col view__inline">
+                <h3 class="part-title">Phone requested</h3>
+                <div class="view__photo">
+                    <img src="assets/images/view_iphone7.svg" alt="">
+                    <a class="button button_white view__button" href="#">View Photos</a>
+                </div>
+                <div class="view__characteristic characteristic">
+                    <div class="characteristic__text">
+                        <h5 class="characteristic__company">Apple</h5>
+                        <h4 class="characteristic__model">iPhone 7</h4>
+                        <div class="facebook-status characteristic__facebook-status">
+                            <ul class="facebook-status__list">
+                                <li class="facebook-status__item">
+                                    <a href="#" class="facebook-status__link">
+                                        <img src="assets/images/facebook-like.svg" alt="" class="facebook-status__icon">
+                                    </a>
+                                    <span>10</span>
+                                </li>
+                                <li class="facebook-status__item">
+                                    <a href="#" class="facebook-status__link">
+                                        <img src="assets/images/facebook-love.svg" alt="" class="facebook-status__icon">
+                                    </a>
+                                    <span>15</span>
+                                </li>
+                                <li class="facebook-status__item">
+                                    <a href="#" class="facebook-status__link">
+                                        <img src="assets/images/facebook-angry.svg" alt="" class="facebook-status__icon">
+                                    </a>
+                                    <span>1</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="rating">
+                            <div class="rating__star">
+                                <img src="assets/images/star.svg" alt="">
+                                <span class="rating__value">4.5 / 5.0</span>
+                            </div>
+                            <a href="#" class="rating__view">View Reviews</a>
+                        </div>
+                        <ul class="characteristic__list">
+                            <li>4.7 inch, Retina HD Display</li>
+                            <li>12MP Main Camera</li>
+                            <li>7MP Selfie Camera</li>
+                        </ul>
+                    </div>
+                    <div class="button button_white selection characteristic__selection">
+                        <h5 class="selection__name selection__padding">
+                            <span class="selection__action">Select Storage</span>
+                            <span class="selection__name selection__no-padding selection__name_current">128 GB</span>
+                        </h5>
+                        <ul class="selection__list selection__list_hidden">
+                            <li class="selection__item">
+                                <span class="selection__name">32 GB</span>
+                            </li>
+                            <li class="selection__item">
+                                <span class="selection__name">128 GB</span>
+                            </li>
+                            <li class="selection__item">
+                                <span class="selection__name">256 GB</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="button button_white selection characteristic__selection">
+                        <h5 class="selection__name selection__padding">
+                            <span class="selection__action">Select Color</span>
+                            <span class="selection__name selection__name_current">
+                                <span class="characteristic__color characteristic__color_gold"></span>
+                            </span>
+                        </h5>
+                        <ul class="selection__list selection__list_hidden">
+                            <li class="selection__item">
+                                <span class="selection__name">
+                                    <span class="characteristic__color characteristic__color_gold"></span>
+                                </span>
+                                <span class="color">Gold</span>
+                            </li>
+                            <li class="selection__item">
+                                <span class="selection__name">
+                                    <span class="characteristic__color characteristic__color_pink"></span>
+                                </span>
+                                <span class="color">Pink</span>
+                            </li>
+                            <li class="selection__item">
+                                <span class="selection__name">
+                                    <span class="characteristic__color characteristic__color_black"></span>
+                                </span>
+                                <span class="color">Black</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="button button_cancel button_full hide-all-details">Close</a>
+                    <a class="button button_gradient button_full view-all-details"><span>View All Details</span></a>
+                </div>
+            </div>
+            <div class="view__info-full view__col view__inline view__col_hidden no-visible">
+                <h3 class="part-title">Specifications</h3>
+                <div class="scrollable-container-two">
+                    <div class="scroll-container-inside">
+                        <div class="collapsed-block ">
+                            <div class="collapsed-block__dropdown"><span class="collapsed-block__title">General</span></div>
+                            <ul class="collapsed-block__list">
+                                <li class="collapsed-block__item">
+                                    <span class="collapsed-block__title">Brand</span>
+                                    <span class="collapsed-block__value">Apple</span>
+                                </li>
+                                <li class="collapsed-block__item">
+                                    <span class="collapsed-block__title">Model Name</span>
+                                    <span class="collapsed-block__value">Apple</span>
+                                </li>
+                                <li class="collapsed-block__item">
+                                    <span class="collapsed-block__title">Sim Size</span>
+                                    <span class="collapsed-block__value">Nano Sim Nano Sim Nano Sim Nano Sim Nano Sim</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="collapsed-block ">
+                            <div class="collapsed-block__dropdown"><span class="collapsed-block__title">Display</span></div>
+                            <ul class="collapsed-block__list">
+                                <li class="collapsed-block__item">
+                                    <span class="collapsed-block__title">Brand</span>
+                                    <span class="collapsed-block__value">Apple</span>
+                                </li>
+                                <li class="collapsed-block__item">
+                                    <span class="collapsed-block__title">Model Name</span>
+                                    <span class="collapsed-block__value">Apple</span>
+                                </li>
+                                <li class="collapsed-block__item">
+                                    <span class="collapsed-block__title">Sim Size</span>
+                                    <span class="collapsed-block__value">Nano Sim</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="collapsed-block ">
+                            <div class="collapsed-block__dropdown"><span class="collapsed-block__title">Camera</span></div>
+                            <ul class="collapsed-block__list">
+                                <li class="collapsed-block__item">
+                                    <span class="collapsed-block__title">Brand</span>
+                                    <span class="collapsed-block__value">Apple</span>
+                                </li>
+                                <li class="collapsed-block__item">
+                                    <span class="collapsed-block__title">Model Name</span>
+                                    <span class="collapsed-block__value">Apple</span>
+                                </li>
+                                <li class="collapsed-block__item">
+                                    <span class="collapsed-block__title">Sim Size</span>
+                                    <span class="collapsed-block__value">Nano Sim</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="collapsed-block ">
+                            <div class="collapsed-block__dropdown"><span class="collapsed-block__title">Battery</span></div>
+                            <ul class="collapsed-block__list">
+                                <li class="collapsed-block__item">
+                                    <span class="collapsed-block__title">Brand</span>
+                                    <span class="collapsed-block__value">Apple</span>
+                                </li>
+                                <li class="collapsed-block__item">
+                                    <span class="collapsed-block__title">Model Name</span>
+                                    <span class="collapsed-block__value">Apple</span>
+                                </li>
+                                <li class="collapsed-block__item">
+                                    <span class="collapsed-block__title">Sim Size</span>
+                                    <span class="collapsed-block__value">Nano Sim</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="view__prices view__col view__inline">
+                <!--<div class="scrollable-container gray-skin">-->
+                <h3 class="part-title">Prices</h3>
+                <div class="scrollable-container-two">
+                    <div class="scroll-container-inside">
+                        <div class="price">
+                            <div class="price__header price__header_best">
+                                <div class="price__best">Best Price</div>
+                                <img src="assets/images/store_2.svg" alt="">
+                            </div>
+                            <div class="price__body">
+                                <span class="price__rs">RS</span>
+                                <span class="price__num">42499</span>
+                                <a class="more-info">
+                                    <span class="more-info__btn"><img src="assets/images/ic_info.svg" alt=""></span>
+                                    <div class="more-info__block">
+                                        <div class="more-info__part">
+                                            <h4>Delivery:</h4>
+                                            <h5>5- 10 Days</h5>
+                                        </div>
+                                        <div class="more-info__part">
+                                            <h4>Offers:</h4>
+                                            <h5>10 % off on Visa Cards</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <div class="price__header">
+                                <img src="assets/images/store_1.svg" alt="">
+                            </div>
+                            <div class="price__body">
+                                <span class="price__rs">RS</span>
+                                <span class="price__num">42499</span>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <div class="price__header">
+                                <img src="assets/images/store_1.svg" alt="">
+                            </div>
+                            <div class="price__body">
+                                <span class="price__rs">RS</span>
+                                <span class="price__num">42499</span>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <div class="price__header price__header_best">
+                                <div class="price__best">Best Price</div>
+                                <img src="assets/images/store_2.svg" alt="">
+                            </div>
+                            <div class="price__body">
+                                <span class="price__rs">RS</span>
+                                <span class="price__num">42499</span>
+                                <a class="more-info">
+                                    <span class="more-info__btn"><img src="assets/images/ic_info.svg" alt=""></span>
+                                    <div class="more-info__block">
+                                        <div class="more-info__part">
+                                            <h4>Delivery:</h4>
+                                            <h5>5- 10 Days</h5>
+                                        </div>
+                                        <div class="more-info__part">
+                                            <h4>Offers:</h4>
+                                            <h5>10 % off on Visa Cards</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <div class="price__header">
+                                <img src="assets/images/store_1.svg" alt="">
+                            </div>
+                            <div class="price__body">
+                                <span class="price__rs">RS</span>
+                                <span class="price__num">42499</span>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <div class="price__header">
+                                <img src="assets/images/store_1.svg" alt="">
+                            </div>
+                            <div class="price__body">
+                                <span class="price__rs">RS</span>
+                                <span class="price__num">42499</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="message__item message__item_view message__item_view-full view  br-chat">
+        <div class="flex-container">
+            <div class="view__info view__col view__inline">
+                <h3 class="part-title">Phone requested</h3>
+                <div class="view__photo">
+                    <img src="assets/images/view_iphone7.svg" alt="">
+                    <a class="button button_white view__button" href="#">View Photos</a>
+                </div>
+                <div class="view__characteristic characteristic">
+                    <div class="characteristic__text">
+                        <h5 class="characteristic__company">Apple</h5>
+                        <h4 class="characteristic__model">iPhone 7</h4>
+                        <div class="facebook-status characteristic__facebook-status">
+                            <ul class="facebook-status__list">
+                                <li class="facebook-status__item">
+                                    <a href="#" class="facebook-status__link">
+                                        <img src="assets/images/facebook-like.svg" alt="" class="facebook-status__icon">
+                                    </a>
+                                    <span>10</span>
+                                </li>
+                                <li class="facebook-status__item">
+                                    <a href="#" class="facebook-status__link">
+                                        <img src="assets/images/facebook-love.svg" alt="" class="facebook-status__icon">
+                                    </a>
+                                    <span>15</span>
+                                </li>
+                                <li class="facebook-status__item">
+                                    <a href="#" class="facebook-status__link">
+                                        <img src="assets/images/facebook-angry.svg" alt="" class="facebook-status__icon">
+                                    </a>
+                                    <span>1</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="rating">
+                            <div class="rating__star">
+                                <img src="assets/images/star.svg" alt="">
+                                <span class="rating__value">4.5 / 5.0</span>
+                            </div>
+                            <a href="#" class="rating__view">View Reviews</a>
+                        </div>
+                        <ul class="characteristic__list">
+                            <li>4.7 inch, Retina HD Display</li>
+                            <li>12MP Main Camera</li>
+                            <li>7MP Selfie Camera</li>
+                        </ul>
+                    </div>
+                    <div class="button button_white selection characteristic__selection">
+                        <h5 class="selection__name selection__padding">
+                            <span class="selection__action">Select Storage</span>
+                            <span class="selection__name selection__no-padding selection__name_current">128 GB</span>
+                        </h5>
+                        <ul class="selection__list selection__list_hidden">
+                            <li class="selection__item">
+                                <span class="selection__name">32 GB</span>
+                            </li>
+                            <li class="selection__item">
+                                <span class="selection__name">128 GB</span>
+                            </li>
+                            <li class="selection__item">
+                                <span class="selection__name">256 GB</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="button button_white selection characteristic__selection">
+                        <h5 class="selection__name selection__padding">
+                            <span class="selection__action">Select Color</span>
+                            <span class="selection__name selection__name_current">
+                                <span class="characteristic__color characteristic__color_gold"></span>
+                            </span>
+                        </h5>
+                        <ul class="selection__list selection__list_hidden">
+                            <li class="selection__item">
+                                <span class="selection__name">
+                                    <span class="characteristic__color characteristic__color_gold"></span>
+                                </span>
+                                <span class="color">Gold</span>
+                            </li>
+                            <li class="selection__item">
+                                <span class="selection__name">
+                                    <span class="characteristic__color characteristic__color_pink"></span>
+                                </span>
+                                <span class="color">Pink</span>
+                            </li>
+                            <li class="selection__item">
+                                <span class="selection__name">
+                                    <span class="characteristic__color characteristic__color_black"></span>
+                                </span>
+                                <span class="color">Black</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="button button_cancel button_full hide-all-details">Close</a>
+                    <a class="button button_gradient button_full view-all-details"><span>View All Details</span></a>
+                </div>
+            </div>
+            <div class="view__info-full view__col view__inline view__col_hidden no-visible">
+                <h3 class="part-title">Specifications</h3>
+                <div class="scrollable-container-two">
+                    <div class="scroll-container-inside">
+                        <div class="collapsed-block ">
+                            <div class="collapsed-block__dropdown"><span class="collapsed-block__title">General</span></div>
+                            <ul class="collapsed-block__list">
+                                <li class="collapsed-block__item">
+                                    <span class="collapsed-block__title">Brand</span>
+                                    <span class="collapsed-block__value">Apple</span>
+                                </li>
+                                <li class="collapsed-block__item">
+                                    <span class="collapsed-block__title">Model Name</span>
+                                    <span class="collapsed-block__value">Apple</span>
+                                </li>
+                                <li class="collapsed-block__item">
+                                    <span class="collapsed-block__title">Sim Size</span>
+                                    <span class="collapsed-block__value">Nano Sim Nano Sim Nano Sim Nano Sim Nano Sim</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="collapsed-block ">
+                            <div class="collapsed-block__dropdown"><span class="collapsed-block__title">Display</span></div>
+                            <ul class="collapsed-block__list">
+                                <li class="collapsed-block__item">
+                                    <span class="collapsed-block__title">Brand</span>
+                                    <span class="collapsed-block__value">Apple</span>
+                                </li>
+                                <li class="collapsed-block__item">
+                                    <span class="collapsed-block__title">Model Name</span>
+                                    <span class="collapsed-block__value">Apple</span>
+                                </li>
+                                <li class="collapsed-block__item">
+                                    <span class="collapsed-block__title">Sim Size</span>
+                                    <span class="collapsed-block__value">Nano Sim</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="collapsed-block ">
+                            <div class="collapsed-block__dropdown"><span class="collapsed-block__title">Camera</span></div>
+                            <ul class="collapsed-block__list">
+                                <li class="collapsed-block__item">
+                                    <span class="collapsed-block__title">Brand</span>
+                                    <span class="collapsed-block__value">Apple</span>
+                                </li>
+                                <li class="collapsed-block__item">
+                                    <span class="collapsed-block__title">Model Name</span>
+                                    <span class="collapsed-block__value">Apple</span>
+                                </li>
+                                <li class="collapsed-block__item">
+                                    <span class="collapsed-block__title">Sim Size</span>
+                                    <span class="collapsed-block__value">Nano Sim</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="collapsed-block ">
+                            <div class="collapsed-block__dropdown"><span class="collapsed-block__title">Battery</span></div>
+                            <ul class="collapsed-block__list">
+                                <li class="collapsed-block__item">
+                                    <span class="collapsed-block__title">Brand</span>
+                                    <span class="collapsed-block__value">Apple</span>
+                                </li>
+                                <li class="collapsed-block__item">
+                                    <span class="collapsed-block__title">Model Name</span>
+                                    <span class="collapsed-block__value">Apple</span>
+                                </li>
+                                <li class="collapsed-block__item">
+                                    <span class="collapsed-block__title">Sim Size</span>
+                                    <span class="collapsed-block__value">Nano Sim</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="view__prices view__col view__inline">
+                <!--<div class="scrollable-container gray-skin">-->
+                <h3 class="part-title">Prices</h3>
+                <div class="scrollable-container-two">
+                    <div class="scroll-container-inside">
+                        <div class="price">
+                            <div class="price__header price__header_best">
+                                <div class="price__best">Best Price</div>
+                                <img src="assets/images/store_2.svg" alt="">
+                            </div>
+                            <div class="price__body">
+                                <span class="price__rs">RS</span>
+                                <span class="price__num">42499</span>
+                                <a class="more-info">
+                                    <span class="more-info__btn"><img src="assets/images/ic_info.svg" alt=""></span>
+                                    <div class="more-info__block">
+                                        <div class="more-info__part">
+                                            <h4>Delivery:</h4>
+                                            <h5>5- 10 Days</h5>
+                                        </div>
+                                        <div class="more-info__part">
+                                            <h4>Offers:</h4>
+                                            <h5>10 % off on Visa Cards</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <div class="price__header">
+                                <img src="assets/images/store_1.svg" alt="">
+                            </div>
+                            <div class="price__body">
+                                <span class="price__rs">RS</span>
+                                <span class="price__num">42499</span>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <div class="price__header">
+                                <img src="assets/images/store_1.svg" alt="">
+                            </div>
+                            <div class="price__body">
+                                <span class="price__rs">RS</span>
+                                <span class="price__num">42499</span>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <div class="price__header price__header_best">
+                                <div class="price__best">Best Price</div>
+                                <img src="assets/images/store_2.svg" alt="">
+                            </div>
+                            <div class="price__body">
+                                <span class="price__rs">RS</span>
+                                <span class="price__num">42499</span>
+                                <a class="more-info">
+                                    <span class="more-info__btn"><img src="assets/images/ic_info.svg" alt=""></span>
+                                    <div class="more-info__block">
+                                        <div class="more-info__part">
+                                            <h4>Delivery:</h4>
+                                            <h5>5- 10 Days</h5>
+                                        </div>
+                                        <div class="more-info__part">
+                                            <h4>Offers:</h4>
+                                            <h5>10 % off on Visa Cards</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <div class="price__header">
+                                <img src="assets/images/store_1.svg" alt="">
+                            </div>
+                            <div class="price__body">
+                                <span class="price__rs">RS</span>
+                                <span class="price__num">42499</span>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <div class="price__header">
+                                <img src="assets/images/store_1.svg" alt="">
+                            </div>
+                            <div class="price__body">
+                                <span class="price__rs">RS</span>
+                                <span class="price__num">42499</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 </div>
