@@ -1,162 +1,162 @@
 
 <div class="message message_vinci ">
-<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">
-<div class="owl-carousel owl-theme">
-    \{{#each phones}}
-    <div class="message__item message__item_view message__item_view-full view  br-chat" id="\{{this.id}}">
-        <div class="flex-container">
-            <div class="view__info view__col view__inline">
-                <h3 class="part-title">Phone requested</h3>
-                <div class="view__photo">
-                    <img src="\{{this.selected_variant.image_urls.small}}" alt="" style="width: auto;">
-                    <a class="button button_white view__button" href="#">View Photos</a>
-                </div>
-                <div class="view__characteristic characteristic">
-                    <div class="characteristic__text">
-                        <h5 class="characteristic__company">\{{this.selected_variant.product_basic_info.productBrand_normalized}}</h5>
-                        <h4 class="characteristic__model">\{{title}}</h4>
-												<div class="facebook-status characteristic__facebook-status">
-												<ul class="facebook-status__list">
-													<li class="facebook-status__item">
-														<a href="#" class="facebook-status__link">
-															<img src="assets/images/facebook-like.svg" alt="" class="facebook-status__icon">
-														</a>
-														<span>10</span>
-													</li>
-													<li class="facebook-status__item">
-														<a href="#" class="facebook-status__link">
-															<img src="assets/images/facebook-love.svg" alt="" class="facebook-status__icon">
-														</a>
-														<span>15</span>
-													</li>
-													<li class="facebook-status__item">
-														<a href="#" class="facebook-status__link">
-															<img src="assets/images/facebook-angry.svg" alt="" class="facebook-status__icon">
-														</a>
-														<span>1</span>
-													</li>
-												</ul>
-											</div>
-                        <div class="rating">
-                            <div class="rating__star">
-                                <img src="assets/build/assets/images/star.svg" alt="">
-                                <span class="rating__value">\{{this.rating}} / 5.0</span>
+    <img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">
+    <div class="owl-carousel owl-theme">
+        \{{#each phones}}
+        <div class="message__item message__item_view message__item_view-full view  br-chat" id="\{{this.id}}">
+            <div class="flex-container">
+                <div class="view__info view__col view__inline">
+                    <h3 class="part-title">Phone requested</h3>
+                    <div class="view__photo">
+                        <img src="\{{this.selected_variant.image_urls.small}}" alt="" style="width: auto;">
+                        <a class="button button_white view__button" href="#">View Photos</a>
+                    </div>
+                    <div class="view__characteristic characteristic">
+                        <div class="characteristic__text">
+                            <h5 class="characteristic__company">\{{this.selected_variant.product_basic_info.productBrand_normalized}}</h5>
+                            <h4 class="characteristic__model">\{{title}}</h4>
+							<div class="facebook-status characteristic__facebook-status">
+								<ul class="facebook-status__list">
+									<li class="facebook-status__item">
+										<a href="#" class="facebook-status__link">
+											<img src="assets/build/assets/images/facebook-like.svg" alt="" class="facebook-status__icon">
+										</a>
+										<span>10</span>
+									</li>
+									<li class="facebook-status__item">
+										<a href="#" class="facebook-status__link">
+											<img src="assets/build/assets/images/facebook-love.svg" alt="" class="facebook-status__icon">
+										</a>
+										<span>15</span>
+									</li>
+									<li class="facebook-status__item">
+										<a href="#" class="facebook-status__link">
+											<img src="assets/build/assets/images/facebook-angry.svg" alt="" class="facebook-status__icon">
+										</a>
+										<span>1</span>
+									</li>
+								</ul>
+							</div>
+                            <div class="rating">
+                                <div class="rating__star">
+                                    <img src="assets/build/assets/images/star.svg" alt="">
+                                    <span class="rating__value">\{{this.rating}} / 5.0</span>
+                                </div>
+                                <a href="#" class="rating__view">View Reviews</a>
                             </div>
-                            <a href="#" class="rating__view">View Reviews</a>
-                        </div>
-                        <ul class="characteristic__list">
-                           \{{#each this.features}}
-                        <li>\{{this}}</li>
-                        \{{/each}}
-                        </ul>
-                    </div>
-                    <div class="button button_white selection characteristic__selection">
-                    \{{{generate_memory_variants_helper}}}
-                    </div>
-                    <div class="button button_white selection characteristic__selection">
-                    \{{{generate_color_variants_helper}}}
-                    </div>
-                    <a class="button button_cancel button_full hide-all-details">Close</a>
-                    <a class="button button_gradient button_full view-all-details"><span>View All Details</span></a>
-                </div>
-            </div>
-            <div class="view__info-full view__col view__inline view__col_hidden no-visible">
-                <h3 class="part-title">Specifications</h3>
-                <div class="scrollable-container-two">
-                    <div class="scroll-container-inside">
-                        <div class="collapsed-block ">
-                            <div class="collapsed-block__dropdown"><span class="collapsed-block__title">General</span></div>
-                            <ul class="collapsed-block__list">
-                            \{{#each this.specifications_general}}
-                            <li class="collapsed-block__item">
-                                <span class="collapsed-block__title">\{{this.field}}</span>
-                                <span class="collapsed-block__value">\{{this.value}}</span>
-                            </li>
-                        \{{/each}}
+                            <ul class="characteristic__list">
+                               \{{#each this.features}}
+                            <li>\{{this}}</li>
+                            \{{/each}}
                             </ul>
                         </div>
-                        <div class="collapsed-block ">
-                            <div class="collapsed-block__dropdown"><span class="collapsed-block__title">Display</span></div>
-                            <ul class="collapsed-block__list">
-                        \{{#each this.get_display}}
-                            <li class="collapsed-block__item">
-                                <span class="collapsed-block__title">\{{this.field}}</span>
-                                <span class="collapsed-block__value">\{{this.value}}</span>
-                            </li>
-                        \{{/each}}
-                            </ul>
+                        <div class="button button_white selection characteristic__selection">
+                        \{{{generate_memory_variants_helper}}}
                         </div>
-                        <div class="collapsed-block ">
-                            <div class="collapsed-block__dropdown"><span class="collapsed-block__title">Camera</span></div>
-                            <ul class="collapsed-block__list">
-                            \{{#each this.get_camera}}
-                            <li class="collapsed-block__item">
-                                <span class="collapsed-block__title">\{{this.field}}</span>
-                                <span class="collapsed-block__value">\{{this.value}}</span>
-                            </li>
-                        \{{/each}}
-                            </ul>
+                        <div class="button button_white selection characteristic__selection">
+                        \{{{generate_color_variants_helper}}}
                         </div>
-                        <div class="collapsed-block ">
-                            <div class="collapsed-block__dropdown"><span class="collapsed-block__title">Battery</span></div>
-                            <ul class="collapsed-block__list">
-                                \{{#each this.battery}}
-                            <li class="collapsed-block__item">
-                                <span class="collapsed-block__title">\{{this.field}}</span>
-                                <span class="collapsed-block__value">\{{this.value}}</span>
-                            </li>
-                        \{{/each}}
-                            </ul>
-                        </div>
+                        <a class="button button_cancel button_full hide-all-details">Close</a>
+                        <a class="button button_gradient button_full view-all-details"><span>View All Details</span></a>
                     </div>
                 </div>
-            </div>
-            <div class="view__prices view__col view__inline">
-                <!--<div class="scrollable-container gray-skin">-->
-                <h3 class="part-title">Prices</h3>
-                <div class="scrollable-container-two">
-                    <div class="scroll-container-inside">
-											<div class="scroll-container-inside">
-			                    <div class="price">
-                            <div class="price__header price__header_best">
-                                <div class="price__best">Best Price</div>
-                                <img src="\{{{generate_logo_helper_cheapest shortlisted_model_shortlisted_retailer}}}" alt="" style="width: auto;">
+                <div class="view__info-full view__col view__inline view__col_hidden no-visible">
+                    <h3 class="part-title">Specifications</h3>
+                    <div class="scrollable-container-two">
+                        <div class="scroll-container-inside">
+                            <div class="collapsed-block ">
+                                <div class="collapsed-block__dropdown"><span class="collapsed-block__title">General</span></div>
+                                <ul class="collapsed-block__list">
+                                \{{#each this.specifications_general}}
+                                <li class="collapsed-block__item">
+                                    <span class="collapsed-block__title">\{{this.field}}</span>
+                                    <span class="collapsed-block__value">\{{this.value}}</span>
+                                </li>
+                            \{{/each}}
+                                </ul>
                             </div>
-                            <div class="price__body">
-                                <span class="price__rs">RS</span>
-                                <span class="price__num">\{{this.cheapest_price}}</span>
-                                <a class="more-info">
-                                    <span class="more-info__btn"><img src="assets/build/assets/images/ic_info.svg" alt=""></span>
-                                    <div class="more-info__block">
-                                        <div class="more-info__part">
-                                            <h4>Delivery:</h4>
-                                            <h5>5- 10 Days</h5>
+                            <div class="collapsed-block ">
+                                <div class="collapsed-block__dropdown"><span class="collapsed-block__title">Display</span></div>
+                                <ul class="collapsed-block__list">
+                            \{{#each this.get_display}}
+                                <li class="collapsed-block__item">
+                                    <span class="collapsed-block__title">\{{this.field}}</span>
+                                    <span class="collapsed-block__value">\{{this.value}}</span>
+                                </li>
+                            \{{/each}}
+                                </ul>
+                            </div>
+                            <div class="collapsed-block ">
+                                <div class="collapsed-block__dropdown"><span class="collapsed-block__title">Camera</span></div>
+                                <ul class="collapsed-block__list">
+                                \{{#each this.get_camera}}
+                                <li class="collapsed-block__item">
+                                    <span class="collapsed-block__title">\{{this.field}}</span>
+                                    <span class="collapsed-block__value">\{{this.value}}</span>
+                                </li>
+                            \{{/each}}
+                                </ul>
+                            </div>
+                            <div class="collapsed-block ">
+                                <div class="collapsed-block__dropdown"><span class="collapsed-block__title">Battery</span></div>
+                                <ul class="collapsed-block__list">
+                                    \{{#each this.battery}}
+                                <li class="collapsed-block__item">
+                                    <span class="collapsed-block__title">\{{this.field}}</span>
+                                    <span class="collapsed-block__value">\{{this.value}}</span>
+                                </li>
+                            \{{/each}}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="view__prices view__col view__inline">
+                    <!--<div class="scrollable-container gray-skin">-->
+                    <h3 class="part-title">Prices</h3>
+                    <div class="scrollable-container-two">
+                        <div class="scroll-container-inside">
+    											<div class="scroll-container-inside">
+    			                    <div class="price">
+                                <div class="price__header price__header_best">
+                                    <div class="price__best">Best Price</div>
+                                    <img src="\{{{generate_logo_helper_cheapest shortlisted_model_shortlisted_retailer}}}" alt="" style="width: auto;">
+                                </div>
+                                <div class="price__body">
+                                    <span class="price__rs">RS</span>
+                                    <span class="price__num">\{{this.cheapest_price}}</span>
+                                    <a class="more-info">
+                                        <span class="more-info__btn"><img src="assets/build/assets/images/ic_info.svg" alt=""></span>
+                                        <div class="more-info__block">
+                                            <div class="more-info__part">
+                                                <h4>Delivery:</h4>
+                                                <h5>5- 10 Days</h5>
+                                            </div>
+                                            <div class="more-info__part">
+                                                <h4>Offers:</h4>
+                                                <h5>10 % off on Visa Cards</h5>
+                                            </div>
                                         </div>
-                                        <div class="more-info__part">
-                                            <h4>Offers:</h4>
-                                            <h5>10 % off on Visa Cards</h5>
-                                        </div>
-                                    </div>
-                                </a>
+                                    </a>
+                                </div>
                             </div>
+                {{!-- the other retailers --}}
+                        \{{#each this.other_retailers_array}}
+                            <div class="price">
+                                <div class="price__header">
+                                    <img src="\{{generate_logo_helper}}" alt="" style="width: auto;">
+                                </div>
+                                <div class="price__body">
+                                    <span class="price__rs">RS</span>
+                                    <span class="price__num">\{{this.product_pricing.special_price}}</span>
+                                </div>
+                            </div>
+                        \{{/each}}
                         </div>
-            {{!-- the other retailers --}}
-                    \{{#each this.other_retailers_array}}
-                        <div class="price">
-                            <div class="price__header">
-                                <img src="\{{generate_logo_helper}}" alt="" style="width: auto;">
-                            </div>
-                            <div class="price__body">
-                                <span class="price__rs">RS</span>
-                                <span class="price__num">\{{this.product_pricing.special_price}}</span>
-                            </div>
-                        </div>
-                    \{{/each}}
                     </div>
                 </div>
             </div>
         </div>
+     \{{/each}}
     </div>
- \{{/each}}
-</div>
 </div>
