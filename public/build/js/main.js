@@ -17183,6 +17183,7 @@ new WOW().init();
 $('.show-8-X').on('click', function () {
   $('.browser__ex_1').css('display', 'block').addClass('animated fadeInDown');
 });
+
 $(document).ready(function () {
   // $('.send__input').on('input keyup', function() {
   //     $('.helpers').delay(200).show();
@@ -17214,9 +17215,9 @@ $(document).ready(function () {
   $('.speaking__close').click(function () {
     $('.speaking__overlay').fadeOut(200)
   })
-
-
 });
+
+
 $('.macbook__play').on('click', function () {
   var $video = $('.macbook__video'),
     src = $('#myvideo').attr("src");
@@ -17224,6 +17225,7 @@ $('.macbook__play').on('click', function () {
   $video.css('display', 'block');
   $('.macbook__content').hide();
 })
+
 $(window).on('load resize', function () {
   var heightInfo = $('.view__info').innerHeight();
   var heightPrice = $('.view__prices').innerHeight();
@@ -17238,8 +17240,6 @@ $(window).on('load resize', function () {
     var width = $(window).width() - 70;
     $('.width-full-mobile').css('width', width);
   }
-
-
 });
 
 var linkLocation = '';
@@ -17367,25 +17367,27 @@ $(window).on('load', function () {
 
 /**
  * Setup and Initialize form Submmission
- */
+*/
 var mobiles_requested = [];
 
 var suggested_zlatans = [];
 
 $('#send_chat').on('click', function (event) {
   event.preventDefault();
-  let destination = $('.send__input').offset().top;
-  $('.chat__content #mCSB_1').animate({ scrollTop: destination }, 1100);
+  // let destination = $('.send__input').offset().top;
+  // $('.chat__content #mCSB_1').animate({ scrollTop: destination }, 1100);
   sendMessage()
 });
+
 $('.send__input').keypress(function (e) {
   if (e.which == 13) {
-    let destination = $(this).offset().top;
-    console.log('destination--',destination);
-    $('.chat__content #mCSB_1').animate({ scrollTop: destination }, 1100);
+    // let destination = $(this).offset().top;
+    // console.log('destination--',destination);
+    // $('.chat__content #mCSB_1').animate({ scrollTop: destination }, 1100);
     sendMessage()
   }
 });
+
 function sendMessage() {
   var userAvatar = '/assets/build/assets/images/user-mes.svg';
 
@@ -17396,11 +17398,11 @@ function sendMessage() {
     $('.chat__messages')
       .append(
         `<div class="message message_sender">
-                            <img class="user-logo" src="/assets/build/assets/images/user-mes.svg" alt="">
-                            <div class="message__item message__item_user br-chat ">
-                                <p>${$('.chat__bottom input').val()}</p>
-                            </div>
-                </div>`
+            <img class="user-logo" src="/assets/build/assets/images/user-mes.svg" alt="">
+            <div class="message__item message__item_user br-chat ">
+                <p>${$('.chat__bottom input').val()}</p>
+            </div>
+          </div>`
       );
 
     // Store the value in chat_input variable
@@ -20989,7 +20991,6 @@ function Zlatan (mobiles) {
 }
 
 $(document).ready(function () {
-
   if (getParameterByName("q")) {
     $('.chat__bottom input').val(getParameterByName("q"))
     $('#send_chat').click()
