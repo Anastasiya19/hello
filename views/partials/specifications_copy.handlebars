@@ -67,45 +67,45 @@
                             <div class="collapsed-block ">
                                 <div class="collapsed-block__dropdown"><span class="collapsed-block__title">General</span></div>
                                 <ul class="collapsed-block__list">
-                                \{{#each this.specifications_general}}
-                                <li class="collapsed-block__item">
-                                    <span class="collapsed-block__title">\{{this.field}}</span>
-                                    <span class="collapsed-block__value">\{{this.value}}</span>
-                                </li>
-                            \{{/each}}
+                                    \{{#each this.specifications_general}}
+                                    <li class="collapsed-block__item">
+                                        <span class="collapsed-block__title">\{{this.field}}</span>
+                                        <span class="collapsed-block__value">\{{this.value}}</span>
+                                    </li>
+                                    \{{/each}}
                                 </ul>
                             </div>
                             <div class="collapsed-block ">
                                 <div class="collapsed-block__dropdown"><span class="collapsed-block__title">Display</span></div>
                                 <ul class="collapsed-block__list">
-                            \{{#each this.get_display}}
-                                <li class="collapsed-block__item">
-                                    <span class="collapsed-block__title">\{{this.field}}</span>
-                                    <span class="collapsed-block__value">\{{this.value}}</span>
-                                </li>
-                            \{{/each}}
+                                    \{{#each this.get_display}}
+                                        <li class="collapsed-block__item">
+                                            <span class="collapsed-block__title">\{{this.field}}</span>
+                                            <span class="collapsed-block__value">\{{this.value}}</span>
+                                        </li>
+                                    \{{/each}}
                                 </ul>
                             </div>
                             <div class="collapsed-block ">
                                 <div class="collapsed-block__dropdown"><span class="collapsed-block__title">Camera</span></div>
                                 <ul class="collapsed-block__list">
-                                \{{#each this.get_camera}}
-                                <li class="collapsed-block__item">
-                                    <span class="collapsed-block__title">\{{this.field}}</span>
-                                    <span class="collapsed-block__value">\{{this.value}}</span>
-                                </li>
-                            \{{/each}}
+                                    \{{#each this.get_camera}}
+                                    <li class="collapsed-block__item">
+                                        <span class="collapsed-block__title">\{{this.field}}</span>
+                                        <span class="collapsed-block__value">\{{this.value}}</span>
+                                    </li>
+                                    \{{/each}}
                                 </ul>
                             </div>
                             <div class="collapsed-block ">
                                 <div class="collapsed-block__dropdown"><span class="collapsed-block__title">Battery</span></div>
                                 <ul class="collapsed-block__list">
                                     \{{#each this.battery}}
-                                <li class="collapsed-block__item">
-                                    <span class="collapsed-block__title">\{{this.field}}</span>
-                                    <span class="collapsed-block__value">\{{this.value}}</span>
-                                </li>
-                            \{{/each}}
+                                        <li class="collapsed-block__item">
+                                            <span class="collapsed-block__title">\{{this.field}}</span>
+                                            <span class="collapsed-block__value">\{{this.value}}</span>
+                                        </li>
+                                    \{{/each}}
                                 </ul>
                             </div>
                         </div>
@@ -116,8 +116,8 @@
                     <h3 class="part-title">Prices</h3>
                     <div class="scrollable-container-two">
                         <div class="scroll-container-inside">
-    											<div class="scroll-container-inside">
-    			                    <div class="price">
+							<div class="scroll-container-inside">
+			                    <div class="price">
                                 <div class="price__header price__header_best">
                                     <div class="price__best">Best Price</div>
                                     <img src="\{{{generate_logo_helper_cheapest shortlisted_model_shortlisted_retailer}}}" alt="" style="width: auto;">
@@ -140,18 +140,18 @@
                                     </a>
                                 </div>
                             </div>
-                {{!-- the other retailers --}}
-                        \{{#each this.other_retailers_array}}
-                            <div class="price">
-                                <div class="price__header">
-                                    <img src="\{{generate_logo_helper}}" alt="" style="width: auto;">
+                            {{!-- the other retailers --}}
+                            \{{#each this.other_retailers_array}}
+                                <div class="price">
+                                    <div class="price__header">
+                                        <img src="\{{generate_logo_helper}}" alt="" style="width: auto;">
+                                    </div>
+                                    <div class="price__body">
+                                        <span class="price__rs">RS</span>
+                                        <span class="price__num">\{{this.product_pricing.special_price}}</span>
+                                    </div>
                                 </div>
-                                <div class="price__body">
-                                    <span class="price__rs">RS</span>
-                                    <span class="price__num">\{{this.product_pricing.special_price}}</span>
-                                </div>
-                            </div>
-                        \{{/each}}
+                            \{{/each}}
                         </div>
                     </div>
                 </div>
