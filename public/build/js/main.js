@@ -18345,7 +18345,7 @@ function fetch_variant(event) {
     //Count of the mobile amongst mobiles_requested
     var mobile_count;
 
-
+    //Loop through mobiles_requested array to find the clicked mobile
     mobiles_requested.forEach(find_selected_mobile);
 
     function find_selected_mobile(mobile, index, array) {
