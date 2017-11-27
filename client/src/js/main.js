@@ -136,6 +136,7 @@ function sendMessage() {
 
     // Clear Input & scroll Chat window-to last message
     $('.chat__bottom input').val('');
+    $('.chat__messages').scrollTop($('.chat__messages')[0].scrollHeight);
   }
 
   // sending the message
