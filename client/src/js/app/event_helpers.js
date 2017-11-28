@@ -105,6 +105,10 @@ function fetch_variant_by_color(event) {
 
     raul.color_selector = event.getElementsByClassName('color')[0].innerText;
 
+    if(raul.size_selector === undefined || raul.size_selector === null){
+        raul.size_selector = raul.selected_variant.memory_storage.internal_storage;    
+    }
+
     console.log("This is the raul color_selector: ", raul.color_selector);
 
     raul.load_status = 2;
