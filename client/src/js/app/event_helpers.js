@@ -105,6 +105,8 @@ function fetch_variant_by_color(event) {
 
     raul.color_selector = event.getElementsByClassName('color')[0].innerText;
 
+    console.log("This is the raul color_selector: ", raul.color_selector);
+
     raul.load_status = 2;
 
     reload_product(raul);

@@ -17671,6 +17671,7 @@ function beckham_router(beckham, zlatan, buffon) {
 
         var mobiles = []
 
+        //converting the mobiles array format to suit the specification element
         zlatan.mobiles[0].variants.forEach(mobile => {
 
             let variants = mobile.variants.concat([mobile])
@@ -18430,6 +18431,8 @@ function fetch_variant_by_color(event) {
     console.log("This is the raul object: ", raul);
 
     raul.color_selector = event.getElementsByClassName('color')[0].innerText;
+
+    console.log("This is the raul color_selector: ", raul.color_selector);
 
     raul.load_status = 2;
 
@@ -20826,10 +20829,14 @@ function hellovinciai(msg) {
         if (reply_received.batman === "true" && reply_received.status.code === 200) {
 
             //This constructor is meant for the query_status
+            //Beckham only does query routing and calls the necessary functions to create the request
             var beckham = new Beckham(reply_received.web_reply.data.query_status);
 
+            //Zlatan takes cares of the response returned and calls respective functions to 
+            //create the context objects
             var zlatan = new Zlatan(reply_received.web_reply.data.mobiles);
 
+            //Builds the text reply element
             var buffon = new Buffon(reply_received.web_reply.displayText);
 
 

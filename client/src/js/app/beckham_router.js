@@ -11,6 +11,7 @@ function beckham_router(beckham, zlatan, buffon) {
 
         var mobiles = []
 
+        //converting the mobiles array format to suit the specification element
         zlatan.mobiles[0].variants.forEach(mobile => {
 
             let variants = mobile.variants.concat([mobile])

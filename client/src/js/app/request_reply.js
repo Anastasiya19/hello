@@ -124,10 +124,14 @@ function hellovinciai(msg) {
         if (reply_received.batman === "true" && reply_received.status.code === 200) {
 
             //This constructor is meant for the query_status
+            //Beckham only does query routing and calls the necessary functions to create the request
             var beckham = new Beckham(reply_received.web_reply.data.query_status);
 
+            //Zlatan takes cares of the response returned and calls respective functions to 
+            //create the context objects
             var zlatan = new Zlatan(reply_received.web_reply.data.mobiles);
 
+            //Builds the text reply element
             var buffon = new Buffon(reply_received.web_reply.displayText);
 
 
