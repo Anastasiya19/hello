@@ -185,7 +185,7 @@ try {
          // Insert the HTML code into the page
         $('.chat__messages').append(this.html);
         console.log("html",this.html)
-        // init_specifications($(".chat__messages").children().last());
+        init_specifications($(".chat__messages").children().last());
         
         this.scroll_into_view(); 
 } catch (error) {

@@ -150,7 +150,7 @@ function sendMessage() {
 //= app/batman_false.js
 //= app/batman_missing.js
 //= app/beckham_router.js
-//= app/beckham.js
+//= app/Beckham.js
 //= app/Buffon.js
 //= app/comparison_request.js
 //= app/event_helpers.js
