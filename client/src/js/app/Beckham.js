@@ -174,20 +174,24 @@ Beckham.prototype.build_video_review_element = function(zlatan){
 	console.log("case video ");
 
     get_video(zlatan);
-
+try {
     this.template = $('#handlebars-case-120').html();
-
-    // Compile the template data into a function
-    this.templateScript = Handlebars.compile(this.template);
-
-    this.html = this.templateScript(zlatan.context);
-
-     // Insert the HTML code into the page
-    $('.chat__messages').append(this.html);
-    console.last("html",this.html)
-    // init_specifications($(".chat__messages").children().last());
     
-    this.scroll_into_view();
+        // Compile the template data into a function
+        this.templateScript = Handlebars.compile(this.template);
+    
+        this.html = this.templateScript(zlatan.context);
+    
+         // Insert the HTML code into the page
+        $('.chat__messages').append(this.html);
+        console.last("html",this.html)
+        // init_specifications($(".chat__messages").children().last());
+        
+        this.scroll_into_view(); 
+} catch (error) {
+    console.log("error ", error)
+}
+
 
 
 }
