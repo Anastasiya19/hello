@@ -176,7 +176,7 @@ Beckham.prototype.build_video_review_element = function(zlatan){
     get_video(zlatan);
 try {
     this.template = $('#handlebars-case-120').html();
-    
+    console.log("template ",this.template)
         // Compile the template data into a function
         this.templateScript = Handlebars.compile(this.template);
     
@@ -184,7 +184,7 @@ try {
     
          // Insert the HTML code into the page
         $('.chat__messages').append(this.html);
-        console.last("html",this.html)
+        console.log("html",this.html)
         // init_specifications($(".chat__messages").children().last());
         
         this.scroll_into_view(); 
