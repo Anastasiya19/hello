@@ -184,7 +184,7 @@ Beckham.prototype.build_video_review_element = function(zlatan){
 
      // Insert the HTML code into the page
     $('.chat__messages').append(this.html);
-
+    console.last("html",this.html)
     // init_specifications($(".chat__messages").children().last());
     
     this.scroll_into_view();
