@@ -3,9 +3,13 @@ get_video = function (zlatan) {
 	console.log("Inside the get_video function ");
 
 	console.log('mobs ', zlatan)
-
+try {
+	
 	zlatan.context = {youtube_video: zlatan.mobiles.youtubeVid};
-
+	
+} catch (error) {
+	console.log("err ",error)
+}
 	// zlatan.select_handlebars_template();
 	// zlatan.compile_script();
 	// zlatan.generate_html();
