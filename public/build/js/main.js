@@ -17604,7 +17604,7 @@ function attributes_request(zlatan){
 //Function to create the request and get the reply
 function send_auto_complete_request(input_query) {
 
-    
+
 
     var input_query = input_query;
 
@@ -17617,6 +17617,8 @@ function send_auto_complete_request(input_query) {
     $.post("/hellovincisearch", {
         input_query: input_query
     }, function(reply_received) {
+
+        $(".helpers").empty();
 
         console.log("This is the reply_received for search send_auto_complete_request: ", reply_received);
 
