@@ -251,6 +251,8 @@ app.post('/hellovinciai', function(req, res) {
 //Route for processing the chat message received from frontend 
 app.post('/hellovincisearch', function(req, res) {
 
+    console.log("This is the request text received on backend: ", req.body.input_query);
+
     //Search the index
     index.search(req.body.input_query, function(err, content) {
       console.log(content.hits);
