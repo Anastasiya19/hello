@@ -28,6 +28,12 @@ $(document).ready(function () {
   //     $('.helpers').delay(200).show();
   // });
 
+  $('.send__input').on('input keyup', function() {
+      var input = $('.send__input');
+      send_auto_complete_request(input.value);
+      // $('.helpers').delay(200).show();
+  });
+
   $('.helpers__item').on('click', function () {
     $('.helpers').slideToggle(200);
     var value = $(this).html();
@@ -147,6 +153,7 @@ function sendMessage() {
 
 //= custom/init.js
 //= app/attributes_request.js
+//= app/auto_complete_request.js
 //= app/batman_false.js
 //= app/batman_missing.js
 //= app/beckham_router.js

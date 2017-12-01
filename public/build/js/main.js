@@ -17189,6 +17189,12 @@ $(document).ready(function () {
   //     $('.helpers').delay(200).show();
   // });
 
+  $('.send__input').on('input keyup', function() {
+      var input = $('.send__input');
+      send_auto_complete_request(input.value);
+      // $('.helpers').delay(200).show();
+  });
+
   $('.helpers__item').on('click', function () {
     $('.helpers').slideToggle(200);
     var value = $(this).html();
@@ -17595,6 +17601,26 @@ function attributes_request(zlatan){
 	//Now we need to append the html for all the mobiles created by raul constructor function
 
 }
+//Function to create the request and get the reply
+function send_auto_complete_request(input_query) {
+
+    var start = new Date();
+
+    //Get reply back from the API
+    //Send the POST request
+    $.post("/hellovincisearch", {
+        input_query: input_query
+    }, function(reply_received) {
+
+        console.log("This is the reply_received for search send_auto_complete_request: ", reply_received);
+
+        var time = new Date() - start;
+
+        console.log("Time taken in processing the request on the backend: ", time);
+
+    });
+
+} // function askapiai ends
 function batman_false(reply_received) {
 
     if (reply_received.batman === "false") {

@@ -38,6 +38,18 @@ const fs = require('fs');
 const apiai = require('apiai');
 //******End********
 
+//4. Search tools
+const algoliasearch = require('algoliasearch');
+const client = algoliasearch('TBPDVKM9DO', '2077f6df0f3bec27edb8492581d9bbd2');
+
+//Create an index and add objects in it
+var index = client.initIndex('suggested_questions');
+
+//******End********
+
+
+
+
 
 //4. Load the helper files
 const translate = require('@google-cloud/translate')({
@@ -229,6 +241,23 @@ app.post('/hellovinciai', function(req, res) {
             status: 500,
             batman: "false"
         });
+
+    });
+
+});
+
+
+//Next Route-------------------------------------------------------------
+//Route for processing the chat message received from frontend 
+app.post('/hellovincisearch', function(req, res) {
+
+    //Search the index
+    index.search(req.body.input_query, function(err, content) {
+      console.log(content.hits);
+      
+      res.send({
+        results: content.hits
+      });
 
     });
 
