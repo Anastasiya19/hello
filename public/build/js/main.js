@@ -17622,24 +17622,30 @@ function send_auto_complete_request(input_query) {
 
         console.log("This is the reply_received for search send_auto_complete_request: ", reply_received);
 
-        var time = new Date() - start;
+        if(reply_received.results.length > 0){
 
-        console.log("Time taken in processing the request on the backend: ", time);
+            var time = new Date() - start;
 
-        var template = $('#handlebars-auto-complete-reply').html();
+            console.log("Time taken in processing the request on the backend: ", time);
 
-        var templateScript = Handlebars.compile(template);
+            var template = $('#handlebars-auto-complete-reply').html();
 
-        var context = {
-            results: reply_received.results
+            var templateScript = Handlebars.compile(template);
+
+            var context = {
+                results: reply_received.results
+            }
+
+            var html = templateScript(context);
+
+            // Insert the HTML code into the page
+            $('.helpers').append(html);
+
+            $('.helpers').show();
+
         }
 
-        var html = templateScript(context);
-
-        // Insert the HTML code into the page
-        $('.helpers').append(html);
-
-        $('.helpers').delay(100).show();
+        
 
     });
 
