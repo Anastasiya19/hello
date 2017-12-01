@@ -30,7 +30,7 @@ $(document).ready(function () {
 
   $('.send__input').on('input keyup', function() {
       var input = $('.send__input');
-      send_auto_complete_request(input.value);
+      send_auto_complete_request(input[0].value);
       // $('.helpers').delay(200).show();
   });
 
