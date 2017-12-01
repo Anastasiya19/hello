@@ -17604,6 +17604,8 @@ function attributes_request(zlatan){
 //Function to create the request and get the reply
 function send_auto_complete_request(input_query) {
 
+    console.log("This is the search query: ", input_query);
+
     var start = new Date();
 
     //Get reply back from the API
