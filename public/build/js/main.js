@@ -17622,6 +17622,14 @@ function send_auto_complete_request(input_query) {
 
         console.log("Time taken in processing the request on the backend: ", time);
 
+        var template = $('#handlebars-auto-complete-reply').html();
+
+        var templateScript = Handlebars.compile(template);
+
+        // var context = {
+        //     results: reply_received.results
+        // }
+
     });
 
 } // function askapiai ends

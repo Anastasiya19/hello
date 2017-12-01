@@ -256,9 +256,21 @@ app.post('/hellovincisearch', function(req, res) {
     //Search the index
     index.search(req.body.input_query, function(err, content) {
       console.log(content.hits);
-      
+
+      var reply = [];
+
+      if(content.hits.length > 0){
+
+        content.hits.forEach(get_only_question);
+
+          function get_only_question (element, index, array){
+            reply.push(element.question);
+          }
+
+      }
+   
       res.send({
-        results: content.hits
+        results: reply
       });
 
     });
