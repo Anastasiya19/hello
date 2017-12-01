@@ -11,6 +11,7 @@ $('.send__input').autocomplete({
             hitsPerPage: 5
         }, function(error, content) {
             if (error) {
+                console.log("error with algolia ",error)
                 cb([]);
                 return;
             }
@@ -32,7 +33,7 @@ function reload_questions(hits) {
     if (hits.length === 0) {
         return $('.helpers').hide();
     }
-
+    console.log("algolia response",hits)
 
     var html = templateScript({ hits: hits })
 
