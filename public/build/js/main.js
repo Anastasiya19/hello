@@ -18743,7 +18743,7 @@ function capture_value_and_hide(event){
     console.log("This is event target: ", event.target);
     console.log("This is event target innerText: ", event.target.innerText);
 
-    var input_field = event.target.innerText;
+    var input_field = document.getElementsByClassName('send__input');
     input_field[0].value = event.target.innerText;
 
     $('.helpers').slideToggle(200);
