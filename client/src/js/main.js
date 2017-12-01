@@ -35,6 +35,7 @@ $(document).ready(function () {
   });
 
   $('.helpers__item').on('click', function () {
+    console.log("Helper item clicked");
     $('.helpers').slideToggle(200);
     var value = $(this).html();
     var input = $('.send__input');
