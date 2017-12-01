@@ -17604,6 +17604,8 @@ function attributes_request(zlatan){
 //Function to create the request and get the reply
 function send_auto_complete_request(input_query) {
 
+    
+
     var input_query = input_query;
 
     console.log("This is the search query: ", input_query);
@@ -17626,9 +17628,16 @@ function send_auto_complete_request(input_query) {
 
         var templateScript = Handlebars.compile(template);
 
-        // var context = {
-        //     results: reply_received.results
-        // }
+        var context = {
+            results: reply_received.results
+        }
+
+        var html = templateScript(context);
+
+        // Insert the HTML code into the page
+        $('.helpers').append(html);
+
+        $('.helpers').delay(100).show();
 
     });
 
