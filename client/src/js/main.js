@@ -41,6 +41,8 @@ $(document).ready(function () {
     var input = $('.send__input');
     input.val(value);
   });
+
+  
   $('.scrollable-container-two').mCustomScrollbar({
     theme: "my-theme",
     setLeft: 15,

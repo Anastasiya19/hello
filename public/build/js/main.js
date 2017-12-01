@@ -17202,6 +17202,8 @@ $(document).ready(function () {
     var input = $('.send__input');
     input.val(value);
   });
+
+  
   $('.scrollable-container-two').mCustomScrollbar({
     theme: "my-theme",
     setLeft: 15,
@@ -18733,6 +18735,19 @@ function send_question(event){
        
     var send_btn = document.getElementById('send_chat');
     send_btn.click();
+
+}
+
+function capture_value_and_hide(event){
+
+    console.log("This is event target: ", event.target);
+    console.log("This is event target innerText: ", event.target.innerText);
+
+    var input_field = event.target.innerText;
+    input_field[0].value = event.target.innerText;
+
+    $('.helpers').slideToggle(200);
+
 
 }
 get_video = function (zlatan) {
