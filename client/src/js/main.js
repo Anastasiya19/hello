@@ -28,12 +28,21 @@ $(document).ready(function () {
   //     $('.helpers').delay(200).show();
   // });
 
+  $('.send__input').on('input keyup', function() {
+      var input = $('.send__input');
+      send_auto_complete_request(input[0].value);
+      // $('.helpers').delay(200).show();
+  });
+
   $('.helpers__item').on('click', function () {
+    console.log("Helper item clicked");
     $('.helpers').slideToggle(200);
     var value = $(this).html();
     var input = $('.send__input');
     input.val(value);
   });
+
+  
   $('.scrollable-container-two').mCustomScrollbar({
     theme: "my-theme",
     setLeft: 15,
@@ -147,6 +156,7 @@ function sendMessage() {
 
 //= custom/init.js
 //= app/attributes_request.js
+//= app/auto_complete_request.js
 //= app/batman_false.js
 //= app/batman_missing.js
 //= app/beckham_router.js

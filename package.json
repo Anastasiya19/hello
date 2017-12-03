@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@google-cloud/translate": "^1.1.0",
+    "algoliasearch": "^3.24.7",
     "apac": "^3.0.2",
     "apiai": "^4.0.3",
     "arr-diff": "^4.0.0",
