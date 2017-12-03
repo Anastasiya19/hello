@@ -283,7 +283,8 @@ app.post("/get_more", function (req, res, next) {
     request({
         uri: "https://calm-depths-38465.herokuapp.com/product/query",
         method: "POST",
-        body: req.body
+        body: req.body,
+        json:true
     }).then(mobiles=>{
         res.json(mobiles)
     })
