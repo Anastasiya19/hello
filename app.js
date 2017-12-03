@@ -287,6 +287,8 @@ app.post("/get_more", function (req, res, next) {
         json:true
     }).then(mobiles=>{
         res.json(mobiles)
+    }).catch(err=>{
+        res.json(err)
     })
 })
 

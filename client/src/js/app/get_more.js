@@ -4,9 +4,9 @@ function get_more(event) {
 
     var query = more_button.attr("data-query");
 
-    var skip = more_button.attr("data-skip");
+    var skip = Number(more_button.attr("data-skip"));
 
-    $.post("/get_more", { query_object: query, skip: skip }, function (mobiles) {
+    $.post("/get_more", { query: query, skip: skip }, function (mobiles) {
 
         console.log(mobiles)
         //This constructor is meant for the query_status
@@ -28,7 +28,9 @@ function get_more(event) {
         beckham_router(beckham, zlatan, buffon);
 
 
-
+        append_more_button(query,skip+1)
     })
+
+
 
 }
