@@ -6,9 +6,9 @@ function get_more(event) {
 
     var skip = more_button.attr("data-skip");
 
-    $.post("/get_query", { query_object: query, skip: skip }, function (mobiles) {
+    $.post("/get_more", { query_object: query, skip: skip }, function (mobiles) {
 
-
+        console.log(mobiles)
 
     })
 

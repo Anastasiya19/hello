@@ -148,9 +148,9 @@ function hellovinciai(msg) {
             }
 
             if(reply_received.query_status === 300){
-                append_more_button()
+                append_more_button(reply_received.web_reply.data.query_object)
             }
-            
+
             update_all_discussed_list(reply_received.web_reply.data.all_discussed_list);
 
             update_active_list(reply_received.web_reply.data.active_list);

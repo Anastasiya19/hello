@@ -176,6 +176,8 @@ function sendMessage() {
 //= app/update_active_list.js
 //= app/update_all_discussed_list.js
 //= app/Zlatan.js
+//= app/append_more_button.js
+//= app/get_more.js
 
 $(document).ready(function () {
   if (getParameterByName("q")) {

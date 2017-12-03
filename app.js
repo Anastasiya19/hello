@@ -99,7 +99,7 @@ app.set('port', (process.env.PORT || 3000));
 
 
 //11. Connect to the database
-mongoose.connect(config.URL, function(err, database) {
+mongoose.connect(config.URL, function (err, database) {
     if (err) return console.log(err)
     var db = database;
     console.log('Database ', db, ' connected');
@@ -122,32 +122,32 @@ app.use(bodyParser.text({
 
 
 //********************** 9. Routes *********************************************
-app.get('/', function(req, res) {
+app.get('/', function (req, res) {
     res.render('home');
     console.log("Get request received on the homepage. App is working");
 });
 
 //Next Route-------------------------------------------------------------
-app.get('/home', function(req, res) {
+app.get('/home', function (req, res) {
     res.render('home');
     console.log("Get request received on the homepage. App is working");
 });
 
 
 //Next Route-------------------------------------------------------------
-app.get('/explainer_video', function(req, res) {
+app.get('/explainer_video', function (req, res) {
     res.render('explainer_video');
     console.log("Get request received on the homepage. App is working");
 });
 
 //Next Route-------------------------------------------------------------
-app.get('/vinci_commands', function(req, res) {
+app.get('/vinci_commands', function (req, res) {
     res.render('vinci_commands');
     console.log("Get request received on the homepage. App is working");
 });
 
 //Next Route-------------------------------------------------------------
-app.get('/chat', function(req, res) {
+app.get('/chat', function (req, res) {
     console.log("Request hit the client home route");
     res.render('chat');
     console.log("Get request received on the homepage. App is working");
@@ -155,21 +155,21 @@ app.get('/chat', function(req, res) {
 
 
 //Next Route-------------------------------------------------------------
-app.get('/faqs', function(req, res) {
+app.get('/faqs', function (req, res) {
     console.log("Request hit the client home route");
     res.render('home');
     console.log("Get request received on the homepage. App is working");
 });
 
 //Next Route-------------------------------------------------------------
-app.get('/privacy_policy', function(req, res) {
+app.get('/privacy_policy', function (req, res) {
     console.log("Request hit the client home route");
     res.render('home');
     console.log("Get request received on the homepage. App is working");
 });
 
 //Next Route-------------------------------------------------------------
-app.get('/blog', function(req, res) {
+app.get('/blog', function (req, res) {
     console.log("Request hit the client home route");
     res.render('home');
     console.log("Get request received on the homepage. App is working");
@@ -177,7 +177,7 @@ app.get('/blog', function(req, res) {
 
 //Next Route-------------------------------------------------------------
 //Route for processing the chat message received from frontend 
-app.post('/hellovinciai', function(req, res) {
+app.post('/hellovinciai', function (req, res) {
 
     console.log("This is the body of the request received from the frontend: ", req.body);
     console.log("This is the request text: ", req.body.api_request_text);
@@ -186,7 +186,7 @@ app.post('/hellovinciai', function(req, res) {
     req.body.active_list = JSON.parse(req.body.active_list);
 
     console.log("This is the active_list mobiles after JSON parse: ", req.body.active_list);
-    
+
 
     //Preparing the request to be sent to API AI
     var requestData = {
@@ -219,7 +219,7 @@ app.post('/hellovinciai', function(req, res) {
             'Authorization': config.api_ai_client_access_token,
             'Content-Type': 'application/json; charset=utf-8'
         }
-    }).then(function(response) {
+    }).then(function (response) {
         console.log("This is response on API AI which is sent back to frontend: ", response);
         console.log("Request processing over: Sending the processed data back to the client");
 
@@ -230,16 +230,47 @@ app.post('/hellovinciai', function(req, res) {
             batman: response.result.metadata.webhookUsed
         });
     })
-    .catch(function(err) {
-        console.log('err ', err);
-        var reply = {
-            speech: "Houston we are working on fixing the problem"
+        .catch(function (err) {
+            console.log('err ', err);
+            var reply = {
+                speech: "Houston we are working on fixing the problem"
+            }
+
+            res.send({
+                web_reply: reply,
+                status: 500,
+                batman: "false"
+            });
+
+        });
+
+});
+
+
+//Next Route-------------------------------------------------------------
+//Route for processing the chat message received from frontend 
+app.post('/hellovincisearch', function (req, res) {
+
+    console.log("This is the request text received on backend: ", req.body.input_query);
+
+    //Search the index
+    index.search(req.body.input_query, function (err, content) {
+        console.log(content.hits);
+
+        var reply = [];
+
+        if (content.hits.length > 0) {
+
+            content.hits.forEach(get_only_question);
+
+            function get_only_question(element, index, array) {
+                reply.push(element.question);
+            }
+
         }
 
         res.send({
-            web_reply: reply,
-            status: 500,
-            batman: "false"
+            results: reply
         });
 
     });
@@ -247,48 +278,29 @@ app.post('/hellovinciai', function(req, res) {
 });
 
 
-//Next Route-------------------------------------------------------------
-//Route for processing the chat message received from frontend 
-app.post('/hellovincisearch', function(req, res) {
+app.post("/get_more", function (req, res, next) {
 
-    console.log("This is the request text received on backend: ", req.body.input_query);
-
-    //Search the index
-    index.search(req.body.input_query, function(err, content) {
-      console.log(content.hits);
-
-      var reply = [];
-
-      if(content.hits.length > 0){
-
-        content.hits.forEach(get_only_question);
-
-          function get_only_question (element, index, array){
-            reply.push(element.question);
-          }
-
-      }
-   
-      res.send({
-        results: reply
-      });
-
-    });
-
-});
+    request({
+        uri: "https://calm-depths-38465.herokuapp.com/product/query",
+        method: "POST",
+        body: req.body
+    }).then(mobiles=>{
+        res.json(mobiles)
+    })
+})
 
 //************************ Routes Over **************************************
 
 
 
 // 10. Error handler on the app
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
     console.error(err.stack)
     res.status(500).send('Something broke!')
 });
 
 
 // 11. Start the Server
-app.listen(app.get('port'), function() {
+app.listen(app.get('port'), function () {
     console.log('Node app is running on port', app.get('port'));
 });
