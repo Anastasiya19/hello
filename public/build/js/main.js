@@ -21090,7 +21090,7 @@ function Zlatan (mobiles) {
 
 function append_more_button(query, skip){
     // appending more button to the last suggested questions
-    $($(".suggestion")[$(".suggestion").length -1]).append(`<li  class="suggestion__item br-chat" onclick="get_more(event)" data-skip="${skip || 1}" data-query='${query}' > more </li>`)
+    $($(".suggestion")[$(".suggestion").length -1]).append(`<li  class="suggestion__item br-chat more-button" onclick="get_more(event)" data-skip="${skip || 1}" data-query='${query}' > more </li>`)
 
 }
 function get_more(event) {
@@ -21122,7 +21122,11 @@ function get_more(event) {
         //Check the status of the request to decide which element to create
         beckham_router(beckham, zlatan, buffon);
 
-
+        // append the last set of suggested question 
+        $('.chat__messages').append($($(".suggestion")[$(".suggestion").length -1]))
+        // remove the more button
+        $(".more-button")[$(".more-button").length -1].remove()
+        // append new more button
         append_more_button(query,skip+1)
     })
 
