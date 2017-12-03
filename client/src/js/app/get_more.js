@@ -5,7 +5,7 @@ function get_more(event) {
     var query = more_button.attr("data-query");
 
     var skip = Number(more_button.attr("data-skip"));
-
+    console.log("query ",query)
     $.post("/get_more", { query: query, skip: skip }, function (mobiles) {
 
         console.log(mobiles)

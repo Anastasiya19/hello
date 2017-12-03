@@ -21090,7 +21090,7 @@ function Zlatan (mobiles) {
 
 function append_more_button(query, skip){
     // appending more button to the last suggested questions
-    $($(".suggestion")[$(".suggestion").length -1]).append(`<li  class="suggestion__item br-chat" onclick="get_more(event)" data-skip="${skip || 1}" data-query="${query}" > more </li>`)
+    $($(".suggestion")[$(".suggestion").length -1]).append(`<li  class="suggestion__item br-chat" onclick="get_more(event)" data-skip="${skip || 1}" data-query='${query}' > more </li>`)
 
 }
 function get_more(event) {
@@ -21100,7 +21100,7 @@ function get_more(event) {
     var query = more_button.attr("data-query");
 
     var skip = Number(more_button.attr("data-skip"));
-
+    console.log("query ",query)
     $.post("/get_more", { query: query, skip: skip }, function (mobiles) {
 
         console.log(mobiles)
