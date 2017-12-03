@@ -20937,7 +20937,7 @@ function hellovinciai(msg) {
                 neymar.check_questions();    
             }
 
-            if(reply_received.query_status === 300){
+            if(reply_received.web_reply.data.query_status === 300){
                 append_more_button(reply_received.web_reply.data.query_object)
             }
 
