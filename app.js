@@ -49,8 +49,6 @@ var index = client.initIndex('suggested_questions');
 
 
 
-
-
 //4. Load the helper files
 const translate = require('@google-cloud/translate')({
     projectId: 'tapovan-f64b6',
@@ -94,7 +92,7 @@ app.set('view engine', 'handlebars');
 //******End********
 
 //10. Set the port
-app.set('port', (process.env.PORT || 3000));
+app.set('port', (8080));
 //******End********
 
 
@@ -284,14 +282,27 @@ app.post("/get_more", function (req, res, next) {
         uri: "https://calm-depths-38465.herokuapp.com/product/query",
         method: "POST",
         body: req.body,
-        json:true
-    }).then(mobiles=>{
+        json: true
+    }).then(mobiles => {
         res.json(mobiles)
-    }).catch(err=>{
+    }).catch(err => {
         res.json(err)
     })
 })
 
+app.post("/product/update_reactions", function (req, res, next) {
+
+    request({
+        uri: "https://calm-depths-38465.herokuapp.com/product/update_reactions",
+        method: "POST",
+        body: req.body,
+        json: true
+    }).then(response => {
+        res.json(response)
+    }).catch(err => {
+        res.json(err)
+    })
+})
 //************************ Routes Over **************************************
 
 

@@ -9,7 +9,7 @@ function fetch_variant(event) {
 
     //clicked element
     var clicked_element = ($(event).parents('.message__item_view-full'));
-    
+
     console.log(clicked_element[0].id);
 
     element_id = clicked_element[0].id;
@@ -67,7 +67,7 @@ function fetch_variant_by_color(event) {
 
     //clicked element
     var clicked_element = ($(event).parents('.message__item_view-full'));
-    
+
     console.log(clicked_element[0].id);
 
     element_id = clicked_element[0].id;
@@ -105,8 +105,8 @@ function fetch_variant_by_color(event) {
 
     raul.color_selector = event.getElementsByClassName('color')[0].innerText;
 
-    if(raul.size_selector === undefined || raul.size_selector === null){
-        raul.size_selector = raul.selected_variant.memory_storage.internal_storage;    
+    if (raul.size_selector === undefined || raul.size_selector === null) {
+        raul.size_selector = raul.selected_variant.memory_storage.internal_storage;
     }
 
     console.log("This is the raul color_selector: ", raul.color_selector);
@@ -169,7 +169,7 @@ function start_speech() {
 
         var speech_flag = 0;
 
-        recognition.onspeechstart = function() {
+        recognition.onspeechstart = function () {
 
             var speech_overlay = document.getElementById('speech_overlay');
 
@@ -189,7 +189,7 @@ function start_speech() {
 
         }
 
-        recognition.onspeechend = function() {
+        recognition.onspeechend = function () {
 
             var speech_overlay = document.getElementById('speech_overlay');
 
@@ -222,9 +222,9 @@ function start_speech() {
         // 	$('.icon-transform-active').toggleClass('icon-transform');
         // }
 
-        recognition.onresult = function(e) {
+        recognition.onresult = function (e) {
 
-            setTimeout(function() {
+            setTimeout(function () {
 
                 console.log("This is the event object: ", e);
 
@@ -243,7 +243,7 @@ function start_speech() {
 
             }, 30);
 
-            setTimeout(function() {
+            setTimeout(function () {
 
 
                 var input_field = document.getElementsByClassName('send__input');
@@ -256,7 +256,7 @@ function start_speech() {
             }, 60);
 
 
-            setTimeout(function() {
+            setTimeout(function () {
 
                 var send_btn = document.getElementById('send_chat');
                 console.log("Before click");
@@ -268,7 +268,7 @@ function start_speech() {
             //document.getElementById('labnol').submit();
         };
 
-        recognition.onerror = function(e) {
+        recognition.onerror = function (e) {
             recognition.stop();
             var speech_overlay = document.getElementById('speech_overlay');
             speech_overlay.style.display = "none";
@@ -294,7 +294,7 @@ function close_speech_modal() {
 }
 
 //Deprecated
-function demo_yes(){
+function demo_yes() {
 
     console.log("Demo yes clicked");
 
@@ -309,7 +309,7 @@ function demo_yes(){
 }
 
 //Deprecated
-function demo_no(){
+function demo_no() {
 
     console.log("Demo no clicked");
 
@@ -321,33 +321,33 @@ function demo_no(){
 
 }
 
-function speak_message(tts){
+function speak_message(tts) {
 
-    responsiveVoice.setDefaultVoice("US English Female", {rate: 0.5});
+    responsiveVoice.setDefaultVoice("US English Female", { rate: 0.5 });
     responsiveVoice.speak(tts);
 
 }
 
 //Deprecated
-function begin_demo(){
+function begin_demo() {
 
     console.log("This function is Deprecated");
 }
 
-function send_question(event){
+function send_question(event) {
 
     console.log("This is event target: ", event.target);
     console.log("This is event target innerText: ", event.target.innerText);
 
     var input_field = document.getElementsByClassName('send__input');
     input_field[0].value = event.target.innerText;
-       
+
     var send_btn = document.getElementById('send_chat');
     send_btn.click();
 
 }
 
-function capture_value_and_hide(event){
+function capture_value_and_hide(event) {
 
     console.log("This is event target: ", event.target);
     console.log("This is event target innerText: ", event.target.innerText);
@@ -362,3 +362,83 @@ function capture_value_and_hide(event){
 
 
 
+function react(event, reaction, normalized_name) {
+
+    var reactions = JSON.parse(localStorage.getItem("reactions") || "[]")
+
+    // if the user didn't react to this phone before
+    if (!get_reaction(normalized_name).reaction) {
+        save_reaction(reaction, normalized_name);
+        $.post("/product/update_reactions", { reaction: reaction, normalized_name: normalized_name, increment: true }, function (res) {
+
+            console.log("response ", res)
+            
+            console.log("reacting ", event, reaction)
+            console.log("next ", $(event.target).parent().next())
+
+            $(event.target).parent().next().html(parseFloat($(event.target).parent().next().html()) + 1)
+        })
+    }
+
+    // if the user have reacted to this phone before
+    if (get_reaction(normalized_name).reaction) {
+
+        // if the previous reaction was the same 
+        if (get_reaction(normalized_name).reaction === reaction) {
+            // do nothing
+            return;
+
+        }
+        // if the user is reaction a new reaction
+        else {
+
+
+            var previous_reaction = get_reaction(normalized_name).reaction
+            // decrement the previous reaction
+            $.post("/product/update_reactions", { reaction: previous_reaction, normalized_name: normalized_name, increment: false }, function (res) {
+                console.log("response of decrement", res)
+                // decrement the previous reaction
+                var previous_reaction_span = $(event.target).parent().parent().siblings("." + previous_reaction + "_reaction").find("span")
+                previous_reaction_span.html(parseFloat(previous_reaction_span.html()) - 1)
+
+            })
+
+            // adding the new reaction
+            $.post("/product/update_reactions", { reaction: reaction, normalized_name: normalized_name, increment: true }, function (res) {
+                console.log("response ", res)
+                $(event.target).parent().next().html(parseFloat($(event.target).parent().next().html()) + 1)
+
+            })
+
+
+            get_reaction(normalized_name).reaction = reaction
+            localStorage.setItem("reactions", JSON.stringify(reactions));
+
+        }
+    }
+
+
+    function get_reaction(normalized_name) {
+        if (!localStorage.getItem("reactions")) return {};
+
+        for (var i = 0; i < reactions.length; i++) {
+            if (reactions[i].normalized_name === normalized_name) {
+                return reactions[i]
+            }
+        }
+
+
+        return {}
+
+    }
+
+    function save_reaction(reaction, normalized_name) {
+        reactions.push({
+            reaction: reaction,
+            normalized_name: normalized_name
+        })
+
+        localStorage.setItem("reactions", JSON.stringify(reactions));
+    }
+
+}

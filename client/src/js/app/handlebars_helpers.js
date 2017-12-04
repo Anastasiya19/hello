@@ -329,6 +329,45 @@ Handlebars.registerHelper('youtube_video_title_helper', function() {
 
 
 
+Handlebars.registerHelper('offers', function(retailer) {
+    console.log("creating offers ",retailer)
+    var offers = (retailer.offers)? retailer.offers : retailer.selected_variant.product_retailers[retailer.shortlisted_model_shortlisted_retailer_index].offers;
+    text = ""
+    console.log("the offers ", offers)
+
+    if(offers.emi.emi_details === "N/A" && offers.exchange.exchange_offer_text === "N/A"){
+        return "No offers";
+    }
+
+    if(offers.emi.emi_details !== "N/A"){
+        text += "EMI: "+ offers.emi.emi_details + "<br>";
+    }
+
+    if(offers.exchange.exchange_offer_text !== "N/A"){
+        text += "Exchange: "+ offers.exchange.exchange_offer_text;
+    }
+    
+
+    return text;
+});
+    
+
+Handlebars.registerHelper('delivery', function(retailer) {
+    console.log("creating delivery_details ",retailer)
+    var delivery_details = (retailer.delivery_details)? retailer.delivery_details : retailer.selected_variant.product_retailers[retailer.shortlisted_model_shortlisted_retailer_index].delivery_details;
+    text = ""
+    console.log("the delivery_details ", delivery_details)
+
+    if(delivery_details.delivery_time === "N/A" ){
+        return "Unknown";
+    }else{
+        text += delivery_details.delivery_time ;
+    }
+
+    return text;
+});
+
+    
 // >>>>>>>>>>> for debugging 
 Handlebars.registerHelper("debug", function(optionalValue) {
     console.log("Current Context");

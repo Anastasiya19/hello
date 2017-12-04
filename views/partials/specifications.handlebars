@@ -17,20 +17,20 @@
                                 <h4 class="characteristic__model">\{{title}}</h4>
                                 <div class="facebook-status characteristic__facebook-status">
                                     <ul class="facebook-status__list">
-                                        <li class="facebook-status__item">
-                                            <a href="#" class="facebook-status__link">
+                                        <li class="facebook-status__item like_reaction">
+                                            <a href="#" class="facebook-status__link" onclick="react(event,'like','\{{this.selected_variant.product_basic_info.normalized_name}}')">
                                                 <img src="assets/build/assets/images/facebook-like.svg" alt="" class="facebook-status__icon">
                                             </a>
                                             <span>10</span>
                                         </li>
-                                        <li class="facebook-status__item">
-                                            <a href="#" class="facebook-status__link">
+                                        <li class="facebook-status__item love_reaction">
+                                            <a href="#" class="facebook-status__link" onclick="react(event,'love','\{{this.selected_variant.product_basic_info.normalized_name}}')">
                                                 <img src="assets/build/assets/images/facebook-love.svg" alt="" class="facebook-status__icon">
                                             </a>
                                             <span>15</span>
                                         </li>
-                                        <li class="facebook-status__item">
-                                            <a href="#" class="facebook-status__link">
+                                        <li class="facebook-status__item angry_reaction">
+                                            <a href="#" class="facebook-status__link" onclick="react(event,'angry','\{{this.selected_variant.product_basic_info.normalized_name}}')">
                                                 <img src="assets/build/assets/images/facebook-angry.svg" alt="" class="facebook-status__icon">
                                             </a>
                                             <span>1</span>
@@ -130,11 +130,11 @@
                                             <div class="more-info__block">
                                                 <div class="more-info__part">
                                                     <h4>Delivery:</h4>
-                                                    <h5>5- 10 Days</h5>
+                                                    <h5>\{{{delivery this}}}</h5>
                                                 </div>
                                                 <div class="more-info__part">
                                                     <h4>Offers:</h4>
-                                                    <h5>10 % off on Visa Cards</h5>
+                                                    <h5>\{{{offers this}}}</h5>
                                                 </div>
                                             </div>
                                         </a>
@@ -149,6 +149,19 @@
                                         <div class="price__body">
                                             <span class="price__rs">RS</span>
                                             <span class="price__num">\{{this.product_pricing.special_price}}</span>
+                                            <a class="more-info">
+                                                <span class="more-info__btn"><img src="assets/build/assets/images/ic_info.svg" alt=""></span>
+                                                <div class="more-info__block">
+                                                    <div class="more-info__part">
+                                                        <h4>Delivery:</h4>
+                                                        <h5>\{{{delivery this}}}</h5>
+                                                    </div>
+                                                    <div class="more-info__part">
+                                                        <h4>Offers:</h4>
+                                                        <h5>\{{{offers this}}}</h5>
+                                                    </div>
+                                                </div>
+                                            </a>
                                         </div>
                                     </div>
                                 \{{/each}}
