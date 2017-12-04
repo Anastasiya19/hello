@@ -92,7 +92,7 @@ app.set('view engine', 'handlebars');
 //******End********
 
 //10. Set the port
-app.set('port', (8080));
+app.set('port', (process.env.PORT || 3000));
 //******End********
 
 
