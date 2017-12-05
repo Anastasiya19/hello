@@ -18799,9 +18799,9 @@ function capture_value_and_hide(event) {
 
 
 function react(event, reaction, normalized_name) {
-
+    if(JSON.parse(localStorage.getItem("reactions") || "[]")[0].reaction) localStorage.removeItem("reactoins")
     var reactions = JSON.parse(localStorage.getItem("reactions") || "[]")
-
+    
     // if the user didn't react to this phone before
     if (!get_reaction(normalized_name)) {
         save_reaction(reaction, normalized_name);
