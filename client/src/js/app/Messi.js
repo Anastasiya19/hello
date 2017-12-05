@@ -24,6 +24,10 @@ Messi.prototype.loop_attributes = function() {
             this.camera_reply();
         }
 
+        if(element==='colors'){
+            this.colors_reply();
+        }
+
         if(element==='battery'){
             this.battery_reply();
         }
@@ -120,6 +124,34 @@ Messi.prototype.camera_reply = function(){
 
 
     // this.query_status = 104;
+
+}
+
+Messi.prototype.colors_reply = function(){
+    console.log("This is the color variant: ",this.mobile.variants[0].general_specifications.model_color);
+
+    var colors_array = [];
+
+    this.mobile.variants.forEach(fetch_colors);
+
+    function fetch_colors(variant, index, array){
+
+        if(variant.general_specifications.model_color !== "N/A"){
+            colors_array.push(variant.general_specifications.model_color);
+        }
+
+    }
+
+    colors_array = _.uniq(colors_array);
+
+    console.log("This is the colors_array: ", colors_array);
+
+    var reply = {};
+
+    reply.content_text = "Will soon get you the color options";
+
+    this.context_summary.push(reply);
+
 
 }
 
