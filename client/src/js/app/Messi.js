@@ -148,7 +148,7 @@ Messi.prototype.colors_reply = function(){
 
     var reply = {};
 
-    reply.content_text = "Will soon get you the color options";
+    reply.content_text = "It has " + arrayToSentence(colors_array) + " variants";
 
     this.context_summary.push(reply);
 
