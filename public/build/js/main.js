@@ -19719,7 +19719,7 @@ Messi.prototype.features_reply = function(){
 
     var reply = {};
 
-    reply.heading_text = "Here are the top features for "+this.mobile.variants[0].product_basic_info.normalized_name;
+    // reply.heading_text = "Here are the top features for "+this.mobile.variants[0].product_basic_info.normalized_name;
 
     reply.content_text = this.mobile.variants[0].general_specifications.features;
 
@@ -19731,7 +19731,7 @@ Messi.prototype.sales_package_reply = function(){
 
     var reply = {};
 
-    reply.heading_text = "Here is the list of items you get free along with "+this.mobile.variants[0].product_basic_info.normalized_name;
+    // reply.heading_text = "Here is the list of items you get free along with "+this.mobile.variants[0].product_basic_info.normalized_name;
 
     reply.content_text = this.mobile.variants[0].sales_package.contents;
 
@@ -19744,7 +19744,7 @@ Messi.prototype.sim_features_reply = function(){
 
     var reply = {};
 
-    reply.heading_text = "Here are the sim card details for "+this.mobile.variants[0].product_basic_info.normalized_name;
+    // reply.heading_text = "Here are the sim card details for "+this.mobile.variants[0].product_basic_info.normalized_name;
 
 
     if(this.mobile.variants[0].sim_features.sim_type!=="N/A"){
@@ -19776,7 +19776,7 @@ Messi.prototype.sensors_reply = function(){
 
     var reply = {};
     
-    reply.heading_text = this.mobile.variants[0].product_basic_info.normalized_name + " has following sensors";
+    // reply.heading_text = this.mobile.variants[0].product_basic_info.normalized_name + " has following sensors";
 
     reply.content_text = this.mobile.variants[0].sensors;
 
@@ -19788,7 +19788,7 @@ Messi.prototype.warranty_reply = function(){
 
     var reply = {};
 
-    reply.heading_text = this.mobile.variants[0].product_basic_info.normalized_name + " warranty details for this purchase";
+    // reply.heading_text = this.mobile.variants[0].product_basic_info.normalized_name + " warranty details for this purchase";
 
     reply.content_text = this.mobile.variants[0].warranty;
 
@@ -19873,7 +19873,7 @@ Messi.prototype.connectivity_reply = function(){
 
     var reply = {};
 
-    reply.heading_text = "Network details for "+this.mobile.variants[0].product_basic_info.normalized_name;
+    // reply.heading_text = "Network details for "+this.mobile.variants[0].product_basic_info.normalized_name;
 
     reply.content_text = this.mobile.variants[0].connectivity.network_type;
 
@@ -19884,7 +19884,7 @@ Messi.prototype.bluetooth_reply = function(){
 
     var reply = {};
 
-    reply.heading_text = "Bluetooth details for "+this.mobile.variants[0].product_basic_info.normalized_name;
+    // reply.heading_text = "Bluetooth details for "+this.mobile.variants[0].product_basic_info.normalized_name;
 
 
     if(this.mobile.variants[0].connectivity.bluetooth_support==="N/A"){
@@ -19918,7 +19918,7 @@ Messi.prototype.nfc_reply = function(){
 
     var reply = {};
 
-    reply.heading_text = "Near Field Communications(NFC) details for "+this.mobile.variants[0].product_basic_info.normalized_name;
+    // reply.heading_text = "Near Field Communications(NFC) details for "+this.mobile.variants[0].product_basic_info.normalized_name;
 
     //Creating a temp_array because handlebars 103 case accepts only arrays
     var temp_array = [];
@@ -19945,7 +19945,7 @@ Messi.prototype.jack_reply = function(){
 
     var reply = {};
 
-    reply.heading_text = "Audio jack details for "+this.mobile.variants[0].product_basic_info.normalized_name;
+    // reply.heading_text = "Audio jack details for "+this.mobile.variants[0].product_basic_info.normalized_name;
 
     if(this.mobile.variants[0].connectivity.audio_jack_width==="N/A"){
 
@@ -21052,6 +21052,8 @@ function hellovinciai(msg) {
             beckham_router(beckham, zlatan, buffon);
 
             if(reply_received.web_reply.data.suggested_questions !== undefined){
+
+                //Neymar builds the suggested_questions
                 var neymar = new Neymar(reply_received.web_reply.data.suggested_questions);
                 
                 neymar.check_questions();    
