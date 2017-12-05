@@ -19623,7 +19623,7 @@ Messi.prototype.loop_attributes = function() {
         }
 
         if(element==='RAM'){
-            this.storage_reply();
+            this.ram_reply();
         }
 
         if(element==='connectivity'){
@@ -19861,6 +19861,34 @@ Messi.prototype.sensors_reply = function(){
 
 }
 
+Messi.prototype.storage_reply = function(){
+    console.log("This is the storage variant: ",this.mobile.variants[0].memory_storage.internal_storage);
+
+    var storage_array = [];
+
+    this.mobile.variants.forEach(fetch_storage);
+
+    function fetch_storage(variant, index, array){
+
+        if(variant.memory_storage.internal_storage !== "N/A"){
+            storage_array.push(variant.memory_storage.internal_storage);
+        }
+
+    }
+
+    storage_array = _.uniq(storage_array);
+
+    console.log("This is the storage_array: ", storage_array);
+
+    var reply = {};
+
+    reply.content_text = "It has " + arrayToSentence(storage_array) + " variants";
+
+    this.context_summary.push(reply);
+
+
+}
+
 Messi.prototype.warranty_reply = function(){
 
     var reply = {};
@@ -19910,18 +19938,18 @@ Messi.prototype.display_reply = function(){
 }
 
 
-Messi.prototype.storage_reply = function(){
+Messi.prototype.ram_reply = function(){
 
-    console.log("This is the storage: ",this.mobile.variants[0].memory_storage.internal_storage);
+    // console.log("This is the storage: ",this.mobile.variants[0].memory_storage.internal_storage);
 
     var attribute_first = {};
     var attribute_second = {};
-    var attribute_third = {};
-
+    
     attribute_first = {
-        value: this.mobile.variants[0].memory_storage.internal_storage,
-        text: "Storage",
-        icon: "ion-android-folder-open"
+        value: this.mobile.variants[0].memory_storage.ram,
+        text: "RAM",
+        icon: "ion-ios-speedometer-outline"
+
     };
 
 
@@ -19931,19 +19959,11 @@ Messi.prototype.storage_reply = function(){
         icon: "ion-android-folder"
     };
 
-    attribute_third = {
-        value: this.mobile.variants[0].memory_storage.ram,
-        text: "RAM",
-        icon: "ion-ios-speedometer-outline"
-
-    };
-
     console.log("Attributes created")
 
     this.context_detailed.push(attribute_first);
     this.context_detailed.push(attribute_second);
-    this.context_detailed.push(attribute_third);
-
+    
 }
 
 Messi.prototype.connectivity_reply = function(){
