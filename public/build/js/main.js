@@ -19574,6 +19574,10 @@ Messi.prototype.loop_attributes = function() {
 
     function generate_reply_json(element, index, array){
 
+        if(element==='battery'){
+            this.battery_reply();
+        }
+
         if(element==='camera'){
             this.camera_reply();
         }
@@ -19582,9 +19586,10 @@ Messi.prototype.loop_attributes = function() {
             this.colors_reply();
         }
 
-        if(element==='battery'){
-            this.battery_reply();
+        if(element==='dimensions'){
+            this.dimensions_reply();
         }
+
 
         if(element==='processor'){
             this.processor_reply();
@@ -19702,7 +19707,15 @@ Messi.prototype.colors_reply = function(){
 
     var reply = {};
 
-    reply.content_text = "It has " + arrayToSentence(colors_array) + " variants";
+    if(colors_array.length > 0){
+        reply.content_text = "It has " + arrayToSentence(colors_array) + " variants";
+    }
+
+    else{
+        reply.content_text = "Seems like, I don't have the color details for this phone";
+    }
+
+    
 
     this.context_summary.push(reply);
 
@@ -19748,6 +19761,47 @@ Messi.prototype.battery_reply = function(){
     console.log("Attributes attribute_package created");
 
 }
+
+Messi.prototype.dimensions_reply = function(){
+
+    console.log("This is the dimensions: ",this.mobile.variants[0].dimensions);
+
+    var attribute_first = {};
+    var attribute_second = {};
+    var attribute_third = {};
+
+    attribute_first = {
+        value: this.mobile.variants[0].dimensions.weight,
+        text: "Weight",
+        icon: "ion-iphone"
+    };
+
+
+    attribute_second = {
+        value: this.mobile.variants[0].dimensions.height,
+        text: "Height",
+        icon: "ion-iphone"
+    };
+
+    attribute_third = {
+        value: this.mobile.variants[0].dimensions.depth,
+        text: "Depth",
+        icon: "ion-iphone"
+
+    };
+
+    console.log("Attributes created")
+
+    this.context_detailed.push(attribute_first);
+    this.context_detailed.push(attribute_second);
+    this.context_detailed.push(attribute_third);
+
+   
+    console.log("Attributes attribute_package created");
+
+}
+
+
 
 
 Messi.prototype.processor_reply = function(){
@@ -19882,7 +19936,15 @@ Messi.prototype.storage_reply = function(){
 
     var reply = {};
 
-    reply.content_text = "It has " + arrayToSentence(storage_array) + " variants";
+
+    if(storage_array.length > 0){
+        reply.content_text = "It has " + arrayToSentence(storage_array) + " variants";    
+    }
+
+    else{
+        reply.content_text = "Seems like I don't have the storage details for this phone";
+    }
+    
 
     this.context_summary.push(reply);
 
