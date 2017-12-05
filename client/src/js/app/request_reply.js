@@ -142,6 +142,8 @@ function hellovinciai(msg) {
             beckham_router(beckham, zlatan, buffon);
 
             if(reply_received.web_reply.data.suggested_questions !== undefined){
+
+                //Neymar builds the suggested_questions
                 var neymar = new Neymar(reply_received.web_reply.data.suggested_questions);
                 
                 neymar.check_questions();    

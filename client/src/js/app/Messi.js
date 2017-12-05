@@ -20,13 +20,22 @@ Messi.prototype.loop_attributes = function() {
 
     function generate_reply_json(element, index, array){
 
+        if(element==='battery'){
+            this.battery_reply();
+        }
+
         if(element==='camera'){
             this.camera_reply();
         }
 
-        if(element==='battery'){
-            this.battery_reply();
+        if(element==='colors'){
+            this.colors_reply();
         }
+
+        if(element==='dimensions'){
+            this.dimensions_reply();
+        }
+
 
         if(element==='processor'){
             this.processor_reply();
@@ -65,7 +74,7 @@ Messi.prototype.loop_attributes = function() {
         }
 
         if(element==='RAM'){
-            this.storage_reply();
+            this.ram_reply();
         }
 
         if(element==='connectivity'){
@@ -123,6 +132,42 @@ Messi.prototype.camera_reply = function(){
 
 }
 
+Messi.prototype.colors_reply = function(){
+    console.log("This is the color variant: ",this.mobile.variants[0].general_specifications.model_color);
+
+    var colors_array = [];
+
+    this.mobile.variants.forEach(fetch_colors);
+
+    function fetch_colors(variant, index, array){
+
+        if(variant.general_specifications.model_color !== "N/A"){
+            colors_array.push(variant.general_specifications.model_color);
+        }
+
+    }
+
+    colors_array = _.uniq(colors_array);
+
+    console.log("This is the colors_array: ", colors_array);
+
+    var reply = {};
+
+    if(colors_array.length > 0){
+        reply.content_text = "It has " + arrayToSentence(colors_array) + " variants";
+    }
+
+    else{
+        reply.content_text = "Seems like, I don't have the color details for this phone";
+    }
+
+    
+
+    this.context_summary.push(reply);
+
+
+}
+
 
 Messi.prototype.battery_reply = function(){
 
@@ -162,6 +207,47 @@ Messi.prototype.battery_reply = function(){
     console.log("Attributes attribute_package created");
 
 }
+
+Messi.prototype.dimensions_reply = function(){
+
+    console.log("This is the dimensions: ",this.mobile.variants[0].dimensions);
+
+    var attribute_first = {};
+    var attribute_second = {};
+    var attribute_third = {};
+
+    attribute_first = {
+        value: this.mobile.variants[0].dimensions.weight,
+        text: "Weight",
+        icon: "ion-iphone"
+    };
+
+
+    attribute_second = {
+        value: this.mobile.variants[0].dimensions.height,
+        text: "Height",
+        icon: "ion-iphone"
+    };
+
+    attribute_third = {
+        value: this.mobile.variants[0].dimensions.depth,
+        text: "Depth",
+        icon: "ion-iphone"
+
+    };
+
+    console.log("Attributes created")
+
+    this.context_detailed.push(attribute_first);
+    this.context_detailed.push(attribute_second);
+    this.context_detailed.push(attribute_third);
+
+   
+    console.log("Attributes attribute_package created");
+
+}
+
+
 
 
 Messi.prototype.processor_reply = function(){
@@ -210,7 +296,7 @@ Messi.prototype.features_reply = function(){
 
     var reply = {};
 
-    reply.heading_text = "Here are the top features for "+this.mobile.variants[0].product_basic_info.normalized_name;
+    // reply.heading_text = "Here are the top features for "+this.mobile.variants[0].product_basic_info.normalized_name;
 
     reply.content_text = this.mobile.variants[0].general_specifications.features;
 
@@ -222,7 +308,7 @@ Messi.prototype.sales_package_reply = function(){
 
     var reply = {};
 
-    reply.heading_text = "Here is the list of items you get free along with "+this.mobile.variants[0].product_basic_info.normalized_name;
+    // reply.heading_text = "Here is the list of items you get free along with "+this.mobile.variants[0].product_basic_info.normalized_name;
 
     reply.content_text = this.mobile.variants[0].sales_package.contents;
 
@@ -235,7 +321,7 @@ Messi.prototype.sim_features_reply = function(){
 
     var reply = {};
 
-    reply.heading_text = "Here are the sim card details for "+this.mobile.variants[0].product_basic_info.normalized_name;
+    // reply.heading_text = "Here are the sim card details for "+this.mobile.variants[0].product_basic_info.normalized_name;
 
 
     if(this.mobile.variants[0].sim_features.sim_type!=="N/A"){
@@ -267,7 +353,7 @@ Messi.prototype.sensors_reply = function(){
 
     var reply = {};
     
-    reply.heading_text = this.mobile.variants[0].product_basic_info.normalized_name + " has following sensors";
+    // reply.heading_text = this.mobile.variants[0].product_basic_info.normalized_name + " has following sensors";
 
     reply.content_text = this.mobile.variants[0].sensors;
 
@@ -275,11 +361,47 @@ Messi.prototype.sensors_reply = function(){
 
 }
 
+Messi.prototype.storage_reply = function(){
+    console.log("This is the storage variant: ",this.mobile.variants[0].memory_storage.internal_storage);
+
+    var storage_array = [];
+
+    this.mobile.variants.forEach(fetch_storage);
+
+    function fetch_storage(variant, index, array){
+
+        if(variant.memory_storage.internal_storage !== "N/A"){
+            storage_array.push(variant.memory_storage.internal_storage);
+        }
+
+    }
+
+    storage_array = _.uniq(storage_array);
+
+    console.log("This is the storage_array: ", storage_array);
+
+    var reply = {};
+
+
+    if(storage_array.length > 0){
+        reply.content_text = "It has " + arrayToSentence(storage_array) + " variants";    
+    }
+
+    else{
+        reply.content_text = "Seems like I don't have the storage details for this phone";
+    }
+    
+
+    this.context_summary.push(reply);
+
+
+}
+
 Messi.prototype.warranty_reply = function(){
 
     var reply = {};
 
-    reply.heading_text = this.mobile.variants[0].product_basic_info.normalized_name + " warranty details for this purchase";
+    // reply.heading_text = this.mobile.variants[0].product_basic_info.normalized_name + " warranty details for this purchase";
 
     reply.content_text = this.mobile.variants[0].warranty;
 
@@ -324,18 +446,18 @@ Messi.prototype.display_reply = function(){
 }
 
 
-Messi.prototype.storage_reply = function(){
+Messi.prototype.ram_reply = function(){
 
-    console.log("This is the storage: ",this.mobile.variants[0].memory_storage.internal_storage);
+    // console.log("This is the storage: ",this.mobile.variants[0].memory_storage.internal_storage);
 
     var attribute_first = {};
     var attribute_second = {};
-    var attribute_third = {};
-
+    
     attribute_first = {
-        value: this.mobile.variants[0].memory_storage.internal_storage,
-        text: "Storage",
-        icon: "ion-android-folder-open"
+        value: this.mobile.variants[0].memory_storage.ram,
+        text: "RAM",
+        icon: "ion-ios-speedometer-outline"
+
     };
 
 
@@ -345,26 +467,18 @@ Messi.prototype.storage_reply = function(){
         icon: "ion-android-folder"
     };
 
-    attribute_third = {
-        value: this.mobile.variants[0].memory_storage.ram,
-        text: "RAM",
-        icon: "ion-ios-speedometer-outline"
-
-    };
-
     console.log("Attributes created")
 
     this.context_detailed.push(attribute_first);
     this.context_detailed.push(attribute_second);
-    this.context_detailed.push(attribute_third);
-
+    
 }
 
 Messi.prototype.connectivity_reply = function(){
 
     var reply = {};
 
-    reply.heading_text = "Network details for "+this.mobile.variants[0].product_basic_info.normalized_name;
+    // reply.heading_text = "Network details for "+this.mobile.variants[0].product_basic_info.normalized_name;
 
     reply.content_text = this.mobile.variants[0].connectivity.network_type;
 
@@ -375,7 +489,7 @@ Messi.prototype.bluetooth_reply = function(){
 
     var reply = {};
 
-    reply.heading_text = "Bluetooth details for "+this.mobile.variants[0].product_basic_info.normalized_name;
+    // reply.heading_text = "Bluetooth details for "+this.mobile.variants[0].product_basic_info.normalized_name;
 
 
     if(this.mobile.variants[0].connectivity.bluetooth_support==="N/A"){
@@ -409,7 +523,7 @@ Messi.prototype.nfc_reply = function(){
 
     var reply = {};
 
-    reply.heading_text = "Near Field Communications(NFC) details for "+this.mobile.variants[0].product_basic_info.normalized_name;
+    // reply.heading_text = "Near Field Communications(NFC) details for "+this.mobile.variants[0].product_basic_info.normalized_name;
 
     //Creating a temp_array because handlebars 103 case accepts only arrays
     var temp_array = [];
@@ -436,7 +550,7 @@ Messi.prototype.jack_reply = function(){
 
     var reply = {};
 
-    reply.heading_text = "Audio jack details for "+this.mobile.variants[0].product_basic_info.normalized_name;
+    // reply.heading_text = "Audio jack details for "+this.mobile.variants[0].product_basic_info.normalized_name;
 
     if(this.mobile.variants[0].connectivity.audio_jack_width==="N/A"){
 

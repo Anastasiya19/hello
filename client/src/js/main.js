@@ -6,6 +6,7 @@
 //= scrolling/jquery.mCustomScrollbar.min.js
 //= custom/blockAligner.js
 //=  ../../bower_components/handlebars/handlebars.min.js
+//= ../../bower_components/array-to-sentence/browser.js
 
 function getParameterByName(name, url) {
   if (!url) url = window.location.href;
