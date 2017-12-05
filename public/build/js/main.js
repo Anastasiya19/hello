@@ -18801,7 +18801,7 @@ function react(event, reaction, normalized_name) {
     var reactions = JSON.parse(localStorage.getItem("reactions") || "[]")
 
     // if the user didn't react to this phone before
-    if (!get_reaction(normalized_name).reaction) {
+    if (!get_reaction(normalized_name)) {
         save_reaction(reaction, normalized_name);
         $.post("/product/update_reactions", { reaction: reaction, normalized_name: normalized_name, increment: true }, function (res) {
 
@@ -18815,10 +18815,10 @@ function react(event, reaction, normalized_name) {
     }
 
     // if the user have reacted to this phone before
-    if (get_reaction(normalized_name).reaction) {
+    if (get_reaction(normalized_name).reactions) {
 
         // if the previous reaction was the same 
-        if (get_reaction(normalized_name).reaction === reaction) {
+        if (check_reaction(get_reaction(normalized_name),reaction)) {
             // do nothing
             return;
 
@@ -18840,16 +18840,16 @@ function react(event, reaction, normalized_name) {
             
 
             // adding the new reaction
-            // $.post("/product/update_reactions", { reaction: reaction, normalized_name: normalized_name, increment: true }, function (res) {
-            //     console.log("response ", res)
+            $.post("/product/update_reactions", { reaction: reaction, normalized_name: normalized_name, increment: true }, function (res) {
+                console.log("response ", res)
                
-            //         $(event.target).parent().next().html(parseFloat($(event.target).parent().next().html()) + 1 || 1)
+                    $(event.target).parent().next().html(parseFloat($(event.target).parent().next().html()) + 1 || 1)
              
-            // })
+            })
 
 
-            // get_reaction(normalized_name).reaction = reaction
-            // localStorage.setItem("reactions", JSON.stringify(reactions));
+           add_reaction(get_reaction(normalized_name), reaction) 
+            localStorage.setItem("reactions", JSON.stringify(reactions));
 
             return
         }
@@ -18857,7 +18857,7 @@ function react(event, reaction, normalized_name) {
 
 
     function get_reaction(normalized_name) {
-        if (!localStorage.getItem("reactions")) return {};
+        if (!localStorage.getItem("reactions")) return false;
 
         for (var i = 0; i < reactions.length; i++) {
             if (reactions[i].normalized_name === normalized_name) {
@@ -18866,17 +18866,31 @@ function react(event, reaction, normalized_name) {
         }
 
 
-        return {}
+        return false
 
     }
 
     function save_reaction(reaction, normalized_name) {
         reactions.push({
-            reaction: reaction,
+            reactions: [reaction],
             normalized_name: normalized_name
         })
 
         localStorage.setItem("reactions", JSON.stringify(reactions));
+    }
+
+    function add_reaction(phone, reaction){
+        phone.reactions.push(reaction)
+    }
+
+    function check_reaction(phone, reaction){
+        for(var i=0; i<phone.reactions.length; i++){
+            if(phone.reactions[i] === reaction){
+                return true 
+                break;
+            }
+        }
+        return false
     }
 
 }
