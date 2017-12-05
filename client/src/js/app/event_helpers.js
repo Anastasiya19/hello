@@ -376,7 +376,7 @@ function react(event, reaction, normalized_name) {
             console.log("reacting ", event, reaction)
             console.log("next ", $(event.target).parent().next())
 
-            $(event.target).parent().next().html(parseFloat($(event.target).parent().next().html()) + 1)
+            $(event.target).parent().next().html(parseFloat($(event.target).parent().next().html()) + 1 || 1)
         })
     }
 
@@ -393,27 +393,31 @@ function react(event, reaction, normalized_name) {
         else {
 
 
-            var previous_reaction = get_reaction(normalized_name).reaction
-            // decrement the previous reaction
-            $.post("/product/update_reactions", { reaction: previous_reaction, normalized_name: normalized_name, increment: false }, function (res) {
-                console.log("response of decrement", res)
-                // decrement the previous reaction
-                var previous_reaction_span = $(event.target).parent().parent().siblings("." + previous_reaction + "_reaction").find("span")
-                previous_reaction_span.html(parseFloat(previous_reaction_span.html()) - 1)
+            // var previous_reaction = get_reaction(normalized_name).reaction
+            // // decrement the previous reaction
+            // $.post("/product/update_reactions", { reaction: previous_reaction, normalized_name: normalized_name, increment: false }, function (res) {
+            //     console.log("response of decrement", res)
+            //     // decrement the previous reaction
+            //     var previous_reaction_span = $(event.target).parent().parent().siblings("." + previous_reaction + "_reaction").find("span")
+            //     previous_reaction_span.html(parseFloat(previous_reaction_span.html()) - 1)
 
-            })
+            // })
+
+            
 
             // adding the new reaction
-            $.post("/product/update_reactions", { reaction: reaction, normalized_name: normalized_name, increment: true }, function (res) {
-                console.log("response ", res)
-                $(event.target).parent().next().html(parseFloat($(event.target).parent().next().html()) + 1)
+            // $.post("/product/update_reactions", { reaction: reaction, normalized_name: normalized_name, increment: true }, function (res) {
+            //     console.log("response ", res)
+               
+            //         $(event.target).parent().next().html(parseFloat($(event.target).parent().next().html()) + 1 || 1)
+             
+            // })
 
-            })
 
+            // get_reaction(normalized_name).reaction = reaction
+            // localStorage.setItem("reactions", JSON.stringify(reactions));
 
-            get_reaction(normalized_name).reaction = reaction
-            localStorage.setItem("reactions", JSON.stringify(reactions));
-
+            return
         }
     }
 

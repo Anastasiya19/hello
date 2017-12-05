@@ -367,7 +367,20 @@ Handlebars.registerHelper('delivery', function(retailer) {
     return text;
 });
 
-    
+Handlebars.registerHelper("get_reactions", function(selected_variant, reaction){
+
+console.log("selected variant ", selected_variant,"reaction ",reaction)
+
+
+if(selected_variant.reactions && selected_variant.reactions[reaction]){
+    return selected_variant.reactions[reaction]
+}else{
+
+    return ""
+}
+
+})
+
 // >>>>>>>>>>> for debugging 
 Handlebars.registerHelper("debug", function(optionalValue) {
     console.log("Current Context");

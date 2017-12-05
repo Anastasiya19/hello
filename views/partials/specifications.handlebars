@@ -21,19 +21,19 @@
                                             <a href="#" class="facebook-status__link" onclick="react(event,'like','\{{this.selected_variant.product_basic_info.normalized_name}}')">
                                                 <img src="assets/build/assets/images/facebook-like.svg" alt="" class="facebook-status__icon">
                                             </a>
-                                            <span>10</span>
+                                            <span>\{{{get_reactions this.selected_variant "like"}}}</span>
                                         </li>
                                         <li class="facebook-status__item love_reaction">
                                             <a href="#" class="facebook-status__link" onclick="react(event,'love','\{{this.selected_variant.product_basic_info.normalized_name}}')">
                                                 <img src="assets/build/assets/images/facebook-love.svg" alt="" class="facebook-status__icon">
                                             </a>
-                                            <span>15</span>
+                                            <span>\{{{get_reactions this.selected_variant "love"}}}</span>
                                         </li>
                                         <li class="facebook-status__item angry_reaction">
                                             <a href="#" class="facebook-status__link" onclick="react(event,'angry','\{{this.selected_variant.product_basic_info.normalized_name}}')">
                                                 <img src="assets/build/assets/images/facebook-angry.svg" alt="" class="facebook-status__icon">
                                             </a>
-                                            <span>1</span>
+                                            <span>\{{{get_reactions this.selected_variant "angry"}}}</span>
                                         </li>
                                     </ul>
                                 </div>
