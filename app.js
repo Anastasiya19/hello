@@ -56,6 +56,7 @@ const translate = require('@google-cloud/translate')({
 });
 
 const format_functions = require('./helpers/query_format/format_functions.js');
+const handlebars_helpers = require("./helpers/carousel/handlebars_helpers")
 
 //******End********
 
@@ -84,9 +85,14 @@ app.disable('x-powered-by');
 
 
 //9. Set the view engine
-app.engine('handlebars', exphbs({
+// register the helpers
+var hbs = exphbs.create({
+    // Specify helpers which are only registered on this instance.
+    helpers: handlebars_helpers,
     defaultLayout: 'client'
-}));
+});
+
+app.engine('handlebars', hbs.engine);
 
 app.set('view engine', 'handlebars');
 //******End********
@@ -147,7 +153,18 @@ app.get('/vinci_commands', function (req, res) {
 //Next Route-------------------------------------------------------------
 app.get('/chat', function (req, res) {
     console.log("Request hit the client home route");
-    res.render('chat');
+    fs.readFile("./jsons/show_me apple phones.json", 'utf8',function(err, json) {
+        if (err) {
+            console.log('Error  ' + err);
+            return;
+        }
+        
+        var carousel_phone = JSON.parse(json).web_reply.data.mobiles[0].variants
+        console.log(carousel_phone)
+        res.render('chat', {carousel_phone:carousel_phone});
+
+    })
+
     console.log("Get request received on the homepage. App is working");
 });
 

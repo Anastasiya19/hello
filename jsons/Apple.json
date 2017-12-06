@@ -1,0 +1,2938 @@
+[
+    {
+        "_id": "594ce74813256102d4e6e07a",
+        "updatedAt": "2017-12-05T09:44:43.732Z",
+        "createdAt": "2017-06-23T10:02:48.332Z",
+        "anchor_retailer_id": 1,
+        "final_position": 6,
+        "product_tags": {
+            "top_rated": false,
+            "flagship": false,
+            "light_weight": false,
+            "best_display": false,
+            "best_processor": false,
+            "best_battery": false,
+            "best_camera": false,
+            "budget": false,
+            "latest": false,
+            "bestseller": false,
+            "fingerprint_sensor": true,
+            "four_g": true,
+            "dual_sim": false
+        },
+        "other_info": {
+            "video_call_support": "N/A",
+            "voice_input": "N/A",
+            "hands_free_status": "N/A"
+        },
+        "amazon_info": {
+            "parent_asin": "N/A"
+        },
+        "dimensions": {
+            "weight": "129 g",
+            "depth": "6.9 mm",
+            "height": "138.1 mm",
+            "width": "67 mm"
+        },
+        "av_formats": {
+            "video": "H.264, MPEG4, PCM, AAC-LC, M4V, MOV, MJPEG, MP4, AVI",
+            "audio": "AAX, AIFF, WAV, HE-AAC, MP3, AAX+, AAC, VBR"
+        },
+        "warranty": "1 Year Manufacturer Warranty",
+        "sensors": "Ambient Light Sensor, Proximity Sensor, Three-axis Gyro Sensor, Accelerometer, Fingerprint Identity Sensor, Barometer",
+        "product_family": {
+            "variants": [
+                "MOBE4RW7WR5TWYQA",
+                "MOBEC894XYJZCNGR",
+                "MOBEFJG765FHFZJY",
+                "MOBEFJG7EKGHZEMN",
+                "MOBEFJG7FDGGMUZB",
+                "MOBEFJG7HWVD7AQG",
+                "MOBEFJG7MWPYV5DH",
+                "MOBEFJG7UDHGWBFJ",
+                "MOBEFJG7VKGJMZ5W",
+                "MOBEFJG7WZU9DZ8Y",
+                "MOBEYGPZAHZQMCKZ",
+                "MOBEYHZ254METXXB",
+                "MOBEYHZ28FRMNDCW",
+                "MOBEYHZ2GY7HDHHG",
+                "MOBEYHZ2JHVFHFBG",
+                "MOBEYHZ2NUZGCHKN",
+                "MOBEYHZ2VRNZZ2J5",
+                "MOBEYHZ2VSVKHAZH",
+                "MOBEYHZ2YAXZMF2J"
+            ]
+        },
+        "image_urls": {
+            "large": "http://img.fkcdn.com/image/j2c6du80/mobile/f/2/j/apple-iphone-6-a1586-800x800-imaetnf2h6gck78p.jpeg",
+            "medium": "http://img.fkcdn.com/image/j2c6du80/mobile/f/2/j/apple-iphone-6-a1586-400x400-imaetnf2h6gck78p.jpeg",
+            "small": "http://img.fkcdn.com/image/j2c6du80/mobile/f/2/j/apple-iphone-6-a1586-200x200-imaetnf2h6gck78p.jpeg"
+        },
+        "battery_power": {
+            "battery_type": "Li-Ion",
+            "removable_battery_status": "No",
+            "battery_capacity": "N/A",
+            "batteryVal": 0
+        },
+        "connectivity": {
+            "audio_jack_width": "3.5 mm",
+            "usb_connectivity": "Yes",
+            "nfc": "Yes",
+            "wifi": "Yes",
+            "bluetooth_version": "4",
+            "bluetooth_support": "Yes",
+            "internet_connectivity": "4G, 3G, Wi-Fi, EDGE, GPRS",
+            "supported_networks": "4G LTE",
+            "network_type": "4G, 3G, 2G"
+        },
+        "camera": {
+            "dual_camera_lens_available": "N/A",
+            "video_recording_resolution": "1920 x 1080",
+            "video_recording_status": "Yes",
+            "full_hd_recording_status": "Yes",
+            "hd_recording_status": "Yes",
+            "flash": "True Tone Flash",
+            "secondary_camera_features": "f/2.2 Aperture, HD Video Recording, Backside Illumination Sensor, Auto HDR for Photos and Videos, Improved Face Detection, Burst Mode, Exposure Control",
+            "secondary_camera_pixels": "1.2MP",
+            "secondary_camera": "Yes",
+            "primary_camera_features": "iSight Camera, 1.5 Pixels, Auto Focus, Focus Pixels, f/2.2 Aperture, True Tone Flash, Five-element Lens, Hybrid IR Filter, Backside Illumination Sensor, Sapphire Crystal Lens Cover, Auto Image Stabilisation, Auto HDR for Photos, Improved Face Detection, Exposure Control, Panorama (Upto 43 MP), Burst Mode, Tap to Focus, Photo Geo-tagging, Timer Mode, Slow-motion Video: Shoot Video at 120 fps, Time-lapse Video, Cinematic Video Stabilisation, Continuous Auto Focus Video, Take Still Photos While Recording Video, Zoom - 3x, Video Geo-tagging",
+            "primary_camera_pixels": "8MP",
+            "primary_camera": "Yes",
+            "cameraVal": 8
+        },
+        "memory_storage": {
+            "expandable_storage": "N/A",
+            "ram": "N/A",
+            "internal_storage": "32 GB",
+            "storageVal": 32,
+            "ramVal": null
+        },
+        "os_processor": {
+            "processor_speed": "N/A",
+            "processor_core": "N/A",
+            "processor_type": "A8 Chip with 64-bit Architecture and M8 Motion Co-processor",
+            "operating_system": "iOS 9",
+            "processor_speed_val": 0
+        },
+        "display_specifications": {
+            "touchscreen_status": "Yes",
+            "resolution_type": "Retina HD Display",
+            "resolution": "1334 x 750 Pixels",
+            "display_colors": "N/A",
+            "display_type": "LED-backlit",
+            "display_size": "4.7 inch",
+            "display_size_val": 4.7
+        },
+        "sim_features": {
+            "hybrid_sim_slot_status": "No",
+            "sim_size": "Nano SIM",
+            "sim_type": "Single Sim"
+        },
+        "sales_package": {
+            "contents": "Handset, Lightening Charger, Quick Start Guide, Data Cable, Headphone"
+        },
+        "general_specifications": {
+            "model_color": "Space Grey",
+            "model_number": "MQ3D2HN/A",
+            "model_name": "iPhone 6",
+            "features": [
+                "32 GB ROM |",
+                "4.7 inch Retina HD Display",
+                "8MP Rear Camera | 1.2MP Front Camera",
+                "Li-Ion Battery",
+                "A8 Chip with 64-bit Architecture and M8 Motion Co-processor Processor"
+            ]
+        },
+        "product_basic_info": {
+            "normalized_name": "Apple iPhone 6",
+            "product_type": "Smartphones",
+            "productBrand_normalized": "Apple",
+            "productBrand": "Apple",
+            "description": "N/A",
+            "title": "Apple iPhone 6 (Space Grey, 32 GB)"
+        },
+        "anchor_product_id": {
+            "uuid": "49042230-5356-11e7-b593-2f7cb3e079c9"
+        },
+        "product_id": {
+            "uuid": "1c6aab50-57fb-11e7-86b8-83b97069ec2a"
+        },
+        "product_retailers": [
+            {
+                "_id": "594ce74813256102d4e6e07b",
+                "seller_rating": {
+                    "seller_number_of_reviews": 0,
+                    "seller_number_of_ratings": 0,
+                    "seller_average_rating": null,
+                    "seller_name": "Shreyash Retail Private Ltd"
+                },
+                "delivery_details": {
+                    "delivery_assured": true,
+                    "cod": true,
+                    "delivery_time": "Usually Delivered in 3 - 4 days."
+                },
+                "offers": {
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    },
+                    "emi": {
+                        "emi_val": 1261,
+                        "emi_details": "EMI starting from ₹1261/month"
+                    },
+                    "offer_details": []
+                },
+                "product_rating": {
+                    "reviews_link": "N/A",
+                    "number_of_reviews": 415,
+                    "number_of_ratings": 2122,
+                    "rating_val": 4.3,
+                    "rating_text": "N/A"
+                },
+                "product_pricing": {
+                    "discount": 15,
+                    "special_price": 25999,
+                    "selling_price": 30700,
+                    "mrp": 30700
+                },
+                "product_status": {
+                    "available": true
+                },
+                "product_position": 6,
+                "productURL": "http://dl.flipkart.com/dl/apple-iphone-6-space-grey-32-gb/p/itmetmh3hfhnxtcj?pid=MOBETMH3ZYNDPVVC&affid=apdhamija",
+                "product_id": {
+                    "mobiles_db_uuid": "49042230-5356-11e7-b593-2f7cb3e079c9",
+                    "retailer_product_id": "MOBETMH3ZYNDPVVC"
+                },
+                "retailer_description": {
+                    "retailer_id": 1,
+                    "retailer_name": "Flipkart"
+                }
+            },
+            {
+                "retailer_description": {
+                    "retailer_name": "Amazon",
+                    "retailer_id": 2
+                },
+                "product_id": {
+                    "retailer_product_id": "B01NCN4ICO",
+                    "mobiles_db_uuid": "62ef6a00-55d2-11e7-b15f-7998764aec49"
+                },
+                "productURL": "https://www.amazon.in/Apple-iPhone-Space-Grey-32GB/dp/B01NCN4ICO?psc=1&SubscriptionId=AKIAJOGRXNO5VKAU526A&tag=ankurdhamija8-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B01NCN4ICO",
+                "product_position": 14,
+                "product_status": {
+                    "available": true
+                },
+                "product_pricing": {
+                    "mrp": 30700,
+                    "selling_price": 0,
+                    "special_price": 25999,
+                    "discount": 15
+                },
+                "product_rating": {
+                    "rating_text": "4.2 out of 5 stars",
+                    "rating_val": 4.2,
+                    "number_of_ratings": 0,
+                    "number_of_reviews": 4231,
+                    "reviews_link": "http://www.amazon.in/Exclusive-Dummy-ASIN197/dp/B01NCN4ICO/ref=sr_1_14?s=electronics&ie=UTF8&qid=1497967725&sr=1-14#customerReviews"
+                },
+                "offers": {
+                    "offer_details": [],
+                    "emi": {
+                        "emi_details": "N/A",
+                        "emi_val": 0
+                    },
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    }
+                },
+                "delivery_details": {
+                    "delivery_time": "N/A",
+                    "cod": true,
+                    "delivery_assured": true
+                },
+                "seller_rating": {
+                    "seller_name": "N/A",
+                    "seller_average_rating": 0,
+                    "seller_number_of_ratings": 0,
+                    "seller_number_of_reviews": 0
+                },
+                "_id": "594e256542a9ea0004f0b18f"
+            },
+            {
+                "retailer_description": {
+                    "retailer_name": "Tata cliq",
+                    "retailer_id": 5
+                },
+                "product_id": {
+                    "retailer_product_id": "MP000000001306324",
+                    "mobiles_db_uuid": "9439ea1a-8405-4d2f-9a51-1cd901d367fc"
+                },
+                "productURL": "https://www.tatacliq.com/apple-iphone-6-32gb-space-grey/p-mp000000001306324",
+                "product_position": 273,
+                "product_pricing": {
+                    "mrp": 30700,
+                    "selling_price": 29480,
+                    "special_price": 29480,
+                    "discount": 0
+                },
+                "product_rating": {
+                    "rating_text": "N/A",
+                    "rating_val": 0,
+                    "number_of_ratings": 0,
+                    "number_of_reviews": 0,
+                    "reviews_link": "N/A"
+                },
+                "offers": {
+                    "offer_details": [],
+                    "emi": {
+                        "emi_details": "N/A",
+                        "emi_val": 0
+                    },
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    }
+                },
+                "delivery_details": {
+                    "delivery_time": "N/A"
+                },
+                "seller_rating": {
+                    "seller_name": "N/A",
+                    "seller_average_rating": 0,
+                    "seller_number_of_ratings": 0,
+                    "seller_number_of_reviews": 0
+                },
+                "_id": "596f1f5e2931b31654a1e2fb"
+            }
+        ],
+        "__v": 0,
+        "internal_codes": {
+            "fingerprint_sensor_check": 1,
+            "four_g_check": 1,
+            "dual_sim_check": 1,
+            "status": 111
+        },
+        "variants": [
+            "594ce76513256102d4e6e1dc",
+            "594ce79213256102d4e6e3fc",
+            "594ce79313256102d4e6e408",
+            "594ce7c613256102d4e6e690",
+            "594ce7d913256102d4e6e772",
+            "59ca652a2891ce0004347b1d",
+            "59ca65bd2891ce0004347b23"
+        ],
+        "reactions": {
+            "angry": 1,
+            "like": 1,
+            "love": 1
+        }
+    },
+    {
+        "_id": "594ce74113256102d4e6e02e",
+        "updatedAt": "2017-12-05T11:02:25.932Z",
+        "createdAt": "2017-06-23T10:02:41.642Z",
+        "anchor_retailer_id": 1,
+        "final_position": 31,
+        "product_tags": {
+            "top_rated": false,
+            "flagship": false,
+            "light_weight": false,
+            "best_display": false,
+            "best_processor": false,
+            "best_battery": false,
+            "best_camera": false,
+            "budget": false,
+            "latest": false,
+            "bestseller": false,
+            "fingerprint_sensor": true,
+            "four_g": true,
+            "dual_sim": false
+        },
+        "other_info": {
+            "video_call_support": "N/A",
+            "voice_input": "Yes",
+            "hands_free_status": "N/A"
+        },
+        "amazon_info": {
+            "parent_asin": "N/A"
+        },
+        "dimensions": {
+            "weight": "113 g",
+            "depth": "7.6 mm",
+            "height": "123.8 mm",
+            "width": "58.6 mm"
+        },
+        "av_formats": {
+            "video": "H.264, MP4, MOV, M4V, AAC-LC, MPEG4, AVI, MJPEG, PCM",
+            "audio": "WAV, AAX, AAX+, AAC, VBR, MP3, AIFF, HE-AAC"
+        },
+        "warranty": "1 Year Manufacturer Warranty",
+        "sensors": "Three-axis Gyro Sensor, Touch ID Fingerprint Sensor, Proximity Sensor, Ambient Light Sensor, Accelerometer, Digital Compass",
+        "product_family": {
+            "variants": [
+                "MOBEHGSB7UZWVWN8",
+                "MOBEHGSBDYGRHAXF",
+                "MOBEHGSBJ8XTS32Z",
+                "MOBEHGSBJD4AADGG",
+                "MOBEHGSBJTRTFYRU",
+                "MOBEHGSBKTXRRGAT",
+                "MOBEHGSBRMGJFXFC",
+                "MOBEHGSCECUFFWS6",
+                "MOBETM93HMBGUQKH",
+                "MOBETM93KHC97KAV",
+                "MOBETM9FZWW5UEZG"
+            ]
+        },
+        "image_urls": {
+            "large": "http://img.fkcdn.com/image/j2c6du80/mobile/n/n/5/apple-iphone-se-mp852hn-a-800x800-imaetmazmydgutzf.jpeg",
+            "medium": "http://img.fkcdn.com/image/j2c6du80/mobile/n/n/5/apple-iphone-se-mp852hn-a-400x400-imaetmazmydgutzf.jpeg",
+            "small": "http://img.fkcdn.com/image/j2c6du80/mobile/n/n/5/apple-iphone-se-mp852hn-a-200x200-imaetmazmydgutzf.jpeg"
+        },
+        "battery_power": {
+            "battery_type": "Li-Ion",
+            "removable_battery_status": "No",
+            "battery_capacity": "N/A",
+            "batteryVal": 0
+        },
+        "connectivity": {
+            "audio_jack_width": "3.5 mm",
+            "usb_connectivity": "Yes",
+            "nfc": "Yes",
+            "wifi": "Yes",
+            "bluetooth_version": "4.2",
+            "bluetooth_support": "Yes",
+            "internet_connectivity": "4G, 3G, Wi-Fi, GPRS, EDGE",
+            "supported_networks": "4G LTE",
+            "network_type": "4G, 3G, 2G"
+        },
+        "camera": {
+            "dual_camera_lens_available": "N/A",
+            "video_recording_resolution": "3840 x 2160",
+            "video_recording_status": "Yes",
+            "full_hd_recording_status": "Yes",
+            "hd_recording_status": "Yes",
+            "flash": "True Tone Flash",
+            "secondary_camera_features": "HD Video Recording, Retina Flash, f/2.4 Aperture, Auto HDR for Photos, Backside Illumination Sensor, Exposure Control, Improved Local Tone Mapping, Burst Mode, Timer Mode, Face Detection",
+            "secondary_camera_pixels": "1.2MP",
+            "secondary_camera": "Yes",
+            "primary_camera_features": "iSight Camera, 1.22 µ Pixels, Live Photos, Auto Focus, Focus Pixels, Panorama (Upto 63 MP), Auto HDR for Photos, Exposure Control, Burst Mode, Timer Mode, f/2.2 Aperture, Five-element Lens, Hybrid IR Filter, Backside Illumination Sensor, Sapphire Crystal Lens Cover, Auto Image Stabilisation, Improved Local Tone Mapping, Improved Noise Reduction, Face Detection, Photo Geo-tagging, Slow-motion Video, Time-lapse Video with Stabilisation, Cinematic Video Stabilisation, Continuous Auto Focus Video, Take Still Photos While Recording Video, Playback Zoom, Zoom - 3x, Video Geo-tagging",
+            "primary_camera_pixels": "12MP",
+            "primary_camera": "Yes",
+            "cameraVal": 12
+        },
+        "memory_storage": {
+            "expandable_storage": "N/A",
+            "ram": "N/A",
+            "internal_storage": "32 GB",
+            "storageVal": 32,
+            "ramVal": null
+        },
+        "os_processor": {
+            "processor_speed": "N/A",
+            "processor_core": "N/A",
+            "processor_type": "A9 Chip with 64-bit Architecture and M9 Motion Co-processor",
+            "operating_system": "iOS 10",
+            "processor_speed_val": 0
+        },
+        "display_specifications": {
+            "touchscreen_status": "Yes",
+            "resolution_type": "Retina Display",
+            "resolution": "1136 x 640 Pixels",
+            "display_colors": "N/A",
+            "display_type": "N/A",
+            "display_size": "4 inch",
+            "display_size_val": 4
+        },
+        "sim_features": {
+            "hybrid_sim_slot_status": "No",
+            "sim_size": "Nano SIM",
+            "sim_type": "Single Sim"
+        },
+        "sales_package": {
+            "contents": "Handset, Apple EarPods with Remote and Mic, Lightning to USB Cable, USB Power Adapter, Documentation"
+        },
+        "general_specifications": {
+            "model_color": "Rose Gold",
+            "model_number": "MP852HN/A",
+            "model_name": "iPhone SE",
+            "features": [
+                "32 GB ROM |",
+                "4 inch Retina Display",
+                "12MP Rear Camera | 1.2MP Front Camera",
+                "Li-Ion Battery",
+                "A9 Chip with 64-bit Architecture and M9 Motion Co-processor Processor"
+            ]
+        },
+        "product_basic_info": {
+            "normalized_name": "Apple iPhone SE",
+            "product_type": "Smartphones",
+            "productBrand_normalized": "Apple",
+            "productBrand": "Apple",
+            "description": "N/A",
+            "title": "Apple iPhone SE (Rose Gold, 32 GB)"
+        },
+        "anchor_product_id": {
+            "uuid": "2f37d310-5356-11e7-b593-2f7cb3e079c9"
+        },
+        "product_id": {
+            "uuid": "186db420-57fb-11e7-86b8-83b97069ec2a"
+        },
+        "product_retailers": [
+            {
+                "_id": "594ce74113256102d4e6e02f",
+                "seller_rating": {
+                    "seller_number_of_reviews": 3,
+                    "seller_number_of_ratings": 6,
+                    "seller_average_rating": 5,
+                    "seller_name": "Sukriti Goswami"
+                },
+                "delivery_details": {
+                    "delivery_assured": true,
+                    "cod": true,
+                    "delivery_time": "Usually Delivered in 5 - 6 days."
+                },
+                "offers": {
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    },
+                    "emi": {
+                        "emi_val": 1067,
+                        "emi_details": "EMI starting from ₹1067/month"
+                    },
+                    "offer_details": []
+                },
+                "product_rating": {
+                    "reviews_link": "N/A",
+                    "number_of_reviews": 173,
+                    "number_of_ratings": 730,
+                    "rating_val": 4.4,
+                    "rating_text": "N/A"
+                },
+                "product_pricing": {
+                    "discount": 14,
+                    "special_price": 23000,
+                    "selling_price": 23000,
+                    "mrp": 27000
+                },
+                "product_status": {
+                    "available": true
+                },
+                "product_position": 31,
+                "productURL": "http://dl.flipkart.com/dl/apple-iphone-se-rose-gold-32-gb/p/itmetm9fyy3n7zfz?pid=MOBETM93F7DGJNN5&affid=apdhamija",
+                "product_id": {
+                    "mobiles_db_uuid": "2f37d310-5356-11e7-b593-2f7cb3e079c9",
+                    "retailer_product_id": "MOBETM93F7DGJNN5"
+                },
+                "retailer_description": {
+                    "retailer_id": 1,
+                    "retailer_name": "Flipkart"
+                }
+            },
+            {
+                "retailer_description": {
+                    "retailer_name": "Tata cliq",
+                    "retailer_id": 5
+                },
+                "product_id": {
+                    "retailer_product_id": "MP000000001391852",
+                    "mobiles_db_uuid": "16c1bd03-40ce-4f15-abae-d340e64e0892"
+                },
+                "productURL": "https://www.tatacliq.com/apple-iphone-se-32gb-rose-gold/p-mp000000001391852",
+                "product_position": 788,
+                "product_status": {
+                    "available": false
+                },
+                "product_pricing": {
+                    "mrp": 0,
+                    "selling_price": 0,
+                    "special_price": 0,
+                    "discount": 0
+                },
+                "product_rating": {
+                    "rating_text": "N/A",
+                    "rating_val": 0,
+                    "number_of_ratings": 0,
+                    "number_of_reviews": 0,
+                    "reviews_link": "N/A"
+                },
+                "offers": {
+                    "offer_details": [],
+                    "emi": {
+                        "emi_details": "N/A",
+                        "emi_val": 0
+                    },
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    }
+                },
+                "delivery_details": {
+                    "delivery_time": "N/A"
+                },
+                "seller_rating": {
+                    "seller_name": "N/A",
+                    "seller_average_rating": 0,
+                    "seller_number_of_ratings": 0,
+                    "seller_number_of_reviews": 0
+                },
+                "_id": "596f1f912931b31654a1e31a"
+            },
+            {
+                "retailer_description": {
+                    "retailer_name": "Amazon",
+                    "retailer_id": 2
+                },
+                "product_id": {
+                    "retailer_product_id": "B06ZXWWD6R",
+                    "mobiles_db_uuid": "0af01bd1-18c9-4574-9fdc-c7f29b3b8d72"
+                },
+                "productURL": "https://www.amazon.in/Apple-iPhone-SE-Rose-Gold/dp/B06ZXWWD6R?psc=1&SubscriptionId=AKIAJOGRXNO5VKAU526A&tag=ankurdhamija8-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B06ZXWWD6R",
+                "product_position": 152,
+                "product_status": {
+                    "available": true
+                },
+                "product_pricing": {
+                    "mrp": 26000,
+                    "selling_price": 25499,
+                    "special_price": 25124,
+                    "discount": 3
+                },
+                "product_rating": {
+                    "rating_text": "3.4 out of 5 stars",
+                    "rating_val": 3.4,
+                    "number_of_ratings": 0,
+                    "number_of_reviews": 1676,
+                    "reviews_link": "http://www.amazon.in/Apple-iPhone-SE-Rose-Gold/dp/B06ZXWWD6R/ref=sr_1_152/259-8183744-5518604?s=electronics&ie=UTF8&qid=1501132394&sr=1-152#customerReviews"
+                },
+                "offers": {
+                    "offer_details": [],
+                    "emi": {
+                        "emi_details": "N/A",
+                        "emi_val": 0
+                    },
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    }
+                },
+                "delivery_details": {
+                    "delivery_time": "N/A",
+                    "cod": true,
+                    "delivery_assured": true
+                },
+                "seller_rating": {
+                    "seller_name": "N/A",
+                    "seller_average_rating": 0,
+                    "seller_number_of_ratings": 0,
+                    "seller_number_of_reviews": 0
+                },
+                "_id": "597a51a9817b3100047ca6dc"
+            }
+        ],
+        "__v": 0,
+        "internal_codes": {
+            "fingerprint_sensor_check": 1,
+            "four_g_check": 1,
+            "dual_sim_check": 1,
+            "status": 111
+        },
+        "variants": [
+            "594ce74113256102d4e6e030",
+            "594ce74113256102d4e6e032",
+            "594ce74213256102d4e6e034",
+            "594ce78e13256102d4e6e3c2",
+            "594ce7a813256102d4e6e518",
+            "594ce7a913256102d4e6e528",
+            "594ce7a913256102d4e6e52c",
+            "594ce7b213256102d4e6e59c",
+            "594ce7d413256102d4e6e72e",
+            "594ce7de13256102d4e6e7ac",
+            "594ce7e113256102d4e6e7d2",
+            "59ce1cdb1ad7dd0004003cd3",
+            "59cdecf4d390f1000470f41b",
+            "59ce1d421ad7dd0004003cd6",
+            "59ce1d5a1ad7dd0004003cd8"
+        ],
+        "reactions": {
+            "like": 4,
+            "love": 6,
+            "angry": 4
+        }
+    },
+    {
+        "_id": "594ce74213256102d4e6e034",
+        "updatedAt": "2017-12-05T11:02:25.932Z",
+        "createdAt": "2017-06-23T10:02:42.045Z",
+        "anchor_retailer_id": 1,
+        "final_position": 50,
+        "product_tags": {
+            "top_rated": false,
+            "flagship": false,
+            "light_weight": false,
+            "best_display": false,
+            "best_processor": false,
+            "best_battery": false,
+            "best_camera": false,
+            "budget": false,
+            "latest": false,
+            "bestseller": false,
+            "fingerprint_sensor": true,
+            "four_g": true,
+            "dual_sim": false
+        },
+        "other_info": {
+            "video_call_support": "N/A",
+            "voice_input": "Yes",
+            "hands_free_status": "N/A"
+        },
+        "amazon_info": {
+            "parent_asin": "N/A"
+        },
+        "dimensions": {
+            "weight": "113 g",
+            "depth": "7.6 mm",
+            "height": "123.8 mm",
+            "width": "58.6 mm"
+        },
+        "av_formats": {
+            "video": "H.264, MP4, MOV, M4V, AAC-LC, MPEG4, AVI, MJPEG, PCM",
+            "audio": "WAV, AAX, AAX+, AAC, VBR, MP3, AIFF, HE-AAC"
+        },
+        "warranty": "1 Year Manufacturer Warranty",
+        "sensors": "Three-axis Gyro Sensor, Touch ID Fingerprint Sensor, Proximity Sensor, Ambient Light Sensor, Accelerometer, Digital Compass",
+        "product_family": {
+            "variants": [
+                "MOBEHGSB7UZWVWN8",
+                "MOBEHGSBDYGRHAXF",
+                "MOBEHGSBJ8XTS32Z",
+                "MOBEHGSBJD4AADGG",
+                "MOBEHGSBJTRTFYRU",
+                "MOBEHGSBKTXRRGAT",
+                "MOBEHGSBRMGJFXFC",
+                "MOBEHGSCECUFFWS6",
+                "MOBETM93F7DGJNN5",
+                "MOBETM93KHC97KAV",
+                "MOBETM9FZWW5UEZG"
+            ]
+        },
+        "image_urls": {
+            "large": "http://img.fkcdn.com/image/j2c6du80/mobile/q/k/h/apple-iphone-se-mp842hn-a-800x800-imaetmawbgfsxguh.jpeg",
+            "medium": "http://img.fkcdn.com/image/j2c6du80/mobile/q/k/h/apple-iphone-se-mp842hn-a-400x400-imaetmawbgfsxguh.jpeg",
+            "small": "http://img.fkcdn.com/image/j2c6du80/mobile/q/k/h/apple-iphone-se-mp842hn-a-200x200-imaetmawbgfsxguh.jpeg"
+        },
+        "battery_power": {
+            "battery_type": "Li-Ion",
+            "removable_battery_status": "No",
+            "battery_capacity": "N/A",
+            "batteryVal": 0
+        },
+        "connectivity": {
+            "audio_jack_width": "3.5 mm",
+            "usb_connectivity": "Yes",
+            "nfc": "Yes",
+            "wifi": "Yes",
+            "bluetooth_version": "4.2",
+            "bluetooth_support": "Yes",
+            "internet_connectivity": "4G, 3G, Wi-Fi, GPRS, EDGE",
+            "supported_networks": "4G LTE",
+            "network_type": "4G, 3G, 2G"
+        },
+        "camera": {
+            "dual_camera_lens_available": "N/A",
+            "video_recording_resolution": "3840 x 2160",
+            "video_recording_status": "Yes",
+            "full_hd_recording_status": "Yes",
+            "hd_recording_status": "Yes",
+            "flash": "True Tone Flash",
+            "secondary_camera_features": "HD Video Recording, Retina Flash, f/2.4 Aperture, Auto HDR for Photos, Backside Illumination Sensor, Exposure Control, Improved Local Tone Mapping, Burst Mode, Timer Mode, Face Detection",
+            "secondary_camera_pixels": "1.2MP",
+            "secondary_camera": "Yes",
+            "primary_camera_features": "iSight Camera, 1.22 µ Pixels, Live Photos, Auto Focus, Focus Pixels, Panorama (Upto 63 MP), Auto HDR for Photos, Exposure Control, Burst Mode, Timer Mode, f/2.2 Aperture, Five-element Lens, Hybrid IR Filter, Backside Illumination Sensor, Sapphire Crystal Lens Cover, Auto Image Stabilisation, Improved Local Tone Mapping, Improved Noise Reduction, Face Detection, Photo Geo-tagging, Slow-motion Video, Time-lapse Video with Stabilisation, Cinematic Video Stabilisation, Continuous Auto Focus Video, Take Still Photos While Recording Video, Playback Zoom, Zoom - 3x, Video Geo-tagging",
+            "primary_camera_pixels": "12MP",
+            "primary_camera": "Yes",
+            "cameraVal": 12
+        },
+        "memory_storage": {
+            "expandable_storage": "N/A",
+            "ram": "N/A",
+            "internal_storage": "32 GB",
+            "storageVal": 32,
+            "ramVal": null
+        },
+        "os_processor": {
+            "processor_speed": "N/A",
+            "processor_core": "N/A",
+            "processor_type": "A9 Chip with 64-bit Architecture and M9 Motion Co-processor",
+            "operating_system": "iOS 10",
+            "processor_speed_val": 0
+        },
+        "display_specifications": {
+            "touchscreen_status": "Yes",
+            "resolution_type": "Retina Display",
+            "resolution": "1136 x 640 Pixels",
+            "display_colors": "N/A",
+            "display_type": "N/A",
+            "display_size": "4 inch",
+            "display_size_val": 4
+        },
+        "sim_features": {
+            "hybrid_sim_slot_status": "No",
+            "sim_size": "Nano SIM",
+            "sim_type": "Single Sim"
+        },
+        "sales_package": {
+            "contents": "Handset, Apple EarPods with Remote and Mic, Lightning to USB Cable, USB Power Adapter, Documentation"
+        },
+        "general_specifications": {
+            "model_color": "Gold",
+            "model_number": "MP842HN/A",
+            "model_name": "iPhone SE",
+            "features": [
+                "32 GB ROM |",
+                "4 inch Retina Display",
+                "12MP Rear Camera | 1.2MP Front Camera",
+                "Li-Ion Battery",
+                "A9 Chip with 64-bit Architecture and M9 Motion Co-processor Processor"
+            ]
+        },
+        "product_basic_info": {
+            "normalized_name": "Apple iPhone SE",
+            "product_type": "Smartphones",
+            "productBrand_normalized": "Apple",
+            "productBrand": "Apple",
+            "description": "N/A",
+            "title": "Apple iPhone SE (Gold, 32 GB)"
+        },
+        "anchor_product_id": {
+            "uuid": "314d4590-5356-11e7-b593-2f7cb3e079c9"
+        },
+        "product_id": {
+            "uuid": "18ab5960-57fb-11e7-86b8-83b97069ec2a"
+        },
+        "product_retailers": [
+            {
+                "_id": "594ce74213256102d4e6e035",
+                "seller_rating": {
+                    "seller_number_of_reviews": 0,
+                    "seller_number_of_ratings": 0,
+                    "seller_average_rating": null,
+                    "seller_name": "Shreyash Retail Private Ltd"
+                },
+                "delivery_details": {
+                    "delivery_assured": true,
+                    "cod": true,
+                    "delivery_time": "N/A"
+                },
+                "offers": {
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    },
+                    "emi": {
+                        "emi_val": 1067,
+                        "emi_details": "EMI starting from ₹1067/month"
+                    },
+                    "offer_details": []
+                },
+                "product_rating": {
+                    "reviews_link": "N/A",
+                    "number_of_reviews": 121,
+                    "number_of_ratings": 542,
+                    "rating_val": 4.4,
+                    "rating_text": "N/A"
+                },
+                "product_pricing": {
+                    "discount": 19,
+                    "special_price": 21999,
+                    "selling_price": 27200,
+                    "mrp": 27200
+                },
+                "product_status": {
+                    "available": false
+                },
+                "product_position": 50,
+                "productURL": "http://dl.flipkart.com/dl/apple-iphone-se-gold-32-gb/p/itmetm9frzqcdrcm?pid=MOBETM93HMBGUQKH&affid=apdhamija",
+                "product_id": {
+                    "mobiles_db_uuid": "314d4590-5356-11e7-b593-2f7cb3e079c9",
+                    "retailer_product_id": "MOBETM93HMBGUQKH"
+                },
+                "retailer_description": {
+                    "retailer_id": 1,
+                    "retailer_name": "Flipkart"
+                }
+            },
+            {
+                "retailer_description": {
+                    "retailer_name": "Amazon",
+                    "retailer_id": 2
+                },
+                "product_id": {
+                    "retailer_product_id": "B071RC52N6",
+                    "mobiles_db_uuid": "6e5d4970-55d2-11e7-b15f-7998764aec49"
+                },
+                "productURL": "https://www.amazon.in/Apple-iPhone-SE-Gold-32GB/dp/B071RC52N6?psc=1&SubscriptionId=AKIAJOGRXNO5VKAU526A&tag=ankurdhamija8-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B071RC52N6",
+                "product_position": 188,
+                "product_status": {
+                    "available": true
+                },
+                "product_pricing": {
+                    "mrp": 27200,
+                    "selling_price": 0,
+                    "special_price": 23499,
+                    "discount": 14
+                },
+                "product_rating": {
+                    "rating_text": "3.2 out of 5 stars",
+                    "rating_val": 3.2,
+                    "number_of_ratings": 0,
+                    "number_of_reviews": 1448,
+                    "reviews_link": "http://www.amazon.in/Apple-iPhone-SE-Gold-32GB/dp/B071RC52N6/ref=sr_1_188?s=electronics&ie=UTF8&qid=1497967789&sr=1-188#customerReviews"
+                },
+                "offers": {
+                    "offer_details": [],
+                    "emi": {
+                        "emi_details": "N/A",
+                        "emi_val": 0
+                    },
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    }
+                },
+                "delivery_details": {
+                    "delivery_time": "N/A",
+                    "cod": true,
+                    "delivery_assured": true
+                },
+                "seller_rating": {
+                    "seller_name": "N/A",
+                    "seller_average_rating": 0,
+                    "seller_number_of_ratings": 0,
+                    "seller_number_of_reviews": 0
+                },
+                "_id": "594e236b42a9ea0004f0b17a"
+            },
+            {
+                "retailer_description": {
+                    "retailer_name": "Tata cliq",
+                    "retailer_id": 5
+                },
+                "product_id": {
+                    "retailer_product_id": "MP000000001391850",
+                    "mobiles_db_uuid": "faa0d7d5-c393-43f4-ac34-9c457d3747b6"
+                },
+                "productURL": "https://www.tatacliq.com/apple-iphone-se-32gb-gold/p-mp000000001391850",
+                "product_position": 787,
+                "product_status": {
+                    "available": false
+                },
+                "product_pricing": {
+                    "mrp": 27200,
+                    "selling_price": 22899,
+                    "special_price": 22899,
+                    "discount": 0
+                },
+                "product_rating": {
+                    "rating_text": "N/A",
+                    "rating_val": 0,
+                    "number_of_ratings": 0,
+                    "number_of_reviews": 0,
+                    "reviews_link": "N/A"
+                },
+                "offers": {
+                    "offer_details": [],
+                    "emi": {
+                        "emi_details": "N/A",
+                        "emi_val": 0
+                    },
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    }
+                },
+                "delivery_details": {
+                    "delivery_time": "N/A"
+                },
+                "seller_rating": {
+                    "seller_name": "N/A",
+                    "seller_average_rating": 0,
+                    "seller_number_of_ratings": 0,
+                    "seller_number_of_reviews": 0
+                },
+                "_id": "596f1f8f2931b31654a1e319"
+            }
+        ],
+        "__v": 0,
+        "internal_codes": {
+            "fingerprint_sensor_check": 1,
+            "four_g_check": 1,
+            "dual_sim_check": 1,
+            "status": 111
+        },
+        "variants": [
+            "594ce74113256102d4e6e02e",
+            "594ce74113256102d4e6e030",
+            "594ce74113256102d4e6e032",
+            "594ce78e13256102d4e6e3c2",
+            "594ce7a813256102d4e6e518",
+            "594ce7a913256102d4e6e528",
+            "594ce7a913256102d4e6e52c",
+            "594ce7b213256102d4e6e59c",
+            "594ce7d413256102d4e6e72e",
+            "594ce7de13256102d4e6e7ac",
+            "594ce7e113256102d4e6e7d2",
+            "59ce1cdb1ad7dd0004003cd3",
+            "59cdecf4d390f1000470f41b",
+            "59ce1d421ad7dd0004003cd6",
+            "59ce1d5a1ad7dd0004003cd8"
+        ],
+        "reactions": {
+            "like": 4,
+            "love": 6,
+            "angry": 4
+        }
+    },
+    {
+        "_id": "594ce75f13256102d4e6e18c",
+        "updatedAt": "2017-12-05T11:02:11.097Z",
+        "createdAt": "2017-06-23T10:03:12.001Z",
+        "anchor_retailer_id": 1,
+        "final_position": 54,
+        "product_tags": {
+            "top_rated": false,
+            "flagship": false,
+            "light_weight": false,
+            "best_display": false,
+            "best_processor": false,
+            "best_battery": false,
+            "best_camera": false,
+            "budget": false,
+            "latest": false,
+            "bestseller": false,
+            "fingerprint_sensor": true,
+            "four_g": true,
+            "dual_sim": false
+        },
+        "other_info": {
+            "video_call_support": "Yes",
+            "voice_input": "Yes",
+            "hands_free_status": "Yes"
+        },
+        "amazon_info": {
+            "parent_asin": "N/A"
+        },
+        "dimensions": {
+            "weight": "143 g",
+            "depth": "7.1 mm",
+            "height": "138.3 mm",
+            "width": "67.1 mm"
+        },
+        "av_formats": {
+            "video": "H.264, MP4, MOV, M4V, AAC-LC, MPEG4, AVI, MJPEG, PCM",
+            "audio": "WAV, AAX, AAX+, AAC, VBR, MP3, AIFF, HE-AAC"
+        },
+        "warranty": "1 Year Manufacturer Warranty",
+        "sensors": "Touch ID Fingerprint Sensor, Barometer, Three-axis Gyro Sensor, Accelerometer, Proximity Sensor, Ambient Light Sensor, Digital Compass",
+        "product_family": {
+            "variants": [
+                "MOBEBTJY9MG64SSG",
+                "MOBEBTJYCRRQYPMZ",
+                "MOBEBTJYFXYJYKX8",
+                "MOBEBTJYHEUMXUTZ",
+                "MOBEBTJYQNQVYTPR",
+                "MOBEBTJYVBWGZYED",
+                "MOBEBTJYYXPRY8AG",
+                "MOBEBTJYZFHHPKZV",
+                "MOBEBTJZJHFXFYFU",
+                "MOBEBTJZXYQKVYPY",
+                "MOBEBTJZZGZBDHSN",
+                "MOBEBU9VCREUPYP8",
+                "MOBEBY3V6HYJHTUB",
+                "MOBEBY3VECD4BVVH",
+                "MOBEBY3VG2Z2HVGJ",
+                "MOBEBY3VHDGMDK9Y",
+                "MOBEBY3VJP6QYNZP",
+                "MOBEBY3VQC5F6AM4",
+                "MOBEBY3VQTRGAJGG",
+                "MOBEBY3VRK2MSPMQ",
+                "MOBEBY3VSFWH9TE7",
+                "MOBEBY3VTBYZBC4M",
+                "MOBEBY3VTD7ZHZQA",
+                "MOBEBY3VXZVFWFCG",
+                "MOBEBYV82ARWNKXC",
+                "MOBEBZFYTEHGRD8E",
+                "MOBEC8A6FSHGQWMH",
+                "MOBEC8A7KQGENBME",
+                "MOBEN2YYDY9YZHFT",
+                "MOBEN2YYKU9386TQ",
+                "MOBEN2YYQH8PSYXG"
+            ]
+        },
+        "image_urls": {
+            "large": "http://img.fkcdn.com/image/mobile/g/m/8/apple-iphone-6s-mn122hn-a-800x800-imaen3f3ubsf8zn3.jpeg",
+            "medium": "http://img.fkcdn.com/image/mobile/g/m/8/apple-iphone-6s-mn122hn-a-400x400-imaen3f3ubsf8zn3.jpeg",
+            "small": "http://img.fkcdn.com/image/mobile/g/m/8/apple-iphone-6s-mn122hn-a-200x200-imaen3f3ubsf8zn3.jpeg"
+        },
+        "battery_power": {
+            "battery_type": "Li-Ion",
+            "removable_battery_status": "No",
+            "battery_capacity": "1715 mAh",
+            "batteryVal": 1715
+        },
+        "connectivity": {
+            "audio_jack_width": "3.5 mm",
+            "usb_connectivity": "Yes",
+            "nfc": "Yes",
+            "wifi": "Yes",
+            "bluetooth_version": "4.2",
+            "bluetooth_support": "Yes",
+            "internet_connectivity": "3G, 4G, Wi-Fi, GPRS, EDGE",
+            "supported_networks": "4G LTE",
+            "network_type": "4G, 3G, 2G"
+        },
+        "camera": {
+            "dual_camera_lens_available": "N/A",
+            "video_recording_resolution": "3840 x 2160",
+            "video_recording_status": "Yes",
+            "full_hd_recording_status": "Yes",
+            "hd_recording_status": "Yes",
+            "flash": "N/A",
+            "secondary_camera_features": "720p HD Video Recording, Retina Flash, f/2.2 Aperture, Auto HDR for Photos and Videos, Backside Illumination Sensor, Exposure Control, Burst Mode, Timer Mode, Face Detection",
+            "secondary_camera_pixels": "5MP",
+            "secondary_camera": "Yes",
+            "primary_camera_features": "N/A",
+            "primary_camera_pixels": "12MP",
+            "primary_camera": "Yes",
+            "cameraVal": 12
+        },
+        "memory_storage": {
+            "expandable_storage": "N/A",
+            "ram": "N/A",
+            "internal_storage": "32 GB",
+            "storageVal": 32,
+            "ramVal": null
+        },
+        "os_processor": {
+            "processor_speed": "1.84 GHz",
+            "processor_core": "Dual Core",
+            "processor_type": "A9 Chip with 64-bit Architecture and M9 Motion Co-processor",
+            "operating_system": "iOS 9",
+            "processor_speed_val": 1.84
+        },
+        "display_specifications": {
+            "touchscreen_status": "Yes",
+            "resolution_type": "Retina HD Display",
+            "resolution": "750 x 1334 Pixels",
+            "display_colors": "16 M",
+            "display_type": "LED Backlit IPS LCD",
+            "display_size": "4.7 inch",
+            "display_size_val": 4.7
+        },
+        "sim_features": {
+            "hybrid_sim_slot_status": "No",
+            "sim_size": "Nano Sim",
+            "sim_type": "Single Sim"
+        },
+        "sales_package": {
+            "contents": "Handset, Apple EarPods with Remote and Mic, Lightning to USB Cable, USB Power Adapter, SIM Slot Remover Tool"
+        },
+        "general_specifications": {
+            "model_color": "Rose Gold",
+            "model_number": "MN122HN/A",
+            "model_name": "iPhone 6s",
+            "features": [
+                "32 GB ROM |",
+                "4.7 inch Retina HD Display",
+                "12MP Rear Camera | 5MP Front Camera",
+                "1715 mAh Li-Ion Battery",
+                "A9 Chip with 64-bit Architecture and M9 Motion Co-processor Processor"
+            ]
+        },
+        "product_basic_info": {
+            "normalized_name": "Apple iPhone 6s",
+            "product_type": "Smartphones",
+            "productBrand_normalized": "Apple",
+            "productBrand": "Apple",
+            "description": "N/A",
+            "title": "Apple iPhone 6s (Rose Gold, 32 GB)"
+        },
+        "anchor_product_id": {
+            "uuid": "a7217c30-5353-11e7-b5a6-4764b052efc5"
+        },
+        "product_id": {
+            "uuid": "2a858250-57fb-11e7-86b8-83b97069ec2a"
+        },
+        "product_retailers": [
+            {
+                "_id": "594ce75f13256102d4e6e18d",
+                "seller_rating": {
+                    "seller_number_of_reviews": 0,
+                    "seller_number_of_ratings": 0,
+                    "seller_average_rating": null,
+                    "seller_name": "DEVANG PATEL"
+                },
+                "delivery_details": {
+                    "delivery_assured": true,
+                    "cod": true,
+                    "delivery_time": "Usually Delivered in 4 - 5 days."
+                },
+                "offers": {
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    },
+                    "emi": {
+                        "emi_val": 1746,
+                        "emi_details": "EMI starting from ₹1746/month"
+                    },
+                    "offer_details": []
+                },
+                "product_rating": {
+                    "reviews_link": "N/A",
+                    "number_of_reviews": 322,
+                    "number_of_ratings": 1765,
+                    "rating_val": 4.2,
+                    "rating_text": "N/A"
+                },
+                "product_pricing": {
+                    "discount": 22,
+                    "special_price": 39000,
+                    "selling_price": 39000,
+                    "mrp": 50000
+                },
+                "product_status": {
+                    "available": true
+                },
+                "product_position": 54,
+                "productURL": "http://dl.flipkart.com/dl/apple-iphone-6s-rose-gold-32-gb/p/itmen2yymnfcrxsz?pid=MOBEN2XYK8WFEGM8&affid=apdhamija",
+                "product_id": {
+                    "mobiles_db_uuid": "a7217c30-5353-11e7-b5a6-4764b052efc5",
+                    "retailer_product_id": "MOBEN2XYK8WFEGM8"
+                },
+                "retailer_description": {
+                    "retailer_id": 1,
+                    "retailer_name": "Flipkart"
+                }
+            },
+            {
+                "retailer_description": {
+                    "retailer_name": "Amazon",
+                    "retailer_id": 2
+                },
+                "product_id": {
+                    "retailer_product_id": "B01LXF3SP9",
+                    "mobiles_db_uuid": "6b154a60-55d2-11e7-b15f-7998764aec49"
+                },
+                "productURL": "https://www.amazon.in/Apple-iPhone-Rose-Gold-32GB/dp/B01LXF3SP9?psc=1&SubscriptionId=AKIAJOGRXNO5VKAU526A&tag=ankurdhamija8-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B01LXF3SP9",
+                "product_position": 139,
+                "product_status": {
+                    "available": true
+                },
+                "product_pricing": {
+                    "mrp": 50000,
+                    "selling_price": 0,
+                    "special_price": 38950,
+                    "discount": 22
+                },
+                "product_rating": {
+                    "rating_text": "3.8 out of 5 stars",
+                    "rating_val": 3.8,
+                    "number_of_ratings": 0,
+                    "number_of_reviews": 247,
+                    "reviews_link": "http://www.amazon.in/Apple-iPhone-Rose-Gold-32GB/dp/B01LXF3SP9/ref=sr_1_139?s=electronics&ie=UTF8&qid=1497967773&sr=1-139#customerReviews"
+                },
+                "offers": {
+                    "offer_details": [],
+                    "emi": {
+                        "emi_details": "N/A",
+                        "emi_val": 0
+                    },
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    }
+                },
+                "delivery_details": {
+                    "delivery_time": "N/A",
+                    "cod": true,
+                    "delivery_assured": true
+                },
+                "seller_rating": {
+                    "seller_name": "N/A",
+                    "seller_average_rating": 0,
+                    "seller_number_of_ratings": 0,
+                    "seller_number_of_reviews": 0
+                },
+                "_id": "594e244142a9ea0004f0b181"
+            },
+            {
+                "retailer_description": {
+                    "retailer_name": "Tata cliq",
+                    "retailer_id": 5
+                },
+                "product_id": {
+                    "retailer_product_id": "MP000000000602719",
+                    "mobiles_db_uuid": "653b3d12-481e-46ef-a593-f571f8eacb57"
+                },
+                "productURL": "https://www.tatacliq.com/apple-iphone-6s-32-gb-rose-gold/p-mp000000000602719",
+                "product_position": 270,
+                "product_pricing": {
+                    "mrp": 50000,
+                    "selling_price": 36999,
+                    "special_price": 36999,
+                    "discount": 0
+                },
+                "product_rating": {
+                    "rating_text": "N/A",
+                    "rating_val": 0,
+                    "number_of_ratings": 0,
+                    "number_of_reviews": 0,
+                    "reviews_link": "N/A"
+                },
+                "offers": {
+                    "offer_details": [],
+                    "emi": {
+                        "emi_details": "N/A",
+                        "emi_val": 0
+                    },
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    }
+                },
+                "delivery_details": {
+                    "delivery_time": "N/A"
+                },
+                "seller_rating": {
+                    "seller_name": "N/A",
+                    "seller_average_rating": 0,
+                    "seller_number_of_ratings": 0,
+                    "seller_number_of_reviews": 0
+                },
+                "_id": "596f1f5d2931b31654a1e2fa"
+            }
+        ],
+        "__v": 0,
+        "internal_codes": {
+            "fingerprint_sensor_check": 1,
+            "four_g_check": 1,
+            "dual_sim_check": 1,
+            "status": 111
+        },
+        "variants": [
+            "594ce76313256102d4e6e1c2",
+            "594ce79213256102d4e6e3f8",
+            "594ce79713256102d4e6e438",
+            "594ce79d13256102d4e6e48c",
+            "594ce7ba13256102d4e6e5fe",
+            "594ce7bb13256102d4e6e60c",
+            "594ce7c213256102d4e6e662",
+            "594ce7d113256102d4e6e70e",
+            "594ce7dc13256102d4e6e790",
+            "594ce7e713256102d4e6e824",
+            "594ce7ed13256102d4e6e872",
+            "594ce79613256102d4e6e42c",
+            "594ce7e713256102d4e6e822",
+            "594ce76f13256102d4e6e258",
+            "594ce7ed13256102d4e6e876"
+        ],
+        "reactions": {
+            "love": 12,
+            "angry": 11,
+            "like": 11
+        }
+    },
+    {
+        "_id": "594ce74113256102d4e6e030",
+        "updatedAt": "2017-12-05T11:02:25.932Z",
+        "createdAt": "2017-06-23T10:02:41.650Z",
+        "anchor_retailer_id": 1,
+        "final_position": 212,
+        "product_tags": {
+            "top_rated": false,
+            "flagship": false,
+            "light_weight": false,
+            "best_display": false,
+            "best_processor": false,
+            "best_battery": false,
+            "best_camera": false,
+            "budget": false,
+            "latest": false,
+            "bestseller": false,
+            "fingerprint_sensor": true,
+            "four_g": true,
+            "dual_sim": false
+        },
+        "other_info": {
+            "video_call_support": "N/A",
+            "voice_input": "Yes",
+            "hands_free_status": "N/A"
+        },
+        "amazon_info": {
+            "parent_asin": "N/A"
+        },
+        "dimensions": {
+            "weight": "113 g",
+            "depth": "7.6 mm",
+            "height": "123.8 mm",
+            "width": "58.6 mm"
+        },
+        "av_formats": {
+            "video": "H.264, MP4, MOV, M4V, AAC-LC, MPEG4, AVI, MJPEG, PCM",
+            "audio": "WAV, AAX, AAX+, AAC, VBR, MP3, AIFF, HE-AAC"
+        },
+        "warranty": "1 Year Manufacturer Warranty",
+        "sensors": "Three-axis Gyro Sensor, Touch ID Fingerprint Sensor, Proximity Sensor, Ambient Light Sensor, Accelerometer, Digital Compass",
+        "product_family": {
+            "variants": [
+                "MOBEHGSB7UZWVWN8",
+                "MOBEHGSBDYGRHAXF",
+                "MOBEHGSBJ8XTS32Z",
+                "MOBEHGSBJD4AADGG",
+                "MOBEHGSBJTRTFYRU",
+                "MOBEHGSBKTXRRGAT",
+                "MOBEHGSBRMGJFXFC",
+                "MOBEHGSCECUFFWS6",
+                "MOBETM93F7DGJNN5",
+                "MOBETM93HMBGUQKH",
+                "MOBETM9FZWW5UEZG"
+            ]
+        },
+        "image_urls": {
+            "large": "http://img.fkcdn.com/image/j2c6du80/mobile/k/a/v/apple-iphone-se-mp832hn-a-800x800-imaetmataejtupr4.jpeg",
+            "medium": "http://img.fkcdn.com/image/j2c6du80/mobile/k/a/v/apple-iphone-se-mp832hn-a-400x400-imaetmataejtupr4.jpeg",
+            "small": "http://img.fkcdn.com/image/j2c6du80/mobile/k/a/v/apple-iphone-se-mp832hn-a-200x200-imaetmataejtupr4.jpeg"
+        },
+        "battery_power": {
+            "battery_type": "Li-Ion",
+            "removable_battery_status": "No",
+            "battery_capacity": "N/A",
+            "batteryVal": 0
+        },
+        "connectivity": {
+            "audio_jack_width": "3.5 mm",
+            "usb_connectivity": "Yes",
+            "nfc": "Yes",
+            "wifi": "Yes",
+            "bluetooth_version": "4.2",
+            "bluetooth_support": "Yes",
+            "internet_connectivity": "4G, 3G, Wi-Fi, GPRS, EDGE",
+            "supported_networks": "4G LTE",
+            "network_type": "4G, 3G, 2G"
+        },
+        "camera": {
+            "dual_camera_lens_available": "N/A",
+            "video_recording_resolution": "3840 x 2160",
+            "video_recording_status": "Yes",
+            "full_hd_recording_status": "Yes",
+            "hd_recording_status": "Yes",
+            "flash": "True Tone Flash",
+            "secondary_camera_features": "HD Video Recording, Retina Flash, f/2.4 Aperture, Auto HDR for Photos, Backside Illumination Sensor, Exposure Control, Improved Local Tone Mapping, Burst Mode, Timer Mode, Face Detection",
+            "secondary_camera_pixels": "1.2MP",
+            "secondary_camera": "Yes",
+            "primary_camera_features": "iSight Camera, 1.22 µ Pixels, Live Photos, Auto Focus, Focus Pixels, Panorama (Upto 63 MP), Auto HDR for Photos, Exposure Control, Burst Mode, Timer Mode, f/2.2 Aperture, Five-element Lens, Hybrid IR Filter, Backside Illumination Sensor, Sapphire Crystal Lens Cover, Auto Image Stabilisation, Improved Local Tone Mapping, Improved Noise Reduction, Face Detection, Photo Geo-tagging, Slow-motion Video, Time-lapse Video with Stabilisation, Cinematic Video Stabilisation, Continuous Auto Focus Video, Take Still Photos While Recording Video, Playback Zoom, Zoom - 3x, Video Geo-tagging",
+            "primary_camera_pixels": "12MP",
+            "primary_camera": "Yes",
+            "cameraVal": 12
+        },
+        "memory_storage": {
+            "expandable_storage": "N/A",
+            "ram": "N/A",
+            "internal_storage": "32 GB",
+            "storageVal": 32,
+            "ramVal": null
+        },
+        "os_processor": {
+            "processor_speed": "N/A",
+            "processor_core": "N/A",
+            "processor_type": "A9 Chip with 64-bit Architecture and M9 Motion Co-processor",
+            "operating_system": "iOS 10",
+            "processor_speed_val": 0
+        },
+        "display_specifications": {
+            "touchscreen_status": "Yes",
+            "resolution_type": "Retina Display",
+            "resolution": "1136 x 640 Pixels",
+            "display_colors": "N/A",
+            "display_type": "N/A",
+            "display_size": "4 inch",
+            "display_size_val": 4
+        },
+        "sim_features": {
+            "hybrid_sim_slot_status": "No",
+            "sim_size": "Nano SIM",
+            "sim_type": "Single Sim"
+        },
+        "sales_package": {
+            "contents": "Handset, Apple EarPods with Remote and Mic, Lightning to USB Cable, USB Power Adapter, Documentation"
+        },
+        "general_specifications": {
+            "model_color": "Silver",
+            "model_number": "MP832HN/A",
+            "model_name": "iPhone SE",
+            "features": [
+                "32 GB ROM |",
+                "4 inch Retina Display",
+                "12MP Rear Camera | 1.2MP Front Camera",
+                "Li-Ion Battery",
+                "A9 Chip with 64-bit Architecture and M9 Motion Co-processor Processor"
+            ]
+        },
+        "product_basic_info": {
+            "normalized_name": "Apple iPhone SE",
+            "product_type": "Smartphones",
+            "productBrand_normalized": "Apple",
+            "productBrand": "Apple",
+            "description": "N/A",
+            "title": "Apple iPhone SE (Silver, 32 GB)"
+        },
+        "anchor_product_id": {
+            "uuid": "310bf6d0-5356-11e7-b593-2f7cb3e079c9"
+        },
+        "product_id": {
+            "uuid": "186f88e0-57fb-11e7-86b8-83b97069ec2a"
+        },
+        "product_retailers": [
+            {
+                "_id": "594ce74113256102d4e6e031",
+                "seller_rating": {
+                    "seller_number_of_reviews": 0,
+                    "seller_number_of_ratings": 0,
+                    "seller_average_rating": null,
+                    "seller_name": "Shreyash Retail Private Ltd"
+                },
+                "delivery_details": {
+                    "delivery_assured": true,
+                    "cod": true,
+                    "delivery_time": "N/A"
+                },
+                "offers": {
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    },
+                    "emi": {
+                        "emi_val": 1319,
+                        "emi_details": "EMI starting from ₹1319/month"
+                    },
+                    "offer_details": []
+                },
+                "product_rating": {
+                    "reviews_link": "N/A",
+                    "number_of_reviews": 37,
+                    "number_of_ratings": 123,
+                    "rating_val": 4.2,
+                    "rating_text": "N/A"
+                },
+                "product_pricing": {
+                    "discount": 19,
+                    "special_price": 21999,
+                    "selling_price": 27200,
+                    "mrp": 27200
+                },
+                "product_status": {
+                    "available": false
+                },
+                "product_position": 212,
+                "productURL": "http://dl.flipkart.com/dl/apple-iphone-se-silver-32-gb/p/itmetm9fwstfc2qc?pid=MOBETM93KHC97KAV&affid=apdhamija",
+                "product_id": {
+                    "mobiles_db_uuid": "310bf6d0-5356-11e7-b593-2f7cb3e079c9",
+                    "retailer_product_id": "MOBETM93KHC97KAV"
+                },
+                "retailer_description": {
+                    "retailer_id": 1,
+                    "retailer_name": "Flipkart"
+                }
+            },
+            {
+                "retailer_description": {
+                    "retailer_name": "Tata cliq",
+                    "retailer_id": 5
+                },
+                "product_id": {
+                    "retailer_product_id": "MP000000001391848",
+                    "mobiles_db_uuid": "10610cd4-9d19-4a79-a172-29b8c7809b04"
+                },
+                "productURL": "https://www.tatacliq.com/apple-iphone-se-32gb-silver/p-mp000000001391848",
+                "product_position": 786,
+                "product_status": {
+                    "available": false
+                },
+                "product_pricing": {
+                    "mrp": 27200,
+                    "selling_price": 22899,
+                    "special_price": 22899,
+                    "discount": 0
+                },
+                "product_rating": {
+                    "rating_text": "N/A",
+                    "rating_val": 0,
+                    "number_of_ratings": 0,
+                    "number_of_reviews": 0,
+                    "reviews_link": "N/A"
+                },
+                "offers": {
+                    "offer_details": [],
+                    "emi": {
+                        "emi_details": "N/A",
+                        "emi_val": 0
+                    },
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    }
+                },
+                "delivery_details": {
+                    "delivery_time": "N/A"
+                },
+                "seller_rating": {
+                    "seller_name": "N/A",
+                    "seller_average_rating": 0,
+                    "seller_number_of_ratings": 0,
+                    "seller_number_of_reviews": 0
+                },
+                "_id": "596f1f8e2931b31654a1e318"
+            },
+            {
+                "retailer_description": {
+                    "retailer_name": "Amazon",
+                    "retailer_id": 2
+                },
+                "product_id": {
+                    "retailer_product_id": "B07227KKSJ",
+                    "mobiles_db_uuid": "69fed6e5-5a4e-4f5e-b04c-d833ea90724b"
+                },
+                "productURL": "https://www.amazon.in/Apple-iPhone-SE-Silver-32GB/dp/B07227KKSJ?psc=1&SubscriptionId=AKIAJOGRXNO5VKAU526A&tag=ankurdhamija8-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B07227KKSJ",
+                "product_position": 260,
+                "product_status": {
+                    "available": true
+                },
+                "product_pricing": {
+                    "mrp": 26000,
+                    "selling_price": 25199,
+                    "special_price": 26999,
+                    "discount": 0
+                },
+                "product_rating": {
+                    "rating_text": "3.6 out of 5 stars",
+                    "rating_val": 3.6,
+                    "number_of_ratings": 0,
+                    "number_of_reviews": 2218,
+                    "reviews_link": "https://www.amazon.in/Apple-iPhone-SE-Silver-32GB/dp/B07227KKSJ/ref=sr_1_260?s=electronics&ie=UTF8&qid=1505393274&sr=1-260&refinements=p_n_condition-type%3A8609960031%2Cp_n_availability%3A1318485031#customerReviews"
+                },
+                "offers": {
+                    "offer_details": [],
+                    "emi": {
+                        "emi_details": "N/A",
+                        "emi_val": 0
+                    },
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    }
+                },
+                "delivery_details": {
+                    "delivery_time": "N/A",
+                    "cod": false,
+                    "delivery_assured": false
+                },
+                "seller_rating": {
+                    "seller_name": "N/A",
+                    "seller_average_rating": 0,
+                    "seller_number_of_ratings": 0,
+                    "seller_number_of_reviews": 0
+                },
+                "_id": "59ca65632891ce0004347b22"
+            }
+        ],
+        "__v": 0,
+        "internal_codes": {
+            "fingerprint_sensor_check": 1,
+            "four_g_check": 1,
+            "dual_sim_check": 1,
+            "status": 111
+        },
+        "variants": [
+            "594ce74113256102d4e6e02e",
+            "594ce74113256102d4e6e032",
+            "594ce74213256102d4e6e034",
+            "594ce78e13256102d4e6e3c2",
+            "594ce7a813256102d4e6e518",
+            "594ce7a913256102d4e6e528",
+            "594ce7a913256102d4e6e52c",
+            "594ce7b213256102d4e6e59c",
+            "594ce7d413256102d4e6e72e",
+            "594ce7de13256102d4e6e7ac",
+            "594ce7e113256102d4e6e7d2",
+            "59ce1cdb1ad7dd0004003cd3",
+            "59cdecf4d390f1000470f41b",
+            "59ce1d421ad7dd0004003cd6",
+            "59ce1d5a1ad7dd0004003cd8"
+        ],
+        "reactions": {
+            "like": 4,
+            "love": 6,
+            "angry": 4
+        }
+    },
+    {
+        "_id": "594ce76313256102d4e6e1c2",
+        "updatedAt": "2017-12-05T11:02:11.097Z",
+        "createdAt": "2017-06-23T10:03:15.997Z",
+        "anchor_retailer_id": 1,
+        "final_position": 1087,
+        "product_tags": {
+            "top_rated": false,
+            "flagship": false,
+            "light_weight": false,
+            "best_display": false,
+            "best_processor": false,
+            "best_battery": false,
+            "best_camera": false,
+            "budget": false,
+            "latest": false,
+            "bestseller": false,
+            "fingerprint_sensor": true,
+            "four_g": true,
+            "dual_sim": false
+        },
+        "other_info": {
+            "video_call_support": "N/A",
+            "voice_input": "Yes",
+            "hands_free_status": "N/A"
+        },
+        "amazon_info": {
+            "parent_asin": "N/A"
+        },
+        "dimensions": {
+            "weight": "143 g",
+            "depth": "7.1 mm",
+            "height": "138.3 mm",
+            "width": "67.1 mm"
+        },
+        "av_formats": {
+            "video": "H.264, MP4, MOV, M4V, AAC-LC, MPEG4, AVI, MJPEG, PCM",
+            "audio": "WAV, AAX, AAX+, AAC, VBR, MP3, AIFF, HE-AAC"
+        },
+        "warranty": "1 Year Manufacturer Warranty",
+        "sensors": "Touch ID Fingerprint Sensor, Barometer, Three-axis Gyro Sensor, Accelerometer, Proximity Sensor, Ambient Light Sensor, Digital Compass",
+        "product_family": {
+            "variants": [
+                "MOBEBTJY9MG64SSG",
+                "MOBEBTJYCRRQYPMZ",
+                "MOBEBTJYFXYJYKX8",
+                "MOBEBTJYHEUMXUTZ",
+                "MOBEBTJYQNQVYTPR",
+                "MOBEBTJYVBWGZYED",
+                "MOBEBTJYYXPRY8AG",
+                "MOBEBTJYZFHHPKZV",
+                "MOBEBTJZJHFXFYFU",
+                "MOBEBTJZXYQKVYPY",
+                "MOBEBTJZZGZBDHSN",
+                "MOBEBU9VCREUPYP8",
+                "MOBEBY3V6HYJHTUB",
+                "MOBEBY3VECD4BVVH",
+                "MOBEBY3VG2Z2HVGJ",
+                "MOBEBY3VHDGMDK9Y",
+                "MOBEBY3VJP6QYNZP",
+                "MOBEBY3VQC5F6AM4",
+                "MOBEBY3VRK2MSPMQ",
+                "MOBEBY3VSFWH9TE7",
+                "MOBEBY3VTBYZBC4M",
+                "MOBEBY3VTD7ZHZQA",
+                "MOBEBY3VXZVFWFCG",
+                "MOBEBYV82ARWNKXC",
+                "MOBEBZFYTEHGRD8E",
+                "MOBEC8A6FSHGQWMH",
+                "MOBEC8A7KQGENBME",
+                "MOBEN2XYK8WFEGM8",
+                "MOBEN2YYDY9YZHFT",
+                "MOBEN2YYKU9386TQ",
+                "MOBEN2YYQH8PSYXG"
+            ]
+        },
+        "image_urls": {
+            "large": "http://img.fkcdn.com/image/mobile/j/g/g/apple-iphone-6s-na-800x800-imaeby6yymhkvutk.jpeg",
+            "medium": "http://img.fkcdn.com/image/mobile/j/g/g/apple-iphone-6s-na-400x400-imaeby6yymhkvutk.jpeg",
+            "small": "http://img.fkcdn.com/image/mobile/j/g/g/apple-iphone-6s-na-200x200-imaeby6yymhkvutk.jpeg"
+        },
+        "battery_power": {
+            "battery_type": "Li-Ion",
+            "removable_battery_status": "No",
+            "battery_capacity": "1715 mAh",
+            "batteryVal": 1715
+        },
+        "connectivity": {
+            "audio_jack_width": "3.5 mm",
+            "usb_connectivity": "Yes",
+            "nfc": "Yes",
+            "wifi": "Yes",
+            "bluetooth_version": "4.2",
+            "bluetooth_support": "Yes",
+            "internet_connectivity": "3G, 4G, Wi-Fi, GPRS, EDGE",
+            "supported_networks": "4G LTE",
+            "network_type": "4G"
+        },
+        "camera": {
+            "dual_camera_lens_available": "N/A",
+            "video_recording_resolution": "3840 x 2160",
+            "video_recording_status": "Yes",
+            "full_hd_recording_status": "Yes",
+            "hd_recording_status": "Yes",
+            "flash": "N/A",
+            "secondary_camera_features": "720p HD Video Recording, Retina Flash, f/2.2 Aperture, Auto HDR for Photos and Videos, Backside Illumination Sensor, Exposure Control, Burst Mode, Timer Mode, Face Detection",
+            "secondary_camera_pixels": "5MP",
+            "secondary_camera": "Yes",
+            "primary_camera_features": "N/A",
+            "primary_camera_pixels": "12MP",
+            "primary_camera": "Yes",
+            "cameraVal": 12
+        },
+        "memory_storage": {
+            "expandable_storage": "N/A",
+            "ram": "N/A",
+            "internal_storage": "16 GB",
+            "storageVal": 16,
+            "ramVal": null
+        },
+        "os_processor": {
+            "processor_speed": "1.84 GHz",
+            "processor_core": "Dual Core",
+            "processor_type": "A9 Chip with 64-bit Architecture and M9 Motion Co-processor",
+            "operating_system": "iOS 9",
+            "processor_speed_val": 1.84
+        },
+        "display_specifications": {
+            "touchscreen_status": "Yes",
+            "resolution_type": "Retina HD Display",
+            "resolution": "750 x 1334 Pixels",
+            "display_colors": "16 M",
+            "display_type": "LED-backlit IPS LCD",
+            "display_size": "4.7 inch",
+            "display_size_val": 4.7
+        },
+        "sim_features": {
+            "hybrid_sim_slot_status": "No",
+            "sim_size": "Nano Sim",
+            "sim_type": "Single Sim"
+        },
+        "sales_package": {
+            "contents": "Handset, Apple EarPods with Remote and Mic, Lightning to USB Cable, USB Power Adapter, SIM Slot Remover Tool"
+        },
+        "general_specifications": {
+            "model_color": "Gold",
+            "model_number": "MKQL2HN/A",
+            "model_name": "iPhone 6s",
+            "features": [
+                "16 GB ROM |",
+                "4.7 inch Retina HD Display",
+                "12MP Rear Camera | 5MP Front Camera",
+                "1715 mAh Li-Ion Battery",
+                "A9 Chip with 64-bit Architecture and M9 Motion Co-processor Processor"
+            ]
+        },
+        "product_basic_info": {
+            "normalized_name": "Apple iPhone 6s",
+            "product_type": "Smartphones",
+            "productBrand_normalized": "Apple",
+            "productBrand": "Apple",
+            "description": "Bring your pictures to life and watch videos in a vivid mode with the Apple iPhone 6S. One press and its innovative 3D Touch technology lets you do more than a regular smartphone. This is a phone that’s as powerful as a desktop computer in terms of performance.",
+            "title": "Apple iPhone 6s (Gold, 16 GB)"
+        },
+        "anchor_product_id": {
+            "uuid": "34caa1f0-5355-11e7-b593-2f7cb3e079c9"
+        },
+        "product_id": {
+            "uuid": "2ce82a70-57fb-11e7-86b8-83b97069ec2a"
+        },
+        "product_retailers": [
+            {
+                "_id": "594ce76313256102d4e6e1c3",
+                "seller_rating": {
+                    "seller_number_of_reviews": 2,
+                    "seller_number_of_ratings": 4,
+                    "seller_average_rating": 5,
+                    "seller_name": "Manoj Goswami"
+                },
+                "delivery_details": {
+                    "delivery_assured": false,
+                    "cod": true,
+                    "delivery_time": "Usually Delivered in 5 - 6 days."
+                },
+                "offers": {
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    },
+                    "emi": {
+                        "emi_val": 2425,
+                        "emi_details": "EMI starting from ₹2425/month"
+                    },
+                    "offer_details": []
+                },
+                "product_rating": {
+                    "reviews_link": "N/A",
+                    "number_of_reviews": 407,
+                    "number_of_ratings": 3430,
+                    "rating_val": 4.4,
+                    "rating_text": "N/A"
+                },
+                "product_pricing": {
+                    "discount": 29,
+                    "special_price": 43790,
+                    "selling_price": 43790,
+                    "mrp": 62000
+                },
+                "product_status": {
+                    "available": true
+                },
+                "product_position": 1087,
+                "productURL": "http://dl.flipkart.com/dl/apple-iphone-6s-gold-16-gb/p/itmebysga78az3qh?pid=MOBEBY3VQTRGAJGG&affid=apdhamija",
+                "product_id": {
+                    "mobiles_db_uuid": "34caa1f0-5355-11e7-b593-2f7cb3e079c9",
+                    "retailer_product_id": "MOBEBY3VQTRGAJGG"
+                },
+                "retailer_description": {
+                    "retailer_id": 1,
+                    "retailer_name": "Flipkart"
+                }
+            },
+            {
+                "retailer_description": {
+                    "retailer_name": "Tata cliq",
+                    "retailer_id": 5
+                },
+                "product_id": {
+                    "retailer_product_id": "MP000000000100317",
+                    "mobiles_db_uuid": "e9a1fa6b-3fe0-4c45-a084-10c20030520d"
+                },
+                "productURL": "https://www.tatacliq.com/apple-iphone-6s-16gb-gold/p-mp000000000100317",
+                "product_position": 386,
+                "product_status": {
+                    "available": false
+                },
+                "product_pricing": {
+                    "mrp": 0,
+                    "selling_price": 0,
+                    "special_price": 0,
+                    "discount": 0
+                },
+                "product_rating": {
+                    "rating_text": "N/A",
+                    "rating_val": 0,
+                    "number_of_ratings": 0,
+                    "number_of_reviews": 0,
+                    "reviews_link": "N/A"
+                },
+                "offers": {
+                    "offer_details": [],
+                    "emi": {
+                        "emi_details": "N/A",
+                        "emi_val": 0
+                    },
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    }
+                },
+                "delivery_details": {
+                    "delivery_time": "N/A"
+                },
+                "seller_rating": {
+                    "seller_name": "N/A",
+                    "seller_average_rating": 0,
+                    "seller_number_of_ratings": 0,
+                    "seller_number_of_reviews": 0
+                },
+                "_id": "596f1f6b2931b31654a1e303"
+            }
+        ],
+        "__v": 0,
+        "internal_codes": {
+            "fingerprint_sensor_check": 1,
+            "four_g_check": 1,
+            "dual_sim_check": 1,
+            "status": 111
+        },
+        "variants": [
+            "594ce75f13256102d4e6e18c",
+            "594ce79213256102d4e6e3f8",
+            "594ce79713256102d4e6e438",
+            "594ce79d13256102d4e6e48c",
+            "594ce7ba13256102d4e6e5fe",
+            "594ce7bb13256102d4e6e60c",
+            "594ce7c213256102d4e6e662",
+            "594ce7d113256102d4e6e70e",
+            "594ce7dc13256102d4e6e790",
+            "594ce7e713256102d4e6e824",
+            "594ce7ed13256102d4e6e872",
+            "594ce79613256102d4e6e42c",
+            "594ce7e713256102d4e6e822",
+            "594ce76f13256102d4e6e258",
+            "594ce7ed13256102d4e6e876"
+        ],
+        "reactions": {
+            "love": 12,
+            "angry": 11,
+            "like": 11
+        }
+    },
+    {
+        "_id": "594ce74113256102d4e6e032",
+        "updatedAt": "2017-12-05T11:02:25.932Z",
+        "createdAt": "2017-06-23T10:02:41.980Z",
+        "anchor_retailer_id": 1,
+        "final_position": 3226,
+        "product_tags": {
+            "top_rated": false,
+            "flagship": false,
+            "light_weight": false,
+            "best_display": false,
+            "best_processor": false,
+            "best_battery": false,
+            "best_camera": false,
+            "budget": false,
+            "latest": false,
+            "bestseller": false,
+            "fingerprint_sensor": true,
+            "four_g": true,
+            "dual_sim": false
+        },
+        "other_info": {
+            "video_call_support": "N/A",
+            "voice_input": "Yes",
+            "hands_free_status": "N/A"
+        },
+        "amazon_info": {
+            "parent_asin": "N/A"
+        },
+        "dimensions": {
+            "weight": "113 g",
+            "depth": "7.6 mm",
+            "height": "123.8 mm",
+            "width": "58.6 mm"
+        },
+        "av_formats": {
+            "video": "H.264, MP4, MOV, M4V, AAC-LC, MPEG4, AVI, MJPEG, PCM",
+            "audio": "WAV, AAX, AAX+, AAC, VBR, MP3, AIFF, HE-AAC"
+        },
+        "warranty": "1 Year Manufacturer Warranty",
+        "sensors": "Three-axis Gyro Sensor, Touch ID Fingerprint Sensor, Proximity Sensor, Ambient Light Sensor, Accelerometer, Digital Compass",
+        "product_family": {
+            "variants": [
+                "MOBEHGSB7UZWVWN8",
+                "MOBEHGSBDYGRHAXF",
+                "MOBEHGSBJ8XTS32Z",
+                "MOBEHGSBJD4AADGG",
+                "MOBEHGSBJTRTFYRU",
+                "MOBEHGSBKTXRRGAT",
+                "MOBEHGSBRMGJFXFC",
+                "MOBEHGSCECUFFWS6",
+                "MOBETM93F7DGJNN5",
+                "MOBETM93HMBGUQKH",
+                "MOBETM93KHC97KAV"
+            ]
+        },
+        "image_urls": {
+            "large": "http://img.fkcdn.com/image/j2c6du80/mobile/e/z/g/apple-iphone-se-mp822hn-a-800x800-imaetmaqgnn7tryu.jpeg",
+            "medium": "http://img.fkcdn.com/image/j2c6du80/mobile/e/z/g/apple-iphone-se-mp822hn-a-400x400-imaetmaqgnn7tryu.jpeg",
+            "small": "http://img.fkcdn.com/image/j2c6du80/mobile/e/z/g/apple-iphone-se-mp822hn-a-200x200-imaetmaqgnn7tryu.jpeg"
+        },
+        "battery_power": {
+            "battery_type": "Li-Ion",
+            "removable_battery_status": "No",
+            "battery_capacity": "N/A",
+            "batteryVal": 0
+        },
+        "connectivity": {
+            "audio_jack_width": "3.5 mm",
+            "usb_connectivity": "Yes",
+            "nfc": "Yes",
+            "wifi": "Yes",
+            "bluetooth_version": "4.2",
+            "bluetooth_support": "Yes",
+            "internet_connectivity": "4G, 3G, Wi-Fi, GPRS, EDGE",
+            "supported_networks": "4G LTE",
+            "network_type": "4G, 3G, 2G"
+        },
+        "camera": {
+            "dual_camera_lens_available": "N/A",
+            "video_recording_resolution": "3840 x 2160",
+            "video_recording_status": "Yes",
+            "full_hd_recording_status": "Yes",
+            "hd_recording_status": "Yes",
+            "flash": "True Tone Flash",
+            "secondary_camera_features": "HD Video Recording, Retina Flash, f/2.4 Aperture, Auto HDR for Photos, Backside Illumination Sensor, Exposure Control, Improved Local Tone Mapping, Burst Mode, Timer Mode, Face Detection",
+            "secondary_camera_pixels": "1.2MP",
+            "secondary_camera": "Yes",
+            "primary_camera_features": "iSight Camera, 1.22 µ Pixels, Live Photos, Auto Focus, Focus Pixels, Panorama (Upto 63 MP), Auto HDR for Photos, Exposure Control, Burst Mode, Timer Mode, f/2.2 Aperture, Five-element Lens, Hybrid IR Filter, Backside Illumination Sensor, Sapphire Crystal Lens Cover, Auto Image Stabilisation, Improved Local Tone Mapping, Improved Noise Reduction, Face Detection, Photo Geo-tagging, Slow-motion Video, Time-lapse Video with Stabilisation, Cinematic Video Stabilisation, Continuous Auto Focus Video, Take Still Photos While Recording Video, Playback Zoom, Zoom - 3x, Video Geo-tagging",
+            "primary_camera_pixels": "12MP",
+            "primary_camera": "Yes",
+            "cameraVal": 12
+        },
+        "memory_storage": {
+            "expandable_storage": "N/A",
+            "ram": "N/A",
+            "internal_storage": "32 GB",
+            "storageVal": 32,
+            "ramVal": null
+        },
+        "os_processor": {
+            "processor_speed": "N/A",
+            "processor_core": "N/A",
+            "processor_type": "A9 Chip with 64-bit Architecture and M9 Motion Co-processor",
+            "operating_system": "iOS 10",
+            "processor_speed_val": 0
+        },
+        "display_specifications": {
+            "touchscreen_status": "Yes",
+            "resolution_type": "Retina Display",
+            "resolution": "1136 x 640 Pixels",
+            "display_colors": "N/A",
+            "display_type": "N/A",
+            "display_size": "4 inch",
+            "display_size_val": 4
+        },
+        "sim_features": {
+            "hybrid_sim_slot_status": "No",
+            "sim_size": "Nano SIM",
+            "sim_type": "Single Sim"
+        },
+        "sales_package": {
+            "contents": "Handset, Apple EarPods with Remote and Mic, Lightning to USB Cable, USB Power Adapter, Documentation"
+        },
+        "general_specifications": {
+            "model_color": "Space Grey",
+            "model_number": "MP822HN/A",
+            "model_name": "iPhone SE",
+            "features": [
+                "32 GB ROM |",
+                "4 inch Retina Display",
+                "12MP Rear Camera | 1.2MP Front Camera",
+                "Li-Ion Battery",
+                "A9 Chip with 64-bit Architecture and M9 Motion Co-processor Processor"
+            ]
+        },
+        "product_basic_info": {
+            "normalized_name": "Apple iPhone SE",
+            "product_type": "Smartphones",
+            "productBrand_normalized": "Apple",
+            "productBrand": "Apple",
+            "description": "N/A",
+            "title": "Apple iPhone SE (Space Grey, 32 GB)"
+        },
+        "anchor_product_id": {
+            "uuid": "31343f50-5356-11e7-b593-2f7cb3e079c9"
+        },
+        "product_id": {
+            "uuid": "18a16e50-57fb-11e7-86b8-83b97069ec2a"
+        },
+        "product_retailers": [
+            {
+                "_id": "594ce74113256102d4e6e033",
+                "seller_rating": {
+                    "seller_number_of_reviews": 0,
+                    "seller_number_of_ratings": 0,
+                    "seller_average_rating": null,
+                    "seller_name": "Shreyash Retail Private Ltd"
+                },
+                "delivery_details": {
+                    "delivery_assured": true,
+                    "cod": true,
+                    "delivery_time": "N/A"
+                },
+                "offers": {
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    },
+                    "emi": {
+                        "emi_val": 1067,
+                        "emi_details": "EMI starting from ₹1067/month"
+                    },
+                    "offer_details": []
+                },
+                "product_rating": {
+                    "reviews_link": "N/A",
+                    "number_of_reviews": 188,
+                    "number_of_ratings": 828,
+                    "rating_val": 4.4,
+                    "rating_text": "N/A"
+                },
+                "product_pricing": {
+                    "discount": 19,
+                    "special_price": 21999,
+                    "selling_price": 27200,
+                    "mrp": 27200
+                },
+                "product_status": {
+                    "available": false
+                },
+                "product_position": 3226,
+                "productURL": "http://dl.flipkart.com/dl/apple-iphone-se-space-grey-32-gb/p/itmetm9fypda5rfs?pid=MOBETM9FZWW5UEZG&affid=apdhamija",
+                "product_id": {
+                    "mobiles_db_uuid": "31343f50-5356-11e7-b593-2f7cb3e079c9",
+                    "retailer_product_id": "MOBETM9FZWW5UEZG"
+                },
+                "retailer_description": {
+                    "retailer_id": 1,
+                    "retailer_name": "Flipkart"
+                }
+            },
+            {
+                "retailer_description": {
+                    "retailer_name": "Amazon",
+                    "retailer_id": 2
+                },
+                "product_id": {
+                    "retailer_product_id": "B071DF166C",
+                    "mobiles_db_uuid": "68f26a60-55d2-11e7-b15f-7998764aec49"
+                },
+                "productURL": "https://www.amazon.in/Apple-iPhone-SE-Space-Grey/dp/B071DF166C?psc=1&SubscriptionId=AKIAJOGRXNO5VKAU526A&tag=ankurdhamija8-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B071DF166C",
+                "product_position": 92,
+                "product_status": {
+                    "available": true
+                },
+                "product_pricing": {
+                    "mrp": 27200,
+                    "selling_price": 0,
+                    "special_price": 23499,
+                    "discount": 14
+                },
+                "product_rating": {
+                    "rating_text": "3.2 out of 5 stars",
+                    "rating_val": 3.2,
+                    "number_of_ratings": 0,
+                    "number_of_reviews": 1456,
+                    "reviews_link": "http://www.amazon.in/Apple-iPhone-SE-Space-Grey/dp/B071DF166C/ref=sr_1_92?s=electronics&ie=UTF8&qid=1497967756&sr=1-92#customerReviews"
+                },
+                "offers": {
+                    "offer_details": [],
+                    "emi": {
+                        "emi_details": "N/A",
+                        "emi_val": 0
+                    },
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    }
+                },
+                "delivery_details": {
+                    "delivery_time": "N/A",
+                    "cod": true,
+                    "delivery_assured": true
+                },
+                "seller_rating": {
+                    "seller_name": "N/A",
+                    "seller_average_rating": 0,
+                    "seller_number_of_ratings": 0,
+                    "seller_number_of_reviews": 0
+                },
+                "_id": "594e24a542a9ea0004f0b186"
+            },
+            {
+                "retailer_description": {
+                    "retailer_name": "Tata cliq",
+                    "retailer_id": 5
+                },
+                "product_id": {
+                    "retailer_product_id": "MP000000001391847",
+                    "mobiles_db_uuid": "928f6752-6bc9-4955-807f-d72d8ffe49c3"
+                },
+                "productURL": "https://www.tatacliq.com/apple-iphone-se-32gb-space-grey/p-mp000000001391847",
+                "product_position": 100,
+                "product_pricing": {
+                    "mrp": 27200,
+                    "selling_price": 25990,
+                    "special_price": 25990,
+                    "discount": 0
+                },
+                "product_rating": {
+                    "rating_text": "N/A",
+                    "rating_val": 0,
+                    "number_of_ratings": 0,
+                    "number_of_reviews": 0,
+                    "reviews_link": "N/A"
+                },
+                "offers": {
+                    "offer_details": [],
+                    "emi": {
+                        "emi_details": "N/A",
+                        "emi_val": 0
+                    },
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    }
+                },
+                "delivery_details": {
+                    "delivery_time": "N/A"
+                },
+                "seller_rating": {
+                    "seller_name": "N/A",
+                    "seller_average_rating": 0,
+                    "seller_number_of_ratings": 0,
+                    "seller_number_of_reviews": 0
+                },
+                "_id": "596f18cec90f7b000425b71e"
+            }
+        ],
+        "__v": 0,
+        "internal_codes": {
+            "fingerprint_sensor_check": 1,
+            "four_g_check": 1,
+            "dual_sim_check": 1,
+            "status": 111
+        },
+        "variants": [
+            "594ce74113256102d4e6e02e",
+            "594ce74113256102d4e6e030",
+            "594ce74213256102d4e6e034",
+            "594ce78e13256102d4e6e3c2",
+            "594ce7a813256102d4e6e518",
+            "594ce7a913256102d4e6e528",
+            "594ce7a913256102d4e6e52c",
+            "594ce7b213256102d4e6e59c",
+            "594ce7d413256102d4e6e72e",
+            "594ce7de13256102d4e6e7ac",
+            "594ce7e113256102d4e6e7d2",
+            "59ce1cdb1ad7dd0004003cd3",
+            "59cdecf4d390f1000470f41b",
+            "59ce1d421ad7dd0004003cd6",
+            "59ce1d5a1ad7dd0004003cd8"
+        ],
+        "reactions": {
+            "like": 4,
+            "love": 6,
+            "angry": 4
+        }
+    },
+    {
+        "_id": "594ce75613256102d4e6e112",
+        "updatedAt": "2017-12-05T09:48:45.820Z",
+        "createdAt": "2017-06-23T10:03:02.168Z",
+        "anchor_retailer_id": 1,
+        "final_position": 4432,
+        "product_tags": {
+            "top_rated": false,
+            "flagship": false,
+            "light_weight": false,
+            "best_display": false,
+            "best_processor": false,
+            "best_battery": false,
+            "best_camera": false,
+            "budget": false,
+            "latest": false,
+            "bestseller": false,
+            "fingerprint_sensor": false,
+            "four_g": false,
+            "dual_sim": false
+        },
+        "other_info": {
+            "video_call_support": "N/A",
+            "voice_input": "N/A",
+            "hands_free_status": "N/A"
+        },
+        "amazon_info": {
+            "parent_asin": "N/A"
+        },
+        "dimensions": {
+            "weight": "112 g",
+            "depth": "7.6 mm",
+            "height": "123.8 mm",
+            "width": "58.6 mm"
+        },
+        "av_formats": {
+            "video": "H.264, MOV, MP4, M4V",
+            "audio": "MP3, WAV"
+        },
+        "warranty": "1 Year Manufacturer Warranty",
+        "sensors": "Three-axis Gyro Sensor, Ambient Light Sensor, Digital Compass, Accelerometer, Proximity Sensor",
+        "product_family": {
+            "variants": [
+                "MOBDKMJE4FTQHRZU",
+                "MOBDKMJEJVGRRMFJ",
+                "MOBDKMJEPE7EDGEH",
+                "MOBDKMJEW8KARNVY",
+                "MOBDKMJEXGZWTTTJ",
+                "MOBDPUAZYMHEMTHH",
+                "MOBDPUCGY9SDR7QS"
+            ]
+        },
+        "image_urls": {
+            "large": "http://img.fkcdn.com/image/mobile/t/6/f/apple-iphone-5-800x800-imadknfx5s2wngz9.jpeg",
+            "medium": "http://img.fkcdn.com/image/mobile/t/6/f/apple-iphone-5-400x400-imadknfx5s2wngz9.jpeg",
+            "small": "http://img.fkcdn.com/image/mobile/t/6/f/apple-iphone-5-200x200-imadknfx5s2wngz9.jpeg"
+        },
+        "battery_power": {
+            "battery_type": "Li-Ion",
+            "removable_battery_status": "N/A",
+            "battery_capacity": "1440 mAh",
+            "batteryVal": 1440
+        },
+        "connectivity": {
+            "audio_jack_width": "3.5 mm",
+            "usb_connectivity": "Yes",
+            "nfc": "No",
+            "wifi": "Yes",
+            "bluetooth_version": "4",
+            "bluetooth_support": "Yes",
+            "internet_connectivity": "Wi-Fi, EDGE, 3G",
+            "supported_networks": "GSM",
+            "network_type": "3G"
+        },
+        "camera": {
+            "dual_camera_lens_available": "N/A",
+            "video_recording_resolution": "1920 x 1080",
+            "video_recording_status": "Yes",
+            "full_hd_recording_status": "Yes",
+            "hd_recording_status": "Yes",
+            "flash": "LED",
+            "secondary_camera_features": "HD Video Upto 30 Frames per Second",
+            "secondary_camera_pixels": "1.2MP",
+            "secondary_camera": "Yes",
+            "primary_camera_features": "Panorama, Face Detection, Geo-tagging, Tap to Focus, Auto Focus, iSight Camera",
+            "primary_camera_pixels": "8MP",
+            "primary_camera": "Yes",
+            "cameraVal": 8
+        },
+        "memory_storage": {
+            "expandable_storage": "N/A",
+            "ram": "N/A",
+            "internal_storage": "16 GB",
+            "storageVal": 16,
+            "ramVal": null
+        },
+        "os_processor": {
+            "processor_speed": "N/A",
+            "processor_core": "N/A",
+            "processor_type": "N/A",
+            "operating_system": "iOS 6",
+            "processor_speed_val": 0
+        },
+        "display_specifications": {
+            "touchscreen_status": "N/A",
+            "resolution_type": "Retina Display",
+            "resolution": "1136 x 640 Pixels",
+            "display_colors": "N/A",
+            "display_type": "N/A",
+            "display_size": "4 inch",
+            "display_size_val": 4
+        },
+        "sim_features": {
+            "hybrid_sim_slot_status": "N/A",
+            "sim_size": "N/A",
+            "sim_type": "Single Sim"
+        },
+        "sales_package": {
+            "contents": "N/A"
+        },
+        "general_specifications": {
+            "model_color": "Black",
+            "model_number": "N/A",
+            "model_name": "iPhone 5",
+            "features": [
+                "16 GB ROM |",
+                "4 inch Retina Display",
+                "8MP Rear Camera | 1.2MP Front Camera",
+                "1440 mAh Li-Ion Battery"
+            ]
+        },
+        "product_basic_info": {
+            "normalized_name": "Apple iPhone 5",
+            "product_type": "Smartphones",
+            "productBrand_normalized": "Apple",
+            "productBrand": "Apple",
+            "description": "A premium phone that brings out the best of the smartphone world, puts it together in a beautiful package and presents it to you on a fully functional platter, the iPhone 5 is yet another success story of Apple. The Best Your Eye Can See A 4 inch touchscreen that has so many pixels that the human eye cannot distinguish amongst them, the iPhone Retina Display ensures that you fall for the clear, crisp and bright colors like no other smartphone can reproduce, hook, line and sinker. The capacitive touchscreen is just the right size to fit into the palm, making everything seem better with every blink of the eye. Smooth operations Optimized solely for the iPhone and created to look and perform the best, the iOS 6 operating system combines convenience and functionality with great looks without making life any more complicated than it has to be. Picture Perfect A photographer’s delight, the iPhone 5’s iSight 8 megapixel camera that comes with LED flash reproduces life in bright, bold colors. The 1.2 megapixel secondary camera makes Facetime with a loved one easier and with full HD recording and playback, the iPhone surpasses expectations when it comes to capturing and preserving moments as life flits past. The phone also holds on to capture information to let you know which photo was clicked when without you having to rack your brains. Customized Processor With an A6 chip processor that has been custom-created for the iPhone 5, watch the applications you launch on the operating system perform like butter on toast. Better graphics, faster processing of any application and anything more that you can think of, all with the best of power management possible. Beautiful Technology As always, Apple presents a machine that is crafted to appeal to the eye, with a sleek design that will capture hearts - owner’s pride, neighbour’s envy indeed.",
+            "title": "Apple iPhone 5 (Black, 16 GB)"
+        },
+        "anchor_product_id": {
+            "uuid": "e01975e0-5355-11e7-b593-2f7cb3e079c9"
+        },
+        "product_id": {
+            "uuid": "24a9b900-57fb-11e7-86b8-83b97069ec2a"
+        },
+        "product_retailers": [
+            {
+                "_id": "594ce75613256102d4e6e113",
+                "seller_rating": {
+                    "seller_number_of_reviews": 0,
+                    "seller_number_of_ratings": 4,
+                    "seller_average_rating": 2.8,
+                    "seller_name": "H K TRADING CO"
+                },
+                "delivery_details": {
+                    "delivery_assured": false,
+                    "cod": true,
+                    "delivery_time": "N/A"
+                },
+                "offers": {
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    },
+                    "emi": {
+                        "emi_val": 728,
+                        "emi_details": "EMI starting from ₹728/month"
+                    },
+                    "offer_details": []
+                },
+                "product_rating": {
+                    "reviews_link": "N/A",
+                    "number_of_reviews": 43,
+                    "number_of_ratings": 202,
+                    "rating_val": 3.4,
+                    "rating_text": "N/A"
+                },
+                "product_pricing": {
+                    "discount": 65,
+                    "special_price": 14999,
+                    "selling_price": 14999,
+                    "mrp": 44000
+                },
+                "product_status": {
+                    "available": false
+                },
+                "product_position": 4432,
+                "productURL": "http://dl.flipkart.com/dl/apple-iphone-5-black-16-gb/p/itmdv6es5kddazyn?pid=MOBDKMDB5EH3WT6F&affid=apdhamija",
+                "product_id": {
+                    "mobiles_db_uuid": "e01975e0-5355-11e7-b593-2f7cb3e079c9",
+                    "retailer_product_id": "MOBDKMDB5EH3WT6F"
+                },
+                "retailer_description": {
+                    "retailer_id": 1,
+                    "retailer_name": "Flipkart"
+                }
+            }
+        ],
+        "__v": 0,
+        "internal_codes": {
+            "fingerprint_sensor_check": 1,
+            "four_g_check": 1,
+            "dual_sim_check": 1,
+            "status": 111
+        },
+        "variants": [
+            "594ce75513256102d4e6e104"
+        ],
+        "reactions": {
+            "love": 5,
+            "like": 3,
+            "angry": 4
+        }
+    },
+    {
+        "_id": "594ce75513256102d4e6e104",
+        "updatedAt": "2017-12-05T09:48:45.820Z",
+        "createdAt": "2017-06-23T10:03:01.334Z",
+        "anchor_retailer_id": 1,
+        "final_position": 4499,
+        "product_tags": {
+            "top_rated": false,
+            "flagship": false,
+            "light_weight": false,
+            "best_display": false,
+            "best_processor": false,
+            "best_battery": false,
+            "best_camera": false,
+            "budget": false,
+            "latest": false,
+            "bestseller": false,
+            "fingerprint_sensor": false,
+            "four_g": false,
+            "dual_sim": false
+        },
+        "other_info": {
+            "video_call_support": "N/A",
+            "voice_input": "N/A",
+            "hands_free_status": "N/A"
+        },
+        "amazon_info": {
+            "parent_asin": "N/A"
+        },
+        "dimensions": {
+            "weight": "112 g",
+            "depth": "7.6 mm",
+            "height": "123.8 mm",
+            "width": "58.6 mm"
+        },
+        "av_formats": {
+            "video": "H.264, M4V, MP4, MOV",
+            "audio": "MP3, WAV"
+        },
+        "warranty": "1 Year Manufacturer Warranty",
+        "sensors": "Accelerometer, Three-axis Gyro Sensor, Digital Compass, Proximity Sensor, Ambient Light Sensor",
+        "product_family": {
+            "variants": [
+                "MOBDKMDB5EH3WT6F",
+                "MOBDKMJEJVGRRMFJ",
+                "MOBDKMJEPE7EDGEH",
+                "MOBDKMJEW8KARNVY",
+                "MOBDKMJEXGZWTTTJ",
+                "MOBDPUAZYMHEMTHH",
+                "MOBDPUCGY9SDR7QS"
+            ]
+        },
+        "image_urls": {
+            "large": "http://img.fkcdn.com/image/mobile/r/z/u/apple-iphone-5-800x800-imadknfx9gnf2huq.jpeg",
+            "medium": "http://img.fkcdn.com/image/mobile/r/z/u/apple-iphone-5-400x400-imadknfx9gnf2huq.jpeg",
+            "small": "http://img.fkcdn.com/image/mobile/r/z/u/apple-iphone-5-200x200-imadknfx9gnf2huq.jpeg"
+        },
+        "battery_power": {
+            "battery_type": "Li-Ion",
+            "removable_battery_status": "No",
+            "battery_capacity": "1440 mAh",
+            "batteryVal": 1440
+        },
+        "connectivity": {
+            "audio_jack_width": "3.5 mm",
+            "usb_connectivity": "Yes",
+            "nfc": "No",
+            "wifi": "Yes",
+            "bluetooth_version": "4",
+            "bluetooth_support": "Yes",
+            "internet_connectivity": "Wi-Fi, EDGE, 3G",
+            "supported_networks": "GSM",
+            "network_type": "3G"
+        },
+        "camera": {
+            "dual_camera_lens_available": "N/A",
+            "video_recording_resolution": "1920 x 1080",
+            "video_recording_status": "Yes",
+            "full_hd_recording_status": "Yes",
+            "hd_recording_status": "Yes",
+            "flash": "LED",
+            "secondary_camera_features": "HD Video Upto 30 Frames per Second",
+            "secondary_camera_pixels": "1.2MP",
+            "secondary_camera": "Yes",
+            "primary_camera_features": "Panorama, Face Detection, Geo-tagging, Tap to Focus, Auto Focus, iSight Camera",
+            "primary_camera_pixels": "8MP",
+            "primary_camera": "Yes",
+            "cameraVal": 8
+        },
+        "memory_storage": {
+            "expandable_storage": "N/A",
+            "ram": "N/A",
+            "internal_storage": "16 GB",
+            "storageVal": 16,
+            "ramVal": null
+        },
+        "os_processor": {
+            "processor_speed": "N/A",
+            "processor_core": "N/A",
+            "processor_type": "N/A",
+            "operating_system": "iOS 6",
+            "processor_speed_val": 0
+        },
+        "display_specifications": {
+            "touchscreen_status": "N/A",
+            "resolution_type": "Retina Display",
+            "resolution": "1136 x 640 Pixels",
+            "display_colors": "N/A",
+            "display_type": "N/A",
+            "display_size": "4 inch",
+            "display_size_val": 4
+        },
+        "sim_features": {
+            "hybrid_sim_slot_status": "No",
+            "sim_size": "N/A",
+            "sim_type": "Single Sim"
+        },
+        "sales_package": {
+            "contents": "N/A"
+        },
+        "general_specifications": {
+            "model_color": "White",
+            "model_number": "N/A",
+            "model_name": "iPhone 5",
+            "features": [
+                "16 GB ROM |",
+                "4 inch Retina Display",
+                "8MP Rear Camera | 1.2MP Front Camera",
+                "1440 mAh Li-Ion Battery"
+            ]
+        },
+        "product_basic_info": {
+            "normalized_name": "Apple iPhone 5",
+            "product_type": "Smartphones",
+            "productBrand_normalized": "Apple",
+            "productBrand": "Apple",
+            "description": "A premium phone that brings out the best of the smartphone world, puts it together in a beautiful package and presents it to you on a fully functional platter, the iPhone 5 is yet another success story of Apple. HD Primary Camera with Autofocus and LED Flash A photographer’s delight, the iPhone 5’s iSight 8 megapixel camera that comes with LED flash reproduces life in bright, bold colors. The 1.2 megapixel secondary camera makes Facetime with a loved one easier and with full HD recording on iSight, the iPhone surpasses expectations when it comes to capturing and preserving moments as life flits past. The phone also holds on to capture information to let you know which photo was clicked when without you having to rack your brains for the nitty-gritty details. High Responsive Multi-touch Screen A 4 inch highly responsive touchscreen that has so many pixels that the human eye cannot distinguish amongst them, the iPhone Retina Display ensures that you fall for the clear, crisp and bright colors like no other smartphone can reproduce - hook, line and sinker. The capacitive touchscreen is just the right size to fit into the palm, making everything seem better with every blink of the eye and it supports multitouch to ensure that you get work done more efficiently. Long Battery Life The 1440 mAh battery that is built into the body of the iPhone 5 gives you up to 8 hours of talktime on any 3G network to ensure that the rich experience that the phone strives to provide is not cut short because of battery drain outs. Faster Rendering of Graphics With an A6 chip processor that has been custom-created for the iPhone 5, watch the applications you launch on the operating system perform like butter on toast. Better graphics and faster processing of any application, all with the best of power management possible.",
+            "title": "Apple iPhone 5 (White, 16 GB)"
+        },
+        "anchor_product_id": {
+            "uuid": "b444e8f0-5355-11e7-b593-2f7cb3e079c9"
+        },
+        "product_id": {
+            "uuid": "242a76e0-57fb-11e7-86b8-83b97069ec2a"
+        },
+        "product_retailers": [
+            {
+                "_id": "594ce75513256102d4e6e105",
+                "seller_rating": {
+                    "seller_number_of_reviews": 0,
+                    "seller_number_of_ratings": 4,
+                    "seller_average_rating": 2.8,
+                    "seller_name": "H K TRADING CO"
+                },
+                "delivery_details": {
+                    "delivery_assured": false,
+                    "cod": true,
+                    "delivery_time": "N/A"
+                },
+                "offers": {
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    },
+                    "emi": {
+                        "emi_val": 970,
+                        "emi_details": "EMI starting from ₹970/month"
+                    },
+                    "offer_details": []
+                },
+                "product_rating": {
+                    "reviews_link": "N/A",
+                    "number_of_reviews": 51,
+                    "number_of_ratings": 201,
+                    "rating_val": 3.3,
+                    "rating_text": "N/A"
+                },
+                "product_pricing": {
+                    "discount": 53,
+                    "special_price": 19999,
+                    "selling_price": 19999,
+                    "mrp": 42999
+                },
+                "product_status": {
+                    "available": false
+                },
+                "product_position": 4499,
+                "productURL": "http://dl.flipkart.com/dl/apple-iphone-5-white-16-gb/p/itmdv6es5kddazyn?pid=MOBDKMJE4FTQHRZU&affid=apdhamija",
+                "product_id": {
+                    "mobiles_db_uuid": "b444e8f0-5355-11e7-b593-2f7cb3e079c9",
+                    "retailer_product_id": "MOBDKMJE4FTQHRZU"
+                },
+                "retailer_description": {
+                    "retailer_id": 1,
+                    "retailer_name": "Flipkart"
+                }
+            }
+        ],
+        "__v": 0,
+        "internal_codes": {
+            "fingerprint_sensor_check": 1,
+            "four_g_check": 1,
+            "dual_sim_check": 1,
+            "status": 111
+        },
+        "variants": [
+            "594ce75613256102d4e6e112"
+        ],
+        "reactions": {
+            "love": 5,
+            "like": 3,
+            "angry": 4
+        }
+    },
+    {
+        "_id": "594ce60b13256102d4e6d586",
+        "updatedAt": "2017-12-05T11:02:29.971Z",
+        "createdAt": "2017-06-23T09:57:31.761Z",
+        "anchor_retailer_id": 1,
+        "final_position": 99999,
+        "product_tags": {
+            "top_rated": false,
+            "flagship": false,
+            "light_weight": false,
+            "best_display": false,
+            "best_processor": false,
+            "best_battery": false,
+            "best_camera": false,
+            "budget": false,
+            "latest": false,
+            "bestseller": false,
+            "fingerprint_sensor": true,
+            "four_g": false,
+            "dual_sim": false
+        },
+        "other_info": {
+            "video_call_support": "N/A",
+            "voice_input": "N/A",
+            "hands_free_status": "N/A"
+        },
+        "amazon_info": {
+            "parent_asin": "N/A"
+        },
+        "dimensions": {
+            "weight": "112 g",
+            "depth": "7.6 mm",
+            "height": "123.8 mm",
+            "width": "58.6 mm"
+        },
+        "av_formats": {
+            "video": "MP4, H.264, MOV, M4V",
+            "audio": "MP3, WAV"
+        },
+        "warranty": "1 Year for Mobile & Accessories",
+        "sensors": "Proximity Sensor, Three-axis Gyro Sensor, Accelerometer, Fingerprint Identity Sensor, Ambient Light Sensor, Digital Compass",
+        "product_family": {
+            "variants": [
+                "MOBDPPZZAQFHN4UG",
+                "MOBDPPZZFW9EHZHF",
+                "MOBDPPZZMY4DF4YH",
+                "MOBDPPZZPXVDJHSQ",
+                "MOBDPPZZVADN7TGN",
+                "MOBDPPZZVUJRG582",
+                "MOBDPPZZXGKPFZN3",
+                "MOBDPPZZYQDBDFBA",
+                "MOBE57YFMHFGRZUP"
+            ]
+        },
+        "image_urls": {
+            "large": "http://img.fkcdn.com/image/j1dvte80/mobile/p/a/t/apple-iphone-5s-a1530-800x800-imae2fhpc35bftft.jpeg",
+            "medium": "http://img.fkcdn.com/image/j1dvte80/mobile/p/a/t/apple-iphone-5s-a1530-400x400-imae2fhpc35bftft.jpeg",
+            "small": "http://img.fkcdn.com/image/j1dvte80/mobile/p/a/t/apple-iphone-5s-a1530-200x200-imae2fhpc35bftft.jpeg"
+        },
+        "battery_power": {
+            "battery_type": "Li-Ion",
+            "removable_battery_status": "N/A",
+            "battery_capacity": "1560 mAh",
+            "batteryVal": 1560
+        },
+        "connectivity": {
+            "audio_jack_width": "3.5 mm",
+            "usb_connectivity": "Yes",
+            "nfc": "No",
+            "wifi": "Yes",
+            "bluetooth_version": "4",
+            "bluetooth_support": "Yes",
+            "internet_connectivity": "3G, Wi-Fi, EDGE",
+            "supported_networks": "WCDMA",
+            "network_type": "3G, 2G"
+        },
+        "camera": {
+            "dual_camera_lens_available": "N/A",
+            "video_recording_resolution": "1920 x 1080",
+            "video_recording_status": "Yes",
+            "full_hd_recording_status": "Yes",
+            "hd_recording_status": "Yes",
+            "flash": "Dual LED",
+            "secondary_camera_features": "N/A",
+            "secondary_camera_pixels": "1.2MP",
+            "secondary_camera": "Yes",
+            "primary_camera_features": "N/A",
+            "primary_camera_pixels": "8MP",
+            "primary_camera": "Yes",
+            "cameraVal": 8
+        },
+        "memory_storage": {
+            "expandable_storage": "N/A",
+            "ram": "N/A",
+            "internal_storage": "16 GB",
+            "storageVal": 16,
+            "ramVal": null
+        },
+        "os_processor": {
+            "processor_speed": "1.3 GHz",
+            "processor_core": "Dual Core",
+            "processor_type": "A7 Chip with 64-bit Architecture and M7 Motion Coprocessor",
+            "operating_system": "iOS 9",
+            "processor_speed_val": 1.3
+        },
+        "display_specifications": {
+            "touchscreen_status": "Yes",
+            "resolution_type": "Retina Display",
+            "resolution": "1136 x 640 Pixels",
+            "display_colors": "N/A",
+            "display_type": "N/A",
+            "display_size": "4 inch",
+            "display_size_val": 4
+        },
+        "sim_features": {
+            "hybrid_sim_slot_status": "No",
+            "sim_size": "Nano SIM",
+            "sim_type": "Single Sim"
+        },
+        "sales_package": {
+            "contents": "1 Handset, 1 Set of EarPods, 1 Lightning to USB Cable, 1 USB Power Adapter"
+        },
+        "general_specifications": {
+            "model_color": "Gold",
+            "model_number": "A1530",
+            "model_name": "iPhone 5s",
+            "features": [
+                "16 GB ROM |",
+                "4 inch Retina Display",
+                "8MP Rear Camera | 1.2MP Front Camera",
+                "1560 mAh Li-Ion Battery",
+                "A7 Chip with 64-bit Architecture and M7 Motion Coprocessor Processor"
+            ]
+        },
+        "product_basic_info": {
+            "normalized_name": "Apple iPhone 5s",
+            "product_type": "Smartphones",
+            "productBrand_normalized": "Apple",
+            "productBrand": "Apple",
+            "description": "N/A",
+            "title": "Apple iPhone 5s (Gold, 16 GB)"
+        },
+        "anchor_product_id": {
+            "uuid": "a0a89da0-5355-11e7-b593-2f7cb3e079c9"
+        },
+        "product_id": {
+            "uuid": "5fb99d90-57fa-11e7-86b8-83b97069ec2a"
+        },
+        "product_retailers": [
+            {
+                "_id": "594ce60b13256102d4e6d587",
+                "seller_rating": {
+                    "seller_number_of_reviews": 0,
+                    "seller_number_of_ratings": 3,
+                    "seller_average_rating": 4.3,
+                    "seller_name": "Neolight"
+                },
+                "delivery_details": {
+                    "cod": true,
+                    "delivery_time": "Usually Delivered in 5 - 6 days."
+                },
+                "offers": {
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    },
+                    "emi": {
+                        "emi_val": 0,
+                        "emi_details": "N/A"
+                    },
+                    "offer_details": []
+                },
+                "product_rating": {
+                    "reviews_link": "N/A",
+                    "number_of_reviews": 0,
+                    "number_of_ratings": 0,
+                    "rating_val": 0,
+                    "rating_text": "N/A"
+                },
+                "product_pricing": {
+                    "discount": 59,
+                    "special_price": 19100,
+                    "selling_price": 19100,
+                    "mrp": 47000
+                },
+                "product_status": {
+                    "available": true
+                },
+                "product_position": 0,
+                "productURL": "http://dl.flipkart.com/dl/apple-iphone-5s-gold-16-gb/p/itmeuyd8ngnpzjg8?pid=MOBDPPZZDX8WSPAT&affid=apdhamija",
+                "product_id": {
+                    "mobiles_db_uuid": "a0a89da0-5355-11e7-b593-2f7cb3e079c9",
+                    "retailer_product_id": "MOBDPPZZDX8WSPAT"
+                },
+                "retailer_description": {
+                    "retailer_id": 1,
+                    "retailer_name": "Flipkart"
+                }
+            }
+        ],
+        "__v": 0,
+        "internal_codes": {
+            "fingerprint_sensor_check": 1,
+            "four_g_check": 1,
+            "dual_sim_check": 1,
+            "status": 111
+        },
+        "variants": [
+            "597a6293d918b700047cd24b",
+            "594ce7e313256102d4e6e7f0",
+            "594e1b47470a23028c34a53d",
+            "594ce7a313256102d4e6e4da",
+            "59ca65532891ce0004347b1f"
+        ],
+        "reactions": {
+            "like": 5,
+            "love": 6,
+            "angry": 6
+        }
+    }
+]
