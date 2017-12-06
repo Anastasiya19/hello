@@ -1,0 +1,2127 @@
+[
+    {
+        "_id": "594ce75613256102d4e6e112",
+        "updatedAt": "2017-12-05T09:48:45.820Z",
+        "createdAt": "2017-06-23T10:03:02.168Z",
+        "anchor_retailer_id": 1,
+        "final_position": 4432,
+        "product_tags": {
+            "top_rated": false,
+            "flagship": false,
+            "light_weight": false,
+            "best_display": false,
+            "best_processor": false,
+            "best_battery": false,
+            "best_camera": false,
+            "budget": false,
+            "latest": false,
+            "bestseller": false,
+            "fingerprint_sensor": false,
+            "four_g": false,
+            "dual_sim": false
+        },
+        "other_info": {
+            "video_call_support": "N/A",
+            "voice_input": "N/A",
+            "hands_free_status": "N/A"
+        },
+        "amazon_info": {
+            "parent_asin": "N/A"
+        },
+        "dimensions": {
+            "weight": "112 g",
+            "depth": "7.6 mm",
+            "height": "123.8 mm",
+            "width": "58.6 mm"
+        },
+        "av_formats": {
+            "video": "H.264, MOV, MP4, M4V",
+            "audio": "MP3, WAV"
+        },
+        "warranty": "1 Year Manufacturer Warranty",
+        "sensors": "Three-axis Gyro Sensor, Ambient Light Sensor, Digital Compass, Accelerometer, Proximity Sensor",
+        "product_family": {
+            "variants": [
+                "MOBDKMJE4FTQHRZU",
+                "MOBDKMJEJVGRRMFJ",
+                "MOBDKMJEPE7EDGEH",
+                "MOBDKMJEW8KARNVY",
+                "MOBDKMJEXGZWTTTJ",
+                "MOBDPUAZYMHEMTHH",
+                "MOBDPUCGY9SDR7QS"
+            ]
+        },
+        "image_urls": {
+            "large": "http://img.fkcdn.com/image/mobile/t/6/f/apple-iphone-5-800x800-imadknfx5s2wngz9.jpeg",
+            "medium": "http://img.fkcdn.com/image/mobile/t/6/f/apple-iphone-5-400x400-imadknfx5s2wngz9.jpeg",
+            "small": "http://img.fkcdn.com/image/mobile/t/6/f/apple-iphone-5-200x200-imadknfx5s2wngz9.jpeg"
+        },
+        "battery_power": {
+            "battery_type": "Li-Ion",
+            "removable_battery_status": "N/A",
+            "battery_capacity": "1440 mAh",
+            "batteryVal": 1440
+        },
+        "connectivity": {
+            "audio_jack_width": "3.5 mm",
+            "usb_connectivity": "Yes",
+            "nfc": "No",
+            "wifi": "Yes",
+            "bluetooth_version": "4",
+            "bluetooth_support": "Yes",
+            "internet_connectivity": "Wi-Fi, EDGE, 3G",
+            "supported_networks": "GSM",
+            "network_type": "3G"
+        },
+        "camera": {
+            "dual_camera_lens_available": "N/A",
+            "video_recording_resolution": "1920 x 1080",
+            "video_recording_status": "Yes",
+            "full_hd_recording_status": "Yes",
+            "hd_recording_status": "Yes",
+            "flash": "LED",
+            "secondary_camera_features": "HD Video Upto 30 Frames per Second",
+            "secondary_camera_pixels": "1.2MP",
+            "secondary_camera": "Yes",
+            "primary_camera_features": "Panorama, Face Detection, Geo-tagging, Tap to Focus, Auto Focus, iSight Camera",
+            "primary_camera_pixels": "8MP",
+            "primary_camera": "Yes",
+            "cameraVal": 8
+        },
+        "memory_storage": {
+            "expandable_storage": "N/A",
+            "ram": "N/A",
+            "internal_storage": "16 GB",
+            "storageVal": 16,
+            "ramVal": null
+        },
+        "os_processor": {
+            "processor_speed": "N/A",
+            "processor_core": "N/A",
+            "processor_type": "N/A",
+            "operating_system": "iOS 6",
+            "processor_speed_val": 0
+        },
+        "display_specifications": {
+            "touchscreen_status": "N/A",
+            "resolution_type": "Retina Display",
+            "resolution": "1136 x 640 Pixels",
+            "display_colors": "N/A",
+            "display_type": "N/A",
+            "display_size": "4 inch",
+            "display_size_val": 4
+        },
+        "sim_features": {
+            "hybrid_sim_slot_status": "N/A",
+            "sim_size": "N/A",
+            "sim_type": "Single Sim"
+        },
+        "sales_package": {
+            "contents": "N/A"
+        },
+        "general_specifications": {
+            "model_color": "Black",
+            "model_number": "N/A",
+            "model_name": "iPhone 5",
+            "features": [
+                "16 GB ROM |",
+                "4 inch Retina Display",
+                "8MP Rear Camera | 1.2MP Front Camera",
+                "1440 mAh Li-Ion Battery"
+            ]
+        },
+        "product_basic_info": {
+            "normalized_name": "Apple iPhone 5",
+            "product_type": "Smartphones",
+            "productBrand_normalized": "Apple",
+            "productBrand": "Apple",
+            "description": "A premium phone that brings out the best of the smartphone world, puts it together in a beautiful package and presents it to you on a fully functional platter, the iPhone 5 is yet another success story of Apple. The Best Your Eye Can See A 4 inch touchscreen that has so many pixels that the human eye cannot distinguish amongst them, the iPhone Retina Display ensures that you fall for the clear, crisp and bright colors like no other smartphone can reproduce, hook, line and sinker. The capacitive touchscreen is just the right size to fit into the palm, making everything seem better with every blink of the eye. Smooth operations Optimized solely for the iPhone and created to look and perform the best, the iOS 6 operating system combines convenience and functionality with great looks without making life any more complicated than it has to be. Picture Perfect A photographer’s delight, the iPhone 5’s iSight 8 megapixel camera that comes with LED flash reproduces life in bright, bold colors. The 1.2 megapixel secondary camera makes Facetime with a loved one easier and with full HD recording and playback, the iPhone surpasses expectations when it comes to capturing and preserving moments as life flits past. The phone also holds on to capture information to let you know which photo was clicked when without you having to rack your brains. Customized Processor With an A6 chip processor that has been custom-created for the iPhone 5, watch the applications you launch on the operating system perform like butter on toast. Better graphics, faster processing of any application and anything more that you can think of, all with the best of power management possible. Beautiful Technology As always, Apple presents a machine that is crafted to appeal to the eye, with a sleek design that will capture hearts - owner’s pride, neighbour’s envy indeed.",
+            "title": "Apple iPhone 5 (Black, 16 GB)"
+        },
+        "anchor_product_id": {
+            "uuid": "e01975e0-5355-11e7-b593-2f7cb3e079c9"
+        },
+        "product_id": {
+            "uuid": "24a9b900-57fb-11e7-86b8-83b97069ec2a"
+        },
+        "product_retailers": [
+            {
+                "_id": "594ce75613256102d4e6e113",
+                "seller_rating": {
+                    "seller_number_of_reviews": 0,
+                    "seller_number_of_ratings": 4,
+                    "seller_average_rating": 2.8,
+                    "seller_name": "H K TRADING CO"
+                },
+                "delivery_details": {
+                    "delivery_assured": false,
+                    "cod": true,
+                    "delivery_time": "N/A"
+                },
+                "offers": {
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    },
+                    "emi": {
+                        "emi_val": 728,
+                        "emi_details": "EMI starting from ₹728/month"
+                    },
+                    "offer_details": []
+                },
+                "product_rating": {
+                    "reviews_link": "N/A",
+                    "number_of_reviews": 43,
+                    "number_of_ratings": 202,
+                    "rating_val": 3.4,
+                    "rating_text": "N/A"
+                },
+                "product_pricing": {
+                    "discount": 65,
+                    "special_price": 14999,
+                    "selling_price": 14999,
+                    "mrp": 44000
+                },
+                "product_status": {
+                    "available": false
+                },
+                "product_position": 4432,
+                "productURL": "http://dl.flipkart.com/dl/apple-iphone-5-black-16-gb/p/itmdv6es5kddazyn?pid=MOBDKMDB5EH3WT6F&affid=apdhamija",
+                "product_id": {
+                    "mobiles_db_uuid": "e01975e0-5355-11e7-b593-2f7cb3e079c9",
+                    "retailer_product_id": "MOBDKMDB5EH3WT6F"
+                },
+                "retailer_description": {
+                    "retailer_id": 1,
+                    "retailer_name": "Flipkart"
+                }
+            }
+        ],
+        "__v": 0,
+        "internal_codes": {
+            "fingerprint_sensor_check": 1,
+            "four_g_check": 1,
+            "dual_sim_check": 1,
+            "status": 111
+        },
+        "variants": [
+            "594ce75513256102d4e6e104"
+        ],
+        "reactions": {
+            "love": 5,
+            "like": 3,
+            "angry": 4
+        }
+    },
+    {
+        "_id": "594ce78c13256102d4e6e3aa",
+        "updatedAt": "2017-12-05T10:59:41.365Z",
+        "createdAt": "2017-06-23T10:03:56.245Z",
+        "anchor_retailer_id": 1,
+        "final_position": 139,
+        "product_tags": {
+            "top_rated": false,
+            "flagship": false,
+            "light_weight": false,
+            "best_display": false,
+            "best_processor": false,
+            "best_battery": false,
+            "best_camera": false,
+            "budget": false,
+            "latest": false,
+            "bestseller": false,
+            "fingerprint_sensor": true,
+            "four_g": true,
+            "dual_sim": false
+        },
+        "other_info": {
+            "video_call_support": "Yes",
+            "voice_input": "Yes",
+            "hands_free_status": "N/A"
+        },
+        "amazon_info": {
+            "parent_asin": "N/A"
+        },
+        "dimensions": {
+            "weight": "188 g",
+            "depth": "7.3 mm",
+            "height": "158.2 mm",
+            "width": "77.9 mm"
+        },
+        "av_formats": {
+            "video": "H.264, AAC-LC, M4V, MP4, MOV, MPEG4, AVI, PCM",
+            "audio": "AAC, MP3, HE-AAC, MP3 VBR, AAX, AAX+, AIFF, WAV"
+        },
+        "warranty": "1 Year Manufacturer Warranty",
+        "sensors": "Touch ID Fingerprint Sensor, Barometer, Three-axis Gyro Sensor, Accelerometer, Proximity Sensor, Ambient Light Sensor, Backside Illumination Sensor, Digital Compass",
+        "product_family": {
+            "variants": [
+                "MOBEMK626Z9TSBW8",
+                "MOBEMK628UZRJUEC",
+                "MOBEMK62FPZJUUFE",
+                "MOBEMK62FTZTYHQH",
+                "MOBEMK62FZFKPYFH",
+                "MOBEMK62G6SVRKGB",
+                "MOBEMK62QFEVEPP4",
+                "MOBEMK62UQNEVZZJ",
+                "MOBEMK62VS979XYM",
+                "MOBEMK62XSANTWGZ",
+                "MOBEMK62XUGQPJFB",
+                "MOBEMK62YVHPH7MV",
+                "MOBEMK6FDBZQZEAP",
+                "MOBESTTFBBFV9KET"
+            ]
+        },
+        "image_urls": {
+            "large": "http://img.fkcdn.com/image/mobile/f/q/h/apple-iphone-7-plus-na-800x800-imaemz66zzbftnnt.jpeg",
+            "medium": "http://img.fkcdn.com/image/mobile/f/q/h/apple-iphone-7-plus-na-400x400-imaemz66zzbftnnt.jpeg",
+            "small": "http://img.fkcdn.com/image/mobile/f/q/h/apple-iphone-7-plus-na-200x200-imaemz66zzbftnnt.jpeg"
+        },
+        "battery_power": {
+            "battery_type": "Li-Ion",
+            "removable_battery_status": "No",
+            "battery_capacity": "N/A",
+            "batteryVal": 0
+        },
+        "connectivity": {
+            "audio_jack_width": "N/A",
+            "usb_connectivity": "Yes",
+            "nfc": "Yes",
+            "wifi": "Yes",
+            "bluetooth_version": "v4.2",
+            "bluetooth_support": "Yes",
+            "internet_connectivity": "4G, 3G, Wi-Fi, GPRS, EDGE",
+            "supported_networks": "4G LTE",
+            "network_type": "4G VOLTE, 3G, 2G"
+        },
+        "camera": {
+            "dual_camera_lens_available": "Primary Camera",
+            "video_recording_resolution": "3840 x 2160",
+            "video_recording_status": "Yes",
+            "full_hd_recording_status": "Yes",
+            "hd_recording_status": "Yes",
+            "flash": "Quad LED True Tone Flash",
+            "secondary_camera_features": "1080p HD Video Recording, Retina Flash, f/2.2 Aperture, Wide Color Capture for Photos and Live Photos, Auto HDR, Backside Illumination Sensor, Body and Face Detection, Auto Image Stabilization, Burst Mode, Exposure Control, Timer Mode, FaceTime Video Calling Over Wi-Fi or Cellular",
+            "secondary_camera_pixels": "7MP",
+            "secondary_camera": "Yes",
+            "primary_camera_features": "Wide Angle and Telephoto Cameras, Wide-angle: f/1.8 Aperture, Telephoto: f/2.8 Aperture, Optical Image Stabilization, Six Element Lens, Panorama (Upto 63 MP), Sapphire Crystal Lens Cover, Backside Illumination Sensor, Hybrid IR Filter, Autofocus with Focus Pixels, Tap to Focus with Focus Pixels, Live Photos with Stabilization, Wide Color Capture for Photos and Live Photos, Improved Local Tone Mapping, Body and Face Detection, Exposure Control, Noise Reduction, Auto HDR for Photos, Auto Image Stabilization, Burst Mode, Timer Mode, Photo Geotagging, Time Lapse Video with Stabilization, Cinematic Video Stabilization (1080p and 720p), Continuous Auto Focus Video, Take 8 MP Still Photos While Recording 4K Video, Playback Zoom, Video Geotagging",
+            "primary_camera_pixels": "12MP + 12MP",
+            "primary_camera": "Yes",
+            "cameraVal": 12
+        },
+        "memory_storage": {
+            "expandable_storage": "N/A",
+            "ram": "N/A",
+            "internal_storage": "32 GB",
+            "storageVal": 32,
+            "ramVal": null
+        },
+        "os_processor": {
+            "processor_speed": "N/A",
+            "processor_core": "N/A",
+            "processor_type": "A10 Fusion Chip with 64-bit Architecture and Embedded M10 Motion Co-processor",
+            "operating_system": "iOS 10",
+            "processor_speed_val": 0
+        },
+        "display_specifications": {
+            "touchscreen_status": "Yes",
+            "resolution_type": "Retina HD Display",
+            "resolution": "1920 x 1080 Pixels",
+            "display_colors": "N/A",
+            "display_type": "LED-backlit IPS",
+            "display_size": "5.5 inch",
+            "display_size_val": 5.5
+        },
+        "sim_features": {
+            "hybrid_sim_slot_status": "No",
+            "sim_size": "Nano Sim",
+            "sim_type": "Single Sim"
+        },
+        "sales_package": {
+            "contents": "Handset, EarPods with Lightning Connector, Lightning to 3.5 mm Headphone Jack Adapter, Lightning to USB Cable, USB Power Adapter, Documentation"
+        },
+        "general_specifications": {
+            "model_color": "Black",
+            "model_number": "MNQM2HN/A",
+            "model_name": "iPhone 7 Plus",
+            "features": [
+                "32 GB ROM |",
+                "5.5 inch Retina HD Display",
+                "12MP + 12MP Dual Rear Camera | 7MP Front Camera",
+                "Li-Ion Battery",
+                "A10 Fusion Chip with 64-bit Architecture and Embedded M10 Motion Co-processor Processor"
+            ]
+        },
+        "product_basic_info": {
+            "normalized_name": "Apple iPhone 7 Plus",
+            "product_type": "Smartphones",
+            "productBrand_normalized": "Apple",
+            "productBrand": "Apple",
+            "description": "With better cameras, long-lasting battery life, powerful processor and enhanced stereo speakers, the iPhone 7 Plus takes your iPhone experience till date to the next level. Thanks to its vibrant display, sleek design and a water- and splash-resistant enclosure, this smartphone looks every bit as impressive as it is.",
+            "title": "Apple iPhone 7 Plus (Black, 32 GB)"
+        },
+        "anchor_product_id": {
+            "uuid": "ac8fcbc0-5355-11e7-b593-2f7cb3e079c9"
+        },
+        "product_id": {
+            "uuid": "44e510c0-57fb-11e7-86b8-83b97069ec2a"
+        },
+        "product_retailers": [
+            {
+                "_id": "594ce78c13256102d4e6e3ab",
+                "seller_rating": {
+                    "seller_number_of_reviews": 0,
+                    "seller_number_of_ratings": 0,
+                    "seller_average_rating": null,
+                    "seller_name": "Shreyash Retail Private Ltd"
+                },
+                "delivery_details": {
+                    "delivery_assured": true,
+                    "cod": false,
+                    "delivery_time": "Usually Delivered in 3 - 4 days."
+                },
+                "offers": {
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    },
+                    "emi": {
+                        "emi_val": 2861,
+                        "emi_details": "EMI starting from ₹2861/month"
+                    },
+                    "offer_details": []
+                },
+                "product_rating": {
+                    "reviews_link": "N/A",
+                    "number_of_reviews": 136,
+                    "number_of_ratings": 548,
+                    "rating_val": 4.6,
+                    "rating_text": "N/A"
+                },
+                "product_pricing": {
+                    "discount": 18,
+                    "special_price": 58999,
+                    "selling_price": 72000,
+                    "mrp": 72000
+                },
+                "product_status": {
+                    "available": true
+                },
+                "product_position": 139,
+                "productURL": "http://dl.flipkart.com/dl/apple-iphone-7-plus-black-32-gb/p/itmen6davhyetcwf?pid=MOBEMK6289R7UFQH&affid=apdhamija",
+                "product_id": {
+                    "mobiles_db_uuid": "ac8fcbc0-5355-11e7-b593-2f7cb3e079c9",
+                    "retailer_product_id": "MOBEMK6289R7UFQH"
+                },
+                "retailer_description": {
+                    "retailer_id": 1,
+                    "retailer_name": "Flipkart"
+                }
+            },
+            {
+                "retailer_description": {
+                    "retailer_name": "Amazon",
+                    "retailer_id": 2
+                },
+                "product_id": {
+                    "retailer_product_id": "B01LZKSTJB",
+                    "mobiles_db_uuid": "6cdaa110-55d2-11e7-b15f-7998764aec49"
+                },
+                "productURL": "https://www.amazon.in/Apple-iPhone-Plus-Black-32GB/dp/B01LZKSTJB?psc=1&SubscriptionId=AKIAJOGRXNO5VKAU526A&tag=ankurdhamija8-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B01LZKSTJB",
+                "product_position": 167,
+                "product_status": {
+                    "available": true
+                },
+                "product_pricing": {
+                    "mrp": 72000,
+                    "selling_price": 0,
+                    "special_price": 56999,
+                    "discount": 21
+                },
+                "product_rating": {
+                    "rating_text": "4.1 out of 5 stars",
+                    "rating_val": 4.1,
+                    "number_of_ratings": 0,
+                    "number_of_reviews": 334,
+                    "reviews_link": "http://www.amazon.in/Apple-iPhone-Plus-Black-32GB/dp/B01LZKSTJB/ref=sr_1_167?s=electronics&ie=UTF8&qid=1497967781&sr=1-167#customerReviews"
+                },
+                "offers": {
+                    "offer_details": [],
+                    "emi": {
+                        "emi_details": "N/A",
+                        "emi_val": 0
+                    },
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    }
+                },
+                "delivery_details": {
+                    "delivery_time": "N/A",
+                    "cod": false,
+                    "delivery_assured": true
+                },
+                "seller_rating": {
+                    "seller_name": "N/A",
+                    "seller_average_rating": 0,
+                    "seller_number_of_ratings": 0,
+                    "seller_number_of_reviews": 0
+                },
+                "_id": "594e23dc42a9ea0004f0b17c"
+            }
+        ],
+        "__v": 0,
+        "internal_codes": {
+            "fingerprint_sensor_check": 1,
+            "four_g_check": 1,
+            "dual_sim_check": 1,
+            "status": 111
+        },
+        "variants": [
+            "594ce78813256102d4e6e380",
+            "594ce78813256102d4e6e386",
+            "594ce7b313256102d4e6e5a8",
+            "594ce7b413256102d4e6e5b4",
+            "594ce7b513256102d4e6e5c0",
+            "594ce7c113256102d4e6e650",
+            "594ce7e613256102d4e6e816",
+            "594ce7e813256102d4e6e82e",
+            "594ce78c13256102d4e6e3b0",
+            "594ce7d913256102d4e6e76c",
+            "594ce7b413256102d4e6e5b0",
+            "594ce74213256102d4e6e03c",
+            "594ce78b13256102d4e6e3a6",
+            "594ce7b713256102d4e6e5dc",
+            "594ce79f13256102d4e6e4a0"
+        ],
+        "reactions": {
+            "like": 1,
+            "love": 1,
+            "angry": 1
+        }
+    },
+    {
+        "_id": "594ce7e613256102d4e6e816",
+        "updatedAt": "2017-12-05T10:59:41.365Z",
+        "createdAt": "2017-06-23T10:05:26.172Z",
+        "anchor_retailer_id": 1,
+        "final_position": 113,
+        "product_tags": {
+            "top_rated": false,
+            "flagship": false,
+            "light_weight": false,
+            "best_display": false,
+            "best_processor": false,
+            "best_battery": false,
+            "best_camera": false,
+            "budget": false,
+            "latest": false,
+            "bestseller": false,
+            "fingerprint_sensor": true,
+            "four_g": true,
+            "dual_sim": false
+        },
+        "other_info": {
+            "video_call_support": "Yes",
+            "voice_input": "Yes",
+            "hands_free_status": "N/A"
+        },
+        "amazon_info": {
+            "parent_asin": "N/A"
+        },
+        "dimensions": {
+            "weight": "188 g",
+            "depth": "7.3 mm",
+            "height": "158.2 mm",
+            "width": "77.9 mm"
+        },
+        "av_formats": {
+            "video": "H.264, AAC-LC, M4V, MP4, MOV, MPEG4, AVI, PCM",
+            "audio": "AAC, MP3, HE-AAC, MP3 VBR, AAX, AAX+, AIFF, WAV"
+        },
+        "warranty": "1 Year Manufacturer Warranty",
+        "sensors": "Touch ID Fingerprint Sensor, Barometer, Three-axis Gyro Sensor, Accelerometer, Proximity Sensor, Ambient Light Sensor, Backside Illumination Sensor, Digital Compass",
+        "product_family": {
+            "variants": [
+                "MOBEMK626Z9TSBW8",
+                "MOBEMK6289R7UFQH",
+                "MOBEMK628UZRJUEC",
+                "MOBEMK62FPZJUUFE",
+                "MOBEMK62FTZTYHQH",
+                "MOBEMK62FZFKPYFH",
+                "MOBEMK62G6SVRKGB",
+                "MOBEMK62QFEVEPP4",
+                "MOBEMK62UQNEVZZJ",
+                "MOBEMK62VS979XYM",
+                "MOBEMK62XUGQPJFB",
+                "MOBEMK62YVHPH7MV",
+                "MOBEMK6FDBZQZEAP",
+                "MOBESTTFBBFV9KET"
+            ]
+        },
+        "image_urls": {
+            "large": "http://img.fkcdn.com/image/mobile/f/q/h/apple-iphone-7-plus-na-800x800-imaemz66zzbftnnt.jpeg",
+            "medium": "http://img.fkcdn.com/image/mobile/f/q/h/apple-iphone-7-plus-na-400x400-imaemz66zzbftnnt.jpeg",
+            "small": "http://img.fkcdn.com/image/mobile/f/q/h/apple-iphone-7-plus-na-200x200-imaemz66zzbftnnt.jpeg"
+        },
+        "battery_power": {
+            "battery_type": "Li-Ion",
+            "removable_battery_status": "No",
+            "battery_capacity": "N/A",
+            "batteryVal": 0
+        },
+        "connectivity": {
+            "audio_jack_width": "N/A",
+            "usb_connectivity": "Yes",
+            "nfc": "Yes",
+            "wifi": "Yes",
+            "bluetooth_version": "v4.2",
+            "bluetooth_support": "Yes",
+            "internet_connectivity": "4G, 3G, Wi-Fi, GPRS, EDGE",
+            "supported_networks": "4G LTE",
+            "network_type": "4G VOLTE, 3G, 2G"
+        },
+        "camera": {
+            "dual_camera_lens_available": "Primary Camera",
+            "video_recording_resolution": "3840 x 2160",
+            "video_recording_status": "Yes",
+            "full_hd_recording_status": "Yes",
+            "hd_recording_status": "Yes",
+            "flash": "Quad LED True Tone Flash",
+            "secondary_camera_features": "1080p HD Video Recording, Retina Flash, f/2.2 Aperture, Wide Color Capture for Photos and Live Photos, Auto HDR, Backside Illumination Sensor, Body and Face Detection, Auto Image Stabilization, Burst Mode, Exposure Control, Timer Mode, FaceTime Video Calling Over Wi-Fi or Cellular",
+            "secondary_camera_pixels": "7MP",
+            "secondary_camera": "Yes",
+            "primary_camera_features": "Wide Angle and Telephoto Cameras, Wide-angle: f/1.8 Aperture, Telephoto: f/2.8 Aperture, Optical Image Stabilization, Six Element Lens, Panorama (Upto 63 MP), Sapphire Crystal Lens Cover, Backside Illumination Sensor, Hybrid IR Filter, Autofocus with Focus Pixels, Tap to Focus with Focus Pixels, Live Photos with Stabilization, Wide Color Capture for Photos and Live Photos, Improved Local Tone Mapping, Body and Face Detection, Exposure Control, Noise Reduction, Auto HDR for Photos, Auto Image Stabilization, Burst Mode, Timer Mode, Photo Geotagging, Time Lapse Video with Stabilization, Cinematic Video Stabilization (1080p and 720p), Continuous Auto Focus Video, Take 8 MP Still Photos While Recording 4K Video, Playback Zoom, Video Geotagging",
+            "primary_camera_pixels": "12MP + 12MP",
+            "primary_camera": "Yes",
+            "cameraVal": 12
+        },
+        "memory_storage": {
+            "expandable_storage": "N/A",
+            "ram": "N/A",
+            "internal_storage": "128 GB",
+            "storageVal": 128,
+            "ramVal": null
+        },
+        "os_processor": {
+            "processor_speed": "N/A",
+            "processor_core": "N/A",
+            "processor_type": "A10 Fusion Chip with 64-bit Architecture and Embedded M10 Motion Co-processor",
+            "operating_system": "iOS 10",
+            "processor_speed_val": 0
+        },
+        "display_specifications": {
+            "touchscreen_status": "Yes",
+            "resolution_type": "Retina HD Display",
+            "resolution": "1920 x 1080 Pixels",
+            "display_colors": "N/A",
+            "display_type": "LED-backlit IPS",
+            "display_size": "5.5 inch",
+            "display_size_val": 5.5
+        },
+        "sim_features": {
+            "hybrid_sim_slot_status": "No",
+            "sim_size": "Nano Sim",
+            "sim_type": "Single Sim"
+        },
+        "sales_package": {
+            "contents": "Handset, EarPods with Lightning Connector, Lightning to 3.5 mm Headphone Jack Adapter, Lightning to USB Cable, USB Power Adapter, Documentation"
+        },
+        "general_specifications": {
+            "model_color": "Black",
+            "model_number": "MN4M2HN/A",
+            "model_name": "iPhone 7 Plus",
+            "features": [
+                "128 GB ROM |",
+                "5.5 inch Retina HD Display",
+                "12MP + 12MP Dual Rear Camera | 7MP Front Camera",
+                "Li-Ion Battery",
+                "A10 Fusion Chip with 64-bit Architecture and Embedded M10 Motion Co-processor Processor"
+            ]
+        },
+        "product_basic_info": {
+            "normalized_name": "Apple iPhone 7 Plus",
+            "product_type": "Smartphones",
+            "productBrand_normalized": "Apple",
+            "productBrand": "Apple",
+            "description": "With better cameras, long-lasting battery life, powerful processor and enhanced stereo speakers, the iPhone 7 Plus takes your iPhone experience till date to the next level. Thanks to its vibrant display, sleek design and a water- and splash-resistant enclosure, this smartphone looks every bit as impressive as it is.",
+            "title": "Apple iPhone 7 Plus (Black, 128 GB)"
+        },
+        "anchor_product_id": {
+            "uuid": "45c37d80-5353-11e7-b5a6-4764b052efc5"
+        },
+        "product_id": {
+            "uuid": "7a7f2450-57fb-11e7-86b8-83b97069ec2a"
+        },
+        "product_retailers": [
+            {
+                "_id": "594ce7e613256102d4e6e817",
+                "seller_rating": {
+                    "seller_number_of_reviews": 0,
+                    "seller_number_of_ratings": 0,
+                    "seller_average_rating": null,
+                    "seller_name": "Shreyash Retail Private Ltd"
+                },
+                "delivery_details": {
+                    "delivery_assured": true,
+                    "cod": false,
+                    "delivery_time": "Usually Delivered in 3 - 4 days."
+                },
+                "offers": {
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    },
+                    "emi": {
+                        "emi_val": 3273,
+                        "emi_details": "EMI starting from ₹3273/month"
+                    },
+                    "offer_details": []
+                },
+                "product_rating": {
+                    "reviews_link": "N/A",
+                    "number_of_reviews": 138,
+                    "number_of_ratings": 703,
+                    "rating_val": 4.6,
+                    "rating_text": "N/A"
+                },
+                "product_pricing": {
+                    "discount": 17,
+                    "special_price": 67499,
+                    "selling_price": 82000,
+                    "mrp": 82000
+                },
+                "product_status": {
+                    "available": true
+                },
+                "product_position": 113,
+                "productURL": "http://dl.flipkart.com/dl/apple-iphone-7-plus-black-128-gb/p/itmen6dasgrskmyh?pid=MOBEMK62XSANTWGZ&affid=apdhamija",
+                "product_id": {
+                    "mobiles_db_uuid": "45c37d80-5353-11e7-b5a6-4764b052efc5",
+                    "retailer_product_id": "MOBEMK62XSANTWGZ"
+                },
+                "retailer_description": {
+                    "retailer_id": 1,
+                    "retailer_name": "Flipkart"
+                }
+            },
+            {
+                "retailer_description": {
+                    "retailer_name": "Amazon",
+                    "retailer_id": 2
+                },
+                "product_id": {
+                    "retailer_product_id": "B01LWNBCGM",
+                    "mobiles_db_uuid": "6b4979c0-55d2-11e7-b15f-7998764aec49"
+                },
+                "productURL": "https://www.amazon.in/Apple-iPhone-Plus-Black-128GB/dp/B01LWNBCGM?psc=1&SubscriptionId=AKIAJOGRXNO5VKAU526A&tag=ankurdhamija8-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B01LWNBCGM",
+                "product_position": 142,
+                "product_status": {
+                    "available": true
+                },
+                "product_pricing": {
+                    "mrp": 82000,
+                    "selling_price": 0,
+                    "special_price": 65490,
+                    "discount": 20
+                },
+                "product_rating": {
+                    "rating_text": "4.1 out of 5 stars",
+                    "rating_val": 4.1,
+                    "number_of_ratings": 0,
+                    "number_of_reviews": 334,
+                    "reviews_link": "http://www.amazon.in/Apple-iPhone-Plus-Black-128GB/dp/B01LWNBCGM/ref=sr_1_142?s=electronics&ie=UTF8&qid=1497967773&sr=1-142#customerReviews"
+                },
+                "offers": {
+                    "offer_details": [],
+                    "emi": {
+                        "emi_details": "N/A",
+                        "emi_val": 0
+                    },
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    }
+                },
+                "delivery_details": {
+                    "delivery_time": "N/A",
+                    "cod": false,
+                    "delivery_assured": true
+                },
+                "seller_rating": {
+                    "seller_name": "N/A",
+                    "seller_average_rating": 0,
+                    "seller_number_of_ratings": 0,
+                    "seller_number_of_reviews": 0
+                },
+                "_id": "594e243242a9ea0004f0b180"
+            }
+        ],
+        "__v": 0,
+        "internal_codes": {
+            "fingerprint_sensor_check": 1,
+            "four_g_check": 1,
+            "dual_sim_check": 1,
+            "status": 111
+        },
+        "variants": [
+            "594ce78813256102d4e6e380",
+            "594ce78813256102d4e6e386",
+            "594ce78c13256102d4e6e3aa",
+            "594ce7b313256102d4e6e5a8",
+            "594ce7b413256102d4e6e5b4",
+            "594ce7b513256102d4e6e5c0",
+            "594ce7c113256102d4e6e650",
+            "594ce7e813256102d4e6e82e",
+            "594ce78c13256102d4e6e3b0",
+            "594ce7d913256102d4e6e76c",
+            "594ce7b413256102d4e6e5b0",
+            "594ce74213256102d4e6e03c",
+            "594ce78b13256102d4e6e3a6",
+            "594ce7b713256102d4e6e5dc",
+            "594ce79f13256102d4e6e4a0"
+        ],
+        "reactions": {
+            "like": 1,
+            "love": 1,
+            "angry": 1
+        }
+    },
+    {
+        "_id": "594ce7a813256102d4e6e51e",
+        "updatedAt": "2017-10-28T01:50:49.198Z",
+        "createdAt": "2017-06-23T10:04:24.818Z",
+        "anchor_retailer_id": 1,
+        "final_position": 64,
+        "product_tags": {
+            "top_rated": false,
+            "flagship": false,
+            "light_weight": false,
+            "best_display": false,
+            "best_processor": false,
+            "best_battery": false,
+            "best_camera": false,
+            "budget": false,
+            "latest": false,
+            "bestseller": false,
+            "fingerprint_sensor": true,
+            "four_g": true,
+            "dual_sim": false
+        },
+        "other_info": {
+            "video_call_support": "Yes",
+            "voice_input": "Yes",
+            "hands_free_status": "N/A"
+        },
+        "amazon_info": {
+            "parent_asin": "N/A"
+        },
+        "dimensions": {
+            "weight": "138 g",
+            "depth": "7.1 mm",
+            "height": "138.3 mm",
+            "width": "67.1 mm"
+        },
+        "av_formats": {
+            "video": "H.264, AAC-LC, M4V, MP4, MOV, MPEG4, AVI, PCM",
+            "audio": "AAC, MP3, HE-AAC, MP3 VBR, AAX, AAX+, AIFF, WAV"
+        },
+        "warranty": "1 Year Manufacturer Warranty",
+        "sensors": "Touch ID Fingerprint Sensor, Barometer, Three-axis Gyro Sensor, Accelerometer, Proximity Sensor, Ambient Light Sensor, Backside Illumination Sensor, Digital Compass",
+        "product_family": {
+            "variants": [
+                "MOBEMK629HXJ9QHP",
+                "MOBEMK62CMNPYBHN",
+                "MOBEMK62E7YZEVZ8",
+                "MOBEMK62HSQDSGGF",
+                "MOBEMK62HZHC6TFU",
+                "MOBEMK62JSRHU85T",
+                "MOBEMK62MSKHHEYZ",
+                "MOBEMK62PN2HU7EE",
+                "MOBEMK62Q2UMYBUZ",
+                "MOBEMK62VCQ2UMT8",
+                "MOBEMK62Y45MSBGZ",
+                "MOBEMK62Z4P8FEQM",
+                "MOBEMK6FQTAG4YTK",
+                "MOBESTTFAZYQGYG9"
+            ]
+        },
+        "image_urls": {
+            "large": "http://img.fkcdn.com/image/mobile/7/e/e/apple-iphone-7-na-800x800-imaemzee435f9gpu.jpeg",
+            "medium": "http://img.fkcdn.com/image/mobile/7/e/e/apple-iphone-7-na-400x400-imaemzee435f9gpu.jpeg",
+            "small": "http://img.fkcdn.com/image/mobile/7/e/e/apple-iphone-7-na-200x200-imaemzee435f9gpu.jpeg"
+        },
+        "battery_power": {
+            "battery_type": "Li-Ion",
+            "removable_battery_status": "No",
+            "battery_capacity": "N/A",
+            "batteryVal": 0
+        },
+        "connectivity": {
+            "audio_jack_width": "N/A",
+            "usb_connectivity": "Yes",
+            "nfc": "Yes",
+            "wifi": "Yes",
+            "bluetooth_version": "v4.2",
+            "bluetooth_support": "Yes",
+            "internet_connectivity": "4G, 3G, Wi-Fi, GPRS, EDGE",
+            "supported_networks": "4G LTE",
+            "network_type": "4G VOLTE, 3G, 2G"
+        },
+        "camera": {
+            "dual_camera_lens_available": "N/A",
+            "video_recording_resolution": "3840 x 2160",
+            "video_recording_status": "Yes",
+            "full_hd_recording_status": "Yes",
+            "hd_recording_status": "Yes",
+            "flash": "Quad LED True Tone Flash",
+            "secondary_camera_features": "1080p HD Video Recording, Retina Flash, f/2.2 Aperture, Wide Color Capture for Photos and Live Photos, Auto HDR, Backside Illumination Sensor, Body and Face Detection, Auto Image Stabilization, Burst Mode, Exposure Control, Timer Mode, FaceTime Video Calling Over Wi-Fi or Cellular",
+            "secondary_camera_pixels": "7MP",
+            "secondary_camera": "Yes",
+            "primary_camera_features": "f/1.8 Aperture, Optical Image Stabilization, Six Element Lens, Panorama (Upto 63 MP), Sapphire Crystal Lens Cover, Backside Illumination Sensor, Hybrid IR Filter, Autofocus with Focus Pixels, Tap to Focus with Focus Pixels, Live Photos with Stabilization, Wide Color Capture for Photos and Live Photos, Improved Local Tone Mapping, Body and Face Detection, Exposure Control, Noise Reduction, Auto HDR for Photos, Auto Image Stabilization, Burst Mode, Timer Mode, Photo Geotagging, Time Lapse Video with Stabilization, Cinematic Video Stabilization (1080p and 720p), Continuous Auto Focus Video, Take 8 MP Still Photos While Recording 4K Video, Playback Zoom, Video Geotagging",
+            "primary_camera_pixels": "12MP",
+            "primary_camera": "Yes",
+            "cameraVal": 12
+        },
+        "memory_storage": {
+            "expandable_storage": "N/A",
+            "ram": "N/A",
+            "internal_storage": "256 GB",
+            "storageVal": 256,
+            "ramVal": null
+        },
+        "os_processor": {
+            "processor_speed": "N/A",
+            "processor_core": "N/A",
+            "processor_type": "A10 Fusion Chip with 64-bit Architecture and Embedded M10 Motion Co-processor",
+            "operating_system": "iOS 10",
+            "processor_speed_val": 0
+        },
+        "display_specifications": {
+            "touchscreen_status": "Yes",
+            "resolution_type": "Retina HD Display",
+            "resolution": "1334 x 750 Pixels",
+            "display_colors": "N/A",
+            "display_type": "LED-backlit IPS",
+            "display_size": "4.7 inch",
+            "display_size_val": 4.7
+        },
+        "sim_features": {
+            "hybrid_sim_slot_status": "No",
+            "sim_size": "Nano Sim",
+            "sim_type": "Single Sim"
+        },
+        "sales_package": {
+            "contents": "Handset, EarPods with Lightning Connector, Lightning to 3.5 mm Headphone Jack Adapter, Lightning to USB Cable, USB Power Adapter, Documentation"
+        },
+        "general_specifications": {
+            "model_color": "Black",
+            "model_number": "MN972HN/A",
+            "model_name": "iPhone 7",
+            "features": [
+                "256 GB ROM |",
+                "4.7 inch Retina HD Display",
+                "12MP Rear Camera | 7MP Front Camera",
+                "Li-Ion Battery",
+                "A10 Fusion Chip with 64-bit Architecture and Embedded M10 Motion Co-processor Processor"
+            ]
+        },
+        "product_basic_info": {
+            "normalized_name": "Apple iPhone 7",
+            "product_type": "Smartphones",
+            "productBrand_normalized": "Apple",
+            "productBrand": "Apple",
+            "description": "Take your iPhone experience to the next level with iPhone 7. Featuring new camera systems, a better battery-life, an efficient processor and powerful stereo speakers, this smartphone will drastically enhance your iPhone experience. With a sharp and vibrant display, and a sleek water-resistant body, this phone is as powerful as it is attractive.",
+            "title": "Apple iPhone 7 (Black, 256 GB)"
+        },
+        "anchor_product_id": {
+            "uuid": "780b7fe0-5353-11e7-b5a6-4764b052efc5"
+        },
+        "product_id": {
+            "uuid": "55ed1ca0-57fb-11e7-86b8-83b97069ec2a"
+        },
+        "product_retailers": [
+            {
+                "_id": "596918593e8e920004785f32",
+                "seller_rating": {
+                    "seller_number_of_reviews": 0,
+                    "seller_number_of_ratings": 0,
+                    "seller_average_rating": 0,
+                    "seller_name": "N/A"
+                },
+                "delivery_details": {
+                    "delivery_time": "N/A"
+                },
+                "offers": {
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    },
+                    "emi": {
+                        "emi_val": 0,
+                        "emi_details": "N/A"
+                    },
+                    "offer_details": []
+                },
+                "product_rating": {
+                    "reviews_link": "N/A",
+                    "number_of_reviews": 0,
+                    "number_of_ratings": 0,
+                    "rating_val": 0,
+                    "rating_text": "N/A"
+                },
+                "product_pricing": {
+                    "discount": 0,
+                    "special_price": 64999,
+                    "selling_price": 64999,
+                    "mrp": 80000
+                },
+                "product_position": 64,
+                "productURL": "https://www.tatacliq.com/apple-iphone-7-256-gb-black/p-mp000000000572038",
+                "product_id": {
+                    "retailer_product_id": "MP000000000572038",
+                    "mobiles_db_uuid": "85456848-0300-4dc2-aeab-0fb509c55942"
+                },
+                "retailer_description": {
+                    "retailer_id": 5,
+                    "retailer_name": "Tata cliq"
+                }
+            },
+            {
+                "_id": "594ce7a813256102d4e6e51f",
+                "seller_rating": {
+                    "seller_number_of_reviews": 0,
+                    "seller_number_of_ratings": 0,
+                    "seller_average_rating": null,
+                    "seller_name": "Shreyash Retail Private Ltd"
+                },
+                "delivery_details": {
+                    "delivery_assured": true,
+                    "cod": false,
+                    "delivery_time": "Usually Delivered in 3 - 4 days."
+                },
+                "offers": {
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    },
+                    "emi": {
+                        "emi_val": 3298,
+                        "emi_details": "EMI starting from ₹3298/month"
+                    },
+                    "offer_details": []
+                },
+                "product_rating": {
+                    "reviews_link": "N/A",
+                    "number_of_reviews": 18,
+                    "number_of_ratings": 75,
+                    "rating_val": 4.6,
+                    "rating_text": "N/A"
+                },
+                "product_pricing": {
+                    "discount": 15,
+                    "special_price": 67999,
+                    "selling_price": 80000,
+                    "mrp": 80000
+                },
+                "product_status": {
+                    "available": true
+                },
+                "product_position": 86,
+                "productURL": "http://dl.flipkart.com/dl/apple-iphone-7-black-256-gb/p/itmen6das2kghbqf?pid=MOBEMK62MBVHSRWV&affid=apdhamija",
+                "product_id": {
+                    "mobiles_db_uuid": "780b7fe0-5353-11e7-b5a6-4764b052efc5",
+                    "retailer_product_id": "MOBEMK62MBVHSRWV"
+                },
+                "retailer_description": {
+                    "retailer_id": 1,
+                    "retailer_name": "Flipkart"
+                }
+            }
+        ],
+        "__v": 0,
+        "internal_codes": {
+            "fingerprint_sensor_check": 1,
+            "four_g_check": 1,
+            "dual_sim_check": 1,
+            "status": 111
+        },
+        "variants": [
+            "594ce78813256102d4e6e384",
+            "594ce7d013256102d4e6e702",
+            "594ce78b13256102d4e6e3a4",
+            "594ce7bb13256102d4e6e610",
+            "594ce7da13256102d4e6e77c",
+            "594ce78c13256102d4e6e3b2",
+            "594ce7a113256102d4e6e4c4",
+            "594ce7a713256102d4e6e512",
+            "594ce7b313256102d4e6e5ae",
+            "594ce7b413256102d4e6e5b2",
+            "594ce7b413256102d4e6e5bc",
+            "594ce7d413256102d4e6e734",
+            "594ce7da13256102d4e6e776",
+            "594ce78b13256102d4e6e3a8"
+        ]
+    },
+    {
+        "_id": "594ce7da13256102d4e6e77c",
+        "updatedAt": "2017-10-28T01:50:49.199Z",
+        "createdAt": "2017-06-23T10:05:14.687Z",
+        "anchor_retailer_id": 1,
+        "final_position": 72,
+        "product_tags": {
+            "top_rated": false,
+            "flagship": false,
+            "light_weight": false,
+            "best_display": false,
+            "best_processor": false,
+            "best_battery": false,
+            "best_camera": false,
+            "budget": false,
+            "latest": false,
+            "bestseller": false,
+            "fingerprint_sensor": true,
+            "four_g": true,
+            "dual_sim": false
+        },
+        "other_info": {
+            "video_call_support": "Yes",
+            "voice_input": "Yes",
+            "hands_free_status": "N/A"
+        },
+        "amazon_info": {
+            "parent_asin": "N/A"
+        },
+        "dimensions": {
+            "weight": "138 g",
+            "depth": "7.1 mm",
+            "height": "138.3 mm",
+            "width": "67.1 mm"
+        },
+        "av_formats": {
+            "video": "H.264, AAC-LC, M4V, MP4, MOV, MPEG4, AVI, PCM",
+            "audio": "AAC, MP3, HE-AAC, MP3 VBR, AAX, AAX+, AIFF, WAV"
+        },
+        "warranty": "1 Year Manufacturer Warranty",
+        "sensors": "Touch ID Fingerprint Sensor, Barometer, Three-axis Gyro Sensor, Accelerometer, Proximity Sensor, Ambient Light Sensor, Backside Illumination Sensor, Digital Compass",
+        "product_family": {
+            "variants": [
+                "MOBEMK629HXJ9QHP",
+                "MOBEMK62CMNPYBHN",
+                "MOBEMK62E7YZEVZ8",
+                "MOBEMK62HSQDSGGF",
+                "MOBEMK62HZHC6TFU",
+                "MOBEMK62JSRHU85T",
+                "MOBEMK62MBVHSRWV",
+                "MOBEMK62MSKHHEYZ",
+                "MOBEMK62Q2UMYBUZ",
+                "MOBEMK62VCQ2UMT8",
+                "MOBEMK62Y45MSBGZ",
+                "MOBEMK62Z4P8FEQM",
+                "MOBEMK6FQTAG4YTK",
+                "MOBESTTFAZYQGYG9"
+            ]
+        },
+        "image_urls": {
+            "large": "http://img.fkcdn.com/image/mobile/7/e/e/apple-iphone-7-na-800x800-imaemzee435f9gpu.jpeg",
+            "medium": "http://img.fkcdn.com/image/mobile/7/e/e/apple-iphone-7-na-400x400-imaemzee435f9gpu.jpeg",
+            "small": "http://img.fkcdn.com/image/mobile/7/e/e/apple-iphone-7-na-200x200-imaemzee435f9gpu.jpeg"
+        },
+        "battery_power": {
+            "battery_type": "Li-Ion",
+            "removable_battery_status": "No",
+            "battery_capacity": "N/A",
+            "batteryVal": 0
+        },
+        "connectivity": {
+            "audio_jack_width": "N/A",
+            "usb_connectivity": "Yes",
+            "nfc": "Yes",
+            "wifi": "Yes",
+            "bluetooth_version": "v4.2",
+            "bluetooth_support": "Yes",
+            "internet_connectivity": "4G, 3G, Wi-Fi, GPRS, EDGE",
+            "supported_networks": "4G LTE",
+            "network_type": "4G VOLTE, 3G, 2G"
+        },
+        "camera": {
+            "dual_camera_lens_available": "N/A",
+            "video_recording_resolution": "3840 x 2160",
+            "video_recording_status": "Yes",
+            "full_hd_recording_status": "Yes",
+            "hd_recording_status": "Yes",
+            "flash": "Quad LED True Tone Flash",
+            "secondary_camera_features": "1080p HD Video Recording, Retina Flash, f/2.2 Aperture, Wide Color Capture for Photos and Live Photos, Auto HDR, Backside Illumination Sensor, Body and Face Detection, Auto Image Stabilization, Burst Mode, Exposure Control, Timer Mode, FaceTime Video Calling Over Wi-Fi or Cellular",
+            "secondary_camera_pixels": "7MP",
+            "secondary_camera": "Yes",
+            "primary_camera_features": "f/1.8 Aperture, Optical Image Stabilization, Six Element Lens, Panorama (Upto 63 MP), Sapphire Crystal Lens Cover, Backside Illumination Sensor, Hybrid IR Filter, Autofocus with Focus Pixels, Tap to Focus with Focus Pixels, Live Photos with Stabilization, Wide Color Capture for Photos and Live Photos, Improved Local Tone Mapping, Body and Face Detection, Exposure Control, Noise Reduction, Auto HDR for Photos, Auto Image Stabilization, Burst Mode, Timer Mode, Photo Geotagging, Time Lapse Video with Stabilization, Cinematic Video Stabilization (1080p and 720p), Continuous Auto Focus Video, Take 8 MP Still Photos While Recording 4K Video, Playback Zoom, Video Geotagging",
+            "primary_camera_pixels": "12MP",
+            "primary_camera": "Yes",
+            "cameraVal": 12
+        },
+        "memory_storage": {
+            "expandable_storage": "N/A",
+            "ram": "N/A",
+            "internal_storage": "32 GB",
+            "storageVal": 32,
+            "ramVal": null
+        },
+        "os_processor": {
+            "processor_speed": "N/A",
+            "processor_core": "N/A",
+            "processor_type": "A10 Fusion Chip with 64-bit Architecture and Embedded M10 Motion Co-processor",
+            "operating_system": "iOS 10",
+            "processor_speed_val": 0
+        },
+        "display_specifications": {
+            "touchscreen_status": "Yes",
+            "resolution_type": "Retina HD Display",
+            "resolution": "1334 x 750 Pixels",
+            "display_colors": "N/A",
+            "display_type": "LED-backlit IPS",
+            "display_size": "4.7 inch",
+            "display_size_val": 4.7
+        },
+        "sim_features": {
+            "hybrid_sim_slot_status": "No",
+            "sim_size": "Nano Sim",
+            "sim_type": "Single Sim"
+        },
+        "sales_package": {
+            "contents": "Handset, EarPods with Lightning Connector, Lightning to 3.5 mm Headphone Jack Adapter, Lightning to USB Cable, USB Power Adapter, Documentation"
+        },
+        "general_specifications": {
+            "model_color": "Black",
+            "model_number": "MN8X2HN/A",
+            "model_name": "iPhone 7",
+            "features": [
+                "32 GB ROM |",
+                "4.7 inch Retina HD Display",
+                "12MP Rear Camera | 7MP Front Camera",
+                "Li-Ion Battery",
+                "A10 Fusion Chip with 64-bit Architecture and Embedded M10 Motion Co-processor Processor"
+            ]
+        },
+        "product_basic_info": {
+            "normalized_name": "Apple iPhone 7",
+            "product_type": "Smartphones",
+            "productBrand_normalized": "Apple",
+            "productBrand": "Apple",
+            "description": "Take your iPhone experience to the next level with iPhone 7. Featuring new camera systems, a better battery-life, an efficient processor and powerful stereo speakers, this smartphone will drastically enhance your iPhone experience. With a sharp and vibrant display, and a sleek water-resistant body, this phone is as powerful as it is attractive.",
+            "title": "Apple iPhone 7 (Black, 32 GB)"
+        },
+        "anchor_product_id": {
+            "uuid": "3922c360-5353-11e7-b5a6-4764b052efc5"
+        },
+        "product_id": {
+            "uuid": "73a2daf0-57fb-11e7-86b8-83b97069ec2a"
+        },
+        "product_retailers": [
+            {
+                "_id": "594ce7da13256102d4e6e77d",
+                "seller_rating": {
+                    "seller_number_of_reviews": 3,
+                    "seller_number_of_ratings": 6,
+                    "seller_average_rating": 5,
+                    "seller_name": "Sukriti Goswami"
+                },
+                "delivery_details": {
+                    "delivery_assured": true,
+                    "cod": true,
+                    "delivery_time": "Usually Delivered in 5 - 6 days."
+                },
+                "offers": {
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    },
+                    "emi": {
+                        "emi_val": 2231,
+                        "emi_details": "EMI starting from ₹2231/month"
+                    },
+                    "offer_details": []
+                },
+                "product_rating": {
+                    "reviews_link": "N/A",
+                    "number_of_reviews": 958,
+                    "number_of_ratings": 4779,
+                    "rating_val": 4.6,
+                    "rating_text": "N/A"
+                },
+                "product_pricing": {
+                    "discount": 25,
+                    "special_price": 44900,
+                    "selling_price": 44900,
+                    "mrp": 60000
+                },
+                "product_status": {
+                    "available": true
+                },
+                "product_position": 72,
+                "productURL": "http://dl.flipkart.com/dl/apple-iphone-7-black-32-gb/p/itmen6daftcqwzeg?pid=MOBEMK62PN2HU7EE&affid=apdhamija",
+                "product_id": {
+                    "mobiles_db_uuid": "3922c360-5353-11e7-b5a6-4764b052efc5",
+                    "retailer_product_id": "MOBEMK62PN2HU7EE"
+                },
+                "retailer_description": {
+                    "retailer_id": 1,
+                    "retailer_name": "Flipkart"
+                }
+            },
+            {
+                "retailer_description": {
+                    "retailer_name": "Amazon",
+                    "retailer_id": 2
+                },
+                "product_id": {
+                    "retailer_product_id": "B01LZKSVRB",
+                    "mobiles_db_uuid": "656db070-55d2-11e7-b15f-7998764aec49"
+                },
+                "productURL": "https://www.amazon.in/Apple-iPhone-7-Black-32GB/dp/B01LZKSVRB?psc=1&SubscriptionId=AKIAJOGRXNO5VKAU526A&tag=ankurdhamija8-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B01LZKSVRB",
+                "product_position": 28,
+                "product_status": {
+                    "available": true
+                },
+                "product_pricing": {
+                    "mrp": 60000,
+                    "selling_price": 0,
+                    "special_price": 42499,
+                    "discount": 29
+                },
+                "product_rating": {
+                    "rating_text": "4 out of 5 stars",
+                    "rating_val": 4,
+                    "number_of_ratings": 0,
+                    "number_of_reviews": 778,
+                    "reviews_link": "http://www.amazon.in/Apple-iPhone-7-Black-32GB/dp/B01LZKSVRB/ref=sr_1_28?s=electronics&ie=UTF8&qid=1497967740&sr=1-28#customerReviews"
+                },
+                "offers": {
+                    "offer_details": [],
+                    "emi": {
+                        "emi_details": "N/A",
+                        "emi_val": 0
+                    },
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    }
+                },
+                "delivery_details": {
+                    "delivery_time": "N/A",
+                    "cod": true,
+                    "delivery_assured": true
+                },
+                "seller_rating": {
+                    "seller_name": "N/A",
+                    "seller_average_rating": 0,
+                    "seller_number_of_ratings": 0,
+                    "seller_number_of_reviews": 0
+                },
+                "_id": "594e255642a9ea0004f0b18e"
+            },
+            {
+                "retailer_description": {
+                    "retailer_name": "Tata cliq",
+                    "retailer_id": 5
+                },
+                "product_id": {
+                    "retailer_product_id": "MP000000000574903",
+                    "mobiles_db_uuid": "57932306-cdcf-4725-b47a-7d5292bd2023"
+                },
+                "productURL": "https://www.tatacliq.com/apple-iphone-7-32-gb-black/p-mp000000000574903",
+                "product_position": 209,
+                "product_pricing": {
+                    "mrp": 60000,
+                    "selling_price": 52000,
+                    "special_price": 52000,
+                    "discount": 0
+                },
+                "product_rating": {
+                    "rating_text": "N/A",
+                    "rating_val": 0,
+                    "number_of_ratings": 0,
+                    "number_of_reviews": 0,
+                    "reviews_link": "N/A"
+                },
+                "offers": {
+                    "offer_details": [],
+                    "emi": {
+                        "emi_details": "N/A",
+                        "emi_val": 0
+                    },
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    }
+                },
+                "delivery_details": {
+                    "delivery_time": "N/A"
+                },
+                "seller_rating": {
+                    "seller_name": "N/A",
+                    "seller_average_rating": 0,
+                    "seller_number_of_ratings": 0,
+                    "seller_number_of_reviews": 0
+                },
+                "_id": "596f1f562931b31654a1e2f4"
+            },
+            {
+                "retailer_description": {
+                    "retailer_name": "Tata cliq",
+                    "retailer_id": 5
+                },
+                "product_id": {
+                    "retailer_product_id": "MP000000000610108",
+                    "mobiles_db_uuid": "bbff6e7a-f491-4a09-acef-86bcf897f36e"
+                },
+                "productURL": "https://www.tatacliq.com/apple-iphone-7-32-gb-black/p-mp000000000610108",
+                "product_position": 222,
+                "product_pricing": {
+                    "mrp": 60000,
+                    "selling_price": 48500,
+                    "special_price": 48500,
+                    "discount": 0
+                },
+                "product_rating": {
+                    "rating_text": "N/A",
+                    "rating_val": 0,
+                    "number_of_ratings": 0,
+                    "number_of_reviews": 0,
+                    "reviews_link": "N/A"
+                },
+                "offers": {
+                    "offer_details": [],
+                    "emi": {
+                        "emi_details": "N/A",
+                        "emi_val": 0
+                    },
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    }
+                },
+                "delivery_details": {
+                    "delivery_time": "N/A"
+                },
+                "seller_rating": {
+                    "seller_name": "N/A",
+                    "seller_average_rating": 0,
+                    "seller_number_of_ratings": 0,
+                    "seller_number_of_reviews": 0
+                },
+                "_id": "596f1f592931b31654a1e2f7"
+            }
+        ],
+        "__v": 0,
+        "internal_codes": {
+            "fingerprint_sensor_check": 1,
+            "four_g_check": 1,
+            "dual_sim_check": 1,
+            "status": 111
+        },
+        "variants": [
+            "594ce7a813256102d4e6e51e",
+            "594ce78813256102d4e6e384",
+            "594ce7d013256102d4e6e702",
+            "594ce78b13256102d4e6e3a4",
+            "594ce7bb13256102d4e6e610",
+            "594ce78c13256102d4e6e3b2",
+            "594ce7a113256102d4e6e4c4",
+            "594ce7a713256102d4e6e512",
+            "594ce7b313256102d4e6e5ae",
+            "594ce7b413256102d4e6e5b2",
+            "594ce7b413256102d4e6e5bc",
+            "594ce7d413256102d4e6e734",
+            "594ce7da13256102d4e6e776",
+            "594ce78b13256102d4e6e3a8"
+        ]
+    },
+    {
+        "_id": "594ce78c13256102d4e6e3b2",
+        "updatedAt": "2017-10-28T01:50:49.199Z",
+        "createdAt": "2017-06-23T10:03:56.869Z",
+        "anchor_retailer_id": 1,
+        "final_position": 235,
+        "product_tags": {
+            "top_rated": false,
+            "flagship": false,
+            "light_weight": false,
+            "best_display": false,
+            "best_processor": false,
+            "best_battery": false,
+            "best_camera": false,
+            "budget": false,
+            "latest": false,
+            "bestseller": false,
+            "fingerprint_sensor": true,
+            "four_g": true,
+            "dual_sim": false
+        },
+        "other_info": {
+            "video_call_support": "Yes",
+            "voice_input": "Yes",
+            "hands_free_status": "N/A"
+        },
+        "amazon_info": {
+            "parent_asin": "N/A"
+        },
+        "dimensions": {
+            "weight": "138 g",
+            "depth": "7.1 mm",
+            "height": "138.3 mm",
+            "width": "67.1 mm"
+        },
+        "av_formats": {
+            "video": "H.264, AAC-LC, M4V, MP4, MOV, MPEG4, AVI, PCM",
+            "audio": "AAC, MP3, HE-AAC, MP3 VBR, AAX, AAX+, AIFF, WAV"
+        },
+        "warranty": "1 Year Manufacturer Warranty",
+        "sensors": "Touch ID Fingerprint Sensor, Barometer, Three-axis Gyro Sensor, Accelerometer, Proximity Sensor, Ambient Light Sensor, Backside Illumination Sensor, Digital Compass",
+        "product_family": {
+            "variants": [
+                "MOBEMK629HXJ9QHP",
+                "MOBEMK62CMNPYBHN",
+                "MOBEMK62HSQDSGGF",
+                "MOBEMK62HZHC6TFU",
+                "MOBEMK62JSRHU85T",
+                "MOBEMK62MBVHSRWV",
+                "MOBEMK62MSKHHEYZ",
+                "MOBEMK62PN2HU7EE",
+                "MOBEMK62Q2UMYBUZ",
+                "MOBEMK62VCQ2UMT8",
+                "MOBEMK62Y45MSBGZ",
+                "MOBEMK62Z4P8FEQM",
+                "MOBEMK6FQTAG4YTK",
+                "MOBESTTFAZYQGYG9"
+            ]
+        },
+        "image_urls": {
+            "large": "http://img.fkcdn.com/image/mobile/7/e/e/apple-iphone-7-na-800x800-imaemzee435f9gpu.jpeg",
+            "medium": "http://img.fkcdn.com/image/mobile/7/e/e/apple-iphone-7-na-400x400-imaemzee435f9gpu.jpeg",
+            "small": "http://img.fkcdn.com/image/mobile/7/e/e/apple-iphone-7-na-200x200-imaemzee435f9gpu.jpeg"
+        },
+        "battery_power": {
+            "battery_type": "Li-Ion",
+            "removable_battery_status": "No",
+            "battery_capacity": "N/A",
+            "batteryVal": 0
+        },
+        "connectivity": {
+            "audio_jack_width": "N/A",
+            "usb_connectivity": "Yes",
+            "nfc": "Yes",
+            "wifi": "Yes",
+            "bluetooth_version": "v4.2",
+            "bluetooth_support": "Yes",
+            "internet_connectivity": "4G, 3G, Wi-Fi, GPRS, EDGE",
+            "supported_networks": "4G LTE",
+            "network_type": "4G VOLTE, 3G, 2G"
+        },
+        "camera": {
+            "dual_camera_lens_available": "N/A",
+            "video_recording_resolution": "3840 x 2160",
+            "video_recording_status": "Yes",
+            "full_hd_recording_status": "Yes",
+            "hd_recording_status": "Yes",
+            "flash": "Quad LED True Tone Flash",
+            "secondary_camera_features": "1080p HD Video Recording, Retina Flash, f/2.2 Aperture, Wide Color Capture for Photos and Live Photos, Auto HDR, Backside Illumination Sensor, Body and Face Detection, Auto Image Stabilization, Burst Mode, Exposure Control, Timer Mode, FaceTime Video Calling Over Wi-Fi or Cellular",
+            "secondary_camera_pixels": "7MP",
+            "secondary_camera": "Yes",
+            "primary_camera_features": "f/1.8 Aperture, Optical Image Stabilization, Six Element Lens, Panorama (Upto 63 MP), Sapphire Crystal Lens Cover, Backside Illumination Sensor, Hybrid IR Filter, Autofocus with Focus Pixels, Tap to Focus with Focus Pixels, Live Photos with Stabilization, Wide Color Capture for Photos and Live Photos, Improved Local Tone Mapping, Body and Face Detection, Exposure Control, Noise Reduction, Auto HDR for Photos, Auto Image Stabilization, Burst Mode, Timer Mode, Photo Geotagging, Time Lapse Video with Stabilization, Cinematic Video Stabilization (1080p and 720p), Continuous Auto Focus Video, Take 8 MP Still Photos While Recording 4K Video, Playback Zoom, Video Geotagging",
+            "primary_camera_pixels": "12MP",
+            "primary_camera": "Yes",
+            "cameraVal": 12
+        },
+        "memory_storage": {
+            "expandable_storage": "N/A",
+            "ram": "N/A",
+            "internal_storage": "128 GB",
+            "storageVal": 128,
+            "ramVal": null
+        },
+        "os_processor": {
+            "processor_speed": "N/A",
+            "processor_core": "N/A",
+            "processor_type": "A10 Fusion Chip with 64-bit Architecture and Embedded M10 Motion Co-processor",
+            "operating_system": "iOS 10",
+            "processor_speed_val": 0
+        },
+        "display_specifications": {
+            "touchscreen_status": "Yes",
+            "resolution_type": "Retina HD Display",
+            "resolution": "1334 x 750 Pixels",
+            "display_colors": "N/A",
+            "display_type": "LED-backlit IPS",
+            "display_size": "4.7 inch",
+            "display_size_val": 4.7
+        },
+        "sim_features": {
+            "hybrid_sim_slot_status": "No",
+            "sim_size": "Nano Sim",
+            "sim_type": "Single Sim"
+        },
+        "sales_package": {
+            "contents": "Handset, EarPods with Lightning Connector, Lightning to 3.5 mm Headphone Jack Adapter, Lightning to USB Cable, USB Power Adapter, Documentation"
+        },
+        "general_specifications": {
+            "model_color": "Black",
+            "model_number": "MN922HN/A",
+            "model_name": "iPhone 7",
+            "features": [
+                "128 GB ROM |",
+                "4.7 inch Retina HD Display",
+                "12MP Rear Camera | 7MP Front Camera",
+                "Li-Ion Battery",
+                "A10 Fusion Chip with 64-bit Architecture and Embedded M10 Motion Co-processor Processor"
+            ]
+        },
+        "product_basic_info": {
+            "normalized_name": "Apple iPhone 7",
+            "product_type": "Smartphones",
+            "productBrand_normalized": "Apple",
+            "productBrand": "Apple",
+            "description": "Take your iPhone experience to the next level with iPhone 7. Featuring new camera systems, a better battery-life, an efficient processor and powerful stereo speakers, this smartphone will enhance your iPhone experience. With a sharp and vibrant display, and a sleek water-resistant body, this phone is as powerful as it is attractive.",
+            "title": "Apple iPhone 7 (Black, 128 GB)"
+        },
+        "anchor_product_id": {
+            "uuid": "ace5db00-5355-11e7-b593-2f7cb3e079c9"
+        },
+        "product_id": {
+            "uuid": "45450b10-57fb-11e7-86b8-83b97069ec2a"
+        },
+        "product_retailers": [
+            {
+                "_id": "594ce78c13256102d4e6e3b3",
+                "seller_rating": {
+                    "seller_number_of_reviews": 0,
+                    "seller_number_of_ratings": 0,
+                    "seller_average_rating": null,
+                    "seller_name": "Shreyash Retail Private Ltd"
+                },
+                "delivery_details": {
+                    "delivery_assured": true,
+                    "cod": false,
+                    "delivery_time": "Usually Delivered in 3 - 4 days."
+                },
+                "offers": {
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    },
+                    "emi": {
+                        "emi_val": 2643,
+                        "emi_details": "EMI starting from ₹2643/month"
+                    },
+                    "offer_details": []
+                },
+                "product_rating": {
+                    "reviews_link": "N/A",
+                    "number_of_reviews": 358,
+                    "number_of_ratings": 1565,
+                    "rating_val": 4.7,
+                    "rating_text": "N/A"
+                },
+                "product_pricing": {
+                    "discount": 22,
+                    "special_price": 54499,
+                    "selling_price": 70000,
+                    "mrp": 70000
+                },
+                "product_status": {
+                    "available": true
+                },
+                "product_position": 235,
+                "productURL": "http://dl.flipkart.com/dl/apple-iphone-7-black-128-gb/p/itmen6daqhtbuzhj?pid=MOBEMK62E7YZEVZ8&affid=apdhamija",
+                "product_id": {
+                    "mobiles_db_uuid": "ace5db00-5355-11e7-b593-2f7cb3e079c9",
+                    "retailer_product_id": "MOBEMK62E7YZEVZ8"
+                },
+                "retailer_description": {
+                    "retailer_id": 1,
+                    "retailer_name": "Flipkart"
+                }
+            },
+            {
+                "retailer_description": {
+                    "retailer_name": "Amazon",
+                    "retailer_id": 2
+                },
+                "product_id": {
+                    "retailer_product_id": "B01LXAS8M2",
+                    "mobiles_db_uuid": "68693d30-55d2-11e7-b15f-7998764aec49"
+                },
+                "productURL": "https://www.amazon.in/Apple-iPhone-7-Black-128GB/dp/B01LXAS8M2?psc=1&SubscriptionId=AKIAJOGRXNO5VKAU526A&tag=ankurdhamija8-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B01LXAS8M2",
+                "product_position": 73,
+                "product_status": {
+                    "available": true
+                },
+                "product_pricing": {
+                    "mrp": 70000,
+                    "selling_price": 0,
+                    "special_price": 51499,
+                    "discount": 26
+                },
+                "product_rating": {
+                    "rating_text": "4 out of 5 stars",
+                    "rating_val": 4,
+                    "number_of_ratings": 0,
+                    "number_of_reviews": 784,
+                    "reviews_link": "http://www.amazon.in/Apple-iPhone-7-Black-128GB/dp/B01LXAS8M2/ref=sr_1_73?s=electronics&ie=UTF8&qid=1497967756&sr=1-73#customerReviews"
+                },
+                "offers": {
+                    "offer_details": [],
+                    "emi": {
+                        "emi_details": "N/A",
+                        "emi_val": 0
+                    },
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    }
+                },
+                "delivery_details": {
+                    "delivery_time": "N/A",
+                    "cod": false,
+                    "delivery_assured": true
+                },
+                "seller_rating": {
+                    "seller_name": "N/A",
+                    "seller_average_rating": 0,
+                    "seller_number_of_ratings": 0,
+                    "seller_number_of_reviews": 0
+                },
+                "_id": "594e251e42a9ea0004f0b18b"
+            },
+            {
+                "retailer_description": {
+                    "retailer_name": "Tata cliq",
+                    "retailer_id": 5
+                },
+                "product_id": {
+                    "retailer_product_id": "MP000000000572029",
+                    "mobiles_db_uuid": "30c85ba2-dcad-4d03-8ae4-f1ac7b137283"
+                },
+                "productURL": "https://www.tatacliq.com/apple-iphone-7-128-gb-black/p-mp000000000572029",
+                "product_position": 188,
+                "product_pricing": {
+                    "mrp": 60000,
+                    "selling_price": 56999,
+                    "special_price": 56999,
+                    "discount": 0
+                },
+                "product_rating": {
+                    "rating_text": "N/A",
+                    "rating_val": 0,
+                    "number_of_ratings": 0,
+                    "number_of_reviews": 0,
+                    "reviews_link": "N/A"
+                },
+                "offers": {
+                    "offer_details": [],
+                    "emi": {
+                        "emi_details": "N/A",
+                        "emi_val": 0
+                    },
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    }
+                },
+                "delivery_details": {
+                    "delivery_time": "N/A"
+                },
+                "seller_rating": {
+                    "seller_name": "N/A",
+                    "seller_average_rating": 0,
+                    "seller_number_of_ratings": 0,
+                    "seller_number_of_reviews": 0
+                },
+                "_id": "596f1f522931b31654a1e2f0"
+            },
+            {
+                "retailer_description": {
+                    "retailer_name": "Tata cliq",
+                    "retailer_id": 5
+                },
+                "product_id": {
+                    "retailer_product_id": "MP000000000610118",
+                    "mobiles_db_uuid": "c9868c7f-d178-4974-b054-75b1541f075b"
+                },
+                "productURL": "https://www.tatacliq.com/apple-iphone-7-128-gb-black/p-mp000000000610118",
+                "product_position": 284,
+                "product_pricing": {
+                    "mrp": 70000,
+                    "selling_price": 56490,
+                    "special_price": 56490,
+                    "discount": 0
+                },
+                "product_rating": {
+                    "rating_text": "N/A",
+                    "rating_val": 0,
+                    "number_of_ratings": 0,
+                    "number_of_reviews": 0,
+                    "reviews_link": "N/A"
+                },
+                "offers": {
+                    "offer_details": [],
+                    "emi": {
+                        "emi_details": "N/A",
+                        "emi_val": 0
+                    },
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    }
+                },
+                "delivery_details": {
+                    "delivery_time": "N/A"
+                },
+                "seller_rating": {
+                    "seller_name": "N/A",
+                    "seller_average_rating": 0,
+                    "seller_number_of_ratings": 0,
+                    "seller_number_of_reviews": 0
+                },
+                "_id": "596f1f602931b31654a1e2fd"
+            }
+        ],
+        "__v": 0,
+        "internal_codes": {
+            "fingerprint_sensor_check": 1,
+            "four_g_check": 1,
+            "dual_sim_check": 1,
+            "status": 111
+        },
+        "variants": [
+            "594ce7a813256102d4e6e51e",
+            "594ce78813256102d4e6e384",
+            "594ce7d013256102d4e6e702",
+            "594ce78b13256102d4e6e3a4",
+            "594ce7bb13256102d4e6e610",
+            "594ce7da13256102d4e6e77c",
+            "594ce7a113256102d4e6e4c4",
+            "594ce7a713256102d4e6e512",
+            "594ce7b313256102d4e6e5ae",
+            "594ce7b413256102d4e6e5b2",
+            "594ce7b413256102d4e6e5bc",
+            "594ce7d413256102d4e6e734",
+            "594ce7da13256102d4e6e776",
+            "594ce78b13256102d4e6e3a8"
+        ]
+    },
+    {
+        "_id": "594ce7b713256102d4e6e5dc",
+        "updatedAt": "2017-12-05T10:59:41.365Z",
+        "createdAt": "2017-06-23T10:04:39.542Z",
+        "anchor_retailer_id": 1,
+        "final_position": 102,
+        "product_tags": {
+            "top_rated": false,
+            "flagship": false,
+            "light_weight": false,
+            "best_display": false,
+            "best_processor": false,
+            "best_battery": false,
+            "best_camera": false,
+            "budget": false,
+            "latest": false,
+            "bestseller": false,
+            "fingerprint_sensor": true,
+            "four_g": true,
+            "dual_sim": false
+        },
+        "other_info": {
+            "video_call_support": "Yes",
+            "voice_input": "Yes",
+            "hands_free_status": "N/A"
+        },
+        "amazon_info": {
+            "parent_asin": "N/A"
+        },
+        "dimensions": {
+            "weight": "188 g",
+            "depth": "7.3 mm",
+            "height": "158.2 mm",
+            "width": "77.9 mm"
+        },
+        "av_formats": {
+            "video": "H.264, AAC-LC, M4V, MP4, MOV, MPEG4, AVI, PCM",
+            "audio": "AAC, MP3, HE-AAC, MP3 VBR, AAX, AAX+, AIFF, WAV"
+        },
+        "warranty": "1 Year Manufacturer Warranty",
+        "sensors": "Touch ID Fingerprint Sensor, Barometer, Three-axis Gyro Sensor, Accelerometer, Proximity Sensor, Ambient Light Sensor, Backside Illumination Sensor, Digital Compass",
+        "product_family": {
+            "variants": [
+                "MOBEMK626Z9TSBW8",
+                "MOBEMK6289R7UFQH",
+                "MOBEMK628UZRJUEC",
+                "MOBEMK62FPZJUUFE",
+                "MOBEMK62FZFKPYFH",
+                "MOBEMK62G6SVRKGB",
+                "MOBEMK62QFEVEPP4",
+                "MOBEMK62UQNEVZZJ",
+                "MOBEMK62VS979XYM",
+                "MOBEMK62XSANTWGZ",
+                "MOBEMK62XUGQPJFB",
+                "MOBEMK62YVHPH7MV",
+                "MOBEMK6FDBZQZEAP",
+                "MOBESTTFBBFV9KET"
+            ]
+        },
+        "image_urls": {
+            "large": "http://img.fkcdn.com/image/mobile/f/q/h/apple-iphone-7-plus-na-800x800-imaemz66zzbftnnt.jpeg",
+            "medium": "http://img.fkcdn.com/image/mobile/f/q/h/apple-iphone-7-plus-na-400x400-imaemz66zzbftnnt.jpeg",
+            "small": "http://img.fkcdn.com/image/mobile/f/q/h/apple-iphone-7-plus-na-200x200-imaemz66zzbftnnt.jpeg"
+        },
+        "battery_power": {
+            "battery_type": "Li-Ion",
+            "removable_battery_status": "No",
+            "battery_capacity": "N/A",
+            "batteryVal": 0
+        },
+        "connectivity": {
+            "audio_jack_width": "N/A",
+            "usb_connectivity": "Yes",
+            "nfc": "Yes",
+            "wifi": "Yes",
+            "bluetooth_version": "v4.2",
+            "bluetooth_support": "Yes",
+            "internet_connectivity": "4G, 3G, Wi-Fi, GPRS, EDGE",
+            "supported_networks": "4G LTE",
+            "network_type": "4G VOLTE, 3G, 2G"
+        },
+        "camera": {
+            "dual_camera_lens_available": "Primary Camera",
+            "video_recording_resolution": "3840 x 2160",
+            "video_recording_status": "Yes",
+            "full_hd_recording_status": "Yes",
+            "hd_recording_status": "Yes",
+            "flash": "Quad LED True Tone Flash",
+            "secondary_camera_features": "1080p HD Video Recording, Retina Flash, f/2.2 Aperture, Wide Color Capture for Photos and Live Photos, Auto HDR, Backside Illumination Sensor, Body and Face Detection, Auto Image Stabilization, Burst Mode, Exposure Control, Timer Mode, FaceTime Video Calling Over Wi-Fi or Cellular",
+            "secondary_camera_pixels": "7MP",
+            "secondary_camera": "Yes",
+            "primary_camera_features": "Wide Angle and Telephoto Cameras, Wide-angle: f/1.8 Aperture, Telephoto: f/2.8 Aperture, Optical Image Stabilization, Six Element Lens, Panorama (Upto 63 MP), Sapphire Crystal Lens Cover, Backside Illumination Sensor, Hybrid IR Filter, Autofocus with Focus Pixels, Tap to Focus with Focus Pixels, Live Photos with Stabilization, Wide Color Capture for Photos and Live Photos, Improved Local Tone Mapping, Body and Face Detection, Exposure Control, Noise Reduction, Auto HDR for Photos, Auto Image Stabilization, Burst Mode, Timer Mode, Photo Geotagging, Time Lapse Video with Stabilization, Cinematic Video Stabilization (1080p and 720p), Continuous Auto Focus Video, Take 8 MP Still Photos While Recording 4K Video, Playback Zoom, Video Geotagging",
+            "primary_camera_pixels": "12MP + 12MP",
+            "primary_camera": "Yes",
+            "cameraVal": 12
+        },
+        "memory_storage": {
+            "expandable_storage": "N/A",
+            "ram": "N/A",
+            "internal_storage": "256 GB",
+            "storageVal": 256,
+            "ramVal": null
+        },
+        "os_processor": {
+            "processor_speed": "N/A",
+            "processor_core": "N/A",
+            "processor_type": "A10 Fusion Chip with 64-bit Architecture and Embedded M10 Motion Co-processor",
+            "operating_system": "iOS 10",
+            "processor_speed_val": 0
+        },
+        "display_specifications": {
+            "touchscreen_status": "Yes",
+            "resolution_type": "Retina HD Display",
+            "resolution": "1920 x 1080 Pixels",
+            "display_colors": "N/A",
+            "display_type": "LED-backlit IPS",
+            "display_size": "5.5 inch",
+            "display_size_val": 5.5
+        },
+        "sim_features": {
+            "hybrid_sim_slot_status": "No",
+            "sim_size": "Nano Sim",
+            "sim_type": "Single Sim"
+        },
+        "sales_package": {
+            "contents": "Handset, EarPods with Lightning Connector, Lightning to 3.5 mm Headphone Jack Adapter, Lightning to USB Cable, USB Power Adapter, Documentation"
+        },
+        "general_specifications": {
+            "model_color": "Black",
+            "model_number": "MN4W2HN/A",
+            "model_name": "iPhone 7 Plus",
+            "features": [
+                "256 GB ROM |",
+                "5.5 inch Retina HD Display",
+                "12MP + 12MP Dual Rear Camera | 7MP Front Camera",
+                "Li-Ion Battery",
+                "A10 Fusion Chip with 64-bit Architecture and Embedded M10 Motion Co-processor Processor"
+            ]
+        },
+        "product_basic_info": {
+            "normalized_name": "Apple iPhone 7 Plus",
+            "product_type": "Smartphones",
+            "productBrand_normalized": "Apple",
+            "productBrand": "Apple",
+            "description": "With better cameras, long-lasting battery life, powerful processor and enhanced stereo speakers, the iPhone 7 Plus takes your iPhone experience till date to the next level. Thanks to its vibrant display, sleek design and a water- and splash-resistant enclosure, this smartphone looks every bit as impressive as it is.",
+            "title": "Apple iPhone 7 Plus (Black, 256 GB)"
+        },
+        "anchor_product_id": {
+            "uuid": "86b131c0-5353-11e7-b5a6-4764b052efc5"
+        },
+        "product_id": {
+            "uuid": "5eafb230-57fb-11e7-86b8-83b97069ec2a"
+        },
+        "product_retailers": [
+            {
+                "_id": "594ce7b713256102d4e6e5dd",
+                "seller_rating": {
+                    "seller_number_of_reviews": 0,
+                    "seller_number_of_ratings": 0,
+                    "seller_average_rating": null,
+                    "seller_name": "Shreyash Retail Private Ltd"
+                },
+                "delivery_details": {
+                    "delivery_assured": true,
+                    "cod": false,
+                    "delivery_time": "N/A"
+                },
+                "offers": {
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    },
+                    "emi": {
+                        "emi_val": 3879,
+                        "emi_details": "EMI starting from ₹3879/month"
+                    },
+                    "offer_details": []
+                },
+                "product_rating": {
+                    "reviews_link": "N/A",
+                    "number_of_reviews": 28,
+                    "number_of_ratings": 70,
+                    "rating_val": 4.8,
+                    "rating_text": "N/A"
+                },
+                "product_pricing": {
+                    "discount": 13,
+                    "special_price": 79999,
+                    "selling_price": 92000,
+                    "mrp": 92000
+                },
+                "product_status": {
+                    "available": false
+                },
+                "product_position": 102,
+                "productURL": "http://dl.flipkart.com/dl/apple-iphone-7-plus-black-256-gb/p/itmen6dazzcbsver?pid=MOBEMK62FTZTYHQH&affid=apdhamija",
+                "product_id": {
+                    "mobiles_db_uuid": "86b131c0-5353-11e7-b5a6-4764b052efc5",
+                    "retailer_product_id": "MOBEMK62FTZTYHQH"
+                },
+                "retailer_description": {
+                    "retailer_id": 1,
+                    "retailer_name": "Flipkart"
+                }
+            },
+            {
+                "retailer_description": {
+                    "retailer_name": "Tata cliq",
+                    "retailer_id": 5
+                },
+                "product_id": {
+                    "retailer_product_id": "MP000000000572005",
+                    "mobiles_db_uuid": "e9e3eacb-f318-466d-9c6e-221b42c4c005"
+                },
+                "productURL": "https://www.tatacliq.com/apple-iphone-7-plus-256-gb-black/p-mp000000000572005",
+                "product_position": 36,
+                "product_pricing": {
+                    "mrp": 92000,
+                    "selling_price": 90000,
+                    "special_price": 90000,
+                    "discount": 0
+                },
+                "product_rating": {
+                    "rating_text": "N/A",
+                    "rating_val": 0,
+                    "number_of_ratings": 0,
+                    "number_of_reviews": 0,
+                    "reviews_link": "N/A"
+                },
+                "offers": {
+                    "offer_details": [],
+                    "emi": {
+                        "emi_details": "N/A",
+                        "emi_val": 0
+                    },
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    }
+                },
+                "delivery_details": {
+                    "delivery_time": "N/A"
+                },
+                "seller_rating": {
+                    "seller_name": "N/A",
+                    "seller_average_rating": 0,
+                    "seller_number_of_ratings": 0,
+                    "seller_number_of_reviews": 0
+                },
+                "_id": "596f191dc90f7b000425b71f"
+            },
+            {
+                "retailer_description": {
+                    "retailer_name": "Amazon",
+                    "retailer_id": 2
+                },
+                "product_id": {
+                    "retailer_product_id": "B01LXARYYZ",
+                    "mobiles_db_uuid": "3784674c-4a0e-41e2-8157-f3a6384b0cf2"
+                },
+                "productURL": "https://www.amazon.in/Apple-iPhone-Plus-Black-256GB/dp/B01LXARYYZ?psc=1&SubscriptionId=AKIAJOGRXNO5VKAU526A&tag=ankurdhamija8-21&linkCode=xm2&camp=2025&creative=165953&creativeASIN=B01LXARYYZ",
+                "product_position": 994,
+                "product_status": {
+                    "available": true
+                },
+                "product_pricing": {
+                    "mrp": 85400,
+                    "selling_price": 89900,
+                    "special_price": 89900,
+                    "discount": 0
+                },
+                "product_rating": {
+                    "rating_text": "4.2 out of 5 stars",
+                    "rating_val": 4.2,
+                    "number_of_ratings": 0,
+                    "number_of_reviews": 510,
+                    "reviews_link": "http://www.amazon.in/Apple-iPhone-Plus-Black-256GB/dp/B01LXARYYZ/ref=sr_1_994/258-9644514-0649155?s=electronics&ie=UTF8&qid=1501132638&sr=1-994#customerReviews"
+                },
+                "offers": {
+                    "offer_details": [],
+                    "emi": {
+                        "emi_details": "N/A",
+                        "emi_val": 0
+                    },
+                    "exchange": {
+                        "exchange_offer_text": "N/A"
+                    }
+                },
+                "delivery_details": {
+                    "delivery_time": "N/A",
+                    "cod": false,
+                    "delivery_assured": false
+                },
+                "seller_rating": {
+                    "seller_name": "N/A",
+                    "seller_average_rating": 0,
+                    "seller_number_of_ratings": 0,
+                    "seller_number_of_reviews": 0
+                },
+                "_id": "597a519b817b3100047ca6db"
+            }
+        ],
+        "__v": 0,
+        "internal_codes": {
+            "fingerprint_sensor_check": 1,
+            "four_g_check": 1,
+            "dual_sim_check": 1,
+            "status": 111
+        },
+        "variants": [
+            "594ce78813256102d4e6e380",
+            "594ce78813256102d4e6e386",
+            "594ce78c13256102d4e6e3aa",
+            "594ce7b313256102d4e6e5a8",
+            "594ce7b413256102d4e6e5b4",
+            "594ce7b513256102d4e6e5c0",
+            "594ce7c113256102d4e6e650",
+            "594ce7e613256102d4e6e816",
+            "594ce7e813256102d4e6e82e",
+            "594ce78c13256102d4e6e3b0",
+            "594ce7d913256102d4e6e76c",
+            "594ce7b413256102d4e6e5b0",
+            "594ce74213256102d4e6e03c",
+            "594ce78b13256102d4e6e3a6",
+            "594ce79f13256102d4e6e4a0"
+        ],
+        "reactions": {
+            "like": 1,
+            "love": 1,
+            "angry": 1
+        }
+    }
+]
