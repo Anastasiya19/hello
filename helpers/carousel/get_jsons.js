@@ -7,7 +7,7 @@ path = require("path");
 // for more than one value for the same field use "," e.g. product_tags=bestseller,latest
 // add & after each field=value
 
-var qs = "product_basic_info.productBrand_normalized=Apple";
+var qs = "product_basic_info.productBrand_normalized=Samsung";
 
 function get_query(){
 
@@ -15,7 +15,7 @@ function get_query(){
     qs = qs.replace(",","%2C")
     
     request({
-        uri:"http://localhost:3000/product/query?"+qs,
+        uri:"https://calm-depths-38465.herokuapp.com/product/query?"+qs,
         method:"GET",
         json:true
     }).then(response=>{
@@ -46,7 +46,7 @@ function post_question(question){
     }).then(response=>{
 
 
-        fs.writeFile(path.join(__dirname,"../../jsons/"+ question.replace(" ","_") +".json"),JSON.stringify(response),function(err){
+        fs.writeFile(path.join(__dirname,"../../jsons/"+ question.replace(/\s/g,"_") +".json"),JSON.stringify(response),function(err){
             if(err) console.log("error saving json ",err);
     
             console.log("done")
@@ -55,4 +55,5 @@ function post_question(question){
     })
     
 }
-post_question("show me apple phones")
+post_question(" Samsung phones")
+get_query()
