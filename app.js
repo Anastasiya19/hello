@@ -36,6 +36,7 @@ const csv = require('csv');
 const parser = csv.parse();
 const fs = require('fs');
 const apiai = require('apiai');
+const path = require('path')
 //******End********
 
 //4. Search tools
@@ -56,7 +57,7 @@ const translate = require('@google-cloud/translate')({
 });
 
 const format_functions = require('./helpers/query_format/format_functions.js');
-const handlebars_helpers = require("./helpers/carousel/handlebars_helpers")
+// const handlebars_helpers = require("./helpers/carousel/handlebars_helpers")
 
 //******End********
 
@@ -88,7 +89,7 @@ app.disable('x-powered-by');
 // register the helpers
 var hbs = exphbs.create({
     // Specify helpers which are only registered on this instance.
-    helpers: handlebars_helpers,
+    // helpers: handlebars_helpers,
     defaultLayout: 'client'
 });
 
@@ -153,18 +154,20 @@ app.get('/vinci_commands', function (req, res) {
 //Next Route-------------------------------------------------------------
 app.get('/chat', function (req, res) {
     console.log("Request hit the client home route");
-    fs.readFile("./jsons/show_me apple phones.json", 'utf8',function(err, json) {
-        if (err) {
-            console.log('Error  ' + err);
-            return;
-        }
+    // fs.readFile("./jsons/show_me apple phones.json", 'utf8',function(err, json) {
+    //     if (err) {
+    //         console.log('Error  ' + err);
+    //         return;
+    //     }
         
-        var carousel_phone = JSON.parse(json).web_reply.data.mobiles[0].variants
-        console.log(carousel_phone)
-        res.render('chat', {carousel_phone:carousel_phone});
+    //     var carousel_phone = JSON.parse(json).web_reply.data.mobiles[0].variants
+    //     console.log(carousel_phone)
+    //     res.render('chat', {carousel_phone:carousel_phone});
 
-    })
+    // })
 
+
+    res.sendFile(path.join(__dirname, "./public/chat.html"));
     console.log("Get request received on the homepage. App is working");
 });
 

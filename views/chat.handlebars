@@ -67,7 +67,9 @@
 			<div class="wrapper-chat">
 				<div class="chat">
 					<div class="chat__content scrollable-container">
+
 						<div class="chat__messages">
+							{{#each carousel}}
 							<div class="message message_vinci">
 								<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">
 								<div class="owl-carousel owl-theme">
@@ -116,6 +118,7 @@
 
 								</div>
 							</div>
+							{{/each}}
 							<div class="message message_vinci">
 								<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">
 								<div class="owl-carousel owl-theme">
