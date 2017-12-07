@@ -15,6 +15,7 @@ const jsons_path = path.join(__dirname, "../../jsons/")
 //the path to the rendered html
 const html_path = path.join(__dirname, "../../public/chat.html")
 
+// the text is the title of the carousel for side carousels
 const jsons = {
     chat_carousels: [{
         text: "show me Apple phones",
