@@ -1,6 +1,7 @@
 const request = require("request-promise"),
 fs = require("fs"),
-path = require("path");
+path = require("path"),
+Q = require("q");
 
 //----------------- query strings -------------------------------------
 // just place the quey here in the form field=value  no spaces 
@@ -33,7 +34,15 @@ function get_query(){
     })
 }
 
-function post_question(question){
+
+/**
+ * Post a question to our webhook and save the 
+ * json in the josns folder with filename as the question and spaces replaced by "_"
+ * @param {String} question tha question that will be sent
+ */
+function post_question_save_json(question){
+    var deferred = Q.defer()
+    
     request({
         uri:"http://arcane-woodland-93357.herokuapp.com/hellovinciai",
         method:"POST",
@@ -50,10 +59,12 @@ function post_question(question){
             if(err) console.log("error saving json ",err);
     
             console.log("done")
-    
+            deferred.resolve()
         })
     })
-    
+    return deferred.promise
 }
-post_question(" Samsung phones")
-get_query()
+post_question_save_json("google pixel phones")
+module.exports = post_question_save_json;
+// post_question_save_json(" HTC phones")
+// get_query()

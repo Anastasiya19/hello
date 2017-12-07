@@ -69,12 +69,12 @@
 					<div class="chat__content scrollable-container">
 
 						<div class="chat__messages">
-							{{#each carousel}}
+							{{#each chat_carousels}}
 							<div class="message message_vinci">
 								<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">
 								<div class="owl-carousel owl-theme">
 
-								{{#each carousel_phone}}
+								{{#each carousel_phones}}
 
 									<div class="message__item message__item_vinci br-chat message__category category">
 										<div class="row">
@@ -85,8 +85,8 @@
 												<h4 class="category__type">{{{this.product_basic_info.productBrand_normalized}}}</h4>
 												<h3 class="category__name">{{{generate_title_helper}}}</h3>
 												<div class="category__prices-box">
-													<span>Rs. {{{generate_price_helper}}}</span>
-													<span class="old">Rs. {{{generate_old_price_helper}}}</span>
+													<span>Rs.{{{generate_price_helper}}}</span>
+													<span class="old">Rs.{{{generate_old_price_helper}}}</span>
 												</div>
 												<div class="facebook-status characteristic__facebook-status">
 													<ul class="facebook-status__list">
@@ -252,128 +252,30 @@
 				</div>
 
 				<div class="boxes-carousel owl-carousel owl-them">
-					<div class="info-box info-box__slide">
-						<div class="info-box__header"><span>Expert Pick Mobiles</span></div>
-						<ul class="info-box__list">
-							<li class="info-box__item">
-								<div class="row align-items-center">
-									<div class="info-box__image col-2">
-										<img src="assets/build/assets/images/iphone6_min.svg" alt="">
-									</div>
-									<div class="info-box__description col-10">
-										<a class="info-box__link" href="#">iPnone 6</a>
-										<div class="info-box__rs">
-											<span>Ps.11890</span>
-											<span class="info-box__rs_old">Ps.16900</span>
+					{{#each side_carousels}}
+						<div class="info-box info-box__slide">
+							<div class="info-box__header"><span>{{this.text}}</span></div>
+							<ul class="info-box__list">
+								{{#each carousel_phones}}
+								<li class="info-box__item">
+									<div class="row align-items-center">
+										<div class="info-box__image col-2">
+											<img src="{{this.image_urls.medium}}" alt="">
+										</div>
+										<div class="info-box__description col-10">
+											<a class="info-box__link" href="#">{{this.product_basic_info.normalized_name}}</a>
+											<div class="info-box__rs">
+												<span>Ps.{{{generate_price_helper}}}</span>
+												<span class="info-box__rs_old">Ps.{{{generate_old_price_helper}}}</span>
+											</div>
 										</div>
 									</div>
-								</div>
-							</li>
-							<li class="info-box__item">
-								<div class="row align-items-center">
-									<div class="info-box__image col-2">
-										<img src="assets/build/assets/images/iphone6_min.svg" alt="">
-									</div>
-									<div class="info-box__description col-10">
-										<a class="info-box__link" href="#">iPnone 6</a>
-										<div class="info-box__rs">
-											<span>Ps.11890</span>
-											<span class="info-box__rs_old">Ps.16900</span>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li class="info-box__item">
-								<div class="row align-items-center">
-									<div class="info-box__image col-2">
-										<img src="assets/build/assets/images/iphone6_min.svg" alt="">
-									</div>
-									<div class="info-box__description col-10">
-										<a class="info-box__link" href="#">iPnone 6</a>
-										<div class="info-box__rs">
-											<span>Ps.11890</span>
-											<span class="info-box__rs_old">Ps.16900</span>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li class="info-box__item">
-								<div class="row align-items-center">
-									<div class="info-box__image col-2">
-										<img src="assets/build/assets/images/iphone6_min.svg" alt="">
-									</div>
-									<div class="info-box__description col-10">
-										<a class="info-box__link" href="#">iPnone 6</a>
-										<div class="info-box__rs">
-											<span>Ps.11890</span>
-											<span class="info-box__rs_old">Ps.16900</span>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li class="info-box__item">
-								<div class="row align-items-center">
-									<div class="info-box__image col-2">
-										<img src="assets/build/assets/images/iphone6_min.svg" alt="">
-									</div>
-									<div class="info-box__description col-10">
-										<a class="info-box__link" href="#">iPnone 6</a>
-										<div class="info-box__rs">
-											<span>Ps.11890</span>
-											<span class="info-box__rs_old">Ps.16900</span>
-										</div>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-					<div class="info-box info-box__slide">
-						<div class="info-box__header"><span>Phones with fingerprint scanner</span></div>
-						<ul class="info-box__list">
-							<li class="info-box__item">
-								<div class="row align-items-center">
-									<div class="info-box__image col-2">
-										<img src="assets/build/assets/images/iphone6_min.svg" alt="">
-									</div>
-									<div class="info-box__description col-10">
-										<a class="info-box__link" href="#">iPnone 6</a>
-										<div class="info-box__rs">
-											<span>Ps.11890</span>
-											<span class="info-box__rs_old">Ps.16900</span>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li class="info-box__item">
-								<div class="row align-items-center">
-									<div class="info-box__image col-2">
-										<img src="assets/build/assets/images/iphone6_min.svg" alt="">
-									</div>
-									<div class="info-box__description col-10">
-										<a class="info-box__link" href="#">iPnone 6</a>
-										<div class="info-box__rs">
-											<span>Ps.11890</span>
-											<span class="info-box__rs_old">Ps.16900</span>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li class="info-box__item">
-								<div class="row align-items-center">
-									<div class="info-box__image col-2">
-										<img src="assets/build/assets/images/iphone6_min.svg" alt="">
-									</div>
-									<div class="info-box__description col-10">
-										<a class="info-box__link" href="#">iPnone 6</a>
-										<div class="info-box__rs">
-											<span>Ps.11890</span>
-											<span class="info-box__rs_old">Ps.16900</span>
-										</div>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
+								</li>
+								{{/each}}
+							</ul>
+						</div>
+					{{/each}}
+					
 				</div>
 				<div class="info-box">
 					<div class="info-box__header"><span>Show us Some Love</span></div>

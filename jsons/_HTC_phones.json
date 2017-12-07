@@ -1,0 +1,2243 @@
+{
+    "web_reply": {
+        "source": "deepmind",
+        "displayText": "Yohoo..I Got - Htc phones",
+        "messages": [
+            {
+                "type": 0,
+                "speech": ""
+            }
+        ],
+        "data": {
+            "contextOut": [
+                {
+                    "name": "phonebuyingconversation",
+                    "parameters": {
+                        "formal_price": [],
+                        "retailers.original": "",
+                        "mobiles.original": "",
+                        "relationship.original": "",
+                        "colors": [],
+                        "processor_core": [],
+                        "processor_speed": [],
+                        "price_comment.original": "",
+                        "mobiles": [],
+                        "comparator.original": "",
+                        "ram_capacity": [],
+                        "operating_system": [],
+                        "screen_size": [],
+                        "relationship": [],
+                        "attributes.original": "",
+                        "attributes_composite_entity.original": "",
+                        "suggestion_composite_entity.original": "",
+                        "ram_capacity.original": "",
+                        "retailers": [],
+                        "storage_capacity": [],
+                        "operating_system.original": "",
+                        "brands": [
+                            "Htc"
+                        ],
+                        "suggestion_composite_entity": [],
+                        "tags.original": "",
+                        "screen_size.original": "",
+                        "camera_pixels.original": "",
+                        "camera_pixels": [],
+                        "colors.original": "",
+                        "attributes_composite_entity": [],
+                        "tags": [],
+                        "processor_core.original": "",
+                        "attributes1.original": "",
+                        "comparator": [],
+                        "battery_value.original": "",
+                        "formal_price.original": "",
+                        "processor_speed.original": "",
+                        "attributes": [],
+                        "brands.original": "HTC",
+                        "attributes1": [],
+                        "storage_capacity.original": "",
+                        "price_comment": [],
+                        "battery_value": []
+                    },
+                    "lifespan": 5
+                }
+            ],
+            "active_list": {
+                "mobiles": [
+                    "Htc Desire Eye",
+                    "Htc Desire 326G DS",
+                    "Htc Radar",
+                    "Htc Explorer",
+                    "Htc Desire 600C",
+                    "Htc A6363",
+                    "Htc Desire 500 Dual Sim",
+                    "Htc Desire 826X CDMA+GSM",
+                    "Htc 8S A620E",
+                    "Htc Sensation XE"
+                ],
+                "attributes": [],
+                "attributes_composite_entity": [],
+                "battery_value": [],
+                "brands": [
+                    "Htc"
+                ],
+                "camera_pixels": [],
+                "colors": [],
+                "comparator": [],
+                "formal_price": [],
+                "operating_system": [],
+                "price_comment": [],
+                "processor_core": [],
+                "processor_speed": [],
+                "query_parsed_mobiles": [],
+                "ram_capacity": [],
+                "retailers": [],
+                "screen_size": [],
+                "storage_capacity": [],
+                "suggestion_composite_entity": [],
+                "tags": [],
+                "intentId": "d5ea6dc1-3be5-433d-8ee4-1b3544f34d7c",
+                "criteria_finalized_status": 2
+            },
+            "all_discussed_list": "{}",
+            "query_status": 300,
+            "mobiles": [
+                {
+                    "variants": [
+                        {
+                            "_id": "594ce5b513256102d4e6d2b2",
+                            "dimensions": {
+                                "weight": "154 g",
+                                "depth": "8.5 mm",
+                                "height": "151.7 mm",
+                                "width": "73.8 mm"
+                            },
+                            "warranty": "1 Year Manufacturer Warranty",
+                            "sensors": "Accelerometer, Proximity Sensor, Ambient Light Sensor, Gyro Sensor",
+                            "image_urls": {
+                                "large": "http://img.fkcdn.com/image/mobile/e/7/k/htc-desire-eye-800x800-imae37gzydhwrjzc.jpeg",
+                                "medium": "http://img.fkcdn.com/image/mobile/e/7/k/htc-desire-eye-400x400-imae37gzydhwrjzc.jpeg",
+                                "small": "http://img.fkcdn.com/image/mobile/e/7/k/htc-desire-eye-200x200-imae37gzydhwrjzc.jpeg"
+                            },
+                            "battery_power": {
+                                "battery_type": "N/A",
+                                "removable_battery_status": "N/A",
+                                "battery_capacity": "2400 mAh",
+                                "batteryVal": 2400
+                            },
+                            "connectivity": {
+                                "audio_jack_width": "3.5 mm",
+                                "usb_connectivity": "Yes",
+                                "nfc": "N/A",
+                                "wifi": "Yes",
+                                "bluetooth_version": "N/A",
+                                "bluetooth_support": "N/A",
+                                "internet_connectivity": "N/A",
+                                "supported_networks": "UMTS",
+                                "network_type": "3G"
+                            },
+                            "camera": {
+                                "dual_camera_lens_available": "N/A",
+                                "video_recording_resolution": "N/A",
+                                "video_recording_status": "N/A",
+                                "full_hd_recording_status": "Yes",
+                                "hd_recording_status": "Yes",
+                                "flash": "N/A",
+                                "secondary_camera_features": "N/A",
+                                "secondary_camera_pixels": "13MP",
+                                "secondary_camera": "N/A",
+                                "primary_camera_features": "N/A",
+                                "primary_camera_pixels": "13MP",
+                                "primary_camera": "N/A",
+                                "cameraVal": 13
+                            },
+                            "memory_storage": {
+                                "expandable_storage": "128 GB",
+                                "ram": "2 GB",
+                                "internal_storage": "16 GB",
+                                "storageVal": 16,
+                                "ramVal": 2
+                            },
+                            "os_processor": {
+                                "processor_speed": "2.3 GHz",
+                                "processor_core": "N/A",
+                                "processor_type": "Qualcomm? Snapdragon 801",
+                                "operating_system": "Android KitKat 4.4.4",
+                                "processor_speed_val": 2.3
+                            },
+                            "display_specifications": {
+                                "touchscreen_status": "N/A",
+                                "resolution_type": "Full HD",
+                                "resolution": "1080 x 1920 Pixels",
+                                "display_colors": "N/A",
+                                "display_type": "IPX7 Standards, Dust Proof and Water Resistant up to 1 Meter & 30 Minutes Capacitive Touchscreen and 16M Colors",
+                                "display_size": "5.2 inch",
+                                "display_size_val": 5.2
+                            },
+                            "sim_features": {
+                                "hybrid_sim_slot_status": "N/A",
+                                "sim_size": "Nano SIM",
+                                "sim_type": "Single Sim"
+                            },
+                            "sales_package": {
+                                "contents": "Handset, Earphone, Data Cable, Travel Charger, User Manual, Warranty Card"
+                            },
+                            "general_specifications": {
+                                "model_color": "Submarine Blue",
+                                "features": [
+                                    "2 GB RAM | 16 GB ROM | Expandable Upto 128 GB",
+                                    "5.2 inch Full HD Display",
+                                    "13MP Rear Camera | 13MP Front Camera",
+                                    "2400 mAh Li-polymer Battery",
+                                    "Qualcomm? Snapdragon 801 Processor"
+                                ]
+                            },
+                            "product_basic_info": {
+                                "normalized_name": "Htc Desire Eye",
+                                "product_type": "Smartphones",
+                                "productBrand_normalized": "Htc",
+                                "productBrand": "HTC",
+                                "description": "N/A",
+                                "title": "HTC Desire Eye (Submarine Blue, 16 GB)(2 GB RAM)"
+                            },
+                            "product_retailers": [
+                                {
+                                    "_id": "594ce5b513256102d4e6d2b3",
+                                    "seller_rating": {
+                                        "seller_number_of_reviews": 0,
+                                        "seller_number_of_ratings": 11,
+                                        "seller_average_rating": 4.2,
+                                        "seller_name": "Akhilesh Jha"
+                                    },
+                                    "delivery_details": {
+                                        "delivery_assured": false,
+                                        "cod": true,
+                                        "delivery_time": "N/A"
+                                    },
+                                    "offers": {
+                                        "exchange": {
+                                            "exchange_offer_text": "N/A"
+                                        },
+                                        "emi": {
+                                            "emi_val": 798,
+                                            "emi_details": "EMI starting from ₹798/month"
+                                        },
+                                        "offer_details": []
+                                    },
+                                    "product_rating": {
+                                        "reviews_link": "N/A",
+                                        "number_of_reviews": 34,
+                                        "number_of_ratings": 115,
+                                        "rating_val": 4.2,
+                                        "rating_text": "N/A"
+                                    },
+                                    "product_pricing": {
+                                        "discount": 55,
+                                        "special_price": 16450,
+                                        "selling_price": 16450,
+                                        "mrp": 36990
+                                    },
+                                    "product_status": {
+                                        "available": false
+                                    },
+                                    "product_position": 3044,
+                                    "productURL": "http://dl.flipkart.com/dl/htc-desire-eye-submarine-blue-16-gb/p/itmeuyd4cyqrxa7k?pid=MOBE38BYVUPX8E7K&affid=apdhamija",
+                                    "product_id": {
+                                        "mobiles_db_uuid": "4085b700-5355-11e7-b593-2f7cb3e079c9",
+                                        "retailer_product_id": "MOBE38BYVUPX8E7K"
+                                    },
+                                    "retailer_description": {
+                                        "retailer_id": 1,
+                                        "retailer_name": "Flipkart"
+                                    }
+                                }
+                            ],
+                            "variants": [
+                                {
+                                    "_id": "594ce68213256102d4e6d988",
+                                    "updatedAt": "2017-10-28T01:50:49.026Z",
+                                    "createdAt": "2017-06-23T09:59:30.431Z",
+                                    "__v": 0,
+                                    "internal_codes": {
+                                        "dual_sim_check": 1,
+                                        "four_g_check": 1,
+                                        "fingerprint_sensor_check": 1,
+                                        "search_status": -1,
+                                        "status": 111
+                                    },
+                                    "final_position": 3041,
+                                    "variants": [
+                                        "594ce5b513256102d4e6d2b2"
+                                    ],
+                                    "product_tags": {
+                                        "gorilla_glass": false,
+                                        "bezel": false,
+                                        "gaming": false,
+                                        "waterproof": false,
+                                        "wireless_charging": false,
+                                        "dual_sim": false,
+                                        "four_g": true,
+                                        "fingerprint_sensor": false,
+                                        "top_rated": false,
+                                        "flagship": false,
+                                        "light_weight": false,
+                                        "best_display": false,
+                                        "best_processor": false,
+                                        "best_battery": false,
+                                        "best_camera": false,
+                                        "budget": false,
+                                        "latest": false,
+                                        "bestseller": false
+                                    },
+                                    "other_info": {
+                                        "video_call_support": "N/A",
+                                        "voice_input": "N/A",
+                                        "hands_free_status": "N/A"
+                                    },
+                                    "amazon_info": {
+                                        "parent_asin": "N/A"
+                                    },
+                                    "dimensions": {
+                                        "weight": "154 g",
+                                        "depth": "8.5 mm",
+                                        "height": "151.7 mm",
+                                        "width": "73.8 mm"
+                                    },
+                                    "av_formats": {
+                                        "video": "N/A",
+                                        "audio": "N/A"
+                                    },
+                                    "warranty": "1 Year Manufacturer Warranty",
+                                    "sensors": "Accelerometer, Proximity Sensor, Ambient Light Sensor, Gyro Sensor",
+                                    "product_family": {
+                                        "variants": [
+                                            "MOBE38BYVUPX8E7K"
+                                        ]
+                                    },
+                                    "image_urls": {
+                                        "large": "http://img.fkcdn.com/image/mobile/5/r/3/htc-desire-eye-800x800-imae37gx3hywjafg.jpeg",
+                                        "medium": "http://img.fkcdn.com/image/mobile/5/r/3/htc-desire-eye-400x400-imae37gx3hywjafg.jpeg",
+                                        "small": "http://img.fkcdn.com/image/mobile/5/r/3/htc-desire-eye-200x200-imae37gx3hywjafg.jpeg"
+                                    },
+                                    "battery_power": {
+                                        "batteryVal": 2400,
+                                        "battery_type": "N/A",
+                                        "removable_battery_status": "N/A",
+                                        "battery_capacity": "2400 mAh"
+                                    },
+                                    "connectivity": {
+                                        "audio_jack_width": "3.5 mm",
+                                        "usb_connectivity": "Yes",
+                                        "nfc": "N/A",
+                                        "wifi": "Yes",
+                                        "bluetooth_version": "N/A",
+                                        "bluetooth_support": "N/A",
+                                        "internet_connectivity": "N/A",
+                                        "supported_networks": "UMTS",
+                                        "network_type": "4G"
+                                    },
+                                    "camera": {
+                                        "cameraVal": 13,
+                                        "dual_camera_lens_available": "N/A",
+                                        "video_recording_resolution": "N/A",
+                                        "video_recording_status": "N/A",
+                                        "full_hd_recording_status": "Yes",
+                                        "hd_recording_status": "Yes",
+                                        "flash": "N/A",
+                                        "secondary_camera_features": "N/A",
+                                        "secondary_camera_pixels": "13MP",
+                                        "secondary_camera": "N/A",
+                                        "primary_camera_features": "N/A",
+                                        "primary_camera_pixels": "13MP",
+                                        "primary_camera": "Yes"
+                                    },
+                                    "memory_storage": {
+                                        "storageVal": 16,
+                                        "ramVal": 2,
+                                        "expandable_storage": "128 GB",
+                                        "ram": "2 GB",
+                                        "internal_storage": "16 GB"
+                                    },
+                                    "os_processor": {
+                                        "processor_speed_val": 2.3,
+                                        "processor_speed": "2.3 GHz",
+                                        "processor_core": "N/A",
+                                        "processor_type": "Qualcomm? Snapdragon 801",
+                                        "operating_system": "Android KitKat 4.4.4"
+                                    },
+                                    "display_specifications": {
+                                        "display_size_val": 5.2,
+                                        "touchscreen_status": "N/A",
+                                        "resolution_type": "Full HD",
+                                        "resolution": "1080 x 1920 Pixels",
+                                        "display_colors": "N/A",
+                                        "display_type": "IPX7 Standards, Dust Proof and Water Resistant up to 1 Meter & 30 Minutes Capacitive Touchscreen and16M Colors",
+                                        "display_size": "5.2 inch"
+                                    },
+                                    "sim_features": {
+                                        "hybrid_sim_slot_status": "No",
+                                        "sim_size": "Nano SIM",
+                                        "sim_type": "Single Sim"
+                                    },
+                                    "sales_package": {
+                                        "contents": "Handset, Earphone, Data Cable, Travel Charger, User Manual, Warranty Card"
+                                    },
+                                    "general_specifications": {
+                                        "model_color": "Coral Red",
+                                        "model_number": "N/A",
+                                        "model_name": "Desire Eye",
+                                        "features": [
+                                            "2 GB RAM | 16 GB ROM | Expandable Upto 128 GB",
+                                            "5.2 inch Full HD Display",
+                                            "13MP Rear Camera | 13MP Front Camera",
+                                            "2400 mAh Li-polymer Battery",
+                                            "Qualcomm? Snapdragon 801 Processor"
+                                        ]
+                                    },
+                                    "product_basic_info": {
+                                        "normalized_name": "Htc Desire Eye",
+                                        "product_type": "Smartphones",
+                                        "productBrand_normalized": "Htc",
+                                        "productBrand": "HTC",
+                                        "description": "N/A",
+                                        "title": "HTC Desire Eye (Coral Red, 16 GB)(2 GB RAM)"
+                                    },
+                                    "anchor_retailer_id": 1,
+                                    "anchor_product_id": {
+                                        "uuid": "83bde260-5353-11e7-b5a6-4764b052efc5"
+                                    },
+                                    "product_id": {
+                                        "uuid": "a6755f80-57fa-11e7-86b8-83b97069ec2a"
+                                    },
+                                    "product_retailers": [
+                                        {
+                                            "_id": "594ce68213256102d4e6d989",
+                                            "seller_rating": {
+                                                "seller_number_of_reviews": 0,
+                                                "seller_number_of_ratings": 11,
+                                                "seller_average_rating": 4.2,
+                                                "seller_name": "Akhilesh Jha"
+                                            },
+                                            "delivery_details": {
+                                                "delivery_assured": false,
+                                                "cod": true,
+                                                "delivery_time": "N/A"
+                                            },
+                                            "offers": {
+                                                "exchange": {
+                                                    "exchange_offer_text": "N/A"
+                                                },
+                                                "emi": {
+                                                    "emi_val": 744,
+                                                    "emi_details": "EMI starting from ₹744/month"
+                                                },
+                                                "offer_details": []
+                                            },
+                                            "product_rating": {
+                                                "reviews_link": "N/A",
+                                                "number_of_reviews": 34,
+                                                "number_of_ratings": 115,
+                                                "rating_val": 4.2,
+                                                "rating_text": "N/A"
+                                            },
+                                            "product_pricing": {
+                                                "discount": 58,
+                                                "special_price": 15399,
+                                                "selling_price": 15399,
+                                                "mrp": 36990
+                                            },
+                                            "product_status": {
+                                                "available": false
+                                            },
+                                            "product_position": 3041,
+                                            "productURL": "http://dl.flipkart.com/dl/htc-desire-eye-coral-red-16-gb/p/itmeuyd4cyqrxa7k?pid=MOBE38BYHJPAS5R3&affid=apdhamija",
+                                            "product_id": {
+                                                "mobiles_db_uuid": "83bde260-5353-11e7-b5a6-4764b052efc5",
+                                                "retailer_product_id": "MOBE38BYHJPAS5R3"
+                                            },
+                                            "retailer_description": {
+                                                "retailer_id": 1,
+                                                "retailer_name": "Flipkart"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_id": "594ce5c113256102d4e6d30c",
+                            "dimensions": {
+                                "weight": "146 g",
+                                "depth": "9.7 mm",
+                                "height": "139.79 mm",
+                                "width": "69.63 mm"
+                            },
+                            "warranty": "1 Year for Mobile & 6 Months for Accessories",
+                            "sensors": "Ambient Light Sensor, Proximity Sensor, Accelerometer",
+                            "image_urls": {
+                                "large": "http://img.fkcdn.com/image/mobile/c/z/z/htc-desire-326g-ds-na-800x800-imae8aggdzgunugu.jpeg",
+                                "medium": "http://img.fkcdn.com/image/mobile/c/z/z/htc-desire-326g-ds-na-400x400-imae8aggdzgunugu.jpeg",
+                                "small": "http://img.fkcdn.com/image/mobile/c/z/z/htc-desire-326g-ds-na-200x200-imae8aggdzgunugu.jpeg"
+                            },
+                            "battery_power": {
+                                "battery_type": "N/A",
+                                "removable_battery_status": "N/A",
+                                "battery_capacity": "2000 mAh",
+                                "batteryVal": 2000
+                            },
+                            "connectivity": {
+                                "audio_jack_width": "3.5 mm",
+                                "usb_connectivity": "Yes",
+                                "nfc": "N/A",
+                                "wifi": "Yes",
+                                "bluetooth_version": "4",
+                                "bluetooth_support": "Yes",
+                                "internet_connectivity": "3G, Wi-Fi, GPRS, EDGE",
+                                "supported_networks": "GSM, UMTS",
+                                "network_type": "3G, 2G"
+                            },
+                            "camera": {
+                                "dual_camera_lens_available": "N/A",
+                                "video_recording_resolution": "1920 x 1080",
+                                "video_recording_status": "Yes",
+                                "full_hd_recording_status": "Yes",
+                                "hd_recording_status": "Yes",
+                                "flash": "Yes",
+                                "secondary_camera_features": "Selfies, BSI Sensor, HD Recording",
+                                "secondary_camera_pixels": "2MP",
+                                "secondary_camera": "Yes",
+                                "primary_camera_features": "Auto Focus, BSI Sensor, Burst Mode, LED Flash Support",
+                                "primary_camera_pixels": "8MP",
+                                "primary_camera": "Yes",
+                                "cameraVal": 8
+                            },
+                            "memory_storage": {
+                                "expandable_storage": "32 GB",
+                                "ram": "1 GB",
+                                "internal_storage": "8 GB",
+                                "storageVal": 8,
+                                "ramVal": 1
+                            },
+                            "os_processor": {
+                                "processor_speed": "1.2 GHz",
+                                "processor_core": "Quad Core",
+                                "processor_type": "SC7731G",
+                                "operating_system": "Android KitKat 4.4.2",
+                                "processor_speed_val": 1.2
+                            },
+                            "display_specifications": {
+                                "touchscreen_status": "Yes",
+                                "resolution_type": "FWVGA",
+                                "resolution": "854 x 480 Pixels",
+                                "display_colors": "N/A",
+                                "display_type": "N/A",
+                                "display_size": "4.5 inch",
+                                "display_size_val": 4.5
+                            },
+                            "sim_features": {
+                                "hybrid_sim_slot_status": "No",
+                                "sim_size": "Micro SIM",
+                                "sim_type": "Dual Sim"
+                            },
+                            "sales_package": {
+                                "contents": "Handset, Battery, AC Adapter, USB Sync Cable, Headset, Safety and Regulatory Guide, Quick Start Guide, Limited Warranty Statement, Customer Care Card"
+                            },
+                            "general_specifications": {
+                                "model_color": "Black Onyx",
+                                "features": [
+                                    "1 GB RAM | 8 GB ROM | Expandable Upto 32 GB",
+                                    "4.5 inch FWVGA Display",
+                                    "8MP Rear Camera | 2MP Front Camera",
+                                    "2000 mAh Battery",
+                                    "SC7731G Processor"
+                                ]
+                            },
+                            "product_basic_info": {
+                                "normalized_name": "Htc Desire 326G DS",
+                                "product_type": "Smartphones",
+                                "productBrand_normalized": "Htc",
+                                "productBrand": "HTC",
+                                "description": "N/A",
+                                "title": "HTC Desire 326G DS (Black Onyx, 8 GB)(1 GB RAM)"
+                            },
+                            "product_retailers": [
+                                {
+                                    "_id": "594ce5c113256102d4e6d30d",
+                                    "seller_rating": {
+                                        "seller_number_of_reviews": 2,
+                                        "seller_number_of_ratings": 113,
+                                        "seller_average_rating": 3.2,
+                                        "seller_name": "syed mithiullah"
+                                    },
+                                    "delivery_details": {
+                                        "delivery_assured": false,
+                                        "cod": true,
+                                        "delivery_time": "Usually Delivered in 5 - 6 days."
+                                    },
+                                    "offers": {
+                                        "exchange": {
+                                            "exchange_offer_text": "N/A"
+                                        },
+                                        "emi": {
+                                            "emi_val": 312,
+                                            "emi_details": "EMI starting from ₹312/month"
+                                        },
+                                        "offer_details": []
+                                    },
+                                    "product_rating": {
+                                        "reviews_link": "N/A",
+                                        "number_of_reviews": 86,
+                                        "number_of_ratings": 807,
+                                        "rating_val": 3.6,
+                                        "rating_text": "N/A"
+                                    },
+                                    "product_pricing": {
+                                        "discount": 38,
+                                        "special_price": 6067,
+                                        "selling_price": 6129,
+                                        "mrp": 9900
+                                    },
+                                    "product_status": {
+                                        "available": true
+                                    },
+                                    "product_position": 3090,
+                                    "productURL": "http://dl.flipkart.com/dl/htc-desire-326g-ds-black-onyx-8-gb/p/itmeuyd7esb8nafq?pid=MOBE82YZARWZXCZZ&affid=apdhamija",
+                                    "product_id": {
+                                        "mobiles_db_uuid": "5502ec70-5355-11e7-b593-2f7cb3e079c9",
+                                        "retailer_product_id": "MOBE82YZARWZXCZZ"
+                                    },
+                                    "retailer_description": {
+                                        "retailer_id": 1,
+                                        "retailer_name": "Flipkart"
+                                    }
+                                }
+                            ],
+                            "variants": [
+                                {
+                                    "_id": "594ce6ec13256102d4e6dd1c",
+                                    "updatedAt": "2017-10-28T01:50:49.041Z",
+                                    "createdAt": "2017-06-23T10:01:16.785Z",
+                                    "__v": 0,
+                                    "internal_codes": {
+                                        "dual_sim_check": 1,
+                                        "four_g_check": 1,
+                                        "fingerprint_sensor_check": 1,
+                                        "search_status": -1,
+                                        "status": 111
+                                    },
+                                    "final_position": 3095,
+                                    "variants": [
+                                        "594ce5c113256102d4e6d30c",
+                                        "594ce5d513256102d4e6d3b6"
+                                    ],
+                                    "product_tags": {
+                                        "gorilla_glass": false,
+                                        "bezel": false,
+                                        "gaming": false,
+                                        "waterproof": false,
+                                        "wireless_charging": false,
+                                        "dual_sim": true,
+                                        "four_g": false,
+                                        "fingerprint_sensor": false,
+                                        "top_rated": false,
+                                        "flagship": false,
+                                        "light_weight": false,
+                                        "best_display": false,
+                                        "best_processor": false,
+                                        "best_battery": false,
+                                        "best_camera": false,
+                                        "budget": false,
+                                        "latest": false,
+                                        "bestseller": false
+                                    },
+                                    "other_info": {
+                                        "video_call_support": "N/A",
+                                        "voice_input": "N/A",
+                                        "hands_free_status": "N/A"
+                                    },
+                                    "amazon_info": {
+                                        "parent_asin": "N/A"
+                                    },
+                                    "dimensions": {
+                                        "weight": "146 g",
+                                        "depth": "9.7 mm",
+                                        "height": "139.79 mm",
+                                        "width": "69.63 mm"
+                                    },
+                                    "av_formats": {
+                                        "video": "N/A",
+                                        "audio": "MP3"
+                                    },
+                                    "warranty": "1 Year for Mobile & 6 Months for Accessories",
+                                    "sensors": "Ambient Light Sensor, Proximity Sensor, Accelerometer",
+                                    "product_family": {
+                                        "variants": [
+                                            "MOBE82YZARWZXCZZ",
+                                            "MOBEBVP3VZPKWPAG"
+                                        ]
+                                    },
+                                    "image_urls": {
+                                        "large": "http://img.fkcdn.com/image/mobile/g/y/8/htc-desire-326g-ds-na-800x800-imae8agztdrfzzsg.jpeg",
+                                        "medium": "http://img.fkcdn.com/image/mobile/g/y/8/htc-desire-326g-ds-na-400x400-imae8agztdrfzzsg.jpeg",
+                                        "small": "http://img.fkcdn.com/image/mobile/g/y/8/htc-desire-326g-ds-na-200x200-imae8agztdrfzzsg.jpeg"
+                                    },
+                                    "battery_power": {
+                                        "batteryVal": 2000,
+                                        "battery_type": "N/A",
+                                        "removable_battery_status": "N/A",
+                                        "battery_capacity": "2000 mAh"
+                                    },
+                                    "connectivity": {
+                                        "audio_jack_width": "3.5 mm",
+                                        "usb_connectivity": "Yes",
+                                        "nfc": "N/A",
+                                        "wifi": "Yes",
+                                        "bluetooth_version": "4",
+                                        "bluetooth_support": "Yes",
+                                        "internet_connectivity": "3G, Wi-Fi, GPRS, EDGE",
+                                        "supported_networks": "GSM, UMTS",
+                                        "network_type": "3G, 2G"
+                                    },
+                                    "camera": {
+                                        "cameraVal": 8,
+                                        "dual_camera_lens_available": "N/A",
+                                        "video_recording_resolution": "1920 x 1080",
+                                        "video_recording_status": "Yes",
+                                        "full_hd_recording_status": "Yes",
+                                        "hd_recording_status": "Yes",
+                                        "flash": "Yes",
+                                        "secondary_camera_features": "Selfies, BSI Sensor, HD Recording",
+                                        "secondary_camera_pixels": "2MP",
+                                        "secondary_camera": "Yes",
+                                        "primary_camera_features": "Auto Focus, BSI Sensor, Burst Mode, LED Flash Support",
+                                        "primary_camera_pixels": "8MP",
+                                        "primary_camera": "Yes"
+                                    },
+                                    "memory_storage": {
+                                        "storageVal": 8,
+                                        "ramVal": 1,
+                                        "expandable_storage": "32 GB",
+                                        "ram": "1 GB",
+                                        "internal_storage": "8 GB"
+                                    },
+                                    "os_processor": {
+                                        "processor_speed_val": 1.2,
+                                        "processor_speed": "1.2 GHz",
+                                        "processor_core": "Quad Core",
+                                        "processor_type": "SC7731G",
+                                        "operating_system": "Android KitKat 4.4.2"
+                                    },
+                                    "display_specifications": {
+                                        "display_size_val": 4.5,
+                                        "touchscreen_status": "Yes",
+                                        "resolution_type": "FWVGA",
+                                        "resolution": "854 x 480 Pixels",
+                                        "display_colors": "N/A",
+                                        "display_type": "N/A",
+                                        "display_size": "4.5 inch"
+                                    },
+                                    "sim_features": {
+                                        "hybrid_sim_slot_status": "N/A",
+                                        "sim_size": "Micro SIM",
+                                        "sim_type": "Dual Sim"
+                                    },
+                                    "sales_package": {
+                                        "contents": "Handset, Battery, AC Adapter, USB Sync Cable, Headset, Safety and Regulatory Guide, Quick Start Guide, Limited Warranty Statement, Customer Care Card"
+                                    },
+                                    "general_specifications": {
+                                        "model_color": "White Birch",
+                                        "model_number": "N/A",
+                                        "model_name": "Desire 326G DS",
+                                        "features": [
+                                            "1 GB RAM | 8 GB ROM | Expandable Upto 32 GB",
+                                            "4.5 inch FWVGA Display",
+                                            "8MP Rear Camera | 2MP Front Camera",
+                                            "2000 mAh Battery",
+                                            "SC7731G Processor"
+                                        ]
+                                    },
+                                    "product_basic_info": {
+                                        "normalized_name": "Htc Desire 326G DS",
+                                        "product_type": "Smartphones",
+                                        "productBrand_normalized": "Htc",
+                                        "productBrand": "HTC",
+                                        "description": "N/A",
+                                        "title": "HTC Desire 326G DS (White Birch, 8 GB)(1 GB RAM)"
+                                    },
+                                    "anchor_retailer_id": 1,
+                                    "anchor_product_id": {
+                                        "uuid": "34201c00-5353-11e7-b5a6-4764b052efc5"
+                                    },
+                                    "product_id": {
+                                        "uuid": "e5d9b4a0-57fa-11e7-86b8-83b97069ec2a"
+                                    },
+                                    "product_retailers": [
+                                        {
+                                            "_id": "594ce6ec13256102d4e6dd1d",
+                                            "seller_rating": {
+                                                "seller_number_of_reviews": 2,
+                                                "seller_number_of_ratings": 113,
+                                                "seller_average_rating": 3.2,
+                                                "seller_name": "syed mithiullah"
+                                            },
+                                            "delivery_details": {
+                                                "delivery_assured": false,
+                                                "cod": true,
+                                                "delivery_time": "Usually Delivered in 5 - 6 days."
+                                            },
+                                            "offers": {
+                                                "exchange": {
+                                                    "exchange_offer_text": "N/A"
+                                                },
+                                                "emi": {
+                                                    "emi_val": 309,
+                                                    "emi_details": "EMI starting from ₹309/month"
+                                                },
+                                                "offer_details": []
+                                            },
+                                            "product_rating": {
+                                                "reviews_link": "N/A",
+                                                "number_of_reviews": 86,
+                                                "number_of_ratings": 807,
+                                                "rating_val": 3.6,
+                                                "rating_text": "N/A"
+                                            },
+                                            "product_pricing": {
+                                                "discount": 36,
+                                                "special_price": 6269,
+                                                "selling_price": 6333,
+                                                "mrp": 9900
+                                            },
+                                            "product_status": {
+                                                "available": true
+                                            },
+                                            "product_position": 3095,
+                                            "productURL": "http://dl.flipkart.com/dl/htc-desire-326g-ds-white-birch-8-gb/p/itmeuyd7esb8nafq?pid=MOBE82YZP459ZGY8&affid=apdhamija",
+                                            "product_id": {
+                                                "mobiles_db_uuid": "34201c00-5353-11e7-b5a6-4764b052efc5",
+                                                "retailer_product_id": "MOBE82YZP459ZGY8"
+                                            },
+                                            "retailer_description": {
+                                                "retailer_id": 1,
+                                                "retailer_name": "Flipkart"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "_id": "594ce5d513256102d4e6d3b6",
+                                    "updatedAt": "2017-10-28T01:50:49.041Z",
+                                    "createdAt": "2017-06-23T09:56:37.590Z",
+                                    "__v": 0,
+                                    "internal_codes": {
+                                        "dual_sim_check": 1,
+                                        "four_g_check": 1,
+                                        "fingerprint_sensor_check": 1,
+                                        "search_status": -1,
+                                        "status": 111
+                                    },
+                                    "final_position": 4500,
+                                    "variants": [
+                                        "594ce5c113256102d4e6d30c",
+                                        "594ce6ec13256102d4e6dd1c"
+                                    ],
+                                    "product_tags": {
+                                        "gorilla_glass": false,
+                                        "bezel": false,
+                                        "gaming": false,
+                                        "waterproof": false,
+                                        "wireless_charging": false,
+                                        "dual_sim": true,
+                                        "four_g": false,
+                                        "fingerprint_sensor": false,
+                                        "top_rated": false,
+                                        "flagship": false,
+                                        "light_weight": false,
+                                        "best_display": false,
+                                        "best_processor": false,
+                                        "best_battery": false,
+                                        "best_camera": false,
+                                        "budget": false,
+                                        "latest": false,
+                                        "bestseller": false
+                                    },
+                                    "other_info": {
+                                        "video_call_support": "N/A",
+                                        "voice_input": "N/A",
+                                        "hands_free_status": "N/A"
+                                    },
+                                    "amazon_info": {
+                                        "parent_asin": "N/A"
+                                    },
+                                    "dimensions": {
+                                        "weight": "N/A",
+                                        "depth": "N/A",
+                                        "height": "N/A",
+                                        "width": "N/A"
+                                    },
+                                    "av_formats": {
+                                        "video": "N/A",
+                                        "audio": "N/A"
+                                    },
+                                    "warranty": "1 Year Manufacturer Warranty",
+                                    "sensors": "N/A",
+                                    "product_family": {
+                                        "variants": [
+                                            "MOBE82YZARWZXCZZ",
+                                            "MOBE82YZP459ZGY8"
+                                        ]
+                                    },
+                                    "image_urls": {
+                                        "large": "http://img.fkcdn.com/image/mobile/p/a/g/htc-desire-326g-ds-326g-800x800-imaebvgx4fdzvcxz.jpeg",
+                                        "medium": "http://img.fkcdn.com/image/mobile/p/a/g/htc-desire-326g-ds-326g-400x400-imaebvgx4fdzvcxz.jpeg",
+                                        "small": "http://img.fkcdn.com/image/mobile/p/a/g/htc-desire-326g-ds-326g-200x200-imaebvgx4fdzvcxz.jpeg"
+                                    },
+                                    "battery_power": {
+                                        "batteryVal": 2000,
+                                        "battery_type": "2000 mAh",
+                                        "removable_battery_status": "N/A",
+                                        "battery_capacity": "2000 mAh"
+                                    },
+                                    "connectivity": {
+                                        "audio_jack_width": "N/A",
+                                        "usb_connectivity": "N/A",
+                                        "nfc": "N/A",
+                                        "wifi": "N/A",
+                                        "bluetooth_version": "N/A",
+                                        "bluetooth_support": "N/A",
+                                        "internet_connectivity": "N/A",
+                                        "supported_networks": "UMTS, UMTS",
+                                        "network_type": "N/A"
+                                    },
+                                    "camera": {
+                                        "cameraVal": 8,
+                                        "dual_camera_lens_available": "N/A",
+                                        "video_recording_resolution": "N/A",
+                                        "video_recording_status": "N/A",
+                                        "full_hd_recording_status": "N/A",
+                                        "hd_recording_status": "N/A",
+                                        "flash": "N/A",
+                                        "secondary_camera_features": "N/A",
+                                        "secondary_camera_pixels": "N/A",
+                                        "secondary_camera": "N/A",
+                                        "primary_camera_features": "N/A",
+                                        "primary_camera_pixels": "8MP",
+                                        "primary_camera": "N/A"
+                                    },
+                                    "memory_storage": {
+                                        "storageVal": 8,
+                                        "ramVal": 1,
+                                        "expandable_storage": "N/A",
+                                        "ram": "1 GB",
+                                        "internal_storage": "8 GB"
+                                    },
+                                    "os_processor": {
+                                        "processor_speed_val": 1.2,
+                                        "processor_speed": "1.2 GHz",
+                                        "processor_core": "N/A",
+                                        "processor_type": "N/A",
+                                        "operating_system": "Android KitKat 4.4.2"
+                                    },
+                                    "display_specifications": {
+                                        "display_size_val": 4.5,
+                                        "touchscreen_status": "Yes",
+                                        "resolution_type": "FWVGA",
+                                        "resolution": "854 x 480 Pixels",
+                                        "display_colors": "N/A",
+                                        "display_type": "N/A",
+                                        "display_size": "4.5 inch"
+                                    },
+                                    "sim_features": {
+                                        "hybrid_sim_slot_status": "N/A",
+                                        "sim_size": "N/A",
+                                        "sim_type": "Dual Sim"
+                                    },
+                                    "sales_package": {
+                                        "contents": "Handset, Battery;;AC Adapter;;USB Sync Cable;;Headset;;Safety and Regulatory Guide;;Quick Start Guide;;Limited Warranty Statement;;Customer Care Card"
+                                    },
+                                    "general_specifications": {
+                                        "model_color": "Blue",
+                                        "model_number": "326G",
+                                        "model_name": "Desire 326G DS",
+                                        "features": [
+                                            "1 GB RAM | 8 GB ROM |",
+                                            "4.5 inch FWVGA Display",
+                                            "8MP Rear Camera",
+                                            "2000 mAh Battery"
+                                        ]
+                                    },
+                                    "product_basic_info": {
+                                        "normalized_name": "Htc Desire 326G DS",
+                                        "product_type": "Smartphones",
+                                        "productBrand_normalized": "Htc",
+                                        "productBrand": "HTC",
+                                        "description": "N/A",
+                                        "title": "HTC Desire 326G DS (Blue, 8 GB)(1 GB RAM)"
+                                    },
+                                    "anchor_retailer_id": 1,
+                                    "anchor_product_id": {
+                                        "uuid": "66ac1a50-5355-11e7-b593-2f7cb3e079c9"
+                                    },
+                                    "product_id": {
+                                        "uuid": "3f6fedf0-57fa-11e7-86b8-83b97069ec2a"
+                                    },
+                                    "product_retailers": [
+                                        {
+                                            "_id": "594ce5d513256102d4e6d3b7",
+                                            "seller_rating": {
+                                                "seller_number_of_reviews": 2,
+                                                "seller_number_of_ratings": 113,
+                                                "seller_average_rating": 3.2,
+                                                "seller_name": "syed mithiullah"
+                                            },
+                                            "delivery_details": {
+                                                "delivery_assured": false,
+                                                "cod": true,
+                                                "delivery_time": "N/A"
+                                            },
+                                            "offers": {
+                                                "exchange": {
+                                                    "exchange_offer_text": "N/A"
+                                                },
+                                                "emi": {
+                                                    "emi_val": 312,
+                                                    "emi_details": "EMI starting from ₹312/month"
+                                                },
+                                                "offer_details": []
+                                            },
+                                            "product_rating": {
+                                                "reviews_link": "N/A",
+                                                "number_of_reviews": 86,
+                                                "number_of_ratings": 807,
+                                                "rating_val": 3.6,
+                                                "rating_text": "N/A"
+                                            },
+                                            "product_pricing": {
+                                                "discount": 35,
+                                                "special_price": 6434,
+                                                "selling_price": 6499,
+                                                "mrp": 9900
+                                            },
+                                            "product_status": {
+                                                "available": false
+                                            },
+                                            "product_position": 4500,
+                                            "productURL": "http://dl.flipkart.com/dl/htc-desire-326g-ds-blue-8-gb/p/itmebvp36hgpwyuz?pid=MOBEBVP3VZPKWPAG&affid=apdhamija",
+                                            "product_id": {
+                                                "mobiles_db_uuid": "66ac1a50-5355-11e7-b593-2f7cb3e079c9",
+                                                "retailer_product_id": "MOBEBVP3VZPKWPAG"
+                                            },
+                                            "retailer_description": {
+                                                "retailer_id": 1,
+                                                "retailer_name": "Flipkart"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "_id": "594ce58113256102d4e6d0e6",
+                            "dimensions": {
+                                "weight": "N/A",
+                                "depth": "N/A",
+                                "height": "N/A",
+                                "width": "N/A"
+                            },
+                            "warranty": "N/A",
+                            "sensors": "N/A",
+                            "image_urls": {
+                                "large": "http://img.fkcdn.com/image/mobile/z/5/g/mi-redmi-note-na-800x800-imae6g4hv4bqfkcp.jpeg",
+                                "medium": "http://img.fkcdn.com/image/mobile/z/5/g/mi-redmi-note-na-400x400-imae6g4hv4bqfkcp.jpeg",
+                                "small": "http://img.fkcdn.com/image/mobile/z/5/g/mi-redmi-note-na-200x200-imae6g4hv4bqfkcp.jpeg"
+                            },
+                            "battery_power": {
+                                "battery_type": "N/A",
+                                "removable_battery_status": "N/A",
+                                "battery_capacity": "N/A",
+                                "batteryVal": 0
+                            },
+                            "connectivity": {
+                                "audio_jack_width": "N/A",
+                                "usb_connectivity": "N/A",
+                                "nfc": "N/A",
+                                "wifi": "N/A",
+                                "bluetooth_version": "N/A",
+                                "bluetooth_support": "N/A",
+                                "internet_connectivity": "N/A",
+                                "supported_networks": "GSM",
+                                "network_type": "N/A"
+                            },
+                            "camera": {
+                                "dual_camera_lens_available": "N/A",
+                                "video_recording_resolution": "N/A",
+                                "video_recording_status": "N/A",
+                                "full_hd_recording_status": "N/A",
+                                "hd_recording_status": "N/A",
+                                "flash": "N/A",
+                                "secondary_camera_features": "N/A",
+                                "secondary_camera_pixels": "N/A",
+                                "secondary_camera": "N/A",
+                                "primary_camera_features": "N/A",
+                                "primary_camera_pixels": "N/A",
+                                "primary_camera": "N/A"
+                            },
+                            "memory_storage": {
+                                "expandable_storage": "N/A",
+                                "ram": "N/A",
+                                "internal_storage": "N/A",
+                                "storageVal": 0
+                            },
+                            "os_processor": {
+                                "processor_speed": "N/A",
+                                "processor_core": "N/A",
+                                "processor_type": "N/A",
+                                "operating_system": "N/A",
+                                "processor_speed_val": 0
+                            },
+                            "display_specifications": {
+                                "touchscreen_status": "N/A",
+                                "resolution_type": "N/A",
+                                "resolution": "N/A",
+                                "display_colors": "N/A",
+                                "display_type": "N/A",
+                                "display_size": "N/A"
+                            },
+                            "sim_features": {
+                                "hybrid_sim_slot_status": "N/A",
+                                "sim_size": "N/A",
+                                "sim_type": "Single Sim"
+                            },
+                            "sales_package": {
+                                "contents": "N/A"
+                            },
+                            "general_specifications": {
+                                "model_color": "White",
+                                "features": [
+                                    "Display",
+                                    "Battery"
+                                ]
+                            },
+                            "product_basic_info": {
+                                "normalized_name": "Htc Radar",
+                                "product_type": "N/A",
+                                "productBrand_normalized": "Htc",
+                                "productBrand": "HTC",
+                                "description": "N/A",
+                                "title": "HTC Radar"
+                            },
+                            "product_retailers": [
+                                {
+                                    "_id": "594ce58113256102d4e6d0e7",
+                                    "seller_rating": {
+                                        "seller_number_of_reviews": 0,
+                                        "seller_number_of_ratings": 0,
+                                        "seller_name": "Satvinder Singh"
+                                    },
+                                    "delivery_details": {
+                                        "delivery_assured": true,
+                                        "cod": true,
+                                        "delivery_time": "N/A"
+                                    },
+                                    "offers": {
+                                        "exchange": {
+                                            "exchange_offer_text": "N/A"
+                                        },
+                                        "emi": {
+                                            "emi_val": 1615,
+                                            "emi_details": "EMI starting from ₹1615/month"
+                                        },
+                                        "offer_details": []
+                                    },
+                                    "product_rating": {
+                                        "reviews_link": "N/A",
+                                        "number_of_reviews": 0,
+                                        "number_of_ratings": 0,
+                                        "rating_val": 0,
+                                        "rating_text": "N/A"
+                                    },
+                                    "product_pricing": {
+                                        "discount": 0,
+                                        "special_price": 33293,
+                                        "selling_price": 33293,
+                                        "mrp": 33293
+                                    },
+                                    "product_status": {
+                                        "available": false
+                                    },
+                                    "product_position": 4815,
+                                    "productURL": "http://dl.flipkart.com/dl/htc-radar/p/itmdv6ezxawj3rzn?pid=MOBD7VJH4CFEMJNY&affid=apdhamija",
+                                    "product_id": {
+                                        "mobiles_db_uuid": "e5912630-5355-11e7-b593-2f7cb3e079c9",
+                                        "retailer_product_id": "MOBD7VJH4CFEMJNY"
+                                    },
+                                    "retailer_description": {
+                                        "retailer_id": 1,
+                                        "retailer_name": "Flipkart"
+                                    }
+                                }
+                            ],
+                            "variants": []
+                        },
+                        {
+                            "_id": "594ce58d13256102d4e6d158",
+                            "dimensions": {
+                                "weight": "N/A",
+                                "depth": "N/A",
+                                "height": "N/A",
+                                "width": "N/A"
+                            },
+                            "warranty": "1 Year Manufacturer Warranty",
+                            "sensors": "N/A",
+                            "image_urls": {
+                                "large": "http://img.fkcdn.com/image/mobile/j/f/s/htc-explorer-800x800-imad9yq4mw6abfv4.jpeg",
+                                "medium": "http://img.fkcdn.com/image/mobile/j/f/s/htc-explorer-400x400-imad9yq4mw6abfv4.jpeg",
+                                "small": "http://img.fkcdn.com/image/mobile/j/f/s/htc-explorer-200x200-imad9yq4mw6abfv4.jpeg"
+                            },
+                            "battery_power": {
+                                "battery_type": "N/A",
+                                "removable_battery_status": "N/A",
+                                "battery_capacity": "N/A",
+                                "batteryVal": 0
+                            },
+                            "connectivity": {
+                                "audio_jack_width": "N/A",
+                                "usb_connectivity": "N/A",
+                                "nfc": "N/A",
+                                "wifi": "N/A",
+                                "bluetooth_version": "N/A",
+                                "bluetooth_support": "N/A",
+                                "internet_connectivity": "N/A",
+                                "supported_networks": "GSM",
+                                "network_type": "N/A"
+                            },
+                            "camera": {
+                                "dual_camera_lens_available": "N/A",
+                                "video_recording_resolution": "N/A",
+                                "video_recording_status": "N/A",
+                                "full_hd_recording_status": "N/A",
+                                "hd_recording_status": "N/A",
+                                "flash": "N/A",
+                                "secondary_camera_features": "N/A",
+                                "secondary_camera_pixels": "N/A",
+                                "secondary_camera": "N/A",
+                                "primary_camera_features": "N/A",
+                                "primary_camera_pixels": "N/A",
+                                "primary_camera": "N/A"
+                            },
+                            "memory_storage": {
+                                "expandable_storage": "N/A",
+                                "ram": "N/A",
+                                "internal_storage": "N/A",
+                                "storageVal": 0
+                            },
+                            "os_processor": {
+                                "processor_speed": "N/A",
+                                "processor_core": "N/A",
+                                "processor_type": "N/A",
+                                "operating_system": "N/A",
+                                "processor_speed_val": 0
+                            },
+                            "display_specifications": {
+                                "touchscreen_status": "N/A",
+                                "resolution_type": "N/A",
+                                "resolution": "N/A",
+                                "display_colors": "N/A",
+                                "display_type": "N/A",
+                                "display_size": "N/A"
+                            },
+                            "sim_features": {
+                                "hybrid_sim_slot_status": "N/A",
+                                "sim_size": "N/A",
+                                "sim_type": "Single Sim"
+                            },
+                            "sales_package": {
+                                "contents": "N/A"
+                            },
+                            "general_specifications": {
+                                "model_color": "Royal",
+                                "features": [
+                                    "Display",
+                                    "Battery"
+                                ]
+                            },
+                            "product_basic_info": {
+                                "normalized_name": "Htc Explorer",
+                                "product_type": "N/A",
+                                "productBrand_normalized": "Htc",
+                                "productBrand": "HTC",
+                                "description": "N/A",
+                                "title": "HTC Explorer"
+                            },
+                            "product_retailers": [
+                                {
+                                    "_id": "594ce58d13256102d4e6d159",
+                                    "seller_rating": {
+                                        "seller_number_of_reviews": 0,
+                                        "seller_number_of_ratings": 0,
+                                        "seller_name": "Satvinder Singh"
+                                    },
+                                    "delivery_details": {
+                                        "delivery_assured": true,
+                                        "cod": true,
+                                        "delivery_time": "N/A"
+                                    },
+                                    "offers": {
+                                        "exchange": {
+                                            "exchange_offer_text": "N/A"
+                                        },
+                                        "emi": {
+                                            "emi_val": 381,
+                                            "emi_details": "EMI starting from ₹381/month"
+                                        },
+                                        "offer_details": []
+                                    },
+                                    "product_rating": {
+                                        "reviews_link": "N/A",
+                                        "number_of_reviews": 25,
+                                        "number_of_ratings": 128,
+                                        "rating_val": 4.5,
+                                        "rating_text": "N/A"
+                                    },
+                                    "product_pricing": {
+                                        "discount": 36,
+                                        "special_price": 7845,
+                                        "selling_price": 7845,
+                                        "mrp": 12290
+                                    },
+                                    "product_status": {
+                                        "available": false
+                                    },
+                                    "product_position": 5037,
+                                    "productURL": "http://dl.flipkart.com/dl/htc-explorer/p/itmd2krppkkeds2h?pid=MOBD3N7QEVGGMJFS&affid=apdhamija",
+                                    "product_id": {
+                                        "mobiles_db_uuid": "0867e950-5356-11e7-b593-2f7cb3e079c9",
+                                        "retailer_product_id": "MOBD3N7QEVGGMJFS"
+                                    },
+                                    "retailer_description": {
+                                        "retailer_id": 1,
+                                        "retailer_name": "Flipkart"
+                                    }
+                                }
+                            ],
+                            "variants": []
+                        },
+                        {
+                            "_id": "594ce58a13256102d4e6d140",
+                            "dimensions": {
+                                "weight": "127 g",
+                                "depth": "9.55 mm",
+                                "height": "134.9 mm",
+                                "width": "66.78 mm"
+                            },
+                            "warranty": "1 Year for Mobile & 6 Months for Accessories",
+                            "sensors": "N/A",
+                            "image_urls": {
+                                "large": "http://img.fkcdn.com/image/mobile/z/e/5/htc-desire-desire-600c-800x800-imadzmyhdwa3hgkq.jpeg",
+                                "medium": "http://img.fkcdn.com/image/mobile/z/e/5/htc-desire-desire-600c-400x400-imadzmyhdwa3hgkq.jpeg",
+                                "small": "http://img.fkcdn.com/image/mobile/z/e/5/htc-desire-desire-600c-200x200-imadzmyhdwa3hgkq.jpeg"
+                            },
+                            "battery_power": {
+                                "battery_type": "N/A",
+                                "removable_battery_status": "N/A",
+                                "battery_capacity": "1860 mAh",
+                                "batteryVal": 1860
+                            },
+                            "connectivity": {
+                                "audio_jack_width": "3.5 mm",
+                                "usb_connectivity": "Yes",
+                                "nfc": "Yes",
+                                "wifi": "Yes",
+                                "bluetooth_version": "4",
+                                "bluetooth_support": "Yes",
+                                "internet_connectivity": "GPRS, EDGE, Wi-Fi",
+                                "supported_networks": "GSM, CDMA",
+                                "network_type": "N/A"
+                            },
+                            "camera": {
+                                "dual_camera_lens_available": "N/A",
+                                "video_recording_resolution": "720 x 1280",
+                                "video_recording_status": "Yes",
+                                "full_hd_recording_status": "N/A",
+                                "hd_recording_status": "Yes",
+                                "flash": "N/A",
+                                "secondary_camera_features": "N/A",
+                                "secondary_camera_pixels": "1.6MP",
+                                "secondary_camera": "Yes",
+                                "primary_camera_features": "Primary Camera: Auto Focus, BSI Sensor, F2.0 Aperture and 28 mm Lens, HTC Image Chip, Continuous Shooting, HTC Video Pic, Light Sensitivity, High Burst Mode, Crystal Clear Images in Low Light, Low Light Shots <p> Secondary Camera: BSI Sensor, HTC Share, Gallery with Video Highlights, 30 Second Video Show, Self-portrait",
+                                "primary_camera_pixels": "8MP",
+                                "primary_camera": "Yes",
+                                "cameraVal": 8
+                            },
+                            "memory_storage": {
+                                "expandable_storage": "64 GB",
+                                "ram": "1 GB",
+                                "internal_storage": "8 GB",
+                                "storageVal": 8,
+                                "ramVal": 1
+                            },
+                            "os_processor": {
+                                "processor_speed": "1.2 GHz",
+                                "processor_core": "Quad Core",
+                                "processor_type": "Qualcomm Snapdragon",
+                                "operating_system": "Android Jelly Bean",
+                                "processor_speed_val": 1.2
+                            },
+                            "display_specifications": {
+                                "touchscreen_status": "N/A",
+                                "resolution_type": "quarter HD",
+                                "resolution": "960 x 540 Pixels",
+                                "display_colors": "N/A",
+                                "display_type": "Super LCD 2",
+                                "display_size": "4.5 inch",
+                                "display_size_val": 4.5
+                            },
+                            "sim_features": {
+                                "hybrid_sim_slot_status": "N/A",
+                                "sim_size": "Micro SIM",
+                                "sim_type": "Dual Sim"
+                            },
+                            "sales_package": {
+                                "contents": "N/A"
+                            },
+                            "general_specifications": {
+                                "model_color": "Black",
+                                "features": [
+                                    "1 GB RAM | 8 GB ROM | Expandable Upto 64 GB",
+                                    "4.5 inch quarter HD Display",
+                                    "8MP Rear Camera | 1.6MP Front Camera",
+                                    "1860 mAh Battery",
+                                    "Qualcomm Snapdragon Processor"
+                                ]
+                            },
+                            "product_basic_info": {
+                                "normalized_name": "Htc Desire 600C",
+                                "product_type": "Smartphones",
+                                "productBrand_normalized": "Htc",
+                                "productBrand": "HTC",
+                                "description": "N/A",
+                                "title": "HTC Desire 600C (Black, 8 GB)(1 GB RAM)"
+                            },
+                            "product_retailers": [
+                                {
+                                    "_id": "594ce58a13256102d4e6d141",
+                                    "seller_rating": {
+                                        "seller_number_of_reviews": 0,
+                                        "seller_number_of_ratings": 0,
+                                        "seller_name": "Shreyash Retail Private Ltd"
+                                    },
+                                    "delivery_details": {
+                                        "delivery_assured": true,
+                                        "cod": true,
+                                        "delivery_time": "N/A"
+                                    },
+                                    "offers": {
+                                        "exchange": {
+                                            "exchange_offer_text": "N/A"
+                                        },
+                                        "emi": {
+                                            "emi_val": 1387,
+                                            "emi_details": "EMI starting from ₹1387/month"
+                                        },
+                                        "offer_details": []
+                                    },
+                                    "product_rating": {
+                                        "reviews_link": "N/A",
+                                        "number_of_reviews": 12,
+                                        "number_of_ratings": 46,
+                                        "rating_val": 2.7,
+                                        "rating_text": "N/A"
+                                    },
+                                    "product_pricing": {
+                                        "discount": 0,
+                                        "special_price": 28599,
+                                        "selling_price": 28599,
+                                        "mrp": 28599
+                                    },
+                                    "product_status": {
+                                        "available": false
+                                    },
+                                    "product_position": 4969,
+                                    "productURL": "http://dl.flipkart.com/dl/htc-desire-600c-black-8-gb/p/itme5hwmcguhh3ez?pid=MOBDZMYHZBXCKZE5&affid=apdhamija",
+                                    "product_id": {
+                                        "mobiles_db_uuid": "02c49520-5356-11e7-b593-2f7cb3e079c9",
+                                        "retailer_product_id": "MOBDZMYHZBXCKZE5"
+                                    },
+                                    "retailer_description": {
+                                        "retailer_id": 1,
+                                        "retailer_name": "Flipkart"
+                                    }
+                                }
+                            ],
+                            "variants": []
+                        },
+                        {
+                            "_id": "594ce57713256102d4e6d084",
+                            "dimensions": {
+                                "weight": "N/A",
+                                "depth": "N/A",
+                                "height": "N/A",
+                                "width": "N/A"
+                            },
+                            "warranty": "1 Year Manufacturer Warranty",
+                            "sensors": "N/A",
+                            "image_urls": {
+                                "large": "http://img.fkcdn.com//image/mobile/h/r/s/htc-a6363-800x800-imad2sbwrqzgqxwn.jpeg",
+                                "medium": "http://img.fkcdn.com//image/mobile/h/r/s/htc-a6363-400x400-imad2sbwrqzgqxwn.jpeg",
+                                "small": "http://img.fkcdn.com//image/mobile/h/r/s/htc-a6363-200x200-imad2sbwrqzgqxwn.jpeg"
+                            },
+                            "battery_power": {
+                                "battery_type": "N/A",
+                                "removable_battery_status": "N/A",
+                                "battery_capacity": "N/A",
+                                "batteryVal": 0
+                            },
+                            "connectivity": {
+                                "audio_jack_width": "N/A",
+                                "usb_connectivity": "N/A",
+                                "nfc": "N/A",
+                                "wifi": "N/A",
+                                "bluetooth_version": "N/A",
+                                "bluetooth_support": "N/A",
+                                "internet_connectivity": "N/A",
+                                "supported_networks": "GSM",
+                                "network_type": "N/A"
+                            },
+                            "camera": {
+                                "dual_camera_lens_available": "N/A",
+                                "video_recording_resolution": "N/A",
+                                "video_recording_status": "N/A",
+                                "full_hd_recording_status": "N/A",
+                                "hd_recording_status": "N/A",
+                                "flash": "N/A",
+                                "secondary_camera_features": "N/A",
+                                "secondary_camera_pixels": "N/A",
+                                "secondary_camera": "N/A",
+                                "primary_camera_features": "N/A",
+                                "primary_camera_pixels": "N/A",
+                                "primary_camera": "N/A"
+                            },
+                            "memory_storage": {
+                                "expandable_storage": "N/A",
+                                "ram": "N/A",
+                                "internal_storage": "N/A",
+                                "storageVal": 0
+                            },
+                            "os_processor": {
+                                "processor_speed": "N/A",
+                                "processor_core": "N/A",
+                                "processor_type": "N/A",
+                                "operating_system": "N/A",
+                                "processor_speed_val": 0
+                            },
+                            "display_specifications": {
+                                "touchscreen_status": "N/A",
+                                "resolution_type": "N/A",
+                                "resolution": "N/A",
+                                "display_colors": "N/A",
+                                "display_type": "N/A",
+                                "display_size": "N/A"
+                            },
+                            "sim_features": {
+                                "hybrid_sim_slot_status": "N/A",
+                                "sim_size": "N/A",
+                                "sim_type": "Single Sim"
+                            },
+                            "sales_package": {
+                                "contents": "N/A"
+                            },
+                            "general_specifications": {
+                                "model_color": "Red",
+                                "features": [
+                                    "Display",
+                                    "Battery"
+                                ]
+                            },
+                            "product_basic_info": {
+                                "normalized_name": "Htc A6363",
+                                "product_type": "N/A",
+                                "productBrand_normalized": "Htc",
+                                "productBrand": "HTC",
+                                "description": "N/A",
+                                "title": "HTC A6363"
+                            },
+                            "product_retailers": [
+                                {
+                                    "_id": "594ce57713256102d4e6d085",
+                                    "seller_rating": {
+                                        "seller_number_of_reviews": 0,
+                                        "seller_number_of_ratings": 0,
+                                        "seller_name": "Satvinder Singh"
+                                    },
+                                    "delivery_details": {
+                                        "delivery_assured": true,
+                                        "cod": true,
+                                        "delivery_time": "N/A"
+                                    },
+                                    "offers": {
+                                        "exchange": {
+                                            "exchange_offer_text": "N/A"
+                                        },
+                                        "emi": {
+                                            "emi_val": 1450,
+                                            "emi_details": "EMI starting from ₹1450/month"
+                                        },
+                                        "offer_details": []
+                                    },
+                                    "product_rating": {
+                                        "reviews_link": "N/A",
+                                        "number_of_reviews": 0,
+                                        "number_of_ratings": 2,
+                                        "rating_val": 4,
+                                        "rating_text": "N/A"
+                                    },
+                                    "product_pricing": {
+                                        "discount": 0,
+                                        "special_price": 29900,
+                                        "selling_price": 29900,
+                                        "mrp": 29900
+                                    },
+                                    "product_status": {
+                                        "available": false
+                                    },
+                                    "product_position": 4929,
+                                    "productURL": "http://dl.flipkart.com/dl/htc-a6363/p/itmczq5buvgcfsar?pid=MOBCZQ5DPFHHAHRS&affid=apdhamija",
+                                    "product_id": {
+                                        "mobiles_db_uuid": "c1b01f00-5355-11e7-b593-2f7cb3e079c9",
+                                        "retailer_product_id": "MOBCZQ5DPFHHAHRS"
+                                    },
+                                    "retailer_description": {
+                                        "retailer_id": 1,
+                                        "retailer_name": "Flipkart"
+                                    }
+                                }
+                            ],
+                            "variants": []
+                        },
+                        {
+                            "_id": "594ce55313256102d4e6cf32",
+                            "dimensions": {
+                                "weight": "123 g",
+                                "depth": "9.9 mm",
+                                "height": "131.8 mm",
+                                "width": "66.9 mm"
+                            },
+                            "warranty": "1 Year for Mobile & 6 Months for Accessories",
+                            "sensors": "Ambient Light Sensor, Proximity Sensor, Accelerometer",
+                            "image_urls": {
+                                "large": "http://img.fkcdn.com/image/mobile/2/k/j/htc-desire-500-800x800-imadpdbyjgxnthrj.jpeg",
+                                "medium": "http://img.fkcdn.com/image/mobile/2/k/j/htc-desire-500-400x400-imadpdbyjgxnthrj.jpeg",
+                                "small": "http://img.fkcdn.com/image/mobile/2/k/j/htc-desire-500-200x200-imadpdbyjgxnthrj.jpeg"
+                            },
+                            "battery_power": {
+                                "battery_type": "Li-Polymer",
+                                "removable_battery_status": "N/A",
+                                "battery_capacity": "1800 mAh",
+                                "batteryVal": 1800
+                            },
+                            "connectivity": {
+                                "audio_jack_width": "3.5 mm",
+                                "usb_connectivity": "N/A",
+                                "nfc": "No",
+                                "wifi": "Yes",
+                                "bluetooth_version": "4",
+                                "bluetooth_support": "Yes",
+                                "internet_connectivity": "GPRS, EDGE, 3G, Wi-Fi",
+                                "supported_networks": "GSM, GSM",
+                                "network_type": "3G"
+                            },
+                            "camera": {
+                                "dual_camera_lens_available": "N/A",
+                                "video_recording_resolution": "720 x 1280",
+                                "video_recording_status": "Yes",
+                                "full_hd_recording_status": "N/A",
+                                "hd_recording_status": "Yes",
+                                "flash": "LED",
+                                "secondary_camera_features": "N/A",
+                                "secondary_camera_pixels": "1.6MP",
+                                "secondary_camera": "Yes",
+                                "primary_camera_features": "Primary Camera: Auto Focus, Continuous Shoot and Video Pic, HTC Image Chip, BSI Sensor, HTC Share, Slow Motion Video Recording with Variable Speed Playback, Multi-shot Mode, Burst Mode, Rapid Fire Shutter <p> Secondary Camera: BSI Sensor",
+                                "primary_camera_pixels": "8MP",
+                                "primary_camera": "Yes",
+                                "cameraVal": 8
+                            },
+                            "memory_storage": {
+                                "expandable_storage": "64 GB",
+                                "ram": "1 GB",
+                                "internal_storage": "4 GB",
+                                "storageVal": 4,
+                                "ramVal": 1
+                            },
+                            "os_processor": {
+                                "processor_speed": "1.2 GHz",
+                                "processor_core": "Quad Core",
+                                "processor_type": "Qualcomm Snapdragon 200",
+                                "operating_system": "Android 4.1.2",
+                                "processor_speed_val": 1.2
+                            },
+                            "display_specifications": {
+                                "touchscreen_status": "N/A",
+                                "resolution_type": "WVGA",
+                                "resolution": "480 x 800 Pixels",
+                                "display_colors": "N/A",
+                                "display_type": "N/A",
+                                "display_size": "4.3 inch",
+                                "display_size_val": 4.3
+                            },
+                            "sim_features": {
+                                "hybrid_sim_slot_status": "N/A",
+                                "sim_size": "Micro SIM",
+                                "sim_type": "Dual Sim"
+                            },
+                            "sales_package": {
+                                "contents": "N/A"
+                            },
+                            "general_specifications": {
+                                "model_color": "Glacier Blue",
+                                "features": [
+                                    "1 GB RAM | 4 GB ROM | Expandable Upto 64 GB",
+                                    "4.3 inch WVGA Display",
+                                    "8MP Rear Camera | 1.6MP Front Camera",
+                                    "1800 mAh Li-Polymer Battery",
+                                    "Qualcomm Snapdragon 200 Processor"
+                                ]
+                            },
+                            "product_basic_info": {
+                                "normalized_name": "Htc Desire 500 Dual Sim",
+                                "product_type": "Smartphones",
+                                "productBrand_normalized": "Htc",
+                                "productBrand": "HTC",
+                                "description": "N/A",
+                                "title": "HTC Desire 500 Dual Sim (Glacier Blue, 4 GB)(1 GB RAM)"
+                            },
+                            "product_retailers": [
+                                {
+                                    "_id": "594ce55313256102d4e6cf33",
+                                    "seller_rating": {
+                                        "seller_number_of_reviews": 1561,
+                                        "seller_number_of_ratings": 62670,
+                                        "seller_average_rating": 4,
+                                        "seller_name": "Consulting Rooms Private Ltd"
+                                    },
+                                    "delivery_details": {
+                                        "delivery_assured": true,
+                                        "cod": true,
+                                        "delivery_time": "N/A"
+                                    },
+                                    "offers": {
+                                        "exchange": {
+                                            "exchange_offer_text": "N/A"
+                                        },
+                                        "emi": {
+                                            "emi_val": 788,
+                                            "emi_details": "EMI starting from ₹788/month"
+                                        },
+                                        "offer_details": []
+                                    },
+                                    "product_rating": {
+                                        "reviews_link": "N/A",
+                                        "number_of_reviews": 83,
+                                        "number_of_ratings": 213,
+                                        "rating_val": 4,
+                                        "rating_text": "N/A"
+                                    },
+                                    "product_pricing": {
+                                        "discount": 23,
+                                        "special_price": 16244,
+                                        "selling_price": 16244,
+                                        "mrp": 21299
+                                    },
+                                    "product_status": {
+                                        "available": false
+                                    },
+                                    "product_position": 3363,
+                                    "productURL": "http://dl.flipkart.com/dl/htc-desire-500-dual-sim-glacier-blue-4-gb/p/itmeuyd8g9jb6uuv?pid=MOBDPA8HKVHHN2KJ&affid=apdhamija",
+                                    "product_id": {
+                                        "mobiles_db_uuid": "1a5ee910-5356-11e7-b593-2f7cb3e079c9",
+                                        "retailer_product_id": "MOBDPA8HKVHHN2KJ"
+                                    },
+                                    "retailer_description": {
+                                        "retailer_id": 1,
+                                        "retailer_name": "Flipkart"
+                                    }
+                                }
+                            ],
+                            "variants": []
+                        },
+                        {
+                            "_id": "594ce55013256102d4e6cf0c",
+                            "dimensions": {
+                                "weight": "186 g",
+                                "depth": "7.99 mm",
+                                "height": "N/A",
+                                "width": "N/A"
+                            },
+                            "warranty": "1 Year Manufacturer Warranty",
+                            "sensors": "Magnetic Sensor, Accelerometer, Proximity Sensor, Ambient Light Sensor, Compass Sensor",
+                            "image_urls": {
+                                "large": "http://img.fkcdn.com/image/mobile/v/p/2/htc-desire-826x-cdma-gsm-desire-826x-800x800-imae8vhgpx6hjspg.jpeg",
+                                "medium": "http://img.fkcdn.com/image/mobile/v/p/2/htc-desire-826x-cdma-gsm-desire-826x-400x400-imae8vhgpx6hjspg.jpeg",
+                                "small": "http://img.fkcdn.com/image/mobile/v/p/2/htc-desire-826x-cdma-gsm-desire-826x-200x200-imae8vhgpx6hjspg.jpeg"
+                            },
+                            "battery_power": {
+                                "battery_type": "Li-Po",
+                                "removable_battery_status": "No",
+                                "battery_capacity": "2600 mAh",
+                                "batteryVal": 2600
+                            },
+                            "connectivity": {
+                                "audio_jack_width": "3.5 MM",
+                                "usb_connectivity": "Yes",
+                                "nfc": "N/A",
+                                "wifi": "Yes",
+                                "bluetooth_version": "v4.0, EDR, A2DP, aptX",
+                                "bluetooth_support": "Yes",
+                                "internet_connectivity": "N/A",
+                                "supported_networks": "4G LTE, GSM",
+                                "network_type": "4G, 3G"
+                            },
+                            "camera": {
+                                "dual_camera_lens_available": "N/A",
+                                "video_recording_resolution": "N/A",
+                                "video_recording_status": "Yes",
+                                "full_hd_recording_status": "N/A",
+                                "hd_recording_status": "N/A",
+                                "flash": "Yes",
+                                "secondary_camera_features": "N/A",
+                                "secondary_camera_pixels": "N/A",
+                                "secondary_camera": "N/A",
+                                "primary_camera_features": "BSI Sensor, f/2.2, 28 mm Wide-angle Lens, Auto Focus, Voice Control Snaps, Image Editor",
+                                "primary_camera_pixels": "13MP",
+                                "primary_camera": "Yes",
+                                "cameraVal": 13
+                            },
+                            "memory_storage": {
+                                "expandable_storage": "128 GB",
+                                "ram": "2 GB",
+                                "internal_storage": "16 GB",
+                                "storageVal": 16,
+                                "ramVal": 2
+                            },
+                            "os_processor": {
+                                "processor_speed": "1.7 GHz",
+                                "processor_core": "Octa Core",
+                                "processor_type": "N/A",
+                                "operating_system": "Android Lollipop 5",
+                                "processor_speed_val": 1.7
+                            },
+                            "display_specifications": {
+                                "touchscreen_status": "Yes",
+                                "resolution_type": "Full HD",
+                                "resolution": "1080 x 1920 pixels",
+                                "display_colors": "N/A",
+                                "display_type": "IPS LCD",
+                                "display_size": "N/A"
+                            },
+                            "sim_features": {
+                                "hybrid_sim_slot_status": "N/A",
+                                "sim_size": "N/A",
+                                "sim_type": "Dual Sim"
+                            },
+                            "sales_package": {
+                                "contents": "Mobile, Head Phones, Data Cable, Charger"
+                            },
+                            "general_specifications": {
+                                "model_color": "White Birch",
+                                "features": [
+                                    "2 GB RAM | 16 GB ROM | Expandable Upto 128 GB",
+                                    "Full HD Display",
+                                    "13MP Rear Camera",
+                                    "2600 mAh Battery"
+                                ]
+                            },
+                            "product_basic_info": {
+                                "normalized_name": "Htc Desire 826X CDMA+GSM",
+                                "product_type": "Smartphones",
+                                "productBrand_normalized": "Htc",
+                                "productBrand": "HTC",
+                                "description": "N/A",
+                                "title": "HTC Desire 826X CDMA+GSM (White Birch, 16 GB)(2 GB RAM)"
+                            },
+                            "product_retailers": [
+                                {
+                                    "_id": "594ce55013256102d4e6cf0d",
+                                    "seller_rating": {
+                                        "seller_number_of_reviews": 35,
+                                        "seller_number_of_ratings": 422,
+                                        "seller_average_rating": 3.7,
+                                        "seller_name": "Jayant Bajoria"
+                                    },
+                                    "delivery_details": {
+                                        "delivery_assured": false,
+                                        "cod": true,
+                                        "delivery_time": "Usually Delivered in 5 - 6 days."
+                                    },
+                                    "offers": {
+                                        "exchange": {
+                                            "exchange_offer_text": "N/A"
+                                        },
+                                        "emi": {
+                                            "emi_val": 848,
+                                            "emi_details": "EMI starting from ₹848/month"
+                                        },
+                                        "offer_details": []
+                                    },
+                                    "product_rating": {
+                                        "reviews_link": "N/A",
+                                        "number_of_reviews": 11,
+                                        "number_of_ratings": 20,
+                                        "rating_val": 3.4,
+                                        "rating_text": "N/A"
+                                    },
+                                    "product_pricing": {
+                                        "discount": 39,
+                                        "special_price": 17489,
+                                        "selling_price": 17489,
+                                        "mrp": 28990
+                                    },
+                                    "product_status": {
+                                        "available": true
+                                    },
+                                    "product_position": 1055,
+                                    "productURL": "http://dl.flipkart.com/dl/htc-desire-826x-cdma-gsm-white-birch-16-gb/p/itme8vqhgpysjhek?pid=MOBE8VQHXPP6YVP2&affid=apdhamija",
+                                    "product_id": {
+                                        "mobiles_db_uuid": "750e3e10-5356-11e7-b593-2f7cb3e079c9",
+                                        "retailer_product_id": "MOBE8VQHXPP6YVP2"
+                                    },
+                                    "retailer_description": {
+                                        "retailer_id": 1,
+                                        "retailer_name": "Flipkart"
+                                    }
+                                }
+                            ],
+                            "variants": []
+                        },
+                        {
+                            "_id": "594ce55413256102d4e6cf40",
+                            "dimensions": {
+                                "weight": "113 g",
+                                "depth": "10.28 mm",
+                                "height": "120.5 mm",
+                                "width": "63 mm"
+                            },
+                            "warranty": "1 Year for Mobile & 6 Months for Accessories",
+                            "sensors": "Accelerometer, Ambient Light Sensor, G-Sensor, Proximity Sensor",
+                            "image_urls": {
+                                "large": "http://img.fkcdn.com/image/mobile/q/n/m/htc-a620e-8s-800x800-imadh438rhsypwxq.jpeg",
+                                "medium": "http://img.fkcdn.com/image/mobile/q/n/m/htc-a620e-8s-400x400-imadh438rhsypwxq.jpeg",
+                                "small": "http://img.fkcdn.com/image/mobile/q/n/m/htc-a620e-8s-200x200-imadh438rhsypwxq.jpeg"
+                            },
+                            "battery_power": {
+                                "battery_type": "Li-Polymer",
+                                "removable_battery_status": "N/A",
+                                "battery_capacity": "1700 mAh",
+                                "batteryVal": 1700
+                            },
+                            "connectivity": {
+                                "audio_jack_width": "3.5 mm",
+                                "usb_connectivity": "N/A",
+                                "nfc": "No",
+                                "wifi": "Yes",
+                                "bluetooth_version": "3.1",
+                                "bluetooth_support": "Yes",
+                                "internet_connectivity": "GPRS, EDGE, Wi-Fi, 3G",
+                                "supported_networks": "GSM",
+                                "network_type": "3G"
+                            },
+                            "camera": {
+                                "dual_camera_lens_available": "N/A",
+                                "video_recording_resolution": "1280 x 720",
+                                "video_recording_status": "Yes",
+                                "full_hd_recording_status": "N/A",
+                                "hd_recording_status": "Yes",
+                                "flash": "LED",
+                                "secondary_camera_features": "N/A",
+                                "secondary_camera_pixels": "N/A",
+                                "secondary_camera": "No",
+                                "primary_camera_features": "Rear Facing, Auto Focus, Touch Focus",
+                                "primary_camera_pixels": "5MP",
+                                "primary_camera": "Yes",
+                                "cameraVal": 5
+                            },
+                            "memory_storage": {
+                                "expandable_storage": "32 GB",
+                                "ram": "512 MB",
+                                "internal_storage": "4 GB",
+                                "storageVal": 4,
+                                "ramVal": 0.5
+                            },
+                            "os_processor": {
+                                "processor_speed": "1 GHz",
+                                "processor_core": "Dual Core",
+                                "processor_type": "Qualcomm Snapdragon S4",
+                                "operating_system": "Windows 8",
+                                "processor_speed_val": 1
+                            },
+                            "display_specifications": {
+                                "touchscreen_status": "N/A",
+                                "resolution_type": "WVGA",
+                                "resolution": "480 x 800 Pixels",
+                                "display_colors": "16 M",
+                                "display_type": "Super LCD 2",
+                                "display_size": "4 inch",
+                                "display_size_val": 4
+                            },
+                            "sim_features": {
+                                "hybrid_sim_slot_status": "N/A",
+                                "sim_size": "Micro SIM",
+                                "sim_type": "Single Sim"
+                            },
+                            "sales_package": {
+                                "contents": "Headset, Battery, USB Cable, Warranty Card, Handset, Charger, User Manual"
+                            },
+                            "general_specifications": {
+                                "model_color": "Atlantic Blue",
+                                "features": [
+                                    "512 MB RAM | 4 GB ROM | Expandable Upto 32 GB",
+                                    "4 inch WVGA Display",
+                                    "5MP Rear Camera",
+                                    "1700 mAh Li-Po Battery",
+                                    "Qualcomm Snapdragon S4 Processor"
+                                ]
+                            },
+                            "product_basic_info": {
+                                "normalized_name": "Htc 8S A620E",
+                                "product_type": "Smartphones",
+                                "productBrand_normalized": "Htc",
+                                "productBrand": "HTC",
+                                "description": "N/A",
+                                "title": "HTC 8S A620E (Atlantic Blue, 4 GB)(512 MB RAM)"
+                            },
+                            "product_retailers": [
+                                {
+                                    "_id": "594ce55413256102d4e6cf41",
+                                    "seller_rating": {
+                                        "seller_number_of_reviews": 0,
+                                        "seller_number_of_ratings": 0,
+                                        "seller_name": "Satvinder Singh"
+                                    },
+                                    "delivery_details": {
+                                        "delivery_assured": true,
+                                        "cod": true,
+                                        "delivery_time": "N/A"
+                                    },
+                                    "offers": {
+                                        "exchange": {
+                                            "exchange_offer_text": "N/A"
+                                        },
+                                        "emi": {
+                                            "emi_val": 1067,
+                                            "emi_details": "EMI starting from ₹1067/month"
+                                        },
+                                        "offer_details": []
+                                    },
+                                    "product_rating": {
+                                        "reviews_link": "N/A",
+                                        "number_of_reviews": 39,
+                                        "number_of_ratings": 133,
+                                        "rating_val": 3.7,
+                                        "rating_text": "N/A"
+                                    },
+                                    "product_pricing": {
+                                        "discount": 0,
+                                        "special_price": 21999,
+                                        "selling_price": 21999,
+                                        "mrp": 21999
+                                    },
+                                    "product_status": {
+                                        "available": false
+                                    },
+                                    "product_position": 4948,
+                                    "productURL": "http://dl.flipkart.com/dl/htc-8s-a620e-atlantic-blue-4-gb/p/itme7rwdgrgbfntu?pid=MOBDGAPNG7CZXQNM&affid=apdhamija",
+                                    "product_id": {
+                                        "mobiles_db_uuid": "1cd2cf40-5356-11e7-b593-2f7cb3e079c9",
+                                        "retailer_product_id": "MOBDGAPNG7CZXQNM"
+                                    },
+                                    "retailer_description": {
+                                        "retailer_id": 1,
+                                        "retailer_name": "Flipkart"
+                                    }
+                                }
+                            ],
+                            "variants": []
+                        },
+                        {
+                            "_id": "594ce58b13256102d4e6d14e",
+                            "dimensions": {
+                                "weight": "151 g",
+                                "depth": "11.3 mm",
+                                "height": "126.1 mm",
+                                "width": "65.4 mm"
+                            },
+                            "warranty": "1 Year for Mobile & 6 Months for Accessories",
+                            "sensors": "Accelerometer, Proximity Sensor, Gyro Sensor, Ambient Light Sensor, Digital Compass",
+                            "image_urls": {
+                                "large": "http://img.fkcdn.com//image/mobile/x/z/x/htc-sensation-xe-800x800-imad2b7frsak3gfr.jpeg",
+                                "medium": "http://img.fkcdn.com//image/mobile/x/z/x/htc-sensation-xe-400x400-imad2b7frsak3gfr.jpeg",
+                                "small": "http://img.fkcdn.com//image/mobile/x/z/x/htc-sensation-xe-200x200-imad2b7frsak3gfr.jpeg"
+                            },
+                            "battery_power": {
+                                "battery_type": "Li-Ion",
+                                "removable_battery_status": "N/A",
+                                "battery_capacity": "1730 mAh",
+                                "batteryVal": 1730
+                            },
+                            "connectivity": {
+                                "audio_jack_width": "3.5 mm",
+                                "usb_connectivity": "Yes",
+                                "nfc": "No",
+                                "wifi": "Yes",
+                                "bluetooth_version": "3",
+                                "bluetooth_support": "Yes",
+                                "internet_connectivity": "GPRS, EDGE, Wi-Fi, 3G, WAP",
+                                "supported_networks": "UMTS",
+                                "network_type": "3G"
+                            },
+                            "camera": {
+                                "dual_camera_lens_available": "N/A",
+                                "video_recording_resolution": "1920 x 1080",
+                                "video_recording_status": "Yes",
+                                "full_hd_recording_status": "Yes",
+                                "hd_recording_status": "Yes",
+                                "flash": "Dual LED",
+                                "secondary_camera_features": "Fixed Focus",
+                                "secondary_camera_pixels": "0.3MP",
+                                "secondary_camera": "Yes",
+                                "primary_camera_features": "Geo-tagging, Touch Focus, Face Detection, Instant Capture, Auto Focus, Image Stabilization",
+                                "primary_camera_pixels": "8MP",
+                                "primary_camera": "Yes",
+                                "cameraVal": 8
+                            },
+                            "memory_storage": {
+                                "expandable_storage": "32 GB",
+                                "ram": "768 MB",
+                                "internal_storage": "1 GB",
+                                "storageVal": 1,
+                                "ramVal": 0.75
+                            },
+                            "os_processor": {
+                                "processor_speed": "1.5 GHz",
+                                "processor_core": "Dual Core",
+                                "processor_type": "Qualcomm Scorpion",
+                                "operating_system": "Android Gingerbread 2.3",
+                                "processor_speed_val": 1.5
+                            },
+                            "display_specifications": {
+                                "touchscreen_status": "N/A",
+                                "resolution_type": "quarter HD",
+                                "resolution": "960 x 540 Pixels",
+                                "display_colors": "16 M",
+                                "display_type": "N/A",
+                                "display_size": "4.3 inch",
+                                "display_size_val": 4.3
+                            },
+                            "sim_features": {
+                                "hybrid_sim_slot_status": "N/A",
+                                "sim_size": "N/A",
+                                "sim_type": "Single Sim"
+                            },
+                            "sales_package": {
+                                "contents": "Handset, Battery (Li-ion) 1730 mAh, Beats Headset, Charger, Data Cable, User Guide"
+                            },
+                            "general_specifications": {
+                                "model_color": "Black",
+                                "features": [
+                                    "768 MB RAM | 1 GB ROM | Expandable Upto 32 GB",
+                                    "4.3 inch quarter HD Display",
+                                    "8MP Rear Camera | 0.3MP Front Camera",
+                                    "1730 mAh Li-Ion Battery",
+                                    "Qualcomm Scorpion Processor"
+                                ]
+                            },
+                            "product_basic_info": {
+                                "normalized_name": "Htc Sensation XE",
+                                "product_type": "Smartphones",
+                                "productBrand_normalized": "Htc",
+                                "productBrand": "HTC",
+                                "description": "N/A",
+                                "title": "HTC Sensation XE (Black, 1 GB)(768 MB RAM)"
+                            },
+                            "product_retailers": [
+                                {
+                                    "_id": "594ce58b13256102d4e6d14f",
+                                    "seller_rating": {
+                                        "seller_number_of_reviews": 0,
+                                        "seller_number_of_ratings": 0,
+                                        "seller_name": "Satvinder Singh"
+                                    },
+                                    "delivery_details": {
+                                        "delivery_assured": true,
+                                        "cod": true,
+                                        "delivery_time": "N/A"
+                                    },
+                                    "offers": {
+                                        "exchange": {
+                                            "exchange_offer_text": "N/A"
+                                        },
+                                        "emi": {
+                                            "emi_val": 1033,
+                                            "emi_details": "EMI starting from ₹1033/month"
+                                        },
+                                        "offer_details": []
+                                    },
+                                    "product_rating": {
+                                        "reviews_link": "N/A",
+                                        "number_of_reviews": 58,
+                                        "number_of_ratings": 200,
+                                        "rating_val": 4.4,
+                                        "rating_text": "N/A"
+                                    },
+                                    "product_pricing": {
+                                        "discount": 40,
+                                        "special_price": 21294,
+                                        "selling_price": 21294,
+                                        "mrp": 35490
+                                    },
+                                    "product_status": {
+                                        "available": false
+                                    },
+                                    "product_position": 4905,
+                                    "productURL": "http://dl.flipkart.com/dl/htc-sensation-xe-black-1-gb/p/itmdv6eszgvhx3p9?pid=MOBD2B7FGHE8DXZX&affid=apdhamija",
+                                    "product_id": {
+                                        "mobiles_db_uuid": "067ba9b0-5356-11e7-b593-2f7cb3e079c9",
+                                        "retailer_product_id": "MOBD2B7FGHE8DXZX"
+                                    },
+                                    "retailer_description": {
+                                        "retailer_id": 1,
+                                        "retailer_name": "Flipkart"
+                                    }
+                                }
+                            ],
+                            "variants": []
+                        }
+                    ],
+                    "attribute_requested": []
+                }
+            ],
+            "suggested_questions": [
+                {
+                    "displayText": "Compare Htc phones",
+                    "vinciText": "Compare Htc phones"
+                },
+                {
+                    "displayText": "Intex",
+                    "vinciText": "Show me Intex phones"
+                },
+                {
+                    "displayText": "Best battery phones",
+                    "vinciText": "Show me Best battery phones"
+                },
+                {
+                    "displayText": "Best lightweight phones",
+                    "vinciText": "Show me Best lightweight phones"
+                }
+            ],
+            "query_object": "[{\"product_basic_info.productBrand_normalized\":\"Htc\"}]"
+        }
+    },
+    "status": {
+        "code": 200,
+        "errorType": "success",
+        "webhookTimedOut": false
+    },
+    "batman": "true"
+}
