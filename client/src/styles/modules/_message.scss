@@ -23,9 +23,12 @@
       @include box-shadow
     }
     &_user {
-      border: 1px solid #E5E8EC;
       float: right;
       position: relative;
+      background-color:#c7c6c7;
+      p{
+        color:#FFFFFF;
+      }
     }
     &_compare {
       padding: 0;
