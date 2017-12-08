@@ -21450,15 +21450,51 @@ function tag_related_question(zlatan){
 
         console.log("These are the functionality false tags: ", tags_functionality_false);
 
+        var tags_general_reply;
+
+        var tags_functionality_reply_true;
+
+        var tags_functionality_reply_false;
 
 
+        create_tag_general_sentence(tags_general_true, tags_general_false);
+        create_tag_functionality_sentence(tags_functionality_true, tags_functionality_false);
 
-        create_tag_true_sentence(tags_true);
+        function create_tag_general_sentence(tags_general_true, tags_general_false){
+            
+            if(tags_general_true.length > 0){
 
-        function create_tag_true_sentence(tags_true){
+                tags_general_reply = "Yes " + element.variants[0].product_basic_info.normalized_name + " is the latest phone";
 
+            }
+
+            if(tags_general_false.length > 0){
+
+                tags_general_reply = element.variants[0].product_basic_info.normalized_name + " is not the latest phone";
+            }
 
         }
+
+        function create_tag_functionality_sentence(tags_functionality_true, tags_functionality_false){
+
+            if(tags_functionality_true.length > 0){
+
+                tags_functionality_reply_true = "Yes " + element.variants[0].product_basic_info.normalized_name + " has " + arrayToSentence(tags_functionality_true);
+
+            }
+
+            if(tags_functionality_false.length > 0){
+
+                tags_functionality_reply_false = "No " + element.variants[0].product_basic_info.normalized_name + " doesn't have " + arrayToSentence(tags_functionality_false);
+            }
+
+        }
+
+        console.log("This is tags_general_reply: ", tags_general_reply);
+
+        console.log("This is tags_functionality_reply_true: ", tags_functionality_reply_true);
+
+        console.log("This is tags_functionality_reply_false: ", tags_functionality_reply_false);
 
 
 	}
