@@ -18169,21 +18169,21 @@ Beckham.prototype.build_error_element = function(){
 
 Beckham.prototype.build_text_reply_element = function(buffon){
 
-    this.template = $('#handlebars-case-1').html();
+    // this.template = $('#handlebars-case-1').html();
 
-    // Compile the template data into a function
-    this.templateScript = Handlebars.compile(this.template);
+    // // Compile the template data into a function
+    // this.templateScript = Handlebars.compile(this.template);
 
-    var context = {
-        text: buffon.displayText
-    }
+    // var context = {
+    //     text: buffon.displayText
+    // }
 
-    this.html = this.templateScript(context);
+    // this.html = this.templateScript(context);
 
-     // Insert the HTML code into the page
-    $('.chat__messages').append(this.html);
+    //  // Insert the HTML code into the page
+    // $('.chat__messages').append(this.html);
 
-    this.scroll_into_view();
+    // this.scroll_into_view();
 
 
 }
