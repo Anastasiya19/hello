@@ -26,6 +26,15 @@
     background: #e85352;
     color: #fff;
 
+    &:hover {
+      color: #fff !important;
+      background: #017fff;
+      background: -moz-linear-gradient(top, #017fff 0%, #8cbffe 100%);
+      background: -webkit-linear-gradient(top, #017fff 0%, #8cbffe 100%);
+      background: linear-gradient(to bottom, #017fff 0%, #8cbffe 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#017fff', endColorstr='#8cbffe', GradientType=0);
+    }
+
     &_active, &:active {
       color: #fff;
       background: #017fff;
@@ -142,7 +151,7 @@
     padding-top: 25px;
     padding-bottom: 25px;
     position: fixed;
-    background: #F4F5F9;
+    background: #F7F7F7;
     width: 100%;
     z-index: 5;
     @media(max-width: 768px) {
