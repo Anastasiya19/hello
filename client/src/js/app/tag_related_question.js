@@ -12,6 +12,36 @@ function tag_related_question(zlatan){
 	
 		console.log("Inside create_tag_reply");
 
+        var tags_relevant = ["dual sim", "fingerprint sensor", "wireless charging", "flagship", "4g", "latest", "gorilla glass", "bezel", "gaming", "waterproof"];
+
+        var tags_true = [];
+
+        var tags_false = [];
+
+        element.tags_requested.forEach(check_tag);
+
+        check_tag(tag, tag_count, tag_array){
+
+            if(tags_relevant.indexOf(tag) > -1){
+
+                console.log(tag + " value is : " + element.variants[0].product_tags[tag]);
+
+                if(element.variants[0].product_tags[tag]){
+                    tags_true.push(tag);
+                }
+
+                else{
+                    tags_false.push(tag);
+                }
+
+                    
+            }
+        }
+
+        console.log("These are the true tags: ", tags_true);
+
+        console.log("These are the false tags: ", tags_false);
+
 	}
 
 
