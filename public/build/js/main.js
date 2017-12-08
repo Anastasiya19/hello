@@ -21396,7 +21396,7 @@ function tag_related_question(zlatan){
 
         element.tags_requested.forEach(check_tag);
 
-        check_tag(tag, tag_count, tag_array){
+        function check_tag(tag, tag_count, tag_array){
 
             if(tags_relevant.indexOf(tag) > -1){
 
