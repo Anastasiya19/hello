@@ -12,35 +12,78 @@ function tag_related_question(zlatan){
 	
 		console.log("Inside create_tag_reply");
 
-        var tags_relevant = ["dual sim", "fingerprint sensor", "wireless charging", "flagship", "4g", "latest", "gorilla glass", "bezel", "gaming", "waterproof"];
+        var tags_general = ["latest"];
 
-        var tags_true = [];
+        var tags_functionality = ["dual sim", "fingerprint sensor", "wireless charging", "4g", "gorilla glass", "bezel", "gaming", "waterproof"];
 
-        var tags_false = [];
+        var tags_general_true = [];
 
-        element.tags_requested.forEach(check_tag);
+        var tags_general_false = [];
 
-        function check_tag(tag, tag_count, tag_array){
+        var tags_functionality_true = [];
 
-            if(tags_relevant.indexOf(tag) > -1){
+        var tags_functionality_false = [];
+
+        element.tags_requested.forEach(check_tag_general);
+
+        element.tags_requested.forEach(check_tag_functionality);
+
+        function check_tag_general(tag, tag_count, tag_array){
+
+            if(tags_general.indexOf(tag) > -1){
 
                 console.log(tag + " value is : " + element.variants[0].product_tags[tag]);
 
                 if(element.variants[0].product_tags[tag]){
-                    tags_true.push(tag);
+                    tags_general_true.push(tag);
                 }
 
                 else{
-                    tags_false.push(tag);
+                    tags_general_false.push(tag);
                 }
 
                     
             }
         }
 
-        console.log("These are the true tags: ", tags_true);
+        function check_tag_functionality(tag, tag_count, tag_array){
 
-        console.log("These are the false tags: ", tags_false);
+            if(tags_functionality.indexOf(tag) > -1){
+
+                console.log(tag + " value is : " + element.variants[0].product_tags[tag]);
+
+                if(element.variants[0].product_tags[tag]){
+                    tags_functionality_true.push(tag);
+                }
+
+                else{
+                    tags_functionality_false.push(tag);
+                }
+
+                    
+            }
+        }
+
+
+
+        console.log("These are the general true tags: ", tags_general_true);
+
+        console.log("These are the general false tags: ", tags_general_false);
+
+        console.log("These are the functionality true tags: ", tags_functionality_true);
+
+        console.log("These are the functionality false tags: ", tags_functionality_false);
+
+
+
+
+        create_tag_true_sentence(tags_true);
+
+        function create_tag_true_sentence(tags_true){
+
+
+        }
+
 
 	}
 
