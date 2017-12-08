@@ -3,10 +3,10 @@
 //= ../../bower_components/wow/dist/wow.min.js
 //= ../../bower_components/owl.carousel/dist/owl.carousel.min.js
 //= ../../bower_components/lightbox2/dist/js/lightbox.min.js
+//= ../../bower_components/handlebars/handlebars.min.js
+/*//= ../../bower_components/array-to-sentence/browser.js*/
 //= scrolling/jquery.mCustomScrollbar.min.js
 //= custom/blockAligner.js
-//=  ../../bower_components/handlebars/handlebars.min.js
-//= ../../bower_components/array-to-sentence/browser.js
 
 function getParameterByName(name, url) {
   if (!url) url = window.location.href;

@@ -23,6 +23,8 @@
   &__btn {
     width: 140px;
     position: relative;
+    background: #e85352;
+    color: #fff;
 
     &_active, &:active {
       color: #fff;
@@ -159,7 +161,7 @@
   width: 9px;
   height: 16px;
   vertical-align: bottom;
-  background: url($path-to-images + 'microphone_blue.svg');
+  background: url($path-to-images + 'microphone_white.svg');
   margin-right: 10px;
   @media (max-width: 550px) {
     margin-right: 0;
