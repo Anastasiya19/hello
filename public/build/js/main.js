@@ -17797,6 +17797,8 @@ function beckham_router(beckham, zlatan, buffon) {
 
         console.log("Getting ready to create the product element");
 
+        beckham.check_tag_related_question(zlatan);
+
         beckham.build_text_reply_element(buffon);
 
         beckham.build_specifications_element(zlatan);
@@ -17809,6 +17811,8 @@ function beckham_router(beckham, zlatan, buffon) {
 
         //Need to build the product and the attributes element
         console.log("Price and other attributes requested");
+
+        beckham.check_tag_related_question(zlatan);
 
         beckham.build_text_reply_element(buffon);
 
@@ -17824,6 +17828,8 @@ function beckham_router(beckham, zlatan, buffon) {
 
         //Need to build the attributes element
         console.log("Only attributes requested");
+
+        beckham.check_tag_related_question(zlatan);
 
         beckham.build_text_reply_element(buffon);
 
@@ -17967,6 +17973,12 @@ function Beckham (query_status) {
 
     this.html;
 
+
+}
+
+Beckham.prototype.check_tag_related_question = function(zlatan){
+
+    tag_related_question(zlatan);
 
 }
 
@@ -21358,6 +21370,27 @@ function specifications_request(zlatan){
 		zlatan.contexts.push(element.context);
 
 	}
+
+	//Now we need to append the html for all the mobiles created by raul constructor function
+
+}
+function tag_related_question(zlatan){
+
+	console.log("We need to create a reply for tag_related_question");
+
+	//First we need to check the query_status to determine
+	//which chat element to build
+	console.log("This is the list of mobiles received from the backend: ", zlatan.mobiles);
+
+	zlatan.mobiles.forEach(create_tag_reply);
+
+	function create_tag_reply(element, index, array){
+	
+		console.log("Inside create_tag_reply");
+
+	}
+
+
 
 	//Now we need to append the html for all the mobiles created by raul constructor function
 

@@ -34,6 +34,8 @@ function beckham_router(beckham, zlatan, buffon) {
 
         console.log("Getting ready to create the product element");
 
+        beckham.check_tag_related_question(zlatan);
+
         beckham.build_text_reply_element(buffon);
 
         beckham.build_specifications_element(zlatan);
@@ -46,6 +48,8 @@ function beckham_router(beckham, zlatan, buffon) {
 
         //Need to build the product and the attributes element
         console.log("Price and other attributes requested");
+
+        beckham.check_tag_related_question(zlatan);
 
         beckham.build_text_reply_element(buffon);
 
@@ -61,6 +65,8 @@ function beckham_router(beckham, zlatan, buffon) {
 
         //Need to build the attributes element
         console.log("Only attributes requested");
+
+        beckham.check_tag_related_question(zlatan);
 
         beckham.build_text_reply_element(buffon);
 
