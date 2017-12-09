@@ -48,7 +48,7 @@ html {
 
 body {
   height: 100%;
-  background: #F4F5F9;
+  background: #F7F7F7;
   position: relative;
   overflow-x: hidden;
   font-weight: 300;
@@ -56,10 +56,10 @@ body {
 
 .wrapper {
   padding: rem(80) rem(65);
-  background: #F4F5F9;
-  background: -webkit-linear-gradient(to top, #FFFFFF, #F4F5F9);
-  background: -moz-linear-gradient(to top, #FFFFFF, #F4F5F9);
-  background: linear-gradient(to top, #FFFFFF, #F4F5F9);
+  background: #F7F7F7;
+  background: -webkit-linear-gradient(to top, #FFFFFF, #F7F7F7);
+  background: -moz-linear-gradient(to top, #FFFFFF, #F7F7F7);
+  background: linear-gradient(to top, #FFFFFF, #F7F7F7);
   height: 100%;
   overflow-x: hidden;
   &__container {

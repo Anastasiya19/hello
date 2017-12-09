@@ -1,1 +1,10 @@
-<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="50%" y1="2.027%" x2="50%" y2="98.33%" id="a"><stop stop-color="#017FFF" offset="0%"/><stop stop-color="#8CBFFE" offset="100%"/></linearGradient></defs><path d="M529.65 235.342a7.996 7.996 0 1 0 0 11.308 7.975 7.975 0 0 0 0-11.308zm-4.588 9.902h-2.134v-5.277h2.134v5.277zm-1.067-6.166a1.169 1.169 0 1 1 0-2.338 1.169 1.169 0 0 1 0 2.338z" transform="translate(-516 -233)" fill-rule="nonzero" fill="url(#a)"/></svg>
+<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient x1="50%" y1="2.027%" x2="50%" y2="98.33%" id="a">
+            <stop stop-color="#e85352" offset="0%"/>
+            <stop stop-color="#e85352" offset="100%"/>
+        </linearGradient>
+    </defs>
+    <path d="M529.65 235.342a7.996 7.996 0 1 0 0 11.308 7.975 7.975 0 0 0 0-11.308zm-4.588 9.902h-2.134v-5.277h2.134v5.277zm-1.067-6.166a1.169 1.169 0 1 1 0-2.338 1.169 1.169 0 0 1 0 2.338z"
+          transform="translate(-516 -233)" fill-rule="nonzero" fill="url(#a)"/>
+</svg>

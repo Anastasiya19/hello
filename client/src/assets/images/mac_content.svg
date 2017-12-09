@@ -1,1 +1,11 @@
-<svg width="232" height="129" viewBox="0 0 232 129" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient x1="50%" y1="2.027%" x2="50%" y2="98.33%" id="a"><stop stop-color="#017FFF" offset="0%"/><stop stop-color="#8CBFFE" offset="100%"/></linearGradient></defs><g fill="none" fill-rule="evenodd"><circle fill="url(#a)" cx="117" cy="40" r="40"/><path d="M122.041 42.157l-9.053 6.997a1.233 1.233 0 0 1-1.988-.976V32.233a1.233 1.233 0 0 1 1.988-.976l9.053 6.997a2.467 2.467 0 0 1 0 3.903z" fill="#FFF"/><text font-family="HelveticaNeue, Helvetica Neue" font-size="12" fill="#6B6E7A"><tspan x="0" y="111"></tspan></text><text font-family="HelveticaNeue, Helvetica Neue" font-size="12" fill="#8B8888"><tspan x="82" y="128"></tspan></text></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>mac_content</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval-4" fill="#E85353" cx="40" cy="40" r="40"></circle>
+        <path d="M45.0413964,42.1574688 L35.9875663,49.1536103 C35.4485506,49.5701225 34.6739422,49.4708137 34.25743,48.9317979 C34.0905375,48.7158195 34,48.4505824 34,48.1776359 L34,32.2334043 C34,31.5522139 34.5522139,31 35.2334043,31 C35.5063508,31 35.7715879,31.0905375 35.9875663,31.25743 L45.0413964,38.2535714 C46.1194279,39.0865958 46.3180455,40.6358126 45.4850211,41.7138441 C45.35663,41.8799974 45.2075497,42.0290777 45.0413964,42.1574688 Z" id="Triangle-2" fill="#FFFFFF"></path>
+    </g>
+</svg>

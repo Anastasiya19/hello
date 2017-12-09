@@ -1,1 +1,26 @@
-<svg width="52" height="52" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><circle id="a" cx="330" cy="20" r="20"/><path d="M335.87 23.307v2.258a.34.34 0 0 1-.344.344h-11.182a.34.34 0 0 1-.344-.344v-2.258c0-1.075.882-1.957 1.957-1.957h2.43l.129-1.054a3.771 3.771 0 0 1-2.344-3.505 3.776 3.776 0 0 1 4-3.784 3.824 3.824 0 0 1 3.57 3.44 3.788 3.788 0 0 1-2.323 3.85l.129 1.053h2.43c1.032 0 1.892.882 1.892 1.957z" id="c"/><filter x="-4.2%" y="-3.9%" width="108.4%" height="115.5%" filterUnits="objectBoundingBox" id="b"><feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0" in="shadowOffsetOuter1"/></filter></defs><g fill="none" fill-rule="evenodd"><g transform="translate(-304 6)"><use fill="#3A4758" xlink:href="#a"/><circle stroke="#FAFBFC" stroke-width="6" cx="330" cy="20" r="23"/></g><g fill-rule="nonzero" transform="translate(-304 6)"><use fill="#000" filter="url(#b)" xlink:href="#c"/><use fill="#FFF" fill-rule="evenodd" xlink:href="#c"/></g></g></svg>
+<svg width="52px" height="52px" viewBox="0 0 52 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="330" cy="20" r="20"></circle>
+        <path d="M335.87,23.3069692 L335.87,25.5648496 C335.87,25.7583822 335.719475,25.9089076 335.525942,25.9089076 L324.344058,25.9089076 C324.150525,25.9089076 324,25.7583822 324,25.5648496 L324,23.3069692 C324,22.2317881 324.881649,21.3501395 325.95683,21.3501395 L328.386739,21.3501395 L328.515761,20.296462 C327.139529,19.7373678 326.171866,18.3826396 326.171866,16.7913715 C326.171866,14.6195055 327.97817,12.8777121 330.17154,13.0067338 C332.042355,13.1142519 333.569112,14.5980019 333.741141,16.4473135 C333.891667,18.189107 332.880996,19.6943606 331.41875,20.296462 L331.547772,21.3501395 L333.977681,21.3501395 C335.009855,21.3501395 335.87,22.2317881 335.87,23.3069692 Z" id="path-2"></path>
+        <filter x="-4.2%" y="-3.9%" width="108.4%" height="115.5%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Chatbot-V3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Chat-Stage-3---User-Sends-Text" transform="translate(-1214.000000, -234.000000)">
+            <g id="User---Talks" transform="translate(910.000000, 240.000000)">
+                <g id="Icon---Vinci">
+                    <use fill="#C6C6C6" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <circle stroke="#F7F7F7" stroke-width="6" cx="330" cy="20" r="23"></circle>
+                </g>
+                <g id="Shape" fill-rule="nonzero">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
