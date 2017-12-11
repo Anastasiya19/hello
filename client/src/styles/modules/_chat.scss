@@ -27,7 +27,7 @@
   }
   &__messages {
     position: relative;
-    padding: 18px 30px;
+    padding: 18px 0;
     @include clearfix;
     @media (max-width: 768px) {
       padding: 18px 15px;

@@ -134,7 +134,7 @@ function sendMessage() {
     $('.chat__messages')
       .append(
         `<div class="message message_sender">
-            <img class="user-logo" src="/assets/build/assets/images/user-mes.svg" alt="">
+            <!--<img class="user-logo" src="/assets/build/assets/images/user-mes.svg" alt="">-->
             <div class="message__item message__item_user br-chat ">
                 <p>${$('.chat__bottom input').val()}</p>
             </div>

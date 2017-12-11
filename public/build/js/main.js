@@ -17410,7 +17410,7 @@ function sendMessage() {
     $('.chat__messages')
       .append(
         `<div class="message message_sender">
-            <img class="user-logo" src="/assets/build/assets/images/user-mes.svg" alt="">
+            <!--<img class="user-logo" src="/assets/build/assets/images/user-mes.svg" alt="">-->
             <div class="message__item message__item_user br-chat ">
                 <p>${$('.chat__bottom input').val()}</p>
             </div>
@@ -17661,14 +17661,14 @@ function batman_false(reply_received) {
     if (reply_received.batman === "false") {
 
         //userAvatar
-        var vinciAvatar = '/assets/build/assets/images/vinci-mes.svg';
+        // var vinciAvatar = '/assets/build/assets/images/vinci-mes.svg';
 
         console.log("Inside false batman");
 
         var text_reply = reply_received.web_reply.speech;
         $('.chat__messages')
             .append(`<div class="message message_vinci">
-            <img class="vinci-logo" src="${vinciAvatar}" alt="">
+            <!--<img class="vinci-logo" src="${vinciAvatar}" alt="">-->
             <div class="message__item message__item_vinci br-chat">
               <p>${reply_received.web_reply.speech}</p>
             </div>
@@ -17694,14 +17694,14 @@ function batman_missing(reply_received) {
     if (reply_received.batman === "true") {
 
         //userAvatar
-        var vinciAvatar = '/assets/build/assets/images/vinci-mes.svg';
+        // var vinciAvatar = '/assets/build/assets/images/vinci-mes.svg';
 
         console.log("Inside missing batman");
 
         var text_reply = reply_received.web_reply.speech;
         $('.chat__messages')
             .append(`<div class="message message_vinci">
-            <img class="vinci-logo" src="${vinciAvatar}" alt="">
+            <!--<img class="vinci-logo" src="${vinciAvatar}" alt="">-->
             <div class="message__item message__item_vinci br-chat">
               <p>There seems to be an issue at my end. Please try another query.</p>
             </div>
@@ -21136,7 +21136,7 @@ function hellovinciai(msg) {
     setTimeout(function() {
         $('.chat__messages').
         append(`<div class="message message_vinci is--typing">
-            <img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">
+            <!--<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">-->
             <div class="message__item message__item_vinci message__item_writing br-chat">
                 <div class="spinner">
                     <div class="bounce1"></div>

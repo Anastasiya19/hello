@@ -78,7 +78,7 @@ function hellovinciai(msg) {
     setTimeout(function() {
         $('.chat__messages').
         append(`<div class="message message_vinci is--typing">
-            <img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">
+            <!--<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">-->
             <div class="message__item message__item_vinci message__item_writing br-chat">
                 <div class="spinner">
                     <div class="bounce1"></div>
