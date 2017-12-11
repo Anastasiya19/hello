@@ -6,6 +6,14 @@
     }
     @media(max-width: 768px) {
     }
+    &container {
+      @media (min-width: 576px) {
+      padding-right: 20px;
+      padding-left: 20px;
+      width: 622px;
+      max-width: 100%;
+    }
+    }
   }
   &__links {
     display: flex;
@@ -51,7 +59,7 @@
       }
     }
     &_mobile-hide {
-      @media (max-width: 550px) {
+      @media (max-width: 768px) {
         display: none;
       }
     }
@@ -132,28 +140,25 @@
     //bottom: 5px;
     //width: 155px;
     img {
-      @media (min-width: 768px) {
         width: 155px;
-        position: relative;
-        bottom: 10px;
       }
-      @media (max-width: 767px) {
-        width: 145px;
-        position: relative;
-        bottom: 5px;
-      }
-    }
+
     @media (min-width: 768px) {
       position: absolute;
       transform: translateX(-50%);
       left: 50%;
       z-index: 3;
-      top: 8px;
+      top: 0;
 
     }
     @media (max-width: 767px) {
-      margin-bottom: 15px;
       width: 100%;
+      position: absolute;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      left: 50%;
+      z-index: 3;
+      top: 0;
       a {
         display: block;
       }
@@ -167,7 +172,7 @@
     width: 100%;
     z-index: 5;
     @media(max-width: 768px) {
-      padding: 10px ;
+      padding: 30px ;
     }
     .row{
       @media(max-width: 768px) {
