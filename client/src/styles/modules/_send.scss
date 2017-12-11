@@ -34,8 +34,8 @@
 
   &__btn {
     display: inline-block;
-    background: #E85353;
-    color: #fff;
+    background: #fff;
+    color: #E85353;
     padding: 12px 25px;
     font-weight: 300;
     text-align: center;
@@ -50,7 +50,7 @@
       margin-right: 10px;
     }
     &:hover, &:active, &:focus {
-      background: $blue;
+      background: #E85353;
       color: #fff;
       transition: .2s;
     }

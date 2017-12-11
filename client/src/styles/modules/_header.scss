@@ -128,9 +128,19 @@
   }
   &__logo {
     text-align: center;
+    //position: relative;
+    //bottom: 5px;
+    //width: 155px;
     img {
       @media (min-width: 768px) {
         width: 155px;
+        position: relative;
+        bottom: 10px;
+      }
+      @media (max-width: 767px) {
+        width: 145px;
+        position: relative;
+        bottom: 5px;
       }
     }
     @media (min-width: 768px) {
