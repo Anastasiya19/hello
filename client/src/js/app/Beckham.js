@@ -14,6 +14,12 @@ function Beckham (query_status) {
 
 }
 
+Beckham.prototype.check_tag_related_question = function(zlatan){
+
+    tag_related_question(zlatan);
+
+}
+
 
 Beckham.prototype.build_specifications_element = function(zlatan){
 
