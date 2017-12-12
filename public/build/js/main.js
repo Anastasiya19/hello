@@ -17182,7 +17182,7 @@ function getParameterByName(name, url) {
 }
 
 
-new WOW().init();
+new WOW({offset:-9999999}).init();
 $('.show-8-X').on('click', function () {
   $('.browser__ex_1').css('display', 'block').addClass('animated fadeInDown');
 });
@@ -17373,8 +17373,8 @@ $(document).ready(function () {
 });
 $(window).on('load', function () {
   $('.preloader').fadeOut('slow');
-  $('.preloader__logo').addClass('preloader__logo_top');
-  $('body');
+  // $('.preloader__logo').addClass('preloader__logo_top');
+  // $('body');
 });
 
 /**
