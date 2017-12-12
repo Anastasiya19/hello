@@ -132,7 +132,7 @@ function hellovinciai(msg) {
             var zlatan = new Zlatan(reply_received.web_reply.data.mobiles);
 
             //Builds the text reply element
-            var buffon = new Buffon(reply_received.web_reply.displayText);
+            var buffon = new Buffon(reply_received.web_reply.data.backend_text);
 
 
 
