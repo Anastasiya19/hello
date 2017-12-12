@@ -4,7 +4,7 @@
 //= ../../bower_components/owl.carousel/dist/owl.carousel.min.js
 //= ../../bower_components/lightbox2/dist/js/lightbox.min.js
 //= ../../bower_components/handlebars/handlebars.min.js
-/*//= ../../bower_components/array-to-sentence/browser.js*/
+//= ../../bower_components/array-to-sentence/browser.js
 //= scrolling/jquery.mCustomScrollbar.min.js
 //= custom/blockAligner.js
 
