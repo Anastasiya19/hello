@@ -54,6 +54,22 @@
       color: #fff;
       transition: .2s;
     }
+    &_speak {
+      width: 135px;
+      background-image: url('../assets/images/microphone_blue.svg');
+      background-color: #fff;
+      background-position: 20px;
+      background-repeat: no-repeat;
+      background-size: 10px;
+
+      &:hover {
+        background-image: url('../assets/images/microphone_white.svg');
+        background-position: 20px;
+        background-repeat: no-repeat;
+        background-size: 10px;
+      }
+    }
+
     @media(max-width: 767px) {
       margin-right: 2px;
       padding: 10px 14px;
@@ -62,6 +78,11 @@
       }
       &_speak {
         font-size: 0;
+        width: 30px;
+        background-position: 10px;
+        &:hover {
+          background-position: 10px;
+        }
       }
     }
   }
