@@ -121,11 +121,37 @@ Messi.prototype.camera_reply = function(){
 
     };
 
+    attribute_fourth = {
+        value: this.mobile.variants[0].camera.flash,
+        text: "Flash",
+        icon: "ion-camera"
+
+    };
+
+    attribute_fifth = {
+        value: this.mobile.variants[0].camera.hd_recording_status,
+        text: "HD Recording status",
+        icon: "ion-ios-videocam"
+
+    };
+
+    attribute_sixth = {
+        value: this.mobile.variants[0].camera.full_hd_recording_status,
+        text: "HD Recording status",
+        icon: "ion-ios-videocam"
+
+    };
+
+
+
     console.log("Attributes created")
 
     this.context_detailed.push(attribute_first);
     this.context_detailed.push(attribute_second);
     this.context_detailed.push(attribute_third);
+    this.context_detailed.push(attribute_fourth);
+    this.context_detailed.push(attribute_fifth);
+    this.context_detailed.push(attribute_sixth);
 
 
     // this.query_status = 104;
