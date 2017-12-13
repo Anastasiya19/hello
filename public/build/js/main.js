@@ -21468,8 +21468,8 @@ function tag_related_question(zlatan, buffon){
         var tags_functionality_reply_false;
 
 
-        create_tag_general_sentence(tags_general_true, tags_general_false);
-        create_tag_functionality_sentence(tags_functionality_true, tags_functionality_false);
+        create_tag_general_sentence(tags_general_true, tags_general_false, buffon);
+        create_tag_functionality_sentence(tags_functionality_true, tags_functionality_false, buffon);
 
         function create_tag_general_sentence(tags_general_true, tags_general_false){
             
@@ -21486,7 +21486,7 @@ function tag_related_question(zlatan, buffon){
 
         }
 
-        function create_tag_functionality_sentence(tags_functionality_true, tags_functionality_false){
+        function create_tag_functionality_sentence(tags_functionality_true, tags_functionality_false, buffon){
 
             if(tags_functionality_true.length > 0){
 
