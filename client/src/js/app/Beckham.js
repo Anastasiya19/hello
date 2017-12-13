@@ -234,6 +234,8 @@ Beckham.prototype.build_text_reply_element = function(buffon){
 
     this.html = this.templateScript(context);
 
+    console.log("This is the html generated: ", this.html);
+
      // Insert the HTML code into the page
     $('.chat__messages').append(this.html);
 
