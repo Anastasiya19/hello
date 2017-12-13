@@ -17797,7 +17797,7 @@ function beckham_router(beckham, zlatan, buffon) {
 
         console.log("Getting ready to create the product element");
 
-        beckham.check_tag_related_question(zlatan);
+        beckham.check_tag_related_question(zlatan, buffon);
 
         beckham.build_text_reply_element(buffon);
 
@@ -17812,7 +17812,7 @@ function beckham_router(beckham, zlatan, buffon) {
         //Need to build the product and the attributes element
         console.log("Price and other attributes requested");
 
-        beckham.check_tag_related_question(zlatan);
+        beckham.check_tag_related_question(zlatan, buffon);
 
         beckham.build_text_reply_element(buffon);
 
@@ -17829,7 +17829,7 @@ function beckham_router(beckham, zlatan, buffon) {
         //Need to build the attributes element
         console.log("Only attributes requested");
 
-        beckham.check_tag_related_question(zlatan);
+        beckham.check_tag_related_question(zlatan, buffon);
 
         beckham.build_text_reply_element(buffon);
 
@@ -18252,8 +18252,8 @@ function Buffon (text) {
 
     	function speak_text(element, index, array){
 
-    		    responsiveVoice.setDefaultVoice("US English Female", {rate: 0.5});
-    			responsiveVoice.speak(element);
+		    responsiveVoice.setDefaultVoice("US English Female", {rate: 0.5});
+			responsiveVoice.speak(element);
 
     	}
     }
@@ -21385,7 +21385,7 @@ function specifications_request(zlatan){
 	//Now we need to append the html for all the mobiles created by raul constructor function
 
 }
-function tag_related_question(zlatan){
+function tag_related_question(zlatan, buffon){
 
 	console.log("We need to create a reply for tag_related_question");
 
@@ -21506,6 +21506,18 @@ function tag_related_question(zlatan){
         console.log("This is tags_functionality_reply_true: ", tags_functionality_reply_true);
 
         console.log("This is tags_functionality_reply_false: ", tags_functionality_reply_false);
+
+        function add_to_display(reply_text, buffon){
+
+            if(reply_text.length > 0){
+
+                buffon.displayText.push(reply_text);
+            }
+        }
+
+        add_to_display(tags_general_reply, buffon);
+        add_to_display(tags_functionality_reply_true, buffon);
+        add_to_display(tags_functionality_reply_false, buffon);
 
 
 	}

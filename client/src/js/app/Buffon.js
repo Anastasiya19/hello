@@ -11,8 +11,8 @@ function Buffon (text) {
 
     	function speak_text(element, index, array){
 
-    		    responsiveVoice.setDefaultVoice("US English Female", {rate: 0.5});
-    			responsiveVoice.speak(element);
+		    responsiveVoice.setDefaultVoice("US English Female", {rate: 0.5});
+			responsiveVoice.speak(element);
 
     	}
     }

@@ -1,4 +1,4 @@
-function tag_related_question(zlatan){
+function tag_related_question(zlatan, buffon){
 
 	console.log("We need to create a reply for tag_related_question");
 
@@ -119,6 +119,18 @@ function tag_related_question(zlatan){
         console.log("This is tags_functionality_reply_true: ", tags_functionality_reply_true);
 
         console.log("This is tags_functionality_reply_false: ", tags_functionality_reply_false);
+
+        function add_to_display(reply_text, buffon){
+
+            if(reply_text.length > 0){
+
+                buffon.displayText.push(reply_text);
+            }
+        }
+
+        add_to_display(tags_general_reply, buffon);
+        add_to_display(tags_functionality_reply_true, buffon);
+        add_to_display(tags_functionality_reply_false, buffon);
 
 
 	}
