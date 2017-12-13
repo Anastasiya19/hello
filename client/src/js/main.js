@@ -19,7 +19,7 @@ function getParameterByName(name, url) {
 }
 
 
-new WOW().init();
+new WOW({offset:-9999999}).init();
 $('.show-8-X').on('click', function () {
   $('.browser__ex_1').css('display', 'block').addClass('animated fadeInDown');
 });
@@ -97,8 +97,8 @@ $(window).on('load resize', function () {
 //= custom/speakVinci.js
 $(window).on('load', function () {
   $('.preloader').fadeOut('slow');
-  $('.preloader__logo').addClass('preloader__logo_top');
-  $('body');
+  // $('.preloader__logo').addClass('preloader__logo_top');
+  // $('body');
 });
 
 /**
@@ -134,7 +134,7 @@ function sendMessage() {
     $('.chat__messages')
       .append(
         `<div class="message message_sender">
-            <img class="user-logo" src="/assets/build/assets/images/user-mes.svg" alt="">
+            <!--<img class="user-logo" src="/assets/build/assets/images/user-mes.svg" alt="">-->
             <div class="message__item message__item_user br-chat ">
                 <p>${$('.chat__bottom input').val()}</p>
             </div>

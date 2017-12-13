@@ -1,39 +1,45 @@
 .iphones{
   position: relative;
   margin-top: 62px;
+  height: 600px;
+  @media (max-width: 767px) {
+    margin-top: 0;
+  }
+
   &__image{
     &_one{
+      max-height: 100%;
       position: absolute;
-      right: -14px;
+      right: 23%;
       top: 57px;
       z-index: 1;
       @media (max-width: 1140px) {
         max-width: 80%;
       }
     }
-    &_two{
-      position: relative;
-      z-index: 2;
-      left: 63%;
-      @media (max-width: 1140px) {
-        max-width: 30%;
-      }
-    }
-    &_tree{
-      position: absolute;
-      left: 8%;
-      bottom: -20%;
-      @media (max-width: 1254px) {
-        left: -1%;
-        bottom: -21%;
-      }
-      @media (max-width: 1140px) {
-        max-width: 80%;
-      }
-    }
+    //&_two{
+    //  position: relative;
+    //  z-index: 2;
+    //  left: 63%;
+    //  @media (max-width: 1140px) {
+    //    max-width: 30%;
+    //  }
+    //}
+    //&_tree{
+    //  position: absolute;
+    //  left: 8%;
+    //  bottom: -20%;
+    //  @media (max-width: 1254px) {
+    //    left: -1%;
+    //    bottom: -21%;
+    //  }
+    //  @media (max-width: 1140px) {
+    //    max-width: 80%;
+    //  }
+    //}
     &_laptop{
       @media (max-width: 767px) {
-      display: none;
+      //display: none;
       }
     }
     &_mobile{

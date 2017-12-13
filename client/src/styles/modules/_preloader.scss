@@ -11,23 +11,25 @@
   &__logo {
     position: absolute;
     transform: translateX(-50%);
-    top: 45%;
-    left: 50%;
-    transition: all .7s;
-    @media (min-width: 768px) {
-      width: 155px;
+    left:50%;
+    top: 80px;
+    @media (max-width: 991px) {
+      top: 50px;
+    }
+    @media (max-width: 767px) {
+      top: 20px;
     }
     img{
-      width: 100%;
+      width: 155px;
     }
-    &_top {
-      top: 88px;
-      @media (max-width: 991px) {
-        top: 58px;
-      }
-      @media (max-width: 767px) {
-        top: 20px;
-      }
-    }
+    //&_top {
+    //  top: 88px;
+    //  @media (max-width: 991px) {
+    //    top: 58px;
+    //  }
+    //  @media (max-width: 767px) {
+    //    top: 20px;
+    //  }
+    //}
   }
 }

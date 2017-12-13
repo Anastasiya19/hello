@@ -63,5 +63,8 @@
     @media (max-width: 767px) {
       display: none;
     }
+    @media (min-width: 1025px) and (max-width: 1300px){
+      top: 64%;
+    }
   }
 }

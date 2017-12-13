@@ -71,7 +71,8 @@
 						<div class="chat__messages">
 							{{#each chat_carousels}}
 							<div class="message message_vinci">
-								<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">
+                                {{#if @first}}<h5 class="message__title">Latest phones</h5>{{/if}}
+                                {{#if @last}}<h5 class="message__title">Top collections of mobiles</h5>{{/if}}
 								<div class="owl-carousel owl-theme">
 
 								{{#each carousel_phones}}
@@ -120,7 +121,7 @@
 							</div>
 							{{/each}}
 							<div class="message message_vinci">
-								<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">
+                                <h5 class="message__title">Latest video review</h5>
 								<div class="owl-carousel owl-theme">
 									<div class="message__item message__item_vinci br-chat message__collection collection">
 										<div class="row align-items-stretch">
@@ -164,7 +165,6 @@
 								</div>
 							</div>
 							<div class="message message_vinci">
-								<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">
 								<div class="owl-carousel owl-theme">
 									<div class="message__item message__item_vinci br-chat message__video-item video-item">
 										<div class="video-item__wrap">
@@ -222,7 +222,6 @@
 								<input class="send__input" placeholder="Type your message or tap the 'Speak to Vinci' button">
 								<button class="btn send__btn" type="submit" id="send_chat">Send</button>
 								<button class="btn send__btn send__btn_speak" onclick="start_speech()">
-									<img src="assets/build/assets/images/microphone_white.svg" alt="">
 									Talk to Vinci
 								</button>
 							</div>
@@ -348,7 +347,6 @@
 
 		$('.chat__messages')
 				.append(`<div class="message message_vinci">
-	    <img class="vinci-logo" src="${vinciAvatar}" alt="">
 	    	<div class="message__item message__item_vinci br-chat" style="width: fit-content;">
 	      		<p>${text_reply}</p>
 			</div>
@@ -360,17 +358,18 @@
 
 		$('.chat__messages')
 				.append(`<div class="message message_vinci">
-	    <img class="vinci-logo" src="${vinciAvatar}" alt="">
 	    	<div class="message__item message__item_vinci br-chat" style="width: fit-content;">
 	      		<p>${text_reply}</p>
 			</div>
-			<ul class="suggestion">
-				<li class="suggestion__item br-chat" id="demo-yes" onclick="send_question(event)">Show me iPhone 8</li>
-				<li class="suggestion__item br-chat" id="demo-no" onclick="send_question(event)">Show me Samsung Galaxy S8</li>
-				<li class="suggestion__item br-chat" id="demo-no" onclick="send_question(event)">Compare iPhone 8 and Samsung Galaxy S8</li>
-				<li class="suggestion__item br-chat" id="demo-no" onclick="send_question(event)">Suggest a phone with 4gb ram</li>
-				<li class="suggestion__item br-chat" id="demo-no" onclick="send_question(event)">Phones with bezel less display</li>
-			</ul>
+			<div >
+				<ul class=" suggestion owl-carousel owl-theme">
+					<li class="suggestion__item br-chat" id="demo-yes" onclick="send_question(event)">Show me iPhone 8</li>
+					<li class="suggestion__item br-chat" id="demo-no" onclick="send_question(event)">Show me Samsung Galaxy S8</li>
+					<li class="suggestion__item br-chat" id="demo-no" onclick="send_question(event)">Compare iPhone 8 and Samsung Galaxy S8</li>
+					<li class="suggestion__item br-chat" id="demo-no" onclick="send_question(event)">Suggest a phone with 4gb ram</li>
+					<li class="suggestion__item br-chat" id="demo-no" onclick="send_question(event)">Phones with bezel less display</li>
+				</ul>
+			</div>
 	  	</div>`);
 
 		$('.chat__messages').scrollTop($('.chat__messages')[0].scrollHeight);

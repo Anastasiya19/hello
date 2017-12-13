@@ -2,6 +2,10 @@
   position: relative;
   margin-bottom: 33px;
 
+  &__title{
+    margin-bottom: 20px;
+  }
+
   &__item {
     position: relative;
     background: #fff;
@@ -26,8 +30,9 @@
       float: right;
       position: relative;
       background-color:#c7c6c7;
+      color:#FFFFFF;
       p{
-        color:#FFFFFF;
+
       }
     }
     &_compare {
@@ -126,18 +131,18 @@
   }
 }
 
-.user-logo {
-  width: 40px;
-  position: absolute;
-  top: -20px;
-  right: -20px;
-  z-index: 1;
-  @media (max-width: 767px) {
-    width: 35px;
-    right: -15px;
-    top: -15px;
-  }
-}
+//.user-logo {
+//  width: 40px;
+//  position: absolute;
+//  top: -20px;
+//  right: -20px;
+//  z-index: 1;
+//  @media (max-width: 767px) {
+//    width: 35px;
+//    right: -15px;
+//    top: -15px;
+//  }
+//}
 
 .vinci-logo {
   width: 40px;
@@ -195,12 +200,24 @@
       border-bottom: 1px solid #FBFBFB;
       &:after {
         background: #efefef url($path-to-images + "arrow_prev_dark.svg") center no-repeat;
-
       }
+      &:hover {
+        &:after {
+          border: 2px solid #E85353;
+          background: #efefef url($path-to-images + "arrow_prev_red.svg") center no-repeat;
+        }
+      }
+
     }
     &:last-child {
       &:after {
         background: #efefef url($path-to-images + "arrow_next_dark.svg") center no-repeat;
+      }
+      &:hover {
+        &:after {
+          border: 2px solid #E85353;
+          background: #efefef url($path-to-images + "arrow_next_red.svg") center no-repeat;
+        }
       }
     }
   }
