@@ -146,12 +146,13 @@ Messi.prototype.camera_reply = function(){
 
     console.log("Attributes created")
 
-    this.context_detailed.push(attribute_first);
-    this.context_detailed.push(attribute_second);
-    this.context_detailed.push(attribute_third);
     this.context_detailed.push(attribute_fourth);
     this.context_detailed.push(attribute_fifth);
     this.context_detailed.push(attribute_sixth);
+
+    this.context_detailed.push(attribute_first);
+    this.context_detailed.push(attribute_second);
+    this.context_detailed.push(attribute_third);
 
 
     // this.query_status = 104;
