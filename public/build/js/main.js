@@ -18186,9 +18186,13 @@ Beckham.prototype.build_text_reply_element = function(buffon){
     // Compile the template data into a function
     this.templateScript = Handlebars.compile(this.template);
 
+    console.log("This is displayText inside build_text_reply_element: ", buffon.displayText);
+
     var context = {
         text: buffon.displayText
     }
+
+    console.log("This is context: ", context);
 
     this.html = this.templateScript(context);
 
