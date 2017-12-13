@@ -28,6 +28,24 @@
     max-height: 71px;
     overflow: hidden;
   }
+  &__text{
+    min-height: 71px;
+    max-height:1500px;
+    cursor:pointer;
+    -webkit-transition: max-height 1.5s;
+    -moz-transition: max-height 1.5s;
+    transition: max-height 1.5s;
+    overflow: hidden;
+    line-height:20px;
+  }
+  &__text-collapsed{
+    min-height: 71px;
+    max-height: 71px;
+    overflow: hidden;
+    -webkit-transition: max-height 1s;
+    -moz-transition: max-height 1s;
+    transition: max-height 1s;
+  }
   &__image {
     overflow: hidden;
     border-top-left-radius: 7px;
