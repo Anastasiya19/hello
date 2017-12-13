@@ -293,7 +293,7 @@ Messi.prototype.processor_reply = function(){
     };
 
     attribute_second = {
-        value: this.mobile.variants[0].os_processor.processor_core,
+        value: this.mobile.variants[0].os_processor.processor_type,
         text: "Processor Type",
         icon: "ion-gear-a"
     };
@@ -445,7 +445,7 @@ Messi.prototype.storage_reply = function(){
 
 
     if(storage_array.length > 0){
-        reply.content_text = "It has " + arrayToSentence(storage_array) + " variants."; 
+        reply.content_text = "It has " + arrayToSentence(storage_array) + " variants. "; 
         fetch_expandable_storage(reply, expandable_storage);
 
     }
