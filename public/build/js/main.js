@@ -18188,13 +18188,7 @@ Beckham.prototype.build_text_reply_element = function(buffon){
 
     console.log("This is displayText inside build_text_reply_element: ", buffon.displayText);
 
-    var context = {
-        text: buffon.displayText
-    }
-
-    console.log("This is context: ", context);
-
-    this.html = this.templateScript(context);
+    this.html = this.templateScript({text: buffon.displayText});
 
     console.log("This is the html generated: ", this.html);
 
