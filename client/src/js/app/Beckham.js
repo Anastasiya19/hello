@@ -241,7 +241,13 @@ Beckham.prototype.build_text_reply_element = function(buffon){
 
     console.log("This is the text array: ", handlebars_text);
 
-    this.html = this.templateScript({final_display_text: handlebars_text});
+    var context = {
+        final_display_text: handlebars_text
+    }
+
+    console.log("This is context: ", context);
+
+    this.html = this.templateScript(context);
 
     console.log("This is the html generated: ", this.html);
 
