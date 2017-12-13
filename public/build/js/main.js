@@ -21509,10 +21509,15 @@ function tag_related_question(zlatan, buffon){
 
         function add_to_display(reply_text, buffon){
 
-            if(reply_text.length > 0){
+            if(reply_text !== undefined){
 
-                buffon.displayText.push(reply_text);
+                if(reply_text.length > 0){
+                    buffon.displayText.push(reply_text);
+                }
+
             }
+
+            
         }
 
         add_to_display(tags_general_reply, buffon);
