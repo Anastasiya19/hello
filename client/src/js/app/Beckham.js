@@ -226,9 +226,9 @@ Beckham.prototype.build_text_reply_element = function(buffon){
 
     console.log("This is displayText inside build_text_reply_element: ", buffon.displayText);
 
-    var text = [];
+    var handlebars_text = [];
 
-    text.push(buffon.displayText.forEach(create_array));
+    buffon.displayText.forEach(create_array);
 
     function create_array(element, index, array){
 
@@ -236,12 +236,12 @@ Beckham.prototype.build_text_reply_element = function(buffon){
 
         reply.text = element;
 
-        return reply.text;
+        handlebars_text.push(reply)
     }
 
-    console.log("This is the text array: ", text);
+    console.log("This is the text array: ", handlebars_text);
 
-    this.html = this.templateScript({final_display_text: text});
+    this.html = this.templateScript({final_display_text: handlebars_text});
 
     console.log("This is the html generated: ", this.html);
 
