@@ -14,9 +14,9 @@ function Beckham (query_status) {
 
 }
 
-Beckham.prototype.check_tag_related_question = function(zlatan){
+Beckham.prototype.check_tag_related_question = function(zlatan, buffon){
 
-    tag_related_question(zlatan);
+    tag_related_question(zlatan, buffon);
 
 }
 

@@ -17976,9 +17976,9 @@ function Beckham (query_status) {
 
 }
 
-Beckham.prototype.check_tag_related_question = function(zlatan){
+Beckham.prototype.check_tag_related_question = function(zlatan, buffon){
 
-    tag_related_question(zlatan);
+    tag_related_question(zlatan, buffon);
 
 }
 
@@ -21393,11 +21393,10 @@ function tag_related_question(zlatan, buffon){
 	//which chat element to build
 	console.log("This is the list of mobiles received from the backend: ", zlatan.mobiles);
 
-	zlatan.mobiles.forEach(create_tag_reply, buffon);
 
-	function create_tag_reply(element, index, array, buffon){
-	
-		console.log("Inside create_tag_reply");
+    for (var j = 0; j < zlatan.mobiles.length; j++){
+    
+        console.log("Inside create_tag_reply");
 
         var tags_general = ["latest"];
 
@@ -21411,17 +21410,17 @@ function tag_related_question(zlatan, buffon){
 
         var tags_functionality_false = [];
 
-        element.tags_requested.forEach(check_tag_general);
+        zlatan.mobiles[j].tags_requested.forEach(check_tag_general);
 
-        element.tags_requested.forEach(check_tag_functionality);
+        zlatan.mobiles[j].tags_requested.forEach(check_tag_functionality);
 
         function check_tag_general(tag, tag_count, tag_array){
 
             if(tags_general.indexOf(tag) > -1){
 
-                console.log(tag + " value is : " + element.variants[0].product_tags[tag]);
+                console.log(tag + " value is : " + zlatan.mobiles[j].variants[0].product_tags[tag]);
 
-                if(element.variants[0].product_tags[tag]){
+                if(zlatan.mobiles[j].variants[0].product_tags[tag]){
                     tags_general_true.push(tag);
                 }
 
@@ -21437,9 +21436,9 @@ function tag_related_question(zlatan, buffon){
 
             if(tags_functionality.indexOf(tag) > -1){
 
-                console.log(tag + " value is : " + element.variants[0].product_tags[tag]);
+                console.log(tag + " value is : " + zlatan.mobiles[j].variants[0].product_tags[tag]);
 
-                if(element.variants[0].product_tags[tag]){
+                if(zlatan.mobiles[j].variants[0].product_tags[tag]){
                     tags_functionality_true.push(tag);
                 }
 
@@ -21475,13 +21474,13 @@ function tag_related_question(zlatan, buffon){
             
             if(tags_general_true.length > 0){
 
-                tags_general_reply = "Yes " + element.variants[0].product_basic_info.normalized_name + " is the latest phone";
+                tags_general_reply = "Yes " + zlatan.mobiles[j].variants[0].product_basic_info.normalized_name + " is the latest phone";
 
             }
 
             if(tags_general_false.length > 0){
 
-                tags_general_reply = element.variants[0].product_basic_info.normalized_name + " is not the latest phone";
+                tags_general_reply = zlatan.mobiles[j].variants[0].product_basic_info.normalized_name + " is not the latest phone";
             }
 
         }
@@ -21490,13 +21489,13 @@ function tag_related_question(zlatan, buffon){
 
             if(tags_functionality_true.length > 0){
 
-                tags_functionality_reply_true = "Yes " + element.variants[0].product_basic_info.normalized_name + " has " + arrayToSentence(tags_functionality_true);
+                tags_functionality_reply_true = "Yes " + zlatan.mobiles[j].variants[0].product_basic_info.normalized_name + " has " + arrayToSentence(tags_functionality_true);
 
             }
 
             if(tags_functionality_false.length > 0){
 
-                tags_functionality_reply_false = "No " + element.variants[0].product_basic_info.normalized_name + " doesn't have " + arrayToSentence(tags_functionality_false);
+                tags_functionality_reply_false = "No " + zlatan.mobiles[j].variants[0].product_basic_info.normalized_name + " doesn't have " + arrayToSentence(tags_functionality_false);
             }
 
         }
@@ -21525,7 +21524,11 @@ function tag_related_question(zlatan, buffon){
         add_to_display(tags_functionality_reply_false, buffon);
 
 
-	}
+
+
+    }
+
+
 
 
 
