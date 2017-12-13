@@ -97,8 +97,8 @@
 
 						<div class="chat__messages">
 							<div class="message message_vinci">
-								<h5 class="message__title">Latest phones</h5>
-								<!--<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">-->
+                                <h5 class="message__title">Latest phones</h5>
+                                
 								<div class="owl-carousel owl-theme">
 
 
@@ -300,8 +300,8 @@
 								</div>
 							</div>
 							<div class="message message_vinci">
-								<h5 class="message__title">Top collections of mobiles</h5>
-								<!--<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">-->
+                                
+                                <h5 class="message__title">Top collections of mobiles</h5>
 								<div class="owl-carousel owl-theme">
 
 
@@ -620,8 +620,7 @@
 								</div>
 							</div>
 							<div class="message message_vinci">
-								<h5 class="message__title">Latest video review</h5>
-								<!--<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">-->
+                                <h5 class="message__title">Latest video review</h5>
 								<div class="owl-carousel owl-theme">
 									<div class="message__item message__item_vinci br-chat message__collection collection">
 										<div class="row align-items-stretch">
@@ -665,7 +664,6 @@
 								</div>
 							</div>
 							<div class="message message_vinci">
-								<!--<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">-->
 								<div class="owl-carousel owl-theme">
 									<div class="message__item message__item_vinci br-chat message__video-item video-item">
 										<div class="video-item__wrap">
@@ -723,7 +721,6 @@
 								<input class="send__input" placeholder="Type your message or tap the 'Speak to Vinci' button">
 								<button class="btn send__btn" type="submit" id="send_chat">Send</button>
 								<button class="btn send__btn send__btn_speak" onclick="start_speech()">
-									<!--<img src="assets/build/assets/images/microphone_white.svg" alt="">-->
 									Talk to Vinci
 								</button>
 							</div>
@@ -1100,7 +1097,6 @@
 <script id="handlebars-case-100" type="text/x-handlebars-template">
 	
 	<div class="message message_vinci ">
-	    <!--<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">-->
 	    <div class="owl-carousel owl-theme">
 	        {{#each phones}}
 	            <div class="message__item message__item_view message__item_view-full view  br-chat" id="{{this.id}}">
@@ -1277,7 +1273,6 @@
 	
 	
 	<div class="message message_vinci">
-	  <!--<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">-->
 	  <div class="message__item message__item_vinci  message__item_compare br-chat">
 	    <table class="table table-bordered compare__table">
 	      <thead>
@@ -1310,7 +1305,6 @@
 
 <script id="handlebars-case-120" type="text/x-handlebars-template">
 	<div class="message message_vinci">
-	  <!--<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">-->
 	  <div class="message__item message__item_vinci br-chat">
 	    <p>Here is the review video</p>
 	  </div>
@@ -1318,7 +1312,6 @@
 	
 	
 	<div class="message message_vinci message__horizontal message__not-mobile-horiz">
-	  <!--<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">-->
 	  <div class="owl-carousel owl-theme">
 	    {{#each youtube_video}} 
 	
@@ -1343,7 +1336,6 @@
 	
 	
 	<div class="message message_vinci">
-		<!--<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">-->
 		<div class="message__item message__item_specific view br-chat">
 			
 			<div class="specific">
@@ -1367,7 +1359,6 @@
 	
 	{{#each attribute}}
 		<div class="message message_vinci">
-		  <!--<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">-->
 		  <div class="message__item message__item_vinci br-chat">
 		    <p>{{this.content_text}}</p>
 		  </div>
@@ -1376,7 +1367,6 @@
 
 <script id="handlebars-case-error" type="text/x-handlebars-template">
 	<div class="message message_vinci">
-	  <!--<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">-->
 	  <div class="message__item message__item_vinci br-chat">
 	    <p>Sorry. There seems to be an error at my end. Please try another request!</p>
 	  </div>
@@ -1387,7 +1377,7 @@
 		
 		{{#each text}}	
 		<div class="message message_vinci">
-		  <!--<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">-->
+		  <img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">
 		  <div class="message__item message__item_vinci br-chat">
 	
 		    <p>{{this}}</p>
@@ -1400,15 +1390,11 @@
 <script id="handlebars-suggested-questions" type="text/x-handlebars-template">
 	
 		<div class="message message_vinci">
-
-				<ul class="suggestion">
-					{{#each suggested_questions}}
-					<li class="suggestion__item br-chat" onclick="send_question(event)">{{this.displayText}}</li>
-					{{/each}}
-				</ul>
-
-
-
+	        <ul class="suggestion">
+	        {{#each suggested_questions}}	
+	          <li class="suggestion__item br-chat" onclick="send_question(event)">{{this.displayText}}</li>
+	      	{{/each}}
+	        </ul>
 		</div> 
 </script>
 
