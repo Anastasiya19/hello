@@ -219,7 +219,7 @@ Beckham.prototype.build_error_element = function(){
 
 Beckham.prototype.build_text_reply_element = function(buffon){
 
-    this.template = $('#handlebars-case-1').html();
+    this.template = $('#handlebars-case-1x').html();
 
     // Compile the template data into a function
     this.templateScript = Handlebars.compile(this.template);
