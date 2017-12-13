@@ -137,7 +137,7 @@ Messi.prototype.camera_reply = function(){
 
     attribute_sixth = {
         value: this.mobile.variants[0].camera.full_hd_recording_status,
-        text: "HD Recording status",
+        text: "Full HD Recording status",
         icon: "ion-ios-videocam"
 
     };
@@ -286,23 +286,22 @@ Messi.prototype.processor_reply = function(){
     var attribute_third = {};
 
     attribute_first = {
-        value: this.mobile.variants[0].os_processor.processor_speed,
-        text: "Speed",
-        icon: "ion-speedometer"
-    };
-
-
-    attribute_second = {
-        value: this.mobile.variants[0].os_processor.processor_core,
-        text: "Type",
-        icon: "ion-gear-a"
-    };
-
-    attribute_third = {
         value: this.mobile.variants[0].os_processor.operating_system,
         text: "OS",
         icon: "ion-code-working"
 
+    };
+
+    attribute_second = {
+        value: this.mobile.variants[0].os_processor.processor_core,
+        text: "Processor Type",
+        icon: "ion-gear-a"
+    };
+
+    attribute_third = {
+        value: this.mobile.variants[0].os_processor.processor_speed,
+        text: "Processor Speed",
+        icon: "ion-speedometer"
     };
 
     console.log("Attributes created")
@@ -348,31 +347,62 @@ Messi.prototype.sim_features_reply = function(){
 
     var reply = {};
 
+    var attribute_first = {};
+    var attribute_second = {};
+    var attribute_third = {};
+
+    attribute_first = {
+        value: this.mobile.variants[0].sim_features.sim_type,
+        text: "Sim type",
+        icon: "ion-backspace-outline"
+
+    };
+
+    attribute_second = {
+        value: this.mobile.variants[0].sim_features.sim_size,
+        text: "Sim size",
+        icon: "ion-backspace-outline"
+    };
+
+    attribute_third = {
+        value: this.mobile.variants[0].sim_features.hybrid_sim_slot_status,
+        text: "Hybrid Sim Slot",
+        icon: "ion-backspace-outline"
+    };
+
+    console.log("Attributes created")
+
+    
+    this.context_detailed.push(attribute_first);
+    this.context_detailed.push(attribute_second);
+    this.context_detailed.push(attribute_third);
+
+
     // reply.heading_text = "Here are the sim card details for "+this.mobile.variants[0].product_basic_info.normalized_name;
 
 
-    if(this.mobile.variants[0].sim_features.sim_type!=="N/A"){
+    // if(this.mobile.variants[0].sim_features.sim_type!=="N/A"){
 
-        reply.content_text = "It has a "+this.mobile.variants[0].sim_features.sim_type+" slot. ";
-    }
+    //     reply.content_text = "It has a "+this.mobile.variants[0].sim_features.sim_type+" slot. ";
+    // }
 
-    else{
+    // else{
 
-        reply.content_text = "I don't have the details on the sim type. ";
-    }
+    //     reply.content_text = "I don't have the details on the sim type. ";
+    // }
 
 
-    if(this.mobile.variants[0].sim_features.sim_size!=="N/A"){
+    // if(this.mobile.variants[0].sim_features.sim_size!=="N/A"){
 
-        reply.content_text = reply.content_text + "Size of the sim supported is: "+this.mobile.variants[0].sim_features.sim_size;
-    }
+    //     reply.content_text = reply.content_text + "Size of the sim supported is: "+this.mobile.variants[0].sim_features.sim_size;
+    // }
 
-    else{
+    // else{
 
-        reply.content_text = reply.content_text + "I don't have the details on the sim size for this particular phone";
-    }
+    //     reply.content_text = reply.content_text + "I don't have the details on the sim size for this particular phone";
+    // }
 
-    this.context_summary.push(reply);
+    // this.context_summary.push(reply);
 
 }
 
@@ -392,6 +422,7 @@ Messi.prototype.storage_reply = function(){
     console.log("This is the storage variant: ",this.mobile.variants[0].memory_storage.internal_storage);
 
     var storage_array = [];
+    var expandable_storage = "N/A";
 
     this.mobile.variants.forEach(fetch_storage);
 
@@ -399,6 +430,9 @@ Messi.prototype.storage_reply = function(){
 
         if(variant.memory_storage.internal_storage !== "N/A"){
             storage_array.push(variant.memory_storage.internal_storage);
+            if(variant.memory_storage.expandable_storage !== "N/A"){
+                expandable_storage = variant.memory_storage.expandable_storage;
+            }
         }
 
     }
@@ -411,11 +445,24 @@ Messi.prototype.storage_reply = function(){
 
 
     if(storage_array.length > 0){
-        reply.content_text = "It has " + arrayToSentence(storage_array) + " variants";    
+        reply.content_text = "It has " + arrayToSentence(storage_array) + " variants."; 
+        fetch_expandable_storage(reply, expandable_storage);
+
     }
 
     else{
-        reply.content_text = "Seems like I don't have the storage details for this phone";
+        reply.content_text = "Seems like I don't have the storage details for this phone. ";
+        fetch_expandable_storage(reply, expandable_storage);
+    }
+
+    function fetch_expandable_storage(reply, expandable_storage){
+        if(expandable_storage !== "N/A"){
+            reply.content_text = reply.content_text + "It has an expandable storage of " + expandable_storage;
+        }
+
+        else{
+            reply.content_text = reply.content_text + "Seems like I don't have the details on expandable storage";
+        }
     }
     
 
