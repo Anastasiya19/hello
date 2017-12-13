@@ -6,6 +6,25 @@
     margin-bottom: 20px;
   }
 
+  &__item-info {
+    display: inline-block;
+    height: 20px;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  &__item-rate {
+    //float: left;
+    width: 105px;
+    display: inline-block;
+  }
+
+  &__item-author {
+    float: right;
+    width: auto;
+  }
+
+
   &__item {
     position: relative;
     background: #fff;
@@ -21,6 +40,13 @@
       font-size: 0.95714rem;
       margin-bottom: 0;
     }
+
+
+    &_title {
+      padding-left: 15px;
+      padding-top: 10px;
+    }
+
     &_vinci {
       width: fit-content;
       max-width: 460px;
@@ -60,6 +86,31 @@
       }
       @include box-shadow;
     }
+
+    &_review {
+      padding: 20px 20px 10px 20px;
+      float: left;
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);
+
+      @media (max-width: 1023px) {
+        width: 100%;
+      }
+      @media (min-width: 1024px) {
+        max-width: 48%;
+        margin-bottom: 20px;
+        &:nth-child(odd) {
+          margin-right: 25px;
+        }
+        &:nth-child(even) {
+          //float: right;
+        }
+      }
+
+    }
+    &_review-filter{
+      padding: 20px;
+    }
+
     &_horizontal {
       display: inline-block;
       margin-bottom: 0;

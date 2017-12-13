@@ -13,7 +13,7 @@ function tag_related_question(zlatan, buffon){
 
         var tags_general = ["latest"];
 
-        var tags_functionality = ["dual sim", "fingerprint sensor", "wireless charging", "4g", "gorilla glass", "bezel", "gaming", "waterproof"];
+        var tags_functionality = ["dual sim", "fingerprint sensor", "wireless charging", "4g", "gorilla glass", "bezel", "gaming", "waterproof", "otg compatible", "micro usb port", "expandable storage", "hybrid sim slot", "portrait mode"];
 
         var tags_general_true = [];
 
