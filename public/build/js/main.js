@@ -21393,9 +21393,9 @@ function tag_related_question(zlatan, buffon){
 	//which chat element to build
 	console.log("This is the list of mobiles received from the backend: ", zlatan.mobiles);
 
-	zlatan.mobiles.forEach(create_tag_reply);
+	zlatan.mobiles.forEach(create_tag_reply, buffon);
 
-	function create_tag_reply(element, index, array){
+	function create_tag_reply(element, index, array, buffon){
 	
 		console.log("Inside create_tag_reply");
 
