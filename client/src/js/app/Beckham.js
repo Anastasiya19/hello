@@ -226,23 +226,8 @@ Beckham.prototype.build_text_reply_element = function(buffon){
 
     console.log("This is displayText inside build_text_reply_element: ", buffon.displayText);
 
-    var handlebars_text = [];
-
-    buffon.displayText.forEach(create_array);
-
-    function create_array(element, index, array){
-
-        var reply = {};
-
-        reply.text = element;
-
-        handlebars_text.push(reply)
-    }
-
-    console.log("This is the text array: ", handlebars_text);
-
     var context = {
-        final_display_text: handlebars_text
+        text: buffon.displayText
     }
 
     console.log("This is context: ", context);
