@@ -20105,25 +20105,51 @@ Messi.prototype.display_reply = function(){
         icon: "ion-iphone"
     };
 
-
     attribute_second = {
-        value: this.mobile.variants[0].display_specifications.resolution_type,
+        value: this.mobile.variants[0].display_specifications.display_type,
         text: "Display type",
+        icon: "ion-iphone"
+    };
+
+
+    attribute_third = {
+        value: this.mobile.variants[0].display_specifications.display_colors,
+        text: "Display colors",
         icon: "ion-android-sunny"
     };
 
-    attribute_third = {
+    attribute_fourth = {
         value: this.mobile.variants[0].display_specifications.resolution,
         text: "Resolution",
         icon: "ion-android-film"
 
     };
 
+    attribute_fifth = {
+        value: this.mobile.variants[0].display_specifications.resolution_type,
+        text: "Resolution type",
+        icon: "ion-android-sunny"
+    };
+
+    attribute_sixth = {
+        value: this.mobile.variants[0].display_specifications.touchscreen_status,
+        text: "Touchscreen",
+        icon: "ion-iphone"
+    };
+
+
     console.log("Attributes created")
+
+    this.context_detailed.push(attribute_fourth);
+    this.context_detailed.push(attribute_fifth);
+    this.context_detailed.push(attribute_sixth);
+
 
     this.context_detailed.push(attribute_first);
     this.context_detailed.push(attribute_second);
     this.context_detailed.push(attribute_third);
+
+
 
 }
 
