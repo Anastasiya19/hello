@@ -14,9 +14,9 @@ function Beckham (query_status) {
 
 }
 
-Beckham.prototype.check_tag_related_question = function(zlatan){
+Beckham.prototype.check_tag_related_question = function(zlatan, buffon){
 
-    tag_related_question(zlatan);
+    tag_related_question(zlatan, buffon);
 
 }
 
@@ -219,21 +219,27 @@ Beckham.prototype.build_error_element = function(){
 
 Beckham.prototype.build_text_reply_element = function(buffon){
 
-    // this.template = $('#handlebars-case-1').html();
+    this.template = $('#handlebars-case-1x').html();
 
-    // // Compile the template data into a function
-    // this.templateScript = Handlebars.compile(this.template);
+    // Compile the template data into a function
+    this.templateScript = Handlebars.compile(this.template);
 
-    // var context = {
-    //     text: buffon.displayText
-    // }
+    console.log("This is displayText inside build_text_reply_element: ", buffon.displayText);
 
-    // this.html = this.templateScript(context);
+    var context = {
+        text: buffon.displayText
+    }
 
-    //  // Insert the HTML code into the page
-    // $('.chat__messages').append(this.html);
+    console.log("This is context: ", context);
 
-    // this.scroll_into_view();
+    this.html = this.templateScript(context);
+
+    console.log("This is the html generated: ", this.html);
+
+     // Insert the HTML code into the page
+    $('.chat__messages').append(this.html);
+
+    this.scroll_into_view();
 
 
 }
