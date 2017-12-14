@@ -39,13 +39,13 @@ const html_path = path.join(__dirname, "../../public/chat.html")
 
 
 // this will be  scheduled
-render_chat_html().then(() => {
+// render_chat_html().then(() => {
 
-    console.log('done')
+//     console.log('done')
 
-}).catch(err => {
-    console("Error")
-})
+// }).catch(err => {
+//     console("Error")
+// })
 
 
 
