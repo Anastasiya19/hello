@@ -117,11 +117,12 @@ gulp.task('build', [
     'style:build',
     'fonts:build',
     'image:build',
+    'render_html'
 ]);
 
 
 gulp.task('quick', [
-
+    'render_html',
     'js:build',
     'style:build'
 
