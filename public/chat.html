@@ -1889,23 +1889,21 @@
 
 		var text_reply = "Let's get started!";
 
-		$('.chat__messages')
-				.append(`<div class="message message_vinci">
+      $('.chat__messages')
+        .append(`<div class="message message_vinci">
 	    	<div class="message__item message__item_vinci br-chat" style="width: fit-content;">
 	      		<p>${text_reply}</p>
 			</div>
-			<div >
-				<ul class=" suggestion owl-carousel owl-theme">
-					<li class="suggestion__item br-chat" id="demo-yes" onclick="send_question(event)">Show me iPhone 8</li>
-					<li class="suggestion__item br-chat" id="demo-no" onclick="send_question(event)">Show me Samsung Galaxy S8</li>
-					<li class="suggestion__item br-chat" id="demo-no" onclick="send_question(event)">Compare iPhone 8 and Samsung Galaxy S8</li>
-					<li class="suggestion__item br-chat" id="demo-no" onclick="send_question(event)">Suggest a phone with 4gb ram</li>
-					<li class="suggestion__item br-chat" id="demo-no" onclick="send_question(event)">Phones with bezel less display</li>
-				</ul>
+			<div class="owl-carousel owl-theme">
+					<div class='trending-question'><span>Show me iPhone 8</span></div>
+					<div class='trending-question'><span>Compare iPhone 8 amd Samsumg Galaxy</span></div>
+					<div class='trending-question'><span>Show me iPhone 6</span></div>
+					<div class='trending-question'><span>Show me iPhone 8</span></div>
+					<div class='trending-question'><span>Show me iPhone X</span></div>
 			</div>
 	  	</div>`);
 
-		$('.chat__messages').scrollTop($('.chat__messages')[0].scrollHeight);
+      $('.chat__messages').scrollTop($('.chat__messages')[0].scrollHeight);
 
 
 	}, false);
