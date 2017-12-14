@@ -1,9 +1,6 @@
 .compare {
 
-  &__table-title{
-    background-color: lightgray;
-    color: black;
-  }
+
   &__table {
     margin-bottom: 0;
     border: 1px solid #F4F7F9;
@@ -61,4 +58,9 @@
       }
     }
   }
+
+  //&__table-title {
+  //  background-color: lightgray;
+  //  color: black;
+  //}
 }
