@@ -1,29 +1,63 @@
+<!-- Default layout of the handlebars template -->
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hello Vinci</title>
-  <link rel="stylesheet" href="css/main.css">
-  <script src="http://www.youtube.com/iframe_api"></script>
-  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<!-- Basic Page Needs
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta charset="utf-8">
+	<title> Hello Vinci - Smart AI driven price comparison </title>
+	<meta name="description" content="Content Curation Platform">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="author" content="Ankur Dhamija">
+
+	<!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<style>
+
+	</style>
+
+	<link rel="stylesheet" href="/assets/build/css/main.css">
+	<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 </head>
+
 <body>
+<div class="speaking speaking__overlay" style="display:none; height: 200%;" id="speech_overlay">
+	<!--speaking__status_ready, speaking__status_listen, speaking__status_analyzing-->
+	<button class="speaking__close"><i class="ion-ios-close-outline"></i></button>
+	<div class="speaking__status speaking__status_ready">
+		<div class="microphone">
+			<img class="microphone__image microphone__image_default" src="assets/build/assets/images/microphone_grey.svg"
+				 alt="">
+			<img class="microphone__image microphone__image_active" src="assets/build/assets/images/microphone_blue.svg"
+				 alt="">
+		</div>
+		<div class="speaking__description" id="speech_overlay_text">
+			<h3>I am ready!</h3>
+			<h4>Please speak :)</h4>
+		</div>
+	</div>
+</div>
+
+
 <div class="header header__chat">
 	<div class="header__container container">
 		<div class="row justify-content-between">
 			<div class="header__logo">
-				<a href="index.html">
-					<img src="assets/images/logo.svg" alt="Logotype">
+				<a href="/">
+					<img src="assets/build/assets/images/logo.svg" alt="Logotype">
 				</a>
 			</div>
 			<div class="header__links">
-				<a href="howItWork.html" class="header__btn header__btn_mobile-home button button_white">
+				<a href="/" class="header__btn header__btn_mobile-home button button_white">
 					<div class="header__btn_icon header__btn_icon-home"></div>
 					<span class="header__btn_label">Home</span>
 				</a>
 				<div class="header__links_right header__btn_mobile-language">
-					<div class="language header__btn  button button_white selection selection_list">
+					<div class="language header__btn button button_white selection selection_list">
 						<h5 class="selection__name selection__name_current selection__padding">
 							<span class="selection__name">English</span>
 						</h5>
@@ -45,9 +79,9 @@
 							</li>
 						</ul>
 					</div>
-					<a href="" class="header__btn header__btn_mobile-hide button button_white ">
+					<a href="/explainer_video" class="header__btn header__btn_mobile-hide button button_white">
 						<div class="header__btn_icon header__btn_icon-works"></div>
-						<span class="header__btn_label">How it Works</span>
+						<span class="header__btn_label">Explainer video</span>
 					</a>
 				</div>
 			</div>
@@ -60,59 +94,246 @@
 			<div class="wrapper-chat">
 				<div class="chat">
 					<div class="chat__content scrollable-container">
+
 						<div class="chat__messages">
 							<div class="message message_vinci">
 								<h5 class="message__title">Latest phones</h5>
-								<!--<img class="vinci-logo" src="assets/images/vinci-mes.svg" alt="">-->
-								<div class="message__item message__item_vinci br-chat">
-									<p>Hello!<br>
-										I can help you find the best price of your favorite phone,
-										compare its features and I can also suggest you the top selling phones!!</p>
-								</div>
-								<ul class="suggestion">
-									<li class="suggestion__item br-chat">Show me iPhone 6s</li>
-									<li class="suggestion__item  suggestion__item_active br-chat ">Tell me about iPhone 7 Battery</li>
-								</ul>
-							</div>
-							<div class="message message_sender">
-								<!--<img class="user-logo" src="assets/images/user-mes.svg" alt="">-->
-								<div class="message__item message__item_user br-chat ">
-									<p>Compare iPhone 6, iPhone 7, Samsung Galaxy S8</p>
+								<!--<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">-->
+								<div class="owl-carousel owl-theme">
+
+
+									<div class="message__item message__item_vinci br-chat message__category category">
+										<div class="row">
+											<div class="category__image col-4">
+												<img src="http://img.fkcdn.com/image/mobile/g/m/8/apple-iphone-6s-mn122hn-a-400x400-imaen3f3ubsf8zn3.jpeg" alt="">
+											</div>
+											<div class="category__description col-8">
+												<h4 class="category__type">Apple</h4>
+												<h3 class="category__name">Apple iPhone 6s (Rose Gold, 32 GB)</h3>
+												<div class="category__prices-box">
+													<span>Rs.36999</span>
+													<span class="old">Rs.50000</span>
+												</div>
+												<div class="facebook-status characteristic__facebook-status">
+													<ul class="facebook-status__list">
+														<li class="facebook-status__item like_reaction">
+															<a href="#" class="facebook-status__link" onclick="react(event,'like','Apple iPhone 6s')">
+																<img src="assets/build/assets/images/facebook-like.svg" alt="" class="facebook-status__icon">
+															</a>
+															<span>11</span>
+														</li>
+														<li class="facebook-status__item love_reaction">
+															<a href="#" class="facebook-status__link" onclick="react(event,'love','Apple iPhone 6s')">
+																<img src="assets/build/assets/images/facebook-love.svg" alt="" class="facebook-status__icon">
+															</a>
+															<span>12</span>
+														</li>
+														<li class="facebook-status__item angry_reaction">
+															<a href="#" class="facebook-status__link" onclick="react(event,'angry','Apple iPhone 6s')">
+																<img src="assets/build/assets/images/facebook-angry.svg" alt="" class="facebook-status__icon">
+															</a>
+															<span>11</span>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="message__item message__item_vinci br-chat message__category category">
+										<div class="row">
+											<div class="category__image col-4">
+												<img src="http://img.fkcdn.com/image/j2c6du80/mobile/q/k/h/apple-iphone-se-mp842hn-a-400x400-imaetmawbgfsxguh.jpeg" alt="">
+											</div>
+											<div class="category__description col-8">
+												<h4 class="category__type">Apple</h4>
+												<h3 class="category__name">Apple iPhone SE (Gold, 32 GB)</h3>
+												<div class="category__prices-box">
+													<span>Rs.21999</span>
+													<span class="old">Rs.27200</span>
+												</div>
+												<div class="facebook-status characteristic__facebook-status">
+													<ul class="facebook-status__list">
+														<li class="facebook-status__item like_reaction">
+															<a href="#" class="facebook-status__link" onclick="react(event,'like','Apple iPhone SE')">
+																<img src="assets/build/assets/images/facebook-like.svg" alt="" class="facebook-status__icon">
+															</a>
+															<span>4</span>
+														</li>
+														<li class="facebook-status__item love_reaction">
+															<a href="#" class="facebook-status__link" onclick="react(event,'love','Apple iPhone SE')">
+																<img src="assets/build/assets/images/facebook-love.svg" alt="" class="facebook-status__icon">
+															</a>
+															<span>6</span>
+														</li>
+														<li class="facebook-status__item angry_reaction">
+															<a href="#" class="facebook-status__link" onclick="react(event,'angry','Apple iPhone SE')">
+																<img src="assets/build/assets/images/facebook-angry.svg" alt="" class="facebook-status__icon">
+															</a>
+															<span>4</span>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="message__item message__item_vinci br-chat message__category category">
+										<div class="row">
+											<div class="category__image col-4">
+												<img src="http://img.fkcdn.com/image/mobile/t/6/f/apple-iphone-5-400x400-imadknfx5s2wngz9.jpeg" alt="">
+											</div>
+											<div class="category__description col-8">
+												<h4 class="category__type">Apple</h4>
+												<h3 class="category__name">Apple iPhone 5 (Black, 16 GB)</h3>
+												<div class="category__prices-box">
+													<span>Rs.14999</span>
+													<span class="old">Rs.44000</span>
+												</div>
+												<div class="facebook-status characteristic__facebook-status">
+													<ul class="facebook-status__list">
+														<li class="facebook-status__item like_reaction">
+															<a href="#" class="facebook-status__link" onclick="react(event,'like','Apple iPhone 5')">
+																<img src="assets/build/assets/images/facebook-like.svg" alt="" class="facebook-status__icon">
+															</a>
+															<span>3</span>
+														</li>
+														<li class="facebook-status__item love_reaction">
+															<a href="#" class="facebook-status__link" onclick="react(event,'love','Apple iPhone 5')">
+																<img src="assets/build/assets/images/facebook-love.svg" alt="" class="facebook-status__icon">
+															</a>
+															<span>5</span>
+														</li>
+														<li class="facebook-status__item angry_reaction">
+															<a href="#" class="facebook-status__link" onclick="react(event,'angry','Apple iPhone 5')">
+																<img src="assets/build/assets/images/facebook-angry.svg" alt="" class="facebook-status__icon">
+															</a>
+															<span>4</span>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="message__item message__item_vinci br-chat message__category category">
+										<div class="row">
+											<div class="category__image col-4">
+												<img src="http://img.fkcdn.com/image/j2c6du80/mobile/f/2/j/apple-iphone-6-a1586-400x400-imaetnf2h6gck78p.jpeg" alt="">
+											</div>
+											<div class="category__description col-8">
+												<h4 class="category__type">Apple</h4>
+												<h3 class="category__name">Apple iPhone 6 (Space Grey, 32 GB)</h3>
+												<div class="category__prices-box">
+													<span>Rs.25999</span>
+													<span class="old">Rs.30700</span>
+												</div>
+												<div class="facebook-status characteristic__facebook-status">
+													<ul class="facebook-status__list">
+														<li class="facebook-status__item like_reaction">
+															<a href="#" class="facebook-status__link" onclick="react(event,'like','Apple iPhone 6')">
+																<img src="assets/build/assets/images/facebook-like.svg" alt="" class="facebook-status__icon">
+															</a>
+															<span>1</span>
+														</li>
+														<li class="facebook-status__item love_reaction">
+															<a href="#" class="facebook-status__link" onclick="react(event,'love','Apple iPhone 6')">
+																<img src="assets/build/assets/images/facebook-love.svg" alt="" class="facebook-status__icon">
+															</a>
+															<span>1</span>
+														</li>
+														<li class="facebook-status__item angry_reaction">
+															<a href="#" class="facebook-status__link" onclick="react(event,'angry','Apple iPhone 6')">
+																<img src="assets/build/assets/images/facebook-angry.svg" alt="" class="facebook-status__icon">
+															</a>
+															<span>1</span>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="message__item message__item_vinci br-chat message__category category">
+										<div class="row">
+											<div class="category__image col-4">
+												<img src="http://img.fkcdn.com/image/j1dvte80/mobile/p/a/t/apple-iphone-5s-a1530-400x400-imae2fhpc35bftft.jpeg" alt="">
+											</div>
+											<div class="category__description col-8">
+												<h4 class="category__type">Apple</h4>
+												<h3 class="category__name">Apple iPhone 5s (Gold, 16 GB)</h3>
+												<div class="category__prices-box">
+													<span>Rs.19100</span>
+													<span class="old">Rs.47000</span>
+												</div>
+												<div class="facebook-status characteristic__facebook-status">
+													<ul class="facebook-status__list">
+														<li class="facebook-status__item like_reaction">
+															<a href="#" class="facebook-status__link" onclick="react(event,'like','Apple iPhone 5s')">
+																<img src="assets/build/assets/images/facebook-like.svg" alt="" class="facebook-status__icon">
+															</a>
+															<span>5</span>
+														</li>
+														<li class="facebook-status__item love_reaction">
+															<a href="#" class="facebook-status__link" onclick="react(event,'love','Apple iPhone 5s')">
+																<img src="assets/build/assets/images/facebook-love.svg" alt="" class="facebook-status__icon">
+															</a>
+															<span>6</span>
+														</li>
+														<li class="facebook-status__item angry_reaction">
+															<a href="#" class="facebook-status__link" onclick="react(event,'angry','Apple iPhone 5s')">
+																<img src="assets/build/assets/images/facebook-angry.svg" alt="" class="facebook-status__icon">
+															</a>
+															<span>6</span>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
 								</div>
 							</div>
 							<div class="message message_vinci">
 								<h5 class="message__title">Top collections of mobiles</h5>
-								<!--<img class="vinci-logo" src="assets/images/vinci-mes.svg" alt="">-->
+								<!--<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">-->
 								<div class="owl-carousel owl-theme">
+
+
 									<div class="message__item message__item_vinci br-chat message__category category">
 										<div class="row">
 											<div class="category__image col-4">
-												<img src="assets/images/iphone7.svg" alt="">
+												<img src="http://img.fkcdn.com/image/mobile/g/z/h/samsung-galaxy-star-2-sm-g130e-400x400-imadzsw2jder7ve7.jpeg" alt="">
 											</div>
 											<div class="category__description col-8">
-												<h4 class="category__type">iPhone</h4>
-												<h3 class="category__name">iPhone 7 On Max (Gray, 124 GB)</h3>
+												<h4 class="category__type">Samsung</h4>
+												<h3 class="category__name">Samsung Galaxy Star 2 (White, 4 GB)</h3>
 												<div class="category__prices-box">
-													<span>Rs. 19000</span>
-													<span class="old">Rs. 25700</span>
+													<span>Rs.4400</span>
+													<span class="old">Rs.4890</span>
 												</div>
-												<div class="facebook-status category__facebook-status">
+												<div class="facebook-status characteristic__facebook-status">
 													<ul class="facebook-status__list">
-														<li class="facebook-status__item">
-															<a href="#" class="facebook-status__link">
-																<img src="assets/images/facebook-like.svg" alt="" class="facebook-status__icon">
+														<li class="facebook-status__item like_reaction">
+															<a href="#" class="facebook-status__link" onclick="react(event,'like','Samsung Galaxy Star 2')">
+																<img src="assets/build/assets/images/facebook-like.svg" alt="" class="facebook-status__icon">
 															</a>
-															<span>10</span>
+															<span>1</span>
 														</li>
-														<li class="facebook-status__item">
-															<a href="#" class="facebook-status__link">
-																<img src="assets/images/facebook-love.svg" alt="" class="facebook-status__icon">
+														<li class="facebook-status__item love_reaction">
+															<a href="#" class="facebook-status__link" onclick="react(event,'love','Samsung Galaxy Star 2')">
+																<img src="assets/build/assets/images/facebook-love.svg" alt="" class="facebook-status__icon">
 															</a>
-															<span>15</span>
+															<span>2</span>
 														</li>
-														<li class="facebook-status__item">
-															<a href="#" class="facebook-status__link">
-																<img src="assets/images/facebook-angry.svg" alt="" class="facebook-status__icon">
+														<li class="facebook-status__item angry_reaction">
+															<a href="#" class="facebook-status__link" onclick="react(event,'angry','Samsung Galaxy Star 2')">
+																<img src="assets/build/assets/images/facebook-angry.svg" alt="" class="facebook-status__icon">
 															</a>
 															<span>1</span>
 														</li>
@@ -121,35 +342,37 @@
 											</div>
 										</div>
 									</div>
+
+
 									<div class="message__item message__item_vinci br-chat message__category category">
 										<div class="row">
 											<div class="category__image col-4">
-												<img src="assets/images/iphone7.svg" alt="">
+												<img src="http://img.fkcdn.com/image/j2z1fgw0/mobile/j/d/j/samsung-metro-313-sm-b313ezddins-400x400-imaeu5adwdexhmwn.jpeg" alt="">
 											</div>
 											<div class="category__description col-8">
-												<h4 class="category__type">iPhone</h4>
-												<h3 class="category__name">iPhone 7 On Max (Gray, 124 GB)</h3>
+												<h4 class="category__type">Samsung</h4>
+												<h3 class="category__name">Samsung Metro 313 (Gold, 2.27 MB)</h3>
 												<div class="category__prices-box">
-													<span>Rs. 19000</span>
-													<span class="old">Rs. 25700</span>
+													<span>Rs.2120</span>
+													<span class="old">Rs.2120</span>
 												</div>
-												<div class="facebook-status category__facebook-status">
+												<div class="facebook-status characteristic__facebook-status">
 													<ul class="facebook-status__list">
-														<li class="facebook-status__item">
-															<a href="#" class="facebook-status__link">
-																<img src="assets/images/facebook-like.svg" alt="" class="facebook-status__icon">
+														<li class="facebook-status__item like_reaction">
+															<a href="#" class="facebook-status__link" onclick="react(event,'like','Samsung Metro 313')">
+																<img src="assets/build/assets/images/facebook-like.svg" alt="" class="facebook-status__icon">
 															</a>
-															<span>10</span>
+															<span>1</span>
 														</li>
-														<li class="facebook-status__item">
-															<a href="#" class="facebook-status__link">
-																<img src="assets/images/facebook-love.svg" alt="" class="facebook-status__icon">
+														<li class="facebook-status__item love_reaction">
+															<a href="#" class="facebook-status__link" onclick="react(event,'love','Samsung Metro 313')">
+																<img src="assets/build/assets/images/facebook-love.svg" alt="" class="facebook-status__icon">
 															</a>
-															<span>15</span>
+															<span>2</span>
 														</li>
-														<li class="facebook-status__item">
-															<a href="#" class="facebook-status__link">
-																<img src="assets/images/facebook-angry.svg" alt="" class="facebook-status__icon">
+														<li class="facebook-status__item angry_reaction">
+															<a href="#" class="facebook-status__link" onclick="react(event,'angry','Samsung Metro 313')">
+																<img src="assets/build/assets/images/facebook-angry.svg" alt="" class="facebook-status__icon">
 															</a>
 															<span>1</span>
 														</li>
@@ -158,35 +381,115 @@
 											</div>
 										</div>
 									</div>
+
+
 									<div class="message__item message__item_vinci br-chat message__category category">
 										<div class="row">
 											<div class="category__image col-4">
-												<img src="assets/images/iphone7.svg" alt="">
+												<img src="http://img.fkcdn.com/image/mobile/h/g/h/samsung-galaxy-grand-i9082-400x400-imadnw4s3wgtxycb.jpeg" alt="">
 											</div>
 											<div class="category__description col-8">
-												<h4 class="category__type">iPhone</h4>
-												<h3 class="category__name">iPhone 7 On Max (Gray, 124 GB)</h3>
+												<h4 class="category__type">Samsung</h4>
+												<h3 class="category__name">Samsung Galaxy Grand Duos (Luxury Brown, 8 GB)</h3>
 												<div class="category__prices-box">
-													<span>Rs. 19000</span>
-													<span class="old">Rs. 25700</span>
+													<span>Rs.16528</span>
+													<span class="old">Rs.18500</span>
 												</div>
-												<div class="facebook-status category__facebook-status">
+												<div class="facebook-status characteristic__facebook-status">
 													<ul class="facebook-status__list">
-														<li class="facebook-status__item">
-															<a href="#" class="facebook-status__link">
-																<img src="assets/images/facebook-like.svg" alt="" class="facebook-status__icon">
+														<li class="facebook-status__item like_reaction">
+															<a href="#" class="facebook-status__link" onclick="react(event,'like','Samsung Galaxy Grand Duos')">
+																<img src="assets/build/assets/images/facebook-like.svg" alt="" class="facebook-status__icon">
 															</a>
-															<span>10</span>
+															<span></span>
 														</li>
-														<li class="facebook-status__item">
-															<a href="#" class="facebook-status__link">
-																<img src="assets/images/facebook-love.svg" alt="" class="facebook-status__icon">
+														<li class="facebook-status__item love_reaction">
+															<a href="#" class="facebook-status__link" onclick="react(event,'love','Samsung Galaxy Grand Duos')">
+																<img src="assets/build/assets/images/facebook-love.svg" alt="" class="facebook-status__icon">
 															</a>
-															<span>15</span>
+															<span>1</span>
 														</li>
-														<li class="facebook-status__item">
-															<a href="#" class="facebook-status__link">
-																<img src="assets/images/facebook-angry.svg" alt="" class="facebook-status__icon">
+														<li class="facebook-status__item angry_reaction">
+															<a href="#" class="facebook-status__link" onclick="react(event,'angry','Samsung Galaxy Grand Duos')">
+																<img src="assets/build/assets/images/facebook-angry.svg" alt="" class="facebook-status__icon">
+															</a>
+															<span></span>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="message__item message__item_vinci br-chat message__category category">
+										<div class="row">
+											<div class="category__image col-4">
+												<img src="http://img.fkcdn.com/image/mobile/e/3/n/samsung-galaxy-s-duos-3-sm-g313hu-400x400-imadzsu9mgfw5rfh.jpeg" alt="">
+											</div>
+											<div class="category__description col-8">
+												<h4 class="category__type">Samsung</h4>
+												<h3 class="category__name">Samsung Galaxy S Duos 3 (Charcoal Grey, 4 GB)</h3>
+												<div class="category__prices-box">
+													<span>Rs.4999</span>
+													<span class="old">Rs.7990</span>
+												</div>
+												<div class="facebook-status characteristic__facebook-status">
+													<ul class="facebook-status__list">
+														<li class="facebook-status__item like_reaction">
+															<a href="#" class="facebook-status__link" onclick="react(event,'like','Samsung Galaxy S Duos 3')">
+																<img src="assets/build/assets/images/facebook-like.svg" alt="" class="facebook-status__icon">
+															</a>
+															<span>1</span>
+														</li>
+														<li class="facebook-status__item love_reaction">
+															<a href="#" class="facebook-status__link" onclick="react(event,'love','Samsung Galaxy S Duos 3')">
+																<img src="assets/build/assets/images/facebook-love.svg" alt="" class="facebook-status__icon">
+															</a>
+															<span>2</span>
+														</li>
+														<li class="facebook-status__item angry_reaction">
+															<a href="#" class="facebook-status__link" onclick="react(event,'angry','Samsung Galaxy S Duos 3')">
+																<img src="assets/build/assets/images/facebook-angry.svg" alt="" class="facebook-status__icon">
+															</a>
+															<span>2</span>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="message__item message__item_vinci br-chat message__category category">
+										<div class="row">
+											<div class="category__image col-4">
+												<img src="http://img.fkcdn.com/image/mobile/s/h/j/samsung-galaxy-a5-galaxy-sm-a500gzkdinu-400x400-imaebpcfeurhafsv.jpeg" alt="">
+											</div>
+											<div class="category__description col-8">
+												<h4 class="category__type">Samsung</h4>
+												<h3 class="category__name">Samsung Galaxy A5 (Black, 16 GB)</h3>
+												<div class="category__prices-box">
+													<span>Rs.18900</span>
+													<span class="old">Rs.21900</span>
+												</div>
+												<div class="facebook-status characteristic__facebook-status">
+													<ul class="facebook-status__list">
+														<li class="facebook-status__item like_reaction">
+															<a href="#" class="facebook-status__link" onclick="react(event,'like','Samsung Galaxy A5')">
+																<img src="assets/build/assets/images/facebook-like.svg" alt="" class="facebook-status__icon">
+															</a>
+															<span>2</span>
+														</li>
+														<li class="facebook-status__item love_reaction">
+															<a href="#" class="facebook-status__link" onclick="react(event,'love','Samsung Galaxy A5')">
+																<img src="assets/build/assets/images/facebook-love.svg" alt="" class="facebook-status__icon">
+															</a>
+															<span>1</span>
+														</li>
+														<li class="facebook-status__item angry_reaction">
+															<a href="#" class="facebook-status__link" onclick="react(event,'angry','Samsung Galaxy A5')">
+																<img src="assets/build/assets/images/facebook-angry.svg" alt="" class="facebook-status__icon">
 															</a>
 															<span>1</span>
 														</li>
@@ -195,35 +498,115 @@
 											</div>
 										</div>
 									</div>
+
+
 									<div class="message__item message__item_vinci br-chat message__category category">
 										<div class="row">
 											<div class="category__image col-4">
-												<img src="assets/images/iphone7.svg" alt="">
+												<img src="http://img.fkcdn.com//image/mobile/x/e/p/samsung-i9100g-400x400-imad5uch49uqw2xg.jpeg" alt="">
 											</div>
 											<div class="category__description col-8">
-												<h4 class="category__type">iPhone</h4>
-												<h3 class="category__name">iPhone 7 On Max (Gray, 124 GB)</h3>
+												<h4 class="category__type">Samsung</h4>
+												<h3 class="category__name">Samsung I9100G (Ceramic White, N/A)</h3>
 												<div class="category__prices-box">
-													<span>Rs. 19000</span>
-													<span class="old">Rs. 25700</span>
+													<span>Rs.23139</span>
+													<span class="old">Rs.32830</span>
 												</div>
-												<div class="facebook-status category__facebook-status">
+												<div class="facebook-status characteristic__facebook-status">
 													<ul class="facebook-status__list">
-														<li class="facebook-status__item">
-															<a href="#" class="facebook-status__link">
-																<img src="assets/images/facebook-like.svg" alt="" class="facebook-status__icon">
+														<li class="facebook-status__item like_reaction">
+															<a href="#" class="facebook-status__link" onclick="react(event,'like','Samsung I9100G')">
+																<img src="assets/build/assets/images/facebook-like.svg" alt="" class="facebook-status__icon">
 															</a>
-															<span>10</span>
+															<span>1</span>
 														</li>
-														<li class="facebook-status__item">
-															<a href="#" class="facebook-status__link">
-																<img src="assets/images/facebook-love.svg" alt="" class="facebook-status__icon">
+														<li class="facebook-status__item love_reaction">
+															<a href="#" class="facebook-status__link" onclick="react(event,'love','Samsung I9100G')">
+																<img src="assets/build/assets/images/facebook-love.svg" alt="" class="facebook-status__icon">
 															</a>
-															<span>15</span>
+															<span></span>
 														</li>
-														<li class="facebook-status__item">
-															<a href="#" class="facebook-status__link">
-																<img src="assets/images/facebook-angry.svg" alt="" class="facebook-status__icon">
+														<li class="facebook-status__item angry_reaction">
+															<a href="#" class="facebook-status__link" onclick="react(event,'angry','Samsung I9100G')">
+																<img src="assets/build/assets/images/facebook-angry.svg" alt="" class="facebook-status__icon">
+															</a>
+															<span></span>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="message__item message__item_vinci br-chat message__category category">
+										<div class="row">
+											<div class="category__image col-4">
+												<img src="http://img.fkcdn.com//image/mobile/k/9/p/samsung-f309-400x400-imadfzzesffpwpj9.jpeg" alt="">
+											</div>
+											<div class="category__description col-8">
+												<h4 class="category__type">Samsung</h4>
+												<h3 class="category__name">Samsung F309 (Dark Silver, N/A)</h3>
+												<div class="category__prices-box">
+													<span>Rs.5999</span>
+													<span class="old">Rs.5999</span>
+												</div>
+												<div class="facebook-status characteristic__facebook-status">
+													<ul class="facebook-status__list">
+														<li class="facebook-status__item like_reaction">
+															<a href="#" class="facebook-status__link" onclick="react(event,'like','Samsung F309')">
+																<img src="assets/build/assets/images/facebook-like.svg" alt="" class="facebook-status__icon">
+															</a>
+															<span></span>
+														</li>
+														<li class="facebook-status__item love_reaction">
+															<a href="#" class="facebook-status__link" onclick="react(event,'love','Samsung F309')">
+																<img src="assets/build/assets/images/facebook-love.svg" alt="" class="facebook-status__icon">
+															</a>
+															<span></span>
+														</li>
+														<li class="facebook-status__item angry_reaction">
+															<a href="#" class="facebook-status__link" onclick="react(event,'angry','Samsung F309')">
+																<img src="assets/build/assets/images/facebook-angry.svg" alt="" class="facebook-status__icon">
+															</a>
+															<span></span>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="message__item message__item_vinci br-chat message__category category">
+										<div class="row">
+											<div class="category__image col-4">
+												<img src="http://img.fkcdn.com/image/mobile/s/y/u/samsung-core-prime-sm-g360hzsd-400x400-imae3ygkahsucp9u.jpeg" alt="">
+											</div>
+											<div class="category__description col-8">
+												<h4 class="category__type">Samsung</h4>
+												<h3 class="category__name">Samsung Galaxy Core Prime (Silver, 8 GB)</h3>
+												<div class="category__prices-box">
+													<span>Rs.5990</span>
+													<span class="old">Rs.9700</span>
+												</div>
+												<div class="facebook-status characteristic__facebook-status">
+													<ul class="facebook-status__list">
+														<li class="facebook-status__item like_reaction">
+															<a href="#" class="facebook-status__link" onclick="react(event,'like','Samsung Galaxy Core Prime')">
+																<img src="assets/build/assets/images/facebook-like.svg" alt="" class="facebook-status__icon">
+															</a>
+															<span></span>
+														</li>
+														<li class="facebook-status__item love_reaction">
+															<a href="#" class="facebook-status__link" onclick="react(event,'love','Samsung Galaxy Core Prime')">
+																<img src="assets/build/assets/images/facebook-love.svg" alt="" class="facebook-status__icon">
+															</a>
+															<span>1</span>
+														</li>
+														<li class="facebook-status__item angry_reaction">
+															<a href="#" class="facebook-status__link" onclick="react(event,'angry','Samsung Galaxy Core Prime')">
+																<img src="assets/build/assets/images/facebook-angry.svg" alt="" class="facebook-status__icon">
 															</a>
 															<span>1</span>
 														</li>
@@ -232,16 +615,18 @@
 											</div>
 										</div>
 									</div>
+
+
 								</div>
 							</div>
 							<div class="message message_vinci">
 								<h5 class="message__title">Latest video review</h5>
-								<!--<img class="vinci-logo" src="assets/images/vinci-mes.svg" alt="">-->
+								<!--<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">-->
 								<div class="owl-carousel owl-theme">
 									<div class="message__item message__item_vinci br-chat message__collection collection">
 										<div class="row align-items-stretch">
 											<div class="collection__image col-5">
-												<img src="assets/images/latestPhones.jpg" alt="">
+												<img src="assets/build/assets/images/latestPhones.jpg" alt="">
 											</div>
 											<div class="collection__description col-7">
 												<h3 class="collection__name">Latest phones</h3>
@@ -254,7 +639,7 @@
 									<div class="message__item message__item_vinci br-chat message__collection collection">
 										<div class="row align-items-stretch">
 											<div class="collection__image col-5">
-												<img src="assets/images/bestCamera.jpg" alt="">
+												<img src="assets/build/assets/images/bestCamera.jpg" alt="">
 											</div>
 											<div class="collection__description col-7">
 												<h3 class="collection__name">Best camera phones</h3>
@@ -267,7 +652,7 @@
 									<div class="message__item message__item_vinci br-chat message__collection collection">
 										<div class="row align-items-stretch">
 											<div class="collection__image col-5">
-												<img src="assets/images/latestPhones.jpg" alt="">
+												<img src="assets/build/assets/images/latestPhones.jpg" alt="">
 											</div>
 											<div class="collection__description col-7">
 												<h3 class="collection__name">Latest phones</h3>
@@ -280,7 +665,7 @@
 								</div>
 							</div>
 							<div class="message message_vinci">
-								<!--<img class="vinci-logo" src="assets/images/vinci-mes.svg" alt="">-->
+								<!--<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">-->
 								<div class="owl-carousel owl-theme">
 									<div class="message__item message__item_vinci br-chat message__video-item video-item">
 										<div class="video-item__wrap">
@@ -328,25 +713,285 @@
 									</div>
 								</div>
 							</div>
-							<div class="message message_vinci">
-								<!--<img class="vinci-logo" src="assets/images/vinci-mes.svg" alt="">-->
-								<div class="owl-carousel owl-theme">
-									<div class='trending-question'><span>Show me iPhone 8</span></div>
-									<div class='trending-question'><span>Compare iPhone 8 amd Samsumg Galaxy</span></div>
-									<div class='trending-question'><span>Show me iPhone 6</span></div>
-									<div class='trending-question'><span>Show me iPhone 8</span></div>
-									<div class='trending-question'><span>Show me iPhone X</span></div>
+
+
+							<div class="message message_vinci clearfix">
+								<div class="message__item message__item_view view  br-chat message__item_review-filter" >
+									<h5 class="message__item_title">Review filter</h5>
+									<div class="message__item-wrap">
+										<ul class="helpers__list">
+											<li class="helpers__item">
+												Camera(7)
+											</li>
+											<li class="helpers__item">
+												Processor(0)
+											</li>
+											<li class="helpers__item">
+												Battery(2)
+											</li>
+											<li class="helpers__item">
+												Quality(1)
+											</li>
+											<li class="helpers__item">
+												Display(234)
+											</li>
+											<li class="helpers__item">
+												Modem(0)
+											</li>
+											<li class="helpers__item">
+												Wi-Fi(3)
+											</li>
+											<li class="helpers__item">
+												Sensors
+											</li>
+										</ul>
+									</div>
 								</div>
 							</div>
-							<div class="message message_vinci">
-								<!--<img class="vinci-logo" src="assets/images/vinci-mes.svg" alt="">-->
-								<div class="message__item message__item_vinci message__item_writing br-chat">
-									<div class="spinner">
-										<div class="bounce1"></div>
-										<div class="bounce2"></div>
-										<div class="bounce3"></div>
+
+							<div class="message message_vinci clearfix owl-carousel owl-theme">
+								<div class="review-pair">
+									<div class="message__item message__item_view view  br-chat message__item_review" >
+										<div class="message__item-info clearfix">
+											<div class="message__item-rate">
+												<img src="assets/build/assets/images/five_stars.svg" alt="">
+											</div>
+											<div class="message__item-author">
+												<p style="font-size:12px">11 Sep, 2017, by  Alexander Black, Amazon</p>
+											</div>
+										</div>
+										<div class="collection__description">
+											<h3 class="collection__name">Excellent Product From SAMSUNG</h3>
+											<div class="collection__text collection__text-collapsed" onclick="(function(e){ e.currentTarget.classList.toggle('collection__text-collapsed');})(event)">
+												<p >11Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+													sed do eiusmod tempor incididunt ut labore et dolore magna
+													aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+													ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+													aute irure dolor in reprehenderit
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+													sed do eiusmod tempor incididunt ut labore et dolore magna
+													aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+													ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+													aute irure dolor in reprehenderit
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+													sed do eiusmod tempor incididunt ut labore et dolore magna
+													aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+													ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+													aute irure dolor in reprehenderit
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+													sed do eiusmod tempor incididunt ut labore et dolore magna
+													aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+													ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+													aute irure dolor in reprehenderit
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+													sed do eiusmod tempor incididunt ut labore et dolore magna
+													aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+													ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+													aute irure dolor in reprehenderit
+												</p>
+											</div>
+
+										</div>
 									</div>
-									<!--<img src="assets/images/vinci_writing_dots.svg" alt="">-->
+									<div class="message__item message__item_view view  br-chat message__item_review" >
+										<div class="message__item-info clearfix">
+											<div class="message__item-rate">
+												<img src="assets/build/assets/images/five_stars.svg" alt="">
+											</div>
+											<div class="message__item-author">
+												<p style="font-size:12px">11 Sep, 2017, by  Alexander Black, Amazon</p>
+											</div>
+										</div>
+										<div class="collection__description">
+											<h3 class="collection__name">Excellent Product From SAMSUNG</h3>
+											<div class="collection__text collection__text-collapsed" onclick="(function(e){ e.currentTarget.classList.toggle('collection__text-collapsed');})(event)">
+												<p>22Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+													sed do eiusmod tempor incididunt ut labore et dolore magna
+													aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+													ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+													aute irure dolor in reprehenderit
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+													sed do eiusmod tempor incididunt ut labore et dolore magna
+													aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+													ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+													aute irure dolor in reprehenderit
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+													sed do eiusmod tempor incididunt ut labore et dolore magna
+													aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+													ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+													aute irure dolor in reprehenderit
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+													sed do eiusmod tempor incididunt ut labore et dolore magna
+													aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+													ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+													aute irure dolor in reprehenderit
+												</p>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="review-pair">
+									<div class="message__item message__item_view view  br-chat message__item_review" >
+										<div class="message__item-info clearfix">
+											<div class="message__item-rate">
+												<img src="assets/build/assets/images/five_stars.svg" alt="">
+											</div>
+											<div class="message__item-author">
+												<p style="font-size:12px">11 Sep, 2017, by  Alexander Black, Amazon</p>
+											</div>
+										</div>
+										<div class="collection__description">
+											<h3 class="collection__name">Excellent Product From SAMSUNG</h3>
+											<div class="collection__text collection__text-collapsed" onclick="(function(e){ e.currentTarget.classList.toggle('collection__text-collapsed');})(event)">
+												<p >33Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+													sed do eiusmod tempor incididunt ut labore et dolore magna
+													aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+													ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+													aute irure dolor in reprehenderit
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+													sed do eiusmod tempor incididunt ut labore et dolore magna
+													aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+													ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+													aute irure dolor in reprehenderit
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+													sed do eiusmod tempor incididunt ut labore et dolore magna
+													aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+													ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+													aute irure dolor in reprehenderit
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+													sed do eiusmod tempor incididunt ut labore et dolore magna
+													aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+													ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+													aute irure dolor in reprehenderit
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+													sed do eiusmod tempor incididunt ut labore et dolore magna
+													aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+													ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+													aute irure dolor in reprehenderit
+												</p>
+											</div>
+
+										</div>
+									</div>
+									<div class="message__item message__item_view view  br-chat message__item_review" >
+										<div class="message__item-info clearfix">
+											<div class="message__item-rate">
+												<img src="assets/build/assets/images/five_stars.svg" alt="">
+											</div>
+											<div class="message__item-author">
+												<p style="font-size:12px">11 Sep, 2017, by  Alexander Black, Amazon</p>
+											</div>
+										</div>
+										<div class="collection__description">
+											<h3 class="collection__name">Excellent Product From SAMSUNG</h3>
+											<div class="collection__text collection__text-collapsed" onclick="(function(e){ e.currentTarget.classList.toggle('collection__text-collapsed');})(event)">
+												<p>44Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+													sed do eiusmod tempor incididunt ut labore et dolore magna
+													aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+													ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+													aute irure dolor in reprehenderit
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+													sed do eiusmod tempor incididunt ut labore et dolore magna
+													aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+													ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+													aute irure dolor in reprehenderit
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+													sed do eiusmod tempor incididunt ut labore et dolore magna
+													aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+													ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+													aute irure dolor in reprehenderit
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+													sed do eiusmod tempor incididunt ut labore et dolore magna
+													aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+													ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+													aute irure dolor in reprehenderit
+												</p>
+											</div>
+
+										</div>
+									</div>
+								</div>
+								<div class="review-pair">
+									<div class="message__item message__item_view view  br-chat message__item_review" >
+										<div class="message__item-info clearfix">
+											<div class="message__item-rate">
+												<img src="assets/build/assets/images/five_stars.svg" alt="">
+											</div>
+											<div class="message__item-author">
+												<p style="font-size:12px">11 Sep, 2017, by  Alexander Black, Amazon</p>
+											</div>
+										</div>
+										<div class="collection__description">
+											<h3 class="collection__name">Excellent Product From SAMSUNG</h3>
+											<div class="collection__text collection__text-collapsed" onclick="(function(e){ e.currentTarget.classList.toggle('collection__text-collapsed');})(event)">
+												<p >55Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+													sed do eiusmod tempor incididunt ut labore et dolore magna
+													aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+													ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+													aute irure dolor in reprehenderit
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+													sed do eiusmod tempor incididunt ut labore et dolore magna
+													aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+													ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+													aute irure dolor in reprehenderit
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+													sed do eiusmod tempor incididunt ut labore et dolore magna
+													aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+													ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+													aute irure dolor in reprehenderit
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+													sed do eiusmod tempor incididunt ut labore et dolore magna
+													aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+													ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+													aute irure dolor in reprehenderit
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+													sed do eiusmod tempor incididunt ut labore et dolore magna
+													aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+													ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+													aute irure dolor in reprehenderit
+												</p>
+											</div>
+
+										</div>
+									</div>
+									<div class="message__item message__item_view view  br-chat message__item_review" >
+										<div class="message__item-info clearfix">
+											<div class="message__item-rate">
+												<img src="assets/build/assets/images/five_stars.svg" alt="">
+											</div>
+											<div class="message__item-author">
+												<p style="font-size:12px">11 Sep, 2017, by  Alexander Black, Amazon</p>
+											</div>
+										</div>
+										<div class="collection__description">
+											<h3 class="collection__name">Excellent Product From SAMSUNG</h3>
+											<div class="collection__text collection__text-collapsed" onclick="(function(e){ e.currentTarget.classList.toggle('collection__text-collapsed');})(event)">
+												<p>66Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+													sed do eiusmod tempor incididunt ut labore et dolore magna
+													aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+													ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+													aute irure dolor in reprehenderit
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+													sed do eiusmod tempor incididunt ut labore et dolore magna
+													aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+													ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+													aute irure dolor in reprehenderit
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+													sed do eiusmod tempor incididunt ut labore et dolore magna
+													aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+													ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+													aute irure dolor in reprehenderit
+													Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+													sed do eiusmod tempor incididunt ut labore et dolore magna
+													aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+													ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+													aute irure dolor in reprehenderit
+												</p>
+											</div>
+
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -354,34 +999,13 @@
 					<div class="chat__bottom">
 						<div class="chat__container">
 							<div class="helpers">
-								<!--<button class="btn helpers__close">Close</button>
-								<div class="helpers__nav">
-									<a class="helpers__arrow helpers__arrow_prev"></a>
-									<a class="helpers__arrow helpers__arrow_next"></a>
-								</div>-->
-								<ul class="helpers__list">
-									<li class="helpers__item">Show me iPhone X</li>
-									<li class="helpers__item">Show me iPhone 6</li>
-									<li class="helpers__item">Compare iPhone 6S & iPhone 7</li>
-									<li class="helpers__item">Show me iPhone X</li>
-									<li class="helpers__item">Show me iPhone X</li>
-									<li class="helpers__item">Show me iPhone 6</li>
-									<li class="helpers__item">Show me iPhone 6</li>
-									<li class="helpers__item">Compare iPhone 6S & iPhone 7</li>
-									<li class="helpers__item">Show me iPhone 6</li>
-									<li class="helpers__item">Compare iPhone 6S & iPhone 7</li>
-									<li class="helpers__item">Show me iPhone X</li>
-									<li class="helpers__item">Show me iPhone X</li>
-									<li class="helpers__item">Compare iPhone 6S & iPhone 7</li>
-									<li class="helpers__item">Show me iPhone X</li>
-								</ul>
 							</div>
 							<div class="send">
-								<input class="send__input" placeholder="Hello Vinci!">
-								<button class="btn send__btn" id="send_chat" type="submit">Send</button>
-								<button class="btn send__btn send__btn_speak">
-									<!--<img src="assets/images/microphone_white.svg" alt="">-->
-									Speak to Vinci
+								<input class="send__input" placeholder="Type your message or tap the 'Speak to Vinci' button">
+								<button class="btn send__btn" type="submit" id="send_chat">Send</button>
+								<button class="btn send__btn send__btn_speak" onclick="start_speech()">
+									<!--<img src="assets/build/assets/images/microphone_white.svg" alt="">-->
+									Talk to Vinci
 								</button>
 							</div>
 						</div>
@@ -397,33 +1021,93 @@
 						<li class="info-box__item">
 							<a class="info-box__news-title" href="">Some title of news</a>
 							<div class="info-box__text-box">
-								<p class="info-box__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-									tempor</p>
+								<p class="info-box__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
 							</div>
 						</li>
 						<li class="info-box__item">
 							<a class="info-box__news-title" href="">Some title of news</a>
 							<div class="info-box__text-box">
-								<p class="info-box__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-									tempor</p>
+								<p class="info-box__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
 							</div>
 						</li>
 					</ul>
 				</div>
+
 				<div class="boxes-carousel owl-carousel owl-them">
+					<div class="info-box info-box__slide">
+						<div class="info-box__header"><span>Top rated Mobiles</span></div>
+						<ul class="info-box__list">
+							<li class="info-box__item">
+								<div class="row align-items-center">
+									<div class="info-box__image col-2">
+										<img src="http://img.fkcdn.com/image/mobile/6/g/7/google-pixel-m4-400x400-imaemzzdh3azqsqb.jpeg" alt="">
+									</div>
+									<div class="info-box__description col-10">
+										<a class="info-box__link" href="#">Google Pixel</a>
+										<div class="info-box__rs">
+											<span>Ps.44000</span>
+											<span class="info-box__rs_old">Ps.57000</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="info-box__item">
+								<div class="row align-items-center">
+									<div class="info-box__image col-2">
+										<img src="http://img.fkcdn.com/image/mobile/n/t/j/google-pixel-xl-m7-400x400-imaemzzgsfuvy7ek.jpeg" alt="">
+									</div>
+									<div class="info-box__description col-10">
+										<a class="info-box__link" href="#">Google Pixel</a>
+										<div class="info-box__rs">
+											<span>Ps.44000</span>
+											<span class="info-box__rs_old">Ps.57000</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="info-box__item">
+								<div class="row align-items-center">
+									<div class="info-box__image col-2">
+										<img src="http://img.fkcdn.com/image/mobile/n/t/j/google-pixel-xl-m7-400x400-imaemzzgsfuvy7ek.jpeg" alt="">
+									</div>
+									<div class="info-box__description col-10">
+										<a class="info-box__link" href="#">Google Pixel</a>
+										<div class="info-box__rs">
+											<span>Ps.66000</span>
+											<span class="info-box__rs_old">Ps.66000</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="info-box__item">
+								<div class="row align-items-center">
+									<div class="info-box__image col-2">
+										<img src="http://img.fkcdn.com/image/mobile/6/g/7/google-pixel-m4-400x400-imaemzzdh3azqsqb.jpeg" alt="">
+									</div>
+									<div class="info-box__description col-10">
+										<a class="info-box__link" href="#">Google Pixel</a>
+										<div class="info-box__rs">
+											<span>Ps.53000</span>
+											<span class="info-box__rs_old">Ps.66000</span>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
 					<div class="info-box info-box__slide">
 						<div class="info-box__header"><span>Expert Pick Mobiles</span></div>
 						<ul class="info-box__list">
 							<li class="info-box__item">
 								<div class="row align-items-center">
 									<div class="info-box__image col-2">
-										<img src="assets/images/iphone6_min.svg" alt="">
+										<img src="http://img.fkcdn.com/image/mobile/e/7/k/htc-desire-eye-400x400-imae37gzydhwrjzc.jpeg" alt="">
 									</div>
 									<div class="info-box__description col-10">
-										<a class="info-box__link" href="#">iPnone 6</a>
+										<a class="info-box__link" href="#">Htc Desire Eye</a>
 										<div class="info-box__rs">
-											<span>Ps.11890</span>
-											<span class="info-box__rs_old">Ps.16900</span>
+											<span>Ps.16450</span>
+											<span class="info-box__rs_old">Ps.36990</span>
 										</div>
 									</div>
 								</div>
@@ -431,13 +1115,13 @@
 							<li class="info-box__item">
 								<div class="row align-items-center">
 									<div class="info-box__image col-2">
-										<img src="assets/images/iphone6_min.svg" alt="">
+										<img src="http://img.fkcdn.com/image/mobile/c/z/z/htc-desire-326g-ds-na-400x400-imae8aggdzgunugu.jpeg" alt="">
 									</div>
 									<div class="info-box__description col-10">
-										<a class="info-box__link" href="#">iPnone 6</a>
+										<a class="info-box__link" href="#">Htc Desire 326G DS</a>
 										<div class="info-box__rs">
-											<span>Ps.11890</span>
-											<span class="info-box__rs_old">Ps.16900</span>
+											<span>Ps.6067</span>
+											<span class="info-box__rs_old">Ps.9900</span>
 										</div>
 									</div>
 								</div>
@@ -445,13 +1129,13 @@
 							<li class="info-box__item">
 								<div class="row align-items-center">
 									<div class="info-box__image col-2">
-										<img src="assets/images/iphone6_min.svg" alt="">
+										<img src="http://img.fkcdn.com/image/mobile/z/5/g/mi-redmi-note-na-400x400-imae6g4hv4bqfkcp.jpeg" alt="">
 									</div>
 									<div class="info-box__description col-10">
-										<a class="info-box__link" href="#">iPnone 6</a>
+										<a class="info-box__link" href="#">Htc Radar</a>
 										<div class="info-box__rs">
-											<span>Ps.11890</span>
-											<span class="info-box__rs_old">Ps.16900</span>
+											<span>Ps.33293</span>
+											<span class="info-box__rs_old">Ps.33293</span>
 										</div>
 									</div>
 								</div>
@@ -459,13 +1143,13 @@
 							<li class="info-box__item">
 								<div class="row align-items-center">
 									<div class="info-box__image col-2">
-										<img src="assets/images/iphone6_min.svg" alt="">
+										<img src="http://img.fkcdn.com/image/mobile/j/f/s/htc-explorer-400x400-imad9yq4mw6abfv4.jpeg" alt="">
 									</div>
 									<div class="info-box__description col-10">
-										<a class="info-box__link" href="#">iPnone 6</a>
+										<a class="info-box__link" href="#">Htc Explorer</a>
 										<div class="info-box__rs">
-											<span>Ps.11890</span>
-											<span class="info-box__rs_old">Ps.16900</span>
+											<span>Ps.7845</span>
+											<span class="info-box__rs_old">Ps.12290</span>
 										</div>
 									</div>
 								</div>
@@ -473,13 +1157,83 @@
 							<li class="info-box__item">
 								<div class="row align-items-center">
 									<div class="info-box__image col-2">
-										<img src="assets/images/iphone6_min.svg" alt="">
+										<img src="http://img.fkcdn.com/image/mobile/z/e/5/htc-desire-desire-600c-400x400-imadzmyhdwa3hgkq.jpeg" alt="">
 									</div>
 									<div class="info-box__description col-10">
-										<a class="info-box__link" href="#">iPnone 6</a>
+										<a class="info-box__link" href="#">Htc Desire 600C</a>
 										<div class="info-box__rs">
-											<span>Ps.11890</span>
-											<span class="info-box__rs_old">Ps.16900</span>
+											<span>Ps.28599</span>
+											<span class="info-box__rs_old">Ps.28599</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="info-box__item">
+								<div class="row align-items-center">
+									<div class="info-box__image col-2">
+										<img src="http://img.fkcdn.com//image/mobile/h/r/s/htc-a6363-400x400-imad2sbwrqzgqxwn.jpeg" alt="">
+									</div>
+									<div class="info-box__description col-10">
+										<a class="info-box__link" href="#">Htc A6363</a>
+										<div class="info-box__rs">
+											<span>Ps.29900</span>
+											<span class="info-box__rs_old">Ps.29900</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="info-box__item">
+								<div class="row align-items-center">
+									<div class="info-box__image col-2">
+										<img src="http://img.fkcdn.com/image/mobile/2/k/j/htc-desire-500-400x400-imadpdbyjgxnthrj.jpeg" alt="">
+									</div>
+									<div class="info-box__description col-10">
+										<a class="info-box__link" href="#">Htc Desire 500 Dual Sim</a>
+										<div class="info-box__rs">
+											<span>Ps.16244</span>
+											<span class="info-box__rs_old">Ps.21299</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="info-box__item">
+								<div class="row align-items-center">
+									<div class="info-box__image col-2">
+										<img src="http://img.fkcdn.com/image/mobile/v/p/2/htc-desire-826x-cdma-gsm-desire-826x-400x400-imae8vhgpx6hjspg.jpeg" alt="">
+									</div>
+									<div class="info-box__description col-10">
+										<a class="info-box__link" href="#">Htc Desire 826X CDMA+GSM</a>
+										<div class="info-box__rs">
+											<span>Ps.17489</span>
+											<span class="info-box__rs_old">Ps.28990</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="info-box__item">
+								<div class="row align-items-center">
+									<div class="info-box__image col-2">
+										<img src="http://img.fkcdn.com/image/mobile/q/n/m/htc-a620e-8s-400x400-imadh438rhsypwxq.jpeg" alt="">
+									</div>
+									<div class="info-box__description col-10">
+										<a class="info-box__link" href="#">Htc 8S A620E</a>
+										<div class="info-box__rs">
+											<span>Ps.21999</span>
+											<span class="info-box__rs_old">Ps.21999</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="info-box__item">
+								<div class="row align-items-center">
+									<div class="info-box__image col-2">
+										<img src="http://img.fkcdn.com//image/mobile/x/z/x/htc-sensation-xe-400x400-imad2b7frsak3gfr.jpeg" alt="">
+									</div>
+									<div class="info-box__description col-10">
+										<a class="info-box__link" href="#">Htc Sensation XE</a>
+										<div class="info-box__rs">
+											<span>Ps.21294</span>
+											<span class="info-box__rs_old">Ps.35490</span>
 										</div>
 									</div>
 								</div>
@@ -492,13 +1246,13 @@
 							<li class="info-box__item">
 								<div class="row align-items-center">
 									<div class="info-box__image col-2">
-										<img src="assets/images/iphone6_min.svg" alt="">
+										<img src="http://img.fkcdn.com/image/mobile/g/z/h/samsung-galaxy-star-2-sm-g130e-400x400-imadzsw2jder7ve7.jpeg" alt="">
 									</div>
 									<div class="info-box__description col-10">
-										<a class="info-box__link" href="#">iPnone 6</a>
+										<a class="info-box__link" href="#">Samsung Galaxy Star 2</a>
 										<div class="info-box__rs">
-											<span>Ps.11890</span>
-											<span class="info-box__rs_old">Ps.16900</span>
+											<span>Ps.4400</span>
+											<span class="info-box__rs_old">Ps.4890</span>
 										</div>
 									</div>
 								</div>
@@ -506,13 +1260,13 @@
 							<li class="info-box__item">
 								<div class="row align-items-center">
 									<div class="info-box__image col-2">
-										<img src="assets/images/iphone6_min.svg" alt="">
+										<img src="http://img.fkcdn.com/image/j2z1fgw0/mobile/j/d/j/samsung-metro-313-sm-b313ezddins-400x400-imaeu5adwdexhmwn.jpeg" alt="">
 									</div>
 									<div class="info-box__description col-10">
-										<a class="info-box__link" href="#">iPnone 6</a>
+										<a class="info-box__link" href="#">Samsung Metro 313</a>
 										<div class="info-box__rs">
-											<span>Ps.11890</span>
-											<span class="info-box__rs_old">Ps.16900</span>
+											<span>Ps.2120</span>
+											<span class="info-box__rs_old">Ps.2120</span>
 										</div>
 									</div>
 								</div>
@@ -520,30 +1274,99 @@
 							<li class="info-box__item">
 								<div class="row align-items-center">
 									<div class="info-box__image col-2">
-										<img src="assets/images/iphone6_min.svg" alt="">
+										<img src="http://img.fkcdn.com/image/mobile/h/g/h/samsung-galaxy-grand-i9082-400x400-imadnw4s3wgtxycb.jpeg" alt="">
 									</div>
 									<div class="info-box__description col-10">
-										<a class="info-box__link" href="#">iPnone 6</a>
+										<a class="info-box__link" href="#">Samsung Galaxy Grand Duos</a>
 										<div class="info-box__rs">
-											<span>Ps.11890</span>
-											<span class="info-box__rs_old">Ps.16900</span>
+											<span>Ps.16528</span>
+											<span class="info-box__rs_old">Ps.18500</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="info-box__item">
+								<div class="row align-items-center">
+									<div class="info-box__image col-2">
+										<img src="http://img.fkcdn.com/image/mobile/e/3/n/samsung-galaxy-s-duos-3-sm-g313hu-400x400-imadzsu9mgfw5rfh.jpeg" alt="">
+									</div>
+									<div class="info-box__description col-10">
+										<a class="info-box__link" href="#">Samsung Galaxy S Duos 3</a>
+										<div class="info-box__rs">
+											<span>Ps.4999</span>
+											<span class="info-box__rs_old">Ps.7990</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="info-box__item">
+								<div class="row align-items-center">
+									<div class="info-box__image col-2">
+										<img src="http://img.fkcdn.com/image/mobile/s/h/j/samsung-galaxy-a5-galaxy-sm-a500gzkdinu-400x400-imaebpcfeurhafsv.jpeg" alt="">
+									</div>
+									<div class="info-box__description col-10">
+										<a class="info-box__link" href="#">Samsung Galaxy A5</a>
+										<div class="info-box__rs">
+											<span>Ps.18900</span>
+											<span class="info-box__rs_old">Ps.21900</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="info-box__item">
+								<div class="row align-items-center">
+									<div class="info-box__image col-2">
+										<img src="http://img.fkcdn.com//image/mobile/x/e/p/samsung-i9100g-400x400-imad5uch49uqw2xg.jpeg" alt="">
+									</div>
+									<div class="info-box__description col-10">
+										<a class="info-box__link" href="#">Samsung I9100G</a>
+										<div class="info-box__rs">
+											<span>Ps.23139</span>
+											<span class="info-box__rs_old">Ps.32830</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="info-box__item">
+								<div class="row align-items-center">
+									<div class="info-box__image col-2">
+										<img src="http://img.fkcdn.com//image/mobile/k/9/p/samsung-f309-400x400-imadfzzesffpwpj9.jpeg" alt="">
+									</div>
+									<div class="info-box__description col-10">
+										<a class="info-box__link" href="#">Samsung F309</a>
+										<div class="info-box__rs">
+											<span>Ps.5999</span>
+											<span class="info-box__rs_old">Ps.5999</span>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="info-box__item">
+								<div class="row align-items-center">
+									<div class="info-box__image col-2">
+										<img src="http://img.fkcdn.com/image/mobile/s/y/u/samsung-core-prime-sm-g360hzsd-400x400-imae3ygkahsucp9u.jpeg" alt="">
+									</div>
+									<div class="info-box__description col-10">
+										<a class="info-box__link" href="#">Samsung Galaxy Core Prime</a>
+										<div class="info-box__rs">
+											<span>Ps.5990</span>
+											<span class="info-box__rs_old">Ps.9700</span>
 										</div>
 									</div>
 								</div>
 							</li>
 						</ul>
 					</div>
+
 				</div>
 				<div class="info-box">
 					<div class="info-box__header"><span>Show us Some Love</span></div>
 					<ul class="info-box__list">
 						<li class="info-box__item">
 							<a class="twitter-share-button"
-								 href="https://twitter.com/intent/tweet">
+							   href="https://twitter.com/intent/tweet">
 								Tweet</a>
-							<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="270"
-									 data-layout="standard" data-action="like" data-size="small" data-show-faces="true"
-									 data-share="true"></div>
+							<div class="fb-like" data-href="https://www.facebook.com/hellotovinci/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 							<div id="fb-root"></div>
 						</li>
 					</ul>
@@ -553,15 +1376,551 @@
 	</div>
 </div>
 
-<script src="js/main.js"></script>
-<script>(function (d, s, id) {
+
+<!-- Handlebars template for the phone special chat element -->
+<script id="handlebars-case-100" type="text/x-handlebars-template">
+
+	<div class="message message_vinci ">
+		<!--<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">-->
+		<div class="owl-carousel owl-theme">
+			{{#each phones}}
+			<div class="message__item message__item_view message__item_view-full view  br-chat" id="{{this.id}}">
+				<div class="flex-container">
+					<div class="view__info view__col view__inline">
+						<h3 class="part-title">Phone requested</h3>
+						<div class="view__photo">
+							<img src="{{this.selected_variant.image_urls.small}}" alt="" style="width: auto;">
+							<a class="button button_white view__button" href="#">View Photos</a>
+						</div>
+						<div class="view__characteristic characteristic">
+							<div class="characteristic__text">
+								<h5 class="characteristic__company">{{this.selected_variant.product_basic_info.productBrand_normalized}}</h5>
+								<h4 class="characteristic__model">{{title}}</h4>
+								<div class="facebook-status characteristic__facebook-status">
+									<ul class="facebook-status__list">
+										<li class="facebook-status__item like_reaction">
+											<a href="#" class="facebook-status__link" onclick="react(event,'like','{{this.selected_variant.product_basic_info.normalized_name}}')">
+												<img src="assets/build/assets/images/facebook-like.svg" alt="" class="facebook-status__icon">
+											</a>
+											<span>{{{get_reactions this.selected_variant "like"}}}</span>
+										</li>
+										<li class="facebook-status__item love_reaction">
+											<a href="#" class="facebook-status__link" onclick="react(event,'love','{{this.selected_variant.product_basic_info.normalized_name}}')">
+												<img src="assets/build/assets/images/facebook-love.svg" alt="" class="facebook-status__icon">
+											</a>
+											<span>{{{get_reactions this.selected_variant "love"}}}</span>
+										</li>
+										<li class="facebook-status__item angry_reaction">
+											<a href="#" class="facebook-status__link" onclick="react(event,'angry','{{this.selected_variant.product_basic_info.normalized_name}}')">
+												<img src="assets/build/assets/images/facebook-angry.svg" alt="" class="facebook-status__icon">
+											</a>
+											<span>{{{get_reactions this.selected_variant "angry"}}}</span>
+										</li>
+									</ul>
+								</div>
+								<div class="rating">
+									<div class="rating__star">
+										<img src="assets/build/assets/images/star.svg" alt="">
+										<span class="rating__value">{{this.rating}} / 5.0</span>
+									</div>
+									<a href="#" class="rating__view">View Reviews</a>
+								</div>
+								<ul class="characteristic__list">
+									{{#each this.features}}
+									<li>{{this}}</li>
+									{{/each}}
+								</ul>
+							</div>
+							<div class="button button_white selection characteristic__selection">
+								{{{generate_memory_variants_helper}}}
+							</div>
+							<div class="button button_white selection characteristic__selection">
+								{{{generate_color_variants_helper}}}
+							</div>
+							<a class="button button_cancel button_full hide-all-details">Close</a>
+							<a class="button button_gradient button_full view-all-details"><span>View phone specifications</span></a>
+						</div>
+					</div>
+					<div class="view__info-full view__col view__inline view__col_hidden no-visible">
+						<h3 class="part-title">Specifications</h3>
+						<div class="scrollable-container-two">
+							<div class="scroll-container-inside">
+								<div class="collapsed-block ">
+									<div class="collapsed-block__dropdown"><span class="collapsed-block__title">General</span></div>
+									<ul class="collapsed-block__list">
+										{{#each this.specifications_general}}
+										<li class="collapsed-block__item">
+											<span class="collapsed-block__title">{{this.field}}</span>
+											<span class="collapsed-block__value">{{this.value}}</span>
+										</li>
+										{{/each}}
+									</ul>
+								</div>
+								<div class="collapsed-block ">
+									<div class="collapsed-block__dropdown"><span class="collapsed-block__title">Display</span></div>
+									<ul class="collapsed-block__list">
+										{{#each this.get_display}}
+										<li class="collapsed-block__item">
+											<span class="collapsed-block__title">{{this.field}}</span>
+											<span class="collapsed-block__value">{{this.value}}</span>
+										</li>
+										{{/each}}
+									</ul>
+								</div>
+								<div class="collapsed-block ">
+									<div class="collapsed-block__dropdown"><span class="collapsed-block__title">Camera</span></div>
+									<ul class="collapsed-block__list">
+										{{#each this.get_camera}}
+										<li class="collapsed-block__item">
+											<span class="collapsed-block__title">{{this.field}}</span>
+											<span class="collapsed-block__value">{{this.value}}</span>
+										</li>
+										{{/each}}
+									</ul>
+								</div>
+								<div class="collapsed-block ">
+									<div class="collapsed-block__dropdown"><span class="collapsed-block__title">Battery</span></div>
+									<ul class="collapsed-block__list">
+										{{#each this.battery}}
+										<li class="collapsed-block__item">
+											<span class="collapsed-block__title">{{this.field}}</span>
+											<span class="collapsed-block__value">{{this.value}}</span>
+										</li>
+										{{/each}}
+									</ul>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="view__prices view__col view__inline">
+						<!--<div class="scrollable-container gray-skin">-->
+						<h3 class="part-title">Prices</h3>
+						<div class="scrollable-container-two">
+							<div class="scroll-container-inside">
+								<div class="price">
+									<div class="price__header price__header_best">
+										<div class="price__best">Best Price</div>
+										<img src="{{{generate_logo_helper_cheapest shortlisted_model_shortlisted_retailer}}}" alt="" style="width: auto;">
+									</div>
+									<div class="price__body">
+										<span class="price__rs">RS</span>
+										<span class="price__num">{{this.cheapest_price}}</span>
+										<a class="more-info">
+											<span class="more-info__btn"><img src="assets/build/assets/images/ic_info.svg" alt=""></span>
+											<div class="more-info__block">
+												<div class="more-info__part">
+													<h4>Delivery:</h4>
+													<h5>{{{delivery this}}}</h5>
+												</div>
+												<div class="more-info__part">
+													<h4>Offers:</h4>
+													<h5>{{{offers this}}}</h5>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+								{{#each this.other_retailers_array}}
+								<div class="price">
+									<div class="price__header">
+										<img src="{{generate_logo_helper}}" alt="" style="width: auto;">
+									</div>
+									<div class="price__body">
+										<span class="price__rs">RS</span>
+										<span class="price__num">{{this.product_pricing.special_price}}</span>
+										<a class="more-info">
+											<span class="more-info__btn"><img src="assets/build/assets/images/ic_info.svg" alt=""></span>
+											<div class="more-info__block">
+												<div class="more-info__part">
+													<h4>Delivery:</h4>
+													<h5>{{{delivery this}}}</h5>
+												</div>
+												<div class="more-info__part">
+													<h4>Offers:</h4>
+													<h5>{{{offers this}}}</h5>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+								{{/each}}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			{{/each}}
+		</div>
+	</div></script>
+
+<script id="handlebars-case-200" type="text/x-handlebars-template">
+
+
+	<div class="message message_vinci">
+		<!--<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">-->
+		<div class="message__item message__item_vinci  message__item_compare br-chat">
+			<table class="table table-bordered compare__table">
+				<thead>
+				<tr>
+					<th>Comparing Phones</th>
+					{{#each images}}
+					<th><img src="{{this}}" height="50" width="25" alt="iphone6_min"></th>
+					{{/each}}
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<th scope="row">Product</th>
+					{{#each model_names}}
+					<td>{{this}}</td>
+					{{/each}}
+				</tr>
+				{{#each comparison_attributes}}
+				<tr>
+					<th scope="row">{{this.heading_text}}</th>
+					{{#each this.values}}
+					<td>{{this}}</td>
+					{{/each}}
+				</tr>
+				{{/each}}
+				</tbody>
+			</table>
+		</div>
+	</div></script>
+
+<script id="handlebars-case-120" type="text/x-handlebars-template">
+	<div class="message message_vinci">
+		<!--<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">-->
+		<div class="message__item message__item_vinci br-chat">
+			<p>Here is the review video</p>
+		</div>
+	</div>
+
+
+	<div class="message message_vinci message__horizontal message__not-mobile-horiz">
+		<!--<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">-->
+		<div class="owl-carousel owl-theme">
+			{{#each youtube_video}}
+
+			<div class="message__item message__item_vinci br-chat message__video-item video-item">
+				<div class="video-item__wrap">
+					<iframe src="https://www.youtube.com/embed/{{{youtube_video_helper}}}" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="video-item__description ">
+					<h3 class="video-item__name">{{{youtube_video_title_helper}}}</h3>
+					<div class="video-item__text-block">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+					</div>
+				</div>
+			</div>
+
+			{{/each}}
+		</div>
+	</div></script>
+
+<script id="handlebars-case-104" type="text/x-handlebars-template">
+
+
+
+	<div class="message message_vinci">
+		<!--<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">-->
+		<div class="message__item message__item_specific view br-chat">
+
+			<div class="specific">
+				{{#each attribute}}
+				<div class="specific__item">
+					<div class="specific__icon">
+						<i class="{{this.icon}}"></i>
+					</div>
+					<div class="specific__info">
+						<h4 class="specific__title">{{this.text}}</h4>
+						<h3 class="specific__value">{{this.value}}</h3>
+					</div>
+				</div>
+				{{/each}}
+
+			</div>
+		</div>
+	</div></script>
+
+<script id="attributes-text-reply" type="text/x-handlebars-template">
+
+	{{#each attribute}}
+	<div class="message message_vinci">
+		<!--<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">-->
+		<div class="message__item message__item_vinci br-chat">
+			<p>{{this.content_text}}</p>
+		</div>
+	</div>
+	{{/each}}</script>
+
+<script id="handlebars-case-error" type="text/x-handlebars-template">
+	<div class="message message_vinci">
+		<!--<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">-->
+		<div class="message__item message__item_vinci br-chat">
+			<p>Sorry. There seems to be an error at my end. Please try another request!</p>
+		</div>
+	</div>
+</script>
+
+<script id="handlebars-case-1x" type="text/x-handlebars-template">
+
+	{{#each text}}
+	<div class="message message_vinci">
+		<!--<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">-->
+		<div class="message__item message__item_vinci br-chat">
+
+			<p>{{this}}</p>
+
+		</div>
+	</div>
+	{{/each}}
+</script>
+
+<script id="handlebars-suggested-questions" type="text/x-handlebars-template">
+
+	<div class="message message_vinci">
+
+		<ul class="suggestion">
+			{{#each suggested_questions}}
+			<li class="suggestion__item br-chat" onclick="send_question(event)">{{this.displayText}}</li>
+			{{/each}}
+		</ul>
+
+
+
+	</div>
+</script>
+
+<script id="handlebars-carousel-item" type="text/x-handlebars-template">
+	<div class="flex-container">
+		<div class="view__info view__col view__inline">
+			<h3 class="part-title">Phone requested</h3>
+			<div class="view__photo">
+				<img src="{{this.selected_variant.image_urls.small}}" alt="" style="width: auto;">
+				<a class="button button_white view__button" href="#">View Photos</a>
+			</div>
+			<div class="view__characteristic characteristic">
+				<div class="characteristic__text">
+					<h5 class="characteristic__company">{{selected_variant.product_basic_info.productBrand_normalized}}</h5>
+					<h4 class="characteristic__model">{{title}}</h4>
+					<div class="facebook-status characteristic__facebook-status">
+						<ul class="facebook-status__list">
+							<li class="facebook-status__item like_reaction">
+								<a href="#" class="facebook-status__link" onclick="react(event,'like','{{this.selected_variant.product_basic_info.normalized_name}}')">
+									<img src="assets/build/assets/images/facebook-like.svg" alt="" class="facebook-status__icon">
+								</a>
+								<span>{{{get_reactions this.selected_variant "like"}}}</span>
+							</li>
+							<li class="facebook-status__item love_reaction">
+								<a href="#" class="facebook-status__link" onclick="react(event,'love','{{this.selected_variant.product_basic_info.normalized_name}}')">
+									<img src="assets/build/assets/images/facebook-love.svg" alt="" class="facebook-status__icon">
+								</a>
+								<span>{{{get_reactions this.selected_variant "love"}}}</span>
+							</li>
+							<li class="facebook-status__item angry_reaction">
+								<a href="#" class="facebook-status__link" onclick="react(event,'angry','{{this.selected_variant.product_basic_info.normalized_name}}')">
+									<img src="assets/build/assets/images/facebook-angry.svg" alt="" class="facebook-status__icon">
+								</a>
+								<span>{{{get_reactions this.selected_variant "angry"}}}</span>
+							</li>
+						</ul>
+					</div>
+					<div class="rating">
+						<div class="rating__star">
+							<img src="assets/build/assets/images/star.svg" alt="">
+							<span class="rating__value">{{rating}} / 5.0</span>
+						</div>
+						<a href="#" class="rating__view">View Reviews</a>
+					</div>
+					<ul class="characteristic__list">
+						{{#each features}}
+						<li>{{this}}</li>
+						{{/each}}
+					</ul>
+				</div>
+				<div class="button button_white selection characteristic__selection">
+					{{{generate_memory_variants_helper}}}
+				</div>
+				<div class="button button_white selection characteristic__selection">
+					{{{generate_color_variants_helper}}}
+				</div>
+				<a class="button button_cancel button_full hide-all-details">Close</a>
+				<a class="button button_gradient button_full view-all-details"><span>View phone specifications</span></a>
+			</div>
+		</div>
+		<div class="view__info-full view__col view__inline view__col_hidden no-visible">
+			<h3 class="part-title">Specifications</h3>
+			<div class="scrollable-container-two">
+				<div class="scroll-container-inside">
+					<div class="collapsed-block ">
+						<div class="collapsed-block__dropdown"><span class="collapsed-block__title">General</span></div>
+						<ul class="collapsed-block__list">
+							{{#each specifications_general}}
+							<li class="collapsed-block__item">
+								<span class="collapsed-block__title">{{field}}</span>
+								<span class="collapsed-block__value">{{value}}</span>
+							</li>
+							{{/each}}
+						</ul>
+					</div>
+					<div class="collapsed-block ">
+						<div class="collapsed-block__dropdown"><span class="collapsed-block__title">Display</span></div>
+						<ul class="collapsed-block__list">
+							{{#each get_display}}
+							<li class="collapsed-block__item">
+								<span class="collapsed-block__title">{{field}}</span>
+								<span class="collapsed-block__value">{{value}}</span>
+							</li>
+							{{/each}}
+						</ul>
+					</div>
+					<div class="collapsed-block ">
+						<div class="collapsed-block__dropdown"><span class="collapsed-block__title">Camera</span></div>
+						<ul class="collapsed-block__list">
+							{{#each this.get_camera}}
+							<li class="collapsed-block__item">
+								<span class="collapsed-block__title">{{this.field}}</span>
+								<span class="collapsed-block__value">{{this.value}}</span>
+							</li>
+							{{/each}}
+						</ul>
+					</div>
+					<div class="collapsed-block ">
+						<div class="collapsed-block__dropdown"><span class="collapsed-block__title">Battery</span></div>
+						<ul class="collapsed-block__list">
+							{{#each battery}}
+							<li class="collapsed-block__item">
+								<span class="collapsed-block__title">{{field}}</span>
+								<span class="collapsed-block__value">{{value}}</span>
+							</li>
+							{{/each}}
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="view__prices view__col view__inline">
+			<!--<div class="scrollable-container gray-skin">-->
+			<h3 class="part-title">Prices</h3>
+			<div class="scrollable-container-two">
+				<div class="scroll-container-inside">
+					<div class="price">
+						<div class="price__header price__header_best">
+							<div class="price__best">Best Price</div>
+							<img src="{{{generate_logo_helper_cheapest shortlisted_model_shortlisted_retailer}}}" alt="" style="width: auto;">
+						</div>
+						<div class="price__body">
+							<span class="price__rs">RS</span>
+							<span class="price__num">{{cheapest_price}}</span>
+							<a class="more-info">
+								<span class="more-info__btn"><img src="assets/build/assets/images/ic_info.svg" alt=""></span>
+								<div class="more-info__block">
+									<div class="more-info__part">
+										<h4>Delivery:</h4>
+										<h5>{{{delivery this}}}</h5>
+									</div>
+									<div class="more-info__part">
+										<h4>Offers:</h4>
+										<h5>{{{offers this}}}</h5>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					{{#each other_retailers_array}}
+					<div class="price">
+						<div class="price__header">
+							<img src="{{generate_logo_helper}}" alt="" style="width: auto;">
+						</div>
+						<div class="price__body">
+							<span class="price__rs">RS</span>
+							<span class="price__num">{{product_pricing.special_price}}</span>
+							<a class="more-info">
+								<span class="more-info__btn"><img src="assets/build/assets/images/ic_info.svg" alt=""></span>
+								<div class="more-info__block">
+									<div class="more-info__part">
+										<h4>Delivery:</h4>
+										<h5>{{{delivery this}}}</h5>
+									</div>
+									<div class="more-info__part">
+										<h4>Offers:</h4>
+										<h5>{{{offers this}}}</h5>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					{{/each}}
+				</div>
+			</div>
+		</div>
+	</div></script>
+
+<script id="handlebars-auto-complete-reply" type="text/x-handlebars-template">
+
+
+	<ul class="helpers__list">
+		{{#each results}}
+		<li class="helpers__item" onclick="capture_value_and_hide(event)">{{this}}</li>
+		{{/each}}
+	</ul></script>
+
+
+
+<script type="text/javascript">
+
+  document.addEventListener('DOMContentLoaded', function () {
+    //userAvatar
+    var vinciAvatar = '/assets/build/assets/images/vinci-mes.svg';
+
+    var text_reply = "Hello. Great to have you here!";
+
+    $('.chat__messages')
+      .append(`<div class="message message_vinci">
+	    	<div class="message__item message__item_vinci br-chat" style="width: fit-content;">
+	      		<p>${text_reply}</p>
+			</div>
+	  	</div>`);
+
+    $('.chat__messages').scrollTop($('.chat__messages')[0].scrollHeight);
+
+    var text_reply = "Let's get started!";
+
+    $('.chat__messages')
+      .append(`<div class="message message_vinci">
+	    	<div class="message__item message__item_vinci br-chat" style="width: fit-content;">
+	      		<p>${text_reply}</p>
+			</div>
+			<div class="owl-carousel owl-theme">
+					<div class='trending-question'><span>Show me iPhone 8</span></div>
+					<div class='trending-question'><span>Compare iPhone 8 amd Samsumg Galaxy</span></div>
+					<div class='trending-question'><span>Show me iPhone 6</span></div>
+					<div class='trending-question'><span>Show me iPhone 8</span></div>
+					<div class='trending-question'><span>Show me iPhone X</span></div>
+			</div>
+	  	</div>`);
+
+    $('.chat__messages').scrollTop($('.chat__messages')[0].scrollHeight);
+
+
+  }, false);
+
+
+</script>
+
+<script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s);
   js.id = id;
-  js.src = 'https://connect.facebook.net/en_en/sdk.js#xfbml=1&version=v2.11&appId=1359458530819401';
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=509046159432598';
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+
+
 <script>window.twttr = (function (d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0],
     t = window.twttr || {};
@@ -578,5 +1937,14 @@
 
   return t;
 }(document, "script", "twitter-wjs"));</script>
+
 </body>
+
+<!-- JS Libraries
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+<script src="/assets/build/js/main.js"></script>
+
+<!-- JS Libraries end -->
+
 </html>

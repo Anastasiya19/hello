@@ -2,8 +2,10 @@
   position: relative;
   margin-bottom: 33px;
 
-  &__title{
-    margin-bottom: 20px;
+  &__title {
+    border-bottom: 2px solid #FF9800;
+    font-size: 1.25rem;
+    font-weight: 500;
   }
 
   &__item-info {
@@ -28,7 +30,7 @@
   &__item {
     position: relative;
     background: #fff;
-    padding: 10px 40px;
+    padding: 10px 20px;
     margin-bottom: 15px;
     text-align: left;
     @media (max-width: 767px) {
@@ -89,22 +91,23 @@
 
     &_review {
       padding: 20px 20px 10px 20px;
-      float: left;
+      //float: left;
+
       box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);
 
+      margin-bottom: 20px;
+
+      width:436px;
+      @media (max-width: 1267px) {
+        width:calc(((75vw + 10px) - 85px) / 2);
+      }
       @media (max-width: 1023px) {
-        width: 100%;
+        width:calc((75vw + 10px) - 60px);
       }
-      @media (min-width: 1024px) {
-        max-width: 48%;
-        margin-bottom: 20px;
-        &:nth-child(odd) {
-          margin-right: 25px;
-        }
-        &:nth-child(even) {
-          //float: right;
-        }
+      @media (max-width: 991px) {
+        width:calc(100vw - 60px);
       }
+
 
     }
     &_review-filter{
@@ -142,11 +145,8 @@
     &_specific {
       padding: 0;
       display: inline-block;
+      width: 100%;
       @include box-shadow;
-      @media (max-width: 450px) {
-        width: 100%;
-        padding: 10px;
-      }
     }
 
   }
@@ -212,7 +212,7 @@
   position: absolute;
   right: 0%;
   transform: translateY(-50%);
-  top: 50%;
+  top: 47%;
   z-index: 2;
   @media (max-width: 767px) {
     top: 3%;
