@@ -2,8 +2,7 @@
   position: relative;
   margin-bottom: 33px;
 
-  &__title{
-    margin-bottom: 20px;
+  &__title {
     border-bottom: 2px solid #FF9800;
     font-size: 1.25rem;
     font-weight: 500;
@@ -31,7 +30,7 @@
   &__item {
     position: relative;
     background: #fff;
-    padding: 10px 40px;
+    padding: 10px 20px;
     margin-bottom: 15px;
     text-align: left;
     @media (max-width: 767px) {
