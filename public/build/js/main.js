@@ -17256,11 +17256,12 @@ $(document).ready(function () {
     setLeft: 15,
     axis: "y",
   });
-  $('.scrollable-container').mCustomScrollbar({
-    theme: "my-theme",
-    setLeft: 15,
-    axis: "y",
-  });
+  // $('.scrollable-container').mCustomScrollbar({
+  //   theme: "my-theme",
+  //   setLeft: 15,
+  //   axis: "y",
+  //   advanced:{autoExpandHorizontalScroll:true}
+  // });
   var widthContaner = 0;
   if ($('.message__item_horizontal').length > 1) {
     for (var i = 0; i < $('.message__item_horizontal').length; i++) {
@@ -17488,23 +17489,11 @@ $(document).ready(function () {
   owlAnimated.owlCarousel({
     items:1,
     center: true,
-    loop:true,
-    margin:10,
     autoplay:true,
-    // autoplayTimeout:3000,
-      autoplaySpeed: 3000,
+    autoplaySpeed: 3000,
     autoplayHoverPause:true,
     autoWidth: true,
     margin: 25,
-    // nav: true,
-    // loop:true,
-    // // rewind:true,
-    // autoplay:true,
-    // autoplayTimeout:3000,
-    // autoplayHoverPause:true,
-    // navContainerClass: 'nav-carousel',
-    // navClass: 'helpers__arrow',
-    // items: 3,
 
   });
 
