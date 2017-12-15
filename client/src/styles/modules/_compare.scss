@@ -1,9 +1,12 @@
 .compare {
+
+
   &__table {
     margin-bottom: 0;
     border: 1px solid #F4F7F9;
     position: relative;
     overflow: hidden;
+
     thead {
       th {
         vertical-align: middle;
@@ -55,4 +58,9 @@
       }
     }
   }
+
+  //&__table-title {
+  //  background-color: lightgray;
+  //  color: black;
+  //}
 }

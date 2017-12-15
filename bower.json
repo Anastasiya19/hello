@@ -25,7 +25,8 @@
     "wow": "^1.1.2",
     "tether": "1.4.0",
     "lodash": "^4.17.4",
-    "handlebars": "^4.0.11"
+    "handlebars": "^4.0.11",
+    "array-to-sentence": "^1.1.0"
   },
   "devDependencies": {},
   "resolutions": {

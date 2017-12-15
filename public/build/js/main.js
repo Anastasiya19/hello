@@ -21502,7 +21502,22 @@ function tag_related_question(zlatan, buffon){
 
         var tags_general = ["latest"];
 
-        var tags_functionality = ["dual sim", "fingerprint sensor", "wireless charging", "4g", "gorilla glass", "bezel", "gaming", "waterproof", "otg compatible", "micro usb port", "expandable storage", "hybrid sim slot", "portrait mode"];
+        var tags_functionality = ["light weight",
+        "fingerprint sensor",
+        "4g",
+        "dual sim",  
+        "wireless charging", 
+        "waterproof", 
+        "gaming",
+        "bezel", 
+        "gorilla glass",  
+        "otg compatible", 
+        "micro usb port", 
+        "expandable storage", 
+        "hybrid sim slot", 
+        "portrait mode", 
+        "dual camera", 
+        "touchscreen"];
 
         var tags_general_true = [];
 
