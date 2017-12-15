@@ -17474,7 +17474,7 @@ function sendMessage() {
 }
 
 $(document).ready(function () {
-  var owl = $('.owl-carousel');
+  var owl = $('.owl-carousel:not(.owl-carousel-animated)');
   owl.owlCarousel({
     autoWidth: true,
     margin: 25,
@@ -17482,6 +17482,30 @@ $(document).ready(function () {
     navContainerClass: 'nav-carousel',
     navClass: 'helpers__arrow',
     items: 10,
+  });
+
+  var owlAnimated = $('.owl-carousel-animated');
+  owlAnimated.owlCarousel({
+    items:1,
+    center: true,
+    loop:true,
+    margin:10,
+    autoplay:true,
+    // autoplayTimeout:3000,
+      autoplaySpeed: 3000,
+    autoplayHoverPause:true,
+    autoWidth: true,
+    margin: 25,
+    // nav: true,
+    // loop:true,
+    // // rewind:true,
+    // autoplay:true,
+    // autoplayTimeout:3000,
+    // autoplayHoverPause:true,
+    // navContainerClass: 'nav-carousel',
+    // navClass: 'helpers__arrow',
+    // items: 3,
+
   });
 
   $('.view-all-details').click(function () {
