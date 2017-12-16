@@ -157,6 +157,45 @@ body {
 
 }
 
+
+.twitter-banner {
+  position: relative;
+  background-color: #fff;
+  margin-top: 50px;
+
+  &__section {
+
+    //float: left;
+    width: 400px;
+    padding: 26px;
+    height: 200px;
+    position: relative;
+    background: #f6f6f6;
+    border-radius: 7px;
+    -webkit-transition: .2s;
+    transition: .2s;
+
+    p {
+      transform: translate(-50%, -50%);
+      top: 50%;
+      color: #000;
+      left: 50%;
+      width: 90%;
+      text-align: center;
+      position: absolute;
+    }
+    &:hover {
+      background: #dcdedb;
+      transition: .2s;
+    }
+  }
+  &__author {
+    position:absolute;
+    top: 69%;
+    left: 42%;
+  }
+}
+
 .clearfix:after {
   content: '';
   display: table;

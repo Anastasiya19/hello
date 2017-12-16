@@ -145,7 +145,7 @@
     &_specific {
       padding: 0;
       display: inline-block;
-      width: 100%;
+      //width: 100%;
       @include box-shadow;
     }
 
@@ -210,12 +210,12 @@
 
 .nav-carousel {
   position: absolute;
-  right: 0%;
+  right: 0;
   transform: translateY(-50%);
   top: 47%;
   z-index: 2;
   @media (max-width: 767px) {
-    top: 3%;
+    //top: 3%;
   }
   & > div {
     background: #fff;
@@ -227,7 +227,6 @@
     font-size: 0;
 
     @media (max-width: 767px) {
-      display: inline-block;
       padding: 15px;
     }
     &:after {

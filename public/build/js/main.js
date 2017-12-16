@@ -17254,11 +17254,12 @@ $(document).ready(function () {
     setLeft: 15,
     axis: "y",
   });
-  $('.scrollable-container').mCustomScrollbar({
-    theme: "my-theme",
-    setLeft: 15,
-    axis: "y",
-  });
+  // $('.scrollable-container').mCustomScrollbar({
+  //   theme: "my-theme",
+  //   setLeft: 15,
+  //   axis: "y",
+  //   advanced:{autoExpandHorizontalScroll:true}
+  // });
   var widthContaner = 0;
   if ($('.message__item_horizontal').length > 1) {
     for (var i = 0; i < $('.message__item_horizontal').length; i++) {
@@ -17472,7 +17473,7 @@ function sendMessage() {
 }
 
 $(document).ready(function () {
-  var owl = $('.owl-carousel');
+  var owl = $('.owl-carousel:not(.owl-carousel-animated)');
   owl.owlCarousel({
     autoWidth: true,
     margin: 25,
@@ -17480,6 +17481,18 @@ $(document).ready(function () {
     navContainerClass: 'nav-carousel',
     navClass: 'helpers__arrow',
     items: 10,
+  });
+
+  var owlAnimated = $('.owl-carousel-animated');
+  owlAnimated.owlCarousel({
+    items:1,
+    center: true,
+    autoplay:true,
+    autoplaySpeed: 3000,
+    autoplayHoverPause:true,
+    autoWidth: true,
+    margin: 25,
+
   });
 
   $('.view-all-details').click(function () {

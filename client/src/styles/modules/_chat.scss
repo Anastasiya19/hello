@@ -72,11 +72,9 @@
   }
 }
 
-.suggestion.owl-carousel  .nav-carousel{
-  display: flex;
-  margin-top: -5px;
-  @media (max-width: 768px) {
-    margin-top: 13px;
-  }
+.trending.owl-carousel  .nav-carousel{
+  //display: flex;
+  //margin-top: -5px;
+  top: 40%;
 
 }
