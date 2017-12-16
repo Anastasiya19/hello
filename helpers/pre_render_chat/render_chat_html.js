@@ -16,36 +16,36 @@ const jsons_path = path.join(__dirname, "../../jsons/")
 const html_path = path.join(__dirname, "../../public/chat.html")
 
 // the text is the title of the carousel for side carousels
-const jsons = {
-    chat_carousels: [{
-        text: "show me Apple phones",
-        json:"show_me apple phones.json"
-    },{
-        text: "show me Samsung phones",
-        json:"_Samsung_phones.json"
-    }],
-    side_carousels: [{
-        text: "Top rated Mobiles",
-        json:"google_pixel_phones.json"
-    },{
-        text: "Expert Pick Mobiles",
-        json:"_HTC_phones.json"
-    },{
-        text: "Phones with fingerprint scanner",
-        json:"_Samsung_phones.json"
-    }]
-}
+// const jsons = {
+//     chat_carousels: [{
+//         text: "show me Apple phones",
+//         json: "show_me apple phones.json"
+//     }, {
+//         text: "show me Samsung phones",
+//         json: "_Samsung_phones.json"
+//     }],
+//     side_carousels: [{
+//         text: "Top rated Mobiles",
+//         json: "google_pixel_phones.json"
+//     }, {
+//         text: "Expert Pick Mobiles",
+//         json: "_HTC_phones.json"
+//     }, {
+//         text: "Phones with fingerprint scanner",
+//         json: "_Samsung_phones.json"
+//     }]
+// }
 
 
 
 // this will be  scheduled
-render_chat_html(jsons).then(() => {
+// render_chat_html().then(() => {
 
-    console.log('done')
+//     console.log('done')
 
-}).catch(err => {
-    console("Error")
-})
+// }).catch(err => {
+//     console("Error")
+// })
 
 
 
@@ -54,9 +54,30 @@ render_chat_html(jsons).then(() => {
  * @param {Array} jsons will contain the name of the jsons to include in the context
  * 
  */
-function render_chat_html(jsons) {
+function render_chat_html() {
 
     var deferred = Q.defer()
+
+    // the text is the title of the carousel for side carousels
+    const jsons = {
+        chat_carousels: [{
+            text: "show me Apple phones",
+            json: "show_me apple phones.json"
+        }, {
+            text: "show me Samsung phones",
+            json: "_Samsung_phones.json"
+        }],
+        side_carousels: [{
+            text: "Top rated Mobiles",
+            json: "google_pixel_phones.json"
+        }, {
+            text: "Expert Pick Mobiles",
+            json: "_HTC_phones.json"
+        }, {
+            text: "Phones with fingerprint scanner",
+            json: "_Samsung_phones.json"
+        }]
+    }
 
     // creating the view engine with the helpers specified below 
     // client layout and the specified path the partials 
@@ -84,9 +105,9 @@ function render_chat_html(jsons) {
                 // parsing the json
                 try {
                     context[carousel_key].push({
-                         carousel_phones: JSON.parse(data).web_reply.data.mobiles[0].variants,
-                         text:carousel.text 
-                        });
+                        carousel_phones: JSON.parse(data).web_reply.data.mobiles[0].variants,
+                        text: carousel.text
+                    });
                 } catch (e) {
                     return callback(e);
                 }
@@ -108,7 +129,7 @@ function render_chat_html(jsons) {
                 return deferred.reject(err)
             }
 
-            console.log("context ",context)
+            console.log("context ", context)
             // rendering the template with the context 
             hbs.renderView(chat_view_path, context, (err, template) => {
 
@@ -132,3 +153,4 @@ function render_chat_html(jsons) {
     return deferred.promise
 }
 
+module.exports = render_chat_html

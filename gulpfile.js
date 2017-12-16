@@ -1,3 +1,4 @@
+
 const gulp = require('gulp'),
     watch = require('gulp-watch'),
     prefixer = require('gulp-autoprefixer'),
@@ -11,7 +12,9 @@ const gulp = require('gulp'),
     rimraf = require('rimraf'),
     browserSync = require('browser-sync'),
     reload = browserSync.reload,
-    babel = require('gulp-babel');
+    babel = require('gulp-babel'),
+    render_chat_html = require('./helpers/pre_render_chat/render_chat_html');
+
 const path = {
     build: { //Тут мы укажем куда складывать готовые после сборки файлы
         html: 'public/build/',
@@ -114,15 +117,21 @@ gulp.task('build', [
     'style:build',
     'fonts:build',
     'image:build',
+    'render_html'
 ]);
 
 
 gulp.task('quick', [
-
+    'render_html',
     'js:build',
     'style:build'
 
 ]);
+
+gulp.task('render_html',function(){
+    render_chat_html()
+})
+
 
 gulp.task('watch', function() {
     watch([path.watch.html], function(event, cb) {
