@@ -183,7 +183,7 @@ function beckham_router(beckham, zlatan, buffon) {
     if (beckham.query_status === 400) {
 
         beckham.build_text_reply_element(buffon);
-
+        console.log("you've reached a review element >>>>>>>>>>>>")
         //Need to build the review element
         beckham.build_text_review_element(zlatan);
 

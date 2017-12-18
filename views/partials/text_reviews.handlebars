@@ -1,0 +1,69 @@
+		<!-- Review filter -->
+							<div class="message message_vinci clearfix">
+								<div class="message__item message__item_view view  br-chat message__item_review-filter" >
+									<h5 class="message__item_title">Review filter</h5>
+									<div class="message__item-wrap">
+										<ul class="helpers__list">
+											<li class="helpers__item">
+												Camera(7)
+											</li>
+											<li class="helpers__item">
+												Processor(0)
+											</li>
+											<li class="helpers__item">
+												Battery(2)
+											</li>
+											<li class="helpers__item">
+												Quality(1)
+											</li>
+											<li class="helpers__item">
+												Display(234)
+											</li>
+											<li class="helpers__item">
+												Modem(0)
+											</li>
+											<li class="helpers__item">
+												Wi-Fi(3)
+											</li>
+											<li class="helpers__item">
+												Sensors
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<!-- Review filter text -->
+							<div class="message message_vinci clearfix owl-carousel owl-theme">
+                                \{{#each reviews_pairs}}
+                
+								<div class="review-pair">
+                                    \{{#each this}}
+                                   
+									<div class="message__item message__item_view view  br-chat message__item_review" >
+										<div class="message__item-info clearfix">
+											<div class="message__item-rate">
+												<img src="assets/images/five_stars.svg" alt="">
+											</div>
+											<div class="message__item-author">
+												<p style="font-size:12px">\{{this.review_date}}, by  \{{this.reviewer}}, Amazon</p>
+											</div>
+										</div>
+										<div class="collection__description">
+											<h3 class="collection__name">\{{this.title}}</h3>
+											<div class="collection__text collection__text-collapsed" onclick="(function(e){ e.currentTarget.classList.toggle('collection__text-collapsed');})(event)">
+												<p >
+                                                    \{{this.text}}
+												</p>
+											</div>
+
+										</div>
+									</div>
+
+                            \{{/each}}
+							
+                                    
+								</div>
+
+                            \{{/each}}
+							</div>
