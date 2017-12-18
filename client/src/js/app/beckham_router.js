@@ -78,16 +78,16 @@ function beckham_router(beckham, zlatan, buffon) {
 
     //Tested - Working correctly
     //Comparison of 2 phones
-	if(beckham.query_status === 200){
+    if (beckham.query_status === 200) {
 
         beckham.build_text_reply_element(buffon);
 
         beckham.build_comparison_element(zlatan, 200);
 
-		//Need to build the comparison element
-		console.log("Let's get the comparison started: Yaaay");
-		
-        
+        //Need to build the comparison element
+        console.log("Let's get the comparison started: Yaaay");
+
+
 
     }
 
@@ -98,7 +98,7 @@ function beckham_router(beckham, zlatan, buffon) {
         console.log("Yeah right... price and other attributes for comparison");
 
         beckham.build_text_reply_element(buffon);
-        
+
         beckham.build_specifications_element(zlatan);
         beckham.build_comparison_element(zlatan, 201);
         //get_comparison_attributes(zlatan);
@@ -134,12 +134,12 @@ function beckham_router(beckham, zlatan, buffon) {
     if (beckham.query_status === 500) {
 
         beckham.build_text_reply_element(buffon);
-        
+
         //Need to build the comparison element
         console.log("Let's get the comparison started: Yaaay");
 
         console.log("This is zlatan before correction: ", zlatan);
-        
+
         beckham.correct_mobiles_array(zlatan, 200);
 
         console.log("This is corrected zlatan: ", zlatan);
@@ -162,7 +162,7 @@ function beckham_router(beckham, zlatan, buffon) {
         beckham.correct_mobiles_array(zlatan, 202);
 
         console.log("This is corrected zlatan: ", zlatan);
-        
+
         beckham.build_comparison_element(zlatan, 202);
 
     }
@@ -172,23 +172,34 @@ function beckham_router(beckham, zlatan, buffon) {
     if (beckham.query_status === 120) {
 
         beckham.build_text_reply_element(buffon);
-        
+
         //Need to build the video element
         beckham.build_video_review_element(zlatan);
+
+    }
+
+
+    // review or rating element
+    if (beckham.query_status === 400) {
+
+        beckham.build_text_reply_element(buffon);
+
+        //Need to build the review element
+        beckham.build_text_review_element(zlatan);
 
     }
 
     //Tested - Working correctly
     //Error case
     if (beckham.query_status === 999) {
-        
+
         //Need to build the video element
         beckham.build_error_element();
 
     }
 
     if (beckham.query_status === 1) {
-        
+
         //Need to build the video element
         beckham.build_text_reply_element(buffon);
 
