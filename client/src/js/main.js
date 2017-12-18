@@ -156,7 +156,15 @@ function sendMessage() {
 
     // Clear Input & scroll Chat window-to last message
     $('.chat__bottom input').val('');
-    $('.chat__messages').scrollTop($('.chat__messages')[0].scrollHeight);
+
+
+    //for native scroll(mobile only)
+    $('.chat__content').scrollTop($('.chat__content')[0].scrollHeight);
+
+    //for mCustomScrollbar
+    $("#mCSB_1_container").css({'top': $('#mCSB_1').height() - $("#mCSB_1_container").height()})
+    $('#mCSB_1_dragger_vertical').css({top:'unset',bottom:'0px'})
+
   }
 
   // sending the message
