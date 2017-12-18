@@ -155,7 +155,7 @@ Beckham.prototype.build_video_review_element = function (zlatan) {
   $('.chat__messages').append(this.html)
   console.log('html', this.html)
   init_specifications($('.chat__messages').children().last())
-
+  
   this.scroll_into_view()
 }
 
@@ -189,7 +189,7 @@ Beckham.prototype.build_text_review_element = function (zlatan) {
   $('.chat__messages').append(this.html)
   console.log('html', this.html)
   init_specifications($('.chat__messages').children().last())
-
+  init_owl()
   this.scroll_into_view()
 }
 
