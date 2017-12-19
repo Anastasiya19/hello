@@ -1,8 +1,12 @@
 
 	<div class="message message_vinci">
-        <ul class="suggestion">
-        \{{#each suggested_questions}}	
-          <li class="suggestion__item br-chat" onclick="send_question(event)">\{{this.displayText}}</li>
-      	\{{/each}}
-        </ul>
-	</div> 
+		<div class="owl-carousel owl-theme trending">
+			\{{#each suggested_questions}}
+			<div class="trending-question" onclick="send_question(event)">
+				<span>\{{this.displayText}}</span>
+			</div>
+			\{{/each}}
+		</div>
+	</div>
+
+
