@@ -20336,6 +20336,10 @@ Neymar.prototype.check_questions = function() {
         // Insert the HTML code into the page
         $('.chat__messages').append(this.html);
 
+        init_specifications($('.chat__messages').children().last())
+        init_owl()
+        //this.scroll_into_view()
+
     }
 }
 function Raul (mobile, load_status) {
