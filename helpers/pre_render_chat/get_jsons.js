@@ -64,7 +64,7 @@ function post_question_save_json(question){
     })
     return deferred.promise
 }
-post_question_save_json("google pixel phones")
+// post_question_save_json("google pixel phones")
 module.exports = post_question_save_json;
 // post_question_save_json(" HTC phones")
 // get_query()
