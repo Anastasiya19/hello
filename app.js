@@ -37,6 +37,8 @@ const parser = csv.parse();
 const fs = require('fs');
 const apiai = require('apiai');
 const path = require('path')
+
+const basic_security_check = require("./helpers/basic_security_check")
 //******End********
 
 //4. Search tools
@@ -152,7 +154,7 @@ app.get('/vinci_commands', function (req, res) {
 });
 
 //Next Route-------------------------------------------------------------
-app.get('/chat', function (req, res) {
+app.get('/chat', basic_security_check , function (req, res) {
     console.log("Request hit the client home route");
     // fs.readFile("./jsons/show_me apple phones.json", 'utf8',function(err, json) {
     //     if (err) {
