@@ -212,15 +212,19 @@
   position: absolute;
   right: 0;
   transform: translateY(-50%);
-  top: 47%;
+  top: 45%;
   z-index: 2;
+  width: 100%;
+  background: transparent;
   @media (max-width: 767px) {
     //top: 3%;
   }
   & > div {
+    width: 50px;
+    float: right;
     background: #fff;
     display: block;
-    padding: 30px;
+    //padding: 30px;
     cursor: pointer;
     position: relative;
     margin-right: 0;
@@ -241,12 +245,15 @@
       @include box-shadow;
       background: #bfbfbf;
       border: 1px solid #F7F7F7;
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
       @media (max-width: 767px) {
         width: 30px;
         height: 30px;
       }
     }
     &:first-child {
+      width: 50px;
+      float: left;
       border-bottom: 1px solid #FBFBFB;
       &:after {
         background: #efefef url($path-to-images + "arrow_prev_dark.svg") center no-repeat;
@@ -255,6 +262,7 @@
         &:after {
           border: 2px solid #E85353;
           background: #efefef url($path-to-images + "arrow_prev_red.svg") center no-repeat;
+          box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
         }
       }
 
