@@ -756,13 +756,55 @@
 								<li class="info-box__item">
 									<div class="row align-items-center">
 										<div class="info-box__image col-2">
-											<img src="https://rukminim1.flixcart.com/image/400/400/mobile/n/t/j/google-pixel-xl-m7-original-imaemzzgsfuvy7ek.jpeg?q&#x3D;90" alt="">
+											<img src="http://img.fkcdn.com/image/mobile/6/g/7/google-pixel-m4-400x400-imaemzzdh3azqsqb.jpeg" alt="">
 										</div>
 										<div class="info-box__description col-10">
 											<a class="info-box__link" href="#">Google Pixel</a>
 											<div class="info-box__rs">
-												<span>Ps.34999</span>
+												<span>Ps.44000</span>
 												<span class="info-box__rs_old">Ps.57000</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="info-box__item">
+									<div class="row align-items-center">
+										<div class="info-box__image col-2">
+											<img src="http://img.fkcdn.com/image/mobile/n/t/j/google-pixel-xl-m7-400x400-imaemzzgsfuvy7ek.jpeg" alt="">
+										</div>
+										<div class="info-box__description col-10">
+											<a class="info-box__link" href="#">Google Pixel</a>
+											<div class="info-box__rs">
+												<span>Ps.44000</span>
+												<span class="info-box__rs_old">Ps.57000</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="info-box__item">
+									<div class="row align-items-center">
+										<div class="info-box__image col-2">
+											<img src="http://img.fkcdn.com/image/mobile/n/t/j/google-pixel-xl-m7-400x400-imaemzzgsfuvy7ek.jpeg" alt="">
+										</div>
+										<div class="info-box__description col-10">
+											<a class="info-box__link" href="#">Google Pixel</a>
+											<div class="info-box__rs">
+												<span>Ps.66000</span>
+												<span class="info-box__rs_old">Ps.66000</span>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="info-box__item">
+									<div class="row align-items-center">
+										<div class="info-box__image col-2">
+											<img src="http://img.fkcdn.com/image/mobile/6/g/7/google-pixel-m4-400x400-imaemzzdh3azqsqb.jpeg" alt="">
+										</div>
+										<div class="info-box__description col-10">
+											<a class="info-box__link" href="#">Google Pixel</a>
+											<div class="info-box__rs">
+												<span>Ps.53000</span>
+												<span class="info-box__rs_old">Ps.66000</span>
 											</div>
 										</div>
 									</div>
@@ -1335,7 +1377,6 @@
 		
 		{{#each text}}	
 		<div class="message message_vinci">
-		  <img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">
 		  <div class="message__item message__item_vinci br-chat">
 	
 		    <p>{{this}}</p>
@@ -1348,12 +1389,16 @@
 <script id="handlebars-suggested-questions" type="text/x-handlebars-template">
 	
 		<div class="message message_vinci">
-	        <ul class="suggestion">
-	        {{#each suggested_questions}}	
-	          <li class="suggestion__item br-chat" onclick="send_question(event)">{{this.displayText}}</li>
-	      	{{/each}}
-	        </ul>
-		</div> 
+			<div class="owl-carousel owl-theme trending">
+				{{#each suggested_questions}}
+				<div class="trending-question" onclick="send_question(event)">
+					<span>{{this.displayText}}</span>
+				</div>
+				{{/each}}
+			</div>
+		</div>
+	
+	
 </script>
 
 <script id="handlebars-carousel-item" type="text/x-handlebars-template">
@@ -1531,6 +1576,91 @@
 			{{/each}}
 		</ul></script>
 
+
+<script id="handlebars-case-400" type="text/x-handlebars-template">
+	<!-- Review filter -->
+	<div class="message message_vinci clearfix">
+	    <div class="message__item message__item_view view  br-chat message__item_review-filter">
+	        <h5 class="message__item_title">Review filter</h5>
+	        <div class="message__item-wrap">
+	            <ul class="helpers__list">
+	                <li class="helpers__item">
+	                    Camera(7)
+	                </li>
+	                <li class="helpers__item">
+	                    Processor(0)
+	                </li>
+	                <li class="helpers__item">
+	                    Battery(2)
+	                </li>
+	                <li class="helpers__item">
+	                    Quality(1)
+	                </li>
+	                <li class="helpers__item">
+	                    Display(234)
+	                </li>
+	                <li class="helpers__item">
+	                    Modem(0)
+	                </li>
+	                <li class="helpers__item">
+	                    Wi-Fi(3)
+	                </li>
+	                <li class="helpers__item">
+	                    Sensors
+	                </li>
+	            </ul>
+	        </div>
+	    </div>
+	</div>
+	
+	<!-- Review filter text -->
+	<div class="message message_vinci clearfix owl-carousel owl-theme">
+	    {{#each reviews_pairs}}
+	
+	    <div class="review-pair">
+	        {{#each this}}
+	
+	        <div class="message__item message__item_view view  br-chat message__item_review">
+	            <div class="message__item-info clearfix">
+	                <div class="message__item-rate">
+	<svg width="87px" height="15px" viewBox="0 0 87 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+	    <desc>Created with Sketch.</desc>
+	    <defs></defs>
+	    <g id="Chatbot-V3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+	        <g id="Chat-Stage-1---Review_1280" transform="translate(-70.000000, -290.000000)" fill="#F5A623">
+	            <g id="Group-6" transform="translate(60.000000, 271.000000)">
+	                <g id="Group-5" transform="translate(10.8000000, 19.000000)">
+	                    {{{create_rating_stars this.rating}}}
+	                   
+	                </g>
+	            </g>
+	        </g>
+	    </g>
+	</svg>
+	                </div>
+	                <div class="message__item-author">
+	                    <p style="font-size:12px">{{this.review_date}}, by {{this.reviewer}}, Amazon</p>
+	                </div>
+	            </div>
+	            <div class="collection__description">
+	                <h3 class="collection__name">{{this.title}}</h3>
+	                <div class="collection__text collection__text-collapsed" onclick="(function(e){ e.currentTarget.classList.toggle('collection__text-collapsed');})(event)">
+	                    <p>
+	                        {{this.text}}
+	                    </p>
+	                </div>
+	
+	            </div>
+	        </div>
+	
+	        {{/each}}
+	
+	
+	    </div>
+	
+	    {{/each}}
+	</div></script>
 
 
 <script type="text/javascript">

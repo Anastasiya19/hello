@@ -381,6 +381,16 @@ if(selected_variant.reactions && selected_variant.reactions[reaction]){
 
 })
 
+Handlebars.registerHelper("create_rating_stars",function(rating){
+ 
+var stars = ''
+    if(rating>=1) stars += `<polygon id="Page-1" points="7.5 0 5.39325 4.97025 0 5.433 4.09125 8.97825 2.865 14.25 7.5 11.45475 12.13425 14.25 10.90875 8.97825 15 5.433 9.60675 4.97025"></polygon>`;
+    if(rating>=2) stars += `<polygon id="Page-1-Copy" points="25.5 0 23.39325 4.97025 18 5.433 22.09125 8.97825 20.865 14.25 25.5 11.45475 30.13425 14.25 28.90875 8.97825 33 5.433 27.60675 4.97025"></polygon>`;
+    if(rating>=3) stars += `<polygon id="Page-1-Copy-2" points="43.5 0 41.39325 4.97025 36 5.433 40.09125 8.97825 38.865 14.25 43.5 11.45475 48.13425 14.25 46.90875 8.97825 51 5.433 45.60675 4.97025"></polygon>`;
+    if(rating>=4) stars += `<polygon id="Page-1-Copy-3" points="61.5 0 59.39325 4.97025 54 5.433 58.09125 8.97825 56.865 14.25 61.5 11.45475 66.13425 14.25 64.90875 8.97825 69 5.433 63.60675 4.97025"></polygon>`;
+    if(rating>=5) stars += `<polygon id="Page-1-Copy-4" points="79.5 0 77.39325 4.97025 72 5.433 76.09125 8.97825 74.865 14.25 79.5 11.45475 84.13425 14.25 82.90875 8.97825 87 5.433 81.60675 4.97025"></polygon>`;
+return stars
+})
 // >>>>>>>>>>> for debugging 
 Handlebars.registerHelper("debug", function(optionalValue) {
     console.log("Current Context");

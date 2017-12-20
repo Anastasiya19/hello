@@ -1,4 +1,6 @@
-$(document).ready(function () {
+$(document).ready(init_owl);
+
+function init_owl() {
   var owl = $('.owl-carousel:not(.owl-carousel-animated)');
   owl.owlCarousel({
     autoWidth: true,
@@ -43,4 +45,4 @@ $(document).ready(function () {
   })
 
 
-});
+}

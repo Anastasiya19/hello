@@ -17491,7 +17491,9 @@ function sendMessage() {
   hellovinciai(chat_input);
 }
 
-$(document).ready(function () {
+$(document).ready(init_owl);
+
+function init_owl() {
   var owl = $('.owl-carousel:not(.owl-carousel-animated)');
   owl.owlCarousel({
     autoWidth: true,
@@ -17536,7 +17538,7 @@ $(document).ready(function () {
   })
 
 
-});
+}
 
 function init_specifications(elem) {
 
@@ -17867,16 +17869,16 @@ function beckham_router(beckham, zlatan, buffon) {
 
     //Tested - Working correctly
     //Comparison of 2 phones
-	if(beckham.query_status === 200){
+    if (beckham.query_status === 200) {
 
         beckham.build_text_reply_element(buffon);
 
         beckham.build_comparison_element(zlatan, 200);
 
-		//Need to build the comparison element
-		console.log("Let's get the comparison started: Yaaay");
-		
-        
+        //Need to build the comparison element
+        console.log("Let's get the comparison started: Yaaay");
+
+
 
     }
 
@@ -17887,7 +17889,7 @@ function beckham_router(beckham, zlatan, buffon) {
         console.log("Yeah right... price and other attributes for comparison");
 
         beckham.build_text_reply_element(buffon);
-        
+
         beckham.build_specifications_element(zlatan);
         beckham.build_comparison_element(zlatan, 201);
         //get_comparison_attributes(zlatan);
@@ -17923,12 +17925,12 @@ function beckham_router(beckham, zlatan, buffon) {
     if (beckham.query_status === 500) {
 
         beckham.build_text_reply_element(buffon);
-        
+
         //Need to build the comparison element
         console.log("Let's get the comparison started: Yaaay");
 
         console.log("This is zlatan before correction: ", zlatan);
-        
+
         beckham.correct_mobiles_array(zlatan, 200);
 
         console.log("This is corrected zlatan: ", zlatan);
@@ -17951,7 +17953,7 @@ function beckham_router(beckham, zlatan, buffon) {
         beckham.correct_mobiles_array(zlatan, 202);
 
         console.log("This is corrected zlatan: ", zlatan);
-        
+
         beckham.build_comparison_element(zlatan, 202);
 
     }
@@ -17961,23 +17963,34 @@ function beckham_router(beckham, zlatan, buffon) {
     if (beckham.query_status === 120) {
 
         beckham.build_text_reply_element(buffon);
-        
+
         //Need to build the video element
         beckham.build_video_review_element(zlatan);
+
+    }
+
+
+    // review or rating element
+    if (beckham.query_status === 400) {
+
+        beckham.build_text_reply_element(buffon);
+        console.log("you've reached a review element >>>>>>>>>>>>")
+        //Need to build the review element
+        beckham.build_text_review_element(zlatan);
 
     }
 
     //Tested - Working correctly
     //Error case
     if (beckham.query_status === 999) {
-        
+
         //Need to build the video element
         beckham.build_error_element();
 
     }
 
     if (beckham.query_status === 1) {
-        
+
         //Need to build the video element
         beckham.build_text_reply_element(buffon);
 
@@ -17987,289 +18000,272 @@ function beckham_router(beckham, zlatan, buffon) {
 
 }
 function Beckham (query_status) {
+  console.log('Beckham is on the pitch')
 
-    console.log("Beckham is on the pitch");
+  // Query status
+  this.query_status = query_status
 
-    //Query status
-    this.query_status = query_status;
+  this.template
 
-    this.template;
+  this.templateScript
 
-    this.templateScript;
-
-    this.html;
-
-
+  this.html
 }
 
-Beckham.prototype.check_tag_related_question = function(zlatan, buffon){
-
-    tag_related_question(zlatan, buffon);
-
+Beckham.prototype.check_tag_related_question = function (zlatan, buffon) {
+  tag_related_question(zlatan, buffon)
 }
 
+Beckham.prototype.build_specifications_element = function (zlatan) {
 
-Beckham.prototype.build_specifications_element = function(zlatan){
+  // This function creates the context for each mobile in the zlatan object.
+  // It creates Raul constructor for each mobile which just gives the context object for each mobile
+  // All context objects are stored in the zlatan.contexts which is then passed for compilation
+  specifications_request(zlatan)
 
-	//This function creates the context for each mobile in the zlatan object.
-    //It creates Raul constructor for each mobile which just gives the context object for each mobile
-    //All context objects are stored in the zlatan.contexts which is then passed for compilation
-	specifications_request(zlatan);
+  this.select_handlebars_template()
 
-	this.select_handlebars_template();
+  this.compile_handlebars_template()
 
-	this.compile_handlebars_template();
+  var context = {
+    phones: zlatan.contexts
+  }
 
-	var context = {
-		phones: zlatan.contexts
-	}
+  this.get_html(context)
 
-	this.get_html(context);
+  this.append_html()
 
-	this.append_html();
+  init_specifications($('.chat__messages').children().last())
 
-	init_specifications($(".chat__messages").children().last());
-
-    this.scroll_into_view();
-
+  this.scroll_into_view()
 }
 
-Beckham.prototype.build_attributes_element = function(zlatan){
+Beckham.prototype.build_attributes_element = function (zlatan) {
+  attributes_request(zlatan)
 
-	attributes_request(zlatan);
+  this.build_attributes_detailed_element(zlatan)
 
-	this.build_attributes_detailed_element(zlatan);
+  this.build_attributes_summary_element(zlatan)
 
-	this.build_attributes_summary_element(zlatan);
-
-    this.scroll_into_view();
-
-
+  this.scroll_into_view()
 }
 
+Beckham.prototype.build_attributes_detailed_element = function (zlatan) {
+  console.log('This is zlatan contexts_attributes_detailed: ', zlatan.contexts_attributes_detailed)
 
-Beckham.prototype.build_attributes_detailed_element = function(zlatan){
+  if (zlatan.contexts_attributes_detailed.length > 0) {
+    zlatan.contexts_attributes_detailed.forEach(create_html)
 
-    console.log("This is zlatan contexts_attributes_detailed: ", zlatan.contexts_attributes_detailed);
+    function create_html (element, index, array) {
+      this.template = $('#handlebars-case-104').html()
+      console.log('This is the template: ', this.template)
 
-	if (zlatan.contexts_attributes_detailed.length > 0) {
+      // Compile the template data into a function
+      this.templateScript = Handlebars.compile(this.template)
+      console.log('This is the templateScript: ', this.templateScript)
 
-        zlatan.contexts_attributes_detailed.forEach(create_html);
+      this.html = this.templateScript({ attribute: element })
+      console.log('This is the html: ', this.html)
 
-        function create_html(element, index, array) {
-
-            this.template = $('#handlebars-case-104').html();
-            console.log("This is the template: ", this.template);
-
-            // Compile the template data into a function
-            this.templateScript = Handlebars.compile(this.template);
-            console.log("This is the templateScript: ", this.templateScript);
-
-            this.html = this.templateScript({ attribute: element });
-            console.log("This is the html: ", this.html);
-
-            // Insert the HTML code into the page
-            $('.chat__messages').append(this.html);
-
-        }
-
+      // Insert the HTML code into the page
+      $('.chat__messages').append(this.html)
     }
-
+  }
 }
 
-Beckham.prototype.build_attributes_summary_element = function(zlatan){
+Beckham.prototype.build_attributes_summary_element = function (zlatan) {
+  console.log('This is zlatan contexts_attributes_summary: ', zlatan.contexts_attributes_summary)
 
-    console.log("This is zlatan contexts_attributes_summary: ", zlatan.contexts_attributes_summary);
+  if (zlatan.contexts_attributes_summary.length > 0) {
+    zlatan.contexts_attributes_summary.forEach(create_summary_html)
 
-    if (zlatan.contexts_attributes_summary.length > 0) {
+    function create_summary_html (element, index, array) {
+      this.template = $('#attributes-text-reply').html()
+      console.log('This is the template: ', this.template)
 
-        zlatan.contexts_attributes_summary.forEach(create_summary_html);
+      // Compile the template data into a function
+      this.templateScript = Handlebars.compile(this.template)
+      console.log('This is the templateScript: ', this.templateScript)
 
-        function create_summary_html(element, index, array) {
+      console.log('This goes in context: ', element)
 
-            this.template = $('#attributes-text-reply').html();
-            console.log("This is the template: ", this.template);
+      this.html = this.templateScript({ attribute: element })
+      console.log('This is the html: ', this.html)
 
-            // Compile the template data into a function
-            this.templateScript = Handlebars.compile(this.template);
-            console.log("This is the templateScript: ", this.templateScript);
-
-            console.log("This goes in context: ", element);
-
-            this.html = this.templateScript({ attribute: element });
-            console.log("This is the html: ", this.html);
-
-            // Insert the HTML code into the page
-            $('.chat__messages').append(this.html);
-
-
-        }
-
+      // Insert the HTML code into the page
+      $('.chat__messages').append(this.html)
     }
-
+  }
 }
 
-Beckham.prototype.build_comparison_element = function(zlatan, query_status){
+Beckham.prototype.build_comparison_element = function (zlatan, query_status) {
+  comparison_request(zlatan, query_status)
 
-	comparison_request(zlatan, query_status);
+  this.template = $('#handlebars-case-200').html()
 
-	this.template = $('#handlebars-case-200').html();
+  // Compile the template data into a function
+  this.templateScript = Handlebars.compile(this.template)
 
-    // Compile the template data into a function
-    this.templateScript = Handlebars.compile(this.template);
+  this.html = this.templateScript(zlatan.comparison_context)
 
-    this.html = this.templateScript(zlatan.comparison_context);
+  // Insert the HTML code into the page
+  $('.chat__messages').append(this.html)
 
-     // Insert the HTML code into the page
-    $('.chat__messages').append(this.html);
-
-    this.scroll_into_view();
-
-
+  this.scroll_into_view()
 }
 
-Beckham.prototype.correct_mobiles_array = function(zlatan, query_status){
+Beckham.prototype.correct_mobiles_array = function (zlatan, query_status) {
+  var temp_array = zlatan.mobiles[0].variants
 
-    var temp_array = zlatan.mobiles[0].variants;
+  if (query_status === 202) {
+    var temp_attributes_array = zlatan.mobiles[0].attribute_requested
+  }
 
-    if(query_status === 202){
+  zlatan.mobiles = []
 
-        var temp_attributes_array = zlatan.mobiles[0].attribute_requested;
+  temp_array.forEach(copy_mobiles)
 
+  function copy_mobiles (element, index, array) {
+    var variants_obj = {}
+
+    variants_obj.variants = []
+
+    variants_obj.variants.push(element)
+
+    zlatan.mobiles.push(variants_obj)
+  }
+
+  if (query_status === 202) {
+    zlatan.mobiles[0].attribute_requested = temp_attributes_array
+  }
+}
+
+Beckham.prototype.build_video_review_element = function (zlatan) {
+  console.log('case video ')
+
+  get_video(zlatan)
+
+  this.template = $('#handlebars-case-120').html()
+  console.log('template ', this.template)
+  // Compile the template data into a function
+  this.templateScript = Handlebars.compile(this.template)
+
+  this.html = this.templateScript(zlatan.context)
+
+  // Insert the HTML code into the page
+  $('.chat__messages').append(this.html)
+  console.log('html', this.html)
+  init_specifications($('.chat__messages').children().last())
+  
+  this.scroll_into_view()
+}
+
+Beckham.prototype.build_text_review_element = function (zlatan) {
+  console.log('case text review  ')
+
+  reduce_to_pairs = (accumulator, currentValue, index) => {
+    // console.log(accumulator)
+    if (index % 2 === 0) {
+      if (zlatan.mobiles.reviews[0].reviews[index + 1]) {
+        accumulator.push([currentValue, zlatan.mobiles.reviews[0].reviews[index + 1]])
+      }else {
+        accumulator.push([currentValue])
+      }
     }
+    return accumulator
+  }
 
-    
+  var reviews_pairs = zlatan.mobiles.reviews[0].reviews.reduce(reduce_to_pairs, [])
 
-    zlatan.mobiles = [];
+  zlatan.context = {reviews_pairs: reviews_pairs}
 
-    temp_array.forEach(copy_mobiles);
+  this.template = $('#handlebars-case-400').html()
+  console.log('template ', this.template)
+  // Compile the template data into a function
+  this.templateScript = Handlebars.compile(this.template)
 
-    function copy_mobiles(element, index, array){
+  this.html = this.templateScript(zlatan.context)
 
-        var variants_obj = {};
-
-        variants_obj.variants = [];
-
-        variants_obj.variants.push(element);
-
-        zlatan.mobiles.push(variants_obj); 
-    }
-
-
-    if(query_status === 202){
-        zlatan.mobiles[0].attribute_requested = temp_attributes_array;    
-    }
-    
-
+  // Insert the HTML code into the page
+  $('.chat__messages').append(this.html)
+  console.log('html', this.html)
+  init_specifications($('.chat__messages').children().last())
+  init_owl()
+  this.scroll_into_view()
 }
 
-Beckham.prototype.build_video_review_element = function(zlatan){
+Beckham.prototype.build_error_element = function () {
+  this.template = $('#handlebars-case-error').html()
 
-	console.log("case video ");
+  // Compile the template data into a function
+  this.templateScript = Handlebars.compile(this.template)
 
-    get_video(zlatan);
+  this.html = this.templateScript()
 
-    this.template = $('#handlebars-case-120').html();
-    console.log("template ",this.template)
-        // Compile the template data into a function
-        this.templateScript = Handlebars.compile(this.template);
-    
-        this.html = this.templateScript(zlatan.context);
-    
-         // Insert the HTML code into the page
-        $('.chat__messages').append(this.html);
-        console.log("html",this.html)
-        init_specifications($(".chat__messages").children().last());
-        
-        this.scroll_into_view(); 
+  // Insert the HTML code into the page
+  $('.chat__messages').append(this.html)
 
-
-
-
+  this.scroll_into_view()
 }
 
-Beckham.prototype.build_error_element = function(){
+Beckham.prototype.build_text_reply_element = function (buffon) {
+  this.template = $('#handlebars-case-1x').html()
 
-    this.template = $('#handlebars-case-error').html();
+  // Compile the template data into a function
+  this.templateScript = Handlebars.compile(this.template)
 
-    // Compile the template data into a function
-    this.templateScript = Handlebars.compile(this.template);
+  console.log('This is displayText inside build_text_reply_element: ', buffon.displayText)
 
-    this.html = this.templateScript();
+  var context = {
+    text: buffon.displayText
+  }
 
-     // Insert the HTML code into the page
-    $('.chat__messages').append(this.html);
+  console.log('This is context: ', context)
 
-    this.scroll_into_view();
+  this.html = this.templateScript(context)
 
+  console.log('This is the html generated: ', this.html)
 
+  // Insert the HTML code into the page
+  $('.chat__messages').append(this.html)
+
+  this.scroll_into_view()
 }
 
-Beckham.prototype.build_text_reply_element = function(buffon){
-
-    this.template = $('#handlebars-case-1x').html();
-
-    // Compile the template data into a function
-    this.templateScript = Handlebars.compile(this.template);
-
-    console.log("This is displayText inside build_text_reply_element: ", buffon.displayText);
-
-    var context = {
-        text: buffon.displayText
-    }
-
-    console.log("This is context: ", context);
-
-    this.html = this.templateScript(context);
-
-    console.log("This is the html generated: ", this.html);
-
-     // Insert the HTML code into the page
-    $('.chat__messages').append(this.html);
-
-    this.scroll_into_view();
-
-
+Beckham.prototype.select_handlebars_template = function () {
+  if (this.query_status === 100 || this.query_status === 300 || this.query_status === 101
+    || this.query_status === 201 || this.query_status === 203) {
+    this.template = $('#handlebars-case-100').html()
+  }
 }
 
-
-Beckham.prototype.select_handlebars_template = function(){
-	if(this.query_status === 100 || this.query_status === 300 || this.query_status === 101 
-		|| this.query_status === 201 || this.query_status === 203){
-		this.template = $('#handlebars-case-100').html();
-	}
+Beckham.prototype.compile_handlebars_template = function () {
+  // Compile the template data into a function
+  this.templateScript = Handlebars.compile(this.template)
 }
 
-
-Beckham.prototype.compile_handlebars_template = function(){
-	// Compile the template data into a function
-    this.templateScript = Handlebars.compile(this.template);
+Beckham.prototype.get_html = function (context) {
+  this.html = this.templateScript(context)
 }
 
+Beckham.prototype.append_html = function (context) {
 
-Beckham.prototype.get_html = function(context){
-	this.html = this.templateScript(context);
+  // Insert the HTML code into the page
+  $('.chat__messages').append(this.html)
 }
 
-Beckham.prototype.append_html = function(context){
+Beckham.prototype.scroll_into_view = function () {
+  var a = document.getElementsByClassName('chat__messages')
+  console.log('This is a:' , a)
 
-	// Insert the HTML code into the page
-    $('.chat__messages').append(this.html);
+  var b = a[0].getElementsByClassName('message_sender')
+  console.log('This is b: ', b)
 
-}
+  var element_count = b.length - 1
+  console.log('This is element_count: ', element_count)
 
-Beckham.prototype.scroll_into_view = function(){
-    var a = document.getElementsByClassName('chat__messages');
-    console.log("This is a:" , a);
-
-    var b = a[0].getElementsByClassName('message_sender');
-    console.log("This is b: ", b);
-
-    var element_count = b.length - 1;
-    console.log("This is element_count: ", element_count);
-
-    b[element_count].scrollIntoView();
-    console.log("Scrolled into view");
+  b[element_count].scrollIntoView()
+  console.log('Scrolled into view')
 }
 function Buffon (text) {
 
@@ -19626,6 +19622,16 @@ if(selected_variant.reactions && selected_variant.reactions[reaction]){
 
 })
 
+Handlebars.registerHelper("create_rating_stars",function(rating){
+ 
+var stars = ''
+    if(rating>=1) stars += `<polygon id="Page-1" points="7.5 0 5.39325 4.97025 0 5.433 4.09125 8.97825 2.865 14.25 7.5 11.45475 12.13425 14.25 10.90875 8.97825 15 5.433 9.60675 4.97025"></polygon>`;
+    if(rating>=2) stars += `<polygon id="Page-1-Copy" points="25.5 0 23.39325 4.97025 18 5.433 22.09125 8.97825 20.865 14.25 25.5 11.45475 30.13425 14.25 28.90875 8.97825 33 5.433 27.60675 4.97025"></polygon>`;
+    if(rating>=3) stars += `<polygon id="Page-1-Copy-2" points="43.5 0 41.39325 4.97025 36 5.433 40.09125 8.97825 38.865 14.25 43.5 11.45475 48.13425 14.25 46.90875 8.97825 51 5.433 45.60675 4.97025"></polygon>`;
+    if(rating>=4) stars += `<polygon id="Page-1-Copy-3" points="61.5 0 59.39325 4.97025 54 5.433 58.09125 8.97825 56.865 14.25 61.5 11.45475 66.13425 14.25 64.90875 8.97825 69 5.433 63.60675 4.97025"></polygon>`;
+    if(rating>=5) stars += `<polygon id="Page-1-Copy-4" points="79.5 0 77.39325 4.97025 72 5.433 76.09125 8.97825 74.865 14.25 79.5 11.45475 84.13425 14.25 82.90875 8.97825 87 5.433 81.60675 4.97025"></polygon>`;
+return stars
+})
 // >>>>>>>>>>> for debugging 
 Handlebars.registerHelper("debug", function(optionalValue) {
     console.log("Current Context");
@@ -20331,6 +20337,10 @@ Neymar.prototype.check_questions = function() {
 
         // Insert the HTML code into the page
         $('.chat__messages').append(this.html);
+
+        init_specifications($('.chat__messages').children().last())
+        init_owl()
+        //this.scroll_into_view()
 
     }
 }
