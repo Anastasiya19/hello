@@ -243,6 +243,9 @@
   @media (max-width: 767px) {
     width: 56%
   }
+  @media (max-width: 419px) {
+    width: 68%;
+  }
   &:hover {
     color: #fff;
     background-color: #3B5998;
@@ -257,6 +260,9 @@
   color: #00ACED;
   @media (max-width: 767px) {
     width: 36%
+  }
+  @media (max-width: 419px) {
+    width: 43%;
   }
 
   &:hover {
@@ -274,6 +280,9 @@
   color: #25D366;
   @media (max-width: 767px) {
     width: 40%
+  }
+  @media (max-width: 419px) {
+    width: 47%;
   }
   &:hover {
     background-color: #25D366;
@@ -582,4 +591,34 @@
 //
 //.reviews .owl-stage{
 //  width: 431px!important
+
 //}
+
+
+.all-details-shown .view__description,.all-details-shown .block-reviews{ width:282px;}
+.view__description,.block-reviews {width:282px;}
+
+@media all and (min-width:419px){
+  .all-details-shown .view__description,.all-details-shown .block-reviews{ width:323px;}
+  .view__description,.block-reviews {width:323px;}
+}
+
+@media all and (min-width:768px){
+  .all-details-shown .view__description,.all-details-shown .block-reviews{ width:630px;}
+  .view__description,.block-reviews {width:418px;}
+}
+
+@media all and (min-width:848px){
+  .all-details-shown .view__descriptio,.all-details-shown .block-reviews{ width:690px;}
+  .view__description,.block-reviews {width:427px;}
+}
+
+@media all and (min-width:1038px){
+  .all-details-shown .view__description,.all-details-shown .block-reviews{ width:677px;}
+  .view__description,.block-reviews {width:438px;}
+}
+
+@media all and (min-width:1240px){
+  .all-details-shown .view__description,.all-details-shown .block-reviews{ width:845px;}
+  .view__description,.block-reviews {width:514px;}
+}
