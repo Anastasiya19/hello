@@ -13,12 +13,11 @@
     top: -20px;
     padding: 9px 25px;
   }
-  &__characteristic {
-
-  }
 
   &__description {
+    border-bottom: 1px solid #F6F7F9;
     width: 400px;
+    padding: 20px;
     @media (max-width: 767px) {
       width: 100%;
       padding-right: 10px;
@@ -34,28 +33,30 @@
 
   }
   &__features {
-    margin-right: 20px;
-    margin-top: 35px;
+
+    padding: 20px;
+    border-bottom: 1px solid #F6F7F9;
     //@media (max-width: 767px) {
     //  width: 91%;
     //}
   }
   &__reviews {
-    margin-right: 20px;
+    padding: 20px;
   }
 
   &__comparison {
-    margin-top: 35px;
-    margin-right: 20px;
+    padding: 20px;
+    border-bottom: 1px solid #F6F7F9;
   }
 
   &__video-reviews {
-    margin-top: 35px;
-    margin-right: 20px;
+    padding: 20px;
+    border-bottom: 1px solid #F6F7F9;
   }
 
   &__share {
-    margin-top: 35px;
+    //margin-top: 35px;
+    padding: 20px;
   }
 
   &__features-items {
@@ -64,10 +65,10 @@
     -webkit-column-count: 3;
     column-count: 3;
     list-style-type: decimal;
-    height: 120px;
+    //height: 120px;
     margin-top: 22px;
     @media (max-width: 767px) {
-      height: 157px;
+      //height: 157px;
       -moz-column-count: 2;
       -webkit-column-count: 2;
       column-count: 2;
@@ -163,6 +164,7 @@
   position: relative;
   transition: all .2s ease-in-out;
   margin-top: 20px;
+  border: 2px solid #F6F7F9;
   &:hover {
     background-color: #E54949;
     span{
@@ -180,6 +182,7 @@
 
 .block-reviews {
   width: 430px;
+  border-bottom: 1px solid #F6F7F9;
   @media (min-width: 1240px) {
     width: 500px;
   }
@@ -194,6 +197,8 @@
 .reviews__item {
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);
   padding: 15px 30px;
+  border: 1px solid #F6F7F9;
+  border-radius: 4px;
 }
 .hide-all-details {
   display: none;
@@ -216,11 +221,11 @@
 
 .share__button {
   display: inline-block;
-  padding:10px;
+  padding: 10px 0 10px 10px;
   margin-right: 2%;
   width: 25%;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);
-  border: none;
+  border: 2px solid #F6F7F9;
   background-color: #fff;
   @media (max-width: 767px) {
     display: block;
@@ -278,6 +283,8 @@
 }
 
 .flex-container {
+  border-bottom: 1px solid #F6F7F9;
+  padding-left: 10px;
   @media (min-width: 768px) {
     display: flex;
     max-height: 500px;
@@ -306,6 +313,9 @@
     &_best {
       text-align: right;
     }
+  }
+  &__header-reviews {
+    border-bottom: none;
   }
   &__best {
     color: #616161;
@@ -406,10 +416,9 @@
       width: 114px;
     }
     @media (min-width: 768px) {
-      top: -11px;
+      top: -77px;
     }
     @media (max-width: 767px) {
-      bottom: 11px;
       width: 150px;
       left: -10px;
     }
@@ -447,8 +456,8 @@
 }
 .closeTopRight:after{
   position:absolute;
-  right:-7px;
-  top:1px;
+  right: -10px;
+  top: -10px;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
   content:'x';
   height:20px;
@@ -459,13 +468,13 @@
 
 .view__info-helper {
   width: auto;
-  height: 20px;
   text-align: center;
-  padding: 0 10px;
+  padding: 10px 20px;
   left: auto;
   right: 4%;
+  top: -34px;
   span {
-    font-size: 10px;
+    font-size: .85714rem;
   }
 }
 
@@ -482,8 +491,9 @@
 
   &__item {
   font-size: .85714rem;
+  border: 2px solid #F6F7F9;
   border-radius: 7px;
-  padding: 12px 20px;
+  padding: 10px 16px;
   background: #fff;
   color: #000;
   margin-left: 10px;
@@ -520,6 +530,7 @@
   -webkit-transition: .4s;
   transition: .4s;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);
+  border: 2px solid #F6F7F9;
 
   @media (max-width: 767px) {
     display: block;
@@ -538,9 +549,9 @@
     font-size: 12px;
   }
 }
-.reviews {
-  margin-top: 22px;
-}
+//.reviews {
+//  margin-top: 22px;
+//}
 
 .reviews .nav-carousel.disabled {
   top: 49%;

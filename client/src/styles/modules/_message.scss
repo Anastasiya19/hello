@@ -22,7 +22,6 @@
   }
 
   &__item-rate {
-    //float: left;
     width: 105px;
     display: inline-block;
   }
@@ -30,6 +29,11 @@
   &__item-author {
     float: right;
     width: auto;
+
+    @media (max-width: 678px) {
+      float: none;
+      margin-top: 10px;
+    }
   }
 
 
@@ -52,6 +56,7 @@
 
     &_title {
       padding-left: 15px;
+      padding-top: 5px;
     }
 
     &_vinci {
@@ -75,7 +80,7 @@
       width: 100%;
     }
     &_view {
-      padding: 0 0 20px 20px;
+      padding: 0 0 20px 0;
       font-size: 0;
       @media (max-width: 768px) {
         padding: 0 0 10px 10px;
