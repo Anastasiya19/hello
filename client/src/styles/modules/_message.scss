@@ -254,7 +254,6 @@
     &:first-child {
       width: 50px;
       float: left;
-      border-bottom: 1px solid #FBFBFB;
       &:after {
         background: #efefef url($path-to-images + "arrow_prev_dark.svg") center no-repeat;
       }
