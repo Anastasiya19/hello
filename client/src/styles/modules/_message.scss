@@ -3,9 +3,15 @@
   margin-bottom: 33px;
 
   &__title {
-    border-bottom: 2px solid #FF9800;
+    border-bottom: 2px solid #e85352;
     font-size: 1.25rem;
     font-weight: 500;
+    padding: 6px;
+  }
+
+  &__title-block {
+    margin-bottom: 16px;
+
   }
 
   &__item-info {
@@ -46,7 +52,6 @@
 
     &_title {
       padding-left: 15px;
-      padding-top: 10px;
     }
 
     &_vinci {
@@ -230,9 +235,6 @@
     margin-right: 0;
     font-size: 0;
 
-    @media (max-width: 767px) {
-      padding: 15px;
-    }
     &:after {
       content: '';
       position: absolute;
