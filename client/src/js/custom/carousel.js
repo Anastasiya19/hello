@@ -13,13 +13,16 @@ function init_owl() {
 
   var owlAnimated = $('.owl-carousel-animated');
   owlAnimated.owlCarousel({
-    items:1,
-    center: true,
-    autoplay:true,
-    autoplaySpeed: 3000,
-    autoplayHoverPause:true,
+    items:10,
+    // center: true,
+    // autoplay:true,
+    // autoplaySpeed: 3000,
+    // autoplayHoverPause:true,
     autoWidth: true,
-    margin: 25,
+    nav: true,
+    navContainerClass: 'nav-carousel',
+    navClass: 'helpers__arrow',
+    margin: 10,
 
   });
 
@@ -31,6 +34,7 @@ function init_owl() {
     show.hide();
     closeBtn.show().css('display', 'block');
     childBlock.removeClass('view__col_hidden');
+    $(messageItem.parent()[0]).addClass('all-details-shown')
     owl.trigger('refresh.owl.carousel');
   })
   $('.hide-all-details').click(function () {
@@ -41,6 +45,7 @@ function init_owl() {
     closeBtn.css('display', 'none');
     show.css('display', 'block');
     childBlock.addClass('view__col_hidden');
+    $(messageItem.parent()[0]).removeClass('all-details-shown')
     owl.trigger('refresh.owl.carousel');
   })
 
