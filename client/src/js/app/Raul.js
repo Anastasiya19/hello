@@ -873,7 +873,7 @@ Raul.prototype.create_summary_product_context = function() {
         title: this.title,
         selected_variant: this.selected_variant,
         cheapest_price: this.shortlisted_model_best_price,
-        rating: this.rating
+        other_price: this.selected_variant.product_retailers[this.shortlisted_model_shortlisted_retailer].product_pricing.mrp
 
     } //this.context object over
 
