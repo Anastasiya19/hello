@@ -19,10 +19,10 @@
     th {
       border: 1px solid #F4F7F9;
       &:first-child {
-        color: rgba(107, 110, 122, 0.5);
+        color: #6B6E7A;
         padding-left: 20px;
         font-weight: 300;
-        font-size: rem(12);
+        font-size: rem(13);
         @media (min-width: 768px) {
           min-width: 200px;
           padding-left: 40px;
@@ -36,7 +36,7 @@
       border: 1px solid #F4F7F9;
       padding: 8px 15px;
       font-weight: 300;
-      font-size: rem(12);
+      font-size: rem(13);
       color: #6B6E7A;
       position: relative;
       @media (max-width: 767px) {

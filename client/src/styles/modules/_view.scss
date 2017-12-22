@@ -79,7 +79,7 @@
 
     span{
       margin-left: 8px;
-      font-size: 12px;
+      font-size: 13px;
     }
   }
 
@@ -234,17 +234,22 @@
 }
 
 .button-facebook {
-  width: 40%;
+  width: 38%;
   background-image: url('../assets/images/facebook-icon.svg');
-  background-position: 15px 10px;
+  background-position: 19px 11px;
   background-repeat: no-repeat;
   background-size: 8px;
   color: #3B5998;
+  @media (max-width: 1239px) {
+    width: 42%;
+    background-position: 13px 11px;
+  }
   @media (max-width: 767px) {
-    width: 56%
+    width: 58%;
+    background-position: 13px 11px;
   }
   @media (max-width: 419px) {
-    width: 68%;
+    width: 66%;
   }
   &:hover {
     color: #fff;
@@ -258,13 +263,16 @@
   background-repeat: no-repeat;
   background-size: 13px;
   color: #00ACED;
-  @media (max-width: 767px) {
-    width: 36%
-  }
   @media (max-width: 419px) {
     width: 43%;
   }
-
+  @media (max-width: 767px) {
+    width: 36%
+  }
+  @media (min-width: 1240px) {
+    width: 25%;
+    background-position: 21px 13px;
+  }
   &:hover {
     background-color: #00ACED;
     color: #fff;
@@ -274,7 +282,7 @@
 .button-whatsapp {
   width: 27%;
   background-image: url('../assets/images/whatsapp-icon.svg');
-  background-position: 14px 11px;
+  background-position: 11px 11px;
   background-repeat: no-repeat;
   background-size: 13px;
   color: #25D366;
@@ -283,6 +291,9 @@
   }
   @media (max-width: 419px) {
     width: 47%;
+  }
+  @media (min-width: 1240px) {
+    background-position: 19px 11px;
   }
   &:hover {
     background-color: #25D366;
@@ -555,7 +566,7 @@
     }
   }
   span {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 //.reviews {

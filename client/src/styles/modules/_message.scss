@@ -30,6 +30,10 @@
     float: right;
     width: auto;
 
+    p {
+      font-size: 14px;
+    }
+
     @media (max-width: 678px) {
       float: none;
       margin-top: 10px;
@@ -149,11 +153,11 @@
       width: 103px !important;
       &:after {
         content: 'Vinci is Typing !';
-        color: rgba(107, 110, 122, 0.1);
-        font-size: rem(12);
+        color: rgba(107, 110, 122, 0.7);
+        font-size: rem(13);
         position: absolute;
         left: 113%;
-        width: 90px;
+        width: 97px;
         top: 13px;
       }
     }
