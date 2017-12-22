@@ -17818,6 +17818,8 @@ function beckham_router(beckham, zlatan, buffon) {
 
         beckham.build_text_reply_element(buffon);
 
+        beckham.build_specifications_summary_element(zlatan);
+
         beckham.build_specifications_element(zlatan);
 
         console.log("phones formatted ", zlatan)
@@ -18043,6 +18045,14 @@ Beckham.prototype.build_specifications_element = function (zlatan) {
   init_specifications($('.chat__messages').children().last())
 
   this.scroll_into_view()
+}
+
+Beckham.prototype.build_specifications_summary_element = function (zlatan) {
+
+  // This function creates the context for each mobile in the zlatan object.
+  // It creates Raul constructor for each mobile which just gives the context object for each mobile
+  // All context objects are stored in the zlatan.contexts which is then passed for compilation
+  console.log("This is zlatan inside build_specifications_summary_element: ", zlatan);
 }
 
 Beckham.prototype.build_attributes_element = function (zlatan) {
