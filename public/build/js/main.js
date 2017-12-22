@@ -18421,7 +18421,7 @@ function comparison_request(zlatan, query_status){
 
 			if(element === 'warranty'){
 
-				giggs.warranty_element():
+				giggs.warranty_element();
 
 			}
 
