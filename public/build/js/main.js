@@ -18390,7 +18390,7 @@ function comparison_request(zlatan, query_status){
 		ram_row.other.push(giggs.create_context("RAM", "memory_storage", "ram"));
 
 		var connectivity_row = {
-			header: "Connectivity"
+			header: "Connectivity",
 			other: []
 		}
 
@@ -18406,14 +18406,14 @@ function comparison_request(zlatan, query_status){
 
 
 		var sensors_row = {
-			header: "Sensors"
+			header: "Sensors",
 			other: []
 		}
 
 		sensors_row.other.push(giggs.create_context("Sensors", "sensors"));
 
 		var warranty_row = {
-			header: "Warranty"
+			header: "Warranty",
 			other: []
 		}
 
@@ -18423,7 +18423,7 @@ function comparison_request(zlatan, query_status){
 
 
 		var dimensions_row = {
-			header: "Dimensions"
+			header: "Dimensions",
 			other: []
 		}
 
