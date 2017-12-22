@@ -233,9 +233,9 @@ Giggs.prototype.create_context = function(heading_text, first, second){
 
             temp_object.values[i] = this.selected_variant[i][first][second];
 
-            if(i === this.mobiles.length - 1){
-                this.comparison_context.push(temp_object);
-            }
+            // if(i === this.mobiles.length - 1){
+            //     this.comparison_context.push(temp_object);
+            // }
 
         }
 
@@ -247,15 +247,17 @@ Giggs.prototype.create_context = function(heading_text, first, second){
 
             temp_object.values[i] = this.selected_variant[i][first];
 
-            if(i === this.mobiles.length - 1){
-                this.comparison_context.push(temp_object);
-            }
+            // if(i === this.mobiles.length - 1){
+            //     this.comparison_context.push(temp_object);
+            // }
 
         }
 
     }
 
-    console.log("This is the comparison context: ", this.comparison_context);
+    return temp_object;
+
+    // console.log("This is the comparison context: ", this.comparison_context);
 
 
 }
