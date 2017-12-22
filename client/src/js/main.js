@@ -192,6 +192,7 @@ function sendMessage() {
 //= app/reload_product.js
 //= app/request_reply.js
 //= app/specifications_request.js
+//= app/specifications_summary_request.js
 //= app/tag_related_question.js
 //= app/update_active_list.js
 //= app/update_all_discussed_list.js
