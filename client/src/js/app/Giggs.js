@@ -192,6 +192,12 @@ Giggs.prototype.get_names = function(){
 //Function to be called from get_comparison
 Giggs.prototype.get_price_comparison = function(heading_text){
 
+    var price_row = {
+        header: "Pricing",
+        other:[]
+
+    }
+
     var temp_object = {};
     temp_object.values = [];
 
@@ -204,13 +210,17 @@ Giggs.prototype.get_price_comparison = function(heading_text){
 
         console.log("This is the value: ", temp_object.values[i]);
 
-        if(i === this.mobiles.length - 1){
-            console.log("This is temp_object: ", temp_object);
-            this.comparison_context.push(temp_object);
+        // if(i === this.mobiles.length - 1){
+        //     console.log("This is temp_object: ", temp_object);
+        //     this.comparison_context.push(temp_object);
 
-        }
+        // }
     
     }//for ends
+
+    price_row.other.push(temp_object);
+
+    this.comparison_context.push(price_row);
 
     console.log("This is the get_price_comparison: ", this.comparison_context);
 
@@ -476,7 +486,7 @@ Giggs.prototype.create_context = function(heading_text, first, second){
 
 }
 
-
+//Deprecated
 Giggs.prototype.get_number_of_mobiles = function(){
 
     if(Array.isArray(this.mobiles)){

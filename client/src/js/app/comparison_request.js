@@ -26,12 +26,7 @@ function comparison_request(zlatan, query_status){
 
 	//get the names of all the phones
 	giggs.get_names();
-
-	//get the number of mobiles for colspan
-	giggs.get_number_of_mobiles();
-
-
-
+	
 
 	if(query_status === 200){
 
