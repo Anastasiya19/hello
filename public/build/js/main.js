@@ -17235,21 +17235,24 @@ $(document).ready(function () {
   // });
 
   $('.send__input').on('input keyup', function() {
+      console.log("Auto complete request triggered. Show the auto complete helper");
       var input = $('.send__input');
       send_auto_complete_request(input[0].value);
       // $('.helpers').delay(200).show();
   });
 
   $(".send__input").focusout(function(){
+      console.log("Send input focusout. Hide auto complete")
       $('.helpers').hide(200);
   });
 
   $('.helpers__item').on('click', function () {
-    console.log("Helper item clicked");
+    console.log("Helper item clicked. Hide auto compelete");
     $('.helpers').hide(200);
     var value = $(this).html();
     var input = $('.send__input');
     input.val(value);
+    console.log("Input value setup in input box. Let's see if auto complete shows up");
   });
 
   
@@ -18858,7 +18861,7 @@ function capture_value_and_hide(event) {
     var input_field = document.getElementsByClassName('send__input');
     input_field[0].value = event.target.innerText;
 
-    $('.helpers').slideToggle(200);
+    $('.helpers').hide(200);
 
 
 }
