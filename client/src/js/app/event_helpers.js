@@ -355,7 +355,7 @@ function capture_value_and_hide(event) {
     var input_field = document.getElementsByClassName('send__input');
     input_field[0].value = event.target.innerText;
 
-    $('.helpers').slideToggle(200);
+    $('.helpers').hide(200);
 
 
 }
