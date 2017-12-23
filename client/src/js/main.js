@@ -35,6 +35,10 @@ $(document).ready(function () {
       // $('.helpers').delay(200).show();
   });
 
+  $(".send__input").focusout(function(){
+      $('.helpers').slideToggle(200);
+  });
+
   $('.helpers__item').on('click', function () {
     console.log("Helper item clicked");
     $('.helpers').slideToggle(200);
