@@ -475,3 +475,12 @@ Giggs.prototype.create_context = function(heading_text, first, second){
 
 
 }
+
+
+Giggs.prototype.get_number_of_mobiles = function(){
+
+    if(Array.isArray(this.mobiles)){
+
+        this.mobiles_count = this.mobiles.length;
+    }
+}
