@@ -154,7 +154,7 @@ app.get('/vinci_commands', function (req, res) {
 });
 
 //Next Route-------------------------------------------------------------
-app.get('/chat', basic_security_check , function (req, res) {
+app.get('/chat', function (req, res) {
     console.log("Request hit the client home route");
     // fs.readFile("./jsons/show_me apple phones.json", 'utf8',function(err, json) {
     //     if (err) {
