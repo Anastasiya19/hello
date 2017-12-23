@@ -17241,12 +17241,12 @@ $(document).ready(function () {
   });
 
   $(".send__input").focusout(function(){
-      $('.helpers').slideToggle(200);
+      $('.helpers').hide(200);
   });
 
   $('.helpers__item').on('click', function () {
     console.log("Helper item clicked");
-    $('.helpers').slideToggle(200);
+    $('.helpers').hide(200);
     var value = $(this).html();
     var input = $('.send__input');
     input.val(value);
