@@ -71,8 +71,8 @@
 						<div class="chat__messages">
 							{{#each chat_carousels}}
 							<div class="message message_vinci">
-                                {{#if @first}}<h5 class="message__title">Latest phones</h5>{{/if}}
-                                {{#if @last}}<h5 class="message__title">Top collections of mobiles</h5>{{/if}}
+                                <h5 class="message__title">{{this.text}}</h5>
+                       
 								<div class="owl-carousel owl-theme">
 
 								{{#each carousel_phones}}
