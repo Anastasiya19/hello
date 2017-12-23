@@ -216,6 +216,220 @@ Giggs.prototype.get_price_comparison = function(heading_text){
 
 }
 
+Giggs.prototype.camera_element = function(){
+
+    var camera_row = {
+            header: "Camera",
+            other: []
+        }
+
+        camera_row.other.push(this.create_context("Primary camera", "camera", "primary_camera_pixels"));
+        camera_row.other.push(this.create_context("Selfie camera", "camera", "secondary_camera_pixels"));
+        camera_row.other.push(this.create_context("Video recording", "camera", "video_recording_status"));
+        camera_row.other.push(this.create_context("Video recording resolution", "camera", "video_recording_resolution"));
+        camera_row.other.push(this.create_context("HD Recording", "camera", "hd_recording_status"));
+        camera_row.other.push(this.create_context("Full HD Recording", "camera", "full_hd_recording_status"));
+        camera_row.other.push(this.create_context("Flash", "camera", "flash"));
+
+        this.comparison_context.push(camera_row);
+}
+
+Giggs.prototype.battery_element = function(){
+
+    var battery_row = {
+        header: "Battery",
+        other: []
+    }
+
+    battery_row.other.push(this.create_context("Battery capacity", "battery_power", "battery_capacity"));
+    battery_row.other.push(this.create_context("Battery type", "battery_power", "battery_type"));
+    battery_row.other.push(this.create_context("Removable battery status", "battery_power", "removable_battery_status"));
+
+
+    this.comparison_context.push(battery_row);
+
+}
+
+Giggs.prototype.sim_element = function(){
+
+    var sim_row = {
+        header: "Sim card",
+        other: []
+    }
+
+    sim_row.other.push(this.create_context("Sim type", "sim_features", "sim_type"));
+    sim_row.other.push(this.create_context("Sim size", "sim_features", "sim_size"));
+    sim_row.other.push(this.create_context("Hybrid Sim status", "sim_features", "hybrid_sim_slot_status"));
+
+    this.comparison_context.push(sim_row);
+
+}
+
+Giggs.prototype.display_element = function(){
+
+    var display_row = {
+        header: "Display",
+        other: []
+    }
+
+    display_row.other.push(this.create_context("Screen size", "display_specifications", "display_size"));
+    display_row.other.push(this.create_context("Display type", "display_specifications", "display_type"));
+    display_row.other.push(this.create_context("Display colors", "display_specifications", "display_colors"));
+    display_row.other.push(this.create_context("Resolution", "display_specifications", "resolution"));
+    display_row.other.push(this.create_context("Resolution type", "display_specifications", "resolution_type"));
+
+
+    this.comparison_context.push(display_row);
+}
+
+
+Giggs.prototype.os_element = function(){
+
+    var os_row = {
+        header: "OS",
+        other: []
+    }
+
+    os_row.other.push(this.create_context("Operating system", "os_processor", "operating_system"));
+    os_row.other.push(this.create_context("Processor speed", "os_processor", "processor_speed"));
+    os_row.other.push(this.create_context("Processor core", "os_processor", "processor_core"));
+    os_row.other.push(this.create_context("Processor type", "os_processor", "processor_type"));
+
+    this.comparison_context.push(os_row);
+}
+
+Giggs.prototype.processor_element = function(){
+
+    var processor_row = {
+        header: "Processor",
+        other: []
+    }
+
+    processor_row.other.push(this.create_context("Processor speed", "os_processor", "processor_speed"));
+    processor_row.other.push(this.create_context("Processor core", "os_processor", "processor_core"));
+    processor_row.other.push(this.create_context("Processor type", "os_processor", "processor_type"));
+
+    this.comparison_context.push(processor_row);
+}
+
+
+Giggs.prototype.ram_element = function(){
+
+    var ram_row = {
+        header: "RAM",
+        other: []
+    }
+
+    ram_row.other.push(this.create_context("RAM", "memory_storage", "ram"));
+
+    this.comparison_context.push(ram_row);    
+}
+
+
+Giggs.prototype.connectivity_element = function(){
+
+    var connectivity_row = {
+        header: "Connectivity",
+        other: []
+    }
+
+    connectivity_row.other.push(this.create_context("Supported networks", "connectivity", "supported_networks"));
+    connectivity_row.other.push(this.create_context("Wifi", "connectivity", "wifi"));
+    connectivity_row.other.push(this.create_context("Bluetooth", "connectivity", "bluetooth_support"));
+    connectivity_row.other.push(this.create_context("Bluetooth version", "connectivity", "bluetooth_version"));
+    connectivity_row.other.push(this.create_context("USB connectivity", "connectivity", "usb_connectivity"));
+    connectivity_row.other.push(this.create_context("Audio jack", "connectivity", "audio_jack_width"));
+    connectivity_row.other.push(this.create_context("Near Field Communication (NFC)", "connectivity", "nfc"));
+
+    this.comparison_context.push(connectivity_row);
+
+}
+
+
+Giggs.prototype.sensors_element = function(){
+
+
+    var sensors_row = {
+        header: "Sensors",
+        other: []
+    }
+
+    sensors_row.other.push(this.create_context("Sensors", "sensors"));
+
+    this.comparison_context.push(sensors_row);
+}
+
+
+Giggs.prototype.warranty_element = function(){
+
+    var warranty_row = {
+        header: "Warranty",
+        other: []
+    }
+
+
+    warranty_row.other.push(this.create_context("Warranty", "warranty"));
+
+    this.comparison_context.push(warranty_row);
+
+}
+
+
+Giggs.prototype.dimensions_element = function(){
+
+    var dimensions_row = {
+        header: "Dimensions",
+        other: []
+    }
+
+
+    dimensions_row.other.push(this.create_context("Weight", "dimensions", "weight"));
+    dimensions_row.other.push(this.create_context("Width", "dimensions", "width"));
+    dimensions_row.other.push(this.create_context("Height", "dimensions", "height"));
+    dimensions_row.other.push(this.create_context("Depth", "dimensions", "depth"));
+
+
+    this.comparison_context.push(dimensions_row);
+
+}
+
+Giggs.prototype.bluetooth_element = function(){
+
+    var bluetooth_row = {
+        header: "Bluetooth",
+        other: []
+    }
+
+    bluetooth_row.other.push(this.create_context("Bluetooth", "connectivity", "bluetooth_support"));
+    bluetooth_row.other.push(this.create_context("Bluetooth version", "connectivity", "bluetooth_version"));
+
+    this.comparison_context.push(bluetooth_row);
+}
+
+Giggs.prototype.nfc_element = function(){
+
+    var nfc_row = {
+        header: "NFC",
+        other: []
+    }
+
+    nfc_row.other.push(this.create_context("Near Field Communication (NFC)", "connectivity", "nfc"));
+    
+    this.comparison_context.push(nfc_row);
+}
+
+Giggs.prototype.jack_element = function(){
+
+    var jack_row = {
+        header: "Audio Jack",
+        other: []
+    }
+
+    jack_row.other.push(this.create_context("Audio jack", "connectivity", "audio_jack_width"));
+    
+    this.comparison_context.push(jack_row);
+}
+
 
 //Function to get the attribute values
 Giggs.prototype.create_context = function(heading_text, first, second){
@@ -233,9 +447,9 @@ Giggs.prototype.create_context = function(heading_text, first, second){
 
             temp_object.values[i] = this.selected_variant[i][first][second];
 
-            if(i === this.mobiles.length - 1){
-                this.comparison_context.push(temp_object);
-            }
+            // if(i === this.mobiles.length - 1){
+            //     this.comparison_context.push(temp_object);
+            // }
 
         }
 
@@ -247,15 +461,17 @@ Giggs.prototype.create_context = function(heading_text, first, second){
 
             temp_object.values[i] = this.selected_variant[i][first];
 
-            if(i === this.mobiles.length - 1){
-                this.comparison_context.push(temp_object);
-            }
+            // if(i === this.mobiles.length - 1){
+            //     this.comparison_context.push(temp_object);
+            // }
 
         }
 
     }
 
-    console.log("This is the comparison context: ", this.comparison_context);
+    return temp_object;
+
+    // console.log("This is the comparison context: ", this.comparison_context);
 
 
 }

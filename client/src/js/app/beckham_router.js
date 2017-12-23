@@ -22,7 +22,9 @@ function beckham_router(beckham, zlatan, buffon) {
 
         beckham.build_text_reply_element(buffon);
 
-        beckham.build_specifications_element(zlatan);
+        beckham.build_specifications_summary_element(zlatan);
+
+        // beckham.build_specifications_element(zlatan);
 
         console.log("phones formatted ", zlatan)
     }

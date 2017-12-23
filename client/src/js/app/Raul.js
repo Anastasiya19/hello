@@ -613,6 +613,13 @@ Raul.prototype.get_title = function() {
 } //get_title function ends
 
 
+Raul.prototype.get_summary_title = function(){
+
+    this.title = this.selected_variant.product_basic_info.normalized_name;
+
+}
+
+
 //Function to get the features of the selected variant
 Raul.prototype.get_features = function() {
 
@@ -848,6 +855,25 @@ Raul.prototype.create_product_context = function() {
         get_display: this.get_display,
         get_camera: this.get_camera,
         battery: this.battery
+
+    } //this.context object over
+
+} //create_product_context function ends
+
+Raul.prototype.create_summary_product_context = function() {
+
+    console.log("Inside create_summary_product_context: ", this.query_status);
+
+    //Create the context object to display the product element
+
+    this.context = {
+        id: this.request_id,
+        shortlisted_model_index: this.shortlisted_model_index,
+        shortlisted_model_shortlisted_retailer_index: this.shortlisted_model_shortlisted_retailer_index,
+        title: this.title,
+        selected_variant: this.selected_variant,
+        cheapest_price: this.shortlisted_model_best_price,
+        other_price: this.selected_variant.product_retailers[this.shortlisted_model_shortlisted_retailer_index].product_pricing.mrp
 
     } //this.context object over
 

@@ -1,0 +1,48 @@
+
+<div class="message message_vinci ">
+
+    <div class="owl-carousel owl-theme">
+
+        \{{#each phones}}
+        <div class="message__item message__item_vinci br-chat message__category category">
+            <div class="row">
+                <div class="category__image col-4">
+                    <img src="\{{this.selected_variant.image_urls.small}}" alt="">
+                </div>
+                <div class="category__description col-8">
+                    <h4 class="category__type">\{{this.selected_variant.product_basic_info.productBrand_normalized}}</h4>
+                    <h3 class="category__name">\{{title}}</h3>
+                    <div class="category__prices-box">
+                        <span>Rs. \{{this.cheapest_price}}</span>
+                        <span class="old">Rs.\{{this.other_price}}</span>
+                    </div>
+                    <div class="facebook-status characteristic__facebook-status">
+                        <ul class="facebook-status__list">
+                            <li class="facebook-status__item like_reaction">
+                                <a href="#" class="facebook-status__link" onclick="react(event,'like','Apple iPhone 6s')">
+                                    <img src="assets/build/assets/images/facebook-like.svg" alt="" class="facebook-status__icon">
+                                </a>
+                                <span>11</span>
+                            </li>
+                            <li class="facebook-status__item love_reaction">
+                                <a href="#" class="facebook-status__link" onclick="react(event,'love','Apple iPhone 6s')">
+                                    <img src="assets/build/assets/images/facebook-love.svg" alt="" class="facebook-status__icon">
+                                </a>
+                                <span>12</span>
+                            </li>
+                            <li class="facebook-status__item angry_reaction">
+                                <a href="#" class="facebook-status__link" onclick="react(event,'angry','Apple iPhone 6s')">
+                                    <img src="assets/build/assets/images/facebook-angry.svg" alt="" class="facebook-status__icon">
+                                </a>
+                                <span>11</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        \{{/each}}
+
+    </div>
+
+</div>

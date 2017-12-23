@@ -91,6 +91,7 @@ function init_specifications(elem) {
         show.hide();
         closeBtn.show().css('display', 'block');
         childBlock.removeClass('view__col_hidden');
+        $(messageItem.parent()[0]).addClass('all-details-shown');
         owl.trigger('refresh.owl.carousel');
     })
     elem.find('.hide-all-details').click(function() {
@@ -101,6 +102,7 @@ function init_specifications(elem) {
         closeBtn.css('display', 'none');
         show.css('display', 'block');
         childBlock.addClass('view__col_hidden');
+        $(messageItem.parent()[0]).removeClass('all-details-shown');
         owl.trigger('refresh.owl.carousel');
     })
 }

@@ -19,12 +19,17 @@
         \{{/each}}
       </tr>
       \{{#each comparison_attributes}}
-      <tr>
-        <th scope="row">\{{this.heading_text}}</th>
-        \{{#each this.values}}
-          <td>\{{this}}</td>
+        <tr>
+          <th colspan="4"  style="background-color: #d3d3d352; color: black;">\{{this.header}}</th>
+        </tr>
+        \{{#each this.other}}
+        <tr>
+          <th scope="row">\{{this.heading_text}}</th>
+          \{{#each this.values}}
+            <td>\{{this}}</td>
+          \{{/each}}
+        </tr>
         \{{/each}}
-      </tr>
       \{{/each}}
       </tbody>
     </table>
