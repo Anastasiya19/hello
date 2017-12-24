@@ -1,9 +1,19 @@
 
 const request = require("request-promise")
-module.exports = function(api_response){
 
+/**
+ * this function will forward api ai response to our webhook 
+ * @param {Object} api_response 
+ */
+
+module.exports = function(api_response){
+    // for local development
+    var uri = (process.env.NODE_ENV === "development")?
+     "http://localhost:8080/sagarmatha_deepmind":
+     "http://calm-depths-38465.herokuapp.com/sagarmatha_deepmind";
+     // send request to our webhook
     return request({
-        uri:"http://calm-depths-38465.herokuapp.com/sagarmatha_deepmind",
+        uri:uri,
         method:"POST",
         json:true,
         body:api_response,

@@ -120,12 +120,12 @@ app.use(bodyParser.text({
 // Secure traffic only
 app.all('*', function(req, res, next){
     console.log('req start: ',req.secure, req.hostname, req.url, app.get('port'), req.protocol,"https ",req.get('X-Forwarded-Protocol'))
-  if (req.protocol === "https"|| process.env.NODE_ENV === "development") {
+  //if (req.protocol === "https"|| process.env.NODE_ENV === "development") {
     return next()
-  }
+  //}
 
   console.log("not secure redirecting ",process.env.NODE_ENV)
- res.redirect('https://'+req.hostname+req.url); //':'+app.get('secPort')+
+ //res.redirect('https://'+req.hostname+req.url); //':'+app.get('secPort')+
 })
 
 app.get('/', function (req, res) {
