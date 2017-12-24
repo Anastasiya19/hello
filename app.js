@@ -130,15 +130,15 @@ app.use(bodyParser.text({
 
 //********************** 9. Routes *********************************************
 // Secure traffic only
-app.all('*', function(req, res, next){
-    console.log('req start: ',req.secure, req.hostname, req.url, app.get('port'), req.protocol);
-  if (req.protocol === "https"|| process.env.NODE_ENV === "development") {
-    return next();
-  };
+// app.all('*', function(req, res, next){
+//     console.log('req start: ',req.secure, req.hostname, req.url, app.get('port'), req.protocol);
+//   if (req.protocol === "https"|| process.env.NODE_ENV === "development") {
+//     return next();
+//   };
 
-  console.log("not secure redirecting ",process.env.NODE_ENV)
- res.redirect('https://'+req.hostname+req.url); //':'+app.get('secPort')+
-});
+//   console.log("not secure redirecting ",process.env.NODE_ENV)
+//  res.redirect('https://'+req.hostname+req.url); //':'+app.get('secPort')+
+// });
 
 
 app.get('/', function (req, res) {
