@@ -137,7 +137,7 @@ app.all('*', function(req, res, next){
   };
 
   console.log("not secure redirecting ",process.env.NODE_ENV)
- res.redirect('https://'+req.hostname+':'+app.get('secPort')+req.url);
+ res.redirect('https://'+req.hostname+req.url); //':'+app.get('secPort')+
 });
 
 
