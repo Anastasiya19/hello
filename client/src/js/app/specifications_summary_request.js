@@ -22,7 +22,8 @@ function specifications_summary_request(zlatan){
 
 		//Found the selected variant
         //Getting ready to create the context object
-        raul.get_rating();
+        // THERE ARE NO RATING IN THE VIEW!
+        // raul.get_rating();
         
         //Get the title
         //Inside messi.js

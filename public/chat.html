@@ -1228,7 +1228,6 @@
 	</div></script>
 
 <script id="handlebars-case-100-summary" type="text/x-handlebars-template">
-	
 	<div class="message message_vinci ">
 	
 	    <div class="owl-carousel owl-theme">
@@ -1249,22 +1248,22 @@
 	                    <div class="facebook-status characteristic__facebook-status">
 	                        <ul class="facebook-status__list">
 	                            <li class="facebook-status__item like_reaction">
-	                                <a href="#" class="facebook-status__link" onclick="react(event,'like','Apple iPhone 6s')">
+	                                <a href="#" class="facebook-status__link" onclick="react(event,'like','{{this.selected_variant.product_basic_info.normalized_name}}')">
 	                                    <img src="assets/build/assets/images/facebook-like.svg" alt="" class="facebook-status__icon">
 	                                </a>
-	                                <span>11</span>
+	                                <span>{{{get_reactions this.selected_variant "like"}}}</span>
 	                            </li>
 	                            <li class="facebook-status__item love_reaction">
-	                                <a href="#" class="facebook-status__link" onclick="react(event,'love','Apple iPhone 6s')">
+	                                <a href="#" class="facebook-status__link" onclick="react(event,'love','{{this.selected_variant.product_basic_info.normalized_name}}')">
 	                                    <img src="assets/build/assets/images/facebook-love.svg" alt="" class="facebook-status__icon">
 	                                </a>
-	                                <span>12</span>
+	                                <span>{{{get_reactions this.selected_variant "love"}}}</span>
 	                            </li>
 	                            <li class="facebook-status__item angry_reaction">
-	                                <a href="#" class="facebook-status__link" onclick="react(event,'angry','Apple iPhone 6s')">
+	                                <a href="#" class="facebook-status__link" onclick="react(event,'angry','{{this.selected_variant.product_basic_info.normalized_name}}')">
 	                                    <img src="assets/build/assets/images/facebook-angry.svg" alt="" class="facebook-status__icon">
 	                                </a>
-	                                <span>11</span>
+	                                <span>{{{get_reactions this.selected_variant "angry"}}}</span>
 	                            </li>
 	                        </ul>
 	                    </div>
