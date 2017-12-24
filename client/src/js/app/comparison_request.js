@@ -26,9 +26,7 @@ function comparison_request(zlatan, query_status){
 
 	//get the names of all the phones
 	giggs.get_names();
-
-
-
+	
 
 	if(query_status === 200){
 
@@ -140,7 +138,8 @@ function comparison_request(zlatan, query_status){
 	zlatan.comparison_context = {
 		images: giggs.images,
 		model_names: giggs.names,
-		comparison_attributes: giggs.comparison_context
+		comparison_attributes: giggs.comparison_context,
+		colspan: giggs.mobiles_count + 1
 	}
 
 
