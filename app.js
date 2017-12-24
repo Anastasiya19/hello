@@ -255,12 +255,37 @@ app.post('/hellovinciai', function (req, res) {
         console.log("This is response on API AI which is sent back to frontend: ", response);
         console.log("Request processing over: Sending the processed data back to the client");
 
+        response.originalRequest =  {
+            source: "slack_testbot",
+            data: {
+                all_discussed_list: req.body.all_discussed_list,
+                active_list: req.body.active_list
+            }
+        }
+
+        request({
+            uri:"http://calm-depths-38465.herokuapp.com/sagarmatha_deepmind",
+            method:"POST",
+            json:true,
+            body:response,
+            headers:{
+                "sagarmatha_deepmind":"sagarmatha_is_huge",
+                'Content-Type': 'application/json; charset=utf-8'
+            }
+        }).then(result=>{
+
+            res.send({
+                web_reply: result,
+                status: response.status,
+                batman: "true" //response.result.metadata.webhookUsed
+            });
+        })
         //batman is the alias for webhook
-        res.send({
-            web_reply: response.result.fulfillment,
-            status: response.status,
-            batman: response.result.metadata.webhookUsed
-        });
+        // res.send({
+        //     web_reply: response.result.fulfillment,
+        //     status: response.status,
+        //     batman: response.result.metadata.webhookUsed
+        // });
     })
         .catch(function (err) {
             console.log('err ', err);
