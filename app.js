@@ -118,15 +118,15 @@ app.use(bodyParser.text({
 
 // ********************** 9. Routes *********************************************
 // Secure traffic only
-// app.all('*', function(req, res, next){
-//     console.log('req start: ',req.secure, req.hostname, req.url, app.get('port'), req.protocol)
-//   if (req.protocol === "https"|| process.env.NODE_ENV === "development") {
-//     return next()
-//   }
+app.all('*', function(req, res, next){
+    console.log('req start: ',req.secure, req.hostname, req.url, app.get('port'), req.protocol,"https ",req.get('X-Forwarded-Protocol'))
+  if (req.protocol === "https"|| process.env.NODE_ENV === "development") {
+    return next()
+  }
 
-//   console.log("not secure redirecting ",process.env.NODE_ENV)
-//  res.redirect('https://'+req.hostname+req.url); //':'+app.get('secPort')+
-// })
+  console.log("not secure redirecting ",process.env.NODE_ENV)
+ res.redirect('https://'+req.hostname+req.url); //':'+app.get('secPort')+
+})
 
 app.get('/', function (req, res) {
   res.render('home')
@@ -154,17 +154,6 @@ app.get('/vinci_commands', function (req, res) {
 // Next Route-------------------------------------------------------------
 app.get('/chat', function (req, res) {
   console.log('Request hit the client home route')
-  // fs.readFile("./jsons/show_me apple phones.json", 'utf8',function(err, json) {
-  //     if (err) {
-  //         console.log('Error  ' + err)
-  //         return
-  //     }
-
-  //     var carousel_phone = JSON.parse(json).web_reply.data.mobiles[0].variants
-  //     console.log(carousel_phone)
-  //     res.render('chat', {carousel_phone:carousel_phone})
-
-  // })
 
   res.sendFile(path.join(__dirname, './public/chat.html'))
   console.log('Get request received on the homepage. App is working')
