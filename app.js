@@ -131,8 +131,8 @@ app.use(bodyParser.text({
 //********************** 9. Routes *********************************************
 // Secure traffic only
 app.all('*', function(req, res, next){
-    console.log('req start: ',req.secure, req.hostname, req.url, app.get('port'));
-  if (req.secure || process.env.NODE_ENV === "development") {
+    console.log('req start: ',req.secure, req.hostname, req.url, app.get('port'), req.protocol);
+  if (req.protocol === "https"|| process.env.NODE_ENV === "development") {
     return next();
   };
 
