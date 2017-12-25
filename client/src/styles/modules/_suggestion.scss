@@ -1,11 +1,11 @@
 .suggestion {
-  padding-left: 0;
+  padding-left: 72px;
   &__item {
-    color: #6B6E7A;
-    font-size: rem(12);
+    color: #fff;
+    font-size: rem(13);
     padding: 10px 20px;
     display: inline-block;
-    background: #fff;
+    background: #94c0ff;
     transition: ease .2s;
     border-radius: 35px;
     margin-bottom: 10px;
@@ -40,5 +40,10 @@
       padding: 5px 8px;
       margin-bottom: 5px;
     }
+  }
+
+  & .nav-carousel {
+    left:42px;
+    top: 19px;
   }
 }

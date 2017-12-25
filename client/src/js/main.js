@@ -169,8 +169,9 @@ function sendMessage() {
     $('.chat__content').scrollTop($('.chat__content')[0].scrollHeight);
 
     //for mCustomScrollbar
-    $("#mCSB_1_container").css({'top': $('#mCSB_1').height() - $("#mCSB_1_container").height()})
-    $('#mCSB_1_dragger_vertical').css({top:'unset',bottom:'0px'})
+    $(".chat__content>.mCSB_vertical>.mCSB_container").css({'top': $('.chat__content>.mCSB_vertical').height() - $(".chat__content>.mCSB_vertical>.mCSB_container").height()})
+    $('.chat__content>.mCSB_vertical>.mCSB_scrollTools_vertical .mCSB_dragger').css({top:'unset',bottom:'0px'})
+
 
   }
 

@@ -12,22 +12,22 @@
   }
   &__type {
     font-size: 14px;
-    color: #bababa;
+    color: #7a7a7b;
     font-weight: 100;
   }
   &__name {
-    font-size: 13px
+    font-size: 14px
   }
   &__prices-box {
     margin-bottom: 10px;
     span {
-      font-size: 12px;
+      font-size: 13px;
       &:not(:last-child) {
         margin-right: 5px;
       }
       &.old {
         text-decoration: line-through;
-        color: #b5b5b5;
+        color: #7a7a7b;
       }
     }
   }

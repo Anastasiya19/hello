@@ -90,11 +90,12 @@ function hellovinciai(msg) {
         </div>`);
 
       //for native scroll(mobile only)
-      $('.chat__content').scrollTop($('.chat__content')[0].scrollHeight);
+      // $('.chat__content').scrollTop($('.chat__content')[0].scrollHeight);
+      $('.chat__content').scrollTop($('.message_sender').last()[0].offsetTop);
 
       //for mCustomScrollbar
-      $("#mCSB_1_container").css({'top': $('#mCSB_1').height() - $("#mCSB_1_container").height()})
-      $('#mCSB_1_dragger_vertical').css({top:'unset',bottom:'0px'})
+      $(".chat__content>.mCSB_vertical>.mCSB_container").css({'top': -$('.message_sender').last()[0].offsetTop})
+      $('.chat__content>.mCSB_vertical>.mCSB_scrollTools_vertical .mCSB_dragger').css({top:'unset',bottom:'0px'})
 
     }, 200);
 
