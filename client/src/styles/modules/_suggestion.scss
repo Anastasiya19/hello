@@ -1,5 +1,5 @@
 .suggestion {
-  padding-left: 72px;
+  margin-left: 34px;
   &__item {
     color: #fff;
     font-size: rem(13);
@@ -43,7 +43,10 @@
   }
 
   & .nav-carousel {
-    left:42px;
+    left: 8px;
     top: 19px;
+    @media (max-width: 767px) {
+      top: 14px;
+    }
   }
 }
