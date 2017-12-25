@@ -1,8 +1,8 @@
 
 .characteristic {
   &__company {
-    color: #B0B0B0;
-    font-size: rem(12);
+    color: #7a7a7b;
+    font-size: rem(13);
     font-weight: 300;
   }
   &__text {
@@ -20,8 +20,8 @@
   &__list {
     padding-left: 0;
     list-style: none;
-    color: #B0B0B0;
-    font-size: rem(12);
+    color: #7a7a7b;
+    font-size: rem(13);
     margin-bottom: 0;
     font-weight: 300;
     li {
@@ -80,7 +80,7 @@
   margin-bottom: 10px;
   &__value {
     color: #616161;
-    font-size: rem(12);
+    font-size: rem(13);
     padding-left: 20px;
   }
   &__star {
@@ -94,10 +94,10 @@
     }
   }
   &__view {
-    color: #B0B0B0;
+    color: #7a7a7b;
     display: inline-block;
     float: right;
-    font-size: rem(12);
+    font-size: rem(13);
     &:hover {
       color: $blue;
     }

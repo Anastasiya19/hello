@@ -1,21 +1,19 @@
 .description {
   max-width: 367px;
   visibility: hidden;
-  @media (max-width: 1075px) {
-    padding-top: 50px;
-  }
-  @media (max-width: 360px) {
-    padding-top: 35px;
+  padding-top: 50px;
+  @media (max-width: 550px) {
+    padding-top: 70px;
   }
   &__title {
-    font-size: rem(24);
+    font-size: rem(26);
     font-weight: 400;
     color: #363944;
     @media (max-width: 991px) {
-      font-size: rem(18);
+      font-size: rem(22);
     }
     @media (max-width: 767px) {
-      font-size: rem(16);
+      font-size: rem(20);
     }
   }
   &__text {

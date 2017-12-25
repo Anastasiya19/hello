@@ -12,17 +12,18 @@
     width: calc(100% - 249px);
     border: none;
     color: #6B6E7A;
+    text-overflow: ellipsis;
     font-size: rem(14);
     font-weight: 300;
     @media (max-width: 767px) {
-      font-size: rem(12);
+      font-size: rem(13);
     }
 
     @include placeholder {
       color: #B0B0B0;
       font-size: rem(14);
       @media (max-width: 767px) {
-        font-size: rem(12);
+        font-size: rem(13);
       }
     }
     @media(max-width: 767px) {
@@ -34,12 +35,12 @@
 
   &__btn {
     display: inline-block;
-    background: #fff;
-    color: #E85353;
+    background: #E85353;
+    color: #fff;
     padding: 12px 25px;
     font-weight: 300;
     text-align: center;
-    font-size: rem(12);
+    font-size: rem(13);
     border-radius: 35px;
     border: 2px solid #F6F7F9;
     @include box-shadow;
@@ -51,14 +52,14 @@
       margin-right: 10px;
     }
     &:hover, &:active, &:focus {
-      background: #E85353;
+      background: #017FFF;
       color: #fff;
       transition: .2s;
     }
     &_speak {
       width: 135px;
-      background-image: url('../assets/images/microphone_blue.svg');
-      background-color: #fff;
+      background-image: url('../assets/images/microphone_white.svg');
+      background-color: #E85353;
       background-position: 20px;
       background-repeat: no-repeat;
       background-size: 10px;
@@ -68,6 +69,9 @@
         background-position: 20px;
         background-repeat: no-repeat;
         background-size: 10px;
+        background-color: #017FFF;
+        color: #fff;
+
       }
     }
 
