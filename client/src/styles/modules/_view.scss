@@ -514,18 +514,21 @@
 .comparison {
 
   &__item {
-  list-style-type: none;
-  font-size: .85714rem;
-  border: 2px solid #F6F7F9;
-  border-radius: 7px;
-  padding: 10px 16px;
-  background: #fff;
-  color: #000;
-  margin-bottom: 10px;
-  -webkit-transition: .4s;
-  transition: .4s;
-  width: fit-content;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+    list-style-type: none;
+    font-size: .85714rem;
+    border: 2px solid #F6F7F9;
+    border-radius: 7px;
+    padding: 10px 16px;
+    background: #fff;
+    color: #000;
+    margin-bottom: 10px;
+    -webkit-transition: .4s;
+    transition: .4s;
+    width: fit-content;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
     @media (max-width: 419px) {
       display: block;
       width: 50%;
@@ -537,14 +540,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
     width: 100%;
-    column-count: 3;
-      @media (max-width: 767px) {
-        column-count:2;
-      }
-
-      @media (max-width: 419px) {
-        column-count:1;
-      }
+    //column-count: 3;
 
       span {
         font-size: 12px;
@@ -635,30 +631,33 @@
   //}
 
 
-  .all-details-shown .view__description,.all-details-shown .block-reviews{ width:282px;}
-  .view__description,.block-reviews {width:282px;}
+  .all-details-shown .view__description,.all-details-shown .block-reviews,.all-details-shown .comparison__block{ width:282px;}
+  .view__description,.block-reviews, .comparison__block {
+    margin-left: auto;
+    margin-right: auto;
+    width:282px;}
 
   @media all and (min-width:419px){
-    .all-details-shown .view__description,.all-details-shown .block-reviews{ width:323px;}
-    .view__description,.block-reviews {width:323px;}
+    .all-details-shown .view__description,.all-details-shown .block-reviews,.all-details-shown .comparison__block{ width:323px;}
+    .view__description,.block-reviews, .comparison__block {width:323px;}
   }
 
   @media all and (min-width:768px){
-    .all-details-shown .view__description,.all-details-shown .block-reviews{ width:630px;}
-    .view__description,.block-reviews {width:418px;}
+    .all-details-shown .view__description,.all-details-shown .block-reviews,.all-details-shown .comparison__block{ width:630px;}
+    .view__description,.block-reviews, .comparison__block {width:418px;}
   }
 
   @media all and (min-width:848px){
-    .all-details-shown .view__descriptio,.all-details-shown .block-reviews{ width:690px;}
-    .view__description,.block-reviews {width:427px;}
+    .all-details-shown .view__description,.all-details-shown .block-reviews,.all-details-shown .comparison__block{ width:690px;}
+    .view__description,.block-reviews, .comparison__block {width:427px;}
   }
 
   @media all and (min-width:1038px){
-    .all-details-shown .view__description,.all-details-shown .block-reviews{ width:677px;}
-    .view__description,.block-reviews {width:438px;}
+    .all-details-shown .view__description,.all-details-shown .block-reviews,.all-details-shown .comparison__block{ width:677px;}
+    .view__description,.block-reviews,.comparison__block {width:438px;}
   }
 
   @media all and (min-width:1240px){
-    .all-details-shown .view__description,.all-details-shown .block-reviews{ width:845px;}
-    .view__description,.block-reviews {width:514px;}
+    .all-details-shown .view__description,.all-details-shown .block-reviews,.all-details-shown .comparison__block{ width:845px;}
+    .view__description,.block-reviews, .comparison__block {width:514px;}
   }
