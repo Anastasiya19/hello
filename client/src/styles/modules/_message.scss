@@ -1,6 +1,7 @@
 .message {
   position: relative;
   margin-bottom: 33px;
+  margin-top: 50px;
 
   &__title {
     border-bottom: 2px solid #e85352;
@@ -179,6 +180,7 @@
     overflow-x: hidden;
   }
   &__not-mobile-horiz {
+    margin-top: 50px;
     @media (max-width: 768px) {
       width: 100% !important;
     }
@@ -231,7 +233,7 @@
   position: absolute;
   right: 0;
   transform: translateY(-50%);
-  top: -17px;
+  top: -25px;
   z-index: 2;
   width: 34px;
   background: transparent;
@@ -271,12 +273,12 @@
       right: 36px;
       //float: left;
       &:after {
-        background: #efefef url($path-to-images + "arrow_prev_dark.svg") center no-repeat;
+        background: transparent url($path-to-images + "arrow_prev_dark.svg") center no-repeat;
       }
       &:hover {
         &:after {
           border: 2px solid #E85353;
-          background: #efefef url($path-to-images + "arrow_prev_red.svg") center no-repeat;
+          background: transparent url($path-to-images + "arrow_prev_red.svg") center no-repeat;
           //box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
         }
       }
@@ -284,12 +286,12 @@
     }
     &:last-child {
       &:after {
-        background: #efefef url($path-to-images + "arrow_next_dark.svg") center no-repeat;
+        background: transparent url($path-to-images + "arrow_next_dark.svg") center no-repeat;
       }
       &:hover {
         &:after {
           border: 2px solid #E85353;
-          background: #efefef url($path-to-images + "arrow_next_red.svg") center no-repeat;
+          background: transparent url($path-to-images + "arrow_next_red.svg") center no-repeat;
         }
       }
     }
