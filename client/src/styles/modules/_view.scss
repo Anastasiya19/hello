@@ -168,17 +168,29 @@
   transition: all .2s ease-in-out;
   margin-top: 20px;
   border: 2px solid #F6F7F9;
+  padding: 2px;
+    span{
+      bottom: 4px;
+      position: relative;
+    }
+    i{
+      font-size: 24px;
+      position: relative;
+      right: 4px;
+      color: #bfbfbf;
+    }
+
   &:hover {
     background-color: #E54949;
     span{
       color: #fff;
     }
   }
-
   span {
     color:red;
   }
 }
+
 .video-reviews__button-two {
   float: right;
 }
@@ -475,6 +487,25 @@
 
 }
 
+.search-box {
+  width:67%;
+  height:30px;
+  font-size:13px;
+  padding: 20px;
+  border-radius: 25px;
+  border: 2px solid #F6F7F9;
+  @media (max-width: 767px) {
+    width:94%;
+  }
+}
+
+.ui-widget-content {
+  height: 100px;
+  overflow: hidden;
+  font-size: 13px;
+}
+
+
 .closeTopRight{
   position:relative;
 }
@@ -603,7 +634,7 @@
     }
 
     &:last-child {
-      left: 24px;
+      left: 39px;
       @media (max-width: 419px) {
         left: 4px;
       }
@@ -671,3 +702,5 @@
     .all-details-shown .view__description,.all-details-shown .block-reviews,.all-details-shown .comparison__block{ width:845px;}
     .view__description,.block-reviews, .comparison__block {width:514px;}
   }
+
+

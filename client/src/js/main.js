@@ -5,6 +5,7 @@
 //= ../../bower_components/lightbox2/dist/js/lightbox.min.js
 //= ../../bower_components/handlebars/handlebars.min.js
 //= ../../bower_components/array-to-sentence/browser.js
+//= ../../bower_components/jquery-ui/jquery-ui.min.js
 //= scrolling/jquery.mCustomScrollbar.min.js
 //= custom/blockAligner.js
 
@@ -199,6 +200,7 @@ function sendMessage() {
 //= app/Zlatan.js
 //= app/append_more_button.js
 //= app/get_more.js
+//= app/autocomplete.js
 
 $(document).ready(function () {
   if (getParameterByName("q")) {
