@@ -26,6 +26,17 @@ function init_owl() {
 
   });
 
+  //fix carousels width for small resolutions
+  $('.owl-stage').each((i,item)=>{
+    var width = 0;
+    $(item).children().each(function(i,item) {
+      width += $(item).outerWidth( true );
+    });
+    width = Math.ceil(width)
+    $(item).css('width', width)
+  });
+
+
   $('.view-all-details').click(function () {
     var messageItem = $(this).parent().parent().parent(),
       childBlock = messageItem.find($('.view__col.no-visible')),

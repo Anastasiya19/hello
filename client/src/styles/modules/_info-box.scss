@@ -28,12 +28,12 @@
       padding: 5px;
       &.h {
         left: -16px;
-        background: url($path-to-images + 'arrow_prev_dark.svg') no-repeat center;
+        //background: url($path-to-images + 'arrow_prev_dark.svg') no-repeat center;
         background-size: 11px;
       }
       &.e {
         right: -16px;
-        background: url($path-to-images + 'arrow_next_dark.svg') no-repeat center;
+        //background: url($path-to-images + 'arrow_next_dark.svg') no-repeat center;
         background-size: 11px;
       }
     }
