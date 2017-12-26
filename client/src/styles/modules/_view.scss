@@ -178,6 +178,9 @@
       position: relative;
       right: 4px;
       color: #bfbfbf;
+      @media (max-width: 418px) {
+        font-size: 0;
+      }
     }
 
   &:hover {
@@ -189,10 +192,17 @@
   span {
     color:red;
   }
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 }
 
 .video-reviews__button-two {
   float: right;
+  @media (max-width: 767px) {
+    float: none;
+  }
 }
 
 .block-reviews {
@@ -500,7 +510,7 @@
 }
 
 .ui-widget-content {
-  height: 100px;
+  max-height: 109px;
   overflow: hidden;
   font-size: 13px;
 }

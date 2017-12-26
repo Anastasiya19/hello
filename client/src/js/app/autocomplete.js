@@ -23,6 +23,25 @@
     "Scala",
     "Scheme"
   ];
-  $( "#tags" ).autocomplete({
-    source: availableTags
+
+// function initializeAutocomplete(index){
+//
+//   $( "#tags").autocomplete({
+//     source: availableTags,
+//     appendTo: "#tagsOuter"+index
+//   });
+// }
+//
+//   initializeAutocomplete(0);
+//   initializeAutocomplete(1);
+
+  $( ".tags").each((i,item)=>{
+
+    $(item).autocomplete({
+    source: availableTags,
+    appendTo: $(item).parent()
   });
+
+    // $(item).parent();
+    // console.log($(item).parent());
+  })

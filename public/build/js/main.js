@@ -17533,6 +17533,17 @@ function init_owl() {
 
   });
 
+  //fix carousels width for small resolutions
+  $('.owl-stage').each((i,item)=>{
+    var width = 0;
+    $(item).children().each(function(i,item) {
+      width += $(item).outerWidth( true );
+    });
+    width = Math.ceil(width)
+    $(item).css('width', width)
+  });
+
+
   $('.view-all-details').click(function () {
     var messageItem = $(this).parent().parent().parent(),
       childBlock = messageItem.find($('.view__col.no-visible')),
@@ -21835,9 +21846,28 @@ function get_more(event) {
     "Scala",
     "Scheme"
   ];
-  $( "#tags" ).autocomplete({
-    source: availableTags
+
+// function initializeAutocomplete(index){
+//
+//   $( "#tags").autocomplete({
+//     source: availableTags,
+//     appendTo: "#tagsOuter"+index
+//   });
+// }
+//
+//   initializeAutocomplete(0);
+//   initializeAutocomplete(1);
+
+  $( ".tags").each((i,item)=>{
+
+    $(item).autocomplete({
+    source: availableTags,
+    appendTo: $(item).parent()
   });
+
+    // $(item).parent();
+    // console.log($(item).parent());
+  })
 
 $(document).ready(function () {
   if (getParameterByName("q")) {
