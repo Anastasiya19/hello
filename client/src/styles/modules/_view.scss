@@ -45,7 +45,7 @@
   }
 
   &__comparison {
-    padding: 20px;
+    padding: 10px;
     border-bottom: 1px solid #F6F7F9;
     span {
       font-size: 12px;
@@ -168,23 +168,42 @@
   transition: all .2s ease-in-out;
   margin-top: 20px;
   border: 2px solid #F6F7F9;
+  padding: 2px;
+    span{
+      bottom: 4px;
+      position: relative;
+    }
+    i{
+      font-size: 24px;
+      position: relative;
+      right: 4px;
+      color: #bfbfbf;
+    }
+
   &:hover {
     background-color: #E54949;
     span{
       color: #fff;
     }
   }
-
   span {
     color:red;
   }
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 }
+
 .video-reviews__button-two {
   float: right;
+  @media (max-width: 767px) {
+    float: none;
+  }
 }
 
 .block-reviews {
-  padding: 10px;
+  padding: 14px;
   width: 430px;
   border-bottom: 1px solid #F6F7F9;
   @media (min-width: 1240px) {
@@ -475,6 +494,41 @@
 
 }
 
+.search-box {
+  width:67%;
+  height:30px;
+  font-size:13px;
+  padding: 20px;
+  border-radius: 25px;
+  border: 2px solid #F6F7F9;
+  @media (max-width: 767px) {
+    width:94%;
+  }
+
+}
+
+.search-block{
+  width: 100%;
+  i {
+    font-size: 21px;
+    position: relative;
+    right: 35px;
+    color: #9e9d9d;
+    top: 3px;
+
+    @media (max-width: 418px) {
+      font-size: 0;
+    }
+  }
+}
+
+.ui-widget-content {
+  max-height: 109px;
+  overflow: hidden;
+  font-size: 13px;
+}
+
+
 .closeTopRight{
   position:relative;
 }
@@ -586,7 +640,7 @@
 //}
 
 .reviews .nav-carousel.disabled {
-  top: 49%;
+  top: 50%;
   width: 100%;
 
 }
@@ -596,7 +650,17 @@
     &:first-child {
       right: 0;
       float: left;
-      left: -15px;
+      left: -31px;
+      @media (max-width: 419px) {
+        left: -23px;
+      }
+    }
+
+    &:last-child {
+      left: 34px;
+      @media (max-width: 419px) {
+        left: 4px;
+      }
     }
   }
 }
@@ -635,11 +699,11 @@
   .view__description,.block-reviews, .comparison__block {
     margin-left: auto;
     margin-right: auto;
-    width:282px;}
+    width:300px;}
 
   @media all and (min-width:419px){
     .all-details-shown .view__description,.all-details-shown .block-reviews,.all-details-shown .comparison__block{ width:323px;}
-    .view__description,.block-reviews, .comparison__block {width:323px;}
+    .view__description,.block-reviews, .comparison__block {width:316px;}
   }
 
   @media all and (min-width:768px){
@@ -661,3 +725,5 @@
     .all-details-shown .view__description,.all-details-shown .block-reviews,.all-details-shown .comparison__block{ width:845px;}
     .view__description,.block-reviews, .comparison__block {width:514px;}
   }
+
+
