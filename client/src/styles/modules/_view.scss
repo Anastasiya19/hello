@@ -178,9 +178,6 @@
       position: relative;
       right: 4px;
       color: #bfbfbf;
-      @media (max-width: 418px) {
-        font-size: 0;
-      }
     }
 
   &:hover {
@@ -506,6 +503,22 @@
   border: 2px solid #F6F7F9;
   @media (max-width: 767px) {
     width:94%;
+  }
+
+}
+
+.search-block{
+  width: 100%;
+  i {
+    font-size: 21px;
+    position: relative;
+    right: 35px;
+    color: #9e9d9d;
+    top: 3px;
+
+    @media (max-width: 418px) {
+      font-size: 0;
+    }
   }
 }
 
