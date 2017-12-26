@@ -45,7 +45,7 @@
   }
 
   &__comparison {
-    padding: 20px;
+    padding: 10px;
     border-bottom: 1px solid #F6F7F9;
     span {
       font-size: 12px;
@@ -203,7 +203,7 @@
 }
 
 .block-reviews {
-  padding: 10px;
+  padding: 14px;
   width: 430px;
   border-bottom: 1px solid #F6F7F9;
   @media (min-width: 1240px) {
@@ -657,7 +657,7 @@
     }
 
     &:last-child {
-      left: 39px;
+      left: 34px;
       @media (max-width: 419px) {
         left: 4px;
       }
