@@ -26,7 +26,8 @@
     "tether": "1.4.0",
     "lodash": "^4.17.4",
     "handlebars": "^4.0.11",
-    "array-to-sentence": "^1.1.0"
+    "array-to-sentence": "^1.1.0",
+    "jquery-ui": "^1.12.1"
   },
   "devDependencies": {},
   "resolutions": {
