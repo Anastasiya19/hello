@@ -32,7 +32,7 @@ Beckham.prototype.build_specifications_element = function (zlatan) {
 
   this.get_html(context)
 
-  setTimeout(function(){
+
 
     this.append_html()
 
@@ -40,7 +40,6 @@ Beckham.prototype.build_specifications_element = function (zlatan) {
 
     this.scroll_into_view() 
 
-  }.bind(this), 200);
 
 
 }
@@ -77,14 +76,13 @@ Beckham.prototype.build_specifications_summary_element = function (zlatan) {
 
   this.html = this.templateScript(context)
 
-  setTimeout(function(){
+
 
     // Insert the HTML code into the page
     $('.chat__messages').append(this.html)
 
     this.scroll_into_view()
 
-  }.bind(this), 200);
 
   
 
@@ -117,10 +115,10 @@ Beckham.prototype.build_attributes_detailed_element = function (zlatan) {
       this.html = this.templateScript({ attribute: element })
       console.log('This is the html: ', this.html)
 
-      setTimeout(function(){
+
         // Insert the HTML code into the page
         $('.chat__messages').append(this.html)        
-      }.bind(this), 200);
+
 
 
     }
@@ -146,10 +144,10 @@ Beckham.prototype.build_attributes_summary_element = function (zlatan) {
       this.html = this.templateScript({ attribute: element })
       console.log('This is the html: ', this.html)
 
-      setTimeout(function(){
+
         // Insert the HTML code into the page
         $('.chat__messages').append(this.html)        
-      }.bind(this), 200)
+
     }
   }
 }
@@ -164,14 +162,10 @@ Beckham.prototype.build_comparison_element = function (zlatan, query_status) {
 
   this.html = this.templateScript(zlatan.comparison_context)
 
-  setTimeout(function(){
+  // Insert the HTML code into the page
+  $('.chat__messages').append(this.html)
 
-    // Insert the HTML code into the page
-    $('.chat__messages').append(this.html)
-
-    this.scroll_into_view()
-
-  }.bind(this), 200);
+  this.scroll_into_view();
 }
 
 Beckham.prototype.correct_mobiles_array = function (zlatan, query_status) {
@@ -212,7 +206,7 @@ Beckham.prototype.build_video_review_element = function (zlatan) {
 
   this.html = this.templateScript(zlatan.context)
 
-  setTimeout(function(){
+
 
     // Insert the HTML code into the page
     $('.chat__messages').append(this.html)
@@ -222,7 +216,7 @@ Beckham.prototype.build_video_review_element = function (zlatan) {
 
     this.scroll_into_view()
 
-  }.bind(this), 200);
+
 
 }
 
