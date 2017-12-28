@@ -40,9 +40,9 @@
 							</li>
 						</ul>
 					</div>
-					<a href="/explainer_video" class="header__btn header__btn_mobile-hide button button_white">
+					<a href="/chat" class="header__btn header__btn_mobile-hide button button_white">
 						<div class="header__btn_icon header__btn_icon-works"></div>
-						<span class="header__btn_label">Explainer video</span>
+						<span class="header__btn_label">Talk to Vinci</span>
 					</a>
 				</div>
 			</div>
@@ -59,13 +59,16 @@
 						<div class="chat__messages">
 							{{#each chat_carousels}}
 							<div class="message message_vinci">
-                                <h5 class="message__title">{{this.text}}</h5>
+                                <div class="message__title-block">
+                                	<span class="message__title">{{this.text}}</span>
+                            	</div>
                        
 								<div class="owl-carousel owl-theme">
 
 								{{#each carousel_phones}}
 
-									<div class="message__item message__item_vinci br-chat message__category category">
+									<div class="message__item message__item_vinci br-chat message__category category view_product">
+										<button class="button helpers__item view_product__button">View product</button>
 										<div class="row">
 											<div class="category__image col-4">
 												<img src="{{this.image_urls.medium}}" alt="">
@@ -109,7 +112,9 @@
 							</div>
 							{{/each}}
 							<div class="message message_vinci">
-                                <h5 class="message__title">Latest video review</h5>
+                                <div class="message__title-block">
+                                	<span class="message__title">Collections</span>
+                                </div>
 								<div class="owl-carousel owl-theme">
 									<div class="message__item message__item_vinci br-chat message__collection collection">
 										<div class="row align-items-stretch">
@@ -147,54 +152,6 @@
 												<div class="collection__text-block">
 													<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
 												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="message message_vinci">
-								<div class="owl-carousel owl-theme">
-									<div class="message__item message__item_vinci br-chat message__video-item video-item">
-										<div class="video-item__wrap">
-											<iframe src="https://www.youtube.com/embed/4LfJnj66HVQ" frameborder="0" allowfullscreen></iframe>
-										</div>
-										<div class="video-item__description ">
-											<h3 class="video-item__name">Latest phones</h3>
-											<div class="video-item__text-block">
-												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-											</div>
-										</div>
-									</div>
-									<div class="message__item message__item_vinci br-chat message__video-item video-item">
-										<div class="video-item__wrap">
-											<iframe src="https://www.youtube.com/embed/0qHGEgFucQU" frameborder="0" allowfullscreen></iframe>
-										</div>
-										<div class="video-item__description ">
-											<h3 class="video-item__name">Latest phones</h3>
-											<div class="video-item__text-block">
-												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-											</div>
-										</div>
-									</div>
-									<div class="message__item message__item_vinci br-chat message__video-item video-item">
-										<div class="video-item__wrap">
-											<iframe src="https://www.youtube.com/embed/4LfJnj66HVQ" frameborder="0" allowfullscreen></iframe>
-										</div>
-										<div class="video-item__description ">
-											<h3 class="video-item__name">Latest phones</h3>
-											<div class="video-item__text-block">
-												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-											</div>
-										</div>
-									</div>
-									<div class="message__item message__item_vinci br-chat message__video-item video-item">
-										<div class="video-item__wrap">
-											<iframe src="https://www.youtube.com/embed/4LfJnj66HVQ" frameborder="0" allowfullscreen></iframe>
-										</div>
-										<div class="video-item__description ">
-											<h3 class="video-item__name">Latest phones</h3>
-											<div class="video-item__text-block">
-												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
 											</div>
 										</div>
 									</div>
