@@ -40,7 +40,7 @@ Beckham.prototype.build_specifications_element = function (zlatan) {
 
     this.scroll_into_view() 
 
-  }, 200);
+  }, 200).bind(this);
 
 
 }
@@ -84,7 +84,7 @@ Beckham.prototype.build_specifications_summary_element = function (zlatan) {
 
     this.scroll_into_view()
 
-  }, 200);
+  }, 200).bind(this);
 
   
 
@@ -120,7 +120,7 @@ Beckham.prototype.build_attributes_detailed_element = function (zlatan) {
       setTimeout(function(){
         // Insert the HTML code into the page
         $('.chat__messages').append(this.html)        
-      }, 200);
+      }, 200).bind(this);
 
 
     }
@@ -149,7 +149,7 @@ Beckham.prototype.build_attributes_summary_element = function (zlatan) {
       setTimeout(function(){
         // Insert the HTML code into the page
         $('.chat__messages').append(this.html)        
-      }, 200);
+      }, 200).bind(this);
     }
   }
 }
@@ -171,7 +171,7 @@ Beckham.prototype.build_comparison_element = function (zlatan, query_status) {
 
     this.scroll_into_view()
 
-  }, 200);
+  }, 200).bind(this);
 }
 
 Beckham.prototype.correct_mobiles_array = function (zlatan, query_status) {
@@ -222,7 +222,7 @@ Beckham.prototype.build_video_review_element = function (zlatan) {
 
     this.scroll_into_view()
 
-  }, 200);
+  }, 200).bind(this);
 
 }
 

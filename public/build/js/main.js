@@ -17783,17 +17783,6 @@ function batman_false(reply_received) {
                 <p>${reply_received.web_reply.speech}</p>
               </div>
             </div>
-            // <div class="message message_vinci">
-            //   <div>
-            //     <ul class="suggestion owl-carousel owl-theme">
-            //       <li class="suggestion__item br-chat" onclick="send_question(event)">iPhone 8</li>
-            //       <li class="suggestion__item br-chat" onclick="send_question(event)">Best phones under 15000</li>
-            //       <li class="suggestion__item br-chat" onclick="send_question(event)">Best phones under 25000</li>
-            //       <li class="suggestion__item br-chat" onclick="send_question(event)">Best camera phones</li>
-            //       <li class="suggestion__item br-chat" onclick="send_question(event)">Light weight phones</li>
-            //     </ul>
-            //   </div>
-            // </div>
           </div>`);
 
         $('.chat__messages').scrollTop($('.chat__messages')[0].scrollHeight);
@@ -17818,17 +17807,6 @@ function batman_missing(reply_received) {
                 <p>${reply_received.web_reply.speech}</p>
               </div>
             </div>
-            // <div class="message message_vinci">
-            //   <div>
-            //     <ul class="suggestion owl-carousel owl-theme">
-            //       <li class="suggestion__item br-chat" onclick="send_question(event)">iPhone 8</li>
-            //       <li class="suggestion__item br-chat" onclick="send_question(event)">Best phones under 15000</li>
-            //       <li class="suggestion__item br-chat" onclick="send_question(event)">Best phones under 25000</li>
-            //       <li class="suggestion__item br-chat" onclick="send_question(event)">Best camera phones</li>
-            //       <li class="suggestion__item br-chat" onclick="send_question(event)">Light weight phones</li>
-            //     </ul>
-            //   </div>
-            // </div>
           </div>`);
 
         $('.chat__messages').scrollTop($('.chat__messages')[0].scrollHeight);
@@ -18090,7 +18068,7 @@ Beckham.prototype.build_specifications_element = function (zlatan) {
 
     this.scroll_into_view() 
 
-  }, 200);
+  }, 200).bind(this);
 
 
 }
@@ -18134,7 +18112,7 @@ Beckham.prototype.build_specifications_summary_element = function (zlatan) {
 
     this.scroll_into_view()
 
-  }, 200);
+  }, 200).bind(this);
 
   
 
@@ -18170,7 +18148,7 @@ Beckham.prototype.build_attributes_detailed_element = function (zlatan) {
       setTimeout(function(){
         // Insert the HTML code into the page
         $('.chat__messages').append(this.html)        
-      }, 200);
+      }, 200).bind(this);
 
 
     }
@@ -18199,7 +18177,7 @@ Beckham.prototype.build_attributes_summary_element = function (zlatan) {
       setTimeout(function(){
         // Insert the HTML code into the page
         $('.chat__messages').append(this.html)        
-      }, 200);
+      }, 200).bind(this);
     }
   }
 }
@@ -18221,7 +18199,7 @@ Beckham.prototype.build_comparison_element = function (zlatan, query_status) {
 
     this.scroll_into_view()
 
-  }, 200);
+  }, 200).bind(this);
 }
 
 Beckham.prototype.correct_mobiles_array = function (zlatan, query_status) {
@@ -18272,7 +18250,7 @@ Beckham.prototype.build_video_review_element = function (zlatan) {
 
     this.scroll_into_view()
 
-  }, 200);
+  }, 200).bind(this);
 
 }
 
