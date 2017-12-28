@@ -17483,7 +17483,7 @@ function sendMessage() {
       .append(
         `<div class="message message_sender">
             <!--<img class="user-logo" src="/assets/build/assets/images/user-mes.svg" alt="">-->
-            <div class="message__item message__item_user br-chat ">
+            <div class="message__item message__item_user br-chat animated pulse">
                 <p>${$('.chat__bottom input').val()}</p>
             </div>
           </div>`
