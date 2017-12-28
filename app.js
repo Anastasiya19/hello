@@ -160,9 +160,9 @@ app.get('/chat', function (req, res) {
 })
 
 // Next Route-------------------------------------------------------------
-app.get('/faqs', function (req, res) {
+app.get('/visitor_agreement', function (req, res) {
   console.log('Request hit the client home route')
-  res.render('home')
+  res.render('visitor_agreement')
   console.log('Get request received on the homepage. App is working')
 })
 
