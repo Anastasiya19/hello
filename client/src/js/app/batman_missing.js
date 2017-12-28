@@ -12,17 +12,17 @@ function batman_missing(reply_received) {
                 <p>${reply_received.web_reply.speech}</p>
               </div>
             </div>
-            <div class="message message_vinci">
-              <div>
-                <ul class="suggestion owl-carousel owl-theme">
-                  <li class="suggestion__item br-chat" onclick="send_question(event)">iPhone 8</li>
-                  <li class="suggestion__item br-chat" onclick="send_question(event)">Best phones under 15000</li>
-                  <li class="suggestion__item br-chat" onclick="send_question(event)">Best phones under 25000</li>
-                  <li class="suggestion__item br-chat" onclick="send_question(event)">Best camera phones</li>
-                  <li class="suggestion__item br-chat" onclick="send_question(event)">Light weight phones</li>
-                </ul>
-              </div>
-            </div>
+            // <div class="message message_vinci">
+            //   <div>
+            //     <ul class="suggestion owl-carousel owl-theme">
+            //       <li class="suggestion__item br-chat" onclick="send_question(event)">iPhone 8</li>
+            //       <li class="suggestion__item br-chat" onclick="send_question(event)">Best phones under 15000</li>
+            //       <li class="suggestion__item br-chat" onclick="send_question(event)">Best phones under 25000</li>
+            //       <li class="suggestion__item br-chat" onclick="send_question(event)">Best camera phones</li>
+            //       <li class="suggestion__item br-chat" onclick="send_question(event)">Light weight phones</li>
+            //     </ul>
+            //   </div>
+            // </div>
           </div>`);
 
         $('.chat__messages').scrollTop($('.chat__messages')[0].scrollHeight);
