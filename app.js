@@ -174,6 +174,15 @@ app.get('/privacy_policy', function (req, res) {
 })
 
 // Next Route-------------------------------------------------------------
+app.get('/terms_and_conditions', function (req, res) {
+  console.log('Request hit the client privacy_policy route')
+  res.render('terms_and_conditions')
+  console.log('Get request received on the homepage. App is working')
+})
+
+
+
+// Next Route-------------------------------------------------------------
 app.get('/blog', function (req, res) {
   console.log('Request hit the client home route')
   res.render('home')
