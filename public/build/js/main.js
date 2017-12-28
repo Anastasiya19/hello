@@ -17779,7 +17779,7 @@ function batman_false(reply_received) {
         var text_reply = reply_received.web_reply.speech;
         $('.chat__messages')
             .append(`<div class="message message_vinci">
-              <div class="message__item message__item_vinci br-chat">
+              <div class="message__item message__item_vinci br-chat animated fadeInLeft">
                 <p>${reply_received.web_reply.speech}</p>
               </div>
             </div>
@@ -17814,7 +17814,7 @@ function batman_missing(reply_received) {
         var text_reply = reply_received.web_reply.speech;
         $('.chat__messages')
             .append(`<div class="message message_vinci">
-              <div class="message__item message__item_vinci br-chat">
+              <div class="message__item message__item_vinci br-chat animated fadeInLeft">
                 <p>${reply_received.web_reply.speech}</p>
               </div>
             </div>
