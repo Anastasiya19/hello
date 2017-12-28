@@ -168,8 +168,8 @@ app.get('/faqs', function (req, res) {
 
 // Next Route-------------------------------------------------------------
 app.get('/privacy_policy', function (req, res) {
-  console.log('Request hit the client home route')
-  res.render('home')
+  console.log('Request hit the client privacy_policy route')
+  res.render('privacy_policy')
   console.log('Get request received on the homepage. App is working')
 })
 
