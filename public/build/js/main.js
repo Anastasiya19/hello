@@ -18082,11 +18082,17 @@ Beckham.prototype.build_specifications_element = function (zlatan) {
 
   this.get_html(context)
 
-  this.append_html()
+  setTimeout(function(){
 
-  init_specifications($('.chat__messages').children().last())
+    this.append_html()
 
-  this.scroll_into_view()
+    init_specifications($('.chat__messages').children().last())
+
+    this.scroll_into_view() 
+
+  }, 200);
+
+
 }
 
 Beckham.prototype.build_specifications_summary_element = function (zlatan) {
@@ -18121,10 +18127,16 @@ Beckham.prototype.build_specifications_summary_element = function (zlatan) {
 
   this.html = this.templateScript(context)
 
-  // Insert the HTML code into the page
-  $('.chat__messages').append(this.html)
+  setTimeout(function(){
 
-  this.scroll_into_view()
+    // Insert the HTML code into the page
+    $('.chat__messages').append(this.html)
+
+    this.scroll_into_view()
+
+  }, 200);
+
+  
 
 }
 
@@ -18155,8 +18167,12 @@ Beckham.prototype.build_attributes_detailed_element = function (zlatan) {
       this.html = this.templateScript({ attribute: element })
       console.log('This is the html: ', this.html)
 
-      // Insert the HTML code into the page
-      $('.chat__messages').append(this.html)
+      setTimeout(function(){
+        // Insert the HTML code into the page
+        $('.chat__messages').append(this.html)        
+      }, 200);
+
+
     }
   }
 }
@@ -18180,8 +18196,10 @@ Beckham.prototype.build_attributes_summary_element = function (zlatan) {
       this.html = this.templateScript({ attribute: element })
       console.log('This is the html: ', this.html)
 
-      // Insert the HTML code into the page
-      $('.chat__messages').append(this.html)
+      setTimeout(function(){
+        // Insert the HTML code into the page
+        $('.chat__messages').append(this.html)        
+      }, 200);
     }
   }
 }
@@ -18196,10 +18214,14 @@ Beckham.prototype.build_comparison_element = function (zlatan, query_status) {
 
   this.html = this.templateScript(zlatan.comparison_context)
 
-  // Insert the HTML code into the page
-  $('.chat__messages').append(this.html)
+  setTimeout(function(){
 
-  this.scroll_into_view()
+    // Insert the HTML code into the page
+    $('.chat__messages').append(this.html)
+
+    this.scroll_into_view()
+
+  }, 200);
 }
 
 Beckham.prototype.correct_mobiles_array = function (zlatan, query_status) {
@@ -18240,12 +18262,18 @@ Beckham.prototype.build_video_review_element = function (zlatan) {
 
   this.html = this.templateScript(zlatan.context)
 
-  // Insert the HTML code into the page
-  $('.chat__messages').append(this.html)
-  console.log('html', this.html)
-  init_specifications($('.chat__messages').children().last())
-  
-  this.scroll_into_view()
+  setTimeout(function(){
+
+    // Insert the HTML code into the page
+    $('.chat__messages').append(this.html)
+
+    console.log('html', this.html)
+    init_specifications($('.chat__messages').children().last())
+
+    this.scroll_into_view()
+
+  }, 200);
+
 }
 
 Beckham.prototype.build_text_review_element = function (zlatan) {
