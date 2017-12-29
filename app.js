@@ -219,6 +219,9 @@ app.post('/hellovinciai', function (req, res) {
   requestData.query = format_functions.battery_spacing(requestData.query)
   requestData.query = format_functions.camera_spacing(requestData.query)
 
+  console.log("This is the request url: ", config.api_ai_request_url);
+  console.log("This is the client access token: ", config.api_ai_client_access_token);
+
   // Sending the request to API AI
   request({
     uri: config.api_ai_request_url,
