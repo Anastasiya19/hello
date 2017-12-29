@@ -286,16 +286,19 @@
   background-repeat: no-repeat;
   background-size: 13px;
   color: #00ACED;
-  @media (max-width: 419px) {
-    width: 43%;
-  }
-  @media (max-width: 767px) {
-    width: 36%
-  }
+
   @media (min-width: 1240px) {
     width: 25%;
     background-position: 21px 13px;
   }
+  @media (max-width: 767px) {
+    width: 36%
+  }
+  @media (max-width: 419px) {
+    width: 43%;
+    background-position: 15px 14px;
+  }
+
   &:hover {
     background-color: #00ACED;
     color: #fff;
@@ -309,15 +312,17 @@
   background-repeat: no-repeat;
   background-size: 13px;
   color: #25D366;
+  @media (min-width: 1240px) {
+    background-position: 19px 11px;
+  }
   @media (max-width: 767px) {
-    width: 40%
+    width: 40%;
+    background-position: 15px 11px;
   }
   @media (max-width: 419px) {
     width: 47%;
   }
-  @media (min-width: 1240px) {
-    background-position: 19px 11px;
-  }
+
   &:hover {
     background-color: #25D366;
     color: #fff;

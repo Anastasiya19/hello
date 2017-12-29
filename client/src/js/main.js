@@ -167,10 +167,14 @@ function sendMessage() {
 
 
     //for native scroll(mobile only)
-    $('.chat__content').scrollTop($('.chat__content')[0].scrollHeight);
+    var bottomMobile = $('.chat__content')[0].scrollHeight;
+    var lastMessageMobile = $('.message_sender').last()[0].offsetTop - 20;
+    $('.chat__content').scrollTop(Math.min(bottomMobile,lastMessageMobile));
 
     //for mCustomScrollbar
-    $(".chat__content>.mCSB_vertical>.mCSB_container").css({'top': $('.chat__content>.mCSB_vertical').height() - $(".chat__content>.mCSB_vertical>.mCSB_container").height()})
+    var bottom =  $(".chat__content>.mCSB_vertical>.mCSB_container").height() - $('.chat__content>.mCSB_vertical').height();
+    var lastMessage = $('.message_sender').last()[0].offsetTop - 20;
+    $(".chat__content>.mCSB_vertical>.mCSB_container").css({'top': - Math.min(bottom,lastMessage)});
     $('.chat__content>.mCSB_vertical>.mCSB_scrollTools_vertical .mCSB_dragger').css({top:'unset',bottom:'0px'})
 
 
