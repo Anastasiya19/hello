@@ -24,9 +24,17 @@
     align-items: stretch;
   }
   &__text-block{
-    height: 71px;
-    max-height: 71px;
+    height: 65px;
+    max-height: 65px;
     overflow: hidden;
+    position: relative;
+
+    &:after {
+      content: '...';
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
   }
   &__text{
     min-height: 71px;
