@@ -18339,9 +18339,8 @@ Beckham.prototype.get_html = function (context) {
 Beckham.prototype.append_html = function (context) {
 
   // Insert the HTML code into the page
-  $('.chat__messages').append(this.html)
+  $('.chat__messages').append(this.html);
 
-  console.log("Scroll element top after appending ", scroll_element.style.top);
 }
 
 Beckham.prototype.scroll_into_view = function () {
