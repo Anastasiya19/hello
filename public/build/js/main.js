@@ -18352,7 +18352,7 @@ Beckham.prototype.scroll_into_view = function () {
   var element_count = b.length - 1
   console.log('This is element_count: ', element_count)
 
-  b[element_count].scrollIntoView()
+  b[element_count].scrollIntoView({behavior: "smooth"})
   console.log('Scrolled into view')
 }
 function Buffon (text) {
