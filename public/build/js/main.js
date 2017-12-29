@@ -18338,8 +18338,15 @@ Beckham.prototype.get_html = function (context) {
 
 Beckham.prototype.append_html = function (context) {
 
+  var scroll_element = document.getElementById(mCSB_1_dragger_vertical);
+
+  console.log("Scroll element height before appending ", scroll_element.style.top);
+  console.log("Scroll element max-height ", scroll_element.style["max-height"]);
+
   // Insert the HTML code into the page
   $('.chat__messages').append(this.html)
+
+  console.log("Scroll element height after appending ", scroll_element.style.top);
 }
 
 Beckham.prototype.scroll_into_view = function () {
