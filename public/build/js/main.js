@@ -18346,7 +18346,7 @@ Beckham.prototype.append_html = function (context) {
 
 Beckham.prototype.scroll_into_view = function () {
 
-  var scroll_element = document.getElementById(mCSB_1_dragger_vertical);
+  var scroll_element = document.getElementById('mCSB_1_dragger_vertical');
 
   console.log("Scroll element top before appending ", scroll_element.style.top);
 
