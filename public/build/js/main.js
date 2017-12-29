@@ -18345,29 +18345,29 @@ Beckham.prototype.append_html = function (context) {
 
 Beckham.prototype.scroll_into_view = function () {
 
-  var scroll_element = document.getElementById('mCSB_1_dragger_vertical');
+  // var scroll_element = document.getElementById('mCSB_1_dragger_vertical');
 
-  console.log("Scroll element top before appending ", scroll_element.style.top);
+  // console.log("Scroll element top before appending ", scroll_element.style.top);
 
-  console.log("Scroll element height ", scroll_element.style["height"]);
+  // console.log("Scroll element height ", scroll_element.style["height"]);
 
-  console.log("Scroll element max-height ", scroll_element.style["max-height"]);
+  // console.log("Scroll element max-height ", scroll_element.style["max-height"]);
 
-  var scroll_value = parseInt(scroll_element.style.top) - parseInt(scroll_element.style["height"]) + 15;
+  // var scroll_value = parseInt(scroll_element.style.top) - parseInt(scroll_element.style["height"]) + 15;
 
-  scroll_element.style.top = scroll_value + "px";
+  // scroll_element.style.top = scroll_value + "px";
 
-  // var a = document.getElementsByClassName('chat__messages')
-  // console.log('This is a:' , a)
+  var a = document.getElementsByClassName('chat__messages')
+  console.log('This is a:' , a)
 
-  // var b = a[0].getElementsByClassName('message_sender')
-  // console.log('This is b: ', b)
+  var b = a[0].getElementsByClassName('message_sender')
+  console.log('This is b: ', b)
 
-  // var element_count = b.length - 1
-  // console.log('This is element_count: ', element_count)
+  var element_count = b.length - 1
+  console.log('This is element_count: ', element_count)
 
-  // b[element_count].scrollIntoView({behavior: "smooth"})
-  // console.log('Scrolled into view')
+  b[element_count].scrollIntoView({behavior: "smooth"})
+  console.log('Scrolled into view')
 }
 function Buffon (text) {
 
