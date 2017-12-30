@@ -19584,7 +19584,7 @@ Handlebars.registerHelper('generate_features_helper', function() {
 
 Handlebars.registerHelper('generate_price_helper', function() {
 
-    if (this.product_pricing.special_price > 0) {
+    if (parseInt(this.product_pricing.special_price) > 0) {
 
         var return_string = "Rs. " + this.product_pricing.special_price;
 
@@ -19622,7 +19622,7 @@ Handlebars.registerHelper('generate_logo_helper_cheapest', function(shortlisted_
         ["Tata cliq", "TATA_Cliq_Logo.png"],
         ["Flipkart", "flipkart_logo_1.png"],
         ["Gadgets 360", "ndtvgadgetlogo.png"],
-        ["Amazon", "vendor-amazon.png"],
+        ["Amazon", "store_2.svg"],
         ["paytm", "Paytm_logo.png"]
     ]
 
