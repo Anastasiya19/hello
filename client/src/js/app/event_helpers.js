@@ -358,7 +358,14 @@ function get_specifications_full(event) {
 
     if(event.target !== "undefined" || event.target !== "null"){
 
-        var phone_name = event.target.nextElementSibling.getElementsByClassName('category__name')[0].innerText
+        var phone_name = event.target.nextElementSibling.getElementsByClassName('category__name')[0].innerText;
+
+        var pos = phone_name.indexOf("(");
+
+        if(pos > -1){
+
+            phone_name = phone_name.slice(0,pos);
+        }
 
         if(phone_name !== "undefined" || phone_name !== "N/A" || phone_name !== "null"){
 
