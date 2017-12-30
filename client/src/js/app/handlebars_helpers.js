@@ -67,8 +67,8 @@ Handlebars.registerHelper('generate_price_helper', function() {
 Handlebars.registerHelper('generate_logo_helper', function() {
 
     var logos = [
-        ["Tata cliq", "TATA_Cliq_Logo.png"],
-        ["Flipkart", "flipkart_logo_1.png"],
+        ["Tata cliq", "store_1.svg"],
+        ["Flipkart", "store_3.svg"],
         ["Gadgets 360", "ndtvgadgetlogo.png"],
         ["Amazon", "store_2.svg"],
         ["paytm", "Paytm_logo.png"]
@@ -86,8 +86,8 @@ Handlebars.registerHelper('generate_logo_helper', function() {
 Handlebars.registerHelper('generate_logo_helper_cheapest', function(shortlisted_model_shortlisted_retailer) {
 
     var logos = [
-        ["Tata cliq", "TATA_Cliq_Logo.png"],
-        ["Flipkart", "flipkart_logo_1.png"],
+        ["Tata cliq", "store_1.svg"],
+        ["Flipkart", "store_3.svg"],
         ["Gadgets 360", "ndtvgadgetlogo.png"],
         ["Amazon", "store_2.svg"],
         ["paytm", "Paytm_logo.png"]
