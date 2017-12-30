@@ -4,7 +4,7 @@
 
         \{{#each phones}}
         <div class="message__item message__item_vinci br-chat message__category category view_product">
-            <button class="button helpers__item view_product__button">View product</button>
+            <button class="button helpers__item view_product__button" onclick="get_specifications_full(event)">View product</button>
             <div class="row">
                 <div class="category__image col-4">
                     <img src="\{{this.selected_variant.image_urls.small}}" alt="">

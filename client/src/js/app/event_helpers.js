@@ -350,6 +350,29 @@ function send_question(event) {
 
 }
 
+function get_specifications_full(event) {
+
+    console.log("This is event target: ", event.target);
+    console.log("This is event target innerText: ", event.target.innerText);
+
+
+    if(event.target !== "undefined" || event.target !== "null"){
+
+        var phone_name = event.target.nextElementSibling.getElementsByClassName('category__name')[0].innerText
+
+        if(phone_name !== "undefined" || phone_name !== "N/A" || phone_name !== "null"){
+
+            var input_field = document.getElementsByClassName('send__input');
+            input_field[0].value = event.target.innerText;
+
+            var send_btn = document.getElementById('send_chat');
+            send_btn.click(); 
+            
+        }
+    }
+
+}
+
 
 
 

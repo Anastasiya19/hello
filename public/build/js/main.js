@@ -17259,13 +17259,13 @@ $(document).ready(function () {
       $('.helpers').hide(200);
   });
 
-  $('.helpers__item').on('click', function () {
-    console.log("Helper item clicked. Hide auto compelete");
+  $('.auto__complete').on('click', function () {
+    
     $('.helpers').hide(200);
     var value = $(this).html();
     var input = $('.send__input');
     input.val(value);
-    console.log("Input value setup in input box. Let's see if auto complete shows up");
+    
   });
 
   
@@ -18904,6 +18904,29 @@ function send_question(event) {
 
         var send_btn = document.getElementById('send_chat');
         send_btn.click();    
+    }
+
+}
+
+function get_specifications_full(event) {
+
+    console.log("This is event target: ", event.target);
+    console.log("This is event target innerText: ", event.target.innerText);
+
+
+    if(event.target !== "undefined" || event.target !== "null"){
+
+        var phone_name = event.target.nextElementSibling.getElementsByClassName('category__name')[0].innerText
+
+        if(phone_name !== "undefined" || phone_name !== "N/A" || phone_name !== "null"){
+
+            var input_field = document.getElementsByClassName('send__input');
+            input_field[0].value = event.target.innerText;
+
+            var send_btn = document.getElementById('send_chat');
+            send_btn.click(); 
+            
+        }
     }
 
 }

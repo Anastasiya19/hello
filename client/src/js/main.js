@@ -42,13 +42,13 @@ $(document).ready(function () {
       $('.helpers').hide(200);
   });
 
-  $('.helpers__item').on('click', function () {
-    console.log("Helper item clicked. Hide auto compelete");
+  $('.auto__complete').on('click', function () {
+    
     $('.helpers').hide(200);
     var value = $(this).html();
     var input = $('.send__input');
     input.val(value);
-    console.log("Input value setup in input box. Let's see if auto complete shows up");
+    
   });
 
   
