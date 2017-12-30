@@ -111,8 +111,17 @@ function render_chat_html() {
 
                 // parsing the json
                 try {
+                    var data = JSON.parse(data)
+                    var carousel_phones = []
+                    if(data.web_reply.data.mobiles.length == 0){
+                        carousel_phones = data.web_reply.data.mobiles[0].variants
+                    }else{
+                        carousel_phones =  data.web_reply.data.mobiles.map(mob=>{
+                            return mob.variants[0]
+                        })
+                    }
                     context[carousel_key].push({
-                        carousel_phones: JSON.parse(data).web_reply.data.mobiles[0].variants,
+                        carousel_phones: carousel_phones,
                         text: carousel.text
                     });
                 } catch (e) {
@@ -161,3 +170,4 @@ function render_chat_html() {
 }
 
 module.exports = render_chat_html
+render_chat_html()
