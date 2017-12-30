@@ -21805,18 +21805,20 @@ function specifications_request(zlatan){
 	zlatan.mobiles.forEach(create_product);
 
 	function create_product(element, index, array){
-	
-		var raul = new Raul(element, 0);
 
-		raul.set_id();
+        if(element.variants.length > 0){
+
+            var raul = new Raul(element, 0);
+
+        raul.set_id();
 
         console.log("This is raul for the mobile number: ", index);
 
         console.log("This is raul: ", raul);
 
-		raul.case_special_product();
+        raul.case_special_product();
 
-		//Found the selected variant
+        //Found the selected variant
         //Getting ready to create the context object
         raul.get_rating();
 
@@ -21868,6 +21870,10 @@ function specifications_request(zlatan){
 
         console.log("This is the mobiles_requested array: ", mobiles_requested);
 
+
+
+        }
+		
 
 	}
 

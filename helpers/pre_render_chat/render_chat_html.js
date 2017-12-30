@@ -61,12 +61,19 @@ function render_chat_html() {
     // the text is the title of the carousel for side carousels
     const jsons = {
         chat_carousels: [{
-            text: "show me Apple phones",
-            json: "show_me apple phones.json"
+            text: "Latest phones",
+            json: "Show_me_iPhone_X_iPhone_8_iPhone_8_Plus_Google_Pixel_2_Redmi_5A_Nokia_2_One_Plus_5T.json"
         }, {
-            text: "show me Samsung phones",
+            text: "Best battery phones",
+            json: "Show_me_Lenovo_K8_Plus_Nokia_2_Lenovo_K8_Note_Moto_E4_Plus_Mi_Max_2_Oppo_F3_Plus_Moto_C_Plus.json"
+        },
+
+        {
+            text: "Best camera phones",
             json: "_Samsung_phones.json"
-        }],
+        }
+
+        ],
         side_carousels: [{
             text: "Top rated Mobiles",
             json: "google_pixel_phones.json"
