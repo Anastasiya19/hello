@@ -85,6 +85,7 @@ Handlebars.registerHelper('generate_logo_helper', function() {
 
 Handlebars.registerHelper('generate_logo_helper_cheapest', function(shortlisted_model_shortlisted_retailer) {
 
+    //logo helper
     var logos = [
         ["Tata cliq", "store_1.svg"],
         ["Flipkart", "store_3.svg"],
