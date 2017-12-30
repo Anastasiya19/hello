@@ -78,11 +78,11 @@ function render_chat_html() {
             text: "4GB RAM and above",
             json: "show_me_Lenovo_K8_Note_Samsung_Galaxy_A9_Pro_Oppo_F3_Plus_Samsung_Galaxy_C9_Pro_Gionee_A1_Oppo_F3_Plus_Lenovo_K6_Note_Lenovo_K6_Power_Asus_Zenfone_2_ZE551ML___Asus_Zenfone_2.json"
         }, {
-            text: "Phones with fingerprint scanner",
-            json: "Show_me_Oppo_F5_Nokia_6_Lenovo_K8_Plus_Lenovo_K8_Note_Moto_G5S_Plus_Honor_9i_Samsung_Galaxy_A9_Pro_Samsung_Galaxy_J7_Pro_Moto_E4_Plus_Samsung_Galaxy_On_Max_Samsung_Galaxy_J7_Plus_Samsung_Galaxy_J7_Prime_OnePlus_5T_Samsung_Galaxy_J7_Max.json"
-        }, {
             text: "Latest 4g phones",
-            json: "Show_me__Oppo_F5_Nokia_6_Lenovo_K8_Plus_Apple_iPhone_X_Lenovo_K8_Note_Moto_G5S_Plus_Nokia_2_Samsung_Galaxy_J7_Max_Samsung_Galaxy_On_Nxt_Oppo_F3_Plus.json"
+            json: "SHow_me_latest_4g_phones.json"
+        }, {
+            text: "Phones with fingerprint scanner",
+            json: "Show_me_phones_with_fingerprint_scanner.json"
         }]
     }
 
