@@ -13,6 +13,7 @@ const mongoose = require('mongoose')
 // 2. Load the Middleware
 const bodyParser = require('body-parser')
 const session = require('express-session')
+var cookieSession = require('cookie-session')
 const mongodbStore = require('connect-mongo')(session)
 // ******These modules have not been installed********
 // const flash = require('connect-flash')
@@ -68,6 +69,16 @@ const config = require('./config/config.js')
 var app = express()
 // ******End********
 
+
+app.use(cookieSession({
+  name: 'session',
+  keys: ["1Kd0Uy6nS"],
+ 
+  // Cookie Options
+  maxAge: 24 * 60 * 60 * 1000 // 24 hours
+}))
+
+
 // //Secure traffic only
 // app.all('*',function(req,res,next){
 //   if(req.headers['x-forwarded-proto']!='https')
@@ -119,12 +130,13 @@ app.use(bodyParser.text({
 // ********************** 9. Routes *********************************************
 // Secure traffic only
 app.all('*', function(req, res, next){
-    console.log('req start: ',req.secure, req.hostname, req.url, app.get('port'), req.protocol,"https ",req.get('X-Forwarded-Protocol'))
-  //if (req.protocol === "https"|| process.env.NODE_ENV === "development") {
-    return next()
-  //}
+  //   console.log('req start: ',req.secure, req.hostname, req.url, app.get('port'), req.protocol,"https ",req.get('X-Forwarded-Protocol'))
+  // //if (req.protocol === "https"|| process.env.NODE_ENV === "development") {
+  //   
+  // //}
 
-  console.log("not secure redirecting ",process.env.NODE_ENV)
+  console.log("Environment ",process.env.NODE_ENV)
+  return next()
  //res.redirect('https://'+req.hostname+req.url); //':'+app.get('secPort')+
 })
 
@@ -189,6 +201,33 @@ app.get('/blog', function (req, res) {
   console.log('Get request received on the homepage. App is working')
 })
 
+
+
+const default_active_list = {
+  attributes : [],
+  attributes_composite_entity : [],
+  battery_value : [],
+  brands : [],
+  camera_pixels : [],
+  colors : [],
+  comparator : [],
+  formal_price : [],
+  mobiles : [],
+  operating_system : [],
+  price_comment : [],
+  processor_core : [],
+  processor_speed : [],
+  query_parsed_mobiles : [],
+  ram_capacity : [],
+  retailers : [],
+  screen_size : [],
+  storage_capacity : [],
+  suggestion_composite_entity : [],
+  tags : [],
+  intentId: [],
+  criteria_finalized_status: 0, 
+  criteria_process_count: 0
+};
 // Next Route-------------------------------------------------------------
 // Route for processing the chat message received from frontend 
 app.post('/hellovinciai', function (req, res) {
@@ -196,7 +235,10 @@ app.post('/hellovinciai', function (req, res) {
   console.log('This is the request text: ', req.body.api_request_text)
   console.log('This is the active_list mobiles before JSON parse: ', req.body.active_list)
 
-  req.body.active_list = JSON.parse(req.body.active_list)
+  if(!req.session.active_list){
+    req.session.active_list = default_active_list;
+  }
+  // req.body.active_list = JSON.parse(req.body.active_list)
 
   console.log('This is the active_list mobiles after JSON parse: ', req.body.active_list)
 
@@ -209,7 +251,7 @@ app.post('/hellovinciai', function (req, res) {
       source: 'slack_testbot',
       data: {
         all_discussed_list: req.body.all_discussed_list,
-        active_list: req.body.active_list
+        active_list: req.session.active_list
       }
     }
   }
@@ -242,19 +284,18 @@ app.post('/hellovinciai', function (req, res) {
 
       response.originalRequest = requestData.originalRequest
 
-      ask_deepmind(response).then(result => {
+      return ask_deepmind(response).then(result => {
+        req.session.active_list = result.data.active_list
         res.send({
           web_reply: result,
           status: response.status,
           batman: 'true' // response.result.metadata.webhookUsed
         })
-      }).catch(err=>{
-          console.log("there is a problem with deepming")
       })
 
     }else {
       // batman is the alias for webhook
-      res.send({
+      return res.send({
         web_reply: response.result.fulfillment,
         status: response.status,
         batman: response.result.metadata.webhookUsed

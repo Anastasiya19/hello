@@ -3,78 +3,6 @@ function hellovinciai(msg) {
 
     console.log("Script is loaded");
 
-
-    //if the page is loaded for the first time or the user has cleared localStorage
-    //create a new localStorage item with an empty arr to store the recent context of the conversation
-    if (localStorage.getItem("all_discussed_list") === null || localStorage.getItem("all_discussed_list") === "undefined") {
-        var empty_arr = [];
-        var obj = {
-            mobiles: empty_arr,
-            brands: empty_arr,
-            tags: empty_arr,
-            attributes: empty_arr,
-            intentId: empty_arr
-        }
-        localStorage.setItem("all_discussed_list", JSON.stringify(obj));
-    }
-
-    //if the page is loaded for the first time or the user has cleared localStorage
-    //create a new localStorage item with an empty arr to store the latest context of the conversation
-    if (localStorage.getItem("active_list") === null) {
-        var empty_arr = [];
-        var obj = {
-            attributes : empty_arr,
-            attributes_composite_entity : empty_arr,
-            battery_value : empty_arr,
-            brands : empty_arr,
-            camera_pixels : empty_arr,
-            colors : empty_arr,
-            comparator : empty_arr,
-            formal_price : empty_arr,
-            mobiles : empty_arr,
-            operating_system : empty_arr,
-            price_comment : empty_arr,
-            processor_core : empty_arr,
-            processor_speed : empty_arr,
-            query_parsed_mobiles : empty_arr,
-            ram_capacity : empty_arr,
-            retailers : empty_arr,
-            screen_size : empty_arr,
-            storage_capacity : empty_arr,
-            suggestion_composite_entity : empty_arr,
-            tags : empty_arr,
-            intentId: empty_arr,
-            criteria_finalized_status: 0, 
-            criteria_process_count: 0
-        };
-        localStorage.setItem("active_list", JSON.stringify(obj));
-    }
-
-    //all_discussed_list array keeps a log of all phones discussed by the user
-    //It needs to be sent to the server
-    //if all_discussed_list localStorage length is greater than zero, then
-    //send the phones stored in localStorage,
-    //else create an emply all_discussed_list array
-    var all_discussed_list = {};
-    if (JSON.parse(localStorage.getItem("all_discussed_list")) !== null) {
-        all_discussed_list = JSON.parse(localStorage.getItem("all_discussed_list"));
-    }
-
-    //active_list array keeps a log of the phones discussed by the user
-    //in the previous query. It needs to be sent to the server
-    //if active_list localStorage length is greater than zero, then
-    //send the phones stored in localStorage active_list array,
-    //else send an empty array to active_phones
-
-    // var active_list = {};
-    // if (JSON.parse(localStorage.getItem("active_list")) !== null) {
-
-    //     active_list = JSON.parse(localStorage.getItem("active_list"));
-    //     console.log("This is the parsed active_list on the frontend before sending to the server: ", active_list);
-    // }
-
-    var active_list = localStorage.getItem("active_list");
-
     setTimeout(function() {
         $('.chat__messages').
         append(`<div class="message message_vinci is--typing">
@@ -107,9 +35,7 @@ function hellovinciai(msg) {
     //Get reply back from the API
     //Send the POST request
     $.post("/hellovinciai", {
-        api_request_text: msg,
-        all_discussed_list: all_discussed_list,
-        active_list: active_list
+        api_request_text: msg
     }, function(reply_received) {
 
         var start = new Date();
@@ -163,10 +89,7 @@ function hellovinciai(msg) {
                 append_more_button(reply_received.web_reply.data.query_object)
             }
 
-            update_all_discussed_list(reply_received.web_reply.data.all_discussed_list);
-
-            update_active_list(reply_received.web_reply.data.active_list);
-
+   
         }
 
         if (reply_received.batman === "true" && reply_received.status.code === 206) {
