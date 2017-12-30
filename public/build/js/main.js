@@ -18921,11 +18921,11 @@ function get_specifications_full(event) {
         if(phone_name !== "undefined" || phone_name !== "N/A" || phone_name !== "null"){
 
             var input_field = document.getElementsByClassName('send__input');
-            input_field[0].value = event.target.innerText;
+            input_field[0].value = phone_name;
 
             var send_btn = document.getElementById('send_chat');
             send_btn.click(); 
-            
+
         }
     }
 
