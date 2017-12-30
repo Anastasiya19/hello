@@ -1,6 +1,6 @@
 function Giggs (mobiles) {
 
-    console.log("Giggs is on the pitch");
+    
 
     //Mobile
     this.mobiles = mobiles;
@@ -29,7 +29,7 @@ function Giggs (mobiles) {
 //Function to fetch the cheapest variant
 Giggs.prototype.get_cheapest_variant = function(){
 
-    console.log("Inside get_cheapest_variant");
+    
 
     this.mobiles.forEach(loop_each_mobile.bind(this));
 
@@ -52,7 +52,7 @@ Giggs.prototype.get_cheapest_variant = function(){
 
         function identify_cheapest_variant(element, index, array){
 
-            console.log("This is the index: ", index);
+            
 
             //Call the identify cheapest retailer function for each retailer in the product retailers array
             element.product_retailers.forEach(identify_cheapest_retailer.bind(this));
@@ -65,21 +65,20 @@ Giggs.prototype.get_cheapest_variant = function(){
 
                     if(setting_flag === false){
 
-                        console.log("Inside setting_flag: ", setting_flag);
+            
 
                         //Allocating the index to shortlisted_model_index as 
                         //it is the 1st iteration of the loop
                         shortlisted_model_index = index;
 
-                        console.log("cheapest_model_index set: ", index);
-
+            
                         //Allocating the special_price to the shortlisted_model_best_price
                         shortlisted_model_best_price = element_inner.product_pricing.special_price; 
 
                         //Allocating the index_inner to the shortlisted model retailer index
                         shortlisted_model_shortlisted_retailer_index = index_inner;
 
-                        console.log("cheapest_model_price set: ", element_inner.product_pricing.special_price);
+            
 
                         //Changing the setting flag to true as the first iteration is done
                         setting_flag = true;
@@ -101,8 +100,7 @@ Giggs.prototype.get_cheapest_variant = function(){
                             shortlisted_model_best_price = element_inner.product_pricing.special_price;
                             shortlisted_model_shortlisted_retailer_index = index_inner;
 
-                            console.log("Resetting cheapest_model_index: ", shortlisted_model_index);
-                            console.log("Resetting cheapest_model_price: ", shortlisted_model_best_price);
+                
                         }
 
                     }
@@ -122,20 +120,16 @@ Giggs.prototype.get_cheapest_variant = function(){
         this.selected_variant[count] = mobile.variants[shortlisted_model_index];
 
         //Best price of the shortlisted variant
-        console.log("This is the shortlisted model best price: ", shortlisted_model_best_price);
 
         //Index of the shortlisted variant
-        console.log("This is the shortlisted_model_index: ", shortlisted_model_index);
 
         //Index of the shortlisted retailer in the shortlisted variant
-        console.log("This is the shortlisted_model_shortlisted_retailer_index: ", shortlisted_model_shortlisted_retailer_index);
 
 
         //We store the index of the variant in the selected_variant
         //selected_variant is the one for which we show all the details
         //this.selected_variant = this.mobiles[index].variants[this.shortlisted_model_index];
 
-        console.log("selected_variant array is: ", this.selected_variant);
 
 
 
@@ -147,7 +141,6 @@ Giggs.prototype.get_cheapest_variant = function(){
 //Function to fetch the cheapest variant
 Giggs.prototype.get_selected_variant = function(){
 
-    console.log("Inside get_selected_variant");
 
     this.mobiles.forEach(loop_each_mobile.bind(this));
 
@@ -156,7 +149,6 @@ Giggs.prototype.get_selected_variant = function(){
 
         this.selected_variant[count] = mobile.variants[0];
 
-        console.log("selected_variant array is: ", this.selected_variant);
 
     }
 
@@ -173,7 +165,7 @@ Giggs.prototype.get_images = function(){
 
     }
 
-    console.log("This is the images array: ", this.images);
+   
 }
 
 //Function to fetch the image of the phone
@@ -185,7 +177,7 @@ Giggs.prototype.get_names = function(){
 
     }
 
-    console.log("This is the names array: ", this.names);
+   
 
 }
 
@@ -208,7 +200,6 @@ Giggs.prototype.get_price_comparison = function(heading_text){
 
         temp_object.values[i] = "Starts at: "+this.shortlisted_model_best_price[i];
 
-        console.log("This is the value: ", temp_object.values[i]);
 
         // if(i === this.mobiles.length - 1){
         //     console.log("This is temp_object: ", temp_object);
@@ -222,7 +213,7 @@ Giggs.prototype.get_price_comparison = function(heading_text){
 
     this.comparison_context.push(price_row);
 
-    console.log("This is the get_price_comparison: ", this.comparison_context);
+
 
 }
 
@@ -449,7 +440,7 @@ Giggs.prototype.create_context = function(heading_text, first, second){
 
     temp_object.heading_text = heading_text;
 
-    console.log("This is second: ", second);
+   
 
     if(first!== undefined && second!==undefined){
 
@@ -481,7 +472,7 @@ Giggs.prototype.create_context = function(heading_text, first, second){
 
     return temp_object;
 
-    // console.log("This is the comparison context: ", this.comparison_context);
+    
 
 
 }

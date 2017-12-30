@@ -1,10 +1,6 @@
 function comparison_request(zlatan, query_status){
 
-	console.log("We need to create a comparison_request element");
-
-	//First we need to check the query_status to determine
-	//which chat element to build
-	console.log("This is the list of mobiles received from the backend: ", zlatan.mobiles);
+	
 
 	var giggs = new Giggs(zlatan.mobiles);
 

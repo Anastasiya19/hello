@@ -17248,14 +17248,14 @@ $(document).ready(function () {
   // });
 
   $('.send__input').on('input keyup', function() {
-      console.log("Auto complete request triggered. Show the auto complete helper");
+      
       var input = $('.send__input');
       send_auto_complete_request(input[0].value);
       // $('.helpers').delay(200).show();
   });
 
   $(".send__input").focusout(function(){
-      console.log("Send input focusout. Hide auto complete")
+      
       $('.helpers').hide(200);
   });
 
@@ -17689,11 +17689,11 @@ function init_specifications(elem) {
 }
 function attributes_request(zlatan){
 
-	console.log("We need to create an attributes element");
+	
 
 	//First we need to check the query_status to determine
 	//which chat element to build
-	console.log("This is the list of mobiles received from the backend: ", zlatan.mobiles);
+	
 
 	zlatan.mobiles.forEach(create_attribute);
 
@@ -17716,11 +17716,11 @@ function attributes_request(zlatan){
         }
         
 
-        console.log("This is the messi object: ", messi);
+        
 
 	}
 
-    console.log("This is the zlatan object: ", zlatan);
+    
 	//Now we need to append the html for all the mobiles created by raul constructor function
 
 }
@@ -17743,13 +17743,13 @@ function send_auto_complete_request(input_query) {
 
         $(".helpers").empty();
 
-        console.log("This is the reply_received for search send_auto_complete_request: ", reply_received);
+        
 
         if(reply_received.results.length > 0){
 
             var time = new Date() - start;
 
-            console.log("Time taken in processing the request on the backend: ", time);
+        
 
             var template = $('#handlebars-auto-complete-reply').html();
 
@@ -17778,7 +17778,7 @@ function batman_false(reply_received) {
     if (reply_received.batman === "false") {
 
 
-        console.log("Inside false batman");
+       
 
         var text_reply = reply_received.web_reply.speech;
         $('.chat__messages')
@@ -17802,8 +17802,7 @@ function batman_missing(reply_received) {
     if (reply_received.batman === "true") {
 
 
-        console.log("Inside missing batman");
-
+      
         var text_reply = reply_received.web_reply.speech;
         $('.chat__messages')
             .append(`<div class="message message_vinci">
@@ -17820,8 +17819,7 @@ function batman_missing(reply_received) {
 } //function batman_false ends
 function beckham_router(beckham, zlatan, buffon) {
 
-    console.log("Inside beckham_router");
-
+    
     //First we need to check the query_status to determine
     //which chat element to build
 
@@ -17846,7 +17844,7 @@ function beckham_router(beckham, zlatan, buffon) {
 
         // beckham.build_specifications_element(zlatan);
 
-        console.log("phones formatted ", zlatan)
+        
     }
 
     //Tested - Working correctly
@@ -17854,8 +17852,7 @@ function beckham_router(beckham, zlatan, buffon) {
     //Specifications
     if (beckham.query_status === 100) {
 
-        console.log("Getting ready to create the product element");
-
+        
         beckham.check_tag_related_question(zlatan, buffon);
 
         beckham.build_text_reply_element(buffon);
@@ -17869,7 +17866,7 @@ function beckham_router(beckham, zlatan, buffon) {
     if (beckham.query_status === 101) {
 
         //Need to build the product and the attributes element
-        console.log("Price and other attributes requested");
+        
 
         beckham.check_tag_related_question(zlatan, buffon);
 
@@ -17886,7 +17883,7 @@ function beckham_router(beckham, zlatan, buffon) {
     if (beckham.query_status === 102) {
 
         //Need to build the attributes element
-        console.log("Only attributes requested");
+        
 
         beckham.check_tag_related_question(zlatan, buffon);
 
@@ -17907,7 +17904,7 @@ function beckham_router(beckham, zlatan, buffon) {
         beckham.build_comparison_element(zlatan, 200);
 
         //Need to build the comparison element
-        console.log("Let's get the comparison started: Yaaay");
+        
 
 
 
@@ -17917,7 +17914,7 @@ function beckham_router(beckham, zlatan, buffon) {
     //Comparison of price and other attributes of 2 phones
     if (beckham.query_status === 201) {
         //Price and other attributes for comparison
-        console.log("Yeah right... price and other attributes for comparison");
+        
 
         beckham.build_text_reply_element(buffon);
 
@@ -17933,7 +17930,7 @@ function beckham_router(beckham, zlatan, buffon) {
 
         beckham.build_text_reply_element(buffon);
         //Specific attributes for comparison
-        console.log("Yeah right...only attributes for comparison");
+        
         beckham.build_comparison_element(zlatan, 202);
 
         // get_comparison_attributes(zlatan);
@@ -17945,7 +17942,7 @@ function beckham_router(beckham, zlatan, buffon) {
 
         beckham.build_text_reply_element(buffon);
         //Price for comparison. Corresponds to a product element
-        console.log("Yeah right...only price for comparison");
+        
 
         beckham.build_specifications_element(zlatan);
 
@@ -17958,13 +17955,11 @@ function beckham_router(beckham, zlatan, buffon) {
         beckham.build_text_reply_element(buffon);
 
         //Need to build the comparison element
-        console.log("Let's get the comparison started: Yaaay");
-
-        console.log("This is zlatan before correction: ", zlatan);
+        
 
         beckham.correct_mobiles_array(zlatan, 200);
 
-        console.log("This is corrected zlatan: ", zlatan);
+        
 
         beckham.build_comparison_element(zlatan, 200);
 
@@ -17977,13 +17972,10 @@ function beckham_router(beckham, zlatan, buffon) {
         beckham.build_text_reply_element(buffon);
 
         //Only attributes for comparison
-        console.log("Yeah right...only attributes for comparison");
-
-        console.log("This is zlatan before correction: ", zlatan);
-
+        
         beckham.correct_mobiles_array(zlatan, 202);
 
-        console.log("This is corrected zlatan: ", zlatan);
+        
 
         beckham.build_comparison_element(zlatan, 202);
 
@@ -18005,7 +17997,7 @@ function beckham_router(beckham, zlatan, buffon) {
     if (beckham.query_status === 400) {
 
         beckham.build_text_reply_element(buffon);
-        console.log("you've reached a review element >>>>>>>>>>>>")
+        
         //Need to build the review element
         beckham.build_text_review_element(zlatan);
 
@@ -18031,7 +18023,7 @@ function beckham_router(beckham, zlatan, buffon) {
 
 }
 function Beckham (query_status) {
-  console.log('Beckham is on the pitch')
+  
 
   // Query status
   this.query_status = query_status
@@ -18081,7 +18073,7 @@ Beckham.prototype.build_specifications_summary_element = function (zlatan) {
   // This function creates the context for each mobile in the zlatan object.
   // It creates Raul constructor for each mobile which just gives the context object for each mobile
   // All context objects are stored in the zlatan.contexts which is then passed for compilation
-  console.log("This is zlatan inside build_specifications_summary_element: ", zlatan);
+  
 
   specifications_summary_request(zlatan);
 
@@ -18131,21 +18123,21 @@ Beckham.prototype.build_attributes_element = function (zlatan) {
 }
 
 Beckham.prototype.build_attributes_detailed_element = function (zlatan) {
-  console.log('This is zlatan contexts_attributes_detailed: ', zlatan.contexts_attributes_detailed)
+  
 
   if (zlatan.contexts_attributes_detailed.length > 0) {
     zlatan.contexts_attributes_detailed.forEach(create_html)
 
     function create_html (element, index, array) {
       this.template = $('#handlebars-case-104').html()
-      console.log('This is the template: ', this.template)
+      
 
       // Compile the template data into a function
       this.templateScript = Handlebars.compile(this.template)
-      console.log('This is the templateScript: ', this.templateScript)
+      
 
       this.html = this.templateScript({ attribute: element })
-      console.log('This is the html: ', this.html)
+      
 
 
         // Insert the HTML code into the page
@@ -18158,23 +18150,23 @@ Beckham.prototype.build_attributes_detailed_element = function (zlatan) {
 }
 
 Beckham.prototype.build_attributes_summary_element = function (zlatan) {
-  console.log('This is zlatan contexts_attributes_summary: ', zlatan.contexts_attributes_summary)
+  
 
   if (zlatan.contexts_attributes_summary.length > 0) {
     zlatan.contexts_attributes_summary.forEach(create_summary_html)
 
     function create_summary_html (element, index, array) {
       this.template = $('#attributes-text-reply').html()
-      console.log('This is the template: ', this.template)
+      
 
       // Compile the template data into a function
       this.templateScript = Handlebars.compile(this.template)
-      console.log('This is the templateScript: ', this.templateScript)
+      
 
-      console.log('This goes in context: ', element)
+      
 
       this.html = this.templateScript({ attribute: element })
-      console.log('This is the html: ', this.html)
+      
 
 
         // Insert the HTML code into the page
@@ -18227,12 +18219,12 @@ Beckham.prototype.correct_mobiles_array = function (zlatan, query_status) {
 }
 
 Beckham.prototype.build_video_review_element = function (zlatan) {
-  console.log('case video ')
+  
 
   get_video(zlatan)
 
   this.template = $('#handlebars-case-120').html()
-  console.log('template ', this.template)
+  
   // Compile the template data into a function
   this.templateScript = Handlebars.compile(this.template)
 
@@ -18243,7 +18235,7 @@ Beckham.prototype.build_video_review_element = function (zlatan) {
     // Insert the HTML code into the page
     $('.chat__messages').append(this.html)
 
-    console.log('html', this.html)
+    
     init_specifications($('.chat__messages').children().last())
 
     this.scroll_into_view()
@@ -18253,7 +18245,7 @@ Beckham.prototype.build_video_review_element = function (zlatan) {
 }
 
 Beckham.prototype.build_text_review_element = function (zlatan) {
-  console.log('case text review  ')
+  
 
   reduce_to_pairs = (accumulator, currentValue, index) => {
     // console.log(accumulator)
@@ -18272,7 +18264,7 @@ Beckham.prototype.build_text_review_element = function (zlatan) {
   zlatan.context = {reviews_pairs: reviews_pairs}
 
   this.template = $('#handlebars-case-400').html()
-  console.log('template ', this.template)
+  
   // Compile the template data into a function
   this.templateScript = Handlebars.compile(this.template)
 
@@ -18280,7 +18272,7 @@ Beckham.prototype.build_text_review_element = function (zlatan) {
 
   // Insert the HTML code into the page
   $('.chat__messages').append(this.html)
-  console.log('html', this.html)
+  
   init_specifications($('.chat__messages').children().last())
   init_owl()
   this.scroll_into_view()
@@ -18306,17 +18298,17 @@ Beckham.prototype.build_text_reply_element = function (buffon) {
   // Compile the template data into a function
   this.templateScript = Handlebars.compile(this.template)
 
-  console.log('This is displayText inside build_text_reply_element: ', buffon.displayText)
+  
 
   var context = {
     text: buffon.displayText
   }
 
-  console.log('This is context: ', context)
+  
 
   this.html = this.templateScript(context)
 
-  console.log('This is the html generated: ', this.html)
+  
 
   // Insert the HTML code into the page
   $('.chat__messages').append(this.html)
@@ -18351,31 +18343,27 @@ Beckham.prototype.scroll_into_view = function () {
 
   // var scroll_element = document.getElementById('mCSB_1_dragger_vertical');
 
-  // console.log("Scroll element top before appending ", scroll_element.style.top);
-
-  // console.log("Scroll element height ", scroll_element.style["height"]);
-
-  // console.log("Scroll element max-height ", scroll_element.style["max-height"]);
+  
 
   // var scroll_value = parseInt(scroll_element.style.top) - parseInt(scroll_element.style["height"]) + 15;
 
   // scroll_element.style.top = scroll_value + "px";
 
   var a = document.getElementsByClassName('chat__messages')
-  console.log('This is a:' , a)
+  
 
   var b = a[0].getElementsByClassName('message_sender')
-  console.log('This is b: ', b)
+  
 
   var element_count = b.length - 1
-  console.log('This is element_count: ', element_count)
+  
 
   b[element_count].scrollIntoView({behavior: "smooth"})
-  console.log('Scrolled into view')
+  
 }
 function Buffon (text) {
 
-    console.log("Zlatan is on the pitch");
+   
 
     //Query status
     this.displayText = text;
@@ -18397,11 +18385,7 @@ function Buffon (text) {
 }
 function comparison_request(zlatan, query_status){
 
-	console.log("We need to create a comparison_request element");
-
-	//First we need to check the query_status to determine
-	//which chat element to build
-	console.log("This is the list of mobiles received from the backend: ", zlatan.mobiles);
+	
 
 	var giggs = new Giggs(zlatan.mobiles);
 
@@ -18558,9 +18542,7 @@ function comparison_request(zlatan, query_status){
 }
 //This function helps capture the click on the memmory variant
 function fetch_variant(event) {
-    console.log("Inside fetch_variant");
-    console.log("This is the event object: ", event);
-    console.log("This is the new size selected: ", event.firstElementChild.innerText);
+   
 
     //variable to store the id of the element
     var element_id;
@@ -18568,11 +18550,11 @@ function fetch_variant(event) {
     //clicked element
     var clicked_element = ($(event).parents('.message__item_view-full'));
 
-    console.log(clicked_element[0].id);
+    
 
     element_id = clicked_element[0].id;
 
-    console.log("This is mobiles_requested: ", mobiles_requested);
+    
 
     //Count of the mobile amongst mobiles_requested
     var mobile_count;
@@ -18582,12 +18564,11 @@ function fetch_variant(event) {
 
     function find_selected_mobile(mobile, index, array) {
 
-        console.log("This clicked_element id: ", element_id);
-        console.log("Inside find_selected_id: ", mobile);
+        
 
         if (parseInt(mobile.id) === parseInt(element_id)) {
 
-            console.log("Elements matched:");
+        
 
             mobile_count = index;
 
@@ -18596,12 +18577,12 @@ function fetch_variant(event) {
 
     }
 
-    console.log("This is the matching mobile: ", mobile_count);
+    
 
     //Found the zlatan object for the requested mobile
     var raul = mobiles_requested[mobile_count].raul;
 
-    console.log("This is the raul object: ", raul);
+    
 
     raul.size_selector = event.firstElementChild.innerText;
 
@@ -18609,16 +18590,14 @@ function fetch_variant(event) {
 
     reload_product(raul);
 
-    console.log("This is the zlatan object again: ", mobiles_requested[mobile_count].zlatan);
+    
 
 }
 
 
 //This function helps capture the click on the memmory variant
 function fetch_variant_by_color(event) {
-    console.log("Inside fetch_variant_by_color");
-    console.log("This is the event object: ", event);
-    console.log("This is the new color selected: ", event.getElementsByClassName('color')[0].innerText);
+    
 
     //variable to store the id of the element
     var element_id;
@@ -18626,11 +18605,11 @@ function fetch_variant_by_color(event) {
     //clicked element
     var clicked_element = ($(event).parents('.message__item_view-full'));
 
-    console.log(clicked_element[0].id);
+    
 
     element_id = clicked_element[0].id;
 
-    console.log("This is mobiles_requested: ", mobiles_requested);
+    
 
     //Count of the mobile amongst mobiles_requested
     var mobile_count;
@@ -18640,12 +18619,11 @@ function fetch_variant_by_color(event) {
 
     function find_selected_mobile(mobile, index, array) {
 
-        console.log("This clicked_element id: ", element_id);
-        console.log("Inside find_selected_id: ", mobile);
+        
 
         if (parseInt(mobile.id) === parseInt(element_id)) {
 
-            console.log("Elements matched:");
+        
 
             mobile_count = index;
 
@@ -18654,12 +18632,10 @@ function fetch_variant_by_color(event) {
 
     }
 
-    console.log("This is the matching mobile: ", mobile_count);
 
     //Found the zlatan object for the requested mobile
     var raul = mobiles_requested[mobile_count].raul;
 
-    console.log("This is the raul object: ", raul);
 
     raul.color_selector = event.getElementsByClassName('color')[0].innerText;
 
@@ -18667,13 +18643,11 @@ function fetch_variant_by_color(event) {
         raul.size_selector = raul.selected_variant.memory_storage.internal_storage;
     }
 
-    console.log("This is the raul color_selector: ", raul.color_selector);
 
     raul.load_status = 2;
 
     reload_product(raul);
 
-    console.log("This is the zlatan object again: ", mobiles_requested[mobile_count].zlatan);
 
 }
 
@@ -18682,7 +18656,7 @@ function fetch_variant_by_color(event) {
 function suggestions_click(event) {
 
     var text = event.target.innerText;
-    console.log("This is the text clicked on suggestions_click: ", text);
+ 
 
     var input_field = document.getElementsByClassName('chatbot--input');
 
@@ -18784,7 +18758,6 @@ function start_speech() {
 
             setTimeout(function () {
 
-                console.log("This is the event object: ", e);
 
                 var speech_overlay = document.getElementById('speech_overlay');
 
@@ -18817,9 +18790,8 @@ function start_speech() {
             setTimeout(function () {
 
                 var send_btn = document.getElementById('send_chat');
-                console.log("Before click");
                 send_btn.click();
-                console.log("After click");
+
             }, 90);
 
 
@@ -18854,7 +18826,6 @@ function close_speech_modal() {
 //Deprecated
 function demo_yes() {
 
-    console.log("Demo yes clicked");
 
     var tts = "Perfect...";
     speak_message(tts);
@@ -18869,7 +18840,6 @@ function demo_yes() {
 //Deprecated
 function demo_no() {
 
-    console.log("Demo no clicked");
 
     var tts = "Ok..that's fine. May be next time.";
     speak_message(tts);
@@ -18889,14 +18859,12 @@ function speak_message(tts) {
 //Deprecated
 function begin_demo() {
 
-    console.log("This function is Deprecated");
+   
 }
 
 function send_question(event) {
 
-    console.log("This is event target: ", event.target);
-    console.log("This is event target innerText: ", event.target.innerText);
-
+    
     if(event.target.innerText !== "undefined" || event.target.innerText !== "null"){
 
         var input_field = document.getElementsByClassName('send__input');
@@ -18910,9 +18878,7 @@ function send_question(event) {
 
 function get_specifications_full(event) {
 
-    console.log("This is event target: ", event.target);
-    console.log("This is event target innerText: ", event.target.innerText);
-
+   
 
     if(event.target !== "undefined" || event.target !== "null"){
 
@@ -18943,9 +18909,7 @@ function get_specifications_full(event) {
 
 function capture_value_and_hide(event) {
 
-    console.log("This is event target: ", event.target);
-    console.log("This is event target innerText: ", event.target.innerText);
-
+  
     var input_field = document.getElementsByClassName('send__input');
     input_field[0].value = event.target.innerText;
 
@@ -18965,10 +18929,6 @@ function react(event, reaction, normalized_name) {
         save_reaction(reaction, normalized_name);
         $.post("/product/update_reactions", { reaction: reaction, normalized_name: normalized_name, increment: true }, function (res) {
 
-            console.log("response ", res)
-            
-            console.log("reacting ", event, reaction)
-            console.log("next ", $(event.target).parent().next())
 
             $(event.target).parent().next().html(parseFloat($(event.target).parent().next().html()) + 1 || 1)
         })
@@ -19001,7 +18961,6 @@ function react(event, reaction, normalized_name) {
 
             // adding the new reaction
             $.post("/product/update_reactions", { reaction: reaction, normalized_name: normalized_name, increment: true }, function (res) {
-                console.log("response ", res)
                
                     $(event.target).parent().next().html(parseFloat($(event.target).parent().next().html()) + 1 || 1)
              
@@ -19056,15 +19015,13 @@ function react(event, reaction, normalized_name) {
 }
 get_video = function (zlatan) {
 
-	console.log("Inside the get_video function ");
-
-	console.log('mobs ', zlatan)
+	
 try {
 	
 	zlatan.context = {youtube_video: zlatan.mobiles.youtubeVid};
 	
 } catch (error) {
-	console.log("err ",error)
+	
 }
 	// zlatan.select_handlebars_template();
 	// zlatan.compile_script();
@@ -19089,7 +19046,7 @@ try {
 } //append_html function ends
 function Giggs (mobiles) {
 
-    console.log("Giggs is on the pitch");
+    
 
     //Mobile
     this.mobiles = mobiles;
@@ -19118,7 +19075,7 @@ function Giggs (mobiles) {
 //Function to fetch the cheapest variant
 Giggs.prototype.get_cheapest_variant = function(){
 
-    console.log("Inside get_cheapest_variant");
+    
 
     this.mobiles.forEach(loop_each_mobile.bind(this));
 
@@ -19141,7 +19098,7 @@ Giggs.prototype.get_cheapest_variant = function(){
 
         function identify_cheapest_variant(element, index, array){
 
-            console.log("This is the index: ", index);
+            
 
             //Call the identify cheapest retailer function for each retailer in the product retailers array
             element.product_retailers.forEach(identify_cheapest_retailer.bind(this));
@@ -19154,21 +19111,20 @@ Giggs.prototype.get_cheapest_variant = function(){
 
                     if(setting_flag === false){
 
-                        console.log("Inside setting_flag: ", setting_flag);
+            
 
                         //Allocating the index to shortlisted_model_index as 
                         //it is the 1st iteration of the loop
                         shortlisted_model_index = index;
 
-                        console.log("cheapest_model_index set: ", index);
-
+            
                         //Allocating the special_price to the shortlisted_model_best_price
                         shortlisted_model_best_price = element_inner.product_pricing.special_price; 
 
                         //Allocating the index_inner to the shortlisted model retailer index
                         shortlisted_model_shortlisted_retailer_index = index_inner;
 
-                        console.log("cheapest_model_price set: ", element_inner.product_pricing.special_price);
+            
 
                         //Changing the setting flag to true as the first iteration is done
                         setting_flag = true;
@@ -19190,8 +19146,7 @@ Giggs.prototype.get_cheapest_variant = function(){
                             shortlisted_model_best_price = element_inner.product_pricing.special_price;
                             shortlisted_model_shortlisted_retailer_index = index_inner;
 
-                            console.log("Resetting cheapest_model_index: ", shortlisted_model_index);
-                            console.log("Resetting cheapest_model_price: ", shortlisted_model_best_price);
+                
                         }
 
                     }
@@ -19211,20 +19166,16 @@ Giggs.prototype.get_cheapest_variant = function(){
         this.selected_variant[count] = mobile.variants[shortlisted_model_index];
 
         //Best price of the shortlisted variant
-        console.log("This is the shortlisted model best price: ", shortlisted_model_best_price);
 
         //Index of the shortlisted variant
-        console.log("This is the shortlisted_model_index: ", shortlisted_model_index);
 
         //Index of the shortlisted retailer in the shortlisted variant
-        console.log("This is the shortlisted_model_shortlisted_retailer_index: ", shortlisted_model_shortlisted_retailer_index);
 
 
         //We store the index of the variant in the selected_variant
         //selected_variant is the one for which we show all the details
         //this.selected_variant = this.mobiles[index].variants[this.shortlisted_model_index];
 
-        console.log("selected_variant array is: ", this.selected_variant);
 
 
 
@@ -19236,7 +19187,6 @@ Giggs.prototype.get_cheapest_variant = function(){
 //Function to fetch the cheapest variant
 Giggs.prototype.get_selected_variant = function(){
 
-    console.log("Inside get_selected_variant");
 
     this.mobiles.forEach(loop_each_mobile.bind(this));
 
@@ -19245,7 +19195,6 @@ Giggs.prototype.get_selected_variant = function(){
 
         this.selected_variant[count] = mobile.variants[0];
 
-        console.log("selected_variant array is: ", this.selected_variant);
 
     }
 
@@ -19262,7 +19211,7 @@ Giggs.prototype.get_images = function(){
 
     }
 
-    console.log("This is the images array: ", this.images);
+   
 }
 
 //Function to fetch the image of the phone
@@ -19274,7 +19223,7 @@ Giggs.prototype.get_names = function(){
 
     }
 
-    console.log("This is the names array: ", this.names);
+   
 
 }
 
@@ -19297,7 +19246,6 @@ Giggs.prototype.get_price_comparison = function(heading_text){
 
         temp_object.values[i] = "Starts at: "+this.shortlisted_model_best_price[i];
 
-        console.log("This is the value: ", temp_object.values[i]);
 
         // if(i === this.mobiles.length - 1){
         //     console.log("This is temp_object: ", temp_object);
@@ -19311,7 +19259,7 @@ Giggs.prototype.get_price_comparison = function(heading_text){
 
     this.comparison_context.push(price_row);
 
-    console.log("This is the get_price_comparison: ", this.comparison_context);
+
 
 }
 
@@ -19538,7 +19486,7 @@ Giggs.prototype.create_context = function(heading_text, first, second){
 
     temp_object.heading_text = heading_text;
 
-    console.log("This is second: ", second);
+   
 
     if(first!== undefined && second!==undefined){
 
@@ -19570,7 +19518,7 @@ Giggs.prototype.create_context = function(heading_text, first, second){
 
     return temp_object;
 
-    // console.log("This is the comparison context: ", this.comparison_context);
+    
 
 
 }
@@ -19689,19 +19637,19 @@ Handlebars.registerHelper('generate_logo_helper_cheapest', function(shortlisted_
 
 Handlebars.registerHelper('generate_memory_variants_helper', function() {
 
-    console.log("This is the this object: ", this);
+    
 
-    // console.log("this is the memory_variants_array: ", memory_variants_array);
+    
 
-    console.log("This is this memory_variants_array: ", this.memory_variants_array);
+    
 
-    console.log("Inside generate_memory_variants_helper");
+    
 
     var memory_variants = "";
 
     for (var i = 0; i < this.memory_variants_array.length; i++) {
 
-        console.log("memory_storage is: ", this.memory_variants_array[i]);
+    
 
   //       if (this.memory_variants_array[i] === this.selected_variant.memory_storage.internal_storage) {
 
@@ -19751,13 +19699,13 @@ Handlebars.registerHelper('generate_memory_variants_helper', function() {
 
 Handlebars.registerHelper('generate_color_variants_helper', function() {
 
-    console.log("Inside generate_color_variants_helper");
+    
 
     var color_variants = "";
 
     for (var i = 0; i < this.color_variants_array.length; i++) {
 
-        console.log("color_variant is: ", this.color_variants_array[i]);
+    
 
         /*
         if (this.color_variants_array[i] === this.selected_variant.general_specifications.model_color) {
@@ -19915,10 +19863,10 @@ Handlebars.registerHelper('youtube_video_title_helper', function() {
 
 
 Handlebars.registerHelper('offers', function(retailer) {
-    console.log("creating offers ",retailer)
+    
     var offers = (retailer.offers)? retailer.offers : retailer.selected_variant.product_retailers[retailer.shortlisted_model_shortlisted_retailer_index].offers;
     text = ""
-    console.log("the offers ", offers)
+    
 
     if(offers.emi.emi_details === "N/A" && offers.exchange.exchange_offer_text === "N/A"){
         return "No offers";
@@ -19938,10 +19886,10 @@ Handlebars.registerHelper('offers', function(retailer) {
     
 
 Handlebars.registerHelper('delivery', function(retailer) {
-    console.log("creating delivery_details ",retailer)
+    
     var delivery_details = (retailer.delivery_details)? retailer.delivery_details : retailer.selected_variant.product_retailers[retailer.shortlisted_model_shortlisted_retailer_index].delivery_details;
     text = ""
-    console.log("the delivery_details ", delivery_details)
+    
 
     if(delivery_details.delivery_time === "N/A" ){
         return "Unknown";
@@ -19954,7 +19902,6 @@ Handlebars.registerHelper('delivery', function(retailer) {
 
 Handlebars.registerHelper("get_reactions", function(selected_variant, reaction){
 
-console.log("selected variant ", selected_variant,"reaction ",reaction)
 
 
 if(selected_variant.reactions && selected_variant.reactions[reaction]){
@@ -19978,19 +19925,16 @@ return stars
 })
 // >>>>>>>>>>> for debugging 
 Handlebars.registerHelper("debug", function(optionalValue) {
-    console.log("Current Context");
-    console.log("====================");
-    console.log(this);
+
+    
 
     if (optionalValue) {
-        console.log("Value");
-        console.log("====================");
-        console.log(optionalValue);
+    
     }
 });
 function Messi (mobile) {
 
-    console.log("Messi is on the pitch");
+    
 
     //Mobile
     this.mobile = mobile;
@@ -20004,7 +19948,7 @@ function Messi (mobile) {
 //Function to set the ID
 Messi.prototype.loop_attributes = function() {
 
-    console.log("Inside set_id");
+    
 
     this.mobile.attribute_requested.forEach(generate_reply_json.bind(this));
 
@@ -20085,7 +20029,7 @@ Messi.prototype.loop_attributes = function() {
 
 Messi.prototype.camera_reply = function(){
 
-    console.log("This is the camera value: ",this.mobile.variants[0].camera.primary_camera_pixels);
+    
 
     var attribute_first = {};
     var attribute_second = {};
@@ -20134,7 +20078,7 @@ Messi.prototype.camera_reply = function(){
 
 
 
-    console.log("Attributes created")
+
 
     this.context_detailed.push(attribute_fourth);
     this.context_detailed.push(attribute_fifth);
@@ -20150,7 +20094,7 @@ Messi.prototype.camera_reply = function(){
 }
 
 Messi.prototype.colors_reply = function(){
-    console.log("This is the color variant: ",this.mobile.variants[0].general_specifications.model_color);
+    
 
     var colors_array = [];
 
@@ -20166,7 +20110,7 @@ Messi.prototype.colors_reply = function(){
 
     colors_array = _.uniq(colors_array);
 
-    console.log("This is the colors_array: ", colors_array);
+    
 
     var reply = {};
 
@@ -20188,7 +20132,7 @@ Messi.prototype.colors_reply = function(){
 
 Messi.prototype.battery_reply = function(){
 
-    console.log("This is the battery power: ",this.mobile.variants[0].battery_power.battery_capacity);
+    
 
     var attribute_first = {};
     var attribute_second = {};
@@ -20214,20 +20158,20 @@ Messi.prototype.battery_reply = function(){
 
     };
 
-    console.log("Attributes created")
+    
 
     this.context_detailed.push(attribute_first);
     this.context_detailed.push(attribute_second);
     this.context_detailed.push(attribute_third);
 
    
-    console.log("Attributes attribute_package created");
+    
 
 }
 
 Messi.prototype.dimensions_reply = function(){
 
-    console.log("This is the dimensions: ",this.mobile.variants[0].dimensions);
+    
 
     var attribute_first = {};
     var attribute_second = {};
@@ -20253,14 +20197,14 @@ Messi.prototype.dimensions_reply = function(){
 
     };
 
-    console.log("Attributes created")
+    
 
     this.context_detailed.push(attribute_first);
     this.context_detailed.push(attribute_second);
     this.context_detailed.push(attribute_third);
 
    
-    console.log("Attributes attribute_package created");
+    
 
 }
 
@@ -20269,7 +20213,7 @@ Messi.prototype.dimensions_reply = function(){
 
 Messi.prototype.processor_reply = function(){
 
-    //console.log("This is the battery power: ",this.mobiles[0].variants[0].battery_power.battery_capacity);
+    
 
     var attribute_first = {};
     var attribute_second = {};
@@ -20294,7 +20238,7 @@ Messi.prototype.processor_reply = function(){
         icon: "ion-speedometer"
     };
 
-    console.log("Attributes created")
+    
 
     
     this.context_detailed.push(attribute_first);
@@ -20302,7 +20246,7 @@ Messi.prototype.processor_reply = function(){
     this.context_detailed.push(attribute_third);
 
   
-    console.log("Attributes attribute_package created");
+    
 
   
 }
@@ -20360,7 +20304,7 @@ Messi.prototype.sim_features_reply = function(){
         icon: "ion-backspace-outline"
     };
 
-    console.log("Attributes created")
+    
 
     
     this.context_detailed.push(attribute_first);
@@ -20409,7 +20353,7 @@ Messi.prototype.sensors_reply = function(){
 }
 
 Messi.prototype.storage_reply = function(){
-    console.log("This is the storage variant: ",this.mobile.variants[0].memory_storage.internal_storage);
+    
 
     var storage_array = [];
     var expandable_storage = "N/A";
@@ -20429,7 +20373,7 @@ Messi.prototype.storage_reply = function(){
 
     storage_array = _.uniq(storage_array);
 
-    console.log("This is the storage_array: ", storage_array);
+    
 
     var reply = {};
 
@@ -20475,7 +20419,7 @@ Messi.prototype.warranty_reply = function(){
 
 Messi.prototype.display_reply = function(){
 
-    console.log("This is the display: ",this.mobile.variants[0].display_specifications.display_size);
+    
 
     var attribute_first = {};
     var attribute_second = {};
@@ -20520,7 +20464,7 @@ Messi.prototype.display_reply = function(){
     };
 
 
-    console.log("Attributes created")
+    
 
     this.context_detailed.push(attribute_fourth);
     this.context_detailed.push(attribute_fifth);
@@ -20538,7 +20482,7 @@ Messi.prototype.display_reply = function(){
 
 Messi.prototype.ram_reply = function(){
 
-    // console.log("This is the storage: ",this.mobile.variants[0].memory_storage.internal_storage);
+    
 
     var attribute_first = {};
     var attribute_second = {};
@@ -20557,7 +20501,7 @@ Messi.prototype.ram_reply = function(){
         icon: "ion-android-folder"
     };
 
-    console.log("Attributes created")
+    
 
     this.context_detailed.push(attribute_first);
     this.context_detailed.push(attribute_second);
@@ -20657,8 +20601,7 @@ Messi.prototype.jack_reply = function(){
 }
 function Neymar (suggested_questions) {
 
-    console.log("Neymar is on the pitch");
-
+    
     //Mobile
     this.suggested_questions = suggested_questions;
     
@@ -20670,14 +20613,11 @@ Neymar.prototype.check_questions = function() {
     if(this.suggested_questions.length > 0){
 
         this.template = $('#handlebars-suggested-questions').html();
-        console.log("This is the template: ", this.template);
 
         // Compile the template data into a function
         this.templateScript = Handlebars.compile(this.template);
-        console.log("This is the templateScript: ", this.templateScript);
 
         this.html = this.templateScript({ suggested_questions: this.suggested_questions });
-        console.log("This is the html: ", this.html);
 
         // Insert the HTML code into the page
         $('.chat__messages').append(this.html);
@@ -20690,8 +20630,7 @@ Neymar.prototype.check_questions = function() {
 }
 function Raul (mobile, load_status) {
 
-    console.log("Raul is on the pitch");
-
+    
     //Mobile
     this.mobile = mobile;
 
@@ -20745,8 +20684,7 @@ function Raul (mobile, load_status) {
 //Function to set the ID
 Raul.prototype.set_id = function() {
 
-    console.log("Inside set_id");
-
+    
     this.request_id = Date.now();
 
 }
@@ -20756,8 +20694,7 @@ Raul.prototype.set_id = function() {
 //This means that we need to build the special_product chat element
 Raul.prototype.case_special_product = function() {
 
-    console.log("Inside case_special_product");
-
+    
     //If it is a new request, we need to find the cheapest variant
     //amongst all the mobiles sent by the DB
     //The get_cheapest_variant function will find the cheapest variant amongst all the variants
@@ -20788,8 +20725,7 @@ Raul.prototype.case_special_product = function() {
 //Function to fetch the cheapest variant
 Raul.prototype.get_cheapest_variant = function(){
 
-	console.log("Inside get_cheapest_variant");
-
+	
 	//Shortlisted model best price
 	var shortlisted_model_best_price = 0;
 
@@ -20808,9 +20744,7 @@ Raul.prototype.get_cheapest_variant = function(){
     //Function called on each variant of the mobile to identify the cheapest variant
 	function identify_cheapest_variant(element, index, array){
 
-        console.log("This is element: ", element);
 
-		console.log("This is the index: ", index);
 
 		//Call the identify cheapest retailer function for each retailer in the product retailers array
 		element.product_retailers.forEach(identify_cheapest_retailer.bind(this));
@@ -20818,29 +20752,26 @@ Raul.prototype.get_cheapest_variant = function(){
 
 		function identify_cheapest_retailer(element_inner,index_inner,array){
 
-            console.log("This is element_inner: ", element_inner);
+
 
 			//To make sure that the product price is not set to 0
 			if(element_inner.product_pricing.special_price > 0){
 
 				if(setting_flag === false){
 
-					console.log("Inside setting_flag: ", setting_flag);
 
 					//Allocating the index to shortlisted_model_index as 
 					//it is the 1st iteration of the loop
 					shortlisted_model_index = index;
 
-					console.log("cheapest_model_index set: ", index);
-
+					
 					//Allocating the special_price to the shortlisted_model_best_price
 					shortlisted_model_best_price = element_inner.product_pricing.special_price;	
 
 					//Allocating the index_inner to the shortlisted model retailer index
 					shortlisted_model_shortlisted_retailer_index = index_inner;
 
-					console.log("cheapest_model_price set: ", element_inner.product_pricing.special_price);
-
+					
 					//Changing the setting flag to true as the first iteration is done
 					setting_flag = true;
 
@@ -20861,8 +20792,7 @@ Raul.prototype.get_cheapest_variant = function(){
 						shortlisted_model_best_price = element_inner.product_pricing.special_price;
 						shortlisted_model_shortlisted_retailer_index = index_inner;
 
-						console.log("Resetting cheapest_model_index: ", shortlisted_model_index);
-						console.log("Resetting cheapest_model_price: ", shortlisted_model_best_price);
+						
 					}
 
 				}
@@ -20881,22 +20811,13 @@ Raul.prototype.get_cheapest_variant = function(){
 
 	this.selected_variant = this.mobile.variants[shortlisted_model_index];
 
-	//Best price of the shortlisted variant
-	console.log("This is the shortlisted model best price: ", shortlisted_model_best_price);
-
-	//Index of the shortlisted variant
-	console.log("This is the shortlisted_model_index: ", shortlisted_model_index);
-
-	//Index of the shortlisted retailer in the shortlisted variant
-	console.log("This is the shortlisted_model_shortlisted_retailer_index: ", shortlisted_model_shortlisted_retailer_index);
-
+	
 
 	//We store the index of the variant in the selected_variant
 	//selected_variant is the one for which we show all the details
 	//this.selected_variant = this.mobiles[index].variants[this.shortlisted_model_index];
 
-	console.log("selected_variant is: ", this.selected_variant);
-
+	
 
 };//get_cheapest_variant function ends
 
@@ -20904,12 +20825,7 @@ Raul.prototype.get_cheapest_variant = function(){
 //Function to fetch the cheapest variant
 Raul.prototype.get_cheapest_variant_size = function(){
 
-    console.log("Inside get_cheapest_variant by size");
-
-    console.log("This is size_selector: ", this.size_selector);
-
-    console.log("This is color_selector: ", this.color_selector);
-
+    
     //Shortlisted model best price
     var shortlisted_model_best_price = 0;
 
@@ -20922,15 +20838,12 @@ Raul.prototype.get_cheapest_variant_size = function(){
     //To determine the first iteration of the loop
     var setting_flag = false;
 
-    console.log("This is mobile: ", this.mobile);
-    console.log("This is mobile variants: ", this.mobile.variants);
-
+    
     this.mobile.variants.forEach(identify_cheapest_variant.bind(this));
 
     function identify_cheapest_variant(element, index, array){
 
-        console.log("This is the index: ", index);
-
+       
         element.product_retailers.forEach(identify_cheapest_retailer.bind(this));
 
         function identify_cheapest_retailer(element_inner,index_inner,array){
@@ -20939,17 +20852,14 @@ Raul.prototype.get_cheapest_variant_size = function(){
 
                 if(setting_flag === false){
 
-                    console.log("Inside setting_flag: ", setting_flag);
-
+                    
                     shortlisted_model_index = index;
 
-                    console.log("cheapest_model_index set: ", index);
 
                     shortlisted_model_best_price = element_inner.product_pricing.special_price; 
 
                     shortlisted_model_shortlisted_retailer_index = index_inner;
 
-                    console.log("cheapest_model_price set: ", element_inner.product_pricing.special_price);
 
                     setting_flag = true;
 
@@ -20963,8 +20873,7 @@ Raul.prototype.get_cheapest_variant_size = function(){
                         shortlisted_model_best_price = element_inner.product_pricing.special_price;
                         shortlisted_model_shortlisted_retailer_index = index_inner;
 
-                        console.log("Resetting cheapest_model_index: ", shortlisted_model_index);
-                        console.log("Resetting cheapest_model_price: ", shortlisted_model_best_price);
+             
                     }
 
                 }
@@ -20983,32 +20892,18 @@ Raul.prototype.get_cheapest_variant_size = function(){
 
     this.selected_variant = this.mobile.variants[shortlisted_model_index];
 
-    //Best price of the shortlisted variant
-    console.log("This is the shortlisted model best price: ", shortlisted_model_best_price);
-
-    //Index of the shortlisted variant
-    console.log("This is the shortlisted_model_index: ", shortlisted_model_index);
-
-    //Index of the shortlisted retailer in the shortlisted variant
-    console.log("This is the shortlisted_model_shortlisted_retailer_index: ", shortlisted_model_shortlisted_retailer_index);
-
+    
 
     //We store the index of the variant in the selected_variant
     //selected_variant is the one for which we show all the details
     //this.selected_variant = this.mobiles[index].variants[this.shortlisted_model_index];
 
-    console.log("selected_variant is: ", this.selected_variant);
-
+   
 
 };//get_cheapest_variant function ends
 
 Raul.prototype.get_cheapest_variant_size_color = function(){
 
-    console.log("Inside get_cheapest_variant by color");
-
-    console.log("This is size_selector: ", this.size_selector);
-
-    console.log("This is color_selector: ", this.color_selector);
 
     //Shortlisted model best price
     var shortlisted_model_best_price = 0;
@@ -21022,14 +20917,11 @@ Raul.prototype.get_cheapest_variant_size_color = function(){
     //To determine the first iteration of the loop
     var setting_flag = false;
 
-    console.log("This is mobiles: ", this.mobile);
-    console.log("This is mobiles variants: ", this.mobile.variants);
 
     this.mobile.variants.forEach(identify_cheapest_variant.bind(this));
 
     function identify_cheapest_variant(element, index, array){
 
-        console.log("This is the index: ", index);
 
         element.product_retailers.forEach(identify_cheapest_retailer.bind(this));
 
@@ -21039,17 +20931,14 @@ Raul.prototype.get_cheapest_variant_size_color = function(){
 
                 if(setting_flag === false){
 
-                    console.log("Inside setting_flag: ", setting_flag);
 
                     shortlisted_model_index = index;
 
-                    console.log("cheapest_model_index set: ", index);
 
                     shortlisted_model_best_price = element_inner.product_pricing.special_price; 
 
                     shortlisted_model_shortlisted_retailer_index = index_inner;
 
-                    console.log("cheapest_model_price set: ", element_inner.product_pricing.special_price);
 
                     setting_flag = true;
 
@@ -21063,8 +20952,6 @@ Raul.prototype.get_cheapest_variant_size_color = function(){
                         shortlisted_model_best_price = element_inner.product_pricing.special_price;
                         shortlisted_model_shortlisted_retailer_index = index_inner;
 
-                        console.log("Resetting cheapest_model_index: ", shortlisted_model_index);
-                        console.log("Resetting cheapest_model_price: ", shortlisted_model_best_price);
                     }
 
                 }
@@ -21083,14 +20970,6 @@ Raul.prototype.get_cheapest_variant_size_color = function(){
 
     this.selected_variant = this.mobile.variants[shortlisted_model_index];
 
-    //Best price of the shortlisted variant
-    console.log("This is the shortlisted model best price: ", shortlisted_model_best_price);
-
-    //Index of the shortlisted variant
-    console.log("This is the shortlisted_model_index: ", shortlisted_model_index);
-
-    //Index of the shortlisted retailer in the shortlisted variant
-    console.log("This is the shortlisted_model_shortlisted_retailer_index: ", shortlisted_model_shortlisted_retailer_index);
 
 
     //We store the index of the variant in the selected_variant
@@ -21105,7 +20984,6 @@ Raul.prototype.get_cheapest_variant_size_color = function(){
 
 Raul.prototype.get_rating = function() {
 
-    console.log("Inside the get_rating function to fetch the rating_val, rating_count and reviews_count");
 
     this.rating = this.selected_variant.product_retailers[this.shortlisted_model_shortlisted_retailer_index].product_rating.rating_val;
 
@@ -21294,8 +21172,7 @@ Raul.prototype.get_title = function() {
         this.title = this.selected_variant.product_basic_info.normalized_name;
     }
 
-    console.log("This is the title: ", this.title);
-
+ 
     //var title = this.selected_variant.product_basic_info.normalized_name + " (" + this.selected_variant.general_specifications.model_color + ", " + this.selected_variant.memory_storage.internal_storage + ")";
     //return title;
 
@@ -21366,7 +21243,7 @@ Raul.prototype.get_features = function() {
 
 
             var total_case = ram_case + processor_case + processor_core_case;
-            console.log("This is total_case: ", total_case);
+
             //possible values of total_case
             //1
             //3
@@ -21409,7 +21286,6 @@ Raul.prototype.get_features = function() {
 
     }
 
-    console.log("This is features: ", this.features);
 
 } //get_features function ends
 
@@ -21420,9 +21296,6 @@ Raul.prototype.get_memory_variants = function() {
 
         this.memory_variants = [];
 
-        console.log("This is memory_variants array: ", this.memory_variants);
-
-        console.log(Array.isArray(this.memory_variants));
 
         //Looping through all the memory variants
         this.mobile.variants.forEach(generate.bind(this));
@@ -21444,7 +21317,7 @@ Raul.prototype.get_memory_variants = function() {
 
         }
 
-        console.log("This is the memory_variants array: ", this.memory_variants);
+
 
 } //get_memory_variants function ends
 
@@ -21453,8 +21326,7 @@ Raul.prototype.get_memory_variants = function() {
 //Store all the memory_variants in this.color_variants
 Raul.prototype.get_color_variants = function() {
 
-        console.log("Generating color variants: ");
-
+        
 
 
         this.color_variants = [];
@@ -21486,7 +21358,7 @@ Raul.prototype.get_color_variants = function() {
 
         this.color_variants = this.color_variants.sort();
 
-        console.log("This is the color_variants array: ", this.color_variants);
+        
 
 } //get_color_variants function ends
 
@@ -21494,7 +21366,7 @@ Raul.prototype.get_color_variants = function() {
 Raul.prototype.get_cheapest_retailer = function() {
 
         this.shortlisted_model_shortlisted_retailer = this.selected_variant.product_retailers[this.shortlisted_model_shortlisted_retailer_index].retailer_description.retailer_name;
-        console.log("This is the shortlisted_model_shortlisted_retailer: ", this.shortlisted_model_shortlisted_retailer);
+        
 
 } //get_cheapest_retailer function ends
 
@@ -21512,14 +21384,14 @@ Raul.prototype.get_other_retailers = function() {
             }
         }
 
-        console.log("This is other retailers: ", this.other_retailers);
+
 
 } //get_other_retailers function ends
 
 
 Raul.prototype.create_product_context = function() {
 
-    console.log("Inside create_product_context: ", this.query_status);
+
 
     //Create the context object to display the product element
 
@@ -21552,7 +21424,7 @@ Raul.prototype.create_product_context = function() {
 
 Raul.prototype.create_summary_product_context = function() {
 
-    console.log("Inside create_summary_product_context: ", this.query_status);
+
 
     //Create the context object to display the product element
 
@@ -21570,11 +21442,6 @@ Raul.prototype.create_summary_product_context = function() {
 } //create_product_context function ends
 function reload_product(raul){
 
-	console.log("We need to create a specifications element again");
-
-	//First we need to check the query_status to determine
-	//which chat element to build
-	console.log("This is the list of mobiles received from the backend: ", raul.mobile);
 	
 	raul.case_special_product();
 	//Found the selected variant
@@ -21615,10 +21482,7 @@ function reload_product(raul){
     //Create the product context object
     raul.create_product_context();
 
-    //raul is the object for each mobile in Zlatan
-    console.log("This is raul: ", raul);
 
-    console.log("template selected for reload case");
     var template = $('#handlebars-carousel-item').html();
 
     // Compile the template data into a function
@@ -21636,8 +21500,7 @@ function reload_product(raul){
 //Function to create the request and get the reply
 function hellovinciai(msg) {
 
-    console.log("Script is loaded");
-
+    
     setTimeout(function() {
         $('.chat__messages').
         append(`<div class="message message_vinci is--typing">
@@ -21681,9 +21544,7 @@ function hellovinciai(msg) {
         $('.is--typing').
         remove();
 
-        console.log("This is the reply from the API", reply_received);
 
-        console.log("This is batman: ", reply_received.batman);
 
         //There are 3 reply cases
         //1. Batman true and API status code 200 (means some phone related element)
@@ -21749,11 +21610,10 @@ function hellovinciai(msg) {
 } // function askapiai ends
 function specifications_request(zlatan){
 
-	console.log("We need to create a specifications element");
 
 	//First we need to check the query_status to determine
 	//which chat element to build
-	console.log("This is the list of mobiles received from the backend: ", zlatan.mobiles);
+
 
 	zlatan.mobiles.forEach(create_product);
 
@@ -21765,9 +21625,6 @@ function specifications_request(zlatan){
 
         raul.set_id();
 
-        console.log("This is raul for the mobile number: ", index);
-
-        console.log("This is raul: ", raul);
 
         raul.case_special_product();
 
@@ -21810,7 +21667,6 @@ function specifications_request(zlatan){
         raul.create_product_context();
 
         //raul is the object for each mobile in Zlatan
-        console.log("This is raul: ", raul);
 
         zlatan.mobiles_processed.push(raul);
 
@@ -21821,7 +21677,6 @@ function specifications_request(zlatan){
 
         mobiles_requested.push(mobiles_received);
 
-        console.log("This is the mobiles_requested array: ", mobiles_requested);
 
 
 
@@ -21830,7 +21685,6 @@ function specifications_request(zlatan){
 
 	}
 
-	console.log("This is zlatan: ", zlatan);
 
 	zlatan.mobiles_processed.forEach(get_context);
 
@@ -21845,12 +21699,10 @@ function specifications_request(zlatan){
 }
 function specifications_summary_request(zlatan){
 
-	console.log("We need to create a specifications summary element");
-
+	
 	//First we need to check the query_status to determine
 	//which chat element to build
-	console.log("This is the list of mobiles received from the backend: ", zlatan.mobiles);
-
+	
 	zlatan.mobiles.forEach(create_product);
 
 	function create_product(element, index, array){
@@ -21859,9 +21711,6 @@ function specifications_summary_request(zlatan){
 
 		raul.set_id();
 
-        console.log("This is raul for the mobile number: ", index);
-
-        console.log("This is raul: ", raul);
 
 		raul.case_special_product();
 
@@ -21889,7 +21738,6 @@ function specifications_summary_request(zlatan){
 
         mobiles_requested.push(mobiles_received);
 
-        console.log("This is the mobiles_requested array: ", mobiles_requested);
 
 
 	}
@@ -21909,12 +21757,10 @@ function specifications_summary_request(zlatan){
 }
 function tag_related_question(zlatan, buffon){
 
-	console.log("We need to create a reply for tag_related_question");
-
+	
 	//First we need to check the query_status to determine
 	//which chat element to build
-	console.log("This is the list of mobiles received from the backend: ", zlatan.mobiles);
-
+	
 
     for (var j = 0; j < zlatan.mobiles.length; j++){
     
@@ -21989,13 +21835,7 @@ function tag_related_question(zlatan, buffon){
 
 
 
-        console.log("These are the general true tags: ", tags_general_true);
 
-        console.log("These are the general false tags: ", tags_general_false);
-
-        console.log("These are the functionality true tags: ", tags_functionality_true);
-
-        console.log("These are the functionality false tags: ", tags_functionality_false);
 
         var tags_general_reply;
 
@@ -22037,11 +21877,7 @@ function tag_related_question(zlatan, buffon){
 
         }
 
-        console.log("This is tags_general_reply: ", tags_general_reply);
 
-        console.log("This is tags_functionality_reply_true: ", tags_functionality_reply_true);
-
-        console.log("This is tags_functionality_reply_false: ", tags_functionality_reply_false);
 
         function add_to_display(reply_text, buffon){
 
@@ -22074,16 +21910,16 @@ function tag_related_question(zlatan, buffon){
 }
 function update_all_discussed_list(all_discussed_list){
 
-	console.log("This is all_discussed_list on the frontend: ", all_discussed_list);
+
 
 	localStorage.setItem("all_discussed_list", JSON.stringify(all_discussed_list));
 
-	console.log("Updated localStorage all_discussed_list");
+
 
 }
 function Zlatan (mobiles) {
 
-    console.log("Zlatan is on the pitch");
+
 
     //Query status
     this.mobiles = mobiles;
@@ -22113,10 +21949,10 @@ function get_more(event) {
     var query = more_button.attr("data-query");
 
     var skip = Number(more_button.attr("data-skip"));
-    console.log("query ",query)
+    
     $.post("/get_more", { query: query, skip: skip }, function (mobiles) {
 
-        console.log(mobiles)
+        
         //This constructor is meant for the query_status
         //Beckham only does query routing and calls the necessary functions to create the request
         var beckham = new Beckham(300);

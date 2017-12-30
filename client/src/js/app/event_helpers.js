@@ -1,8 +1,6 @@
 //This function helps capture the click on the memmory variant
 function fetch_variant(event) {
-    console.log("Inside fetch_variant");
-    console.log("This is the event object: ", event);
-    console.log("This is the new size selected: ", event.firstElementChild.innerText);
+   
 
     //variable to store the id of the element
     var element_id;
@@ -10,11 +8,11 @@ function fetch_variant(event) {
     //clicked element
     var clicked_element = ($(event).parents('.message__item_view-full'));
 
-    console.log(clicked_element[0].id);
+    
 
     element_id = clicked_element[0].id;
 
-    console.log("This is mobiles_requested: ", mobiles_requested);
+    
 
     //Count of the mobile amongst mobiles_requested
     var mobile_count;
@@ -24,12 +22,11 @@ function fetch_variant(event) {
 
     function find_selected_mobile(mobile, index, array) {
 
-        console.log("This clicked_element id: ", element_id);
-        console.log("Inside find_selected_id: ", mobile);
+        
 
         if (parseInt(mobile.id) === parseInt(element_id)) {
 
-            console.log("Elements matched:");
+        
 
             mobile_count = index;
 
@@ -38,12 +35,12 @@ function fetch_variant(event) {
 
     }
 
-    console.log("This is the matching mobile: ", mobile_count);
+    
 
     //Found the zlatan object for the requested mobile
     var raul = mobiles_requested[mobile_count].raul;
 
-    console.log("This is the raul object: ", raul);
+    
 
     raul.size_selector = event.firstElementChild.innerText;
 
@@ -51,16 +48,14 @@ function fetch_variant(event) {
 
     reload_product(raul);
 
-    console.log("This is the zlatan object again: ", mobiles_requested[mobile_count].zlatan);
+    
 
 }
 
 
 //This function helps capture the click on the memmory variant
 function fetch_variant_by_color(event) {
-    console.log("Inside fetch_variant_by_color");
-    console.log("This is the event object: ", event);
-    console.log("This is the new color selected: ", event.getElementsByClassName('color')[0].innerText);
+    
 
     //variable to store the id of the element
     var element_id;
@@ -68,11 +63,11 @@ function fetch_variant_by_color(event) {
     //clicked element
     var clicked_element = ($(event).parents('.message__item_view-full'));
 
-    console.log(clicked_element[0].id);
+    
 
     element_id = clicked_element[0].id;
 
-    console.log("This is mobiles_requested: ", mobiles_requested);
+    
 
     //Count of the mobile amongst mobiles_requested
     var mobile_count;
@@ -82,12 +77,11 @@ function fetch_variant_by_color(event) {
 
     function find_selected_mobile(mobile, index, array) {
 
-        console.log("This clicked_element id: ", element_id);
-        console.log("Inside find_selected_id: ", mobile);
+        
 
         if (parseInt(mobile.id) === parseInt(element_id)) {
 
-            console.log("Elements matched:");
+        
 
             mobile_count = index;
 
@@ -96,12 +90,10 @@ function fetch_variant_by_color(event) {
 
     }
 
-    console.log("This is the matching mobile: ", mobile_count);
 
     //Found the zlatan object for the requested mobile
     var raul = mobiles_requested[mobile_count].raul;
 
-    console.log("This is the raul object: ", raul);
 
     raul.color_selector = event.getElementsByClassName('color')[0].innerText;
 
@@ -109,13 +101,11 @@ function fetch_variant_by_color(event) {
         raul.size_selector = raul.selected_variant.memory_storage.internal_storage;
     }
 
-    console.log("This is the raul color_selector: ", raul.color_selector);
 
     raul.load_status = 2;
 
     reload_product(raul);
 
-    console.log("This is the zlatan object again: ", mobiles_requested[mobile_count].zlatan);
 
 }
 
@@ -124,7 +114,7 @@ function fetch_variant_by_color(event) {
 function suggestions_click(event) {
 
     var text = event.target.innerText;
-    console.log("This is the text clicked on suggestions_click: ", text);
+ 
 
     var input_field = document.getElementsByClassName('chatbot--input');
 
@@ -226,7 +216,6 @@ function start_speech() {
 
             setTimeout(function () {
 
-                console.log("This is the event object: ", e);
 
                 var speech_overlay = document.getElementById('speech_overlay');
 
@@ -259,9 +248,8 @@ function start_speech() {
             setTimeout(function () {
 
                 var send_btn = document.getElementById('send_chat');
-                console.log("Before click");
                 send_btn.click();
-                console.log("After click");
+
             }, 90);
 
 
@@ -296,7 +284,6 @@ function close_speech_modal() {
 //Deprecated
 function demo_yes() {
 
-    console.log("Demo yes clicked");
 
     var tts = "Perfect...";
     speak_message(tts);
@@ -311,7 +298,6 @@ function demo_yes() {
 //Deprecated
 function demo_no() {
 
-    console.log("Demo no clicked");
 
     var tts = "Ok..that's fine. May be next time.";
     speak_message(tts);
@@ -331,14 +317,12 @@ function speak_message(tts) {
 //Deprecated
 function begin_demo() {
 
-    console.log("This function is Deprecated");
+   
 }
 
 function send_question(event) {
 
-    console.log("This is event target: ", event.target);
-    console.log("This is event target innerText: ", event.target.innerText);
-
+    
     if(event.target.innerText !== "undefined" || event.target.innerText !== "null"){
 
         var input_field = document.getElementsByClassName('send__input');
@@ -352,9 +336,7 @@ function send_question(event) {
 
 function get_specifications_full(event) {
 
-    console.log("This is event target: ", event.target);
-    console.log("This is event target innerText: ", event.target.innerText);
-
+   
 
     if(event.target !== "undefined" || event.target !== "null"){
 
@@ -385,9 +367,7 @@ function get_specifications_full(event) {
 
 function capture_value_and_hide(event) {
 
-    console.log("This is event target: ", event.target);
-    console.log("This is event target innerText: ", event.target.innerText);
-
+  
     var input_field = document.getElementsByClassName('send__input');
     input_field[0].value = event.target.innerText;
 
@@ -407,10 +387,6 @@ function react(event, reaction, normalized_name) {
         save_reaction(reaction, normalized_name);
         $.post("/product/update_reactions", { reaction: reaction, normalized_name: normalized_name, increment: true }, function (res) {
 
-            console.log("response ", res)
-            
-            console.log("reacting ", event, reaction)
-            console.log("next ", $(event.target).parent().next())
 
             $(event.target).parent().next().html(parseFloat($(event.target).parent().next().html()) + 1 || 1)
         })
@@ -443,7 +419,6 @@ function react(event, reaction, normalized_name) {
 
             // adding the new reaction
             $.post("/product/update_reactions", { reaction: reaction, normalized_name: normalized_name, increment: true }, function (res) {
-                console.log("response ", res)
                
                     $(event.target).parent().next().html(parseFloat($(event.target).parent().next().html()) + 1 || 1)
              

@@ -31,14 +31,14 @@ $(document).ready(function () {
   // });
 
   $('.send__input').on('input keyup', function() {
-      console.log("Auto complete request triggered. Show the auto complete helper");
+      
       var input = $('.send__input');
       send_auto_complete_request(input[0].value);
       // $('.helpers').delay(200).show();
   });
 
   $(".send__input").focusout(function(){
-      console.log("Send input focusout. Hide auto complete")
+      
       $('.helpers').hide(200);
   });
 

@@ -1,6 +1,6 @@
 function Messi (mobile) {
 
-    console.log("Messi is on the pitch");
+    
 
     //Mobile
     this.mobile = mobile;
@@ -14,7 +14,7 @@ function Messi (mobile) {
 //Function to set the ID
 Messi.prototype.loop_attributes = function() {
 
-    console.log("Inside set_id");
+    
 
     this.mobile.attribute_requested.forEach(generate_reply_json.bind(this));
 
@@ -95,7 +95,7 @@ Messi.prototype.loop_attributes = function() {
 
 Messi.prototype.camera_reply = function(){
 
-    console.log("This is the camera value: ",this.mobile.variants[0].camera.primary_camera_pixels);
+    
 
     var attribute_first = {};
     var attribute_second = {};
@@ -144,7 +144,7 @@ Messi.prototype.camera_reply = function(){
 
 
 
-    console.log("Attributes created")
+
 
     this.context_detailed.push(attribute_fourth);
     this.context_detailed.push(attribute_fifth);
@@ -160,7 +160,7 @@ Messi.prototype.camera_reply = function(){
 }
 
 Messi.prototype.colors_reply = function(){
-    console.log("This is the color variant: ",this.mobile.variants[0].general_specifications.model_color);
+    
 
     var colors_array = [];
 
@@ -176,7 +176,7 @@ Messi.prototype.colors_reply = function(){
 
     colors_array = _.uniq(colors_array);
 
-    console.log("This is the colors_array: ", colors_array);
+    
 
     var reply = {};
 
@@ -198,7 +198,7 @@ Messi.prototype.colors_reply = function(){
 
 Messi.prototype.battery_reply = function(){
 
-    console.log("This is the battery power: ",this.mobile.variants[0].battery_power.battery_capacity);
+    
 
     var attribute_first = {};
     var attribute_second = {};
@@ -224,20 +224,20 @@ Messi.prototype.battery_reply = function(){
 
     };
 
-    console.log("Attributes created")
+    
 
     this.context_detailed.push(attribute_first);
     this.context_detailed.push(attribute_second);
     this.context_detailed.push(attribute_third);
 
    
-    console.log("Attributes attribute_package created");
+    
 
 }
 
 Messi.prototype.dimensions_reply = function(){
 
-    console.log("This is the dimensions: ",this.mobile.variants[0].dimensions);
+    
 
     var attribute_first = {};
     var attribute_second = {};
@@ -263,14 +263,14 @@ Messi.prototype.dimensions_reply = function(){
 
     };
 
-    console.log("Attributes created")
+    
 
     this.context_detailed.push(attribute_first);
     this.context_detailed.push(attribute_second);
     this.context_detailed.push(attribute_third);
 
    
-    console.log("Attributes attribute_package created");
+    
 
 }
 
@@ -279,7 +279,7 @@ Messi.prototype.dimensions_reply = function(){
 
 Messi.prototype.processor_reply = function(){
 
-    //console.log("This is the battery power: ",this.mobiles[0].variants[0].battery_power.battery_capacity);
+    
 
     var attribute_first = {};
     var attribute_second = {};
@@ -304,7 +304,7 @@ Messi.prototype.processor_reply = function(){
         icon: "ion-speedometer"
     };
 
-    console.log("Attributes created")
+    
 
     
     this.context_detailed.push(attribute_first);
@@ -312,7 +312,7 @@ Messi.prototype.processor_reply = function(){
     this.context_detailed.push(attribute_third);
 
   
-    console.log("Attributes attribute_package created");
+    
 
   
 }
@@ -370,7 +370,7 @@ Messi.prototype.sim_features_reply = function(){
         icon: "ion-backspace-outline"
     };
 
-    console.log("Attributes created")
+    
 
     
     this.context_detailed.push(attribute_first);
@@ -419,7 +419,7 @@ Messi.prototype.sensors_reply = function(){
 }
 
 Messi.prototype.storage_reply = function(){
-    console.log("This is the storage variant: ",this.mobile.variants[0].memory_storage.internal_storage);
+    
 
     var storage_array = [];
     var expandable_storage = "N/A";
@@ -439,7 +439,7 @@ Messi.prototype.storage_reply = function(){
 
     storage_array = _.uniq(storage_array);
 
-    console.log("This is the storage_array: ", storage_array);
+    
 
     var reply = {};
 
@@ -485,7 +485,7 @@ Messi.prototype.warranty_reply = function(){
 
 Messi.prototype.display_reply = function(){
 
-    console.log("This is the display: ",this.mobile.variants[0].display_specifications.display_size);
+    
 
     var attribute_first = {};
     var attribute_second = {};
@@ -530,7 +530,7 @@ Messi.prototype.display_reply = function(){
     };
 
 
-    console.log("Attributes created")
+    
 
     this.context_detailed.push(attribute_fourth);
     this.context_detailed.push(attribute_fifth);
@@ -548,7 +548,7 @@ Messi.prototype.display_reply = function(){
 
 Messi.prototype.ram_reply = function(){
 
-    // console.log("This is the storage: ",this.mobile.variants[0].memory_storage.internal_storage);
+    
 
     var attribute_first = {};
     var attribute_second = {};
@@ -567,7 +567,7 @@ Messi.prototype.ram_reply = function(){
         icon: "ion-android-folder"
     };
 
-    console.log("Attributes created")
+    
 
     this.context_detailed.push(attribute_first);
     this.context_detailed.push(attribute_second);

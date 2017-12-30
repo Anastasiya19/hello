@@ -3,7 +3,7 @@ function batman_false(reply_received) {
     if (reply_received.batman === "false") {
 
 
-        console.log("Inside false batman");
+       
 
         var text_reply = reply_received.web_reply.speech;
         $('.chat__messages')

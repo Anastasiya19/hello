@@ -1,7 +1,6 @@
 function beckham_router(beckham, zlatan, buffon) {
 
-    console.log("Inside beckham_router");
-
+    
     //First we need to check the query_status to determine
     //which chat element to build
 
@@ -26,7 +25,7 @@ function beckham_router(beckham, zlatan, buffon) {
 
         // beckham.build_specifications_element(zlatan);
 
-        console.log("phones formatted ", zlatan)
+        
     }
 
     //Tested - Working correctly
@@ -34,8 +33,7 @@ function beckham_router(beckham, zlatan, buffon) {
     //Specifications
     if (beckham.query_status === 100) {
 
-        console.log("Getting ready to create the product element");
-
+        
         beckham.check_tag_related_question(zlatan, buffon);
 
         beckham.build_text_reply_element(buffon);
@@ -49,7 +47,7 @@ function beckham_router(beckham, zlatan, buffon) {
     if (beckham.query_status === 101) {
 
         //Need to build the product and the attributes element
-        console.log("Price and other attributes requested");
+        
 
         beckham.check_tag_related_question(zlatan, buffon);
 
@@ -66,7 +64,7 @@ function beckham_router(beckham, zlatan, buffon) {
     if (beckham.query_status === 102) {
 
         //Need to build the attributes element
-        console.log("Only attributes requested");
+        
 
         beckham.check_tag_related_question(zlatan, buffon);
 
@@ -87,7 +85,7 @@ function beckham_router(beckham, zlatan, buffon) {
         beckham.build_comparison_element(zlatan, 200);
 
         //Need to build the comparison element
-        console.log("Let's get the comparison started: Yaaay");
+        
 
 
 
@@ -97,7 +95,7 @@ function beckham_router(beckham, zlatan, buffon) {
     //Comparison of price and other attributes of 2 phones
     if (beckham.query_status === 201) {
         //Price and other attributes for comparison
-        console.log("Yeah right... price and other attributes for comparison");
+        
 
         beckham.build_text_reply_element(buffon);
 
@@ -113,7 +111,7 @@ function beckham_router(beckham, zlatan, buffon) {
 
         beckham.build_text_reply_element(buffon);
         //Specific attributes for comparison
-        console.log("Yeah right...only attributes for comparison");
+        
         beckham.build_comparison_element(zlatan, 202);
 
         // get_comparison_attributes(zlatan);
@@ -125,7 +123,7 @@ function beckham_router(beckham, zlatan, buffon) {
 
         beckham.build_text_reply_element(buffon);
         //Price for comparison. Corresponds to a product element
-        console.log("Yeah right...only price for comparison");
+        
 
         beckham.build_specifications_element(zlatan);
 
@@ -138,13 +136,11 @@ function beckham_router(beckham, zlatan, buffon) {
         beckham.build_text_reply_element(buffon);
 
         //Need to build the comparison element
-        console.log("Let's get the comparison started: Yaaay");
-
-        console.log("This is zlatan before correction: ", zlatan);
+        
 
         beckham.correct_mobiles_array(zlatan, 200);
 
-        console.log("This is corrected zlatan: ", zlatan);
+        
 
         beckham.build_comparison_element(zlatan, 200);
 
@@ -157,13 +153,10 @@ function beckham_router(beckham, zlatan, buffon) {
         beckham.build_text_reply_element(buffon);
 
         //Only attributes for comparison
-        console.log("Yeah right...only attributes for comparison");
-
-        console.log("This is zlatan before correction: ", zlatan);
-
+        
         beckham.correct_mobiles_array(zlatan, 202);
 
-        console.log("This is corrected zlatan: ", zlatan);
+        
 
         beckham.build_comparison_element(zlatan, 202);
 
@@ -185,7 +178,7 @@ function beckham_router(beckham, zlatan, buffon) {
     if (beckham.query_status === 400) {
 
         beckham.build_text_reply_element(buffon);
-        console.log("you've reached a review element >>>>>>>>>>>>")
+        
         //Need to build the review element
         beckham.build_text_review_element(zlatan);
 

@@ -1,5 +1,5 @@
 function Beckham (query_status) {
-  console.log('Beckham is on the pitch')
+  
 
   // Query status
   this.query_status = query_status
@@ -49,7 +49,7 @@ Beckham.prototype.build_specifications_summary_element = function (zlatan) {
   // This function creates the context for each mobile in the zlatan object.
   // It creates Raul constructor for each mobile which just gives the context object for each mobile
   // All context objects are stored in the zlatan.contexts which is then passed for compilation
-  console.log("This is zlatan inside build_specifications_summary_element: ", zlatan);
+  
 
   specifications_summary_request(zlatan);
 
@@ -99,21 +99,21 @@ Beckham.prototype.build_attributes_element = function (zlatan) {
 }
 
 Beckham.prototype.build_attributes_detailed_element = function (zlatan) {
-  console.log('This is zlatan contexts_attributes_detailed: ', zlatan.contexts_attributes_detailed)
+  
 
   if (zlatan.contexts_attributes_detailed.length > 0) {
     zlatan.contexts_attributes_detailed.forEach(create_html)
 
     function create_html (element, index, array) {
       this.template = $('#handlebars-case-104').html()
-      console.log('This is the template: ', this.template)
+      
 
       // Compile the template data into a function
       this.templateScript = Handlebars.compile(this.template)
-      console.log('This is the templateScript: ', this.templateScript)
+      
 
       this.html = this.templateScript({ attribute: element })
-      console.log('This is the html: ', this.html)
+      
 
 
         // Insert the HTML code into the page
@@ -126,23 +126,23 @@ Beckham.prototype.build_attributes_detailed_element = function (zlatan) {
 }
 
 Beckham.prototype.build_attributes_summary_element = function (zlatan) {
-  console.log('This is zlatan contexts_attributes_summary: ', zlatan.contexts_attributes_summary)
+  
 
   if (zlatan.contexts_attributes_summary.length > 0) {
     zlatan.contexts_attributes_summary.forEach(create_summary_html)
 
     function create_summary_html (element, index, array) {
       this.template = $('#attributes-text-reply').html()
-      console.log('This is the template: ', this.template)
+      
 
       // Compile the template data into a function
       this.templateScript = Handlebars.compile(this.template)
-      console.log('This is the templateScript: ', this.templateScript)
+      
 
-      console.log('This goes in context: ', element)
+      
 
       this.html = this.templateScript({ attribute: element })
-      console.log('This is the html: ', this.html)
+      
 
 
         // Insert the HTML code into the page
@@ -195,12 +195,12 @@ Beckham.prototype.correct_mobiles_array = function (zlatan, query_status) {
 }
 
 Beckham.prototype.build_video_review_element = function (zlatan) {
-  console.log('case video ')
+  
 
   get_video(zlatan)
 
   this.template = $('#handlebars-case-120').html()
-  console.log('template ', this.template)
+  
   // Compile the template data into a function
   this.templateScript = Handlebars.compile(this.template)
 
@@ -211,7 +211,7 @@ Beckham.prototype.build_video_review_element = function (zlatan) {
     // Insert the HTML code into the page
     $('.chat__messages').append(this.html)
 
-    console.log('html', this.html)
+    
     init_specifications($('.chat__messages').children().last())
 
     this.scroll_into_view()
@@ -221,7 +221,7 @@ Beckham.prototype.build_video_review_element = function (zlatan) {
 }
 
 Beckham.prototype.build_text_review_element = function (zlatan) {
-  console.log('case text review  ')
+  
 
   reduce_to_pairs = (accumulator, currentValue, index) => {
     // console.log(accumulator)
@@ -240,7 +240,7 @@ Beckham.prototype.build_text_review_element = function (zlatan) {
   zlatan.context = {reviews_pairs: reviews_pairs}
 
   this.template = $('#handlebars-case-400').html()
-  console.log('template ', this.template)
+  
   // Compile the template data into a function
   this.templateScript = Handlebars.compile(this.template)
 
@@ -248,7 +248,7 @@ Beckham.prototype.build_text_review_element = function (zlatan) {
 
   // Insert the HTML code into the page
   $('.chat__messages').append(this.html)
-  console.log('html', this.html)
+  
   init_specifications($('.chat__messages').children().last())
   init_owl()
   this.scroll_into_view()
@@ -274,17 +274,17 @@ Beckham.prototype.build_text_reply_element = function (buffon) {
   // Compile the template data into a function
   this.templateScript = Handlebars.compile(this.template)
 
-  console.log('This is displayText inside build_text_reply_element: ', buffon.displayText)
+  
 
   var context = {
     text: buffon.displayText
   }
 
-  console.log('This is context: ', context)
+  
 
   this.html = this.templateScript(context)
 
-  console.log('This is the html generated: ', this.html)
+  
 
   // Insert the HTML code into the page
   $('.chat__messages').append(this.html)
@@ -319,25 +319,21 @@ Beckham.prototype.scroll_into_view = function () {
 
   // var scroll_element = document.getElementById('mCSB_1_dragger_vertical');
 
-  // console.log("Scroll element top before appending ", scroll_element.style.top);
-
-  // console.log("Scroll element height ", scroll_element.style["height"]);
-
-  // console.log("Scroll element max-height ", scroll_element.style["max-height"]);
+  
 
   // var scroll_value = parseInt(scroll_element.style.top) - parseInt(scroll_element.style["height"]) + 15;
 
   // scroll_element.style.top = scroll_value + "px";
 
   var a = document.getElementsByClassName('chat__messages')
-  console.log('This is a:' , a)
+  
 
   var b = a[0].getElementsByClassName('message_sender')
-  console.log('This is b: ', b)
+  
 
   var element_count = b.length - 1
-  console.log('This is element_count: ', element_count)
+  
 
   b[element_count].scrollIntoView({behavior: "smooth"})
-  console.log('Scrolled into view')
+  
 }

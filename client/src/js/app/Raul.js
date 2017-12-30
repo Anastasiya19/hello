@@ -1,7 +1,6 @@
 function Raul (mobile, load_status) {
 
-    console.log("Raul is on the pitch");
-
+    
     //Mobile
     this.mobile = mobile;
 
@@ -55,8 +54,7 @@ function Raul (mobile, load_status) {
 //Function to set the ID
 Raul.prototype.set_id = function() {
 
-    console.log("Inside set_id");
-
+    
     this.request_id = Date.now();
 
 }
@@ -66,8 +64,7 @@ Raul.prototype.set_id = function() {
 //This means that we need to build the special_product chat element
 Raul.prototype.case_special_product = function() {
 
-    console.log("Inside case_special_product");
-
+    
     //If it is a new request, we need to find the cheapest variant
     //amongst all the mobiles sent by the DB
     //The get_cheapest_variant function will find the cheapest variant amongst all the variants
@@ -98,8 +95,7 @@ Raul.prototype.case_special_product = function() {
 //Function to fetch the cheapest variant
 Raul.prototype.get_cheapest_variant = function(){
 
-	console.log("Inside get_cheapest_variant");
-
+	
 	//Shortlisted model best price
 	var shortlisted_model_best_price = 0;
 
@@ -118,9 +114,7 @@ Raul.prototype.get_cheapest_variant = function(){
     //Function called on each variant of the mobile to identify the cheapest variant
 	function identify_cheapest_variant(element, index, array){
 
-        console.log("This is element: ", element);
 
-		console.log("This is the index: ", index);
 
 		//Call the identify cheapest retailer function for each retailer in the product retailers array
 		element.product_retailers.forEach(identify_cheapest_retailer.bind(this));
@@ -128,29 +122,26 @@ Raul.prototype.get_cheapest_variant = function(){
 
 		function identify_cheapest_retailer(element_inner,index_inner,array){
 
-            console.log("This is element_inner: ", element_inner);
+
 
 			//To make sure that the product price is not set to 0
 			if(element_inner.product_pricing.special_price > 0){
 
 				if(setting_flag === false){
 
-					console.log("Inside setting_flag: ", setting_flag);
 
 					//Allocating the index to shortlisted_model_index as 
 					//it is the 1st iteration of the loop
 					shortlisted_model_index = index;
 
-					console.log("cheapest_model_index set: ", index);
-
+					
 					//Allocating the special_price to the shortlisted_model_best_price
 					shortlisted_model_best_price = element_inner.product_pricing.special_price;	
 
 					//Allocating the index_inner to the shortlisted model retailer index
 					shortlisted_model_shortlisted_retailer_index = index_inner;
 
-					console.log("cheapest_model_price set: ", element_inner.product_pricing.special_price);
-
+					
 					//Changing the setting flag to true as the first iteration is done
 					setting_flag = true;
 
@@ -171,8 +162,7 @@ Raul.prototype.get_cheapest_variant = function(){
 						shortlisted_model_best_price = element_inner.product_pricing.special_price;
 						shortlisted_model_shortlisted_retailer_index = index_inner;
 
-						console.log("Resetting cheapest_model_index: ", shortlisted_model_index);
-						console.log("Resetting cheapest_model_price: ", shortlisted_model_best_price);
+						
 					}
 
 				}
@@ -191,22 +181,13 @@ Raul.prototype.get_cheapest_variant = function(){
 
 	this.selected_variant = this.mobile.variants[shortlisted_model_index];
 
-	//Best price of the shortlisted variant
-	console.log("This is the shortlisted model best price: ", shortlisted_model_best_price);
-
-	//Index of the shortlisted variant
-	console.log("This is the shortlisted_model_index: ", shortlisted_model_index);
-
-	//Index of the shortlisted retailer in the shortlisted variant
-	console.log("This is the shortlisted_model_shortlisted_retailer_index: ", shortlisted_model_shortlisted_retailer_index);
-
+	
 
 	//We store the index of the variant in the selected_variant
 	//selected_variant is the one for which we show all the details
 	//this.selected_variant = this.mobiles[index].variants[this.shortlisted_model_index];
 
-	console.log("selected_variant is: ", this.selected_variant);
-
+	
 
 };//get_cheapest_variant function ends
 
@@ -214,12 +195,7 @@ Raul.prototype.get_cheapest_variant = function(){
 //Function to fetch the cheapest variant
 Raul.prototype.get_cheapest_variant_size = function(){
 
-    console.log("Inside get_cheapest_variant by size");
-
-    console.log("This is size_selector: ", this.size_selector);
-
-    console.log("This is color_selector: ", this.color_selector);
-
+    
     //Shortlisted model best price
     var shortlisted_model_best_price = 0;
 
@@ -232,15 +208,12 @@ Raul.prototype.get_cheapest_variant_size = function(){
     //To determine the first iteration of the loop
     var setting_flag = false;
 
-    console.log("This is mobile: ", this.mobile);
-    console.log("This is mobile variants: ", this.mobile.variants);
-
+    
     this.mobile.variants.forEach(identify_cheapest_variant.bind(this));
 
     function identify_cheapest_variant(element, index, array){
 
-        console.log("This is the index: ", index);
-
+       
         element.product_retailers.forEach(identify_cheapest_retailer.bind(this));
 
         function identify_cheapest_retailer(element_inner,index_inner,array){
@@ -249,17 +222,14 @@ Raul.prototype.get_cheapest_variant_size = function(){
 
                 if(setting_flag === false){
 
-                    console.log("Inside setting_flag: ", setting_flag);
-
+                    
                     shortlisted_model_index = index;
 
-                    console.log("cheapest_model_index set: ", index);
 
                     shortlisted_model_best_price = element_inner.product_pricing.special_price; 
 
                     shortlisted_model_shortlisted_retailer_index = index_inner;
 
-                    console.log("cheapest_model_price set: ", element_inner.product_pricing.special_price);
 
                     setting_flag = true;
 
@@ -273,8 +243,7 @@ Raul.prototype.get_cheapest_variant_size = function(){
                         shortlisted_model_best_price = element_inner.product_pricing.special_price;
                         shortlisted_model_shortlisted_retailer_index = index_inner;
 
-                        console.log("Resetting cheapest_model_index: ", shortlisted_model_index);
-                        console.log("Resetting cheapest_model_price: ", shortlisted_model_best_price);
+             
                     }
 
                 }
@@ -293,32 +262,18 @@ Raul.prototype.get_cheapest_variant_size = function(){
 
     this.selected_variant = this.mobile.variants[shortlisted_model_index];
 
-    //Best price of the shortlisted variant
-    console.log("This is the shortlisted model best price: ", shortlisted_model_best_price);
-
-    //Index of the shortlisted variant
-    console.log("This is the shortlisted_model_index: ", shortlisted_model_index);
-
-    //Index of the shortlisted retailer in the shortlisted variant
-    console.log("This is the shortlisted_model_shortlisted_retailer_index: ", shortlisted_model_shortlisted_retailer_index);
-
+    
 
     //We store the index of the variant in the selected_variant
     //selected_variant is the one for which we show all the details
     //this.selected_variant = this.mobiles[index].variants[this.shortlisted_model_index];
 
-    console.log("selected_variant is: ", this.selected_variant);
-
+   
 
 };//get_cheapest_variant function ends
 
 Raul.prototype.get_cheapest_variant_size_color = function(){
 
-    console.log("Inside get_cheapest_variant by color");
-
-    console.log("This is size_selector: ", this.size_selector);
-
-    console.log("This is color_selector: ", this.color_selector);
 
     //Shortlisted model best price
     var shortlisted_model_best_price = 0;
@@ -332,14 +287,11 @@ Raul.prototype.get_cheapest_variant_size_color = function(){
     //To determine the first iteration of the loop
     var setting_flag = false;
 
-    console.log("This is mobiles: ", this.mobile);
-    console.log("This is mobiles variants: ", this.mobile.variants);
 
     this.mobile.variants.forEach(identify_cheapest_variant.bind(this));
 
     function identify_cheapest_variant(element, index, array){
 
-        console.log("This is the index: ", index);
 
         element.product_retailers.forEach(identify_cheapest_retailer.bind(this));
 
@@ -349,17 +301,14 @@ Raul.prototype.get_cheapest_variant_size_color = function(){
 
                 if(setting_flag === false){
 
-                    console.log("Inside setting_flag: ", setting_flag);
 
                     shortlisted_model_index = index;
 
-                    console.log("cheapest_model_index set: ", index);
 
                     shortlisted_model_best_price = element_inner.product_pricing.special_price; 
 
                     shortlisted_model_shortlisted_retailer_index = index_inner;
 
-                    console.log("cheapest_model_price set: ", element_inner.product_pricing.special_price);
 
                     setting_flag = true;
 
@@ -373,8 +322,6 @@ Raul.prototype.get_cheapest_variant_size_color = function(){
                         shortlisted_model_best_price = element_inner.product_pricing.special_price;
                         shortlisted_model_shortlisted_retailer_index = index_inner;
 
-                        console.log("Resetting cheapest_model_index: ", shortlisted_model_index);
-                        console.log("Resetting cheapest_model_price: ", shortlisted_model_best_price);
                     }
 
                 }
@@ -393,14 +340,6 @@ Raul.prototype.get_cheapest_variant_size_color = function(){
 
     this.selected_variant = this.mobile.variants[shortlisted_model_index];
 
-    //Best price of the shortlisted variant
-    console.log("This is the shortlisted model best price: ", shortlisted_model_best_price);
-
-    //Index of the shortlisted variant
-    console.log("This is the shortlisted_model_index: ", shortlisted_model_index);
-
-    //Index of the shortlisted retailer in the shortlisted variant
-    console.log("This is the shortlisted_model_shortlisted_retailer_index: ", shortlisted_model_shortlisted_retailer_index);
 
 
     //We store the index of the variant in the selected_variant
@@ -415,7 +354,6 @@ Raul.prototype.get_cheapest_variant_size_color = function(){
 
 Raul.prototype.get_rating = function() {
 
-    console.log("Inside the get_rating function to fetch the rating_val, rating_count and reviews_count");
 
     this.rating = this.selected_variant.product_retailers[this.shortlisted_model_shortlisted_retailer_index].product_rating.rating_val;
 
@@ -604,8 +542,7 @@ Raul.prototype.get_title = function() {
         this.title = this.selected_variant.product_basic_info.normalized_name;
     }
 
-    console.log("This is the title: ", this.title);
-
+ 
     //var title = this.selected_variant.product_basic_info.normalized_name + " (" + this.selected_variant.general_specifications.model_color + ", " + this.selected_variant.memory_storage.internal_storage + ")";
     //return title;
 
@@ -676,7 +613,7 @@ Raul.prototype.get_features = function() {
 
 
             var total_case = ram_case + processor_case + processor_core_case;
-            console.log("This is total_case: ", total_case);
+
             //possible values of total_case
             //1
             //3
@@ -719,7 +656,6 @@ Raul.prototype.get_features = function() {
 
     }
 
-    console.log("This is features: ", this.features);
 
 } //get_features function ends
 
@@ -730,9 +666,6 @@ Raul.prototype.get_memory_variants = function() {
 
         this.memory_variants = [];
 
-        console.log("This is memory_variants array: ", this.memory_variants);
-
-        console.log(Array.isArray(this.memory_variants));
 
         //Looping through all the memory variants
         this.mobile.variants.forEach(generate.bind(this));
@@ -754,7 +687,7 @@ Raul.prototype.get_memory_variants = function() {
 
         }
 
-        console.log("This is the memory_variants array: ", this.memory_variants);
+
 
 } //get_memory_variants function ends
 
@@ -763,8 +696,7 @@ Raul.prototype.get_memory_variants = function() {
 //Store all the memory_variants in this.color_variants
 Raul.prototype.get_color_variants = function() {
 
-        console.log("Generating color variants: ");
-
+        
 
 
         this.color_variants = [];
@@ -796,7 +728,7 @@ Raul.prototype.get_color_variants = function() {
 
         this.color_variants = this.color_variants.sort();
 
-        console.log("This is the color_variants array: ", this.color_variants);
+        
 
 } //get_color_variants function ends
 
@@ -804,7 +736,7 @@ Raul.prototype.get_color_variants = function() {
 Raul.prototype.get_cheapest_retailer = function() {
 
         this.shortlisted_model_shortlisted_retailer = this.selected_variant.product_retailers[this.shortlisted_model_shortlisted_retailer_index].retailer_description.retailer_name;
-        console.log("This is the shortlisted_model_shortlisted_retailer: ", this.shortlisted_model_shortlisted_retailer);
+        
 
 } //get_cheapest_retailer function ends
 
@@ -822,14 +754,14 @@ Raul.prototype.get_other_retailers = function() {
             }
         }
 
-        console.log("This is other retailers: ", this.other_retailers);
+
 
 } //get_other_retailers function ends
 
 
 Raul.prototype.create_product_context = function() {
 
-    console.log("Inside create_product_context: ", this.query_status);
+
 
     //Create the context object to display the product element
 
@@ -862,7 +794,7 @@ Raul.prototype.create_product_context = function() {
 
 Raul.prototype.create_summary_product_context = function() {
 
-    console.log("Inside create_summary_product_context: ", this.query_status);
+
 
     //Create the context object to display the product element
 

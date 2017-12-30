@@ -1,8 +1,7 @@
 //Function to create the request and get the reply
 function hellovinciai(msg) {
 
-    console.log("Script is loaded");
-
+    
     setTimeout(function() {
         $('.chat__messages').
         append(`<div class="message message_vinci is--typing">
@@ -46,9 +45,7 @@ function hellovinciai(msg) {
         $('.is--typing').
         remove();
 
-        console.log("This is the reply from the API", reply_received);
 
-        console.log("This is batman: ", reply_received.batman);
 
         //There are 3 reply cases
         //1. Batman true and API status code 200 (means some phone related element)

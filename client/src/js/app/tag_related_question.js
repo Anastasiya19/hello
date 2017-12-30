@@ -1,11 +1,9 @@
 function tag_related_question(zlatan, buffon){
 
-	console.log("We need to create a reply for tag_related_question");
-
+	
 	//First we need to check the query_status to determine
 	//which chat element to build
-	console.log("This is the list of mobiles received from the backend: ", zlatan.mobiles);
-
+	
 
     for (var j = 0; j < zlatan.mobiles.length; j++){
     
@@ -80,13 +78,7 @@ function tag_related_question(zlatan, buffon){
 
 
 
-        console.log("These are the general true tags: ", tags_general_true);
 
-        console.log("These are the general false tags: ", tags_general_false);
-
-        console.log("These are the functionality true tags: ", tags_functionality_true);
-
-        console.log("These are the functionality false tags: ", tags_functionality_false);
 
         var tags_general_reply;
 
@@ -128,11 +120,7 @@ function tag_related_question(zlatan, buffon){
 
         }
 
-        console.log("This is tags_general_reply: ", tags_general_reply);
 
-        console.log("This is tags_functionality_reply_true: ", tags_functionality_reply_true);
-
-        console.log("This is tags_functionality_reply_false: ", tags_functionality_reply_false);
 
         function add_to_display(reply_text, buffon){
 
