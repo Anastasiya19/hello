@@ -339,13 +339,19 @@ function send_question(event) {
     console.log("This is event target: ", event.target);
     console.log("This is event target innerText: ", event.target.innerText);
 
-    var input_field = document.getElementsByClassName('send__input');
-    input_field[0].value = event.target.innerText;
+    if(event.target.innerText !== "undefined" || event.target.innerText !== "null"){
 
-    var send_btn = document.getElementById('send_chat');
-    send_btn.click();
+        var input_field = document.getElementsByClassName('send__input');
+        input_field[0].value = event.target.innerText;
+
+        var send_btn = document.getElementById('send_chat');
+        send_btn.click();    
+    }
 
 }
+
+
+
 
 function capture_value_and_hide(event) {
 
