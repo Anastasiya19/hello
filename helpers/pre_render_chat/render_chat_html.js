@@ -145,19 +145,19 @@ function render_chat_html() {
                 return deferred.reject(err)
             }
 
-            console.log("context ", context)
+            
             // rendering the template with the context 
             hbs.renderView(chat_view_path, context, (err, template) => {
 
                 if (err) {
-                    console.log("err rendering ", err);
+            
                     return deferred.reject(err)
                 }
                 // saving the rendered template string in the html file
                 fs.writeFile(html_path, template, "utf8", function (err) {
 
                     if (err) {
-                        console.log("err saving template", err)
+            
                         return deferred.reject(err)
                     }
 

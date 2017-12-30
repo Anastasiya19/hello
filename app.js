@@ -142,63 +142,62 @@ app.all('*', function(req, res, next){
 
 app.get('/', function (req, res) {
   res.render('home')
-  console.log('Get request received on the homepage. App is working')
+
 })
 
 // Next Route-------------------------------------------------------------
 app.get('/home', function (req, res) {
   res.render('home')
-  console.log('Get request received on the homepage. App is working')
+
 })
 
 // Next Route-------------------------------------------------------------
 app.get('/explainer_video', function (req, res) {
-  res.render('explainer_video')
-  console.log('Get request received on the homepage. App is working')
+  res.render('home')
+
 })
 
 // Next Route-------------------------------------------------------------
 app.get('/vinci_commands', function (req, res) {
-  res.render('vinci_commands')
-  console.log('Get request received on the homepage. App is working')
+  res.render('home')
+  
 })
 
 // Next Route-------------------------------------------------------------
 app.get('/chat', function (req, res) {
-  console.log('Request hit the client home route')
-
+  
   res.sendFile(path.join(__dirname, './public/chat.html'))
-  console.log('Get request received on the homepage. App is working')
+  
 })
 
 // Next Route-------------------------------------------------------------
 app.get('/visitor_agreement', function (req, res) {
-  console.log('Request hit the client home route')
+
   res.render('visitor_agreement')
-  console.log('Get request received on the homepage. App is working')
+
 })
 
 // Next Route-------------------------------------------------------------
 app.get('/privacy_policy', function (req, res) {
-  console.log('Request hit the client privacy_policy route')
+
   res.render('privacy_policy')
-  console.log('Get request received on the homepage. App is working')
+
 })
 
 // Next Route-------------------------------------------------------------
 app.get('/terms_and_conditions', function (req, res) {
-  console.log('Request hit the client privacy_policy route')
+
   res.render('terms_and_conditions')
-  console.log('Get request received on the homepage. App is working')
+
 })
 
 
 
 // Next Route-------------------------------------------------------------
 app.get('/blog', function (req, res) {
-  console.log('Request hit the client home route')
+
   res.render('home')
-  console.log('Get request received on the homepage. App is working')
+
 })
 
 
@@ -231,16 +230,15 @@ const default_active_list = {
 // Next Route-------------------------------------------------------------
 // Route for processing the chat message received from frontend 
 app.post('/hellovinciai', function (req, res) {
-  console.log('This is the body of the request received from the frontend: ', req.body)
+
   console.log('This is the request text: ', req.body.api_request_text)
-  console.log('This is the active_list mobiles before JSON parse: ', req.body.active_list)
+
 
   if(!req.session.active_list){
     req.session.active_list = default_active_list;
   }
   // req.body.active_list = JSON.parse(req.body.active_list)
 
-  console.log('This is the active_list mobiles after JSON parse: ', req.body.active_list)
 
   // Preparing the request to be sent to API AI
   var requestData = {
@@ -261,8 +259,6 @@ app.post('/hellovinciai', function (req, res) {
   requestData.query = format_functions.battery_spacing(requestData.query)
   requestData.query = format_functions.camera_spacing(requestData.query)
 
-  console.log("This is the request url: ", config.api_ai_request_url);
-  console.log("This is the client access token: ", config.api_ai_client_access_token);
 
   // Sending the request to API AI
   request({
@@ -276,7 +272,6 @@ app.post('/hellovinciai', function (req, res) {
     }
   }).then(function (response) {
     console.log('This is response on API AI which is sent back to frontend: ', response)
-    console.log('Request processing over: Sending the processed data back to the client')
 
 
     // batman true
@@ -319,7 +314,6 @@ app.post('/hellovinciai', function (req, res) {
 // Next Route-------------------------------------------------------------
 // Route for processing the chat message received from frontend 
 app.post('/hellovincisearch', function (req, res) {
-  console.log('This is the request text received on backend: ', req.body.input_query)
 
   // Search the index
   index.search(req.body.input_query, function (err, content) {
