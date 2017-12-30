@@ -70,7 +70,7 @@ Handlebars.registerHelper('generate_logo_helper', function() {
         ["Tata cliq", "TATA_Cliq_Logo.png"],
         ["Flipkart", "flipkart_logo_1.png"],
         ["Gadgets 360", "ndtvgadgetlogo.png"],
-        ["Amazon", "vendor-amazon.png"],
+        ["Amazon", "store_2.svg"],
         ["paytm", "Paytm_logo.png"]
     ]
 
