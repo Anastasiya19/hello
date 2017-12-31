@@ -113,7 +113,7 @@ function render_chat_html() {
                 try {
                     var data = JSON.parse(data)
                     var carousel_phones = []
-                    if(data.web_reply.data.mobiles.length == 0){
+                    if(data.web_reply.data.mobiles.length == 1){
                         carousel_phones = data.web_reply.data.mobiles[0].variants
                     }else{
                         carousel_phones =  data.web_reply.data.mobiles.map(mob=>{
