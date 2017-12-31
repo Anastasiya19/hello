@@ -17794,6 +17794,8 @@ function batman_false(reply_received) {
         responsiveVoice.setDefaultVoice("US English Female", {rate: 0.5});
         responsiveVoice.speak(reply_received.web_reply.speech);
 
+        $('.is--typing').remove();
+
     } //if ends
 
 } //function batman_false ends
