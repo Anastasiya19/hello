@@ -234,114 +234,135 @@ app.post('/hellovinciai', function (req, res) {
 
   console.log('This is the request text: ', req.body.api_request_text)
 
-  if(req.body.api_request_text.length > 0 && req.body.api_request_text.length < 80){
+  if(req.body.api_request_text !== undefined && req.body.api_request_text !== null){
 
-    if(!req.session.active_list){
-      req.session.active_list = default_active_list;
-    }
-    // req.body.active_list = JSON.parse(req.body.active_list)
+      console.log("message is not undefined");
 
+      console.log("This is message length: ", req.body.api_request_text.length);
 
-    // Preparing the request to be sent to API AI
-    var requestData = {
-      query: req.body.api_request_text,
-      lang: 'en',
-      sessionId: '1234567890',
-      originalRequest: {
-        source: 'slack_testbot',
-        data: {
-          all_discussed_list: req.body.all_discussed_list,
-          active_list: req.session.active_list
+      if(req.body.api_request_text.length < 80){
+
+        if(!req.session.active_list){
+          req.session.active_list = default_active_list;
         }
-      }
-    }
-
-    // Helper functions to convert megapixel to mp and give spacing to mah and mp
-    requestData.query = format_functions.megapixel_replace(requestData.query)
-    requestData.query = format_functions.battery_spacing(requestData.query)
-    requestData.query = format_functions.camera_spacing(requestData.query)
+        // req.body.active_list = JSON.parse(req.body.active_list)
 
 
-      // Sending the request to API AI
-      request({
-        uri: config.api_ai_request_url,
-        method: 'POST',
-        json: true,
-        body: requestData,
-        headers: {
-          'Authorization': config.api_ai_client_access_token,
-          'Content-Type': 'application/json; charset=utf-8'
+        // Preparing the request to be sent to API AI
+        var requestData = {
+          query: req.body.api_request_text,
+          lang: 'en',
+          sessionId: '1234567890',
+          originalRequest: {
+            source: 'slack_testbot',
+            data: {
+              all_discussed_list: req.body.all_discussed_list,
+              active_list: req.session.active_list
+            }
+          }
         }
-      }).then(function (response) {
-        console.log('This is response on API AI which is sent back to frontend: ', response)
+
+        // Helper functions to convert megapixel to mp and give spacing to mah and mp
+        requestData.query = format_functions.megapixel_replace(requestData.query)
+        requestData.query = format_functions.battery_spacing(requestData.query)
+        requestData.query = format_functions.camera_spacing(requestData.query)
 
 
-        // batman true
-        if (config.intent_ids.indexOf(response.result.metadata.intentId) > -1) {
+        // Sending the request to API AI
+        request({
+          uri: config.api_ai_request_url,
+          method: 'POST',
+          json: true,
+          body: requestData,
+          headers: {
+            'Authorization': config.api_ai_client_access_token,
+            'Content-Type': 'application/json; charset=utf-8'
+          }
+        }).then(function (response) {
+          console.log('This is response on API AI which is sent back to frontend: ', response)
 
-          response.originalRequest = requestData.originalRequest
 
-          return ask_deepmind(response).then(result => {
-            req.session.active_list = result.data.active_list
-            res.send({
-              web_reply: result,
-              status: response.status,
-              batman: 'true' // response.result.metadata.webhookUsed
+          // batman true
+          if (config.intent_ids.indexOf(response.result.metadata.intentId) > -1) {
+
+            response.originalRequest = requestData.originalRequest
+
+            return ask_deepmind(response).then(result => {
+              req.session.active_list = result.data.active_list
+              res.send({
+                web_reply: result,
+                status: response.status,
+                batman: 'true' // response.result.metadata.webhookUsed
+              })
             })
-          })
 
-        }
-
-        else {
-          // batman is the alias for webhook
-          return res.send({
-            web_reply: response.result.fulfillment,
-            status: response.status,
-            batman: response.result.metadata.webhookUsed
-          })
-        }
-      })
-      .catch(function (err) {
-          console.log('err ', err)
-          var reply = {
-            speech: 'Houston we are working on fixing the problem'
           }
 
-          res.send({
-            web_reply: reply,
-            status: 500,
-            batman: 'false'
-          })
-      })
+          else {
+            // batman is the alias for webhook
+            return res.send({
+              web_reply: response.result.fulfillment,
+              status: response.status,
+              batman: response.result.metadata.webhookUsed
+            })
+          }
+        })
+        .catch(function (err) {
+            console.log('err ', err)
+            var reply = {
+              speech: 'Houston we are working on fixing the problem'
+            }
+
+            res.send({
+              web_reply: reply,
+              status: 500,
+              batman: 'false'
+            })
+        })
+
+
+
+
+
+      }
+
+      else{
+
+
+        var reply = {
+        speech: 'Looks like you are trying to test me out. Caught you. Lol'
+        }
+
+        res.send({
+          web_reply: reply,
+          status: 500,
+          batman: 'false'
+        })
+      
+
+      }
+
 
   }
 
   else{
 
-    if(req.body.api_request_text.length === 0){
+    
 
       var reply = {
         speech: 'Seems like, I got an empty message'
       }
 
-    }
+      res.send({
+        web_reply: reply,
+        status: 500,
+        batman: 'false'
+      })
 
-    else{
-      var reply = {
-        speech: 'Looks like you are trying to test me out. Caught you. Lol'
-      }
-
-    }
-
-
-
-    res.send({
-      web_reply: reply,
-      status: 500,
-      batman: 'false'
-    })
 
   }
+
+
 })
 
 // Next Route-------------------------------------------------------------

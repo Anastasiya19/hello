@@ -17473,11 +17473,12 @@ $('.send__input').keypress(function (e) {
 });
 
 function sendMessage() {
+
   var userAvatar = '/assets/build/assets/images/user-mes.svg';
 
   var chat_input;
 
-  if ($('.chat__bottom input').val() !== '') {
+  if ($('.chat__bottom input').val().length > 0) {
 
     $('.chat__messages')
       .append(
@@ -17507,11 +17508,26 @@ function sendMessage() {
     $(".chat__content>.mCSB_vertical>.mCSB_container").css({'top': - Math.min(bottom,lastMessage)});
     $('.chat__content>.mCSB_vertical>.mCSB_scrollTools_vertical .mCSB_dragger').css({top:'unset',bottom:'0px'})
 
+    // sending the message
+    hellovinciai(chat_input);
 
   }
 
-  // sending the message
-  hellovinciai(chat_input);
+  else{
+
+      $('.chat__messages')
+      .append(
+        `<div class="message message_vinci">
+            <!--<img class="user-logo" src="/assets/build/assets/images/user-mes.svg" alt="">-->
+            <div class="message__item message__item_vinci br-chat animated fadeInLeft" style="width: fit-content;">
+                <p>Looks like an empty message to me :)</p>
+            </div>
+          </div>`
+      );
+
+  }
+
+  
 }
 
 $(document).ready(init_owl);
@@ -21506,8 +21522,9 @@ function reload_product(raul){
 //Function to create the request and get the reply
 function hellovinciai(msg) {
 
-    
-    setTimeout(function() {
+    if(msg !== null || msg !== undefined){
+
+            setTimeout(function() {
         $('.chat__messages').
         append(`<div class="message message_vinci is--typing">
             <!--<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">-->
@@ -21612,6 +21629,11 @@ function hellovinciai(msg) {
       $('#mCSB_1_dragger_vertical').css({top:'unset',bottom:'0px'})
 
     });
+
+    }
+
+    
+
 
 } // function askapiai ends
 function specifications_request(zlatan){

@@ -143,11 +143,12 @@ $('.send__input').keypress(function (e) {
 });
 
 function sendMessage() {
+
   var userAvatar = '/assets/build/assets/images/user-mes.svg';
 
   var chat_input;
 
-  if ($('.chat__bottom input').val() !== '') {
+  if ($('.chat__bottom input').val().length > 0) {
 
     $('.chat__messages')
       .append(
@@ -177,11 +178,26 @@ function sendMessage() {
     $(".chat__content>.mCSB_vertical>.mCSB_container").css({'top': - Math.min(bottom,lastMessage)});
     $('.chat__content>.mCSB_vertical>.mCSB_scrollTools_vertical .mCSB_dragger').css({top:'unset',bottom:'0px'})
 
+    // sending the message
+    hellovinciai(chat_input);
 
   }
 
-  // sending the message
-  hellovinciai(chat_input);
+  else{
+
+      $('.chat__messages')
+      .append(
+        `<div class="message message_vinci">
+            <!--<img class="user-logo" src="/assets/build/assets/images/user-mes.svg" alt="">-->
+            <div class="message__item message__item_vinci br-chat animated fadeInLeft" style="width: fit-content;">
+                <p>Looks like an empty message to me :)</p>
+            </div>
+          </div>`
+      );
+
+  }
+
+  
 }
 
 //= custom/carousel.js

@@ -402,7 +402,7 @@
 		function skip_intro(){
 
 			setTimeout(function(){
-				console.log("Skip typing");
+				
 				$('.is--typing').remove();
 
 			}, 200)
@@ -429,7 +429,7 @@
 
 				//Make them visible
 				messages[i].style.display = "block";
-				console.log("Skip typing");
+				
 				//Remove the is--typing element
         		$('.is--typing').remove();
 			}
@@ -485,7 +485,7 @@
 
 		        	setTimeout(function(){
 
-		        	console.log("Executed skip typing from setTimeout");
+		        	
 		        	if(!skip_intro_status){
 		        		$('.chat__messages').
 				        append(`<div class="message message_vinci is--typing">
