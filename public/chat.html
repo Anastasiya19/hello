@@ -86,49 +86,49 @@
 
 						<div class="chat__messages">
 
-							<div class="message message_vinci animated fadeInLeft" style = "visibility: hidden">
+							<div class="message message_vinci animated fadeInLeft" style = "display: none">
 						    	<div class="message__item message__item_vinci br-chat" style="width: fit-content;">
 						      		<p>Hi! Happy 2018</p>
 								</div>
 	  						</div>
 
-	  						<div class="message message_vinci animated fadeInLeft" style = "visibility: hidden">
+	  						<div class="message message_vinci animated fadeInLeft" style = "display: none">
 						    	<div class="message__item message__item_vinci br-chat" style="width: fit-content;">
-						      		<p>Let's start this year with something interesting. A new shopping experience of buying mobiles online</p>
+						      		<p>Let's start this year with something interesting</p>
 								</div>
 	  						</div>
 
-	  						<div class="message message_vinci animated fadeInLeft" style = "visibility: hidden">
+	  						<div class="message message_vinci animated fadeInLeft" style = "display: none">
 						    	<div class="message__item message__item_vinci br-chat" style="width: fit-content;">
-						      		<p>An on-demand online shopping experience</p>
+						      		<p>A new shopping experience of buying mobiles online</p>
 								</div>
 	  						</div>
 
-	  						<div class="message message_vinci animated fadeInLeft" style = "visibility: hidden">
+	  						<div class="message message_vinci animated fadeInLeft" style = "display: none">
 						    	<div class="message__item message__item_vinci br-chat" style="width: fit-content;">
 						      		<p>Let's add voice to it :)</p>
 								</div>
 	  						</div>
 
-	  						<div class="message message_vinci animated fadeInLeft" style = "visibility: hidden">
+	  						<div class="message message_vinci animated fadeInLeft" style = "display: none">
 						    	<div class="message__item message__item_vinci br-chat" style="width: fit-content;">
 						      		<p>Hey there. I am Vinci</p>
 								</div>
 	  						</div>
 
-	  						<div class="message message_vinci animated fadeInLeft" style = "visibility: hidden">
+	  						<div class="message message_vinci animated fadeInLeft" style = "display: none">
 						    	<div class="message__item message__item_vinci br-chat" style="width: fit-content;">
 						      		<p>From now on, I am your personal assistant to shop mobiles online.</p>
 								</div>
 	  						</div>
 
-	  						<div class="message message_vinci animated fadeInLeft" style = "visibility: hidden">
+	  						<div class="message message_vinci animated fadeInLeft" style = "display: none">
 						    	<div class="message__item message__item_vinci br-chat" style="width: fit-content;">
 						      		<p>Let me show you what can I do</p>
 								</div>
 	  						</div>
 
-	  						<div class="message message_vinci animated fadeInLeft" style = "visibility: hidden">
+	  						<div class="message message_vinci animated fadeInLeft" style = "display: none">
 						    	<div class="message__item message__item_vinci br-chat" style="width: fit-content;">
 						      		<p>Suppose you are looking for latest phones. Just say.. "Show me latest phones"</p>
 								</div>
@@ -136,7 +136,7 @@
 
 
 
-							<div class="message message_vinci animated fadeInLeft" style = "visibility: hidden">
+							<div class="message message_vinci animated fadeInLeft" style = "display: none">
                                 <div class="message__title-block">
                                 	<span class="message__title">Latest phones</span>
                             	</div>
@@ -426,7 +426,7 @@
 
 								</div>
 							</div>
-							<div class="message message_vinci animated fadeInLeft" style = "visibility: hidden">
+							<div class="message message_vinci animated fadeInLeft" style = "display: none">
                                 <div class="message__title-block">
                                 	<span class="message__title">Best battery phones</span>
                             	</div>
@@ -716,7 +716,7 @@
 
 								</div>
 							</div>
-							<div class="message message_vinci animated fadeInLeft" style = "visibility: hidden">
+							<div class="message message_vinci animated fadeInLeft" style = "display: none">
                                 <div class="message__title-block">
                                 	<span class="message__title">Phones with wireless charging</span>
                             	</div>
@@ -1007,19 +1007,19 @@
 								</div>
 							</div>
 
-							<div class="message message_vinci animated fadeInLeft" style = "visibility: hidden">
-						    	<div class="message__item message__item_vinci br-chat" style="width: fit-content;">
-						      		<p>Similarly, just say "best battery phones or phones with wireless charging"</p>
-								</div>
-	  						</div>
-
-	  						<div class="message message_vinci animated fadeInLeft" style = "visibility: hidden">
+	  						<div class="message message_vinci animated fadeInLeft" style = "display: none">
 						    	<div class="message__item message__item_vinci br-chat" style="width: fit-content;">
 						      		<p>What all can I do?</p>
 								</div>
 	  						</div>
 
-	  						<div class="message message_vinci animated fadeInLeft" style = "visibility: hidden">
+	  						<div class="message message_vinci animated fadeInLeft" style = "display: none">
+						    	<div class="message__item message__item_vinci br-chat" style="width: fit-content;">
+						      		<p>Type your message in the input box below or press Talk to Vinci to talk to me</p>
+								</div>
+	  						</div>
+
+	  						<div class="message message_vinci animated fadeInLeft" style = "display: none">
 						    	<div class="message__item message__item_vinci br-chat" style="width: fit-content;">
 						      		<p>Get you the best price of your favorite phone, compare it's features, show you video reviews and also suggest you phones based on your shopping requirements</p>
 								</div>
@@ -1971,16 +1971,72 @@
 		
 		var messages = document.getElementsByClassName('message_vinci');
 
-		messages.forEach(display_messages);
+		console.log("this is messages: ", messages);
 
-		function display_messages (element, index, array){
+		console.log("This is messages length: ", messages.length);
 
-			var timer = 1000 * index;
+		display_message(0)
+
+
+		function display_message(count){
 
 			setTimeout(function(){
-				element.style.visibility = "visible";
-			},timer);
 
+				if(count > 0){
+					
+					//Remove the is--typing element
+        			$('.is--typing').remove();
+
+				}
+
+				
+
+				var messages = document.getElementsByClassName('message_vinci');
+
+				if(count > 2 && count < messages.length){
+
+					responsiveVoice.setDefaultVoice("US English Female", {rate: 0.5});
+					responsiveVoice.speak(messages[count].innerText);	
+				}
+
+				
+
+				messages[count].style.display = "block";
+
+				count+=1;
+
+
+
+
+
+		        if(count<messages.length){
+
+		        	setTimeout(function(){
+
+					$('.chat__messages').
+			        append(`<div class="message message_vinci is--typing">
+			            <!--<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">-->
+			            <div class="message__item message__item_vinci message__item_writing br-chat">
+			                <div class="spinner">
+			                    <div class="bounce1"></div>
+			                    <div class="bounce2"></div>
+			                    <div class="bounce3"></div>
+			                </div>
+			                <!--<img src="assets/images/vinci_writing_dots.svg" alt="">-->
+			            </div>
+			        </div>`)
+
+					}, 2500);
+
+					display_message(count);	
+				}
+
+				else{
+					//Remove the is--typing element
+        		$('.is--typing').remove();
+				}
+
+			}, 6000);
 
 		}
 
