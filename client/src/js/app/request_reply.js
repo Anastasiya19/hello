@@ -62,7 +62,7 @@ function hellovinciai(msg) {
 
             //Zlatan takes cares of the response returned and calls respective functions to 
             //create the context objects
-            var zlatan = new Zlatan(reply_received.web_reply.data.mobiles);
+            var zlatan = new Zlatan(reply_received.web_reply.data);
 
             //Builds the text reply element
             var buffon = new Buffon(reply_received.web_reply.data.backend_text);

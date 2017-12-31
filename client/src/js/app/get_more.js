@@ -15,10 +15,10 @@ function get_more(event) {
 
         //Zlatan takes cares of the response returned and calls respective functions to 
         //create the context objects
-        var zlatan = new Zlatan(mobiles);
+        var zlatan = new Zlatan({mobiles:mobiles,query_object:query,skip:skip+20});
 
         //Builds the text reply element
-        var buffon = new Buffon("Here is more");
+        var buffon = new Buffon(["Here is more"]);
 
 
 
@@ -28,11 +28,11 @@ function get_more(event) {
         beckham_router(beckham, zlatan, buffon);
 
         // append the last set of suggested question 
-        $('.chat__messages').append($($(".suggestion")[$(".suggestion").length -1]))
+        // $('.chat__messages').append($($(".suggestion")[$(".suggestion").length -1]))
         // remove the more button
-        $(".more-button")[$(".more-button").length -1].remove()
+        // $(".more-button")[$(".more-button").length -1].remove()
         // append new more button
-        append_more_button(query,skip+1)
+        // append_more_button(query,skip+1)
     })
 
 

@@ -15,6 +15,7 @@ const bodyParser = require('body-parser')
 const session = require('express-session')
 var cookieSession = require('cookie-session')
 const mongodbStore = require('connect-mongo')(session)
+var serve_favicon = require("serve-favicon")
 // ******These modules have not been installed********
 // const flash = require('connect-flash')
 // ******End********
@@ -69,7 +70,7 @@ const config = require('./config/config.js')
 var app = express()
 // ******End********
 
-
+// app.use(serve_favicon(path.join(__dirname,"./public/build/assets/images/logo.svg")))
 app.use(cookieSession({
   name: 'session',
   keys: ["1Kd0Uy6nS"],
@@ -369,7 +370,7 @@ app.post('/hellovincisearch', function (req, res) {
 
 app.post('/get_more', function (req, res, next) {
   request({
-    uri: 'https://calm-depths-38465.herokuapp.com/product/query',
+    uri: config.deepmind_host + '/product/query',
     method: 'POST',
     body: req.body,
     json: true
@@ -382,7 +383,7 @@ app.post('/get_more', function (req, res, next) {
 
 app.post('/product/update_reactions', function (req, res, next) {
   request({
-    uri: 'https://calm-depths-38465.herokuapp.com/product/update_reactions',
+    uri: config.deepmind_host + '/product/update_reactions',
     method: 'POST',
     body: req.body,
     json: true
