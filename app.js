@@ -15,6 +15,7 @@ const bodyParser = require('body-parser')
 const session = require('express-session')
 var cookieSession = require('cookie-session')
 const mongodbStore = require('connect-mongo')(session)
+var serve_favicon = require("serve-favicon")
 // ******These modules have not been installed********
 // const flash = require('connect-flash')
 // ******End********
@@ -69,7 +70,7 @@ const config = require('./config/config.js')
 var app = express()
 // ******End********
 
-
+// app.use(serve_favicon(path.join(__dirname,"./public/build/assets/images/logo.svg")))
 app.use(cookieSession({
   name: 'session',
   keys: ["1Kd0Uy6nS"],
