@@ -9,7 +9,7 @@ exports.api_ai_developer_access_token = process.env.api_ai_developer_access_toke
 exports.api_ai_client_access_token = process.env.api_ai_client_access_token;
 exports.api_ai_request_url = 'https://api.api.ai/v1/query?v=20150910';
 
-
+exports.deepmind_host = (process.env.NODE_ENV === "development")? "http://localhost:8080":"https://calm-depths-38465.herokuapp.com"
 exports.intent_ids =[
  "d5ea6dc1-3be5-433d-8ee4-1b3544f34d7c",
  "9225a952-ad5d-486f-bc4f-40c8775d3e6e",

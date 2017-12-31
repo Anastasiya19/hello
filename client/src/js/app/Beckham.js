@@ -71,7 +71,9 @@ Beckham.prototype.build_specifications_summary_element = function (zlatan) {
   this.templateScript = Handlebars.compile(this.template)
 
   var context = {
-    phones: zlatan.contexts
+    phones: zlatan.contexts,
+    query_object:zlatan.query_object,
+    skip:zlatan.skip
   }
 
   this.html = this.templateScript(context)

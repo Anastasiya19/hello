@@ -338,7 +338,7 @@ app.post('/hellovincisearch', function (req, res) {
 
 app.post('/get_more', function (req, res, next) {
   request({
-    uri: 'https://calm-depths-38465.herokuapp.com/product/query',
+    uri: config.deepmind_host + '/product/query',
     method: 'POST',
     body: req.body,
     json: true
@@ -351,7 +351,7 @@ app.post('/get_more', function (req, res, next) {
 
 app.post('/product/update_reactions', function (req, res, next) {
   request({
-    uri: 'https://calm-depths-38465.herokuapp.com/product/update_reactions',
+    uri: config.deepmind_host + '/product/update_reactions',
     method: 'POST',
     body: req.body,
     json: true
