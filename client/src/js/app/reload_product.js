@@ -1,10 +1,5 @@
 function reload_product(raul){
 
-	console.log("We need to create a specifications element again");
-
-	//First we need to check the query_status to determine
-	//which chat element to build
-	console.log("This is the list of mobiles received from the backend: ", raul.mobile);
 	
 	raul.case_special_product();
 	//Found the selected variant
@@ -45,10 +40,7 @@ function reload_product(raul){
     //Create the product context object
     raul.create_product_context();
 
-    //raul is the object for each mobile in Zlatan
-    console.log("This is raul: ", raul);
 
-    console.log("template selected for reload case");
     var template = $('#handlebars-carousel-item').html();
 
     // Compile the template data into a function

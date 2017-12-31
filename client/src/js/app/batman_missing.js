@@ -3,8 +3,7 @@ function batman_missing(reply_received) {
     if (reply_received.batman === "true") {
 
 
-        console.log("Inside missing batman");
-
+      
         var text_reply = reply_received.web_reply.speech;
         $('.chat__messages')
             .append(`<div class="message message_vinci">

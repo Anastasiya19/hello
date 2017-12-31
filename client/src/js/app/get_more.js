@@ -5,10 +5,10 @@ function get_more(event) {
     var query = more_button.attr("data-query");
 
     var skip = Number(more_button.attr("data-skip"));
-    console.log("query ",query)
+    
     $.post("/get_more", { query: query, skip: skip }, function (mobiles) {
 
-        console.log(mobiles)
+        
         //This constructor is meant for the query_status
         //Beckham only does query routing and calls the necessary functions to create the request
         var beckham = new Beckham(300);

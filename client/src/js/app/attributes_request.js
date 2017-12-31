@@ -1,10 +1,10 @@
 function attributes_request(zlatan){
 
-	console.log("We need to create an attributes element");
+	
 
 	//First we need to check the query_status to determine
 	//which chat element to build
-	console.log("This is the list of mobiles received from the backend: ", zlatan.mobiles);
+	
 
 	zlatan.mobiles.forEach(create_attribute);
 
@@ -27,11 +27,11 @@ function attributes_request(zlatan){
         }
         
 
-        console.log("This is the messi object: ", messi);
+        
 
 	}
 
-    console.log("This is the zlatan object: ", zlatan);
+    
 	//Now we need to append the html for all the mobiles created by raul constructor function
 
 }

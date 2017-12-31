@@ -51,7 +51,7 @@ Handlebars.registerHelper('generate_features_helper', function() {
 
 Handlebars.registerHelper('generate_price_helper', function() {
 
-    if (this.product_pricing.special_price > 0) {
+    if (parseInt(this.product_pricing.special_price) > 0) {
 
         var return_string = "Rs. " + this.product_pricing.special_price;
 
@@ -67,10 +67,10 @@ Handlebars.registerHelper('generate_price_helper', function() {
 Handlebars.registerHelper('generate_logo_helper', function() {
 
     var logos = [
-        ["Tata cliq", "TATA_Cliq_Logo.png"],
-        ["Flipkart", "flipkart_logo_1.png"],
+        ["Tata cliq", "store_1.svg"],
+        ["Flipkart", "store_3.svg"],
         ["Gadgets 360", "ndtvgadgetlogo.png"],
-        ["Amazon", "vendor-amazon.png"],
+        ["Amazon", "store_2.svg"],
         ["paytm", "Paytm_logo.png"]
     ]
 
@@ -85,11 +85,12 @@ Handlebars.registerHelper('generate_logo_helper', function() {
 
 Handlebars.registerHelper('generate_logo_helper_cheapest', function(shortlisted_model_shortlisted_retailer) {
 
+    //logo helper
     var logos = [
-        ["Tata cliq", "TATA_Cliq_Logo.png"],
-        ["Flipkart", "flipkart_logo_1.png"],
+        ["Tata cliq", "store_1.svg"],
+        ["Flipkart", "store_3.svg"],
         ["Gadgets 360", "ndtvgadgetlogo.png"],
-        ["Amazon", "vendor-amazon.png"],
+        ["Amazon", "store_2.svg"],
         ["paytm", "Paytm_logo.png"]
     ]
 
@@ -104,19 +105,19 @@ Handlebars.registerHelper('generate_logo_helper_cheapest', function(shortlisted_
 
 Handlebars.registerHelper('generate_memory_variants_helper', function() {
 
-    console.log("This is the this object: ", this);
+    
 
-    // console.log("this is the memory_variants_array: ", memory_variants_array);
+    
 
-    console.log("This is this memory_variants_array: ", this.memory_variants_array);
+    
 
-    console.log("Inside generate_memory_variants_helper");
+    
 
     var memory_variants = "";
 
     for (var i = 0; i < this.memory_variants_array.length; i++) {
 
-        console.log("memory_storage is: ", this.memory_variants_array[i]);
+    
 
   //       if (this.memory_variants_array[i] === this.selected_variant.memory_storage.internal_storage) {
 
@@ -166,13 +167,13 @@ Handlebars.registerHelper('generate_memory_variants_helper', function() {
 
 Handlebars.registerHelper('generate_color_variants_helper', function() {
 
-    console.log("Inside generate_color_variants_helper");
+    
 
     var color_variants = "";
 
     for (var i = 0; i < this.color_variants_array.length; i++) {
 
-        console.log("color_variant is: ", this.color_variants_array[i]);
+    
 
         /*
         if (this.color_variants_array[i] === this.selected_variant.general_specifications.model_color) {
@@ -330,10 +331,10 @@ Handlebars.registerHelper('youtube_video_title_helper', function() {
 
 
 Handlebars.registerHelper('offers', function(retailer) {
-    console.log("creating offers ",retailer)
+    
     var offers = (retailer.offers)? retailer.offers : retailer.selected_variant.product_retailers[retailer.shortlisted_model_shortlisted_retailer_index].offers;
     text = ""
-    console.log("the offers ", offers)
+    
 
     if(offers.emi.emi_details === "N/A" && offers.exchange.exchange_offer_text === "N/A"){
         return "No offers";
@@ -353,10 +354,10 @@ Handlebars.registerHelper('offers', function(retailer) {
     
 
 Handlebars.registerHelper('delivery', function(retailer) {
-    console.log("creating delivery_details ",retailer)
+    
     var delivery_details = (retailer.delivery_details)? retailer.delivery_details : retailer.selected_variant.product_retailers[retailer.shortlisted_model_shortlisted_retailer_index].delivery_details;
     text = ""
-    console.log("the delivery_details ", delivery_details)
+    
 
     if(delivery_details.delivery_time === "N/A" ){
         return "Unknown";
@@ -369,7 +370,6 @@ Handlebars.registerHelper('delivery', function(retailer) {
 
 Handlebars.registerHelper("get_reactions", function(selected_variant, reaction){
 
-console.log("selected variant ", selected_variant,"reaction ",reaction)
 
 
 if(selected_variant.reactions && selected_variant.reactions[reaction]){
@@ -393,13 +393,10 @@ return stars
 })
 // >>>>>>>>>>> for debugging 
 Handlebars.registerHelper("debug", function(optionalValue) {
-    console.log("Current Context");
-    console.log("====================");
-    console.log(this);
+
+    
 
     if (optionalValue) {
-        console.log("Value");
-        console.log("====================");
-        console.log(optionalValue);
+    
     }
 });

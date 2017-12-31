@@ -64,7 +64,7 @@ function post_question_save_json(question){
     })
     return deferred.promise
 }
-post_question_save_json("Show me Lenovo K8 Plus Nokia 2 Lenovo K8 Note Moto E4 Plus Mi Max 2 Oppo F3 Plus Moto C Plus")
+// post_question_save_json("Show me phones with fingerprint scanner");
 module.exports = post_question_save_json;
 // post_question_save_json(" HTC phones")
 // get_query()

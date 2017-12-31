@@ -57,8 +57,59 @@
 					<div class="chat__content scrollable-container">
 
 						<div class="chat__messages">
+
+							<div class="message message_vinci animated fadeInLeft" style = "display: none">
+						    	<div class="message__item message__item_vinci br-chat" style="width: fit-content;">
+						      		<p>Hi! Happy 2018</p>
+								</div>
+	  						</div>
+
+	  						<div class="message message_vinci animated fadeInLeft" style = "display: none">
+						    	<div class="message__item message__item_vinci br-chat" style="width: fit-content;">
+						      		<p>Let's start this year with something interesting</p>
+								</div>
+	  						</div>
+
+	  						<div class="message message_vinci animated fadeInLeft" style = "display: none">
+						    	<div class="message__item message__item_vinci br-chat" style="width: fit-content;">
+						      		<p>A new shopping experience of buying mobiles online</p>
+								</div>
+	  						</div>
+
+	  						<div class="message message_vinci animated fadeInLeft" style = "display: none">
+						    	<div class="message__item message__item_vinci br-chat" style="width: fit-content;">
+						      		<p>Let's add voice to it :)</p>
+								</div>
+	  						</div>
+
+	  						<div class="message message_vinci animated fadeInLeft" style = "display: none">
+						    	<div class="message__item message__item_vinci br-chat" style="width: fit-content;">
+						      		<p>Hey there. I am Vinci</p>
+								</div>
+	  						</div>
+
+	  						<div class="message message_vinci animated fadeInLeft" style = "display: none">
+						    	<div class="message__item message__item_vinci br-chat" style="width: fit-content;">
+						      		<p>From now on, I am your personal assistant to shop mobiles online.</p>
+								</div>
+	  						</div>
+
+	  						<div class="message message_vinci animated fadeInLeft" style = "display: none">
+						    	<div class="message__item message__item_vinci br-chat" style="width: fit-content;">
+						      		<p>Let me show you what can I do</p>
+								</div>
+	  						</div>
+
+	  						<div class="message message_vinci animated fadeInLeft" style = "display: none">
+						    	<div class="message__item message__item_vinci br-chat" style="width: fit-content;">
+						      		<p>Suppose you are looking for latest phones. Just say.. "Show me latest phones"</p>
+								</div>
+	  						</div>
+
+
+
 							{{#each chat_carousels}}
-							<div class="message message_vinci">
+							<div class="message message_vinci animated fadeInLeft" style = "display: none">
                                 <div class="message__title-block">
                                 	<span class="message__title">{{this.text}}</span>
                             	</div>
@@ -68,7 +119,7 @@
 								{{#each carousel_phones}}
 
 									<div class="message__item message__item_vinci br-chat message__category category view_product">
-										<button class="button helpers__item view_product__button">View product</button>
+										<button class="button helpers__item view_product__button" onclick="get_specifications_full(event)">View product</button>
 										<div class="row">
 											<div class="category__image col-4">
 												<img src="{{this.image_urls.medium}}" alt="">
@@ -111,7 +162,31 @@
 								</div>
 							</div>
 							{{/each}}
-							<div class="message message_vinci">
+
+	  						<div class="message message_vinci animated fadeInLeft" style = "display: none">
+						    	<div class="message__item message__item_vinci br-chat" style="width: fit-content;">
+						      		<p>What all can I do?</p>
+								</div>
+	  						</div>
+
+	  						<div class="message message_vinci animated fadeInLeft" style = "display: none">
+						    	<div class="message__item message__item_vinci br-chat" style="width: fit-content;">
+						      		<p>Type your message in the input box below or press Talk to Vinci to talk to me</p>
+								</div>
+	  						</div>
+
+	  						<div class="message message_vinci animated fadeInLeft" style = "display: none">
+						    	<div class="message__item message__item_vinci br-chat" style="width: fit-content;">
+						      		<p>Get you the best price of your favorite phone, compare it's features, show you video reviews and also suggest you phones based on your shopping requirements</p>
+								</div>
+	  						</div>
+
+
+
+
+
+
+							<!-- <div class="message message_vinci">
                                 <div class="message__title-block">
                                 	<span class="message__title">Collections</span>
                                 </div>
@@ -156,7 +231,7 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</div> -->
 						</div>
 					</div>
 					<div class="chat__bottom">
@@ -324,39 +399,78 @@
 <script type="text/javascript">
 
 	document.addEventListener('DOMContentLoaded', function () {
-		//userAvatar
-		var vinciAvatar = '/assets/build/assets/images/vinci-mes.svg';
+		
+		var messages = document.getElementsByClassName('message_vinci');
 
-		var text_reply = "Hello. Great to have you here!";
+		console.log("this is messages: ", messages);
 
-		$('.chat__messages')
-				.append(`<div class="message message_vinci">
-	    	<div class="message__item message__item_vinci br-chat" style="width: fit-content;">
-	      		<p>${text_reply}</p>
-			</div>
-	  	</div>`);
+		console.log("This is messages length: ", messages.length);
 
-		$('.chat__messages').scrollTop($('.chat__messages')[0].scrollHeight);
+		display_message(0)
 
-		var text_reply = "Let's get started!";
 
-		$('.chat__messages')
-				.append(`<div class="message message_vinci">
-	    	<div class="message__item message__item_vinci br-chat" style="width: fit-content;">
-	      		<p>${text_reply}</p>
-			</div>
-			<div >
-				<ul class=" suggestion owl-carousel owl-theme">
-					<li class="suggestion__item br-chat" id="demo-yes" onclick="send_question(event)">Show me iPhone 8</li>
-					<li class="suggestion__item br-chat" id="demo-no" onclick="send_question(event)">Show me Samsung Galaxy S8</li>
-					<li class="suggestion__item br-chat" id="demo-no" onclick="send_question(event)">Compare iPhone 8 and Samsung Galaxy S8</li>
-					<li class="suggestion__item br-chat" id="demo-no" onclick="send_question(event)">Suggest a phone with 4gb ram</li>
-					<li class="suggestion__item br-chat" id="demo-no" onclick="send_question(event)">Phones with bezel less display</li>
-				</ul>
-			</div>
-	  	</div>`);
+		function display_message(count){
 
-		$('.chat__messages').scrollTop($('.chat__messages')[0].scrollHeight);
+			setTimeout(function(){
+
+				if(count > 0){
+					
+					//Remove the is--typing element
+        			$('.is--typing').remove();
+
+				}
+
+				
+
+				var messages = document.getElementsByClassName('message_vinci');
+
+				// if(count > 2 && count < messages.length){
+
+					responsiveVoice.setDefaultVoice("US English Female", {rate: 0.5});
+					responsiveVoice.speak(messages[count].innerText);	
+				// }
+
+				
+
+				messages[count].style.display = "block";
+
+				count+=1;
+
+
+
+
+
+		        if(count<messages.length){
+
+		        	setTimeout(function(){
+
+					$('.chat__messages').
+			        append(`<div class="message message_vinci is--typing">
+			            <!--<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">-->
+			            <div class="message__item message__item_vinci message__item_writing br-chat">
+			                <div class="spinner">
+			                    <div class="bounce1"></div>
+			                    <div class="bounce2"></div>
+			                    <div class="bounce3"></div>
+			                </div>
+			                <!--<img src="assets/images/vinci_writing_dots.svg" alt="">-->
+			            </div>
+			        </div>`)
+
+					}, 2500);
+
+					display_message(count);	
+				}
+
+				else{
+					//Remove the is--typing element
+        		$('.is--typing').remove();
+				}
+
+			}, 6000);
+
+		}
+
 
 
 	}, false);

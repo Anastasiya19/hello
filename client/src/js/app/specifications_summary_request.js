@@ -1,11 +1,9 @@
 function specifications_summary_request(zlatan){
 
-	console.log("We need to create a specifications summary element");
-
+	
 	//First we need to check the query_status to determine
 	//which chat element to build
-	console.log("This is the list of mobiles received from the backend: ", zlatan.mobiles);
-
+	
 	zlatan.mobiles.forEach(create_product);
 
 	function create_product(element, index, array){
@@ -14,9 +12,6 @@ function specifications_summary_request(zlatan){
 
 		raul.set_id();
 
-        console.log("This is raul for the mobile number: ", index);
-
-        console.log("This is raul: ", raul);
 
 		raul.case_special_product();
 
@@ -44,7 +39,6 @@ function specifications_summary_request(zlatan){
 
         mobiles_requested.push(mobiles_received);
 
-        console.log("This is the mobiles_requested array: ", mobiles_requested);
 
 
 	}

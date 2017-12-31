@@ -17,13 +17,13 @@ function send_auto_complete_request(input_query) {
 
         $(".helpers").empty();
 
-        console.log("This is the reply_received for search send_auto_complete_request: ", reply_received);
+        
 
         if(reply_received.results.length > 0){
 
             var time = new Date() - start;
 
-            console.log("Time taken in processing the request on the backend: ", time);
+        
 
             var template = $('#handlebars-auto-complete-reply').html();
 

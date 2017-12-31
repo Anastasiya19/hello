@@ -69,20 +69,20 @@ function render_chat_html() {
         },
 
         {
-            text: "Best camera phones",
-            json: "_Samsung_phones.json"
+            text: "Phones with wireless charging",
+            json: "Show_me_Apple_iPhone_X_Samsung_Galaxy_S8_Samsung_Galaxy_S8_Plus_Apple_iPhone_8_Samsung_Galaxy_S7_Edge_Apple_iPhone_8_Plus_Samsung_Galaxy_S7.json"
         }
 
         ],
         side_carousels: [{
-            text: "Top rated Mobiles",
-            json: "google_pixel_phones.json"
+            text: "4GB RAM and above",
+            json: "show_me_Lenovo_K8_Note_Samsung_Galaxy_A9_Pro_Oppo_F3_Plus_Samsung_Galaxy_C9_Pro_Gionee_A1_Oppo_F3_Plus_Lenovo_K6_Note_Lenovo_K6_Power_Asus_Zenfone_2_ZE551ML___Asus_Zenfone_2.json"
         }, {
-            text: "Expert Pick Mobiles",
-            json: "_HTC_phones.json"
+            text: "Latest 4g phones",
+            json: "SHow_me_latest_4g_phones.json"
         }, {
             text: "Phones with fingerprint scanner",
-            json: "_Samsung_phones.json"
+            json: "Show_me_phones_with_fingerprint_scanner.json"
         }]
     }
 
@@ -145,19 +145,19 @@ function render_chat_html() {
                 return deferred.reject(err)
             }
 
-            console.log("context ", context)
+            
             // rendering the template with the context 
             hbs.renderView(chat_view_path, context, (err, template) => {
 
                 if (err) {
-                    console.log("err rendering ", err);
+            
                     return deferred.reject(err)
                 }
                 // saving the rendered template string in the html file
                 fs.writeFile(html_path, template, "utf8", function (err) {
 
                     if (err) {
-                        console.log("err saving template", err)
+            
                         return deferred.reject(err)
                     }
 

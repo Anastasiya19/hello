@@ -1,6 +1,6 @@
 function Zlatan (mobiles) {
 
-    console.log("Zlatan is on the pitch");
+
 
     //Query status
     this.mobiles = mobiles;

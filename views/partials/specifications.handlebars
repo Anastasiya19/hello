@@ -8,7 +8,7 @@
                         <h3 class="part-title">Phone requested</h3>
                         <div class="view__photo">
                             <img src="\{{this.selected_variant.image_urls.small}}" alt="" style="width: auto;">
-                            <a class="button button_white view__button" href="#">View Photos</a>
+                            <!-- <a class="button button_white view__button" href="#">View Photos</a> -->
                         </div>
                         <div class="view__characteristic characteristic">
                             <div class="characteristic__text">
@@ -36,18 +36,18 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="rating">
+                                <!-- <div class="rating">
                                     <div class="rating__star">
                                         <img src="assets/build/assets/images/star.svg" alt="">
                                         <span class="rating__value">\{{this.rating}} / 5.0</span>
                                     </div>
                                     <a href="#" class="rating__view">View Reviews</a>
-                                </div>
-                                <ul class="characteristic__list">
+                                </div> -->
+                                <!-- <ul class="characteristic__list">
                                    \{{#each this.features}}
                                         <li>\{{this}}</li>
                                     \{{/each}}
-                                </ul>
+                                </ul> -->
                             </div>
                             <div class="button button_white selection characteristic__selection">
                                 \{{{generate_memory_variants_helper}}}
@@ -113,37 +113,42 @@
                     </div>
                     <div class="view__prices view__col view__inline">
                         <!--<div class="scrollable-container gray-skin">-->
-                        <h3 class="part-title">Prices</h3>
+                        <!-- <h3 class="part-title">Prices</h3> -->
                         <div class="scrollable-container-two">
                             <div class="scroll-container-inside">
-                                <div class="price">
-                                    <div class="price__header price__header_best">
-                                        <div class="price__best">Best Price</div>
-                                        <img src="\{{{generate_logo_helper_cheapest shortlisted_model_shortlisted_retailer}}}" alt="" style="width: auto;">
-                                    </div>
-                                    <div class="price__body">
-                                        <span class="price__rs">RS</span>
-                                        <span class="price__num">\{{this.cheapest_price}}</span>
-                                        <a class="more-info">
-                                            <span class="more-info__btn"><img src="assets/build/assets/images/ic_info.svg" alt=""></span>
-                                            <div class="more-info__block">
-                                                <div class="more-info__part">
-                                                    <h4>Delivery:</h4>
-                                                    <h5>\{{{delivery this}}}</h5>
-                                                </div>
-                                                <div class="more-info__part">
-                                                    <h4>Offers:</h4>
-                                                    <h5>\{{{offers this}}}</h5>
-                                                </div>
+                                <a href="\{{this.cheapestURL}}" target="_blank">
+                                    <div class="price">
+                                        <div class="price__header price__header_best">
+                                            <div class="price__best">
+                                                <span style="font-size: 10px">Best Price</span>
+                                                <img src="\{{{generate_logo_helper_cheapest shortlisted_model_shortlisted_retailer}}}" style="left: 27%;top: 44%;" alt="">
                                             </div>
-                                        </a>
+                                        </div>
+                                        <div class="price__body">
+                                            <span class="price__rs">RS</span>
+                                            <span class="price__num">\{{this.cheapest_price}}</span>
+                                            <a class="more-info">
+                                                <span class="more-info__btn"><img src="assets/build/assets/images/ic_info.svg" alt=""></span>
+                                                <div class="more-info__block">
+                                                    <div class="more-info__part">
+                                                        <h4>Delivery:</h4>
+                                                        <h5>\{{{delivery this}}}</h5>
+                                                    </div>
+                                                    <div class="more-info__part">
+                                                        <h4>Offers:</h4>
+                                                        <h5>\{{{offers this}}}</h5>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                                 {{!-- the other retailers --}}
                                 \{{#each this.other_retailers_array}}
+                                    <a href="\{{this.productURL}}" target="_blank">
                                     <div class="price">
                                         <div class="price__header">
-                                            <img src="\{{generate_logo_helper}}" alt="" style="width: auto;">
+                                            <img src="\{{generate_logo_helper}}" alt="">
                                         </div>
                                         <div class="price__body">
                                             <span class="price__rs">RS</span>
@@ -163,6 +168,7 @@
                                             </a>
                                         </div>
                                     </div>
+                                    </a>
                                 \{{/each}}
                             </div>
                         </div>

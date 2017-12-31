@@ -1,10 +1,9 @@
 function specifications_request(zlatan){
 
-	console.log("We need to create a specifications element");
 
 	//First we need to check the query_status to determine
 	//which chat element to build
-	console.log("This is the list of mobiles received from the backend: ", zlatan.mobiles);
+
 
 	zlatan.mobiles.forEach(create_product);
 
@@ -16,9 +15,6 @@ function specifications_request(zlatan){
 
         raul.set_id();
 
-        console.log("This is raul for the mobile number: ", index);
-
-        console.log("This is raul: ", raul);
 
         raul.case_special_product();
 
@@ -61,7 +57,6 @@ function specifications_request(zlatan){
         raul.create_product_context();
 
         //raul is the object for each mobile in Zlatan
-        console.log("This is raul: ", raul);
 
         zlatan.mobiles_processed.push(raul);
 
@@ -72,7 +67,6 @@ function specifications_request(zlatan){
 
         mobiles_requested.push(mobiles_received);
 
-        console.log("This is the mobiles_requested array: ", mobiles_requested);
 
 
 
@@ -81,7 +75,6 @@ function specifications_request(zlatan){
 
 	}
 
-	console.log("This is zlatan: ", zlatan);
 
 	zlatan.mobiles_processed.forEach(get_context);
 
