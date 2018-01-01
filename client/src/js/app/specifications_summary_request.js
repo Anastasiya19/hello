@@ -28,7 +28,7 @@ function specifications_summary_request(zlatan){
         raul.create_summary_product_context();
 
         //raul is the object for each mobile in Zlatan
-        console.log("This is raul: ", raul);
+        
 
         zlatan.mobiles_processed.push(raul);
 
@@ -43,7 +43,7 @@ function specifications_summary_request(zlatan){
 
 	}
 
-	console.log("This is zlatan: ", zlatan);
+	
 
 	zlatan.mobiles_processed.forEach(get_context);
 
