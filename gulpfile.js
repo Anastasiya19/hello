@@ -2,7 +2,7 @@
 const gulp = require('gulp'),
     watch = require('gulp-watch'),
     prefixer = require('gulp-autoprefixer'),
-    uglify = require('gulp-uglify'),
+    uglify = require('gulp-uglify-es').default,
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
     rigger = require('gulp-rigger'),
@@ -13,6 +13,7 @@ const gulp = require('gulp'),
     browserSync = require('browser-sync'),
     reload = browserSync.reload,
     babel = require('gulp-babel'),
+    pump = require('pump'),
     render_chat_html = require('./helpers/pre_render_chat/render_chat_html');
 
 const path = {
@@ -67,16 +68,31 @@ gulp.task('html:build', function() {
 
 gulp.task('js:build', function() {
     gulp.src(path.src.js)
+    .pipe(sourcemaps.init())
         .pipe(rigger())
-        // .pipe(sourcemaps.init())
         // .pipe(babel({
         //     presets: ['es2015']
         // }))
-        // .pipe(uglify())
-        // .pipe(sourcemaps.write("."))
+        
+         .pipe(uglify())
+        .pipe(sourcemaps.write("."))
         .pipe(gulp.dest(path.build.js))
         .pipe(reload({ stream: true }));
 });
+
+gulp.task('compress', function (cb) {
+    pump([
+          gulp.src(path.src.js),
+          rigger(),
+          babel({
+                presets: ['es2015']
+            }),
+          uglify(),
+          gulp.dest(path.build.js)
+      ],
+      cb
+    );
+  });
 
 gulp.task('style:build', function() {
     gulp.src(path.src.style)

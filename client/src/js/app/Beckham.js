@@ -82,7 +82,7 @@ Beckham.prototype.build_specifications_summary_element = function (zlatan) {
 
     // Insert the HTML code into the page
     $('.chat__messages').append(this.html)
-
+    init_owl()
     this.scroll_into_view()
 
 

@@ -1,6 +1,6 @@
 //= ../../bower_components/lodash/dist/lodash.js
 //= ../../bower_components/jquery/dist/jquery.min.js
-//= ../../bower_components/wow/dist/wow.min.js
+//= ../../bower_components/wow/dist/wow.js
 //= ../../bower_components/owl.carousel/dist/owl.carousel.min.js
 //= ../../bower_components/lightbox2/dist/js/lightbox.min.js
 //= ../../bower_components/handlebars/handlebars.min.js
