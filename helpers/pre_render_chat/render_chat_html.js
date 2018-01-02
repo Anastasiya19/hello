@@ -122,7 +122,9 @@ function render_chat_html() {
                     }
                     context[carousel_key].push({
                         carousel_phones: carousel_phones,
-                        text: carousel.text
+                        text: carousel.text,
+                        query_object: data.web_reply.data.query_object,
+                        skip:20
                     });
                 } catch (e) {
                     return callback(e);
