@@ -28,7 +28,7 @@ function get_more(event) {
         beckham_router(beckham, zlatan, buffon);
 
         // append the last set of suggested question 
-        // $('.chat__messages').append($($(".suggestion")[$(".suggestion").length -1]))
+        $('.chat__messages').append($($(".suggestion")[$(".suggestion").length -1]))
         // remove the more button
         // $(".more-button")[$(".more-button").length -1].remove()
         // append new more button
