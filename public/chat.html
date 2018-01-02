@@ -6,9 +6,31 @@
 	<head>
 	    <!-- Basic Page Needs
 	        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	            <!-- Global Site Tag (gtag.js) - Google Analytics -->
+	            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106577146-1"></script>
+	            <script>
+	              window.dataLayer = window.dataLayer || [];
+	              function gtag(){dataLayer.push(arguments)};
+	              gtag('js', new Date());
+	    
+	              gtag('config', 'UA-106577146-1');
+	            </script>
+	    
+	            <script>
+	              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	              })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	    
+	              ga('create', 'UA-106577146-1', 'auto');
+	              ga('send', 'pageview');
+	    
+	            </script>
 	        <meta charset="utf-8">
-	        <title> Hello Vinci - Smart AI driven price comparison </title>
-	        <meta name="description" content="Content Curation Platform">
+	        <title> Hello Vinci - Ecommerce chatbot for shopping mobiles online </title>
+	        <meta name="description" content="Voice enabled chatbot to shop mobiles online">
+	        <meta name="keywords" content="Shop mobiles online, price comparison website, smart voice assistance, digital assistant, hello vinci, ecommerce chatbot, chatbot, digital assistant, ecommerce chatbot India">
+	        <meta name="author" content="Ankur Dhamija">
 	        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	        <meta name="author" content="Ankur Dhamija">
 	    
@@ -86,33 +108,9 @@
 
 						<div class="chat__messages">
 
-							<div class="message message_vinci animated fadeInLeft" style = "display: none">
-						    	<div class="message__item message__item_vinci br-chat" style="width: fit-content;">
-						      		<p>Hi! Happy 2018</p>
-								</div>
-	  						</div>
-
 	  						<div class="message message_vinci animated fadeInLeft" style = "display: none">
 						    	<div class="message__item message__item_vinci br-chat" style="width: fit-content;">
-						      		<p>Let's start this year with something interesting</p>
-								</div>
-	  						</div>
-
-	  						<div class="message message_vinci animated fadeInLeft" style = "display: none">
-						    	<div class="message__item message__item_vinci br-chat" style="width: fit-content;">
-						      		<p>A new shopping experience of buying mobiles online</p>
-								</div>
-	  						</div>
-
-	  						<div class="message message_vinci animated fadeInLeft" style = "display: none">
-						    	<div class="message__item message__item_vinci br-chat" style="width: fit-content;">
-						      		<p>Let's add voice to it :)</p>
-								</div>
-	  						</div>
-
-	  						<div class="message message_vinci animated fadeInLeft" style = "display: none">
-						    	<div class="message__item message__item_vinci br-chat" style="width: fit-content;">
-						      		<p>Hey there. I am Vinci</p>
+						      		<p>Hey there. I am Vinci. Happy 2018!</p>
 								</div>
 	  						</div>
 
@@ -1009,19 +1007,9 @@
 
 	  						<div class="message message_vinci animated fadeInLeft" style = "display: none">
 						    	<div class="message__item message__item_vinci br-chat" style="width: fit-content;">
-						      		<p>What all can I do?</p>
-								</div>
-	  						</div>
+						      		<p>So, I can do price comparison, compare phone features, show you video reviews and also suggest you phones.</p>
 
-	  						<div class="message message_vinci animated fadeInLeft" style = "display: none">
-						    	<div class="message__item message__item_vinci br-chat" style="width: fit-content;">
-						      		<p>Type your message in the input box below or press Talk to Vinci to talk to me</p>
-								</div>
-	  						</div>
-
-	  						<div class="message message_vinci animated fadeInLeft" style = "display: none">
-						    	<div class="message__item message__item_vinci br-chat" style="width: fit-content;">
-						      		<p>Get you the best price of your favorite phone, compare it's features, show you video reviews and also suggest you phones based on your shopping requirements</p>
+						      		<p>To interact with me, type your message in the input box below or press Talk to Vinci</p>
 								</div>
 	  						</div>
 
@@ -2150,77 +2138,164 @@
 <script type="text/javascript">
 /*
 	document.addEventListener('DOMContentLoaded', function () {
-		
+
+		var skip_intro_status = false;
+
+		//Disable the send_btn
+		var send_btn = document.getElementById('send_chat');
+		send_btn.style.display = "none";
+
+		//Disable the speech_btn
+		var speech_btn = document.getElementsByClassName('send__btn_speak');
+		speech_btn[0].style.display = "none";
+
+  
+
+		//Select the messages
 		var messages = document.getElementsByClassName('message_vinci');
 
-		console.log("this is messages: ", messages);
+		var interval = 1000;
 
-		console.log("This is messages length: ", messages.length);
+		//Start the display message
+		display_message(0, interval);
 
-		display_message(0)
+		function skip_intro(){
+
+			setTimeout(function(){
+				
+				$('.is--typing').remove();
+
+			}, 200)
+
+			skip_intro_status = true;
+
+			//delete the skip intro button
+			$("#stop_intro_btn").remove();
+
+			//Enable the send_btn
+			var send_btn = document.getElementById('send_chat');
+			send_btn.style.display = "inline-block";
+			
+			//Enable the speech_btn
+			var speech_btn = document.getElementsByClassName('send__btn_speak');
+			speech_btn[0].style.display = "inline-block";
+
+			//load all messages
+			//Select the messages
+			var messages = document.getElementsByClassName('message_vinci');
 
 
-		function display_message(count){
+			for(var i = 0; i< messages.length; i++){
+
+				//Make them visible
+				messages[i].style.display = "block";
+				
+				//Remove the is--typing element
+        		$('.is--typing').remove();
+			}
+
+		}
+
+
+		function display_message(count, interval){
 
 			setTimeout(function(){
 
-				if(count > 0){
-					
+				var interval = getRandomArbitrary(5500,6500);
+
+				function getRandomArbitrary(min, max) {
+					return Math.random() * (max - min) + min;
+				}//getRandomArbitraryends
+
+
+				if(count === 0){
+					var skip_intro_btn = "<button class='btn send__btn' type='submit' id='stop_intro_btn'>Skip intro</button>";
+					$("#send_chat").before(skip_intro_btn);
+
+					var skip_intro_btn = document.getElementById('stop_intro_btn');
+
+					skip_intro_btn.onclick = skip_intro;
+				}
+
+
+				if(count > 0){	
 					//Remove the is--typing element
         			$('.is--typing').remove();
-
 				}
 
 				
-
+				//Get the messages
 				var messages = document.getElementsByClassName('message_vinci');
 
+				//Speak the messages
 				// if(count > 2 && count < messages.length){
-
-					responsiveVoice.setDefaultVoice("US English Female", {rate: 0.5});
-					responsiveVoice.speak(messages[count].innerText);	
+				responsiveVoice.setDefaultVoice("US English Female", {rate: 0.5});
+				responsiveVoice.speak(messages[count].innerText);	
 				// }
 
 				
-
+				//Make them visible
 				messages[count].style.display = "block";
 
+				//Increase the count
 				count+=1;
 
-
-
-
-
+				//Call the message
 		        if(count<messages.length){
 
 		        	setTimeout(function(){
 
-					$('.chat__messages').
-			        append(`<div class="message message_vinci is--typing">
-			            <!--<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">-->
-			            <div class="message__item message__item_vinci message__item_writing br-chat">
-			                <div class="spinner">
-			                    <div class="bounce1"></div>
-			                    <div class="bounce2"></div>
-			                    <div class="bounce3"></div>
-			                </div>
-			                <!--<img src="assets/images/vinci_writing_dots.svg" alt="">-->
-			            </div>
-			        </div>`)
+		        	
+		        	if(!skip_intro_status){
+		        		$('.chat__messages').
+				        append(`<div class="message message_vinci is--typing">
+				            <!--<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">-->
+				            <div class="message__item message__item_vinci message__item_writing br-chat">
+				                <div class="spinner">
+				                    <div class="bounce1"></div>
+				                    <div class="bounce2"></div>
+				                    <div class="bounce3"></div>
+				                </div>
+				                <!--<img src="assets/images/vinci_writing_dots.svg" alt="">-->
+				            </div>
+				        </div>`)
+
+		        	}
+
 
 					}, 2500);
 
-					display_message(count);	
+		        	if(!skip_intro_status){
+		        		display_message(count, interval);	
+		        	}
+						
 				}
 
+				//Else remove is typing, we are done
 				else{
+					
 					//Remove the is--typing element
-        		$('.is--typing').remove();
+        			$('.is--typing').remove();
+
+        			//delete the skip intro button
+					$("#stop_intro_btn").remove();
+
+					//Enable the send_btn
+					var send_btn = document.getElementById('send_chat');
+					send_btn.style.display = "inline-block";
+			
+					//Enable the speech_btn
+					var speech_btn = document.getElementsByClassName('send__btn_speak');
+					speech_btn[0].style.display = "inline-block";
+
+
 				}
 
-			}, 6000);
+			}, interval);
 
 		}
+
+
 
 
 

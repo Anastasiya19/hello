@@ -1,8 +1,9 @@
 //Function to create the request and get the reply
 function hellovinciai(msg) {
 
-    
-    setTimeout(function() {
+    if(msg !== null || msg !== undefined){
+
+            setTimeout(function() {
         $('.chat__messages').
         append(`<div class="message message_vinci is--typing">
             <!--<img class="vinci-logo" src="assets/build/assets/images/vinci-mes.svg" alt="">-->
@@ -107,5 +108,10 @@ function hellovinciai(msg) {
       $('#mCSB_1_dragger_vertical').css({top:'unset',bottom:'0px'})
 
     });
+
+    }
+
+    
+
 
 } // function askapiai ends
