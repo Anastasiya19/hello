@@ -36,6 +36,10 @@ $(document).ready(function () {
       if(input[0].value.length > 0){
         send_auto_complete_request(input[0].value);
       }
+
+      else{
+        $('.helpers').hide(100);
+      }
       
       // $('.helpers').delay(200).show();
   });
