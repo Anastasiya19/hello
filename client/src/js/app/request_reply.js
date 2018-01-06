@@ -87,6 +87,17 @@ function hellovinciai(msg) {
                 append_more_button(reply_received.web_reply.data.query_object)
             }
 
+            var bottomMobile = $('.chat__content')[0].scrollHeight;
+            var lastMessageMobile = $('.message_sender').last()[0].offsetTop - 20;
+            $('.chat__content').scrollTop(Math.min(bottomMobile,lastMessageMobile));
+
+            //for mCustomScrollbar
+            var bottom =  $(".chat__content>.mCSB_vertical>.mCSB_container").height() - $('.chat__content>.mCSB_vertical').height();
+            var lastMessage = $('.message_sender').last()[0].offsetTop - 20;
+            $(".chat__content>.mCSB_vertical>.mCSB_container").css({'top': - Math.min(bottom,lastMessage)})
+            $('.chat__content>.mCSB_vertical>.mCSB_scrollTools_vertical .mCSB_dragger').css({top:'unset',bottom:'0px'})
+
+
    
         }
 
@@ -107,15 +118,6 @@ function hellovinciai(msg) {
       // $("#mCSB_1_container").css({'top': $('#mCSB_1').height() - $("#mCSB_1_container").height()})
       // $('#mCSB_1_dragger_vertical').css({top:'unset',bottom:'0px'})
 
-      var bottomMobile = $('.chat__content')[0].scrollHeight;
-      var lastMessageMobile = $('.message_sender').last()[0].offsetTop - 20;
-      $('.chat__content').scrollTop(Math.min(bottomMobile,lastMessageMobile));
-
-      //for mCustomScrollbar
-      var bottom =  $(".chat__content>.mCSB_vertical>.mCSB_container").height() - $('.chat__content>.mCSB_vertical').height();
-      var lastMessage = $('.message_sender').last()[0].offsetTop - 20;
-      $(".chat__content>.mCSB_vertical>.mCSB_container").css({'top': - Math.min(bottom,lastMessage)})
-      $('.chat__content>.mCSB_vertical>.mCSB_scrollTools_vertical .mCSB_dragger').css({top:'unset',bottom:'0px'})
 
 
     });
