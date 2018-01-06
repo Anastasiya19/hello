@@ -100,12 +100,23 @@ function hellovinciai(msg) {
             batman_false(reply_received);
         }
 
-      //for native scroll(mobile only)
-      $('.chat__content').scrollTop($('.chat__content')[0].scrollHeight);
+      // //for native scroll(mobile only)
+      // $('.chat__content').scrollTop($('.chat__content')[0].scrollHeight);
+
+      // //for mCustomScrollbar
+      // $("#mCSB_1_container").css({'top': $('#mCSB_1').height() - $("#mCSB_1_container").height()})
+      // $('#mCSB_1_dragger_vertical').css({top:'unset',bottom:'0px'})
+
+      var bottomMobile = $('.chat__content')[0].scrollHeight;
+      var lastMessageMobile = $('.message_sender').last()[0].offsetTop - 20;
+      $('.chat__content').scrollTop(Math.min(bottomMobile,lastMessageMobile));
 
       //for mCustomScrollbar
-      $("#mCSB_1_container").css({'top': $('#mCSB_1').height() - $("#mCSB_1_container").height()})
-      $('#mCSB_1_dragger_vertical').css({top:'unset',bottom:'0px'})
+      var bottom =  $(".chat__content>.mCSB_vertical>.mCSB_container").height() - $('.chat__content>.mCSB_vertical').height();
+      var lastMessage = $('.message_sender').last()[0].offsetTop - 20;
+      $(".chat__content>.mCSB_vertical>.mCSB_container").css({'top': - Math.min(bottom,lastMessage)})
+      $('.chat__content>.mCSB_vertical>.mCSB_scrollTools_vertical .mCSB_dragger').css({top:'unset',bottom:'0px'})
+
 
     });
 
