@@ -45,7 +45,7 @@ function comparison_request(zlatan, query_status){
 
 		function find_attribute(element, index, array){
 
-			console.log("Attribute requested is: ", element);
+			
 
 			if(element === 'camera'){
 

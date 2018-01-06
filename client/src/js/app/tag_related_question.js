@@ -7,7 +7,7 @@ function tag_related_question(zlatan, buffon){
 
     for (var j = 0; j < zlatan.mobiles.length; j++){
     
-        console.log("Inside create_tag_reply");
+        
 
         var tags_general = ["latest"];
 
@@ -44,8 +44,6 @@ function tag_related_question(zlatan, buffon){
 
             if(tags_general.indexOf(tag) > -1){
 
-                console.log(tag + " value is : " + zlatan.mobiles[j].variants[0].product_tags[tag]);
-
                 if(zlatan.mobiles[j].variants[0].product_tags[tag]){
                     tags_general_true.push(tag);
                 }
@@ -62,7 +60,6 @@ function tag_related_question(zlatan, buffon){
 
             if(tags_functionality.indexOf(tag) > -1){
 
-                console.log(tag + " value is : " + zlatan.mobiles[j].variants[0].product_tags[tag]);
 
                 if(zlatan.mobiles[j].variants[0].product_tags[tag]){
                     tags_functionality_true.push(tag);

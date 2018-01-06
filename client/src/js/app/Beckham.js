@@ -327,15 +327,26 @@ Beckham.prototype.scroll_into_view = function () {
 
   // scroll_element.style.top = scroll_value + "px";
 
-  var a = document.getElementsByClassName('chat__messages')
+  // var a = document.getElementsByClassName('chat__messages')
   
 
-  var b = a[0].getElementsByClassName('message_sender')
+  // var b = a[0].getElementsByClassName('message_sender')
   
 
-  var element_count = b.length - 1
+  // var element_count = b.length - 1
   
 
-  b[element_count].scrollIntoView({behavior: "smooth"})
+  // b[element_count].scrollIntoView({behavior: "smooth"})
+
+  //for native scroll(mobile only)
+      var bottomMobile = $('.chat__content')[0].scrollHeight;
+      var lastMessageMobile = $('.message_sender').last()[0].offsetTop - 20;
+      $('.chat__content').scrollTop(Math.min(bottomMobile,lastMessageMobile));
+
+      //for mCustomScrollbar
+      var bottom =  $(".chat__content>.mCSB_vertical>.mCSB_container").height() - $('.chat__content>.mCSB_vertical').height();
+      var lastMessage = $('.message_sender').last()[0].offsetTop - 20;
+      $(".chat__content>.mCSB_vertical>.mCSB_container").css({'top': - Math.min(bottom,lastMessage)})
+      $('.chat__content>.mCSB_vertical>.mCSB_scrollTools_vertical .mCSB_dragger').css({top:'unset',bottom:'0px'})
   
 }

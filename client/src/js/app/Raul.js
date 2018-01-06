@@ -346,7 +346,7 @@ Raul.prototype.get_cheapest_variant_size_color = function(){
     //selected_variant is the one for which we show all the details
     //this.selected_variant = this.mobiles[index].variants[this.shortlisted_model_index];
 
-    console.log("selected_variant is: ", this.selected_variant);
+    
 
 
 };//get_cheapest_variant function ends

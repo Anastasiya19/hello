@@ -5,7 +5,7 @@ function send_auto_complete_request(input_query) {
 
     var input_query = input_query;
 
-    console.log("This is the search query: ", input_query);
+    
 
     var start = new Date();
 
