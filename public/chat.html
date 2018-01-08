@@ -2368,14 +2368,15 @@
         			$('.is--typing').remove();
 				}
 
-				
+				var speech_messages = ["Hello, I am Vinci. I am your personal assistant to shop mobiles online", "Suppose you are looking for latest phones. Just say.. 'Show me latest phones'", "Latest phones", "Best battery phones", "Phones with wireless charging", "So, I can do price comparison, compare phone features, show you video reviews and also suggest you phones. Type your message in the input box below or press Talk to Vinci to talk to me."]
+
 				//Get the messages
-				var messages = document.getElementsByClassName('message_vinci');
+				// var messages = document.getElementsByClassName('message_vinci');
 
 				//Speak the messages
-				// if(count > 2 && count < messages.length){
+				// if(count < 1){
 				responsiveVoice.setDefaultVoice("US English Female", {rate: 0.5});
-				responsiveVoice.speak(messages[count].innerText);	
+				responsiveVoice.speak(speech_messages[count]);	
 				// }
 
 				
@@ -2404,6 +2405,17 @@
 				                <!--<img src="assets/images/vinci_writing_dots.svg" alt="">-->
 				            </div>
 				        </div>`)
+
+				        var bottomMobile = $('.chat__content')[0].scrollHeight;
+            			var lastMessageMobile = $('.message_vinci').last()[0].offsetTop - 20;
+            			$('.chat__content').scrollTop(Math.min(bottomMobile,lastMessageMobile));
+
+            			//for mCustomScrollbar
+            			var bottom =  $(".chat__content>.mCSB_vertical>.mCSB_container").height() - $('.chat__content>.mCSB_vertical').height();
+            			var lastMessage = $('.message_vinci').last()[0].offsetTop - 20;
+            			$(".chat__content>.mCSB_vertical>.mCSB_container").css({'top': - Math.min(bottom,lastMessage)})
+            			$('.chat__content>.mCSB_vertical>.mCSB_scrollTools_vertical .mCSB_dragger').css({top:'unset',bottom:'0px'})
+
 
 		        	}
 
