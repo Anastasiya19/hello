@@ -768,6 +768,11 @@ Raul.prototype.get_tags_features = function(){
     console.log("Inside get_tags_features: ");
     console.log("This is the first tag: ", this.selected_variant.product_tags);
 
+    for(const prop in this.selected_variant.product_tags){
+
+        console.log("This is the prop: ", prop);
+    }
+
 }
 
 
