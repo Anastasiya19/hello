@@ -770,8 +770,54 @@ Raul.prototype.get_tags_features = function(){
 
     for(const prop in this.selected_variant.product_tags){
 
+        var result = this.map_tags(prop);
+
+        if(result){
+
+            this.tags_array.push(result)
+        }
+
         console.log("This is the prop: ", prop);
     }
+
+    console.log("This is tags_array: ", this.tags_array);
+
+}
+
+//Function to map tags to features to be shown in the specification element
+Raul.prototype.map_tags = function(tag){
+
+    var tag_map = [
+
+        ["bestseller", "Bestseller"],
+        ["latest", "Latest"],
+        ["light weight", "Lightweight"],
+        ["flagship", "Flagship phone"],
+        ["fingerprint sensor", "Fingerprint sensor"],
+        ["4g", "4g"],
+        ["dual sim", "Dual sim"],
+        ["wireless charging", "Wireless charging"],
+        ["waterproof", "Water resistant"],
+        ["bezel", "Bezel less display"],
+        ["gorilla glass", "Gorilla glass"],
+        ["otg compatible", "OTG compatible"],
+        ["micro usb port", "Micro USB Port"],
+        ["expandable storage", "Expandable storage"],
+        ["hybrid sim slot", "Hyrbid sim slot"],
+        ["portrait mode", "Portrait mode"],
+        ["dual camera", "Dual camera"],
+        ["touchscreen", "Touchscreen"]
+
+    ];
+
+    for (var i = 0; i < tag_map.length; i++) {
+        if (tag_map[i][0] === tag) {
+            return tag_map[i][1];
+        }
+    }
+
+    return false
+
 
 }
 
