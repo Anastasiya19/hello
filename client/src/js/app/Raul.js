@@ -49,7 +49,7 @@ function Raul (mobile, load_status) {
 
     this.color_selector;
 
-    this.tags_array;
+    this.tags_array = [];
 
 }
 
@@ -764,7 +764,35 @@ Raul.prototype.get_other_retailers = function() {
 //Function to get the tags for the features section
 Raul.prototype.get_tags_features = function(){
 
-    this.tags_array = [];
+    if (this.selected_variant.display_specifications.display_size !== "N/A") {
+
+        this.tags_array.push(this.selected_variant.display_specifications.display_size + " screen");
+
+    } //display size case ends
+
+    if (this.selected_variant.display_specifications.display_type !== "N/A") {
+
+        this.tags_array.push(this.selected_variant.display_specifications.display_type + " display");
+
+    } //display type case ends
+
+    if (this.selected_variant.display_specifications.resolution !== "N/A") {
+
+        this.tags_array.push(this.selected_variant.display_specifications.resolution + " resolution");
+
+    } //resolution case ends
+
+    if (this.selected_variant.camera.primary_camera_pixels !== "N/A") {
+
+        this.tags_array.push(this.selected_variant.camera.primary_camera_pixels + " primary camera");
+
+    } //resolution case ends
+
+    if (this.selected_variant.camera.secondary_camera_pixels !== "N/A") {
+
+        this.tags_array.push(this.selected_variant.camera.secondary_camera_pixels + " selfie camera");
+
+    } //resolution case ends
 
 
     console.log("Inside get_tags_features: ");
