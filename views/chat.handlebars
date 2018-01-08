@@ -477,15 +477,16 @@
         			$('.is--typing').remove();
 				}
 
-				
+				var speech_messages = ["Hello, I am Vinci. I am your personal assistant to shop mobiles online", "Suppose you are looking for latest phones. Just say.. 'Show me latest phones'", "Latest phones", "Best battery phones", "Phones with wireless charging", "So, I can do price comparison, compare phone features, show you video reviews and also suggest you phones. Type your message in the input box below or press Talk to Vinci to talk to me."]
+
 				//Get the messages
-				var messages = document.getElementsByClassName('message_vinci');
+				// var messages = document.getElementsByClassName('message_vinci');
 
 				//Speak the messages
-				if(count < 1){
+				// if(count < 1){
 				responsiveVoice.setDefaultVoice("US English Female", {rate: 0.5});
-				responsiveVoice.speak(messages[count].innerText);	
-				}
+				responsiveVoice.speak(speech_messages[count]);	
+				// }
 
 				
 				//Make them visible

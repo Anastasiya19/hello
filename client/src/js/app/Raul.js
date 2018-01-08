@@ -865,6 +865,7 @@ Raul.prototype.create_product_context = function() {
         get_display: this.get_display,
         get_camera: this.get_camera,
         battery: this.battery,
+        tags_array: this.tags_array,
         cheapestURL: this.selected_variant.product_retailers[this.shortlisted_model_shortlisted_retailer_index]["productURL"]
 
     } //this.context object over
