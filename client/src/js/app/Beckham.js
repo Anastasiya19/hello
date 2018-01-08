@@ -225,7 +225,7 @@ Beckham.prototype.build_video_review_element = function (zlatan) {
 Beckham.prototype.build_text_review_element = function (zlatan) {
   
 
-  reduce_to_pairs = (accumulator, currentValue, index) => {
+  reduce_to_pairs = function (accumulator, currentValue, index)  {
     // console.log(accumulator)
     if (index % 2 === 0) {
       if (zlatan.mobiles.reviews[0].reviews[index + 1]) {
