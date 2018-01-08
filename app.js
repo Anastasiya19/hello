@@ -70,7 +70,7 @@ const config = require('./config/config.js')
 var app = express()
 // ******End********
 
-// app.use(serve_favicon(path.join(__dirname,"./public/build/assets/images/logo.svg")))
+app.use(serve_favicon(path.join(__dirname,"/public/build/assets/images/favicon-96x96.png")))
 app.use(cookieSession({
   name: 'session',
   keys: ["1Kd0Uy6nS"],
