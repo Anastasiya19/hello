@@ -49,6 +49,8 @@ function Raul (mobile, load_status) {
 
     this.color_selector;
 
+    this.tags_array;
+
 }
 
 //Function to set the ID
@@ -757,6 +759,16 @@ Raul.prototype.get_other_retailers = function() {
 
 
 } //get_other_retailers function ends
+
+
+//Function to get the tags for the features section
+Raul.prototype.get_tags_features = function(){
+
+
+    console.log("Inside get_tags_features: ");
+    console.log("This is the first tag: ", this.selected_variant.product_tags[0]);
+
+}
 
 
 Raul.prototype.create_product_context = function() {

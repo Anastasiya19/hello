@@ -53,8 +53,13 @@ function specifications_request(zlatan){
         //Inside messi.js
         raul.get_other_retailers();
 
+        //Get the tags for the features section
+        raul.get_tags_features();
+
         //Create the product context object
         raul.create_product_context();
+
+
 
         //raul is the object for each mobile in Zlatan
 
