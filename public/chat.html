@@ -1787,6 +1787,24 @@
 	                        </div>
 	                    </div>
 	                </div>
+	                <div class="view__features">
+	                    <h4 class="characteristic__model">Features</h4>
+	                    <a class="more-info">
+	                        <span class="more-info__btn"><img src="assets/images/ic_info.svg" alt=""></span>
+	                        <div class="more-info__block view__info-helper">
+	                            <span>Features</span>
+	                        </div>
+	                    </a>
+	                    <div class="view__features-items">
+	                        {{#each this.tags_array}}
+	                        <div class="view__features-item">
+	                            <img src="">
+	                            <span>{{this}}</span>
+	                        </div>
+	                        {{/each}}
+	                        
+	                    </div>
+	                </div>
 	            </div>
 	        {{/each}}
 	    </div>
@@ -2368,7 +2386,7 @@
         			$('.is--typing').remove();
 				}
 
-				var speech_messages = ["Hello, I am Vinci. I am your personal assistant to shop mobiles online", "Suppose you are looking for latest phones. Just say.. 'Show me latest phones'", "Latest phones", "Best battery phones", "Phones with wireless charging", "So, I can do price comparison, compare phone features, show you video reviews and also suggest you phones. Type your message in the input box below or press Talk to Vinci to talk to me."]
+				var speech_messages = ["Hello, I am Vinci, your personal assistant to shop mobiles online", "Looking for latest phones. Just say.. 'Show me latest phones'", "Latest phones", "Best battery phones", "Phones with wireless charging", "I can do price comparison, compare phone features, show you video reviews and also suggest you phones. Type your message in the input box for chat or press Talk to Vinci to talk to me."]
 
 				//Get the messages
 				// var messages = document.getElementsByClassName('message_vinci');
