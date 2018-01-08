@@ -764,6 +764,8 @@ Raul.prototype.get_other_retailers = function() {
 //Function to get the tags for the features section
 Raul.prototype.get_tags_features = function(){
 
+    this.tags_array = [];
+
 
     console.log("Inside get_tags_features: ");
     console.log("This is the first tag: ", this.selected_variant.product_tags);
@@ -786,6 +788,8 @@ Raul.prototype.get_tags_features = function(){
 
 //Function to map tags to features to be shown in the specification element
 Raul.prototype.map_tags = function(tag){
+
+    console.log("Inside map_tags, this is the tag: ",tag);
 
     var tag_map = [
 
@@ -812,9 +816,20 @@ Raul.prototype.map_tags = function(tag){
 
     for (var i = 0; i < tag_map.length; i++) {
         if (tag_map[i][0] === tag) {
+
+            console.log("match found for tag: ", tag);
+
             return tag_map[i][1];
         }
+
+        else{
+
+            console.log("Match not found for tag: ", tag);
+        }
+
     }
+
+    console.log("Loop over, match not found for tag: ", tag);
 
     return false
 
