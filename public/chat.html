@@ -2373,10 +2373,10 @@
 				var messages = document.getElementsByClassName('message_vinci');
 
 				//Speak the messages
-				// if(count > 2 && count < messages.length){
+				if(count < 1){
 				responsiveVoice.setDefaultVoice("US English Female", {rate: 0.5});
 				responsiveVoice.speak(messages[count].innerText);	
-				// }
+				}
 
 				
 				//Make them visible
@@ -2404,6 +2404,17 @@
 				                <!--<img src="assets/images/vinci_writing_dots.svg" alt="">-->
 				            </div>
 				        </div>`)
+
+				        var bottomMobile = $('.chat__content')[0].scrollHeight;
+            			var lastMessageMobile = $('.message_sender').last()[0].offsetTop - 20;
+            			$('.chat__content').scrollTop(Math.min(bottomMobile,lastMessageMobile));
+
+            			//for mCustomScrollbar
+            			var bottom =  $(".chat__content>.mCSB_vertical>.mCSB_container").height() - $('.chat__content>.mCSB_vertical').height();
+            			var lastMessage = $('.message_sender').last()[0].offsetTop - 20;
+            			$(".chat__content>.mCSB_vertical>.mCSB_container").css({'top': - Math.min(bottom,lastMessage)})
+            			$('.chat__content>.mCSB_vertical>.mCSB_scrollTools_vertical .mCSB_dragger').css({top:'unset',bottom:'0px'})
+
 
 		        	}
 
