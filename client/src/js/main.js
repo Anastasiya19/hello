@@ -210,6 +210,7 @@ function sendMessage() {
 //= custom/carousel.js
 
 //= custom/init.js
+//= app/vinci_intro.js
 //= app/attributes_request.js
 //= app/auto_complete_request.js
 //= app/batman_false.js

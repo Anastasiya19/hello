@@ -14,6 +14,7 @@ const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const session = require('express-session')
 var cookieSession = require('cookie-session')
+var cookieParser = require('cookie-parser')
 const mongodbStore = require('connect-mongo')(session)
 var serve_favicon = require("serve-favicon")
 // ******These modules have not been installed********
@@ -76,9 +77,10 @@ app.use(cookieSession({
   keys: ["1Kd0Uy6nS"],
  
   // Cookie Options
-  maxAge: 24 * 60 * 60 * 1000 // 24 hours
+  maxAge: 10 * 24 * 60 * 60 * 1000 // 24 hours
 }))
 
+app.use(cookieParser())
 
 // //Secure traffic only
 // app.all('*',function(req,res,next){
@@ -242,7 +244,7 @@ app.post('/hellovinciai', function (req, res) {
 
       if(req.body.api_request_text.length < 80){
 
-        if(!req.session.active_list){
+        if(!req.session.active_list){  
           req.session.active_list = default_active_list;
         }
         // req.body.active_list = JSON.parse(req.body.active_list)
