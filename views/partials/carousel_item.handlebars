@@ -3,7 +3,7 @@
                         <h3 class="part-title">Phone requested</h3>
                         <div class="view__photo">
                             <img src="\{{this.selected_variant.image_urls.small}}" alt="" style="width: auto;">
-                            <a class="button button_white view__button" href="#">View Photos</a>
+                            <!-- <a class="button button_white view__button" href="#">View Photos</a> -->
                         </div>
                         <div class="view__characteristic characteristic">
                             <div class="characteristic__text">
@@ -111,10 +111,14 @@
                         <h3 class="part-title">Prices</h3>
                         <div class="scrollable-container-two">
                             <div class="scroll-container-inside">
-                                <div class="price">
+                                <a href="\{{this.cheapestURL}}" target="_blank">
+                                    <div class="price">
                                     <div class="price__header price__header_best">
-                                        <div class="price__best">Best Price</div>
-                                        <img src="\{{{generate_logo_helper_cheapest shortlisted_model_shortlisted_retailer}}}" alt="" style="width: auto;">
+                                        <div class="price__best">
+                                            <span style="font-size: 10px">Best Price</span>
+                                            <img src="\{{{generate_logo_helper_cheapest shortlisted_model_shortlisted_retailer}}}" style="left: 27%;top: 44%;" alt="">
+                                        </div>
+
                                     </div>
                                     <div class="price__body">
                                         <span class="price__rs">RS</span>
@@ -133,12 +137,14 @@
                                             </div>
                                         </a>
                                     </div>
-                                </div>
+                                    </div>
+                                </a>
                                 {{!-- the other retailers --}}
                                 \{{#each other_retailers_array}}
-                                    <div class="price">
+                                    <a href="\{{this.productURL}}" target="_blank">
+                                        <div class="price">
                                         <div class="price__header">
-                                            <img src="\{{generate_logo_helper}}" alt="" style="width: auto;">
+                                            <img src="\{{generate_logo_helper}}" alt="">
                                         </div>
                                         <div class="price__body">
                                             <span class="price__rs">RS</span>
@@ -157,7 +163,8 @@
                                                 </div>
                                             </a>
                                         </div>
-                                    </div>
+                                        </div>
+                                    </a>
                                 \{{/each}}
                             </div>
                         </div>
