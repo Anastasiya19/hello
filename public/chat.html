@@ -1727,7 +1727,7 @@
 	                    </div>
 	                    <div class="view__prices view__col view__inline">
 	                        <!--<div class="scrollable-container gray-skin">-->
-	                        <!-- <h3 class="part-title">Prices</h3> -->
+	                        <h3 class="part-title">Prices</h3>
 	                        <div class="scrollable-container-two">
 	                            <div class="scroll-container-inside">
 	                                <a href="{{this.cheapestURL}}" target="_blank">
@@ -1739,7 +1739,7 @@
 	                                            </div>
 	                                        </div>
 	                                        <div class="price__body">
-	                                            <span class="price__rs">RS</span>
+	                                            <span class="price__rs">Rs</span>
 	                                            <span class="price__num">{{this.cheapest_price}}</span>
 	                                            <a class="more-info">
 	                                                <span class="more-info__btn"><img src="assets/build/assets/images/ic_info.svg" alt=""></span>
@@ -1764,7 +1764,7 @@
 	                                            <img src="{{generate_logo_helper}}" alt="">
 	                                        </div>
 	                                        <div class="price__body">
-	                                            <span class="price__rs">RS</span>
+	                                            <span class="price__rs">Rs</span>
 	                                            <span class="price__num">{{this.product_pricing.special_price}}</span>
 	                                            <a class="more-info">
 	                                                <span class="more-info__btn"><img src="assets/build/assets/images/ic_info.svg" alt=""></span>
@@ -1805,6 +1805,35 @@
 	                        
 	                    </div>
 	                </div> -->
+	                <!-- <div class="view__comparison">
+	                    
+	                    <div style="width:100%; padding-left: 10px; padding-right: 10px">
+	                    <h4 class="characteristic__model">Comparison</h4>
+	                    <a class="more-info">
+	                        <span class="more-info__btn" style="margin-top: -24px;"><img src="assets/build/assets/images/ic_info.svg" alt=""></span>
+	                        <div class="more-info__block view__info-helper">
+	                            <span>Search and select phones for comparison. Click on Go to compare</span>
+	                        </div>
+	                    </a>
+	                    </div>
+	                    
+	                    <span style="padding-left:10px">Compare it with</span>
+	                    
+	                    <div class="comparison__block">
+	                        <div class="comparison__item closeTopRight" >
+	                            <span>iPhone X</span>
+	                        </div>
+	                    </div>
+	                    <a class="go-button button ">
+	                        <span>Go</span>
+	                    </a>
+	                    <div class="search-block">
+	                        <input type="text" class="tags search-box" placeholder="Search phones for comparison...">
+	                        <i class="ion-search"></i>
+	                    </div>
+	
+	                </div> -->
+	
 	            </div>
 	        {{/each}}
 	    </div>
@@ -2042,7 +2071,7 @@
 	                        <h3 class="part-title">Phone requested</h3>
 	                        <div class="view__photo">
 	                            <img src="{{this.selected_variant.image_urls.small}}" alt="" style="width: auto;">
-	                            <a class="button button_white view__button" href="#">View Photos</a>
+	                            <!-- <a class="button button_white view__button" href="#">View Photos</a> -->
 	                        </div>
 	                        <div class="view__characteristic characteristic">
 	                            <div class="characteristic__text">
@@ -2150,13 +2179,17 @@
 	                        <h3 class="part-title">Prices</h3>
 	                        <div class="scrollable-container-two">
 	                            <div class="scroll-container-inside">
-	                                <div class="price">
+	                                <a href="{{this.cheapestURL}}" target="_blank">
+	                                    <div class="price">
 	                                    <div class="price__header price__header_best">
-	                                        <div class="price__best">Best Price</div>
-	                                        <img src="{{{generate_logo_helper_cheapest shortlisted_model_shortlisted_retailer}}}" alt="" style="width: auto;">
+	                                        <div class="price__best">
+	                                            <span style="font-size: 10px">Best Price</span>
+	                                            <img src="{{{generate_logo_helper_cheapest shortlisted_model_shortlisted_retailer}}}" style="left: 27%;top: 44%;" alt="">
+	                                        </div>
+	
 	                                    </div>
 	                                    <div class="price__body">
-	                                        <span class="price__rs">RS</span>
+	                                        <span class="price__rs">Rs</span>
 	                                        <span class="price__num">{{cheapest_price}}</span>
 	                                        <a class="more-info">
 	                                            <span class="more-info__btn"><img src="assets/build/assets/images/ic_info.svg" alt=""></span>
@@ -2172,14 +2205,16 @@
 	                                            </div>
 	                                        </a>
 	                                    </div>
-	                                </div>
+	                                    </div>
+	                                </a>
 	                                {{#each other_retailers_array}}
-	                                    <div class="price">
+	                                    <a href="{{this.productURL}}" target="_blank">
+	                                        <div class="price">
 	                                        <div class="price__header">
-	                                            <img src="{{generate_logo_helper}}" alt="" style="width: auto;">
+	                                            <img src="{{generate_logo_helper}}" alt="">
 	                                        </div>
 	                                        <div class="price__body">
-	                                            <span class="price__rs">RS</span>
+	                                            <span class="price__rs">Rs</span>
 	                                            <span class="price__num">{{product_pricing.special_price}}</span>
 	                                            <a class="more-info">
 	                                                <span class="more-info__btn"><img src="assets/build/assets/images/ic_info.svg" alt=""></span>
@@ -2195,7 +2230,8 @@
 	                                                </div>
 	                                            </a>
 	                                        </div>
-	                                    </div>
+	                                        </div>
+	                                    </a>
 	                                {{/each}}
 	                            </div>
 	                        </div>
