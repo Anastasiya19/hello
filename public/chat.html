@@ -2254,30 +2254,37 @@
 	    <div class="message__item message__item_view view  br-chat message__item_review-filter">
 	        <h5 class="message__item_title">Review filter</h5>
 	        <div class="message__item-wrap">
-	            <ul class="helpers__list">
-	                <li class="helpers__item">
-	                    Camera(7)
+	            <ul class="helpers__list" data-retailer_product_id="{{retailer_product_id}}" 
+	            data-normalized_name="{{normalized_name}}">
+	                <li class="helpers__item" onclick="filter_reviews(event, 'camera')">
+	                    Camera({{camera_reviews_count}})
 	                </li>
-	                <li class="helpers__item">
-	                    Processor(0)
+	                <li class="helpers__item" onclick="filter_reviews(event, 'processor')">
+	                    Processor({{processor_reviews_count}})
 	                </li>
-	                <li class="helpers__item">
-	                    Battery(2)
+	                <li class="helpers__item" onclick="filter_reviews(event, 'battery')">
+	                    Battery({{battery_reviews_count}})
 	                </li>
-	                <li class="helpers__item">
-	                    Quality(1)
+	                <li class="helpers__item" onclick="filter_reviews(event, 'quality')">
+	                    Quality({{quality_reviews_count}})
 	                </li>
-	                <li class="helpers__item">
-	                    Display(234)
+	                <li class="helpers__item" onclick="filter_reviews(event, 'display')">
+	                    Display({{display_reviews_count}})
 	                </li>
-	                <li class="helpers__item">
-	                    Modem(0)
+	                <li class="helpers__item" onclick="filter_reviews(event, 'price')">
+	                    Price({{price_reviews_count}})
 	                </li>
-	                <li class="helpers__item">
-	                    Wi-Fi(3)
+	                <li class="helpers__item" onclick="filter_reviews(event, 'sound')">
+	                    Sound({{sound_reviews_count}})
 	                </li>
-	                <li class="helpers__item">
-	                    Sensors
+	                <li class="helpers__item" onclick="filter_reviews(event, 'sensors')">
+	                    Sensors({{sensors_reviews_count}})
+	                </li>
+	                <li class="helpers__item" onclick="filter_reviews(event, 'ram')">
+	                    RAM({{ram_reviews_count}})
+	                </li>
+	                <li class="helpers__item" onclick="filter_reviews(event, 'storage')">
+	                    Storage({{storage_reviews_count}})
 	                </li>
 	            </ul>
 	        </div>

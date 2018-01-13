@@ -416,6 +416,35 @@ app.post('/product/update_reactions', function (req, res, next) {
     res.json(err)
   })
 })
+
+
+app.post('/product/reviews', function (req, res, next) {
+  request({
+    uri: config.deepmind_host + '/product/reviews',
+    method: 'POST',
+    body: req.body,
+    json: true
+  }).then(response => {
+    res.json(response)
+  }).catch(err => {
+    res.json(err)
+  })
+})
+
+app.post('/product/filter_reviews', function (req, res, next) {
+  request({
+    uri: config.deepmind_host + '/product/filter_reviews',
+    method: 'POST',
+    body: req.body,
+    json: true
+  }).then(response => {
+    res.json(response)
+  }).catch(err => {
+    res.json(err)
+  })
+})
+
+
 // ************************ Routes Over **************************************
 
 // 10. Error handler on the app

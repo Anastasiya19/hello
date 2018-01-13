@@ -236,7 +236,7 @@ function sendMessage() {
 //= app/append_more_button.js
 //= app/get_more.js
 //= app/autocomplete.js
-
+//= app/filter_reviews.js
 $(document).ready(function () {
   if (getParameterByName("q")) {
     $('.chat__bottom input').val(getParameterByName("q"))
