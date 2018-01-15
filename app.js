@@ -17,6 +17,7 @@ var cookieSession = require('cookie-session')
 var cookieParser = require('cookie-parser')
 const mongodbStore = require('connect-mongo')(session)
 var serve_favicon = require("serve-favicon")
+var compression = require('compression')
 // ******These modules have not been installed********
 // const flash = require('connect-flash')
 // ******End********
@@ -70,6 +71,9 @@ const config = require('./config/config.js')
 // 7. Build the Server 
 var app = express()
 // ******End********
+
+// compress responses
+app.use(compression())
 
 app.use(serve_favicon(path.join(__dirname,"/public/build/assets/images/favicon-96x96.png")))
 app.use(cookieSession({
