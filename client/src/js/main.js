@@ -13,7 +13,7 @@ function getParameterByName(name, url) {
   if (!url) url = window.location.href;
   name = name.replace(/[\[\]]/g, "\\$&");
   var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
-      results = regex.exec(url);
+    results = regex.exec(url);
   if (!results) return null;
   if (!results[2]) return '';
   return decodeURIComponent(results[2].replace(/\+/g, " "));
@@ -31,34 +31,34 @@ $(document).ready(function () {
   // });
 
   $('.send__input').on('input keyup', function() {
+      
+      var input = $('.send__input');
+      if(input[0].value.length > 0){
+        send_auto_complete_request(input[0].value);
+      }
 
-    var input = $('.send__input');
-    if(input[0].value.length > 0){
-      send_auto_complete_request(input[0].value);
-    }
-
-    else{
-      $('.helpers').hide(100);
-    }
-
-    // $('.helpers').delay(200).show();
+      else{
+        $('.helpers').hide(100);
+      }
+      
+      // $('.helpers').delay(200).show();
   });
 
   $(".send__input").focusout(function(){
-
-    $('.helpers').hide(200);
+      
+      $('.helpers').hide(200);
   });
 
   $('.auto__complete').on('click', function () {
-
+    
     $('.helpers').hide(200);
     var value = $(this).html();
     var input = $('.send__input');
     input.val(value);
-
+    
   });
 
-
+  
   $('.scrollable-container-two').mCustomScrollbar({
     theme: "my-theme",
     setLeft: 15,
@@ -94,7 +94,7 @@ $(document).ready(function () {
 
 $('.macbook__play').on('click', function () {
   var $video = $('.macbook__video'),
-      src = $('#myvideo').attr("src");
+    src = $('#myvideo').attr("src");
   $video.html('<iframe id="myvideo" class="macbook__iframe" src="https://www.youtube.com/embed/uT3SBzmDxGk?autoplay=1" frameborder="0" allowfullscreen></iframe>');
   $video.css('display', 'block');
   $('.macbook__content').hide();
@@ -128,7 +128,7 @@ $(window).on('load', function () {
 
 /**
  * Setup and Initialize form Submmission
- */
+*/
 var mobiles_requested = [];
 
 var suggested_zlatans = [];
@@ -157,16 +157,15 @@ function sendMessage() {
 
   if ($('.chat__bottom input').val().length > 0) {
 
-    var templateScript = Handlebars.compile(`<div class="message message_sender">
-    <!--<img class="user-logo" src="/assets/build/assets/images/user-mes.svg" alt="">-->
-    <div class="message__item message__item_user br-chat animated fadeInRight">
-        <p>{{message}}</p>
-    </div>
-    </div>`)
-
-
     $('.chat__messages')
-        .append(templateScript({message: $('.chat__bottom input').val()}));
+      .append(
+        `<div class="message message_sender">
+            <!--<img class="user-logo" src="/assets/build/assets/images/user-mes.svg" alt="">-->
+            <div class="message__item message__item_user br-chat animated fadeInRight">
+                <p>${$('.chat__bottom input').val()}</p>
+            </div>
+          </div>`
+      );
 
     // Store the value in chat_input variable
     chat_input = $('.chat__bottom input').val();
@@ -193,19 +192,19 @@ function sendMessage() {
 
   else{
 
-    $('.chat__messages')
-        .append(
-            `<div class="message message_vinci">
+      $('.chat__messages')
+      .append(
+        `<div class="message message_vinci">
             <!--<img class="user-logo" src="/assets/build/assets/images/user-mes.svg" alt="">-->
             <div class="message__item message__item_vinci br-chat animated fadeInLeft" style="width: fit-content;">
                 <p>Looks like an empty message to me :)</p>
             </div>
           </div>`
-        );
+      );
 
   }
 
-
+  
 }
 
 //= custom/carousel.js
@@ -237,12 +236,23 @@ function sendMessage() {
 //= app/append_more_button.js
 //= app/get_more.js
 //= app/autocomplete.js
-//= app/filter_reviews.js
+
 $(document).ready(function () {
   if (getParameterByName("q")) {
     $('.chat__bottom input').val(getParameterByName("q"))
     $('#send_chat').click()
   }
+
+  var maxHeight = 0;
+  
+  $(".message__item_review").each(function(){
+    if ( $(this).height() > maxHeight )
+    {
+      maxHeight = $(this).height();
+    }
+  });
+  
+  $(".message__item_review").height(maxHeight);
 })
 
 
