@@ -243,6 +243,17 @@ $(document).ready(function () {
     $('.chat__bottom input').val(getParameterByName("q"))
     $('#send_chat').click()
   }
+
+  var maxHeight = 0;
+  
+  $(".message__item_review").each(function(){
+    if ( $(this).height() > maxHeight )
+    {
+      maxHeight = $(this).height();
+    }
+  });
+  
+  $(".message__item_review").height(maxHeight);
 })
 
 

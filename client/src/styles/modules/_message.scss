@@ -86,7 +86,7 @@
     &_compare {
       padding: 0;
       max-width: fit-content;
-      overflow-x: auto;
+      overflow-x: scroll;
       width: 100%;
     }
     &_view {
@@ -118,6 +118,9 @@
       margin-bottom: 20px;
 
       width:436px;
+
+      height: auto;
+
       @media (max-width: 1267px) {
         width:calc(((75vw + 10px) - 85px) / 2);
       }
