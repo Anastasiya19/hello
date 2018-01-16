@@ -2259,36 +2259,56 @@
 	                <li class="helpers__item" onclick="filter_reviews(event, 'all')">
 	                    all
 	                </li>
+	                {{#if camera_reviews_count}}
 	                <li class="helpers__item" onclick="filter_reviews(event, 'camera')">
 	                    Camera({{camera_reviews_count}})
 	                </li>
+	                 {{/if}}
+	                 {{#if processor_reviews_count}}
 	                <li class="helpers__item" onclick="filter_reviews(event, 'processor')">
 	                    Processor({{processor_reviews_count}})
 	                </li>
+	                {{/if}}
+	                 {{#if battery_reviews_count}}
 	                <li class="helpers__item" onclick="filter_reviews(event, 'battery')">
 	                    Battery({{battery_reviews_count}})
 	                </li>
+	                {{/if}}
+	                 {{#if quality_reviews_count}}
 	                <li class="helpers__item" onclick="filter_reviews(event, 'quality')">
 	                    Quality({{quality_reviews_count}})
 	                </li>
+	                {{/if}}
+	                 {{#if display_reviews_count}}
 	                <li class="helpers__item" onclick="filter_reviews(event, 'display')">
 	                    Display({{display_reviews_count}})
 	                </li>
+	                {{/if}}
+	                 {{#if price_reviews_count}}
 	                <li class="helpers__item" onclick="filter_reviews(event, 'price')">
 	                    Price({{price_reviews_count}})
 	                </li>
+	                {{/if}}
+	                 {{#if sound_reviews_count}}
 	                <li class="helpers__item" onclick="filter_reviews(event, 'sound')">
 	                    Sound({{sound_reviews_count}})
 	                </li>
+	                {{/if}}
+	                 {{#if sensors_reviews_count}}
 	                <li class="helpers__item" onclick="filter_reviews(event, 'sensors')">
 	                    Sensors({{sensors_reviews_count}})
 	                </li>
+	                {{/if}}
+	                 {{#if ram_reviews_count}}
 	                <li class="helpers__item" onclick="filter_reviews(event, 'ram')">
 	                    RAM({{ram_reviews_count}})
 	                </li>
+	                {{/if}}
+	                 {{#if storage_reviews_count}}
 	                <li class="helpers__item" onclick="filter_reviews(event, 'storage')">
 	                    Storage({{storage_reviews_count}})
 	                </li>
+	                {{/if}}
 	            </ul>
 	        </div>
 	    </div>
@@ -2341,39 +2361,6 @@
 	
 	    {{/each}}
 	
-	    <div class="message__item message__item_view view  br-chat message__item_review">
-	             <button class="button helpers__item view_product__button" onclick="get_more_reviews(event)" data-skip='{{skip}}' data-retailer_product_id='{{retailer_product_id}}' style="display: block!important">View more reviews</button>
-	            <div class="message__item-info clearfix" style="visibility: hidden;">
-	                <div class="message__item-rate">
-	                <svg width="87px" height="15px" viewBox="0 0 87 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-	                    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
-	                    <desc>Created with Sketch.</desc>
-	                    <defs></defs>
-	                    <g id="Chatbot-V3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-	                        <g id="Chat-Stage-1---Review_1280" transform="translate(-70.000000, -290.000000)" fill="#F5A623">
-	                            <g id="Group-6" transform="translate(60.000000, 271.000000)">
-	                                <g id="Group-5" transform="translate(10.8000000, 19.000000)">
-	                                    
-	                                </g>
-	                            </g>
-	                        </g>
-	                    </g>
-	                </svg>
-	                </div>
-	                <div class="message__item-author">
-	                    <p style="font-size:12px"></p>
-	                </div>
-	            </div>
-	            <div class="collection__description" style="visibility: hidden;" >
-	                <h3 class="collection__name"></h3>
-	                <div class="collection__text collection__text-collapsed" onclick="(function(e){ e.currentTarget.classList.toggle('collection__text-collapsed');})(event)">
-	                    <p>
-	                        
-	                    </p>
-	                </div>
-	
-	            </div>
-	        </div>
 	</div></script>
 
 

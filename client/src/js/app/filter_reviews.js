@@ -9,7 +9,8 @@ function filter_reviews(event, attribute){
 
     var reviews_carousel = $($(target)
     .parents(".message.message_vinci.clearfix")[0]).next()
-    
+
+    reviews_carousel.html("Loading...")
     $.post('/product/filter_reviews', { 
         retailer_product_id: retailer_product_id,
         attribute: attribute
