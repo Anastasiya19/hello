@@ -157,15 +157,16 @@ function sendMessage() {
 
   if ($('.chat__bottom input').val().length > 0) {
 
+    var templateScript = Handlebars.compile(`<div class="message message_sender">
+    <!--<img class="user-logo" src="/assets/build/assets/images/user-mes.svg" alt="">-->
+    <div class="message__item message__item_user br-chat animated fadeInRight">
+        <p>{{message}}</p>
+    </div>
+    </div>`)
+
+  
     $('.chat__messages')
-      .append(
-        `<div class="message message_sender">
-            <!--<img class="user-logo" src="/assets/build/assets/images/user-mes.svg" alt="">-->
-            <div class="message__item message__item_user br-chat animated fadeInRight">
-                <p>${$('.chat__bottom input').val()}</p>
-            </div>
-          </div>`
-      );
+      .append(templateScript({message: $('.chat__bottom input').val()}));
 
     // Store the value in chat_input variable
     chat_input = $('.chat__bottom input').val();
@@ -236,7 +237,7 @@ function sendMessage() {
 //= app/append_more_button.js
 //= app/get_more.js
 //= app/autocomplete.js
-
+//= app/filter_reviews.js
 $(document).ready(function () {
   if (getParameterByName("q")) {
     $('.chat__bottom input').val(getParameterByName("q"))

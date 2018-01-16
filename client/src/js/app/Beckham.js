@@ -224,12 +224,15 @@ Beckham.prototype.build_video_review_element = function (zlatan) {
 
 Beckham.prototype.build_text_review_element = function (zlatan) {
   
-
+  let reviews = zlatan.mobiles.reviews[0]
   reduce_to_pairs = function (accumulator, currentValue, index)  {
+    if(reviews.length === 1){
+      return [reviews[0].reviews]
+  }
     // console.log(accumulator)
     if (index % 2 === 0) {
-      if (zlatan.mobiles.reviews[0].reviews[index + 1]) {
-        accumulator.push([currentValue, zlatan.mobiles.reviews[0].reviews[index + 1]])
+      if (reviews.reviews[index + 1]) {
+        accumulator.push([currentValue, reviews.reviews[index + 1]])
       }else {
         accumulator.push([currentValue])
       }
@@ -237,9 +240,23 @@ Beckham.prototype.build_text_review_element = function (zlatan) {
     return accumulator
   }
 
-  var reviews_pairs = zlatan.mobiles.reviews[0].reviews.reduce(reduce_to_pairs, [])
+  var reviews_pairs = reviews.reviews.reduce(reduce_to_pairs, [])
 
-  zlatan.context = {reviews_pairs: reviews_pairs}
+  zlatan.context = {
+    reviews_pairs: reviews_pairs,
+    camera_reviews_count: reviews.camera_reviews_count,
+    processor_reviews_count: reviews.processor_reviews_count,
+    battery_reviews_count: reviews.battery_reviews_count,
+    display_reviews_count: reviews.display_reviews_count,
+    quality_reviews_count: reviews.quality_reviews_count,
+    sensors_reviews_count: reviews.sensors_reviews_count,
+    price_reviews_count: reviews.price_reviews_count,
+    sound_reviews_count: reviews.sound_reviews_count,
+    ram_reviews_count: reviews.ram_reviews_count,
+    storage_reviews_count: reviews.storage_reviews_count,
+    normalized_name: reviews.normalized_name,
+    retailer_product_id: reviews.retailer_product_id
+  }
 
   this.template = $('#handlebars-case-400').html()
   

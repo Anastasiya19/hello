@@ -17,6 +17,7 @@ var cookieSession = require('cookie-session')
 var cookieParser = require('cookie-parser')
 const mongodbStore = require('connect-mongo')(session)
 var serve_favicon = require("serve-favicon")
+var compression = require('compression')
 // ******These modules have not been installed********
 // const flash = require('connect-flash')
 // ******End********
@@ -70,6 +71,9 @@ const config = require('./config/config.js')
 // 7. Build the Server 
 var app = express()
 // ******End********
+
+// compress responses
+app.use(compression())
 
 app.use(serve_favicon(path.join(__dirname,"/public/build/assets/images/favicon-96x96.png")))
 app.use(cookieSession({
@@ -416,6 +420,35 @@ app.post('/product/update_reactions', function (req, res, next) {
     res.json(err)
   })
 })
+
+
+app.post('/product/reviews', function (req, res, next) {
+  request({
+    uri: config.deepmind_host + '/product/reviews',
+    method: 'POST',
+    body: req.body,
+    json: true
+  }).then(response => {
+    res.json(response)
+  }).catch(err => {
+    res.json(err)
+  })
+})
+
+app.post('/product/filter_reviews', function (req, res, next) {
+  request({
+    uri: config.deepmind_host + '/product/filter_reviews',
+    method: 'POST',
+    body: req.body,
+    json: true
+  }).then(response => {
+    res.json(response)
+  }).catch(err => {
+    res.json(err)
+  })
+})
+
+
 // ************************ Routes Over **************************************
 
 // 10. Error handler on the app
