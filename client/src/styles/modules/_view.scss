@@ -84,6 +84,7 @@
     span{
       margin-left: 8px;
       font-size: 13px;
+      display: block;
     }
   }
 
@@ -523,10 +524,12 @@
     right: 35px;
     color: #9e9d9d;
     top: 3px;
-
     @media (max-width: 418px) {
       font-size: 0;
     }
+  }
+  @media (max-width: 767px) {
+    padding-bottom: 50px;
   }
 }
 
@@ -628,9 +631,9 @@
 
   @media (max-width: 767px) {
     display: block;
-    float: none;
-    width: 60%;
-    margin: 10px auto;
+    margin: 48px auto;
+    position: absolute;
+    left: 33%;
   }
 
   &:hover {
